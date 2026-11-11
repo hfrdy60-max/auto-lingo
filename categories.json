@@ -1,0 +1,210 @@
+[
+  {
+    "id": "CAT-01",
+    "name_en": "Engine & Combustion",
+    "name_fa": "موتور و احتراق",
+    "parent_id": null,
+    "sort_order": 1,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-02",
+    "name_en": "Fuel Injection System",
+    "name_fa": "سیستم سوخت‌رسانی انژکتوری",
+    "parent_id": null,
+    "sort_order": 2,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-03",
+    "name_en": "Ignition System",
+    "name_fa": "سیستم جرقه‌زنی",
+    "parent_id": null,
+    "sort_order": 3,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-04",
+    "name_en": "Automotive Electrical System",
+    "name_fa": "سیستم برق خودرو",
+    "parent_id": null,
+    "sort_order": 4,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-05",
+    "name_en": "Automotive Electronics",
+    "name_fa": "الکترونیک خودرو",
+    "parent_id": null,
+    "sort_order": 5,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-06",
+    "name_en": "ECU & Engine Management",
+    "name_fa": "ECU و مدیریت موتور",
+    "parent_id": null,
+    "sort_order": 6,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-07",
+    "name_en": "Sensors & Actuators",
+    "name_fa": "سنسورها و عملگرها",
+    "parent_id": null,
+    "sort_order": 7,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-08",
+    "name_en": "Transmission System",
+    "name_fa": "سیستم انتقال قدرت (گیربکس)",
+    "parent_id": null,
+    "sort_order": 8,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-09",
+    "name_en": "Clutch System",
+    "name_fa": "سیستم کلاچ",
+    "parent_id": null,
+    "sort_order": 9,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-10",
+    "name_en": "Brake System",
+    "name_fa": "سیستم ترمز",
+    "parent_id": null,
+    "sort_order": 10,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-11",
+    "name_en": "ABS & ESP",
+    "name_fa": "ABS و ESP",
+    "parent_id": null,
+    "sort_order": 11,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-12",
+    "name_en": "Suspension System",
+    "name_fa": "سیستم تعلیق",
+    "parent_id": null,
+    "sort_order": 12,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-13",
+    "name_en": "Steering System",
+    "name_fa": "سیستم فرمان",
+    "parent_id": null,
+    "sort_order": 13,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-14",
+    "name_en": "Cooling System",
+    "name_fa": "سیستم خنک‌کاری",
+    "parent_id": null,
+    "sort_order": 14,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-15",
+    "name_en": "Lubrication System",
+    "name_fa": "سیستم روانکاری",
+    "parent_id": null,
+    "sort_order": 15,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-16",
+    "name_en": "Air Conditioning System",
+    "name_fa": "سیستم تهویه مطبوع",
+    "parent_id": null,
+    "sort_order": 16,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-17",
+    "name_en": "Exhaust System",
+    "name_fa": "سیستم اگزوز",
+    "parent_id": null,
+    "sort_order": 17,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-18",
+    "name_en": "Emission Control System",
+    "name_fa": "سیستم کنترل آلایندگی",
+    "parent_id": null,
+    "sort_order": 18,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-19",
+    "name_en": "OBD & Diagnostics",
+    "name_fa": "OBD و دیاگ",
+    "parent_id": null,
+    "sort_order": 19,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-20",
+    "name_en": "Wiring Diagrams",
+    "name_fa": "نقشه‌های سیم‌کشی",
+    "parent_id": null,
+    "sort_order": 20,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-21",
+    "name_en": "Connectors & Terminals",
+    "name_fa": "کانکتورها و ترمینال‌ها",
+    "parent_id": null,
+    "sort_order": 21,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-22",
+    "name_en": "Automotive Tools",
+    "name_fa": "ابزارهای خودرو",
+    "parent_id": null,
+    "sort_order": 22,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-23",
+    "name_en": "Body & Chassis",
+    "name_fa": "بدنه و شاسی",
+    "parent_id": null,
+    "sort_order": 23,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-24",
+    "name_en": "Hybrid & Electric Vehicles",
+    "name_fa": "خودروهای هیبرید و برقی",
+    "parent_id": null,
+    "sort_order": 24,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-25",
+    "name_en": "Automotive Maintenance",
+    "name_fa": "نگهداری و سرویس خودرو",
+    "parent_id": null,
+    "sort_order": 25,
+    "description_fa": null
+  },
+  {
+    "id": "CAT-26",
+    "name_en": "Fault Diagnosis & Troubleshooting",
+    "name_fa": "عیب‌یابی و رفع اشکال",
+    "parent_id": null,
+    "sort_order": 26,
+    "description_fa": null
+  }
+]

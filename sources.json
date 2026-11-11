@@ -1,0 +1,123 @@
+[
+  {
+    "id": "SRC-001",
+    "title": "HELLA Tech World",
+    "publisher": "HELLA",
+    "source_type": "supplier_tech_doc",
+    "url": "https://www.hella.com/techworld",
+    "language": "en",
+    "notes": "Listed from the project's recommended sources. URL/content not yet checked in this stage.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-002",
+    "title": "Bosch Mobility / Automotive Aftermarket technical documentation",
+    "publisher": "Bosch",
+    "source_type": "supplier_tech_doc",
+    "url": "https://www.bosch-mobility.com",
+    "language": "en",
+    "notes": "Listed from the project's recommended sources. URL/content not yet checked in this stage.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-003",
+    "title": "DENSO technical information",
+    "publisher": "DENSO",
+    "source_type": "supplier_tech_doc",
+    "url": "https://www.denso.com",
+    "language": "en",
+    "notes": "Listed from the project's recommended sources. URL/content not yet checked in this stage.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-004",
+    "title": "NGK / NTK technical information",
+    "publisher": "NGK Spark Plugs",
+    "source_type": "supplier_tech_doc",
+    "url": "https://www.ngk.com",
+    "language": "en",
+    "notes": "Listed from the project's recommended sources. URL/content not yet checked in this stage.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-005",
+    "title": "Delphi Technologies technical information (now under PHINIA / BorgWarner brands)",
+    "publisher": "Delphi",
+    "source_type": "supplier_tech_doc",
+    "url": null,
+    "language": "en",
+    "notes": "Listed from the project's recommended sources. URL/content not yet checked in this stage.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-006",
+    "title": "SAE J1979 — E/E Diagnostic Test Modes (OBD-II)",
+    "publisher": "SAE International",
+    "source_type": "standard",
+    "url": null,
+    "language": "en",
+    "notes": "Standard reference; clause-level citations to be added per record.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-007",
+    "title": "SAE J2012 — Diagnostic Trouble Code Definitions",
+    "publisher": "SAE International",
+    "source_type": "standard",
+    "url": null,
+    "language": "en",
+    "notes": "Standard reference; clause-level citations to be added per record.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-008",
+    "title": "ISO 15031 — Road vehicles: communication between vehicle and external equipment for emissions-related diagnostics",
+    "publisher": "ISO",
+    "source_type": "standard",
+    "url": null,
+    "language": "en",
+    "notes": "Standard reference; clause-level citations to be added per record.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-009",
+    "title": "ISO 15765-4 — Diagnostic communication over CAN: emissions-related systems",
+    "publisher": "ISO",
+    "source_type": "standard",
+    "url": null,
+    "language": "en",
+    "notes": "Standard reference; clause-level citations to be added per record.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-010",
+    "title": "ISO 14229 — Unified Diagnostic Services (UDS)",
+    "publisher": "ISO",
+    "source_type": "standard",
+    "url": null,
+    "language": "en",
+    "notes": "Standard reference; clause-level citations to be added per record.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  },
+  {
+    "id": "SRC-011",
+    "title": "Official OEM workshop / repair manuals (per model; to be cited individually)",
+    "publisher": "Vehicle manufacturers",
+    "source_type": "service_manual",
+    "url": null,
+    "language": "en",
+    "notes": "Listed from the project's recommended sources. URL/content not yet checked in this stage.",
+    "verification_status": "unverified",
+    "last_checked_at": null
+  }
+]

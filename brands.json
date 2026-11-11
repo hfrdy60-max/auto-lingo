@@ -1,0 +1,192 @@
+[
+  {
+    "id": "BRAND-001",
+    "name_en": "Iran Khodro",
+    "name_fa": "ایران خودرو",
+    "group_name": "iranian",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-002",
+    "name_en": "Saipa",
+    "name_fa": "سایپا",
+    "group_name": "iranian",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-003",
+    "name_en": "Pars Khodro",
+    "name_fa": "پارس خودرو",
+    "group_name": "iranian",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-004",
+    "name_en": "Lifan",
+    "name_fa": "لیفان",
+    "group_name": "chinese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-005",
+    "name_en": "MVM",
+    "name_fa": "ام‌وی‌ام",
+    "group_name": "chinese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-006",
+    "name_en": "Chery",
+    "name_fa": "چری",
+    "group_name": "chinese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-007",
+    "name_en": "JAC",
+    "name_fa": "جک",
+    "group_name": "chinese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-008",
+    "name_en": "Haima",
+    "name_fa": "هایما",
+    "group_name": "chinese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-009",
+    "name_en": "Geely",
+    "name_fa": "جیلی",
+    "group_name": "chinese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-010",
+    "name_en": "Fownix",
+    "name_fa": "فونیکس",
+    "group_name": "chinese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-011",
+    "name_en": "Toyota",
+    "name_fa": "تویوتا",
+    "group_name": "japanese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-012",
+    "name_en": "Nissan",
+    "name_fa": "نیسان",
+    "group_name": "japanese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-013",
+    "name_en": "Mazda",
+    "name_fa": "مزدا",
+    "group_name": "japanese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-014",
+    "name_en": "Mitsubishi",
+    "name_fa": "میتسوبیشی",
+    "group_name": "japanese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-015",
+    "name_en": "Honda",
+    "name_fa": "هوندا",
+    "group_name": "japanese",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-016",
+    "name_en": "Hyundai",
+    "name_fa": "هیوندای",
+    "group_name": "korean",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-017",
+    "name_en": "Kia",
+    "name_fa": "کیا",
+    "group_name": "korean",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-018",
+    "name_en": "Daewoo",
+    "name_fa": "دوو",
+    "group_name": "korean",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  },
+  {
+    "id": "BRAND-019",
+    "name_en": "SsangYong",
+    "name_fa": "سانگ‌یانگ",
+    "group_name": "korean",
+    "website": null,
+    "notes": "Group as specified by project owner; details not yet researched",
+    "verification_status": "unverified",
+    "last_reviewed_at": null
+  }
+]
