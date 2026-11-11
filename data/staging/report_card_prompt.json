@@ -1,0 +1,39 @@
+{
+  "type": "learning_assessment_config",
+  "name": "AUTO LINGO Student Report Card",
+  "language": "fa",
+  "secondary_language": "en",
+  "verification_status": "needs_review",
+  "levels": [
+    "beginner",
+    "intermediate",
+    "advanced",
+    "professional",
+    "expert"
+  ],
+  "metrics": [
+    "theory",
+    "simulator",
+    "projects",
+    "automotive_vocabulary"
+  ],
+  "required_output_fields": [
+    "student_id",
+    "full_name",
+    "course_level",
+    "metrics",
+    "strengths",
+    "areas_for_improvement",
+    "recommendations",
+    "instructor_notes",
+    "next_lesson"
+  ],
+  "rules": [
+    "Never invent scores or progress when source data is missing.",
+    "Evaluate practical work using documented performance, workmanship and safety criteria.",
+    "Show progress over time only when historical assessments exist.",
+    "Provide actionable recommendations and next lesson.",
+    "Use Persian RTL layout with English technical terms where useful."
+  ],
+  "implementation_note": "Application/reporting configuration, not a relational database entity. Store in app configuration or assessment service unless a dedicated schema is designed."
+}
