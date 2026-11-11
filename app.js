@@ -102,6 +102,7 @@ function saveLessonStage(){const s=JSON.parse(localStorage.getItem("al_lesson_st
 function finishLesson(){
  currentLesson.lesson[3].forEach((_,ti)=>completed[activePath.id+"-"+currentLesson.li+"-"+ti]=true);
  localStorage.setItem("al_completed",JSON.stringify(completed));
+ const scores=JSON.parse(localStorage.getItem("al_scores")||"{}");scores[lessonKey(currentLesson.li)]={score:Math.round(lessonScore/buildLessonQuestions(currentLesson.lesson).quiz.length*100),correct:lessonScore,total:buildLessonQuestions(currentLesson.lesson).quiz.length,updatedAt:new Date().toISOString()};localStorage.setItem("al_scores",JSON.stringify(scores));
  const s=JSON.parse(localStorage.getItem("al_lesson_state")||"{}");s[lessonKey(currentLesson.li)]={stage:0,completed:true};localStorage.setItem("al_lesson_state",JSON.stringify(s));
  renderLessons();
  document.getElementById("modalContent").innerHTML=`<div class="lesson-finished"><div class="finish-icon">✓</div><span class="modal-kicker">LESSON COMPLETED</span><h2 id="modalTitle">آفرین! درس به پایان رسید.</h2><p>این درس را کامل کردی. واژه‌های این درس به‌عنوان یادگرفته‌شده ثبت شدند.</p><div class="score-result">امتیاز آزمون: <strong>${faNum(Math.round(lessonScore/ buildLessonQuestions(currentLesson.lesson).quiz.length*100))}٪</strong></div><button class="stage-next" id="finishClose">بازگشت به فهرست درس‌ها</button></div>`;
