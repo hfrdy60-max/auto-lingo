@@ -56,3 +56,5 @@ footer{border-top:1px solid var(--line);padding:23px max(calc((100% - 1220px)/2)
 .lesson-finished p{max-width:400px;margin:10px auto 22px}
 .finish-icon{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;background:#143b30;color:var(--mint);font-size:32px;border:1px solid #55e0b466}
 @media(max-width:560px){.lesson-modal{padding:17px 14px}.lesson-progress-head{padding-left:36px;gap:7px}.lesson-stage-body{min-height:270px}.answer-options{grid-template-columns:1fr}.listening-item{flex-wrap:wrap}.listening-item>div{flex-basis:100%;margin-bottom:4px}.lesson-stage-footer button{padding:8px 11px}}
+
+.score-result{display:inline-flex;align-items:center;gap:10px;background:#14352c;border:1px solid #55e0b455;color:#cdeee2;border-radius:10px;padding:9px 16px;margin:4px 0 20px;font-size:12px}.score-result strong{font-size:20px;color:var(--mint)}
