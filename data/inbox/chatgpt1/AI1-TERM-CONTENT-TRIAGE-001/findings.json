@@ -124,12 +124,34 @@
       "priority": "P2",
       "issue": "Body Control Module is categorized under Body & Chassis despite being an electronic control module; the category taxonomy may need a clearer placement rule.",
       "recommendation": "Review primary category and cross-category tagging policy."
+    },
+    {
+      "id": "TERM-000057",
+      "field": "synonyms",
+      "priority": "P2",
+      "issue": "Capacitor lists Condenser as a synonym, while Condenser is also a separate term for the automotive AC heat exchanger; search may return an ambiguous result.",
+      "recommendation": "Qualify or remove the ambiguous synonym; preserve it only with an explicit electrical-component context."
+    },
+    {
+      "id": "TERM-000068 / TERM-000215",
+      "field": "synonyms",
+      "priority": "P2",
+      "issue": "Reflash appears as a synonym for both ECU Programming and Flashing; the relationship may be valid but creates duplicate lookup targets.",
+      "recommendation": "Define the distinction between the broader programming process and the flashing operation, then normalize synonym routing."
+    },
+    {
+      "id": "all 252 records",
+      "field": "last_reviewed_at",
+      "priority": "P1",
+      "issue": "All records have last_reviewed_at=2026-11-11 while all remain unverified and no reviewer/source trace is recorded. This may be a generation date rather than an actual review date.",
+      "recommendation": "Clarify field semantics. If it represents generation/import time, store it in a separate created_at/imported_at field and leave last_reviewed_at null until a real review occurs."
     }
   ],
   "review_notes": [
     "These are editorial/taxonomy triage findings based on the stored definitions and terminology, not externally sourced technical verification.",
     "No original term record was changed.",
     "All source records remain unverified.",
-    "The archived Batch 01 is used for this triage; the conflicting root-level Batch 01 remains a separate unresolved source."
+    "The archived Batch 01 is used for this triage; the conflicting root-level Batch 01 remains a separate unresolved source.",
+    "Additional type/field QA confirmed all 252 records have non-empty core text fields; part records populate all five part-oriented fields, and non-part records set those fields to null. 38 records have an empty synonyms array. The global last_reviewed_at date needs semantic clarification."
   ]
 }
