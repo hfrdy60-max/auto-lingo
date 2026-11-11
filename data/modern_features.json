@@ -1,0 +1,471 @@
+{
+  "dataset": "AUTO LINGO — Modern Vehicle Features & Technologies",
+  "version": "1.0",
+  "updated": "2026-11-12",
+  "scope_note": "قابلیت‌ها بسته به سازنده، مدل، تیپ، سال ساخت و بازار متفاوت‌اند. این بانک آموزشی عمومی است و جایگزین مستندات تعمیراتی خودرو نیست.",
+  "features": [
+    {
+      "id": "ADAS-L2",
+      "title_fa": "سطح ۲ کمک‌رانندگی",
+      "title_en": "Level 2 Driver Assistance",
+      "category": "ایمنی و کمک‌راننده",
+      "overview": "ترکیب کروز تطبیقی و مرکزنگهداری بین خطوط می‌تواند هم‌زمان فرمان و سرعت را کنترل کند؛ راننده همچنان مسئول نظارت پیوسته است.",
+      "architecture": "دوربین جلو، رادار و ECUهای ترمز و فرمان؛ ترکیب حسگرها وابسته به خودرو است.",
+      "diagnostic_approach": "خطای کالیبراسیون، انسداد دوربین/رادار، اختلاف سرعت چرخ و خطای شبکه را بررسی کن؛ پس از تعمیر طبق دستور سازنده کالیبره شود.",
+      "safety": "این قابلیت رانندگی خودران نیست و راننده نباید دست از نظارت بردارد.",
+      "keywords": [
+        "ACC",
+        "LKA",
+        "HOD",
+        "ADAS"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "DMS-OMS",
+      "title_fa": "پایش راننده و سرنشین",
+      "title_en": "Driver & Occupant Monitoring",
+      "category": "ایمنی کابین",
+      "overview": "دوربین مادون‌قرمز یا حسگرهای کابین می‌توانند خستگی، حواس‌پرتی، حضور کودک یا وضعیت سرنشین را تشخیص دهند؛ قابلیت‌ها بین سازندگان متفاوت‌اند.",
+      "architecture": "دوربین IR، حسگر صندلی، واحد پردازش کابین و شبکه خودرو.",
+      "diagnostic_approach": "نور محیط، آلودگی لنز، وضعیت صندلی، کدهای ماژول و کالیبراسیون را بررسی کن.",
+      "safety": "حریم خصوصی و محدودیت تشخیص باید در آموزش توضیح داده شود؛ تشخیص سیستم خطاناپذیر نیست.",
+      "keywords": [
+        "DMS",
+        "OMS",
+        "IR Camera",
+        "Occupant Classification"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "V2X",
+      "title_fa": "ارتباط خودرو با محیط",
+      "title_en": "Vehicle-to-Everything Communication",
+      "category": "اتصال هوشمند",
+      "overview": "خودرو می‌تواند با خودروها، زیرساخت جاده، عابر یا شبکه ارتباط برقرار کند؛ فناوری و دسترس‌پذیری تابع منطقه و زیرساخت است.",
+      "architecture": "واحد ارتباطی، GNSS، آنتن، مودم و نرم‌افزار امنیتی.",
+      "diagnostic_approach": "قدرت سیگنال، آنتن، نسخه نرم‌افزار، گواهی امنیتی و خطاهای ارتباطی را بررسی کن.",
+      "safety": "پیام V2X باید منبع کمکی باشد و جایگزین مشاهده راننده یا سامانه ایمنی مستقل نیست.",
+      "keywords": [
+        "V2V",
+        "V2I",
+        "V2P",
+        "C-V2X",
+        "DSRC"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "SDV",
+      "title_fa": "خودروی تعریف‌شده با نرم‌افزار",
+      "title_en": "Software-Defined Vehicle",
+      "category": "معماری الکترونیکی",
+      "overview": "قابلیت‌های خودرو با نرم‌افزار، سرویس‌های متصل و معماری الکترونیکی قابل توسعه و پیکربندی‌اند؛ سخت‌افزار و مجوزها همچنان محدودیت ایجاد می‌کنند.",
+      "architecture": "ECUهای قابل به‌روزرسانی، شبکه پرسرعت، سرورهای مرکزی و پلتفرم نرم‌افزاری.",
+      "diagnostic_approach": "نسخه نرم‌افزار، وابستگی ماژول‌ها، لاگ‌ها، وضعیت فلش و سازگاری نسخه‌ها را بررسی کن.",
+      "safety": "برنامه‌ریزی غیرمجاز یا فایل نامعتبر می‌تواند خودرو را از کار بیندازد.",
+      "keywords": [
+        "SDV",
+        "OTA",
+        "ECU",
+        "Middleware"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "OTA",
+      "title_fa": "به‌روزرسانی بی‌سیم",
+      "title_en": "Over-the-Air Updates",
+      "category": "نرم‌افزار و اتصال",
+      "overview": "بسته نرم‌افزاری از راه ارتباط بی‌سیم دریافت و نصب می‌شود؛ بعضی به‌روزرسانی‌ها فقط سرگرمی و برخی ماژول‌های خودرو را پوشش می‌دهند.",
+      "architecture": "مودم، دروازه امن، مدیریت بسته، حافظه و ECU هدف.",
+      "diagnostic_approach": "نسخه فعلی و هدف، وضعیت باتری، خطای دانلود، امضای بسته و گزارش نصب را بررسی کن.",
+      "safety": "فقط بسته رسمی و روش سازنده؛ هنگام برنامه‌ریزی از قطع تغذیه جلوگیری شود.",
+      "keywords": [
+        "FOTA",
+        "SOTA",
+        "OTA",
+        "Firmware"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "ZONAL",
+      "title_fa": "معماری کنترل ناحیه‌ای",
+      "title_en": "Zonal E/E Architecture",
+      "category": "معماری برق",
+      "overview": "به‌جای سیم‌کشی پراکنده و تعداد زیادی ECU، کنترلرهای ناحیه‌ای ورودی‌ها و عملگرهای بخش‌های خودرو را مدیریت و داده را به رایانه مرکزی می‌رسانند.",
+      "architecture": "Zone Controllers، رایانه مرکزی، Ethernet و شبکه‌های محلی.",
+      "diagnostic_approach": "نقشه توپولوژی، تغذیه و زمین کنترلر ناحیه‌ای، لینک Ethernet و خطاهای چندماژوله را بررسی کن.",
+      "safety": "قطع یک کنترلر ناحیه‌ای می‌تواند چندین قابلیت همان ناحیه را هم‌زمان مختل کند.",
+      "keywords": [
+        "Zonal Controller",
+        "Central Compute",
+        "E/E Architecture"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "ETH",
+      "title_fa": "اترنت خودرویی",
+      "title_en": "Automotive Ethernet",
+      "category": "شبکه خودرو",
+      "overview": "اترنت خودرویی برای انتقال داده پرسرعت میان دوربین‌ها، رایانه مرکزی، نمایشگرها و ماژول‌ها استفاده می‌شود.",
+      "architecture": "سوئیچ خودرویی، PHY، کابل زوج‌تابیده مخصوص و کانکتورهای تعیین‌شده.",
+      "diagnostic_approach": "تست لینک، خطاهای فیزیکی، کانکتور، خواب شبکه و ابزار تست سازگار را بررسی کن.",
+      "safety": "اترنت خودرو با کابل‌کشی و روش تست شبکه خانگی یکسان فرض نشود.",
+      "keywords": [
+        "Automotive Ethernet",
+        "100BASE-T1",
+        "1000BASE-T1",
+        "TSN"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "SBW",
+      "title_fa": "فرمان برقی بدون اتصال مکانیکی مستقیم",
+      "title_en": "Steer-by-Wire",
+      "category": "فرمان و شاسی",
+      "overview": "فرمان راننده به‌صورت الکترونیکی به عملگرهای چرخ منتقل می‌شود؛ برخی طراحی‌ها پشتیبان مکانیکی یا افزونگی ایمنی دارند.",
+      "architecture": "حسگر زاویه و گشتاور، ECU فرمان، عملگر و مسیرهای افزونه.",
+      "diagnostic_approach": "کدهای خطا، تغذیه دوگانه، حسگرهای افزونه و تست‌های کالیبراسیون سازنده را بررسی کن.",
+      "safety": "سیستم ایمنی‌بحرانی است؛ هیچ اتصال یا اینترلاکی را دور نزن.",
+      "keywords": [
+        "Steer-by-Wire",
+        "Redundancy",
+        "Torque Sensor"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "BBW",
+      "title_fa": "ترمز برقی",
+      "title_en": "Brake-by-Wire",
+      "category": "ترمز و شاسی",
+      "overview": "در سامانه‌های ترمز برقی، درخواست ترمز به سیگنال الکترونیکی تبدیل و با عملگرهای الکتروهیدرولیکی یا الکترومکانیکی اجرا می‌شود.",
+      "architecture": "پدال حسگر‌دار، ECU ترمز، عملگر، منبع تغذیه و پشتیبان‌های ایمنی.",
+      "diagnostic_approach": "کدها، حسگرهای افزونه، وضعیت سرویس، فشار/فرمان واقعی و تست سازنده را بررسی کن.",
+      "safety": "تعمیر فقط با روش سرویس رسمی؛ عملکرد ترمز پس از تعمیر باید طبق دستورالعمل تأیید شود.",
+      "keywords": [
+        "Brake-by-Wire",
+        "EHB",
+        "EMB"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "RWS",
+      "title_fa": "فرمان‌پذیری چرخ‌های عقب",
+      "title_en": "Rear-Wheel Steering",
+      "category": "فرمان و شاسی",
+      "overview": "چرخ‌های عقب در زاویه کنترل‌شده می‌چرخند تا مانورپذیری در سرعت پایین یا پایداری در سرعت بالاتر بهبود یابد.",
+      "architecture": "عملگر عقب، حسگر زاویه، ECU شاسی و ارتباط با فرمان جلو.",
+      "diagnostic_approach": "زاویه درخواستی و واقعی، اتصالات، کالیبراسیون و خطاهای ارتباطی را مقایسه کن.",
+      "safety": "مقادیر زاویه و روش کالیبراسیون خودرو-خاص هستند.",
+      "keywords": [
+        "RWS",
+        "4WS",
+        "Rear Steering Actuator"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "AIR-SUS",
+      "title_fa": "تعلیق بادی تطبیقی",
+      "title_en": "Adaptive Air Suspension",
+      "category": "تعلیق هوشمند",
+      "overview": "فنر بادی و کمپرسور ارتفاع خودرو را تنظیم می‌کنند و برخی سیستم‌ها سختی کمک‌فنر را نیز تطبیق می‌دهند.",
+      "architecture": "کیسه هوا، کمپرسور، بلوک شیر، حسگر ارتفاع و ECU تعلیق.",
+      "diagnostic_approach": "نشتی، زمان کار کمپرسور، اختلاف ارتفاع، شیرها و داده زنده حسگرها را بررسی کن.",
+      "safety": "قبل از کار زیر خودرو، روش مهار و حالت جک سازنده اجرا شود.",
+      "keywords": [
+        "Air Suspension",
+        "Ride Height Sensor",
+        "Adaptive Damping"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "ACTIVE-AERO",
+      "title_fa": "آیرودینامیک فعال",
+      "title_en": "Active Aerodynamics",
+      "category": "بدنه و عملکرد",
+      "overview": "اسپویلر متحرک، دریچه فعال جلوپنجره و اجزای متغیر بدنه برای کاهش مقاومت یا افزایش نیروی رو به پایین کنترل می‌شوند.",
+      "architecture": "عملگر برقی/هیدرولیکی، حسگر موقعیت و ECU بدنه یا قوای محرکه.",
+      "diagnostic_approach": "فرمان و موقعیت واقعی عملگر، گیر مکانیکی، تغذیه و خطای شبکه را بررسی کن.",
+      "safety": "قطعات متحرک را هنگام تست از دست و ابزار دور نگه دار.",
+      "keywords": [
+        "Active Grille Shutter",
+        "Active Spoiler",
+        "Drag Coefficient"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "48V",
+      "title_fa": "سامانه برق ۴۸ ولت",
+      "title_en": "48-Volt Mild Hybrid System",
+      "category": "برق و هیبرید",
+      "overview": "شبکه ۴۸ ولت در برخی خودروها برای استارتر-ژنراتور، بازیابی انرژی و بارهای پرمصرف به کار می‌رود و معمولاً با شبکه ۱۲ ولت مبدل DC-DC دارد.",
+      "architecture": "باتری ۴۸ ولت، BSG، مبدل DC-DC، کنترلر و شبکه ۱۲ ولت.",
+      "diagnostic_approach": "وضعیت باتری، کدها، مبدل، اتصالات و روش ایزوله‌سازی اختصاصی را بررسی کن.",
+      "safety": "۴۸ ولت را بی‌خطر فرض نکن؛ روش قطع و ایمن‌سازی سازنده الزامی است.",
+      "keywords": [
+        "48V",
+        "MHEV",
+        "BSG",
+        "DC-DC"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "THERMAL",
+      "title_fa": "مدیریت حرارتی هوشمند",
+      "title_en": "Integrated Thermal Management",
+      "category": "هیبرید و برقی",
+      "overview": "مدارهای خنک‌کاری و گرمایش باتری، موتور، اینورتر و کابین می‌توانند با شیرهای چندراهه و پمپ‌های برقی یکپارچه شوند.",
+      "architecture": "پمپ برقی، شیر چندراهه، حسگر دما، چیلر، رادیاتور و کنترلر حرارتی.",
+      "diagnostic_approach": "دماهای ورودی/خروجی، فرمان پمپ و شیر، هواگیری و خطاهای حسگر را بررسی کن.",
+      "safety": "سیال، فشار و روش هواگیری طبق مشخصات سازنده است.",
+      "keywords": [
+        "Thermal Management",
+        "Coolant Valve",
+        "Chiller"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "HEATPUMP",
+      "title_fa": "پمپ حرارتی کابین",
+      "title_en": "Heat Pump HVAC",
+      "category": "تهویه خودرو برقی",
+      "overview": "پمپ حرارتی با جابه‌جایی گرما می‌تواند مصرف انرژی گرمایش کابین را نسبت به گرم‌کن مقاومتی در شرایط مناسب کاهش دهد.",
+      "architecture": "کمپرسور برقی، شیرهای تغییر مسیر، مبدل‌ها و حسگرهای دما و فشار.",
+      "diagnostic_approach": "داده فشار و دما، فرمان شیرها، عملکرد کمپرسور و نشتی را طبق دستور سازنده بررسی کن.",
+      "safety": "مدار مبرد پرفشار است؛ بازیافت و شارژ با تجهیزات و گاز مجاز انجام شود.",
+      "keywords": [
+        "Heat Pump",
+        "Refrigerant",
+        "Reversing Valve"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "V2L-V2G",
+      "title_fa": "برق‌دهی دوطرفه",
+      "title_en": "Bidirectional Charging: V2L/V2H/V2G",
+      "category": "شارژ و انرژی",
+      "overview": "خودرو یا شارژر سازگار می‌تواند برق را به مصرف‌کننده، ساختمان یا شبکه برگرداند؛ پشتیبانی سخت‌افزاری و مقررات محلی ضروری است.",
+      "architecture": "باتری، اینورتر دوطرفه، OBC، شارژر سازگار و مدیریت انرژی.",
+      "diagnostic_approach": "پروتکل ارتباطی، توان مجاز، خطای ایزولاسیون و سازگاری شارژر را بررسی کن.",
+      "safety": "اتصال به شبکه ساختمان یا برق عمومی فقط با تجهیزات و نصب مجاز؛ خطر برق‌گرفتگی و برگشت انرژی جدی است.",
+      "keywords": [
+        "V2L",
+        "V2H",
+        "V2G",
+        "Bidirectional Charging"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "PRECOND",
+      "title_fa": "پیش‌شرط‌سازی باتری",
+      "title_en": "Battery Preconditioning",
+      "category": "باتری و شارژ",
+      "overview": "خودرو دمای باتری را پیش از شارژ سریع یا رانندگی در شرایط مشخص به محدوده مناسب نزدیک می‌کند.",
+      "architecture": "حسگرهای دما، مدار حرارتی، BMS و ناوبری/مدیریت شارژ.",
+      "diagnostic_approach": "دمای سلول‌ها، درخواست پیش‌گرمایش/سرمایش، توان پمپ و وضعیت شارژ را بررسی کن.",
+      "safety": "دمای مجاز و حدود شارژ فقط از مستندات همان باتری گرفته شود.",
+      "keywords": [
+        "Preconditioning",
+        "Fast Charging",
+        "BMS"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "UWB-KEY",
+      "title_fa": "کلید دیجیتال فوق‌پهن‌باند",
+      "title_en": "Ultra-Wideband Digital Key",
+      "category": "امنیت و دسترسی",
+      "overview": "UWB همراه با اجزای امنیتی می‌تواند فاصله و موقعیت نسبی گوشی/کلید را دقیق‌تر تخمین بزند تا حمله رله دشوارتر شود؛ پیاده‌سازی‌ها متفاوت‌اند.",
+      "architecture": "آنتن‌های UWB، گوشی/کلید سازگار، ماژول امنیتی و BCM.",
+      "diagnostic_approach": "باتری کلید، آنتن‌ها، مجوز گوشی، خطای ارتباط و ثبت کلید را بررسی کن.",
+      "safety": "ثبت کلید فقط با مالکیت و رویه مجاز؛ روش‌های ضدسرقت را دور نزن.",
+      "keywords": [
+        "UWB",
+        "Digital Key",
+        "BLE",
+        "NFC"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "BIOMETRIC",
+      "title_fa": "احراز هویت زیستی",
+      "title_en": "Biometric Vehicle Access",
+      "category": "امنیت و کابین",
+      "overview": "اثر انگشت یا تشخیص چهره در برخی خودروها برای پروفایل راننده، اجازه روشن‌کردن یا تنظیمات شخصی استفاده می‌شود.",
+      "architecture": "حسگر زیستی، واحد امنیتی، BCM و نرم‌افزار پروفایل.",
+      "diagnostic_approach": "کیفیت حسگر، تغذیه، مجوز کاربر و خطاهای ماژول را بررسی کن.",
+      "safety": "داده زیستی حساس است و باید با رضایت و حفاظت حریم خصوصی مدیریت شود.",
+      "keywords": [
+        "Biometric Authentication",
+        "Face Recognition"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "HUD-AR",
+      "title_fa": "نمایشگر سربالای واقعیت افزوده",
+      "title_en": "Augmented Reality Head-Up Display",
+      "category": "نمایش و اطلاعات راننده",
+      "overview": "اطلاعات مسیر یا هشدارها به‌صورت لایه تصویری در میدان دید راننده نمایش داده می‌شوند؛ هم‌ترازی و کالیبراسیون اهمیت دارد.",
+      "architecture": "پروژکتور/نمایشگر، دوربین یا داده موقعیت، واحد گرافیکی و شیشه مناسب.",
+      "diagnostic_approach": "تنظیم تصویر، کدهای نمایشگر، نسخه نرم‌افزار و کالیبراسیون را بررسی کن.",
+      "safety": "نمایشگر نباید حواس‌پرتی ایجاد کند؛ تنظیمات مطابق راهنمای خودرو باشد.",
+      "keywords": [
+        "AR-HUD",
+        "Head-Up Display",
+        "Combiner"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "LIDAR",
+      "title_fa": "لیدار و رادار تصویری",
+      "title_en": "LiDAR & Imaging Radar",
+      "category": "حسگرهای ادراک محیط",
+      "overview": "لیدار با اندازه‌گیری زمان رفت‌وبرگشت نور فاصله را تخمین می‌زند؛ رادار تصویری اطلاعات زاویه و فاصله با تفکیک بالاتر فراهم می‌کند. همه خودروها این حسگرها را ندارند.",
+      "architecture": "حسگر لیدار/رادار، شبکه پرسرعت، پردازنده ادراک و پایه نصب دقیق.",
+      "diagnostic_approach": "تمیزی، آسیب سطح، موقعیت نصب، DTC و کالیبراسیون هدفمند را بررسی کن.",
+      "safety": "تست و کالیبراسیون حسگرهای ایمنی فقط طبق روش سازنده انجام شود.",
+      "keywords": [
+        "LiDAR",
+        "Imaging Radar",
+        "Point Cloud",
+        "Sensor Fusion"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "PARK-REMOTE",
+      "title_fa": "پارک خودکار و کنترل از راه دور",
+      "title_en": "Automated & Remote Parking",
+      "category": "پارک هوشمند",
+      "overview": "خودرو با حسگرهای اطراف و کنترل فرمان/ترمز/حرکت می‌تواند پارک را انجام دهد؛ کنترل از راه دور به شرایط و محدودیت‌های ایمنی وابسته است.",
+      "architecture": "دوربین، اولتراسونیک، رادار، ECU پارک و ارتباط گوشی.",
+      "diagnostic_approach": "کالیبراسیون حسگرها، ترمز، فرمان، ارتباط و شرایط فعال‌سازی را بررسی کن.",
+      "safety": "محیط باید امن و قابل مشاهده باشد؛ کاربر باید آماده توقف فوری باشد.",
+      "keywords": [
+        "APA",
+        "RPA",
+        "Ultrasonic Sensor",
+        "Parking ECU"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "E-CALL",
+      "title_fa": "تماس اضطراری خودکار",
+      "title_en": "Emergency Call System",
+      "category": "ایمنی و ارتباط",
+      "overview": "پس از تصادف شدید یا فعال‌سازی دستی، سامانه می‌تواند موقعیت و اطلاعات لازم را به مرکز امداد منتقل کند؛ استاندارد و دسترس‌پذیری منطقه‌ای متفاوت است.",
+      "architecture": "واحد مخابراتی، GNSS، میکروفون/بلندگو، حسگر تصادف و باتری پشتیبان.",
+      "diagnostic_approach": "وضعیت شبکه، آنتن، باتری پشتیبان، DTC و تست مجاز را بررسی کن.",
+      "safety": "تماس آزمایشی فقط با رویه مجاز و بدون اشغال بی‌مورد مراکز امداد انجام شود.",
+      "keywords": [
+        "eCall",
+        "SOS",
+        "GNSS",
+        "Telematics"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "CYBER",
+      "title_fa": "امنیت سایبری خودرو",
+      "title_en": "Automotive Cybersecurity",
+      "category": "امنیت نرم‌افزار",
+      "overview": "امنیت سایبری از طراحی، احراز هویت ماژول‌ها، به‌روزرسانی امن، مدیریت کلید و پایش رخدادها تشکیل می‌شود.",
+      "architecture": "Secure Boot، HSM، Gateway امن، امضای نرم‌افزار و مدیریت کلید.",
+      "diagnostic_approach": "نسخه نرم‌افزار، گزارش امنیتی، اعتبار بسته و خطاهای دسترسی را با ابزار مجاز بررسی کن.",
+      "safety": "آموزش فقط دفاعی و مجاز؛ دورزدن قفل‌ها یا دسترسی بدون اجازه آموزش داده نمی‌شود.",
+      "keywords": [
+        "Secure Boot",
+        "HSM",
+        "IDS",
+        "Secure Gateway"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    },
+    {
+      "id": "SOLID",
+      "title_fa": "باتری حالت جامد؛ فناوری نوظهور",
+      "title_en": "Solid-State Battery (Emerging)",
+      "category": "فناوری آینده",
+      "overview": "باتری حالت جامد از الکترولیت جامد استفاده می‌کند و در حال توسعه و تجاری‌سازی تدریجی است؛ مشخصات و زمان عرضه به سازنده وابسته است و نباید آن را قابلیت عمومی خودروهای امروز دانست.",
+      "architecture": "سلول‌های آزمایشی/تجاری خاص، BMS و معماری پک متناسب با شیمی باتری.",
+      "diagnostic_approach": "مفاهیم چگالی انرژی، رابط الکترولیت، چرخه عمر و ایمنی را مطالعه کن؛ داده تعمیراتی عمومی فرض نکن.",
+      "safety": "این مبحث آموزشی/آینده‌نگر است؛ دستورالعمل سرویس پک‌های واقعی فقط از سازنده.",
+      "keywords": [
+        "Solid-State Battery",
+        "Electrolyte",
+        "Energy Density"
+      ],
+      "level": "مقدماتی تا پیشرفته",
+      "verification_status": "needs_review",
+      "vehicle_specific": false
+    }
+  ]
+}
