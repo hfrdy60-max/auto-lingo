@@ -12,7 +12,7 @@
 <body>
 <header class="topbar">
  <a class="brand" href="#" id="homeLink"><span class="brand-mark">AL<span>✦</span></span><span class="brand-name">AUTO <b>LINGO</b><small>زبان تخصصی خودرو</small></span></a>
- <nav class="main-nav"><a href="#placement">تعیین سطح</a><a href="#paths">مسیرهای یادگیری</a><a href="#myProgress">پیشرفت من</a><a href="#dictionary">واژه‌نامه</a><a href="#how">روش یادگیری</a></nav>
+ <nav class="main-nav"><a href="#placement">تعیین سطح</a><a href="#paths">مسیرهای یادگیری</a><a href="#myProgress">پیشرفت من</a><a href="#technicalAcademy">آموزش فنی</a><a href="#smartReview">مرور هوشمند</a><a href="#dictionary">واژه‌نامه</a><a href="#how">روش یادگیری</a></nav>
  <div class="top-actions"><span class="edition">LEARN • PRACTICE • MASTER</span><button class="mobile-menu" id="mobileMenu" aria-label="باز کردن منو">☰</button></div>
 </header>
 <main>
@@ -49,6 +49,16 @@
  <div class="progress-panel"><div><span>پیشرفت این مسیر</span><strong id="progressText">۰٪</strong></div><div class="progress-track"><i id="progressBar"></i></div></div>
  <div class="lesson-list" id="lessonList"></div>
 </section>
+
+<section class="section academy-section" id="technicalAcademy">
+ <div class="section-title"><div><span class="eyebrow">AUTOMOTIVE SYSTEMS ACADEMY</span><h2>آموزش تخصصی سیستم‌های خودرو</h2><p>از شناخت قطعه و نحوه عملکرد تا سنسورها، کنترلرها، دیاگ و فناوری‌های خودروهای جدید.</p></div><span class="section-index">TECHNICAL SCHOOL</span></div>
+ <div class="academy-intro"><b>مسیر آموزش فنی</b><span>هر فصل شامل توضیح ساده، نقشه عملکرد، اصطلاحات انگلیسی، نکات عیب‌یابی و آزمون است. محتوای فنی آموزشی است و جایگزین دستورالعمل تعمیر سازنده نیست.</span></div>
+ <div class="academy-tabs" id="academyTabs"></div><div id="academyContent" class="academy-content"></div>
+</section>
+<section class="section review-section" id="smartReview">
+ <div class="section-title"><div><span class="eyebrow">SPACED REPETITION</span><h2>مرور هوشمند لغات</h2><p>واژه‌هایی که اشتباه می‌کنی زودتر و واژه‌هایی که بلدی با فاصله بیشتر مرور می‌شوند.</p></div><span class="section-index">SMART REVIEW</span></div>
+ <div class="review-card"><div id="reviewSummary"></div><div id="reviewQuestion"></div><button class="btn btn-primary" id="startReview">شروع مرور امروز ←</button></div>
+</section>
 <section class="section dictionary-section" id="dictionary">
  <div class="section-title"><div><span class="eyebrow">AUTOMOTIVE VOCABULARY</span><h2>واژه‌نامه تخصصی</h2><p>اصطلاحات را به انگلیسی یا فارسی جست‌وجو کن.</p></div><span class="section-index">02 / DICTIONARY</span></div>
  <div class="dictionary-box"><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="مثلاً پیستون یا Piston ..."><kbd>جست‌وجو</kbd></label><div class="filter-row" id="filters"></div><div class="term-grid" id="termGrid"></div><p class="empty hidden" id="emptyState">موردی پیدا نشد. عبارت دیگری را امتحان کن.</p></div>
@@ -60,5 +70,5 @@
 </main>
 <footer><a class="brand" href="#"><span class="brand-mark">AL<span>✦</span></span><span class="brand-name">AUTO <b>LINGO</b><small>زبان تخصصی خودرو</small></span></a><p>یادگیری زبان فنی خودرو، قدم‌به‌قدم.</p><span class="footer-note">نسخه آموزشی اولیه • ۲۰۲۶</span></footer>
 <div class="modal hidden" id="lessonModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" id="modalBackdrop"></div><article class="lesson-modal"><button class="modal-close" id="modalClose" aria-label="بستن">×</button><div id="modalContent"></div></article></div>
-<script src="app.js"></script>
+<script src="app.js"></script><script src="academy.js"></script>
 </body></html>
