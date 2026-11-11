@@ -97,3 +97,11 @@
 - Main destinations: Home, Learning Courses, Dictionary, Practice & Tests, and My Progress. On mobile, navigation becomes a fixed five-item bottom dock.
 - Content is grouped into separate page views so the learner no longer has to scroll through the entire product as one long landing page. Existing learning components and their IDs are retained.
 - This is a UI/navigation restructuring; the new JSON content packages still require separate data QA and integration.
+
+
+## Stage 9 — Central data organization and image crosswalk (2026-11-12)
+- Added `DATA_CATALOG.md` as the central index of current datasets, canonical ID namespaces, QA states, known gaps, source policy and execution order.
+- Added `data/mappings/parts_image_crosswalk.json` with all 164 image-manifest entries. 35 have exact English-name candidate matches to canonical PART IDs; 129 remain unmatched. Every row remains `needs_review`; no ID was overwritten and no unmatched record was fabricated.
+- Confirmed `data/parts_batch_02.json` and root `parts_batch_02.json` contain the same 20 PART IDs but differ in fields: category_id and safety_notes differ in all 20 records; images also differ in 4 records. Keep both until an explicit version reconciliation; the corrected data/ copy is the current preferred review candidate based on prior QA notes, not a verified final release.
+- Confirmed current repository contains 41 terms in `terms_batch_01.json`; `terms_batch_02.json` was not found in root or data. Do not generate more TERM IDs until the discrepancy is resolved.
+- External source links in the catalog are research starting points only. No technical record was promoted to verified in this stage.
