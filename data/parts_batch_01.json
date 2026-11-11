@@ -1,0 +1,840 @@
+{
+  "dataset": "AUTO LINGO Parts Database",
+  "batch_id": "PARTS-BATCH-001",
+  "schema_version": "1.0.0",
+  "id_range": "PART-000001..PART-000015",
+  "record_count": 15,
+  "scope": "Generic educational descriptions only; vehicle-specific procedures and specifications must be sourced separately.",
+  "verification_policy": "All records are needs_review. Source candidates are discovery starting points, not evidence that each claim has been verified. Do not promote to verified until a specific supporting document and relevant passage are recorded in entity_sources.",
+  "records": [
+    {
+      "id": "PART-000001",
+      "name_en": "Air Filter",
+      "name_fa": "فیلتر هوا",
+      "pronunciation_fa": "اِر فیلتر",
+      "ipa": "/ˈeər ˌfɪltər/",
+      "description": "A replaceable filter element that removes airborne particles from intake air before it enters the engine.",
+      "main_function": "Reduce dust and abrasive contaminants entering the intake and cylinders while allowing the required airflow.",
+      "installation_location": "Usually inside an air-filter housing in the engine intake path; exact position varies by vehicle.",
+      "working_principle": "Intake air passes through porous filter media. Particles are retained by the media while cleaned air continues toward the throttle body or compressor.",
+      "internal_components": [
+        "Filter media",
+        "Support frame or pleats",
+        "Sealing gasket or perimeter seal"
+      ],
+      "common_failures": [
+        "Restriction from accumulated dust",
+        "Torn or incorrectly seated filter media",
+        "Damaged housing seal"
+      ],
+      "failure_symptoms": [
+        "Reduced airflow under high demand",
+        "Possible reduced performance or increased fuel consumption when severely restricted",
+        "Dust traces downstream may indicate sealing or filter damage"
+      ],
+      "testing_methods": [
+        "Inspect media and sealing surfaces",
+        "Check the housing is correctly closed",
+        "If restriction is suspected, use the vehicle manufacturer's specified inspection or pressure-drop procedure"
+      ],
+      "required_tools": [
+        "Inspection light",
+        "Basic hand tools if housing access requires them"
+      ],
+      "category_id": "CAT-25",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MANN-FILTER",
+          "title": "Filter product and technical information",
+          "url": "https://www.mann-filter.com/"
+        },
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Automotive filtration and air supply information",
+          "url": "https://www.bosch-mobility.com/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000002",
+      "name_en": "Oil Filter",
+      "name_fa": "فیلتر روغن",
+      "pronunciation_fa": "اویل فیلتر",
+      "ipa": "/ˈɔɪl ˌfɪltər/",
+      "description": "A filter in the engine lubrication circuit that removes contaminants suspended in circulating engine oil.",
+      "main_function": "Limit abrasive particles and contaminants circulating through lubricated engine components.",
+      "installation_location": "In the engine oil circuit; may be a spin-on canister or a replaceable cartridge inside a housing.",
+      "working_principle": "Oil flows through filter media. Many designs include bypass and anti-drainback functions, but their presence and arrangement depend on the filter and engine design.",
+      "internal_components": [
+        "Filter media",
+        "Housing or cartridge support",
+        "End caps and center tube where applicable",
+        "Bypass valve where fitted",
+        "Anti-drainback valve where fitted"
+      ],
+      "common_failures": [
+        "Media blockage",
+        "Seal leakage or incorrect installation",
+        "Wrong filter specification",
+        "Internal bypass valve malfunction"
+      ],
+      "failure_symptoms": [
+        "External oil leakage",
+        "Oil-pressure warning may occur in some fault conditions but is not proof of filter failure",
+        "Contaminated oil or abnormal service findings"
+      ],
+      "testing_methods": [
+        "Inspect for leaks and correct fitment",
+        "Verify part number and application",
+        "Follow manufacturer oil-pressure and filter inspection procedures"
+      ],
+      "required_tools": [
+        "Oil-filter wrench appropriate to design",
+        "Drain pan",
+        "Torque wrench when specified"
+      ],
+      "category_id": "CAT-15",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MANN-FILTER",
+          "title": "Oil filter technical information",
+          "url": "https://www.mann-filter.com/"
+        },
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Filtration technology",
+          "url": "https://www.bosch-mobility.com/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000003",
+      "name_en": "Fuel Injector",
+      "name_fa": "انژکتور سوخت",
+      "pronunciation_fa": "فیول اینجِکتِر",
+      "ipa": "/ˈfjuːəl ɪnˈdʒektər/",
+      "description": "An electronically or hydraulically controlled metering device that delivers fuel into an intake port or directly into a combustion chamber, depending on injection architecture.",
+      "main_function": "Meter and deliver fuel in a controlled quantity and spray pattern at the required time.",
+      "installation_location": "Port injectors are mounted in the intake manifold or cylinder head near intake ports; direct injectors are installed in the cylinder head and enter the combustion chamber.",
+      "working_principle": "An actuator opens a precision valve for a commanded interval. Fuel pressure, injector flow characteristics, temperature, fuel properties and control strategy affect delivered quantity.",
+      "internal_components": [
+        "Injector body",
+        "Inlet filter or screen where fitted",
+        "Solenoid or piezoelectric actuator depending on design",
+        "Control valve and needle/nozzle assembly",
+        "Electrical connector"
+      ],
+      "common_failures": [
+        "Deposits or nozzle restriction",
+        "Internal leakage",
+        "Electrical open or short circuit",
+        "Poor spray pattern",
+        "Seal damage"
+      ],
+      "failure_symptoms": [
+        "Misfire or rough running",
+        "Hard starting",
+        "Fuel-trim deviations",
+        "Poor fuel economy or emissions",
+        "Fuel odor or leakage in relevant failure modes"
+      ],
+      "testing_methods": [
+        "Read DTCs and relevant live data",
+        "Perform electrical checks using the correct wiring diagram and specified method",
+        "Use approved balance, leak, or flow testing equipment appropriate to injector type",
+        "Observe high-pressure fuel safety procedures for GDI and diesel common-rail systems"
+      ],
+      "required_tools": [
+        "Scan tool",
+        "Digital multimeter",
+        "Approved injector test equipment",
+        "Vehicle-specific service information"
+      ],
+      "category_id": "CAT-02",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Gasoline and diesel injection systems",
+          "url": "https://www.bosch-mobility.com/"
+        },
+        {
+          "publisher": "DENSO",
+          "title": "Fuel injection technology",
+          "url": "https://www.denso.com/global/en/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000004",
+      "name_en": "Fuel Pump",
+      "name_fa": "پمپ سوخت",
+      "pronunciation_fa": "فیول پامپ",
+      "ipa": "/ˈfjuːəl pʌmp/",
+      "description": "A pump that moves fuel from the tank or a low-pressure supply stage toward the engine fuel system.",
+      "main_function": "Provide the fuel flow and pressure required by the applicable fuel-delivery architecture.",
+      "installation_location": "May be inside or near the fuel tank; high-pressure pumps in direct-injection systems are commonly engine-mounted. Layout varies by design.",
+      "working_principle": "An electric or mechanically driven pumping element raises fuel pressure. Some systems use staged low- and high-pressure pumps with electronic control.",
+      "internal_components": [
+        "Electric motor or mechanical drive",
+        "Pumping element",
+        "Inlet strainer where fitted",
+        "Check or pressure-control components depending on design",
+        "Electrical or mechanical interfaces"
+      ],
+      "common_failures": [
+        "Worn pumping element",
+        "Electrical supply or ground fault",
+        "Restricted inlet strainer or fuel filter",
+        "Leakage",
+        "Control-module or relay fault"
+      ],
+      "failure_symptoms": [
+        "Extended cranking or no-start",
+        "Loss of power under load",
+        "Fuel-pressure fault codes",
+        "Abnormal pump noise"
+      ],
+      "testing_methods": [
+        "Check applicable DTCs and commanded/actual pressure data",
+        "Verify power, ground and control using the correct wiring diagram",
+        "Measure pressure or flow only with equipment and procedures approved for that system"
+      ],
+      "required_tools": [
+        "Scan tool",
+        "Digital multimeter",
+        "Fuel-pressure test equipment rated for the system"
+      ],
+      "category_id": "CAT-02",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Fuel supply systems",
+          "url": "https://www.bosch-mobility.com/"
+        },
+        {
+          "publisher": "DENSO",
+          "title": "Fuel pump technology",
+          "url": "https://www.denso.com/global/en/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000005",
+      "name_en": "Throttle Body",
+      "name_fa": "دریچه گاز",
+      "pronunciation_fa": "ثِراتِل بادی",
+      "ipa": "/ˈθrɒtəl ˌbɒdi/",
+      "description": "An intake-air control assembly containing a throttle plate that regulates airflow in many spark-ignition engines.",
+      "main_function": "Control intake airflow in response to driver demand and engine-management commands.",
+      "installation_location": "Usually between the air-intake duct and intake manifold, though layouts vary.",
+      "working_principle": "The throttle plate rotates to change the effective airflow area. Electronic throttle bodies use an electric motor and position feedback; older designs may use a cable.",
+      "internal_components": [
+        "Throttle housing",
+        "Throttle plate and shaft",
+        "Electric actuator on electronic designs",
+        "Throttle-position sensors on applicable designs",
+        "Return spring and gears where fitted"
+      ],
+      "common_failures": [
+        "Carbon deposits or contamination",
+        "Actuator or gear wear",
+        "Position-sensor disagreement",
+        "Connector or wiring fault"
+      ],
+      "failure_symptoms": [
+        "Unstable idle",
+        "Reduced-power or limp mode",
+        "Delayed or inconsistent throttle response",
+        "Throttle-related DTCs"
+      ],
+      "testing_methods": [
+        "Inspect intake ducting and throttle plate according to service procedure",
+        "Compare commanded and actual throttle position with scan data",
+        "Perform electrical checks using vehicle-specific specifications",
+        "Use manufacturer-prescribed relearn procedures when required"
+      ],
+      "required_tools": [
+        "Scan tool with suitable data and service functions",
+        "Digital multimeter",
+        "Approved cleaning materials if cleaning is permitted"
+      ],
+      "category_id": "CAT-06",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Gasoline engine management",
+          "url": "https://www.bosch-mobility.com/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000006",
+      "name_en": "Spark Plug",
+      "name_fa": "شمع موتور",
+      "pronunciation_fa": "اِسپارک پلاگ",
+      "ipa": "/ˈspɑːrk plʌɡ/",
+      "description": "An insulated electrode assembly that creates an electrical spark inside a spark-ignition engine combustion chamber.",
+      "main_function": "Initiate combustion by producing a spark across the electrode gap at the commanded ignition timing.",
+      "installation_location": "Threaded into the cylinder head with the electrodes exposed to the combustion chamber.",
+      "working_principle": "The ignition system raises voltage sufficiently to ionize the gap and create a spark. Required plug design and gap depend on engine specification.",
+      "internal_components": [
+        "Center electrode",
+        "Ground electrode",
+        "Ceramic insulator",
+        "Metal shell",
+        "Sealing washer or tapered seat"
+      ],
+      "common_failures": [
+        "Electrode wear",
+        "Carbon or oil fouling",
+        "Insulator cracking",
+        "Incorrect plug type or gap",
+        "Overheating damage"
+      ],
+      "failure_symptoms": [
+        "Misfire",
+        "Hard starting",
+        "Rough idle",
+        "Reduced performance"
+      ],
+      "testing_methods": [
+        "Inspect plug condition and deposits using service guidance",
+        "Check correct part number and specified gap where adjustable",
+        "Use appropriate ignition diagnosis; do not infer coil failure from plug appearance alone"
+      ],
+      "required_tools": [
+        "Spark-plug socket",
+        "Torque wrench",
+        "Feeler gauge only where the design permits gap measurement or adjustment"
+      ],
+      "category_id": "CAT-03",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "NGK NTK",
+          "title": "Spark plug technical information",
+          "url": "https://www.ngkntk.com/"
+        },
+        {
+          "publisher": "DENSO",
+          "title": "Spark plug technology",
+          "url": "https://www.denso.com/global/en/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000007",
+      "name_en": "Ignition Coil",
+      "name_fa": "کویل جرقه‌زنی",
+      "pronunciation_fa": "ایگنیشن کویل",
+      "ipa": "/ɪɡˈnɪʃən kɔɪl/",
+      "description": "An inductive ignition component that stores energy in a magnetic field and generates the high voltage needed to fire a spark plug.",
+      "main_function": "Transform the ignition system's low-voltage supply into a high-voltage output for spark generation.",
+      "installation_location": "May be mounted remotely, in a coil pack, or directly above an individual spark plug.",
+      "working_principle": "Current through the primary winding builds a magnetic field. When primary current is switched off by the ignition driver, the collapsing field induces high voltage in the secondary winding.",
+      "internal_components": [
+        "Primary winding",
+        "Secondary winding",
+        "Magnetic core",
+        "Insulation and housing",
+        "Electrical connector"
+      ],
+      "common_failures": [
+        "Winding insulation breakdown",
+        "Internal short or open circuit",
+        "Boot or terminal tracking",
+        "Connector or driver-circuit fault"
+      ],
+      "failure_symptoms": [
+        "Intermittent or cylinder-specific misfire",
+        "Misfire under load",
+        "Ignition-related DTCs"
+      ],
+      "testing_methods": [
+        "Use scan data and misfire counters where available",
+        "Inspect coil, boot and plug well",
+        "Perform approved primary/secondary circuit tests; resistance alone may not identify all modern coil faults",
+        "Use an oscilloscope or approved tester where appropriate"
+      ],
+      "required_tools": [
+        "Scan tool",
+        "Digital multimeter",
+        "Automotive oscilloscope or ignition tester where appropriate"
+      ],
+      "category_id": "CAT-03",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Ignition systems",
+          "url": "https://www.bosch-mobility.com/"
+        },
+        {
+          "publisher": "NGK NTK",
+          "title": "Ignition coil technical information",
+          "url": "https://www.ngkntk.com/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000008",
+      "name_en": "Mass Air Flow Sensor",
+      "name_fa": "سنسور جرم هوای ورودی (MAF)",
+      "pronunciation_fa": "مَس اِر فلو سِنسِر",
+      "ipa": "/mæs eər floʊ ˈsensər/",
+      "description": "A sensor that measures the mass flow rate of air entering an engine on systems that use MAF-based load calculation.",
+      "main_function": "Provide the engine controller with an air-mass measurement used for fuel and torque management.",
+      "installation_location": "Typically installed in the intake duct between the air filter and throttle body or turbocharger, depending on layout.",
+      "working_principle": "Common hot-film or hot-wire designs measure the electrical energy needed to maintain a sensing element at a controlled temperature as intake air flows past it.",
+      "internal_components": [
+        "Sensing element",
+        "Electronic signal-conditioning circuit",
+        "Housing and airflow passage",
+        "Electrical connector"
+      ],
+      "common_failures": [
+        "Contamination of sensing element",
+        "Air leaks downstream of sensor",
+        "Power, ground or signal circuit fault",
+        "Incorrect sensor installation or airflow disturbance"
+      ],
+      "failure_symptoms": [
+        "Poor drivability",
+        "Fuel-trim abnormalities",
+        "Hesitation or reduced power",
+        "MAF-related DTCs"
+      ],
+      "testing_methods": [
+        "Check DTCs, freeze-frame and fuel trims",
+        "Inspect air filter, ducting and clamps for leaks",
+        "Compare MAF data with engine speed/load and manufacturer reference information",
+        "Check supply, ground and signal according to wiring diagram"
+      ],
+      "required_tools": [
+        "Scan tool with live data",
+        "Digital multimeter",
+        "Smoke tester for intake leaks where appropriate"
+      ],
+      "category_id": "CAT-07",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Air management and sensor technology",
+          "url": "https://www.bosch-mobility.com/"
+        },
+        {
+          "publisher": "DENSO",
+          "title": "Air flow sensor technology",
+          "url": "https://www.denso.com/global/en/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000009",
+      "name_en": "Manifold Absolute Pressure Sensor",
+      "name_fa": "سنسور فشار مطلق منیفولد (MAP)",
+      "pronunciation_fa": "مَنیفولد اَبْسولوت پِرِشِر سِنسِر",
+      "ipa": "/ˈmænɪfoʊld ˈæbsəluːt ˈpreʃər ˈsensər/",
+      "description": "A pressure sensor that measures absolute pressure in the intake manifold or a connected pressure passage.",
+      "main_function": "Supply manifold-pressure information for engine load estimation and control strategies.",
+      "installation_location": "Mounted on the intake manifold or connected by a pressure passage or hose, depending on design.",
+      "working_principle": "A pressure-sensitive element changes an electrical characteristic; integrated electronics condition the signal for the engine controller.",
+      "internal_components": [
+        "Pressure-sensing element",
+        "Signal-conditioning electronics",
+        "Pressure port",
+        "Electrical connector"
+      ],
+      "common_failures": [
+        "Blocked or contaminated pressure port",
+        "Sensor drift or internal failure",
+        "Reference, ground or signal wiring fault",
+        "Leak or damaged pressure hose where fitted"
+      ],
+      "failure_symptoms": [
+        "Unstable running",
+        "Incorrect calculated engine load",
+        "Poor acceleration",
+        "MAP-related DTCs"
+      ],
+      "testing_methods": [
+        "Compare key-on/engine-off pressure data with local atmospheric pressure using appropriate context",
+        "Check running data against manufacturer specifications",
+        "Inspect pressure port or hose",
+        "Test reference, ground and signal using the correct wiring diagram"
+      ],
+      "required_tools": [
+        "Scan tool",
+        "Digital multimeter",
+        "Hand vacuum/pressure source only if approved for the sensor"
+      ],
+      "category_id": "CAT-07",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Pressure sensor technology",
+          "url": "https://www.bosch-mobility.com/"
+        },
+        {
+          "publisher": "HELLA Tech World",
+          "title": "MAP sensor technical information",
+          "url": "https://www.hella.com/techworld/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000010",
+      "name_en": "Crankshaft Position Sensor",
+      "name_fa": "سنسور موقعیت میل‌لنگ",
+      "pronunciation_fa": "کرَنك‌شَفت پوزیشن سِنسِر",
+      "ipa": "/ˈkræŋkʃæft pəˈzɪʃən ˈsensər/",
+      "description": "A sensor that detects crankshaft position and rotational speed from a trigger wheel or target feature.",
+      "main_function": "Provide crank angle and engine-speed information required for ignition, injection and engine synchronization.",
+      "installation_location": "Usually positioned near the crankshaft reluctor or trigger wheel, often at the block, bellhousing or front cover.",
+      "working_principle": "May use an inductive variable-reluctance element or a Hall-effect/magnetoresistive design. Signal form and biasing depend on sensor type and ECU input circuit.",
+      "internal_components": [
+        "Sensing element",
+        "Magnetic core or semiconductor element depending on design",
+        "Housing",
+        "Electrical connector"
+      ],
+      "common_failures": [
+        "Sensor internal failure",
+        "Excessive or incorrect air gap",
+        "Damaged trigger wheel",
+        "Metal debris or contamination",
+        "Harness damage or poor connection"
+      ],
+      "failure_symptoms": [
+        "Crank-no-start",
+        "Stalling",
+        "Intermittent loss of RPM signal",
+        "Synchronization or crank-sensor DTCs"
+      ],
+      "testing_methods": [
+        "Check scan-tool engine-speed and synchronization data while cranking",
+        "Inspect sensor mounting, target wheel and harness",
+        "Identify sensor type before electrical testing",
+        "Capture waveform using an oscilloscope and compare with vehicle-specific reference"
+      ],
+      "required_tools": [
+        "Scan tool",
+        "Digital multimeter",
+        "Automotive oscilloscope",
+        "Vehicle-specific wiring and waveform information"
+      ],
+      "category_id": "CAT-07",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Crankshaft sensor technical information",
+          "url": "https://www.hella.com/techworld/"
+        },
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Engine speed and position sensing",
+          "url": "https://www.bosch-mobility.com/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000011",
+      "name_en": "Camshaft Position Sensor",
+      "name_fa": "سنسور موقعیت میل‌سوپاپ",
+      "pronunciation_fa": "کَم‌شَفت پوزیشن سِنسِر",
+      "ipa": "/ˈkæmʃæft pəˈzɪʃən ˈsensər/",
+      "description": "A sensor that reports camshaft phase or position so the engine controller can determine cylinder phase and manage synchronization and variable valve timing.",
+      "main_function": "Support engine synchronization, sequential injection and camshaft control strategies.",
+      "installation_location": "Mounted near a camshaft target, cylinder head or timing cover depending on engine design.",
+      "working_principle": "Common designs use Hall-effect or magnetoresistive sensing; some older designs use inductive technology. The ECU interprets the signal relative to crankshaft position.",
+      "internal_components": [
+        "Sensing element",
+        "Signal-conditioning electronics where applicable",
+        "Housing and target interface",
+        "Electrical connector"
+      ],
+      "common_failures": [
+        "Sensor failure",
+        "Damaged target or reluctor",
+        "Harness or connector fault",
+        "Timing-chain/belt or cam-phaser problem causing correlation error"
+      ],
+      "failure_symptoms": [
+        "Extended starting",
+        "Rough running or reduced performance",
+        "Synchronization or cam/crank correlation DTCs"
+      ],
+      "testing_methods": [
+        "Review cam/crank synchronization data",
+        "Inspect connector and mechanical timing evidence",
+        "Capture waveform and compare cam-to-crank correlation with manufacturer reference",
+        "Do not replace the sensor solely because a correlation code is present"
+      ],
+      "required_tools": [
+        "Scan tool",
+        "Digital multimeter",
+        "Automotive oscilloscope",
+        "Vehicle-specific service information"
+      ],
+      "category_id": "CAT-07",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Camshaft sensor technical information",
+          "url": "https://www.hella.com/techworld/"
+        },
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Engine management sensors",
+          "url": "https://www.bosch-mobility.com/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000012",
+      "name_en": "Engine Coolant Temperature Sensor",
+      "name_fa": "سنسور دمای مایع خنک‌کننده موتور",
+      "pronunciation_fa": "اِنجین کولَنت تِمپِرِچِر سِنسِر",
+      "ipa": "/ˈendʒɪn ˈkuːlənt ˈtempərətʃər ˈsensər/",
+      "description": "A temperature sensor used by the engine controller or other modules to monitor coolant temperature.",
+      "main_function": "Provide temperature information for cold-start fueling, fan strategy, thermal protection and instrument display, depending on system architecture.",
+      "installation_location": "Typically installed in a coolant passage, cylinder head, thermostat housing or coolant outlet.",
+      "working_principle": "Many automotive coolant sensors use an NTC thermistor whose resistance decreases as temperature rises; exact calibration and circuit design are application-specific.",
+      "internal_components": [
+        "NTC thermistor in common designs",
+        "Protective metal or polymer housing",
+        "Electrical connector and seal"
+      ],
+      "common_failures": [
+        "Thermistor drift or open/short circuit",
+        "Coolant intrusion into connector",
+        "Corroded terminals",
+        "Wiring fault"
+      ],
+      "failure_symptoms": [
+        "Implausible temperature reading",
+        "Incorrect cold-start behavior",
+        "Cooling-fan control issues",
+        "Temperature-related DTCs"
+      ],
+      "testing_methods": [
+        "Compare cold-soak scan data with ambient conditions",
+        "Monitor warm-up trend for plausibility",
+        "Test resistance or signal only against the correct sensor specification",
+        "Inspect connector and coolant leakage"
+      ],
+      "required_tools": [
+        "Scan tool",
+        "Digital multimeter",
+        "Temperature reference instrument where appropriate"
+      ],
+      "category_id": "CAT-07",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Coolant temperature sensor technical information",
+          "url": "https://www.hella.com/techworld/"
+        },
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Temperature sensor technology",
+          "url": "https://www.bosch-mobility.com/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000013",
+      "name_en": "Thermostat",
+      "name_fa": "ترموستات موتور",
+      "pronunciation_fa": "ثِرمُستَت",
+      "ipa": "/ˈθɜːrməstæt/",
+      "description": "A temperature-responsive valve that regulates coolant flow between engine and radiator circuits to help manage engine operating temperature.",
+      "main_function": "Control coolant circulation through the radiator according to thermal conditions.",
+      "installation_location": "Usually located in a housing at an engine coolant outlet or within an integrated coolant module.",
+      "working_principle": "A conventional wax-element thermostat expands with temperature and moves a valve. Electronically controlled or mapped thermostats may use an additional heater or actuator.",
+      "internal_components": [
+        "Valve and seat",
+        "Wax element in conventional designs",
+        "Return spring",
+        "Housing and seal",
+        "Electrical heater/actuator on controlled designs"
+      ],
+      "common_failures": [
+        "Stuck open",
+        "Stuck closed",
+        "Slow or incorrect opening",
+        "Seal leakage",
+        "Electrical control fault on mapped designs"
+      ],
+      "failure_symptoms": [
+        "Slow warm-up or low operating temperature",
+        "Overheating if coolant flow is restricted",
+        "Temperature fluctuation"
+      ],
+      "testing_methods": [
+        "Assess warm-up behavior using scan data",
+        "Check radiator hose temperature patterns only as a supporting observation",
+        "Follow manufacturer procedure for removal and bench testing where specified",
+        "Never open a hot pressurized cooling system"
+      ],
+      "required_tools": [
+        "Scan tool",
+        "Cooling-system pressure tester where applicable",
+        "Basic hand tools",
+        "Coolant service equipment"
+      ],
+      "category_id": "CAT-14",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Thermostat technical information",
+          "url": "https://www.hella.com/techworld/"
+        },
+        {
+          "publisher": "MAHLE",
+          "title": "Thermal management products and technical information",
+          "url": "https://www.mahle.com/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000014",
+      "name_en": "Radiator",
+      "name_fa": "رادیاتور",
+      "pronunciation_fa": "رِیدیِیتِر",
+      "ipa": "/ˈreɪdieɪtər/",
+      "description": "A heat exchanger that transfers heat from engine coolant to ambient air in liquid-cooled vehicles.",
+      "main_function": "Reject heat from coolant to help maintain the engine within its designed thermal operating range.",
+      "installation_location": "Usually mounted at the front of the vehicle behind the grille, though packaging varies.",
+      "working_principle": "Hot coolant flows through tubes and fins. Airflow across the finned core removes heat; airflow may be provided by vehicle motion and cooling fans.",
+      "internal_components": [
+        "Core tubes",
+        "Cooling fins",
+        "Side tanks or end chambers",
+        "Inlet and outlet connections",
+        "Mounting points"
+      ],
+      "common_failures": [
+        "External leaks",
+        "Internal blockage or restricted flow",
+        "Damaged or contaminated fins",
+        "Corrosion",
+        "Cap or hose interface problems"
+      ],
+      "failure_symptoms": [
+        "Overheating",
+        "Coolant loss",
+        "Visible leakage",
+        "Poor cooling performance"
+      ],
+      "testing_methods": [
+        "Inspect coolant level only when safe and cold",
+        "Pressure-test using the specified procedure and cap rating",
+        "Inspect airflow path and fan operation",
+        "Use approved methods to assess restriction; do not diagnose by touch alone"
+      ],
+      "required_tools": [
+        "Cooling-system pressure tester",
+        "Inspection light",
+        "Coolant service equipment"
+      ],
+      "category_id": "CAT-14",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE",
+          "title": "Thermal management and heat exchanger information",
+          "url": "https://www.mahle.com/"
+        },
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Engine cooling system technical information",
+          "url": "https://www.hella.com/techworld/"
+        }
+      ]
+    },
+    {
+      "id": "PART-000015",
+      "name_en": "Water Pump",
+      "name_fa": "واترپمپ (پمپ آب)",
+      "pronunciation_fa": "واتِر پامپ",
+      "ipa": "/ˈwɔːtər pʌmp/",
+      "description": "A pump that circulates coolant through the engine and cooling circuit in many liquid-cooled vehicles.",
+      "main_function": "Maintain coolant circulation through the engine, radiator and associated heat exchangers as designed.",
+      "installation_location": "May be driven by the timing belt, accessory belt, an electric motor or integrated thermal-management module.",
+      "working_principle": "An impeller moves coolant through the circuit. Drive method and speed control vary between mechanical and electric designs.",
+      "internal_components": [
+        "Impeller",
+        "Shaft and bearing in mechanical designs",
+        "Mechanical seal",
+        "Housing",
+        "Electric motor and control electronics on electric designs"
+      ],
+      "common_failures": [
+        "Seal leakage",
+        "Bearing wear",
+        "Impeller damage or slippage",
+        "Drive-belt fault",
+        "Electric motor or control fault"
+      ],
+      "failure_symptoms": [
+        "Coolant leakage",
+        "Overheating",
+        "Bearing noise on some mechanical designs",
+        "Poor circulation or related fault codes"
+      ],
+      "testing_methods": [
+        "Inspect for leakage and drive condition",
+        "Check commanded and actual operation on electric pumps where scan data is available",
+        "Use manufacturer procedure to assess circulation and pump performance",
+        "Never remove a hot pressurized cap"
+      ],
+      "required_tools": [
+        "Inspection light",
+        "Scan tool where applicable",
+        "Cooling-system pressure tester",
+        "Basic hand tools"
+      ],
+      "category_id": "CAT-14",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE",
+          "title": "Water pump and thermal management information",
+          "url": "https://www.mahle.com/"
+        },
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Water pump technical information",
+          "url": "https://www.hella.com/techworld/"
+        }
+      ]
+    }
+  ]
+}
