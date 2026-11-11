@@ -91,6 +91,25 @@ This proves the two Batch 01 files are competing content sets that reuse the sam
 
 
 
+
+
+## Cross-archive comparison (all five ZIPs)
+A separate workflow inspected all five ZIP files in the repository:
+- `AUTO_LINGO_DATABASE_COMPLETE.zip` contains Batch 01 and 02 only (82 terms).
+- `AUTO_LINGO_DATABASE_COMPLETE (1).zip` through `(4).zip` are byte-identical archives (same SHA-256) and each contains all six batches (252 terms).
+- Batch 01 and Batch 02 inside the smaller base ZIP are record-for-record identical to the corresponding batches in the four full ZIP copies.
+- All six batches in the four full ZIP copies are record-for-record identical across those copies.
+- No extra or alternative Batch 02–06 versions were found among these five ZIPs.
+
+This narrows the content conflict to one known location: the root-level active `terms_batch_01.json` versus the internally consistent archived Batch 01. The other four ZIP copies do not represent four independent sources; they are duplicates.
+
+## Repository upload chronology (limited evidence)
+GitHub commit history shows:
+- Root-level `terms_batch_01.json` was added in commit `b07f019f6ca0b8fc433f5191e4ea2cf16093a22e` at 2026-11-11 16:34:27 UTC.
+- `AUTO_LINGO_DATABASE_COMPLETE (1).zip` was uploaded in commit `2c96ff6ce69addae77dd5f5c8bb45ae4a34bb762` at 2026-11-11 22:37:06 UTC.
+
+This only establishes repository upload order. It does **not** prove which content was authored first, reviewed, or approved; therefore it is not enough to select a canonical Batch 01.
+
 ## Additional structural QA across 252 terms
 - All 252 records use the same 21-field schema; no missing or unexpected fields were found.
 - All `category_id` values resolve to one of the 26 categories included in the same archive.
