@@ -51,7 +51,7 @@ function renderLessonStage(){
  const pct=Math.round(((lessonStage+1)/total)*100);
  let body="";
  if(lessonStage===0){
-  body=`<img class="modal-image" src="${lesson[2]}" alt="${lesson[0]}"><span class="modal-kicker">LEARNING MODULE • ${activePath.en}</span><h2 id="modalTitle">${lesson[0]}</h2><p class="meaning">${lesson[1]}</p><p>در این درس ${faNum(terms.length)} اصطلاح کلیدی را یاد می‌گیری، تلفظ آن‌ها را می‌شنوی، در یک مکالمه تعمیرگاهی می‌بینی و در پایان دانش خودت را می‌سنجی.</p><div class="lesson-goals"><b>هدف‌های این درس</b><div>✓ شناخت اصطلاحات اصلی</div><div>✓ یادگیری معنی و کاربرد در جمله</div><div>✓ تمرین شنیداری و مکالمه</div><div>✓ سنجش یادگیری</div></div>`;
+  body=`<img class="modal-image" src="${lesson[2]}" alt="${lesson[0]}"><span class="modal-kicker">LEARNING MODULE • ${activePath.en}</span><h2 id="modalTitle">${lesson[0]}</h2><p class="meaning">${lesson[1]}</p><p>در این درس ${faNum(terms.length)} اصطلاح کلیدی را یاد می‌گیری، تلفظ آن‌ها را می‌شنوی، در یک مکالمه تعمیرگاهی می‌بینی و در پایان دانش خودت را می‌سنجی.</p><button class="speak-btn" id="startMatchGame">🎮 شروع بازی جورچین قطعات و واژه‌ها</button><div class="lesson-goals"><b>هدف‌های این درس</b><div>✓ شناخت اصطلاحات اصلی</div><div>✓ یادگیری معنی و کاربرد در جمله</div><div>✓ تمرین شنیداری و مکالمه</div><div>✓ سنجش یادگیری</div></div>`;
  }else if(lessonStage<=terms.length){
   const i=lessonStage-1,t=terms[i];
   body=`<span class="modal-kicker">VOCABULARY • ${faNum(i+1)} از ${faNum(terms.length)}</span><h2 id="modalTitle" dir="ltr">${t[0]}</h2><div class="part-image-frame">${t[6]?`<img class="part-image" src="${t[6]}" alt="تصویر ${t[1]}" loading="lazy">`:`<div class="part-image-pending"><span>⚙</span><b>تصویر اختصاصی این قطعه</b><small>در انتظار تکمیل بانک تصاویر قطعات</small></div>`}</div><div class="pronunciation">${t[2]}</div><p class="meaning">${t[1]}</p><div class="lesson-definition"><b>توضیح ساده</b><p>${t[3]}</p></div><button class="speak-btn" id="speakBtn">▶ شنیدن تلفظ انگلیسی</button><div class="lesson-example"><b>${t[4]}</b><span>${t[5]}</span></div><p class="learning-hint">جمله را با صدای بلند بخوان و سعی کن بدون نگاه کردن، معنی اصطلاح را به خاطر بیاوری.</p>`;
@@ -66,6 +66,7 @@ function renderLessonStage(){
   body=renderQuestionContent("quiz");
  }
  document.getElementById("modalContent").innerHTML=`<div class="lesson-progress-head"><span>مرحله ${faNum(lessonStage+1)} از ${faNum(total)}</span><b>${stages[lessonStage]}</b><strong>${faNum(pct)}٪</strong></div><div class="lesson-progress-track"><i style="width:${pct}%"></i></div><div class="lesson-stage-body">${body}</div><div class="lesson-stage-footer"><button class="stage-prev" id="stagePrev" ${lessonStage===0?"disabled":""}>مرحله قبل</button><span>${faNum(lessonStage+1)} / ${faNum(total)}</span><button class="stage-next" id="stageNext">${lessonStage===total-1?"ثبت پایان درس":"مرحله بعد ←"}</button></div>`;
+ const gameBtn=document.getElementById("startMatchGame");if(gameBtn)gameBtn.onclick=renderMatchingGame;
  const speak=(text)=>{if(!("speechSynthesis"in window)){alert("پخش گفتار در این مرورگر پشتیبانی نمی‌شود.");return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=.86;speechSynthesis.speak(u)};
  const speakBtn=document.getElementById("speakBtn");if(speakBtn){const i=lessonStage-1;speakBtn.onclick=()=>speak(terms[i][0])}
  document.querySelectorAll("[data-speak]").forEach(b=>b.onclick=()=>speak(terms[Number(b.dataset.speak)][0]));
@@ -74,6 +75,18 @@ function renderLessonStage(){
  document.getElementById("stagePrev").onclick=()=>{if(lessonStage>0){lessonStage--;questionIndex=0;questionAnswered=false;saveLessonStage();renderLessonStage()}};
  document.getElementById("stageNext").onclick=()=>{if(lessonStage===total-1){finishLesson();return}lessonStage++;questionIndex=0;questionAnswered=false;saveLessonStage();renderLessonStage()};
  if(lessonStage===terms.length+3||lessonStage===terms.length+4)bindQuestionButtons();
+}
+function renderMatchingGame(){
+ const terms=currentLesson.lesson[3].slice(0,6);
+ const shuffled=[...terms].sort(()=>Math.random()-.5);
+ let selected=null,matched=new Set();
+ const draw=()=>{
+  document.getElementById("modalContent").innerHTML=`<span class="modal-kicker">MINI GAME • WORD MATCH</span><h2 id="modalTitle">بازی جورچین قطعه و واژه</h2><p>هر واژه انگلیسی را انتخاب کن و سپس معنی فارسی درست آن را پیدا کن.</p><div class="match-board"><div><b>ENGLISH</b>${terms.map((t,i)=>`<button class="match-tile ${matched.has(i)?"matched":""} ${selected===i?"selected":""}" data-en="${i}" ${matched.has(i)?"disabled":""}>${t[0]}</button>`).join("")}</div><div><b>فارسی</b>${shuffled.map(t=>{const i=terms.indexOf(t);return `<button class="match-tile ${matched.has(i)?"matched":""}" data-fa="${i}" ${matched.has(i)?"disabled":""}>${t[1]}</button>`}).join("")}</div></div><p class="match-status">${faNum(matched.size)} از ${faNum(terms.length)} جفت پیدا شده</p><button class="stage-prev" id="backToLesson">بازگشت به درس</button>`;
+  document.querySelectorAll("[data-en]").forEach(b=>b.onclick=()=>{selected=Number(b.dataset.en);draw()});
+  document.querySelectorAll("[data-fa]").forEach(b=>b.onclick=()=>{const i=Number(b.dataset.fa);if(selected===null)return;if(selected===i){matched.add(i);selected=null;draw();if(matched.size===terms.length){document.querySelector(".match-status").textContent="عالی بود! همه جفت‌ها را درست پیدا کردی 🎉";}}else{document.querySelector(".match-status").textContent="این دو مورد با هم تطابق ندارند؛ دوباره تلاش کن.";selected=null;setTimeout(draw,800)}});
+  document.getElementById("backToLesson").onclick=renderLessonStage;
+ };
+ draw();
 }
 function renderQuestionContent(type){
  const data=buildLessonQuestions(currentLesson.lesson),questions=data[type],q=questions[questionIndex%questions.length];
