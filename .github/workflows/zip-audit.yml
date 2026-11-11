@@ -1,0 +1,128 @@
+name: AUTO LINGO ZIP audit
+on:
+  push:
+    branches:
+      - ai1-zip-extract-audit-001
+    paths:
+      - ".github/workflows/zip-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract archives and audit JSON
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, zipfile, hashlib, pathlib, collections, sys
+          root = pathlib.Path(".")
+          candidates = [
+              root / "AUTO_LINGO_DATABASE_COMPLETE (1).zip",
+              root / "AUTO_LINGO_DATABASE_COMPLETE.zip",
+          ]
+          archive = next((p for p in candidates if p.exists()), None)
+          if archive is None:
+              raise SystemExit("Expected ZIP archive not found in repository root")
+          out = pathlib.Path("audit-output")
+          extracted = out / "extracted"
+          extracted.mkdir(parents=True, exist_ok=True)
+          report = {
+              "archive": archive.name,
+              "archive_sha256": hashlib.sha256(archive.read_bytes()).hexdigest(),
+              "members": [],
+              "json_files": [],
+              "term_records": [],
+              "errors": []
+          }
+          with zipfile.ZipFile(archive) as z:
+              bad = z.testzip()
+              if bad:
+                  raise SystemExit("ZIP CRC test failed at: " + bad)
+              for info in z.infolist():
+                  name = info.filename
+                  if info.is_dir():
+                      continue
+                  target = (extracted / name).resolve()
+                  if extracted.resolve() not in target.parents:
+                      report["errors"].append("Unsafe path skipped: " + name)
+                      continue
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(z.read(info))
+                  report["members"].append({
+                      "path": name, "size": info.file_size,
+                      "compressed_size": info.compress_size,
+                      "crc": f"{info.CRC:08x}"
+                  })
+                  if name.lower().endswith(".json"):
+                      try:
+                          data = json.loads(target.read_text(encoding="utf-8-sig"))
+                          rows = data if isinstance(data, list) else (
+                              data.get("terms") if isinstance(data, dict) and isinstance(data.get("terms"), list) else None
+                          )
+                          entry = {"path": name, "valid_json": True,
+                                   "top_level_type": type(data).__name__,
+                                   "record_count": len(rows) if rows is not None else None}
+                          report["json_files"].append(entry)
+                          if rows is not None and ("term" in name.lower() or any(isinstance(x, dict) and ("term_en" in x or "term_fa" in x) for x in rows[:3])):
+                              for idx, row in enumerate(rows):
+                                  if isinstance(row, dict):
+                                      report["term_records"].append({
+                                          "source": name, "index": idx,
+                                          "id": row.get("term_id", row.get("id")),
+                                          "term_en": row.get("term_en"),
+                                          "term_fa": row.get("term_fa"),
+                                          "category_id": row.get("category_id")
+                                      })
+                      except Exception as e:
+                          report["json_files"].append({"path": name, "valid_json": False, "error": str(e)})
+          ids = [x["id"] for x in report["term_records"] if x.get("id")]
+          en = [x["term_en"].strip().casefold() for x in report["term_records"] if isinstance(x.get("term_en"), str)]
+          fa = [x["term_fa"].strip() for x in report["term_records"] if isinstance(x.get("term_fa"), str)]
+          report["duplicate_term_ids"] = {k:v for k,v in collections.Counter(ids).items() if v > 1}
+          report["duplicate_term_en"] = {k:v for k,v in collections.Counter(en).items() if v > 1}
+          report["duplicate_term_fa"] = {k:v for k,v in collections.Counter(fa).items() if v > 1}
+          active = root / "data/terms_batch_01.json"
+          zip_batch01 = next((p for p in extracted.rglob("terms_batch_01.json")), None)
+          if active.exists() and zip_batch01:
+              a = active.read_bytes()
+              b = zip_batch01.read_bytes()
+              report["batch01_comparison"] = {
+                  "active_path": str(active), "archive_path": str(zip_batch01.relative_to(extracted)),
+                  "active_sha256": hashlib.sha256(a).hexdigest(),
+                  "archive_sha256": hashlib.sha256(b).hexdigest(),
+                  "byte_identical": a == b,
+                  "active_size": len(a), "archive_size": len(b)
+              }
+          (out / "REPORT.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+          summary = [
+              "# AUTO LINGO ZIP audit",
+              "",
+              f"- Archive: {archive.name}",
+              f"- Members extracted: {len(report['members'])}",
+              f"- JSON files: {len(report['json_files'])}",
+              f"- Term records detected: {len(report['term_records'])}",
+              f"- Duplicate term IDs: {len(report['duplicate_term_ids'])}",
+              f"- Duplicate English terms: {len(report['duplicate_term_en'])}",
+              f"- Duplicate Persian terms: {len(report['duplicate_term_fa'])}",
+              "- This is an audit only; no canonical data files were modified.",
+              "",
+              "See REPORT.json for details."
+          ]
+          (out / "REPORT.md").write_text("\n".join(summary) + "\n", encoding="utf-8")
+          print("\n".join(summary))
+          PY
+
+      - name: Upload audit output
+        uses: actions/upload-artifact@v4
+        with:
+          name: auto-lingo-zip-audit
+          path: audit-output/
+          if-no-files-found: error
+          retention-days: 14
