@@ -1,0 +1,36 @@
+[
+  {
+    "id": "SRC-01",
+    "kind": "repository",
+    "url": "https://github.com/hfrdy60-max/auto-lingo",
+    "description": "فهرست ریشه مخزن و فایل‌های ZIP"
+  },
+  {
+    "id": "SRC-02",
+    "kind": "repository_file",
+    "path": "DATA_CATALOG.md",
+    "url": "https://github.com/hfrdy60-max/auto-lingo/blob/main/DATA_CATALOG.md",
+    "description": "کاتالوگ داده و وضعیت فعلی بانک واژگان"
+  },
+  {
+    "id": "SRC-03",
+    "kind": "repository_file",
+    "path": "terms_batch_01.json",
+    "url": "https://github.com/hfrdy60-max/auto-lingo/blob/main/terms_batch_01.json",
+    "description": "بانک فعال Batch 01"
+  },
+  {
+    "id": "SRC-04",
+    "kind": "repository_archive",
+    "path": "AUTO_LINGO_DATABASE_COMPLETE.zip",
+    "url": "https://github.com/hfrdy60-max/auto-lingo/blob/main/AUTO_LINGO_DATABASE_COMPLETE.zip",
+    "description": "آرشیو پایه با Batch 01 و 02"
+  },
+  {
+    "id": "SRC-05",
+    "kind": "repository_archive",
+    "path": "AUTO_LINGO_DATABASE_COMPLETE (1).zip",
+    "url": "https://github.com/hfrdy60-max/auto-lingo/blob/main/AUTO_LINGO_DATABASE_COMPLETE%20(1).zip",
+    "description": "آرشیو کامل‌تر با Batch 01 تا 06"
+  }
+]
