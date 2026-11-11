@@ -1,0 +1,42 @@
+[
+  {
+    "id": "WIR-001",
+    "title_fa": "مدار آموزشی کنترل انژکتور",
+    "scope": "generic_educational",
+    "is_specific_vehicle": false,
+    "verification_status": "needs_review",
+    "topology_note": "Many PFI systems use a shared fused supply and ECU low-side switching, but relay arrangement and driver topology vary by vehicle and injector type. High-side and peak-and-hold systems must be represented separately where applicable.",
+    "safety_notes": [
+      "Do not treat fuse rating or clamp voltage as universal.",
+      "Do not probe ECU outputs without approved procedures and wiring information.",
+      "Use service information for the exact vehicle."
+    ],
+    "claims_to_review": [
+      {
+        "claim": "15 A fuse",
+        "issue": "vehicle-specific; not universal"
+      },
+      {
+        "claim": "flyback peak up to 50 V",
+        "issue": "driver- and circuit-dependent"
+      }
+    ]
+  },
+  {
+    "id": "WIR-002",
+    "title_fa": "شبکه آموزشی CAN Bus",
+    "scope": "generic_educational",
+    "is_specific_vehicle": false,
+    "verification_status": "needs_review",
+    "typical_values": {
+      "can_h_v": "2.5–3.5 V",
+      "can_l_v": "1.5–2.5 V",
+      "termination": "two 120-ohm terminators in conventional high-speed CAN; about 60 ohms across CAN-H/L when powered down"
+    },
+    "notes": "Typical references only; network topology, termination and CAN variant require vehicle documentation.",
+    "safety_notes": [
+      "Measure resistance only with power removed and network appropriately isolated.",
+      "Do not assume every vehicle bus exposes two accessible 120-ohm terminators."
+    ]
+  }
+]
