@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101923">
+  <meta name="description" content="یادگیری زبان تخصصی خودرو با توضیحات فارسی">
+  <title>AUTO LINGO | زبان تخصصی خودرو</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="اتو لینگو">
+      <span class="brand-mark">AL</span>
+      <span>AUTO <b>LINGO</b><small>زبان تخصصی خودرو</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="نمایش منو">☰</button>
+    <nav id="nav">
+      <a href="#learn">آموزش</a><a href="#systems">سیستم‌ها</a><a href="#quiz">آزمون</a>
+    </nav>
+    <span class="level-pill">نسخه آزمایشی ۰.۱</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">AUTOMOTIVE ENGLISH • یادگیری هوشمند</span>
+        <h1>زبانِ دنیای <em>تعمیرات خودرو</em><br>را حرفه‌ای یاد بگیر.</h1>
+        <p>اصطلاحات فنی انگلیسی را با معنی فارسی، تلفظ، کاربرد و مثال یاد بگیر؛ از موتور و برق تا ECU و دیاگ.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#learn">شروع یادگیری <span>←</span></a>
+          <a class="btn ghost" href="#systems">مشاهده سرفصل‌ها</a>
+        </div>
+        <div class="hero-stats"><div><b id="termCount">۰</b><span>اصطلاح آموزشی</span></div><div><b>۹</b><span>حوزه تخصصی</span></div><div><b>۱۰۰٪</b><span>توضیح فارسی</span></div></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="engine-card"><div class="engine-icon">⚙</div><span>ENGINE SYSTEM</span><strong>یادگیری تخصصی</strong><small>Learn • Practice • Master</small></div>
+        <div class="float-tag tag-a">ECU / سنسورها</div><div class="float-tag tag-b">WIRING DIAGRAM</div>
+      </div>
+    </section>
+
+    <section class="search-panel" id="learn">
+      <div><span class="eyebrow">واژه‌نامه تخصصی</span><h2>چی می‌خواهی یاد بگیری؟</h2></div>
+      <label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="مثلاً سنسور اکسیژن یا Oxygen Sensor..."><kbd>جست‌وجو</kbd></label>
+      <div class="filters" id="filters"></div>
+      <div class="term-grid" id="termGrid"></div>
+      <p class="empty hidden" id="emptyState">اصطلاحی پیدا نشد. عبارت دیگری را جست‌وجو کن.</p>
+    </section>
+
+    <section class="systems-section" id="systems">
+      <div class="section-heading"><div><span class="eyebrow">LEARNING PATHS</span><h2>از کدام سیستم شروع کنیم؟</h2></div><p>هر بخش، مسیر یادگیری جداگانه‌ای دارد.</p></div>
+      <div class="system-grid" id="systemGrid"></div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+      <div class="quiz-intro"><span class="eyebrow">تمرین و سنجش</span><h2>یادگیری بدون تمرین کامل نمی‌شود.</h2><p>با یک آزمون کوتاه، دانسته‌هایت را بسنج.</p></div>
+      <div class="quiz-card"><div class="quiz-top"><span>آزمون سریع</span><span id="quizProgress">سؤال ۱ از ۳</span></div><h3 id="question">معنی کلمه Engine چیست؟</h3><div class="options" id="options"></div><p id="quizFeedback" class="feedback" aria-live="polite"></p><button class="btn primary quiz-next hidden" id="nextQuestion">سؤال بعدی ←</button></div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">AL</span><span>AUTO <b>LINGO</b><small>زبان تخصصی خودرو</small></span></div><p>ساخته‌شده برای یادگیری بهتر دنیای تعمیرات خودرو.</p><span>نسخه ۰.۱ • در حال توسعه</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
