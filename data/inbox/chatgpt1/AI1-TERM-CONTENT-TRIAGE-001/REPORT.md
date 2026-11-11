@@ -4,11 +4,18 @@
 Preliminary editorial and taxonomy review of the 252-term archived set in `AUTO_LINGO_DATABASE_COMPLETE (1).zip`. This is not an external technical fact-check.
 
 ## Summary
-- 17 candidate review findings recorded.
-- 7 P1 and 10 P2 findings.
+- 20 candidate review findings recorded.
+- 8 P1 and 12 P2 findings.
 - No source record changed.
 - No record was marked verified.
 - No canonical version was selected.
+
+## Additional field-level checks
+- All 252 records have non-empty core text fields (English/Persian term, pronunciation, IPA, technical definition, simple explanation, difficulty, status, and date fields).
+- All 134 `part` records populate the five part-oriented fields; the 118 non-part records set those fields to null.
+- 38 records have an empty `synonyms` array.
+- `last_reviewed_at` is set to the same date (2026-11-11) for all 252 records, despite all records being unverified and having no reviewer/source trace. This may be an import/generation date rather than a real review date; clarify before relying on it.
+- `Condenser` is a synonym of Capacitor while also a separate AC-system term; `Reflash` is an alias for both ECU Programming and Flashing. Both need disambiguation.
 
 ## Highest-priority examples
 | ID | Field | Finding |
