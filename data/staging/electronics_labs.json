@@ -1,0 +1,32 @@
+[
+  {
+    "id": "LAB-RELAY-001",
+    "title_fa": "آزمایشگاه رله خودرویی ۴ و ۵ پایه",
+    "title_en": "Automotive 4-pin and 5-pin Relay Lab",
+    "verification_status": "needs_review",
+    "components": [
+      "automotive_relay",
+      "fused_low_voltage_supply",
+      "low_current_control_switch",
+      "test_load"
+    ],
+    "learning_objectives": [
+      "Identify terminals 30, 85, 86, 87 and 87a where present.",
+      "Distinguish normally-open and changeover relay operation.",
+      "Measure coil resistance and verify contact switching.",
+      "Understand suppression diode/resistor polarity."
+    ],
+    "steps": [
+      "Identify the relay diagram printed on its case.",
+      "With power disconnected, inspect coil and contact continuity.",
+      "Energize the coil only with a fused, current-limited supply of rated voltage.",
+      "Verify contact state changes and observe polarity if a suppression diode is fitted."
+    ],
+    "safety_notes": [
+      "Use a fuse close to the supply.",
+      "Never infer terminal function from physical position; follow relay diagram.",
+      "A diode-suppressed coil is polarity-sensitive.",
+      "Use appropriately rated load and wiring; avoid mains voltage."
+    ]
+  }
+]
