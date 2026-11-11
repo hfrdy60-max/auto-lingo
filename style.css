@@ -80,3 +80,17 @@ footer{border-top:1px solid var(--line);padding:23px max(calc((100% - 1220px)/2)
 .match-tile:disabled{cursor:default}
 .match-status{font-size:12px!important;color:var(--mint)!important;text-align:center;background:#122b26;padding:10px;border-radius:9px}
 @media(max-width:560px){.level-badge{font-size:8px;padding:4px 6px}.lesson-row{gap:7px}.part-image-frame{height:160px}.match-board{gap:7px}.match-tile{font-size:10px;padding:8px 4px}}
+
+/* Learner dashboard and mistake notebook */
+.learner-dashboard{border-top:1px solid var(--line);margin-top:10px}
+.dashboard-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+.dashboard-stat{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:17px;display:flex;flex-direction:column;gap:3px}
+.dashboard-stat>span{color:var(--mint);font-size:18px}.dashboard-stat>b{font-size:25px;color:#f2f6f7}.dashboard-stat>small{font-size:10px;color:var(--muted)}
+.mistakes-panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+.mistakes-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.mistakes-heading h3{margin:0;font-size:16px}.mistakes-heading p{margin:3px 0 0;color:var(--muted);font-size:10px}
+.clear-mistakes{background:transparent;border:1px solid #78444b;color:#ffb0b0;border-radius:8px;padding:7px 10px;font:inherit;font-size:10px;cursor:pointer}
+.mistake-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 3px;border-top:1px solid var(--line)}
+.mistake-row>div{display:grid;gap:3px;min-width:0}.mistake-row b{font-size:12px;color:var(--mint)}.mistake-row small{font-size:10px;color:var(--muted);overflow-wrap:anywhere}.mistake-row>span{color:var(--gold);font-size:11px;white-space:nowrap}
+.no-mistakes{font-size:11px;color:var(--muted);text-align:center;padding:20px 5px}
+@media(max-width:700px){.dashboard-stats{grid-template-columns:repeat(2,1fr)}.dashboard-stat{padding:13px}.mistakes-panel{padding:13px}.mistakes-heading{align-items:flex-start;flex-direction:column}}
