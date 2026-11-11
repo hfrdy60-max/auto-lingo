@@ -86,7 +86,7 @@ function bindQuestionButtons(){
  document.getElementById("stageNext").disabled=true;
  document.querySelectorAll(".answer-option").forEach(btn=>btn.onclick=()=>{
   if(questionAnswered)return;questionAnswered=true;
-  const q=questions[questionIndex%questions.length],correct=btn.dataset.value===q.answer;
+  const q=questions[questionIndex%questions.length],correct=btn.dataset.value===q.answer;if(correct&&isQuiz)lessonScore++;
   btn.classList.add(correct?"correct":"incorrect");
   document.querySelectorAll(".answer-option").forEach(b=>{if(b.dataset.value===q.answer)b.classList.add("correct");b.disabled=true});
   document.getElementById("answerFeedback").textContent=correct?"آفرین! پاسخ درست است.":"پاسخ درست: "+q.answer;
