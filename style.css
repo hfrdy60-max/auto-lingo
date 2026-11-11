@@ -153,3 +153,59 @@ footer{border-top:1px solid var(--line);padding:23px max(calc((100% - 1220px)/2)
 
 /* AUTO LINGO interactive learning lab */
 .learning-lab-section{border-top:1px solid var(--line);padding-top:65px}.learning-lab-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:25px}.lab-card{background:linear-gradient(145deg,var(--panel),#101923);border:1px solid var(--line);border-radius:18px;padding:22px;min-width:0}.lab-card-head>span{font-size:10px;color:var(--mint)}.lab-card h3{margin:5px 0 16px;font-size:19px}.lab-card p,.lab-item{color:#c4d0d7;font-size:13px;line-height:1.9}.lab-items{display:grid;gap:12px}.lab-item{padding:13px;border:1px solid #ffffff12;border-radius:12px;background:#ffffff04}.lab-item b,.lab-item h4{color:var(--text)}.lab-item h4{margin:0 0 8px}.lab-item a{display:inline-block;color:var(--mint);margin:4px 0}.lab-item small,.lab-card small{display:block;color:var(--muted);font-size:11px;margin-top:7px}.lab-item ul,.lab-item ol,.lab-card ul{padding-right:22px;margin:8px 0}.lab-warning{background:#eab66e12;border-right:3px solid var(--gold);border-radius:8px;padding:11px 13px;color:#f0d4a9;font-size:12px;line-height:1.9;margin-top:12px}.lab-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}.lab-controls label{font-size:12px;color:var(--muted)}.lab-controls input{display:block;width:100%;margin-top:6px;background:#0b121a;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px;direction:ltr}.sim-output{background:#55e0b411;border:1px solid #55e0b433;border-radius:12px;padding:14px;line-height:2;color:var(--text)}.lab-status{font-size:12px;color:var(--muted);padding:12px 15px;border:1px solid var(--line);border-radius:12px;margin-top:20px}@media(max-width:760px){.learning-lab-grid{grid-template-columns:1fr}.lab-controls{grid-template-columns:1fr}.learning-lab-section{padding-top:42px}}
+
+
+/* AUTO LINGO — clean academy dashboard refresh */
+:root{--bg:#080e14;--panel:#101a24;--panel2:#142330;--line:#263744;--radius:18px}
+html{scroll-padding-top:96px}
+.topbar{height:72px;gap:26px;padding-inline:max(calc((100% - 1220px)/2),22px)}
+.main-nav{gap:clamp(10px,1.6vw,23px);font-size:11px;white-space:nowrap}
+.main-nav a{padding:8px 0;position:relative}
+.main-nav a:hover:after{content:"";position:absolute;bottom:0;right:0;left:0;height:2px;background:var(--mint);border-radius:4px}
+.edition{font-size:8px;white-space:nowrap}
+main{max-width:1160px}
+.hero{min-height:420px;padding:40px 0 48px;gap:38px}
+.hero-visual{height:330px}
+.hero-copy>p{font-size:13px}
+.hero-metrics{margin-top:25px}
+.section{padding:34px 0 42px}
+.section-title{margin-bottom:19px}
+.section-title h2{font-size:23px}
+.section-title p{font-size:11px}
+.section-index{font-size:8px}
+.start-guide{padding-top:20px}
+.guide-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.guide-step{display:flex;gap:12px;min-height:180px;padding:17px 14px;background:linear-gradient(145deg,#14232d,#101923);border:1px solid var(--line);border-radius:15px}
+.guide-number{flex:0 0 35px;width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:#55e0b41a;color:var(--mint);font-weight:900}
+.guide-step small{font-size:8px;letter-spacing:1.2px;color:var(--mint)}
+.guide-step h3{font-size:13px;margin:3px 0 5px}
+.guide-step p{font-size:10px;line-height:1.9;color:var(--muted);margin:0 0 10px}
+.guide-step a{font-size:10px;color:var(--mint);font-weight:700}
+.guide-tip{display:flex;align-items:center;gap:15px;padding:13px 17px;margin-top:13px;border:1px solid #55e0b433;background:#55e0b40b;border-radius:12px;font-size:11px}
+.guide-tip b{color:var(--mint);white-space:nowrap}
+.guide-tip span{color:#c2cdd2}
+.path-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.path-card{height:245px;border-radius:14px}
+.path-info h3{font-size:15px}
+.path-info p{font-size:9px}
+.placement-card,.dashboard-stat,.mistakes-panel,.academy-intro,.review-card,.dictionary-box,.lab-card{border-radius:15px}
+.dashboard-stats{gap:12px}
+.dashboard-stat{padding:17px}
+.academy-tabs{gap:8px;flex-wrap:wrap}
+.academy-tabs button{border-radius:9px}
+.learning-lab-grid{gap:12px}
+.lab-card{padding:17px}
+.dictionary-box{padding:18px}
+.how-section{padding:48px 0;gap:38px}
+footer{padding-block:20px}
+@media(max-width:1050px){.topbar{gap:18px}.main-nav{gap:12px}.edition{display:none}.guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.path-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){
+ .topbar{height:64px;padding:0 16px;justify-content:space-between}.mobile-menu{display:block}.main-nav{display:none;position:absolute;top:63px;right:12px;left:12px;margin:0;padding:12px;background:#101a24;border:1px solid var(--line);border-radius:13px;box-shadow:0 18px 45px #0009;white-space:normal;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}.main-nav.open{display:grid}.main-nav a{padding:9px 10px;border-radius:8px}.main-nav a:hover{background:#55e0b414}.main-nav a:hover:after{display:none}
+ main{padding:0 16px}.hero{grid-template-columns:1fr;gap:22px;padding:30px 0 24px;min-height:0}.hero h1{font-size:37px}.hero-visual{height:230px;order:-1}.hero-actions{gap:14px;flex-wrap:wrap}.hero-metrics{gap:24px;margin-top:23px}
+ .section{padding:27px 0 32px}.section-title{align-items:start;gap:10px}.section-title h2{font-size:20px}.section-title p{font-size:10px}.section-index{display:none}
+ .guide-grid{grid-template-columns:1fr;gap:9px}.guide-step{min-height:0;padding:13px}.guide-step p{margin-bottom:5px}.guide-tip{align-items:flex-start;flex-direction:column;gap:3px}
+ .path-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.path-card{height:210px}.path-info{right:11px;left:11px;bottom:12px}.path-info h3{font-size:13px}.path-info p{font-size:8px}
+ .lesson-list{grid-template-columns:1fr}.term-grid{grid-template-columns:1fr}.how-section{grid-template-columns:1fr;gap:22px;padding:35px 0}.how-image{height:210px}.how-copy h2{font-size:29px}
+ .dashboard-stats{grid-template-columns:repeat(2,minmax(0,1fr))}footer{padding:18px 16px;gap:10px;flex-wrap:wrap}
+}
+@media(min-width:761px) and (max-width:900px){.main-nav{font-size:9px;gap:8px}.brand-name{font-size:12px}}
