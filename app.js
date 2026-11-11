@@ -28,7 +28,7 @@ const completed=JSON.parse(localStorage.getItem("al_completed")||"{}");
 function renderPaths(){document.getElementById("pathGrid").innerHTML=paths.map((p,i)=>`<article class="path-card" data-path="${p.id}" tabindex="0" role="button" aria-label="شروع مسیر ${p.title}"><img src="${p.image}" alt="${p.title}" loading="lazy"><span class="path-number">0${i+1}</span><div class="path-info"><span class="en">${p.en}</span><h3>${p.title}</h3><p>${p.desc}</p><span class="path-arrow">←</span></div></article>`).join("");document.querySelectorAll(".path-card").forEach(el=>{el.addEventListener("click",()=>openPath(el.dataset.path));el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openPath(el.dataset.path)}})})}
 function openPath(id){activePath=paths.find(p=>p.id===id);document.getElementById("pathDetail").classList.remove("hidden");document.getElementById("pathIntro").innerHTML=`<div class="detail-hero"><img src="${activePath.image}" alt=""><div><span class="eyebrow">${activePath.en}</span><h2>${activePath.title}</h2><p>${activePath.desc}</p></div></div>`;renderLessons();document.getElementById("pathDetail").scrollIntoView({behavior:"smooth",block:"start"})}
 function renderLessons(){const total=activePath.lessons.reduce((n,l)=>n+l[3].length,0);const done=activePath.lessons.reduce((n,l,li)=>n+l[3].filter((t,ti)=>completed[activePath.id+"-"+li+"-"+ti]).length,0);document.getElementById("progressText").textContent=faNum(Math.round(done/total*100))+"٪";document.getElementById("progressBar").style.width=(done/total*100)+"%";document.getElementById("lessonList").innerHTML=activePath.lessons.map((l,li)=>{const lessonDone=l[3].filter((t,ti)=>completed[activePath.id+"-"+li+"-"+ti]).length;return `<button class="lesson-row" data-lesson="${li}"><img class="lesson-thumb" src="${l[2]}" alt="" loading="lazy"><span class="lesson-num">۰${li+1}</span><span class="lesson-meta"><small>LESSON ${String(li+1).padStart(2,"0")} • ${l[1]}</small><b>${l[0]}</b><span>${faNum(lessonDone)} از ${faNum(l[3].length)} واژه یادگرفته‌شده</span></span><span class="lesson-state">←</span></button>`}).join("");document.querySelectorAll(".lesson-row").forEach(b=>b.addEventListener("click",()=>openLesson(Number(b.dataset.lesson),0)))}
-let currentLesson=null, lessonStage=0, questionIndex=0, questionAnswered=false;
+let currentLesson=null, lessonStage=0, questionIndex=0, questionAnswered=false, lessonScore=0;
 function lessonKey(li){return activePath.id+"-"+li}
 function buildLessonQuestions(lesson){
  const terms=lesson[3];
@@ -42,7 +42,7 @@ function openLesson(li,ti=0){
  currentLesson={li,lesson:activePath.lessons[li]};
  const saved=JSON.parse(localStorage.getItem("al_lesson_state")||"{}");
  lessonStage=Math.min(saved[lessonKey(li)]?.stage||0,lessonStages(currentLesson.lesson).length-1);
- questionIndex=0;questionAnswered=false;
+ questionIndex=0;questionAnswered=false;lessonScore=0;
  document.getElementById("lessonModal").classList.remove("hidden");
  renderLessonStage();
 }
@@ -83,6 +83,7 @@ function renderQuestionContent(type){
 function bindQuestionButtons(){
  const isQuiz=lessonStage===currentLesson.lesson[3].length+4;
  const questions=buildLessonQuestions(currentLesson.lesson)[isQuiz?"quiz":"practice"];
+ document.getElementById("stageNext").disabled=true;
  document.querySelectorAll(".answer-option").forEach(btn=>btn.onclick=()=>{
   if(questionAnswered)return;questionAnswered=true;
   const q=questions[questionIndex%questions.length],correct=btn.dataset.value===q.answer;
@@ -90,7 +91,7 @@ function bindQuestionButtons(){
   document.querySelectorAll(".answer-option").forEach(b=>{if(b.dataset.value===q.answer)b.classList.add("correct");b.disabled=true});
   document.getElementById("answerFeedback").textContent=correct?"آفرین! پاسخ درست است.":"پاسخ درست: "+q.answer;
   document.getElementById("answerFeedback").className="answer-feedback "+(correct?"good":"bad");
-  const next=document.getElementById("stageNext");next.textContent=questionIndex===questions.length-1?(isQuiz?"ثبت نتیجه آزمون":"پایان تمرین"):"سؤال بعدی";
+  const next=document.getElementById("stageNext");next.disabled=false;next.textContent=questionIndex===questions.length-1?(isQuiz?"ثبت نتیجه آزمون":"پایان تمرین"):"سؤال بعدی";
   next.onclick=()=>{
    if(questionIndex<questions.length-1){questionIndex++;questionAnswered=false;renderLessonStage()}
    else if(isQuiz){finishLesson()}else{lessonStage++;questionIndex=0;questionAnswered=false;saveLessonStage();renderLessonStage()}
@@ -103,7 +104,7 @@ function finishLesson(){
  localStorage.setItem("al_completed",JSON.stringify(completed));
  const s=JSON.parse(localStorage.getItem("al_lesson_state")||"{}");s[lessonKey(currentLesson.li)]={stage:0,completed:true};localStorage.setItem("al_lesson_state",JSON.stringify(s));
  renderLessons();
- document.getElementById("modalContent").innerHTML=`<div class="lesson-finished"><div class="finish-icon">✓</div><span class="modal-kicker">LESSON COMPLETED</span><h2 id="modalTitle">آفرین! درس به پایان رسید.</h2><p>این درس را کامل کردی. واژه‌های این درس به‌عنوان یادگرفته‌شده ثبت شدند.</p><button class="stage-next" id="finishClose">بازگشت به فهرست درس‌ها</button></div>`;
+ document.getElementById("modalContent").innerHTML=`<div class="lesson-finished"><div class="finish-icon">✓</div><span class="modal-kicker">LESSON COMPLETED</span><h2 id="modalTitle">آفرین! درس به پایان رسید.</h2><p>این درس را کامل کردی. واژه‌های این درس به‌عنوان یادگرفته‌شده ثبت شدند.</p><div class="score-result">امتیاز آزمون: <strong>${faNum(Math.round(lessonScore/ buildLessonQuestions(currentLesson.lesson).quiz.length*100))}٪</strong></div><button class="stage-next" id="finishClose">بازگشت به فهرست درس‌ها</button></div>`;
  document.getElementById("finishClose").onclick=closeModal;
 }
 function closeModal(){document.getElementById("lessonModal").classList.add("hidden")}
