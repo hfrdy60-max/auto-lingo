@@ -83,3 +83,10 @@
 - Images: all 20 image URLs are null; image sourcing remains outstanding. This is preferable to fabricated or unlicensed image URLs.
 - Technical/source review still required: source_candidates are candidate references, not proof that every statement in every record is supported. Brake and steering content is safety-critical; test procedures and component descriptions require authoritative evidence and specialist review before publication.
 - Intake result: structurally accepted; not yet technically verified or production-ready.
+
+
+## Stage 7 — Interface organization refresh (2026-11-12)
+- Simplified the primary navigation to six clear destinations: home, quick-start guide, learning paths, technical academy, practice lab, and learner progress.
+- Added a four-step Persian quick-start guide with direct links and a realistic 15–20 minute daily learning routine.
+- Refined spacing, typography, cards, navigation hierarchy, and responsive mobile navigation while preserving existing section IDs and learning functionality.
+- This is a presentation/organization pass only. The six recently uploaded JSON content packages are still not fully integrated into the learner-facing UI; missing images and unverified technical content remain QA items.
