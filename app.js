@@ -25,6 +25,27 @@ const faNum=n=>String(n).replace(/[0-9]/g,d=>"۰۱۲۳۴۵۶۷۸۹"[d]);
 let activePath=null,activeCategory="همه";
 const allTerms=paths.flatMap(p=>p.lessons.flatMap((l,li)=>l[3].map(t=>({en:t[0],fa:t[1],pron:t[2],desc:t[3],example:t[4],exampleFa:t[5],category:p.title,pathId:p.id,lesson:l[0],image:l[2]}))));
 const completed=JSON.parse(localStorage.getItem("al_completed")||"{}");
+const readStore=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
+function renderDashboard(){
+ const done=Object.keys(completed).filter(k=>completed[k]).length;
+ const scores=Object.values(readStore("al_scores",{}));
+ const avg=scores.length?Math.round(scores.reduce((n,s)=>n+(Number(s.score)||0),0)/scores.length):0;
+ const mistakes=readStore("al_mistakes",[]);
+ document.getElementById("dashboardStats").innerHTML=[
+  ["واژه‌های تکمیل‌شده",faNum(done),"✦"],["آزمون‌های ثبت‌شده",faNum(scores.length),"✓"],["میانگین امتیاز",faNum(avg)+"٪","◎"],["موارد نیازمند مرور",faNum(mistakes.length),"↻"]
+ ].map(x=>'<article class="dashboard-stat"><span>'+x[2]+'</span><b>'+x[1]+'</b><small>'+x[0]+'</small></article>').join("");
+ const list=document.getElementById("mistakeList");
+ list.innerHTML=mistakes.length?mistakes.slice(-12).reverse().map(m=>'<article class="mistake-row"><div><b dir="auto">'+escapeHTML(m.prompt||"تمرین")+'</b><small>پاسخ شما: '+escapeHTML(m.selected||"—")+'</small><small>پاسخ درست: '+escapeHTML(m.answer||"—")+'</small></div><span>×'+faNum(m.count||1)+'</span></article>').join(""):'<p class="no-mistakes">هنوز اشتباهی ثبت نشده؛ عالیه! بعد از تمرین‌ها این بخش به‌صورت خودکار به‌روز می‌شود.</p>';
+}
+function escapeHTML(value){return String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function recordMistake(q,selected){
+ const items=readStore("al_mistakes",[]);
+ const key=[q.label,q.answer].join("::");
+ const old=items.find(m=>m.key===key);
+ if(old){old.count=(old.count||1)+1;old.selected=selected;old.updatedAt=new Date().toISOString()}
+ else items.push({key,prompt:q.label,answer:q.answer,selected,count:1,updatedAt:new Date().toISOString()});
+ localStorage.setItem("al_mistakes",JSON.stringify(items.slice(-100)));
+}
 function renderPaths(){document.getElementById("pathGrid").innerHTML=paths.map((p,i)=>`<article class="path-card" data-path="${p.id}" tabindex="0" role="button" aria-label="شروع مسیر ${p.title}"><img src="${p.image}" alt="${p.title}" loading="lazy"><span class="path-number">0${i+1}</span><div class="path-info"><span class="en">${p.en}</span><h3>${p.title}</h3><p>${p.desc}</p><span class="path-arrow">←</span></div></article>`).join("");document.querySelectorAll(".path-card").forEach(el=>{el.addEventListener("click",()=>openPath(el.dataset.path));el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openPath(el.dataset.path)}})})}
 function openPath(id){activePath=paths.find(p=>p.id===id);document.getElementById("pathDetail").classList.remove("hidden");document.getElementById("pathIntro").innerHTML=`<div class="detail-hero"><img src="${activePath.image}" alt=""><div><span class="eyebrow">${activePath.en}</span><h2>${activePath.title}</h2><p>${activePath.desc}</p></div></div>`;renderLessons();document.getElementById("pathDetail").scrollIntoView({behavior:"smooth",block:"start"})}
 function renderLessons(){const total=activePath.lessons.reduce((n,l)=>n+l[3].length,0);const done=activePath.lessons.reduce((n,l,li)=>n+l[3].filter((t,ti)=>completed[activePath.id+"-"+li+"-"+ti]).length,0);document.getElementById("progressText").textContent=faNum(Math.round(done/total*100))+"٪";document.getElementById("progressBar").style.width=(done/total*100)+"%";document.getElementById("lessonList").innerHTML=activePath.lessons.map((l,li)=>{const lessonDone=l[3].filter((t,ti)=>completed[activePath.id+"-"+li+"-"+ti]).length;const ratio=activePath.lessons.length>1?li/(activePath.lessons.length-1):0;const level=ratio<.34?"مبتدی":ratio<.8?"متوسط":"پیشرفته";const levelClass=ratio<.34?"beginner":ratio<.8?"intermediate":"advanced";return `<button class="lesson-row" data-lesson="${li}"><img class="lesson-thumb" src="${l[2]}" alt="" loading="lazy"><span class="lesson-num">۰${li+1}</span><span class="lesson-meta"><small>LESSON ${String(li+1).padStart(2,"0")} • ${l[1]}</small><b>${l[0]}</b><span>${faNum(lessonDone)} از ${faNum(l[3].length)} واژه یادگرفته‌شده</span></span><span class="level-badge ${levelClass}">${level}</span><span class="lesson-state">←</span></button>`}).join("");document.querySelectorAll(".lesson-row").forEach(b=>b.addEventListener("click",()=>openLesson(Number(b.dataset.lesson),0)))}
@@ -117,7 +138,7 @@ function finishLesson(){
  localStorage.setItem("al_completed",JSON.stringify(completed));
  const scores=JSON.parse(localStorage.getItem("al_scores")||"{}");scores[lessonKey(currentLesson.li)]={score:Math.round(lessonScore/buildLessonQuestions(currentLesson.lesson).quiz.length*100),correct:lessonScore,total:buildLessonQuestions(currentLesson.lesson).quiz.length,updatedAt:new Date().toISOString()};localStorage.setItem("al_scores",JSON.stringify(scores));
  const s=JSON.parse(localStorage.getItem("al_lesson_state")||"{}");s[lessonKey(currentLesson.li)]={stage:0,completed:true};localStorage.setItem("al_lesson_state",JSON.stringify(s));
- renderLessons();
+ renderLessons();renderDashboard();
  document.getElementById("modalContent").innerHTML=`<div class="lesson-finished"><div class="finish-icon">✓</div><span class="modal-kicker">LESSON COMPLETED</span><h2 id="modalTitle">آفرین! درس به پایان رسید.</h2><p>این درس را کامل کردی. واژه‌های این درس به‌عنوان یادگرفته‌شده ثبت شدند.</p><div class="score-result">امتیاز آزمون: <strong>${faNum(Math.round(lessonScore/ buildLessonQuestions(currentLesson.lesson).quiz.length*100))}٪</strong></div><button class="stage-next" id="finishClose">بازگشت به فهرست درس‌ها</button></div>`;
  document.getElementById("finishClose").onclick=closeModal;
 }
@@ -126,5 +147,6 @@ document.getElementById("modalClose").addEventListener("click",closeModal);docum
 document.getElementById("backPaths").addEventListener("click",()=>{document.getElementById("pathDetail").classList.add("hidden");document.getElementById("paths").scrollIntoView({behavior:"smooth"})});
 function renderFilters(){const cats=["همه",...paths.map(p=>p.title)];document.getElementById("filters").innerHTML=cats.map(c=>`<button class="filter ${c===activeCategory?"active":""}" data-cat="${c}">${c}</button>`).join("");document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{activeCategory=b.dataset.cat;renderFilters();renderTerms()}))}
 function renderTerms(){const q=document.getElementById("searchInput").value.trim().toLowerCase();const list=allTerms.filter(t=>(activeCategory==="همه"||t.category===activeCategory)&&[t.en,t.fa,t.desc,t.category].some(v=>v.toLowerCase().includes(q)));document.getElementById("termGrid").innerHTML=list.slice(0,60).map(t=>`<article class="term-card"><div class="en">${t.en}</div><div class="pron">${t.pron}</div><h3>${t.fa}</h3><p>${t.desc}</p><div class="example">${t.example}<br><span dir="rtl">${t.exampleFa}</span></div></article>`).join("");document.getElementById("emptyState").classList.toggle("hidden",list.length>0)}
+document.getElementById("clearMistakes").addEventListener("click",()=>{if(!confirm("دفترچه اشتباهات پاک شود؟"))return;localStorage.removeItem("al_mistakes");renderDashboard()});
 document.getElementById("searchInput").addEventListener("input",renderTerms);document.getElementById("mobileMenu").addEventListener("click",()=>document.querySelector(".main-nav").classList.toggle("open"));document.getElementById("homeLink").addEventListener("click",()=>{document.getElementById("pathDetail").classList.add("hidden");activePath=null});
-renderPaths();renderFilters();renderTerms();
+renderPaths();renderFilters();renderTerms();renderDashboard();
