@@ -1,0 +1,49 @@
+{
+  "id": "SIM-INJ-001",
+  "name_fa": "شبیه‌ساز آموزشی عملکرد انژکتور",
+  "verification_status": "needs_review",
+  "scope": "educational_model_not_a_calibrated_flow_bench",
+  "inputs": {
+    "rpm": {
+      "min": 600,
+      "max": 7000,
+      "default": 3000,
+      "unit": "rpm"
+    },
+    "pulse_width_ms": {
+      "min": 1.5,
+      "max": 15,
+      "default": 3.2
+    },
+    "fuel_pressure_bar": {
+      "min": 2,
+      "max": 7,
+      "default": 3.5
+    }
+  },
+  "fault_modes": [
+    "nozzle_blockage",
+    "leaking_needle",
+    "electrical_open",
+    "low_rail_pressure"
+  ],
+  "outputs": [
+    "commanded_injection_pulse",
+    "estimated_relative_flow",
+    "qualitative_spray_condition"
+  ],
+  "missing_model_parameters": [
+    "engine_cycle_and_cylinder_count",
+    "PFI_or_GDI_injector_type",
+    "injector_flow_calibration",
+    "battery_voltage_and_dead_time",
+    "driver_topology_and_current_profile",
+    "fuel_pressure_reference_and_differential_pressure",
+    "duty_cycle_and_injection_events_per_cycle"
+  ],
+  "limitations": "RPM and pulse width alone cannot determine real fuel flow. Do not present cc/min or atomization as measured/validated without a documented physical model and calibration data.",
+  "safety_notes": [
+    "Simulation only; not a substitute for a calibrated injector test bench.",
+    "Do not use simulated values to set real engine calibration."
+  ]
+}
