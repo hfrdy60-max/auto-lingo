@@ -100,6 +100,32 @@ jobs:
                   "byte_identical": a == b,
                   "active_size": len(a), "archive_size": len(b)
               }
+          if active.exists() and zip_batch01:
+              active_rows = json.loads(active.read_text(encoding="utf-8-sig"))
+              archive_rows = json.loads(zip_batch01.read_text(encoding="utf-8-sig"))
+              active_by_id = {row.get("id"): row for row in active_rows}
+              archive_by_id = {row.get("id"): row for row in archive_rows}
+              row_differences = []
+              for term_id in sorted(set(active_by_id) | set(archive_by_id)):
+                  if term_id not in active_by_id:
+                      row_differences.append({"id": term_id, "status": "archive_only"})
+                  elif term_id not in archive_by_id:
+                      row_differences.append({"id": term_id, "status": "active_only"})
+                  else:
+                      changed = {}
+                      for key in sorted(set(active_by_id[term_id]) | set(archive_by_id[term_id])):
+                          if active_by_id[term_id].get(key) != archive_by_id[term_id].get(key):
+                              changed[key] = {"active": active_by_id[term_id].get(key), "archive": archive_by_id[term_id].get(key)}
+                      if changed:
+                          row_differences.append({"id": term_id, "status": "field_differences", "fields": changed})
+              report["batch01_row_comparison"] = {
+                  "active_count": len(active_rows),
+                  "archive_count": len(archive_rows),
+                  "same_id_set": set(active_by_id) == set(archive_by_id),
+                  "same_records": len(row_differences) == 0,
+                  "different_record_count": len(row_differences),
+                  "differences": row_differences
+              }
           (out / "REPORT.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
           summary = [
               "# AUTO LINGO ZIP audit",
