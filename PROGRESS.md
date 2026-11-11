@@ -40,3 +40,11 @@
 - Validation: frontend script parses; HTML includes the learning lab and loads the new script; CSS includes the lab styles.
 - Important deployment step: the SQL migration is committed but has NOT been executed against Supabase. Run `database_migration_002_learning_assets.sql` in Supabase SQL Editor after `database_schema.sql`. GitHub Pages frontend reads static JSON files directly and does not require Supabase for this learning-lab display.
 - All staged technical records remain `needs_review`; image licenses and technical claims require independent source verification before being marked verified.
+
+
+## Stage 5 — Modern global vehicle features curriculum
+- Added `data/modern_features.json` with 25 modern vehicle technologies and options, each containing Persian/English titles, overview, architecture, diagnostic approach, safety notes, keywords, and `needs_review` status.
+- Topics include ADAS Level 2, DMS/OMS, V2X, software-defined vehicles, OTA, zonal E/E architecture, Automotive Ethernet, steer-by-wire, brake-by-wire, rear-wheel steering, adaptive air suspension, active aerodynamics, 48V mild hybrid, integrated thermal management, heat pumps, bidirectional charging (V2L/V2H/V2G), battery preconditioning, UWB digital keys, biometrics, AR-HUD, LiDAR/imaging radar, remote parking, eCall, cybersecurity, and solid-state batteries as an emerging technology.
+- Connected the dataset to the Learning Lab UI with expandable learning cards. JavaScript syntax validation passed.
+- Content is general educational material, not vehicle-specific service data; feature availability varies by manufacturer/model/year/market. All records remain `needs_review`; no unsupported universal specifications are claimed.
+- ESP32 and microcontroller projects remain excluded from AUTO LINGO.
