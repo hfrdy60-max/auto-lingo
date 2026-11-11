@@ -69,6 +69,19 @@ Evidence:
 
 **Recommendation:** keep both versions preserved. Do not overwrite, merge, or designate either one canonical until a row-by-row reconciliation and owner approval are complete.
 
+
+
+### Row-by-row reconciliation (completed)
+A separate comparison workflow compared every record by `id` and every field:
+- Both files contain 41 records and have exactly the same ID set.
+- **All 41 of 41 records differ in at least one field.**
+- `term_en` differs in 37 records; `term_fa` differs in 37.
+- `technical_definition`, `simple_explanation`, `pronunciation_fa`, `example_en`, `example_fa`, and `related_terms` differ in all 41 records.
+- `category_id` differs in 20 records.
+- Other field-level differences are also present; the complete comparison artifact is retained in GitHub Actions run [43123097408](https://github.com/hfrdy60-max/auto-lingo/actions/runs/43123097408).
+
+This proves the two Batch 01 files are competing content sets that reuse the same identifiers. They must not be merged by ID or silently substituted. A deliberate reconciliation plan is required.
+
 ## Remaining QA
 1. Row-by-row reconciliation of active Batch 01 against archive Batch 01.
 2. Validate all 252 definitions, Persian equivalents, IPA/pronunciation, examples, category assignments, and technical claims against reliable automotive sources.
