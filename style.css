@@ -136,3 +136,17 @@ footer{border-top:1px solid var(--line);padding:23px max(calc((100% - 1220px)/2)
 .review-options button:disabled{opacity:.8}.review-options button.correct{border-color:#45d6a3;background:#12372d}.review-options button.incorrect{border-color:#e47d7d;background:#3a2025}
 .review-feedback{text-align:center;font-size:12px;color:var(--mint);min-height:22px;margin:12px}
 @media(max-width:700px){.academy-content{padding:14px}.academy-flow{grid-template-columns:1fr 1fr}.academy-vocab{grid-template-columns:1fr 1fr}.review-options{grid-template-columns:1fr}}
+
+/* Interactive system diagrams */
+.academy-diagram{margin:18px 0;padding:16px;background:#0b141c;border:1px solid var(--line);border-radius:13px}
+.diagram-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.diagram-heading h4{margin:3px 0 12px}.diagram-hint{font-size:10px;color:var(--muted)}
+.diagram-track{display:flex;align-items:center;gap:7px;overflow-x:auto;padding:8px 2px 14px}
+.diagram-node{min-width:118px;min-height:67px;border:1px solid #36505b;background:#14232d;border-radius:10px;padding:10px;color:#edf4f5;font:inherit;cursor:pointer;text-align:center}
+.diagram-node small{display:block;color:var(--muted);font-size:9px;margin-bottom:5px}.diagram-node b{font-size:11px}.diagram-node.selected,.diagram-node:hover{border-color:var(--mint);background:#15382f}
+.diagram-arrow{color:var(--mint);font-size:19px;flex:0 0 auto}
+.diagram-detail{margin-top:6px;padding:13px;border-right:3px solid var(--mint);background:#12232a;border-radius:8px}
+.diagram-detail b{color:var(--mint);font-size:12px}.diagram-detail p{margin:5px 0 0;font-size:11px;line-height:2}
+.ecu-feedback{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;margin-top:12px;text-align:center}
+.ecu-feedback span{padding:10px;background:#15232d;border:1px solid var(--line);border-radius:8px;font-size:10px;color:#c9d8dc}
+.ecu-feedback i{font-size:10px;color:var(--mint);font-style:normal}
+@media(max-width:700px){.academy-diagram{padding:11px}.diagram-node{min-width:105px}.ecu-feedback{grid-template-columns:1fr}.ecu-feedback i{transform:rotate(0)}}
