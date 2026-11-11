@@ -90,3 +90,10 @@
 - Added a four-step Persian quick-start guide with direct links and a realistic 15–20 minute daily learning routine.
 - Refined spacing, typography, cards, navigation hierarchy, and responsive mobile navigation while preserving existing section IDs and learning functionality.
 - This is a presentation/organization pass only. The six recently uploaded JSON content packages are still not fully integrated into the learner-facing UI; missing images and unverified technical content remain QA items.
+
+
+## Stage 8 — App-style navigation redesign (2026-11-12)
+- Replaced the conventional horizontal website navigation with an application shell: persistent desktop sidebar, compact page header, and five primary destinations.
+- Main destinations: Home, Learning Courses, Dictionary, Practice & Tests, and My Progress. On mobile, navigation becomes a fixed five-item bottom dock.
+- Content is grouped into separate page views so the learner no longer has to scroll through the entire product as one long landing page. Existing learning components and their IDs are retained.
+- This is a UI/navigation restructuring; the new JSON content packages still require separate data QA and integration.
