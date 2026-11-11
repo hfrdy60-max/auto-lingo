@@ -1,0 +1,135 @@
+{
+  "task_id": "AI1-TERM-CONTENT-TRIAGE-001",
+  "status": "preliminary_editorial_review",
+  "source_set": "Archived six-batch term set inside AUTO_LINGO_DATABASE_COMPLETE (1).zip",
+  "source_count": 252,
+  "verification_status_changed": false,
+  "canonical_decision": false,
+  "findings": [
+    {
+      "id": "TERM-000083",
+      "field": "kind",
+      "priority": "P1",
+      "issue": "Manual Transmission is classified as part although its definition describes a complete transmission system/assembly.",
+      "recommendation": "Review taxonomy; likely system/assembly rather than part."
+    },
+    {
+      "id": "TERM-000084",
+      "field": "kind",
+      "priority": "P1",
+      "issue": "Automatic Transmission is classified as part although its definition describes a complete transmission system/assembly.",
+      "recommendation": "Review taxonomy; likely system/assembly rather than part."
+    },
+    {
+      "id": "TERM-000094",
+      "field": "term_fa",
+      "priority": "P1",
+      "issue": "Pressure Plate is translated as صفحه کلاچ, which is easily confused with Clutch Disc in Persian automotive usage.",
+      "recommendation": "Use a distinct, workshop-accepted equivalent and distinguish it explicitly from Clutch Disc."
+    },
+    {
+      "id": "TERM-000102",
+      "field": "term_fa",
+      "priority": "P2",
+      "issue": "Brake Drum is translated as کاسه چرخ; کاسه ترمز is a clearer component-specific equivalent.",
+      "recommendation": "Review Persian term and examples."
+    },
+    {
+      "id": "TERM-000073",
+      "field": "term_fa",
+      "priority": "P1",
+      "issue": "Crankshaft Position Sensor is called سنسور دور موتور, which emphasizes RPM and omits crankshaft position/angle.",
+      "recommendation": "Use a position-focused Persian name and retain سنسور دور موتور only as a colloquial synonym if appropriate."
+    },
+    {
+      "id": "TERM-000243",
+      "field": "term_fa",
+      "priority": "P1",
+      "issue": "Stalling is translated as خاموش کردن موتور (causing the engine to stop), while the definition describes the engine stopping unintentionally.",
+      "recommendation": "Use خاموش شدن ناخواسته موتور or equivalent."
+    },
+    {
+      "id": "TERM-000209",
+      "field": "term_fa",
+      "priority": "P2",
+      "issue": "Tensioner is translated as تسمه‌کش (تایمینگ), but the definition includes belt or chain tensioning and the term is broader.",
+      "recommendation": "Use a general term and retain timing-belt tensioner as a contextual subtype."
+    },
+    {
+      "id": "TERM-000208",
+      "field": "term_en/term_fa/technical_definition",
+      "priority": "P1",
+      "issue": "Bearing combines rolling-element bearings and plain/journal bearings under one entry; Persian بلبرینگ / یاتاقان can refer to materially different designs.",
+      "recommendation": "Split or explicitly scope the concept; do not treat synonyms as fully interchangeable."
+    },
+    {
+      "id": "TERM-000123",
+      "field": "term_fa",
+      "priority": "P2",
+      "issue": "Strut is translated as کمک‌فنر ساختاری (مک‌فرسون), while the English definition is broader than MacPherson struts.",
+      "recommendation": "Use a broader equivalent and keep MacPherson Strut as a subtype/synonym only where justified."
+    },
+    {
+      "id": "TERM-000062",
+      "field": "term_fa",
+      "priority": "P2",
+      "issue": "ECU transliteration ایسییو is nonstandard/unclear for Persian readers.",
+      "recommendation": "Review consistent rendering such as ای‌سی‌یو and maintain abbreviation expansion."
+    },
+    {
+      "id": "TERM-000089",
+      "field": "kind",
+      "priority": "P2",
+      "issue": "Transmission Fluid is classified as part although it is a fluid/consumable.",
+      "recommendation": "Review whether schema needs a material/fluid kind or a documented convention."
+    },
+    {
+      "id": "TERM-000107",
+      "field": "kind",
+      "priority": "P2",
+      "issue": "Brake Fluid is classified as part although it is a fluid/consumable.",
+      "recommendation": "Review taxonomy convention for fluids and consumables."
+    },
+    {
+      "id": "TERM-000135",
+      "field": "kind",
+      "priority": "P2",
+      "issue": "Coolant is classified as part although it is a fluid/consumable.",
+      "recommendation": "Review taxonomy convention for fluids and consumables."
+    },
+    {
+      "id": "TERM-000142",
+      "field": "kind",
+      "priority": "P2",
+      "issue": "Engine Oil is classified as part although it is a fluid/consumable.",
+      "recommendation": "Review taxonomy convention for fluids and consumables."
+    },
+    {
+      "id": "TERM-000151",
+      "field": "kind",
+      "priority": "P2",
+      "issue": "Refrigerant is classified as part although it is a working fluid.",
+      "recommendation": "Review taxonomy convention for fluids and consumables."
+    },
+    {
+      "id": "TERM-000224",
+      "field": "related_terms",
+      "priority": "P1",
+      "issue": "Airbag references Seat Belt Pretensioner, which is absent from the six archived batches.",
+      "recommendation": "Add the missing concept only in a separately authorized content task, or revise the reference after review."
+    },
+    {
+      "id": "TERM-000220",
+      "field": "category_id",
+      "priority": "P2",
+      "issue": "Body Control Module is categorized under Body & Chassis despite being an electronic control module; the category taxonomy may need a clearer placement rule.",
+      "recommendation": "Review primary category and cross-category tagging policy."
+    }
+  ],
+  "review_notes": [
+    "These are editorial/taxonomy triage findings based on the stored definitions and terminology, not externally sourced technical verification.",
+    "No original term record was changed.",
+    "All source records remain unverified.",
+    "The archived Batch 01 is used for this triage; the conflicting root-level Batch 01 remains a separate unresolved source."
+  ]
+}
