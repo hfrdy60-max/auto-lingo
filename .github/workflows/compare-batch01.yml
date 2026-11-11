@@ -1,0 +1,89 @@
+name: AUTO LINGO Batch 01 comparison
+on:
+  push:
+    branches:
+      - ai1-zip-extract-audit-001
+    paths:
+      - ".github/workflows/compare-batch01.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare active Batch 01 with archive Batch 01
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, zipfile, hashlib, pathlib
+          root = pathlib.Path(".")
+          archive = root / "AUTO_LINGO_DATABASE_COMPLETE (1).zip"
+          active_path = root / "terms_batch_01.json"
+          with zipfile.ZipFile(archive) as z:
+              members = [n for n in z.namelist() if n.endswith("/terms/terms_batch_01.json")]
+              if len(members) != 1:
+                  raise SystemExit(f"Expected exactly one archive Batch 01; found {members}")
+              archive_path = members[0]
+              archived = json.loads(z.read(archive_path).decode("utf-8-sig"))
+          active = json.loads(active_path.read_text(encoding="utf-8-sig"))
+          def index(rows):
+              out = {}
+              for row in rows:
+                  key = row.get("id")
+                  if key in out:
+                      raise SystemExit(f"Duplicate ID in source: {key}")
+                  out[key] = row
+              return out
+          a, b = index(active), index(archived)
+          ids = sorted(set(a) | set(b))
+          diffs = []
+          for term_id in ids:
+              if term_id not in a:
+                  diffs.append({"id":term_id,"status":"archive_only"})
+              elif term_id not in b:
+                  diffs.append({"id":term_id,"status":"active_only"})
+              else:
+                  changed = {}
+                  for key in sorted(set(a[term_id]) | set(b[term_id])):
+                      if a[term_id].get(key) != b[term_id].get(key):
+                          changed[key] = {"active":a[term_id].get(key),"archive":b[term_id].get(key)}
+                  if changed:
+                      diffs.append({"id":term_id,"status":"field_differences","fields":changed})
+          result = {
+              "active_file":str(active_path),
+              "archive_file":archive_path,
+              "active_count":len(active),
+              "archive_count":len(archived),
+              "active_sha256":hashlib.sha256(active_path.read_bytes()).hexdigest(),
+              "archive_member_sha256":hashlib.sha256(zipfile.ZipFile(archive).read(archive_path)).hexdigest(),
+              "same_id_set":set(a)==set(b),
+              "same_records":len(diffs)==0,
+              "different_record_count":len(diffs),
+              "differences":diffs
+          }
+          out=pathlib.Path("batch01-comparison")
+          out.mkdir(exist_ok=True)
+          (out/"comparison.json").write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
+          lines=[
+              "# Batch 01 row-by-row comparison",
+              f"- Active records: {len(active)}",
+              f"- Archive records: {len(archived)}",
+              f"- Same ID set: {result['same_id_set']}",
+              f"- Same records: {result['same_records']}",
+              f"- Records with differences: {len(diffs)}",
+              "",
+              "See comparison.json for field-level details."
+          ]
+          (out/"REPORT.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
+          print("\n".join(lines))
+          PY
+      - name: Upload comparison
+        uses: actions/upload-artifact@v4
+        with:
+          name: auto-lingo-batch01-comparison
+          path: batch01-comparison/
+          retention-days: 14
