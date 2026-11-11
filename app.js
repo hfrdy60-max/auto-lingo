@@ -28,7 +28,84 @@ const completed=JSON.parse(localStorage.getItem("al_completed")||"{}");
 function renderPaths(){document.getElementById("pathGrid").innerHTML=paths.map((p,i)=>`<article class="path-card" data-path="${p.id}" tabindex="0" role="button" aria-label="شروع مسیر ${p.title}"><img src="${p.image}" alt="${p.title}" loading="lazy"><span class="path-number">0${i+1}</span><div class="path-info"><span class="en">${p.en}</span><h3>${p.title}</h3><p>${p.desc}</p><span class="path-arrow">←</span></div></article>`).join("");document.querySelectorAll(".path-card").forEach(el=>{el.addEventListener("click",()=>openPath(el.dataset.path));el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openPath(el.dataset.path)}})})}
 function openPath(id){activePath=paths.find(p=>p.id===id);document.getElementById("pathDetail").classList.remove("hidden");document.getElementById("pathIntro").innerHTML=`<div class="detail-hero"><img src="${activePath.image}" alt=""><div><span class="eyebrow">${activePath.en}</span><h2>${activePath.title}</h2><p>${activePath.desc}</p></div></div>`;renderLessons();document.getElementById("pathDetail").scrollIntoView({behavior:"smooth",block:"start"})}
 function renderLessons(){const total=activePath.lessons.reduce((n,l)=>n+l[3].length,0);const done=activePath.lessons.reduce((n,l,li)=>n+l[3].filter((t,ti)=>completed[activePath.id+"-"+li+"-"+ti]).length,0);document.getElementById("progressText").textContent=faNum(Math.round(done/total*100))+"٪";document.getElementById("progressBar").style.width=(done/total*100)+"%";document.getElementById("lessonList").innerHTML=activePath.lessons.map((l,li)=>{const lessonDone=l[3].filter((t,ti)=>completed[activePath.id+"-"+li+"-"+ti]).length;return `<button class="lesson-row" data-lesson="${li}"><img class="lesson-thumb" src="${l[2]}" alt="" loading="lazy"><span class="lesson-num">۰${li+1}</span><span class="lesson-meta"><small>LESSON ${String(li+1).padStart(2,"0")} • ${l[1]}</small><b>${l[0]}</b><span>${faNum(lessonDone)} از ${faNum(l[3].length)} واژه یادگرفته‌شده</span></span><span class="lesson-state">←</span></button>`}).join("");document.querySelectorAll(".lesson-row").forEach(b=>b.addEventListener("click",()=>openLesson(Number(b.dataset.lesson),0)))}
-function openLesson(li,ti){const lesson=activePath.lessons[li],term=lesson[3][ti],isDone=!!completed[activePath.id+"-"+li+"-"+ti];document.getElementById("modalContent").innerHTML=`<img class="modal-image" src="${lesson[2]}" alt="${lesson[0]}"><span class="modal-kicker">LESSON ${faNum(li+1)} / STEP ${faNum(ti+1)} • ${lesson[1]}</span><h2 id="modalTitle">${term[0]}</h2><div class="pronunciation">${term[2]}</div><p class="meaning">${term[1]}</p><p>${term[3]}</p><button class="speak-btn" id="speakBtn">▶ پخش تلفظ انگلیسی</button><div class="lesson-example"><b>${term[4]}</b><span>${term[5]}</span></div><p>این واژه را با صدای بلند تکرار کن و سپس مثال انگلیسی را بخوان.</p><div class="modal-footer"><span class="modal-kicker">واژه ${faNum(ti+1)} از ${faNum(lesson[3].length)}</span><button class="complete-btn" id="completeBtn">${isDone?"✓ یادگرفته‌ام":"علامت‌گذاری به‌عنوان یادگرفته‌شده"}</button></div>`;document.getElementById("lessonModal").classList.remove("hidden");document.getElementById("speakBtn").onclick=()=>{if(!("speechSynthesis"in window)){alert("پخش گفتار در این مرورگر پشتیبانی نمی‌شود.");return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(term[0]);u.lang="en-US";u.rate=.85;speechSynthesis.speak(u)};document.getElementById("completeBtn").onclick=()=>{completed[activePath.id+"-"+li+"-"+ti]=true;localStorage.setItem("al_completed",JSON.stringify(completed));renderLessons();document.getElementById("completeBtn").textContent="✓ ثبت شد";};}
+let currentLesson=null, lessonStage=0, questionIndex=0, questionAnswered=false;
+function lessonKey(li){return activePath.id+"-"+li}
+function buildLessonQuestions(lesson){
+ const terms=lesson[3];
+ const makeOptions=(correct,idx)=>{const others=terms.filter((_,i)=>i!==idx).map(t=>t[1]);return [correct,...others].sort(()=>Math.random()-.5)};
+ const qs=terms.map((t,i)=>({prompt:"معنی درست این اصطلاح چیست؟",label:t[0],answer:t[1],options:makeOptions(t[1],i)}));
+ const reverse=terms.map((t,i)=>({prompt:"کدام اصطلاح انگلیسی با این معنی مطابقت دارد؟",label:t[1],answer:t[0],options:[t[0],...terms.filter((_,j)=>j!==i).map(x=>x[0])].sort(()=>Math.random()-.5)}));
+ return {practice:qs,quiz:[...qs,...reverse]};
+}
+function lessonStages(lesson){return ["شروع درس",...lesson[3].map(t=>"واژه: "+t[0]),"شنیدن و تلفظ","مکالمه تعمیرگاهی","تمرین تعاملی","آزمون پایانی"]}
+function openLesson(li,ti=0){
+ currentLesson={li,lesson:activePath.lessons[li]};
+ const saved=JSON.parse(localStorage.getItem("al_lesson_state")||"{}");
+ lessonStage=Math.min(saved[lessonKey(li)]?.stage||0,lessonStages(currentLesson.lesson).length-1);
+ questionIndex=0;questionAnswered=false;
+ document.getElementById("lessonModal").classList.remove("hidden");
+ renderLessonStage();
+}
+function renderLessonStage(){
+ const lesson=currentLesson.lesson, terms=lesson[3], stages=lessonStages(lesson), total=stages.length;
+ const pct=Math.round(((lessonStage+1)/total)*100);
+ let body="";
+ if(lessonStage===0){
+  body=`<img class="modal-image" src="${lesson[2]}" alt="${lesson[0]}"><span class="modal-kicker">LEARNING MODULE • ${activePath.en}</span><h2 id="modalTitle">${lesson[0]}</h2><p class="meaning">${lesson[1]}</p><p>در این درس ${faNum(terms.length)} اصطلاح کلیدی را یاد می‌گیری، تلفظ آن‌ها را می‌شنوی، در یک مکالمه تعمیرگاهی می‌بینی و در پایان دانش خودت را می‌سنجی.</p><div class="lesson-goals"><b>هدف‌های این درس</b><div>✓ شناخت اصطلاحات اصلی</div><div>✓ یادگیری معنی و کاربرد در جمله</div><div>✓ تمرین شنیداری و مکالمه</div><div>✓ سنجش یادگیری</div></div>`;
+ }else if(lessonStage<=terms.length){
+  const i=lessonStage-1,t=terms[i];
+  body=`<span class="modal-kicker">VOCABULARY • ${faNum(i+1)} از ${faNum(terms.length)}</span><h2 id="modalTitle" dir="ltr">${t[0]}</h2><div class="pronunciation">${t[2]}</div><p class="meaning">${t[1]}</p><div class="lesson-definition"><b>توضیح ساده</b><p>${t[3]}</p></div><button class="speak-btn" id="speakBtn">▶ شنیدن تلفظ انگلیسی</button><div class="lesson-example"><b>${t[4]}</b><span>${t[5]}</span></div><p class="learning-hint">جمله را با صدای بلند بخوان و سعی کن بدون نگاه کردن، معنی اصطلاح را به خاطر بیاوری.</p>`;
+ }else if(lessonStage===terms.length+1){
+  body=`<span class="modal-kicker">LISTENING PRACTICE</span><h2 id="modalTitle">گوش کن و تکرار کن</h2><p>ابتدا هر اصطلاح را گوش کن، سپس مثال آن را پخش کن و با صدای بلند تکرار کن.</p><div class="listening-list">${terms.map((t,i)=>`<div class="listening-item"><div><b dir="ltr">${t[0]}</b><span>${t[1]}</span></div><button class="speak-btn" data-speak="${i}">▶ پخش</button><button class="speak-btn" data-example="${i}">جمله</button></div>`).join("")}</div>`;
+ }else if(lessonStage===terms.length+2){
+  const first=terms[0], second=terms[Math.min(1,terms.length-1)];
+  body=`<span class="modal-kicker">WORKSHOP CONVERSATION</span><h2 id="modalTitle">مکالمه در تعمیرگاه</h2><p>به مکالمه زیر توجه کن. برای شنیدن هر جمله روی دکمه پخش بزن.</p><div class="conversation"><div class="chat-line"><small>MECHANIC • تعمیرکار</small><b>What seems to be the problem?</b><span>به نظر شما مشکل چیست؟</span><button class="speak-btn" data-phrase="What seems to be the problem?">▶ شنیدن</button></div><div class="chat-line customer"><small>CUSTOMER • مشتری</small><b>I think there is a problem with the ${first[0].toLowerCase()}.</b><span>فکر می‌کنم ${first[1]} مشکل دارد.</span><button class="speak-btn" data-phrase="I think there is a problem with the ${first[0].toLowerCase()}.">▶ شنیدن</button></div><div class="chat-line"><small>MECHANIC • تعمیرکار</small><b>We will inspect it and check the ${second[0].toLowerCase()}.</b><span>آن را بررسی می‌کنیم و ${second[1]} را کنترل می‌کنیم.</span><button class="speak-btn" data-phrase="We will inspect it and check the ${second[0].toLowerCase()}.">▶ شنیدن</button></div></div><p class="learning-hint">نکته: جمله‌ها نمونه آموزشی هستند؛ معنی آن‌ها را با صدای بلند تکرار کن.</p>`;
+ }else if(lessonStage===terms.length+3){
+  body=renderQuestionContent("practice");
+ }else{
+  body=renderQuestionContent("quiz");
+ }
+ document.getElementById("modalContent").innerHTML=`<div class="lesson-progress-head"><span>مرحله ${faNum(lessonStage+1)} از ${faNum(total)}</span><b>${stages[lessonStage]}</b><strong>${faNum(pct)}٪</strong></div><div class="lesson-progress-track"><i style="width:${pct}%"></i></div><div class="lesson-stage-body">${body}</div><div class="lesson-stage-footer"><button class="stage-prev" id="stagePrev" ${lessonStage===0?"disabled":""}>مرحله قبل</button><span>${faNum(lessonStage+1)} / ${faNum(total)}</span><button class="stage-next" id="stageNext">${lessonStage===total-1?"ثبت پایان درس":"مرحله بعد ←"}</button></div>`;
+ const speak=(text)=>{if(!("speechSynthesis"in window)){alert("پخش گفتار در این مرورگر پشتیبانی نمی‌شود.");return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=.86;speechSynthesis.speak(u)};
+ const speakBtn=document.getElementById("speakBtn");if(speakBtn){const i=lessonStage-1;speakBtn.onclick=()=>speak(terms[i][0])}
+ document.querySelectorAll("[data-speak]").forEach(b=>b.onclick=()=>speak(terms[Number(b.dataset.speak)][0]));
+ document.querySelectorAll("[data-example]").forEach(b=>b.onclick=()=>speak(terms[Number(b.dataset.example)][4]));
+ document.querySelectorAll("[data-phrase]").forEach(b=>b.onclick=()=>speak(b.dataset.phrase));
+ document.getElementById("stagePrev").onclick=()=>{if(lessonStage>0){lessonStage--;questionIndex=0;questionAnswered=false;saveLessonStage();renderLessonStage()}};
+ document.getElementById("stageNext").onclick=()=>{if(lessonStage===total-1){finishLesson();return}lessonStage++;questionIndex=0;questionAnswered=false;saveLessonStage();renderLessonStage()};
+ if(lessonStage===terms.length+3||lessonStage===terms.length+4)bindQuestionButtons();
+}
+function renderQuestionContent(type){
+ const data=buildLessonQuestions(currentLesson.lesson),questions=data[type],q=questions[questionIndex%questions.length];
+ const isQuiz=type==="quiz";
+ return `<span class="modal-kicker">${isQuiz?"FINAL QUIZ":"QUICK PRACTICE"} • ${faNum(questionIndex+1)} از ${faNum(questions.length)}</span><h2 id="modalTitle">${isQuiz?"آزمون پایانی":"حالا خودت امتحان کن"}</h2><div class="question-card"><p>${q.prompt}</p><h3 dir="auto">${q.label}</h3><div class="answer-options">${q.options.map((o,i)=>`<button class="answer-option" data-answer="${i}" data-value="${o.replace(/"/g,"&quot;")}">${o}</button>`).join("")}</div><p class="answer-feedback" id="answerFeedback"></p></div><p class="learning-hint">${isQuiz?"در پایان نتیجه آزمون ثبت می‌شود.":"برای ادامه، یک پاسخ را انتخاب کن."}</p>`;
+}
+function bindQuestionButtons(){
+ const isQuiz=lessonStage===currentLesson.lesson[3].length+4;
+ const questions=buildLessonQuestions(currentLesson.lesson)[isQuiz?"quiz":"practice"];
+ document.querySelectorAll(".answer-option").forEach(btn=>btn.onclick=()=>{
+  if(questionAnswered)return;questionAnswered=true;
+  const q=questions[questionIndex%questions.length],correct=btn.dataset.value===q.answer;
+  btn.classList.add(correct?"correct":"incorrect");
+  document.querySelectorAll(".answer-option").forEach(b=>{if(b.dataset.value===q.answer)b.classList.add("correct");b.disabled=true});
+  document.getElementById("answerFeedback").textContent=correct?"آفرین! پاسخ درست است.":"پاسخ درست: "+q.answer;
+  document.getElementById("answerFeedback").className="answer-feedback "+(correct?"good":"bad");
+  const next=document.getElementById("stageNext");next.textContent=questionIndex===questions.length-1?(isQuiz?"ثبت نتیجه آزمون":"پایان تمرین"):"سؤال بعدی";
+  next.onclick=()=>{
+   if(questionIndex<questions.length-1){questionIndex++;questionAnswered=false;renderLessonStage()}
+   else if(isQuiz){finishLesson()}else{lessonStage++;questionIndex=0;questionAnswered=false;saveLessonStage();renderLessonStage()}
+  };
+ });
+}
+function saveLessonStage(){const s=JSON.parse(localStorage.getItem("al_lesson_state")||"{}");s[lessonKey(currentLesson.li)]={stage:lessonStage};localStorage.setItem("al_lesson_state",JSON.stringify(s))}
+function finishLesson(){
+ currentLesson.lesson[3].forEach((_,ti)=>completed[activePath.id+"-"+currentLesson.li+"-"+ti]=true);
+ localStorage.setItem("al_completed",JSON.stringify(completed));
+ const s=JSON.parse(localStorage.getItem("al_lesson_state")||"{}");s[lessonKey(currentLesson.li)]={stage:0,completed:true};localStorage.setItem("al_lesson_state",JSON.stringify(s));
+ renderLessons();
+ document.getElementById("modalContent").innerHTML=`<div class="lesson-finished"><div class="finish-icon">✓</div><span class="modal-kicker">LESSON COMPLETED</span><h2 id="modalTitle">آفرین! درس به پایان رسید.</h2><p>این درس را کامل کردی. واژه‌های این درس به‌عنوان یادگرفته‌شده ثبت شدند.</p><button class="stage-next" id="finishClose">بازگشت به فهرست درس‌ها</button></div>`;
+ document.getElementById("finishClose").onclick=closeModal;
+}
 function closeModal(){document.getElementById("lessonModal").classList.add("hidden")}
 document.getElementById("modalClose").addEventListener("click",closeModal);document.getElementById("modalBackdrop").addEventListener("click",closeModal);document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
 document.getElementById("backPaths").addEventListener("click",()=>{document.getElementById("pathDetail").classList.add("hidden");document.getElementById("paths").scrollIntoView({behavior:"smooth"})});
