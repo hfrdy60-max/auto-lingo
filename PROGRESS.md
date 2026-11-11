@@ -30,3 +30,13 @@
 - All technical records remain `needs_review` / unverified. No image license, technical value, wiring topology, or vehicle-specific parameter is represented as independently verified.
 - Known issues are documented in-record: likely diesel Common Rail image mislabeled as GDI; injector circuit fuse/clamp values are not universal; CAN values are typical only; injector simulator needs calibration and engine/injector model parameters; MAP/CKP signals are sensor/application-specific; P0300 is a diagnostic case, not proof of a failed component.
 - The datasets are staged for review and are not yet imported into production relational tables or connected to the frontend UI.
+
+
+## Stage 4 — Frontend and database integration prepared
+- Added `automotive-data.js`, which loads the seven staging JSON datasets and renders them in the new responsive `#learningLab` section on the GitHub Pages frontend.
+- Added an interactive educational injector-command calculator with explicit simplified assumptions; it does not claim real fuel-flow measurement or calibration.
+- Added `database_migration_002_learning_assets.sql`: creates relational tables for educational media, generic wiring references, simulator configurations, practical labs and assessment configuration; seeds those tables and maps P0300 to the existing diagnostics and repair_scenarios model.
+- Added public read-only RLS policies for the new content tables, consistent with the current schema's public learning-content model.
+- Validation: frontend script parses; HTML includes the learning lab and loads the new script; CSS includes the lab styles.
+- Important deployment step: the SQL migration is committed but has NOT been executed against Supabase. Run `database_migration_002_learning_assets.sql` in Supabase SQL Editor after `database_schema.sql`. GitHub Pages frontend reads static JSON files directly and does not require Supabase for this learning-lab display.
+- All staged technical records remain `needs_review`; image licenses and technical claims require independent source verification before being marked verified.
