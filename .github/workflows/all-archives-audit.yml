@@ -1,0 +1,89 @@
+name: AUTO LINGO all archive comparison
+on:
+  push:
+    branches:
+      - ai1-zip-extract-audit-001
+    paths:
+      - ".github/workflows/all-archives-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare every ZIP archive
+        shell: bash
+        run: |
+          python - <<'PY'
+          import zipfile, pathlib, json, hashlib, collections
+          root=pathlib.Path(".")
+          archives=sorted(root.glob("AUTO_LINGO_DATABASE_COMPLETE*.zip"))
+          result={"archives":[],"cross_archive_comparisons":[],"errors":[]}
+          parsed={}
+          for path in archives:
+              info={"name":path.name,"sha256":hashlib.sha256(path.read_bytes()).hexdigest(),"size":path.stat().st_size,"members":[],"term_batches":{}}
+              with zipfile.ZipFile(path) as z:
+                  bad=z.testzip()
+                  if bad: raise SystemExit(f"CRC failure in {path.name}: {bad}")
+                  for member in z.namelist():
+                      if member.endswith("/"): continue
+                      info["members"].append(member)
+                      if "/terms/terms_batch_" in member and member.endswith(".json"):
+                          rows=json.loads(z.read(member).decode("utf-8-sig"))
+                          ids=[r.get("id") for r in rows if isinstance(r,dict)]
+                          info["term_batches"][member.split("/")[-1]]={
+                              "count":len(rows),
+                              "first_id":ids[0] if ids else None,
+                              "last_id":ids[-1] if ids else None,
+                              "duplicate_ids":{k:v for k,v in collections.Counter(ids).items() if v>1},
+                              "rows":rows,
+                              "sha256":hashlib.sha256(z.read(member)).hexdigest()
+                          }
+              parsed[path.name]=info
+              result["archives"].append({k:v for k,v in info.items() if k!="term_batches"} | {
+                  "term_batches":{bn:{kk:vv for kk,vv in bv.items() if kk!="rows"} for bn,bv in info["term_batches"].items()}
+              })
+          names=list(parsed)
+          for i in range(len(names)):
+              for j in range(i+1,len(names)):
+                  left,right=names[i],names[j]
+                  common=set(parsed[left]["term_batches"]) & set(parsed[right]["term_batches"])
+                  for batch in sorted(common):
+                      a=parsed[left]["term_batches"][batch]["rows"]
+                      b=parsed[right]["term_batches"][batch]["rows"]
+                      def byid(rows): return {x.get("id"):x for x in rows}
+                      aa,bb=byid(a),byid(b)
+                      diffs=[]
+                      for tid in sorted(set(aa)|set(bb)):
+                          if tid not in aa: diffs.append({"id":tid,"status":"right_only"})
+                          elif tid not in bb: diffs.append({"id":tid,"status":"left_only"})
+                          elif aa[tid]!=bb[tid]: diffs.append({"id":tid,"status":"content_diff"})
+                      result["cross_archive_comparisons"].append({
+                          "left_archive":left,"right_archive":right,"batch":batch,
+                          "left_count":len(a),"right_count":len(b),
+                          "same_id_set":set(aa)==set(bb),
+                          "same_records":len(diffs)==0,
+                          "different_record_count":len(diffs),
+                          "sample_differences":diffs[:5]
+                      })
+          out=pathlib.Path("all-archives-output"); out.mkdir(exist_ok=True)
+          (out/"comparison.json").write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
+          lines=["# All ZIP archive comparison","",f"- Archives found: {len(archives)}"]
+          for a in result["archives"]:
+              lines.append(f"- {a['name']}: {a['size']} bytes; {len(a['members'])} members; batches: "+", ".join(f"{k}={v['count']}" for k,v in a['term_batches'].items()))
+          lines += ["", "## Cross-archive comparisons"]
+          for c in result["cross_archive_comparisons"]:
+              lines.append(f"- {c['left_archive']} vs {c['right_archive']} / {c['batch']}: same IDs={c['same_id_set']}; same records={c['same_records']}; differing IDs={c['different_record_count']}")
+          (out/"REPORT.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
+          print("\n".join(lines))
+          PY
+      - name: Upload comparison
+        uses: actions/upload-artifact@v4
+        with:
+          name: auto-lingo-all-archives-comparison
+          path: all-archives-output/
+          retention-days: 14
