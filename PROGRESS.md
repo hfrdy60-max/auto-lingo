@@ -48,3 +48,11 @@
 - Connected the dataset to the Learning Lab UI with expandable learning cards. JavaScript syntax validation passed.
 - Content is general educational material, not vehicle-specific service data; feature availability varies by manufacturer/model/year/market. All records remain `needs_review`; no unsupported universal specifications are claimed.
 - ESP32 and microcontroller projects remain excluded from AUTO LINGO.
+
+## Stage 6 — Generic parts database (in progress)
+- Added `data/parts_batch_01.json` with 15 generic automotive part records (`PART-000001`–`PART-000015`): air filter, oil filter, fuel injector, fuel pump, throttle body, spark plug, ignition coil, MAF, MAP, crankshaft position sensor, camshaft position sensor, engine coolant temperature sensor, thermostat, radiator, and water pump.
+- Each record includes bilingual names, a generic description, function, typical installation area, operating principle, common failure modes, symptoms, cautious test approaches, required tools, category mapping, and candidate source links.
+- All records are marked `needs_review`. Candidate publisher homepages are discovery leads, not record-level proof; no record is marked verified.
+- Safety notes are embedded where relevant, including high-pressure GDI/diesel fuel precautions and hot pressurized cooling-system hazards.
+- Generic content only: no universal electrical values, pressures, torques, pinouts, or vehicle-specific repair steps are asserted.
+- Note: the supplied 2026-11-12 external progress report says 82 terms, while the repository's current `PROGRESS.md` still documents 41 terms and an earlier resume point. Reconcile the term batches and progress record before assigning more TERM IDs.
