@@ -21,3 +21,12 @@
 - Last ID: TERM-000041
 - Completed categories: CAT-01 (initial batch; category coverage not yet complete)
 - Next: continue CAT-01 with non-duplicate terms, then CAT-02 through CAT-26.
+
+
+## Stage 3 — Gemini material staged for AUTO LINGO
+- Added seven automotive-learning staging datasets under `data/staging/`: parts_images, wiring_diagrams, simulator_data, sensor_simulator, diagnostic_cases, electronics_labs, report_card_prompt.
+- ESP32/microcontroller project content is excluded from AUTO LINGO scope and was not added. No `data/staging/esp32_projects.json` existed at the checked path.
+- These staging files are curated/reconstructed from the supplied file summaries in the conversation, not byte-for-byte copies of the original Gemini JSON files. Reconcile any exact original records against these staged records before replacement.
+- All technical records remain `needs_review` / unverified. No image license, technical value, wiring topology, or vehicle-specific parameter is represented as independently verified.
+- Known issues are documented in-record: likely diesel Common Rail image mislabeled as GDI; injector circuit fuse/clamp values are not universal; CAN values are typical only; injector simulator needs calibration and engine/injector model parameters; MAP/CKP signals are sensor/application-specific; P0300 is a diagnostic case, not proof of a failed component.
+- The datasets are staged for review and are not yet imported into production relational tables or connected to the frontend UI.
