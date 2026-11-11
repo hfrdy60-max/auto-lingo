@@ -1,0 +1,135 @@
+{
+  "mission_id": "AI2-TERM-ARCHIVE-AUDIT-001",
+  "status": "inventory_audit_complete_content_audit_pending",
+  "repository": "hfrdy60-max/auto-lingo",
+  "branch": "ai2-term-archive-audit-001",
+  "archives": [
+    {
+      "path": "AUTO_LINGO_DATABASE_COMPLETE.zip",
+      "bytes": 34280,
+      "git_blob_sha": "12dcdfa0217243ba3355b8160d4b27ca187bc4f0",
+      "zip_entries": 13,
+      "term_batches": [
+        1,
+        2
+      ]
+    },
+    {
+      "path": "AUTO_LINGO_DATABASE_COMPLETE (1).zip",
+      "bytes": 87964,
+      "git_blob_sha": "40543c47b6a6d34f5f1309979e0367fe38ac89d9",
+      "zip_entries": 19,
+      "term_batches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "duplicate_archive_group": "complete-archive-copy-1-to-4"
+    },
+    {
+      "path": "AUTO_LINGO_DATABASE_COMPLETE (2).zip",
+      "bytes": 87964,
+      "git_blob_sha": "40543c47b6a6d34f5f1309979e0367fe38ac89d9",
+      "zip_entries": 19,
+      "term_batches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "duplicate_archive_group": "complete-archive-copy-1-to-4"
+    },
+    {
+      "path": "AUTO_LINGO_DATABASE_COMPLETE (3).zip",
+      "bytes": 87964,
+      "git_blob_sha": "40543c47b6a6d34f5f1309979e0367fe38ac89d9",
+      "zip_entries": 19,
+      "term_batches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "duplicate_archive_group": "complete-archive-copy-1-to-4"
+    },
+    {
+      "path": "AUTO_LINGO_DATABASE_COMPLETE (4).zip",
+      "bytes": 87964,
+      "git_blob_sha": "40543c47b6a6d34f5f1309979e0367fe38ac89d9",
+      "zip_entries": 19,
+      "term_batches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "duplicate_archive_group": "complete-archive-copy-1-to-4"
+    }
+  ],
+  "archive_term_files": [
+    {
+      "batch": 1,
+      "uncompressed_bytes": 49320,
+      "crc32": "88bd649e"
+    },
+    {
+      "batch": 2,
+      "uncompressed_bytes": 46177,
+      "crc32": "ebaee3e9"
+    },
+    {
+      "batch": 3,
+      "uncompressed_bytes": 55971,
+      "crc32": "2de18a15"
+    },
+    {
+      "batch": 4,
+      "uncompressed_bytes": 52168,
+      "crc32": "d202dd4e"
+    },
+    {
+      "batch": 5,
+      "uncompressed_bytes": 39731,
+      "crc32": "65b3683b"
+    },
+    {
+      "batch": 6,
+      "uncompressed_bytes": 37321,
+      "crc32": "99972e6a"
+    }
+  ],
+  "active_batch_01": {
+    "path": "terms_batch_01.json",
+    "record_count": 41,
+    "id_min": "TERM-000001",
+    "id_max": "TERM-000041",
+    "unique_ids": 41,
+    "unique_term_en": 41,
+    "unique_term_fa": 41,
+    "category_counts": {
+      "CAT-01": 41
+    },
+    "verification_counts": {
+      "unverified": 41
+    },
+    "utf8_bytes": 59504,
+    "crc32": "98fc08f0"
+  },
+  "content_audit": {
+    "zip_json_extracted": false,
+    "reason": "Current GitHub connector returns ZIP bytes as Base64; this execution environment does not expose a ZIP DEFLATE extractor in the connector workflow.",
+    "batch_record_counts_known": false,
+    "duplicate_ids_checked": false,
+    "canonical_decision_made": false
+  },
+  "no_main_files_modified": true
+}
