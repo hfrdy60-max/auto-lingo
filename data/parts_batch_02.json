@@ -1,0 +1,1410 @@
+{
+  "dataset": "AUTO LINGO Parts Database",
+  "batch_id": "PARTS-BATCH-002",
+  "schema_version": "1.0.0",
+  "id_range": "PART-000016..PART-000035",
+  "record_count": 20,
+  "records": [
+    {
+      "id": "PART-000016",
+      "name_en": "Cooling Fan",
+      "name_fa": "فن خنک‌کننده",
+      "pronunciation_fa": "کولینگ فَن",
+      "ipa": "/ˈkuːlɪŋ fæn/",
+      "description": "فن خنک‌کننده، جریان هوای عبوری از رادیاتور را افزایش می‌دهد تا گرمای مایع خنک‌کننده به محیط منتقل شود؛ به‌ویژه هنگام توقف یا سرعت کم خودرو.",
+      "main_function": "افزایش جریان هوا از میان رادیاتور و در برخی خودروها کندانسور کولر.",
+      "installation_location": "معمولاً پشت رادیاتور در محفظه موتور؛ در برخی خودروها جلوی رادیاتور یا به‌صورت مجموعه مکنده/دمنده.",
+      "working_principle": "در نوع برقی، موتور DC با فرمان رله یا ماژول کنترل و بر اساس دمای موتور، فشار کولر و منطق ECU می‌چرخد. نوع مکانیکی ممکن است با تسمه یا کلاچ ویسکوز از موتور نیرو بگیرد.",
+      "internal_components": [
+        "پره و توپی؛ موتور الکتریکی یا کلاچ ویسکوز؛ قاب/شِراد؛ سوکت و سیم‌کشی؛ در برخی خودروها مقاومت یا ماژول کنترل."
+      ],
+      "common_failures": [
+        "خرابی موتور یا یاتاقان",
+        "شکستگی پره یا قاب",
+        "خوردگی سوکت",
+        "خرابی رله/فیوز/ماژول",
+        "گیرکردن کلاچ ویسکوز."
+      ],
+      "failure_symptoms": [
+        "بالا رفتن دمای موتور در ترافیک",
+        "روشن نشدن یا کارکرد مداوم فن",
+        "صدای غیرعادی",
+        "عملکرد نامناسب کولر در توقف."
+      ],
+      "testing_methods": [
+        "بازرسی بصری و بررسی خطاهای ECU",
+        "مشاهده فرمان و وضعیت فن با دستگاه عیب‌یاب",
+        "آزمون مدار طبق نقشه و دستورالعمل سازنده توسط فرد آموزش‌دیده. از نزدیک شدن دست و ابزار به فن خودداری شود."
+      ],
+      "required_tools": [
+        "دستگاه عیب‌یاب",
+        "مولتی‌متر",
+        "نقشه سیم‌کشی",
+        "ابزار بازرسی. آزمون الکتریکی فقط با روش و تجهیزات مناسب سازنده."
+      ],
+      "category_id": "CAT-14",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Thermal management and vehicle technical information",
+          "url": "https://www.hella.com/techworld/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Automotive systems and components",
+          "url": "https://www.bosch-mobility.com/en/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://contentassets.autozone.com/product_image/USA/10638/BKKY/620-482/620-482-01.jpg",
+          "image_title": "Engine cooling fan assembly",
+          "image_source": "AutoZone product image",
+          "license": "unverified",
+          "attribution": "AutoZone product image; reuse subject to its terms",
+          "image_subject": "Electric radiator cooling fan assembly"
+        }
+      ],
+      "safety_notes": [
+        "فن برقی ممکن است حتی پس از خاموش‌شدن موتور و بدون هشدار فعال شود؛ پیش از کار، طبق دستور سازنده مدار را ایمن کنید و دست و ابزار را از پره‌ها دور نگه دارید."
+      ]
+    },
+    {
+      "id": "PART-000017",
+      "name_en": "Oil Pump",
+      "name_fa": "پمپ روغن",
+      "pronunciation_fa": "اویل پامپ",
+      "ipa": "/ɔɪl pʌmp/",
+      "description": "پمپ روغن، روغن موتور را از کارتل مکش کرده و با دبی و فشار موردنیاز مدار روانکاری به یاتاقان‌ها و مجاری روغن می‌رساند. فشار واقعی تابع طراحی، دور موتور، دما و وضعیت روغن است.",
+      "main_function": "گردش روغن برای روانکاری، خنک‌کاری موضعی و کاهش سایش قطعات متحرک.",
+      "installation_location": "داخل کارتل، روی بلوک موتور یا در جلوی موتور؛ محل و محرک به طراحی موتور وابسته است.",
+      "working_principle": "چرخ‌دنده‌ای، روتوری یا پره‌ای بودن آن به طراحی بستگی دارد. دوران روتورها حجم محفظه را تغییر می‌دهد و روغن را از ورودی به خروجی جابه‌جا می‌کند؛ شیر تنظیم فشار در بسیاری از طرح‌ها فشار را محدود می‌کند.",
+      "internal_components": [
+        "پوسته؛ چرخ‌دنده/روتور داخلی و خارجی؛ محور محرک؛ مجرای مکش و صافی؛ شیر تنظیم فشار و فنر در طرح‌های مربوط."
+      ],
+      "common_failures": [
+        "سایش روتورها و پوسته",
+        "گیرکردن شیر تنظیم",
+        "آسیب محور/زنجیر محرک",
+        "نشتی یا گرفتگی مسیر مکش",
+        "کاویتاسیون ناشی از شرایط نامناسب مکش."
+      ],
+      "failure_symptoms": [
+        "چراغ هشدار فشار روغن",
+        "صدای ضربه یا تق‌تق قطعات",
+        "افت فشار ثبت‌شده",
+        "آسیب یاتاقان‌ها در صورت تداوم کمبود روانکاری."
+      ],
+      "testing_methods": [
+        "ابتدا سطح و وضعیت روغن و نشتی بررسی شود",
+        "فشارسنج مکانیکی مناسب از محل تعیین‌شده سازنده نصب و با شرایط آزمون همان موتور مقایسه شود",
+        "در صورت نیاز پمپ و صافی پس از بازکردن تخصصی بازرسی شوند. با روشن بودن چراغ فشار روغن، موتور را خاموش کنید."
+      ],
+      "required_tools": [
+        "فشارسنج روغن با آداپتور صحیح",
+        "ابزار دستی",
+        "ابزار اندازه‌گیری دقیق طبق دستورالعمل تعمیراتی",
+        "دستگاه عیب‌یاب در سامانه‌های دارای سنسور فشار."
+      ],
+      "category_id": "CAT-15",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine components and technical information",
+          "url": "https://www.mahle-aftermarket.com/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "Schaeffler",
+          "title": "Engine systems and components",
+          "url": "https://www.schaeffler.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://oembimmerparts.com/cdn/shop/products/11_108aab74-728b-4052-8480-ed3da0257389_800x.png?v=1623849670",
+          "image_title": "Engine oil pump assembly",
+          "image_source": "OEM Bimmer Parts product image",
+          "license": "unverified",
+          "attribution": "OEM Bimmer Parts; verify permission before reuse",
+          "image_subject": "Oil pump assembly for a specific Mini application"
+        }
+      ],
+      "safety_notes": [
+        "روشن‌شدن هشدار فشار روغن یا مشاهده فشار ناکافی را جدی بگیرید؛ موتور را طبق دستورالعمل سازنده خاموش کنید و از ادامه کار برای آزمایش خودداری کنید."
+      ]
+    },
+    {
+      "id": "PART-000018",
+      "name_en": "Clutch",
+      "name_fa": "کلاچ",
+      "pronunciation_fa": "کِلاچ",
+      "ipa": "/klʌtʃ/",
+      "description": "کلاچ در گیربکس دستی اتصال میان میل‌لنگ و محور ورودی گیربکس را به‌صورت کنترل‌شده برقرار یا قطع می‌کند تا تعویض دنده و توقف خودرو بدون خاموش شدن موتور ممکن شود.",
+      "main_function": "انتقال گشتاور موتور به گیربکس و قطع موقت آن هنگام تعویض دنده یا توقف.",
+      "installation_location": "بین موتور و گیربکس، داخل پوسته کلاچ.",
+      "working_principle": "با رها کردن پدال، فنر دیافراگمی صفحه فشار را به دیسک اصطکاکی می‌فشارد و دیسک به فلایویل متصل می‌شود. با فشردن پدال، بلبرینگ/یاتاقان رهاساز فنر را آزاد می‌کند و انتقال گشتاور کاهش می‌یابد یا قطع می‌شود.",
+      "internal_components": [
+        "دیسک اصطکاکی و توپی هزارخار؛ صفحه فشار؛ فنر دیافراگمی؛ بلبرینگ رهاساز؛ دوشاخه یا عملگر هیدرولیکی/کابلی."
+      ],
+      "common_failures": [
+        "فرسودگی یا آلودگی لنت دیسک",
+        "تاب‌برداشتن سطوح",
+        "خرابی فنر دیافراگمی",
+        "خرابی بلبرینگ رهاساز",
+        "نشتی مدار هیدرولیک",
+        "خرابی فلایویل دو جرمی در سامانه‌های مجهز."
+      ],
+      "failure_symptoms": [
+        "لغزش دور موتور بدون افزایش متناسب سرعت",
+        "لرزش هنگام شروع حرکت",
+        "دشواری تعویض دنده",
+        "صدای غیرعادی با فشردن پدال",
+        "نقطه درگیری غیرعادی."
+      ],
+      "testing_methods": [
+        "بررسی نشتی و عملکرد پدال و مدار",
+        "آزمون عملکردی کنترل‌شده طبق روش سازنده",
+        "بررسی لغزش و صدا",
+        "ارزیابی قطعات اصطکاکی و فلایویل پس از جداسازی گیربکس. از آزمون‌های پرفشار و طولانی خودداری شود."
+      ],
+      "required_tools": [
+        "چراغ‌قوه",
+        "دستگاه عیب‌یاب در سامانه‌های مرتبط",
+        "ابزار تخصصی کلاچ و گیربکس",
+        "ابزار اندازه‌گیری طبق دستورالعمل."
+      ],
+      "category_id": "CAT-09",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Schaeffler",
+          "title": "Clutch systems and technical information",
+          "url": "https://www.schaeffler.com/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "DRiV",
+          "title": "Engine and driveline technical resources",
+          "url": "https://www.driv.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": null,
+          "image_title": null,
+          "image_source": null,
+          "license": "unverified",
+          "attribution": null,
+          "image_subject": null
+        }
+      ],
+      "safety_notes": [
+        "پیش از جداسازی گیربکس، خودرو را با پایه‌های استاندارد مهار کنید؛ مجموعه کلاچ و گیربکس سنگین است و به ابزار نگهدارنده مناسب نیاز دارد. از استنشاق گردوغبار اصطکاکی خودداری کنید."
+      ]
+    },
+    {
+      "id": "PART-000019",
+      "name_en": "Flywheel",
+      "name_fa": "فلایویل",
+      "pronunciation_fa": "فِلای‌ویل",
+      "ipa": "/ˈflaɪwiːl/",
+      "description": "فلایویل یک جرم چرخان متصل به میل‌لنگ است که نوسان سرعت دورانی را کاهش می‌دهد و در بسیاری از خودروهای دستی سطح اصطکاک کلاچ و دندانه‌های درگیری استارت را فراهم می‌کند.",
+      "main_function": "ذخیره و آزادسازی انرژی دورانی، یکنواخت‌سازی چرخش میل‌لنگ و فراهم‌کردن سطح اتصال کلاچ.",
+      "installation_location": "انتهای میل‌لنگ، داخل پوسته گیربکس.",
+      "working_principle": "جرم دورانی انرژی جنبشی ذخیره می‌کند و تغییرات سرعت ناشی از پالس‌های احتراق را هموار می‌سازد. نوع دو جرمی از دو جرم با فنرها/میرایی داخلی برای کاهش ارتعاش پیچشی استفاده می‌کند.",
+      "internal_components": [
+        "بدنه/جرم اصلی؛ سطح اصطکاک؛ رینگ‌دنده استارت؛ محل پیچ‌های میل‌لنگ؛ در نوع دو جرمی فنرها و اجزای میرایی."
+      ],
+      "common_failures": [
+        "ترک یا نقاط داغ سطح اصطکاک",
+        "تاب یا سایش",
+        "آسیب دندانه‌های رینگ‌دنده",
+        "لقی یا خرابی فنرهای فلایویل دو جرمی",
+        "آلودگی روغنی."
+      ],
+      "failure_symptoms": [
+        "لرزش و صدای ضربه در دور آرام یا هنگام خاموش/روشن شدن",
+        "لرزش کلاچ",
+        "صدای استارت",
+        "لغزش یا درگیری نامنظم کلاچ."
+      ],
+      "testing_methods": [
+        "بازرسی سطح و دندانه‌ها پس از جداسازی",
+        "اندازه‌گیری لنگی و ضخامت طبق حدود همان سازنده",
+        "آزمون تخصصی فلایویل دو جرمی با ابزار و معیار سازنده."
+      ],
+      "required_tools": [
+        "ساعت اندیکاتور",
+        "کولیس/میکرومتر مناسب",
+        "ابزار مهار فلایویل",
+        "ابزار تخصصی آزمون دو جرمی."
+      ],
+      "category_id": "CAT-09",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Schaeffler",
+          "title": "Clutch and flywheel systems",
+          "url": "https://www.schaeffler.com/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "DRiV",
+          "title": "Driveline and engine components",
+          "url": "https://www.driv.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://www.tuniservice.es/dist/uploads/useruploads/html/42c6756369c3f6ee5d117f4d61dc481c.jpg",
+          "image_title": "Engine flywheel",
+          "image_source": "Tuniservice",
+          "license": "unverified",
+          "attribution": "Tuniservice; verify permission before reuse",
+          "image_subject": "Single-mass engine flywheel"
+        }
+      ],
+      "safety_notes": [
+        "فلایویل سنگین است؛ هنگام جداسازی از ابزار نگهدارنده و روش بلندکردن مناسب استفاده کنید. در فلایویل دو جرمی، از ضربه یا بازکردن غیراصولی خودداری کنید."
+      ]
+    },
+    {
+      "id": "PART-000020",
+      "name_en": "Timing Belt",
+      "name_fa": "تسمه تایم",
+      "pronunciation_fa": "تایمینگ بِلت",
+      "ipa": "/ˈtaɪmɪŋ bɛlt/",
+      "description": "تسمه تایم یک تسمه دندانه‌دار تقویت‌شده است که زمان‌بندی چرخش میل‌لنگ و میل‌بادامک را حفظ می‌کند. در برخی موتورها ممکن است اجزای دیگری نیز با آن محرک شوند.",
+      "main_function": "هم‌زمان‌سازی حرکت پیستون‌ها و باز و بسته شدن سوپاپ‌ها.",
+      "installation_location": "جلوی موتور، معمولاً پشت قاب محافظ تایم.",
+      "working_principle": "دندانه‌های تسمه با پولی‌های میل‌لنگ و میل‌بادامک درگیرند و نسبت دور طراحی‌شده را حفظ می‌کنند. تسمه ممکن است خشک یا در برخی طراحی‌ها در روغن کار کند؛ نوع دقیق وابسته به موتور است.",
+      "internal_components": [
+        "بدنه لاستیکی تقویت‌شده؛ الیاف کششی؛ دندانه‌ها؛ پولی‌ها؛ هرزگرد و سفت‌کن؛ قاب محافظ."
+      ],
+      "common_failures": [
+        "ترک‌خوردگی، جداشدن دندانه، کشیدگی یا آلودگی روغن/مایع خنک‌کننده",
+        "خرابی هرزگرد یا سفت‌کن",
+        "نصب یا کشش نادرست."
+      ],
+      "failure_symptoms": [
+        "بدکارکردن یا روشن‌نشدن موتور در صورت جابه‌جایی تایم",
+        "صدای غیرعادی از قاب تایم",
+        "آسیب شدید موتور در صورت پارگی در موتورهای برخوردی."
+      ],
+      "testing_methods": [
+        "بازرسی طبق برنامه و روش سازنده",
+        "بررسی وضعیت و هم‌راستایی",
+        "کنترل تایم با ابزار قفل‌کننده و علائم مخصوص همان موتور. بازکردن و تنظیم تایم کار تخصصی است",
+        "فاصله تعویض عمومی وجود ندارد."
+      ],
+      "required_tools": [
+        "ابزار قفل‌کننده میل‌لنگ/میل‌بادامک مخصوص موتور",
+        "ابزار کشش تسمه",
+        "ابزار دستی",
+        "راهنمای تعمیراتی همان خودرو."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine timing and service information",
+          "url": "https://www.mahle-aftermarket.com/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "Gates",
+          "title": "Automotive timing belt technical resources",
+          "url": "https://www.gates.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://www.openparts.it/images/2025/05/15/adobestock_217559898.webp",
+          "image_title": "Timing belt drive",
+          "image_source": "OpenParts",
+          "license": "unverified",
+          "attribution": "OpenParts / image credit as displayed; verify permission",
+          "image_subject": "Timing belt and pulley installed on engine"
+        }
+      ],
+      "safety_notes": [
+        "پیش از بازکردن مجموعه تایم، موتور را طبق دستورالعمل همان مدل در وضعیت ایمن قرار دهید؛ جابه‌جایی میل‌لنگ یا میل‌بادامک می‌تواند در برخی موتورها به برخورد سوپاپ و پیستون منجر شود."
+      ]
+    },
+    {
+      "id": "PART-000021",
+      "name_en": "Timing Chain",
+      "name_fa": "زنجیر تایم",
+      "pronunciation_fa": "تایمینگ چِین",
+      "ipa": "/ˈtaɪmɪŋ tʃeɪn/",
+      "description": "زنجیر تایم انتقال‌دهنده حرکت از میل‌لنگ به میل‌بادامک است و زمان‌بندی سوپاپ‌ها را حفظ می‌کند. برخلاف تسمه، معمولاً در محفظه روغن‌کاری‌شده کار می‌کند.",
+      "main_function": "هم‌زمان‌سازی میل‌لنگ و میل‌بادامک.",
+      "installation_location": "داخل موتور، معمولاً پشت قاب جلویی تایم.",
+      "working_principle": "چرخ‌دنده میل‌لنگ زنجیر را می‌گرداند و زنجیر چرخ‌دنده میل‌بادامک را با نسبت طراحی‌شده می‌چرخاند. ریل‌های راهنما و سفت‌کن، ارتعاش و لقی زنجیر را کنترل می‌کنند.",
+      "internal_components": [
+        "صفحات و پین‌های زنجیر؛ چرخ‌دنده‌ها؛ ریل‌های راهنما؛ سفت‌کن؛ مجاری روغن‌کاری."
+      ],
+      "common_failures": [
+        "کشیدگی ناشی از سایش مفصل‌ها",
+        "سایش دندانه‌ها",
+        "شکستگی ریل",
+        "خرابی سفت‌کن",
+        "کمبود یا آلودگی روغن."
+      ],
+      "failure_symptoms": [
+        "صدای تق‌تق/جرینگ در استارت سرد یا دور آرام",
+        "خطاهای هم‌زمانی میل‌لنگ و میل‌بادامک",
+        "بدکارکردن یا افت توان."
+      ],
+      "testing_methods": [
+        "بررسی داده‌های هم‌زمانی و کدهای خطا",
+        "گوش‌دادن و بازرسی طبق رویه سازنده",
+        "اندازه‌گیری کشیدگی یا لقی با ابزار و حدود اختصاصی موتور. صرف صدا به‌تنهایی تشخیص قطعی نیست."
+      ],
+      "required_tools": [
+        "دستگاه عیب‌یاب",
+        "ابزار قفل‌کننده تایم",
+        "ابزار اندازه‌گیری/بازرسی مخصوص موتور",
+        "راهنمای تعمیراتی."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Schaeffler",
+          "title": "Engine timing drive systems",
+          "url": "https://www.schaeffler.com/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine components and technical information",
+          "url": "https://www.mahle-aftermarket.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://tehnichka-express.ru/uploads/blog/cep-ili-remen.jpg",
+          "image_title": "Engine timing chain",
+          "image_source": "Tehnichka Express",
+          "license": "unverified",
+          "attribution": "Tehnichka Express; verify permission before reuse",
+          "image_subject": "Timing chain and sprockets"
+        }
+      ],
+      "safety_notes": [
+        "زنجیر تایم و سفت‌کن ممکن است تحت کشش باشند؛ پیش از بازکردن، روش آزادسازی و قفل‌کردن مخصوص موتور را اجرا کنید. زمان‌بندی نادرست می‌تواند به موتور آسیب بزند."
+      ]
+    },
+    {
+      "id": "PART-000022",
+      "name_en": "Tensioner",
+      "name_fa": "سفت‌کن تسمه/زنجیر تایم",
+      "pronunciation_fa": "تِنشِنِر",
+      "ipa": "/ˈtɛnʃənər/",
+      "description": "سفت‌کن، کشش یا نیروی کنترل‌شده‌ای بر تسمه یا زنجیر وارد می‌کند تا درگیری مناسب با پولی‌ها حفظ و ارتعاش و پرش دندانه کاهش یابد. این نام می‌تواند به چند نوع قطعه متفاوت اشاره کند.",
+      "main_function": "تنظیم و حفظ کشش محرک تایم یا تسمه‌های جانبی.",
+      "installation_location": "در مسیر تسمه یا زنجیر تایم؛ محل دقیق وابسته به طراحی موتور.",
+      "working_principle": "نوع فنری با نیروی فنر و نوع هیدرولیکی با فشار روغن و سازوکار یک‌طرفه، کفشک یا هرزگرد را به محرک فشار می‌دهد. سفت‌کن تسمه جانبی نیز ممکن است بازوی فنردار و قرقره داشته باشد.",
+      "internal_components": [
+        "بدنه؛ فنر؛ پیستون/محفظه روغن در نوع هیدرولیکی؛ ضامن یک‌طرفه؛ بازو؛ قرقره یا کفشک."
+      ],
+      "common_failures": [
+        "ضعف فنر",
+        "نشتی یا گیرکردن پیستون هیدرولیکی",
+        "خرابی ضامن",
+        "سایش قرقره/بلبرینگ",
+        "شکستگی بازو یا کفشک."
+      ],
+      "failure_symptoms": [
+        "صدای لرزش یا تق‌تق",
+        "شل بودن تسمه/زنجیر",
+        "نوسان نشانگر سفت‌کن",
+        "سایش غیرعادی یا پرش تایم."
+      ],
+      "testing_methods": [
+        "بازرسی حرکت و نشانگرها طبق مشخصات همان موتور",
+        "بررسی نشتی و صدای بلبرینگ",
+        "ارزیابی پس از آزادسازی کنترل‌شده فقط با ابزار مناسب. سفت‌کن فنردار انرژی ذخیره‌شده دارد."
+      ],
+      "required_tools": [
+        "ابزار مخصوص نگهدارنده/فشرده‌سازی سفت‌کن",
+        "ابزار دستی",
+        "چراغ‌قوه",
+        "راهنمای تعمیراتی."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Schaeffler",
+          "title": "Timing drive tensioners and systems",
+          "url": "https://www.schaeffler.com/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "Gates",
+          "title": "Automotive belt drive systems",
+          "url": "https://www.gates.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://mcprod.gsfcarparts.com/media/catalog/product/1/2/12510.jpg?bg-color=255%2C255%2C255&fit=bounds&height=&optimize=medium&width=",
+          "image_title": "Timing chain tensioner",
+          "image_source": "GSF Car Parts product image",
+          "license": "unverified",
+          "attribution": "GSF Car Parts / FEBI product image; verify permission",
+          "image_subject": "Hydraulic/mechanical timing chain tensioner"
+        }
+      ],
+      "safety_notes": [
+        "سفت‌کن تسمه یا زنجیر ممکن است تحت نیروی فنر یا فشار هیدرولیکی باشد؛ آزادسازی آن فقط طبق روش سازنده و با ابزار مناسب انجام شود."
+      ]
+    },
+    {
+      "id": "PART-000023",
+      "name_en": "Engine Bearing",
+      "name_fa": "یاتاقان موتور",
+      "pronunciation_fa": "اِنجین بِرینگ",
+      "ipa": "/ˈɛndʒɪn ˈbɛərɪŋ/",
+      "description": "یاتاقان لغزشی موتور سطحی قابل تعویض و دقیق است که ژورنال میل‌لنگ یا میل‌بادامک روی لایه روغن میان آن و یاتاقان می‌چرخد. لقی روغنی برای عملکرد درست حیاتی است.",
+      "main_function": "پشتیبانی از محورهای چرخان، کاهش اصطکاک و توزیع بار با کمک فیلم روغن.",
+      "installation_location": "یاتاقان‌های اصلی در بلوک/کپه‌های میل‌لنگ؛ یاتاقان‌های شاتون در سر بزرگ شاتون؛ نمونه‌های دیگر در سرسیلندر.",
+      "working_principle": "با ایجاد لقی طراحی‌شده، روغن تحت حرکت محور و فشار سامانه به فیلمی جداکننده تبدیل می‌شود. تماس فلز با فلز نشانه شرایط بحرانی روانکاری یا لقی نامناسب است.",
+      "internal_components": [
+        "نیم‌پوسته‌های یاتاقان؛ لایه‌های فلزی چندگانه؛ شیار و سوراخ روغن در برخی طرح‌ها؛ زبانه定位."
+      ],
+      "common_failures": [
+        "سایش، خراش، خستگی و پوسته‌شدن لایه",
+        "چرخیدن یاتاقان در نشیمن",
+        "آسیب ناشی از آلودگی، کمبود روغن یا لقی نادرست."
+      ],
+      "failure_symptoms": [
+        "صدای کوبش عمیق",
+        "افت فشار روغن",
+        "وجود ذرات فلزی در روغن/فیلتر",
+        "لقی یا آسیب محور."
+      ],
+      "testing_methods": [
+        "اندازه‌گیری ژورنال و نشیمن با میکرومتر و بورگیج",
+        "ارزیابی لقی با روش مجاز سازنده",
+        "بررسی روغن و فیلتر. بازکردن موتور و اندازه‌گیری باید در محیط کارگاهی انجام شود."
+      ],
+      "required_tools": [
+        "میکرومتر",
+        "بورگیج",
+        "ابزار اندازه‌گیری لقی مورد تأیید",
+        "ابزار بازکردن موتور",
+        "تجهیزات تمیزکاری."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine damage diagnosis brochure",
+          "url": "https://www.mahle-aftermarket.com/media/homepage/facelift/media-center/workshop/schadensbroschuere_englisch_final.pdf",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine components and technical information",
+          "url": "https://www.mahle-aftermarket.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://qsv.co.za/wp-content/uploads/2020/06/Engine-bearings.png",
+          "image_title": "Engine bearing shells",
+          "image_source": "QSV",
+          "license": "unverified",
+          "attribution": "QSV; verify permission before reuse",
+          "image_subject": "Plain engine bearing shells"
+        }
+      ],
+      "safety_notes": [
+        "یاتاقان‌گذاری و اندازه‌گیری لقی نیازمند ابزار دقیق و پاکیزگی کامل است؛ از مونتاژ بدون مشخصات تعمیراتی همان موتور خودداری کنید."
+      ]
+    },
+    {
+      "id": "PART-000024",
+      "name_en": "Piston",
+      "name_fa": "پیستون",
+      "pronunciation_fa": "پیستِن",
+      "ipa": "/ˈpɪstən/",
+      "description": "پیستون درون سیلندر رفت‌وبرگشت می‌کند و فشار گازهای احتراق را از طریق گژن‌پین و شاتون به میل‌لنگ منتقل می‌کند. همچنین بخشی از محفظه احتراق را تشکیل می‌دهد.",
+      "main_function": "تبدیل فشار احتراق به نیروی خطی و انتقال آن به شاتون؛ کمک به آب‌بندی و انتقال حرارت.",
+      "installation_location": "داخل هر سیلندر، متصل به شاتون از طریق گژن‌پین.",
+      "working_principle": "در کورس قدرت، فشار گاز به تاج پیستون نیرو وارد می‌کند؛ در کورس‌های دیگر میل‌لنگ آن را جابه‌جا می‌کند. رینگ‌ها گاز را آب‌بندی و روغن دیواره را کنترل می‌کنند.",
+      "internal_components": [
+        "تاج؛ شیار رینگ؛ دامنه/اسکرت؛ برجستگی‌های گژن‌پین؛ سوراخ گژن‌پین؛ کانال خنک‌کاری در برخی پیستون‌ها."
+      ],
+      "common_failures": [
+        "ترک یا ذوب تاج",
+        "خراش و گریپاژ دامنه",
+        "شکستگی شیار رینگ",
+        "سایش سوراخ گژن‌پین",
+        "آسیب ناشی از احتراق غیرعادی یا روانکاری ناکافی."
+      ],
+      "failure_symptoms": [
+        "صدای ضربه پیستون",
+        "دود و مصرف روغن",
+        "افت کمپرس",
+        "بدکارکردن موتور",
+        "ذرات آلومینیوم در روغن در خرابی شدید."
+      ],
+      "testing_methods": [
+        "آزمون کمپرس و نشت سیلندر به‌عنوان ارزیابی غیرمستقیم",
+        "بررسی بروسکوپی",
+        "اندازه‌گیری قطر و لقی پیستون پس از بازکردن با مشخصات همان موتور."
+      ],
+      "required_tools": [
+        "دستگاه کمپرس‌سنج",
+        "تستر نشتی سیلندر",
+        "بروسکوپ",
+        "میکرومتر",
+        "بورگیج."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Piston Types technical information",
+          "url": "https://www.mahle-aftermarket.com/media/local-media-north-america/pdfs-%26-thumbnails/catalogs-and-literature/pistons-and-rings/pi-20-09.pdf",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine damage diagnosis brochure",
+          "url": "https://www.mahle-aftermarket.com/media/homepage/facelift/media-center/workshop/schadensbroschuere_englisch_final.pdf",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://commons.wikimedia.org/wiki/File:Piston_with_rings.jpg",
+          "image_title": "Piston with rings",
+          "image_source": "Wikimedia Commons",
+          "license": "unverified",
+          "attribution": "Anoopfrancis, Wikimedia Commons, CC BY-SA 4.0",
+          "image_subject": "Used piston with compression and oil rings"
+        }
+      ],
+      "safety_notes": [
+        "بازکردن پیستون مستلزم جداسازی موتور و مهار ایمن قطعات سنگین است؛ از ضربه‌زدن به سطوح ماشین‌کاری‌شده خودداری کنید."
+      ]
+    },
+    {
+      "id": "PART-000025",
+      "name_en": "Piston Ring",
+      "name_fa": "رینگ پیستون",
+      "pronunciation_fa": "پیستِن رینگ",
+      "ipa": "/ˈpɪstən rɪŋ/",
+      "description": "رینگ‌ها در شیارهای پیستون قرار می‌گیرند و آب‌بندی گازهای احتراق، انتقال بخشی از گرمای پیستون به دیواره سیلندر و کنترل لایه روغن را انجام می‌دهند.",
+      "main_function": "کاهش نشت گاز به کارتل، کنترل مصرف روغن و انتقال حرارت پیستون.",
+      "installation_location": "در شیارهای نزدیک تاج پیستون، پیرامون پیستون.",
+      "working_principle": "رینگ با نیروی کشسانی و فشار گاز به دیواره سیلندر تکیه می‌کند. رینگ‌های تراکم گاز را مهار می‌کنند و رینگ روغنی، روغن اضافی را از دیواره جمع و به کارتل بازمی‌گرداند.",
+      "internal_components": [
+        "رینگ تراکم بالایی؛ رینگ دوم/اسکرپر؛ رینگ کنترل روغن با ریل‌ها و منبسط‌کننده در بسیاری از طرح‌ها."
+      ],
+      "common_failures": [
+        "سایش شعاعی یا جانبی",
+        "شکستگی",
+        "گیرکردن در شیار به‌علت رسوب",
+        "از دست رفتن کشش",
+        "نصب نادرست یا لقی نامناسب."
+      ],
+      "failure_symptoms": [
+        "مصرف روغن و دود آبی",
+        "گازبَری کارتل",
+        "افت کمپرس",
+        "شمع روغنی یا رسوب غیرعادی."
+      ],
+      "testing_methods": [
+        "آزمون کمپرس خشک/تر و تست نشت برای ارزیابی اولیه",
+        "تشخیص قطعی با بازکردن و اندازه‌گیری دهانه، لقی جانبی و وضعیت سیلندر طبق دستور سازنده."
+      ],
+      "required_tools": [
+        "کمپرس‌سنج",
+        "تستر نشت سیلندر",
+        "فیلر",
+        "ابزار نصب رینگ",
+        "میکرومتر/بورگیج."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Piston Types technical information",
+          "url": "https://www.mahle-aftermarket.com/media/local-media-north-america/pdfs-%26-thumbnails/catalogs-and-literature/pistons-and-rings/pi-20-09.pdf",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine damage diagnosis brochure",
+          "url": "https://www.mahle-aftermarket.com/media/homepage/facelift/media-center/workshop/schadensbroschuere_englisch_final.pdf",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://cdn.autopapo.com.br/box/uploads/2022/10/27114424/pistao_e_aneis_de_pistao-scaled.jpg",
+          "image_title": "Piston and piston rings",
+          "image_source": "AutoPapo",
+          "license": "unverified",
+          "attribution": "AutoPapo; verify permission before reuse",
+          "image_subject": "Piston with separate piston rings"
+        }
+      ],
+      "safety_notes": [
+        "رینگ‌ها شکننده و لبه‌هایشان تیز است؛ هنگام نصب از انبر مخصوص و محافظ چشم استفاده کنید و دهانه و جهت نصب را طبق مشخصات همان موتور تنظیم کنید."
+      ]
+    },
+    {
+      "id": "PART-000026",
+      "name_en": "Connecting Rod",
+      "name_fa": "شاتون",
+      "pronunciation_fa": "کِنِکتینگ راد",
+      "ipa": "/kəˈnɛktɪŋ rɒd/",
+      "description": "شاتون عضو رابط میان پیستون و میل‌لنگ است. حرکت رفت‌وبرگشتی پیستون را به نیروی وارد بر لنگ میل‌لنگ منتقل می‌کند و تحت بارهای کششی و فشاری متناوب قرار دارد.",
+      "main_function": "انتقال نیرو و حرکت میان پیستون و میل‌لنگ.",
+      "installation_location": "داخل بلوک موتور، میان گژن‌پین پیستون و ژورنال لنگ میل‌لنگ.",
+      "working_principle": "سر کوچک شاتون با گژن‌پین به پیستون متصل است؛ سر بزرگ به کمک یاتاقان دور ژورنال لنگ میل‌لنگ می‌چرخد. کپه سر بزرگ با پیچ‌های دقیق بسته می‌شود.",
+      "internal_components": [
+        "بدنه؛ سر کوچک و بوش آن در برخی طرح‌ها؛ سر بزرگ؛ کپه؛ پیچ‌ها؛ مسیر روغن‌کاری در برخی طرح‌ها."
+      ],
+      "common_failures": [
+        "خمیدگی یا پیچش",
+        "ترک خستگی",
+        "آسیب بوش سر کوچک",
+        "خرابی یاتاقان سر بزرگ",
+        "کشیدگی یا آسیب پیچ‌ها."
+      ],
+      "failure_symptoms": [
+        "صدای کوبش شاتون",
+        "افت فشار روغن",
+        "ذرات فلزی",
+        "لرزش و آسیب جدی موتور در خرابی شدید."
+      ],
+      "testing_methods": [
+        "اندازه‌گیری تاب، پیچش و قطر سوراخ سرها با ابزار دقیق",
+        "آزمون ترک‌یابی مناسب توسط متخصص",
+        "بررسی یاتاقان و ژورنال. معیارها فقط از راهنمای همان موتور اخذ شوند."
+      ],
+      "required_tools": [
+        "میکرومتر",
+        "بورگیج",
+        "فیکسچر کنترل شاتون",
+        "تجهیزات ترک‌یابی کارگاهی",
+        "ابزار تخصصی موتور."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine damage diagnosis brochure",
+          "url": "https://www.mahle-aftermarket.com/media/homepage/facelift/media-center/workshop/schadensbroschuere_englisch_final.pdf",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "Federal-Mogul / DRiV",
+          "title": "Engine component technical resources",
+          "url": "https://www.driv.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://www.autobelle.it/en/archive/Piston_and_connecting_rod_assembly_with_marked_cap_52153.xhtml",
+          "image_title": "Piston and connecting rod assembly",
+          "image_source": "AutoBelle Archive",
+          "license": "unverified",
+          "attribution": "AutoBelle Archive; verify permission before reuse",
+          "image_subject": "Connecting rod shown with piston assembly"
+        }
+      ],
+      "safety_notes": [
+        "شاتون و کپه آن قطعات جفت‌شده و دقیق‌اند؛ موقعیت و جهت آن‌ها را حفظ کنید و پیچ‌ها را فقط با روش مخصوص همان موتور نصب کنید."
+      ]
+    },
+    {
+      "id": "PART-000027",
+      "name_en": "Crankshaft",
+      "name_fa": "میل‌لنگ",
+      "pronunciation_fa": "کِرَنگ‌شَفت",
+      "ipa": "/ˈkræŋkʃɑːft/",
+      "description": "میل‌لنگ محور اصلی چرخان موتور است که حرکت رفت‌وبرگشتی پیستون‌ها را از طریق شاتون به گشتاور دورانی تبدیل می‌کند.",
+      "main_function": "تبدیل حرکت خطی پیستون‌ها به دوران و انتقال گشتاور به فلایویل/سامانه محرک.",
+      "installation_location": "در بخش پایینی بلوک موتور، روی یاتاقان‌های اصلی.",
+      "working_principle": "نیروی شاتون به ژورنال‌های خارج از محور میل‌لنگ وارد می‌شود و بازوی لنگ گشتاور ایجاد می‌کند. وزنه‌های تعادل بخشی از نیروهای نامتعادل را خنثی می‌کنند.",
+      "internal_components": [
+        "ژورنال‌های اصلی؛ ژورنال‌های لنگ؛ بازوهای لنگ؛ وزنه‌های تعادل؛ مجاری روغن؛ فلنج و دماغه میل‌لنگ."
+      ],
+      "common_failures": [
+        "سایش یا خط‌افتادگی ژورنال",
+        "ترک خستگی",
+        "تابیدگی",
+        "آسیب مجاری روغن",
+        "خرابی سطح محل کاسه‌نمد یا فلنج."
+      ],
+      "failure_symptoms": [
+        "کوبش عمیق موتور",
+        "افت فشار روغن",
+        "لرزش",
+        "براده فلزی",
+        "گیرپاژ یا روشن‌نشدن در آسیب شدید."
+      ],
+      "testing_methods": [
+        "اندازه‌گیری قطر، بیضی‌شدن و مخروطی‌شدن ژورنال‌ها",
+        "کنترل لنگی با ساعت اندیکاتور",
+        "ترک‌یابی تخصصی",
+        "بررسی مجاری روغن. حدود اندازه‌گیری مختص موتور است."
+      ],
+      "required_tools": [
+        "میکرومتر",
+        "ساعت اندیکاتور و پایه",
+        "منشور/فیکسچر مناسب",
+        "تجهیزات ترک‌یابی",
+        "ابزار تخصصی موتور."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine damage diagnosis brochure",
+          "url": "https://www.mahle-aftermarket.com/media/homepage/facelift/media-center/workshop/schadensbroschuere_englisch_final.pdf",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "Schaeffler",
+          "title": "Engine systems and components",
+          "url": "https://www.schaeffler.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://elm327rus.ru/wa-data/public/site/articles/kolenval-2-10.jpg",
+          "image_title": "Engine crankshaft",
+          "image_source": "ELM327RUS",
+          "license": "unverified",
+          "attribution": "ELM327RUS; verify permission before reuse",
+          "image_subject": "Crankshaft with journals and counterweights"
+        }
+      ],
+      "safety_notes": [
+        "میل‌لنگ سنگین است؛ برای جابه‌جایی از تجهیزات بلندکردن مناسب استفاده کنید و ژورنال‌ها و سطوح یاتاقانی را از ضربه و آلودگی محافظت کنید."
+      ]
+    },
+    {
+      "id": "PART-000028",
+      "name_en": "Camshaft",
+      "name_fa": "میل‌بادامک",
+      "pronunciation_fa": "کَم‌شَفت",
+      "ipa": "/ˈkæmʃɑːft/",
+      "description": "میل‌بادامک با بادامک‌های دقیق، زمان و میزان بازشدن سوپاپ‌ها را تعیین می‌کند. شکل و موقعیت بادامک‌ها بر تنفس و عملکرد موتور اثر می‌گذارد.",
+      "main_function": "کنترل باز و بسته شدن سوپاپ‌ها هماهنگ با موقعیت میل‌لنگ.",
+      "installation_location": "در سرسیلندر (OHC/DOHC) یا داخل بلوک موتور (OHV)، بسته به طراحی.",
+      "working_principle": "با چرخش میل‌بادامک، برجستگی بادامک تایپت، انگشتی یا سامانه محرک سوپاپ را جابه‌جا می‌کند. نسبت دور و فاز آن با میل‌لنگ توسط تسمه، زنجیر یا چرخ‌دنده تنظیم می‌شود؛ سامانه VVT می‌تواند فاز را تغییر دهد.",
+      "internal_components": [
+        "بادامک‌ها؛ ژورنال‌ها؛ مجاری روغن؛ چرخ‌دنده/پولی محرک؛ محل نصب عملگر فاز در موتورهای مجهز."
+      ],
+      "common_failures": [
+        "سایش بادامک یا ژورنال",
+        "خراش ناشی از روغن‌کاری نامناسب",
+        "ترک",
+        "آسیب چرخ‌دنده",
+        "خرابی محرک/تنظیم‌کننده فاز."
+      ],
+      "failure_symptoms": [
+        "صدای سوپاپ",
+        "افت توان",
+        "بدکارکردن",
+        "خطاهای هم‌زمانی یا VVT",
+        "سایش غیرعادی قطعات سوپاپ."
+      ],
+      "testing_methods": [
+        "بررسی داده‌های فاز و کدهای خطا",
+        "اندازه‌گیری ارتفاع بادامک و لقی ژورنال طبق مشخصات موتور",
+        "بازرسی سطح و مجاری روغن پس از بازکردن."
+      ],
+      "required_tools": [
+        "دستگاه عیب‌یاب",
+        "میکرومتر",
+        "ساعت اندیکاتور",
+        "ابزار قفل تایم",
+        "ابزار تخصصی سرسیلندر."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Camshaft position and engine control technical information",
+          "url": "https://www.hella.com/techworld/uk/technical/sensors-and-actuators/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine components and technical information",
+          "url": "https://www.mahle-aftermarket.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://www.chaitanyatools.com/automotive/4ENGINE%20CAMSHAFT%20E449.webp",
+          "image_title": "Automotive camshaft",
+          "image_source": "Chaitanya Tools",
+          "license": "unverified",
+          "attribution": "Chaitanya Tools; verify permission before reuse",
+          "image_subject": "Camshaft with lobes and journals"
+        }
+      ],
+      "safety_notes": [
+        "پیش از آزادکردن میل‌بادامک، ترتیب بازکردن کپه‌ها و نیروی فنر سوپاپ را طبق دستور سازنده رعایت کنید؛ آزادسازی نامتقارن می‌تواند باعث شکستگی شود."
+      ]
+    },
+    {
+      "id": "PART-000029",
+      "name_en": "Intake Valve",
+      "name_fa": "سوپاپ ورودی",
+      "pronunciation_fa": "اِنتِیک وَلو",
+      "ipa": "/ˈɪnteɪk vælv/",
+      "description": "سوپاپ ورودی مسیر ورود هوای تازه یا مخلوط هوا و سوخت را به سیلندر باز و بسته می‌کند. شکل و تعداد آن به طراحی سرسیلندر وابسته است.",
+      "main_function": "کنترل ورود شارژ تازه به محفظه احتراق و آب‌بندی سیلندر در زمان بسته بودن.",
+      "installation_location": "در سرسیلندر، در مجرای ورودی هر سیلندر.",
+      "working_principle": "بادامک از طریق تایپت/انگشتی سوپاپ را باز می‌کند و فنر آن را می‌بندد؛ در برخی موتورها سامانه‌های زمان‌بندی متغیر زمان یا ارتفاع بازشدن را تغییر می‌دهند.",
+      "internal_components": [
+        "سر/بشقاب سوپاپ؛ ساق؛ شیار خار؛ فنر؛ کاسه‌نمد ساق؛ نشیمنگاه و راهنمای سوپاپ."
+      ],
+      "common_failures": [
+        "سوختگی یا فرسایش لبه",
+        "خمیدگی",
+        "سایش ساق/گاید",
+        "رسوب",
+        "نشتی از نشیمنگاه",
+        "شکستگی فنر مرتبط."
+      ],
+      "failure_symptoms": [
+        "افت کمپرس",
+        "بدکارکردن",
+        "صدای مکانیزم سوپاپ",
+        "افت توان",
+        "خطای احتراق ناقص."
+      ],
+      "testing_methods": [
+        "آزمون کمپرس و نشت سیلندر",
+        "بروسکوپی",
+        "بررسی لقی ساق و آب‌بندی نشیمنگاه پس از بازکردن سرسیلندر. آزمون‌ها طبق دستور سازنده انجام شوند."
+      ],
+      "required_tools": [
+        "کمپرس‌سنج",
+        "تستر نشت سیلندر",
+        "بروسکوپ",
+        "میکرومتر",
+        "ابزار فنر سوپاپ و اندازه‌گیری تخصصی."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine damage diagnosis brochure",
+          "url": "https://www.mahle-aftermarket.com/media/homepage/facelift/media-center/workshop/schadensbroschuere_englisch_final.pdf",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "NGK / NTK",
+          "title": "Automotive technical information",
+          "url": "https://www.ngkntk.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": null,
+          "image_title": null,
+          "image_source": null,
+          "license": "unverified",
+          "attribution": null,
+          "image_subject": null
+        }
+      ],
+      "safety_notes": [
+        "بازکردن سوپاپ نیازمند فشرده‌سازی کنترل‌شده فنر است؛ از ابزار جمع‌کن فنر مناسب و محافظ چشم استفاده کنید، زیرا خارها و فنر می‌توانند پرتاب شوند."
+      ]
+    },
+    {
+      "id": "PART-000030",
+      "name_en": "Exhaust Valve",
+      "name_fa": "سوپاپ خروجی",
+      "pronunciation_fa": "اِگزاست وَلو",
+      "ipa": "/ɪɡˈzɔːst vælv/",
+      "description": "سوپاپ خروجی گازهای حاصل از احتراق را در زمان مناسب از سیلندر به مجرای اگزوز هدایت می‌کند. به‌دلیل تماس با گاز داغ، مواد و خنک‌کاری آن اهمیت ویژه دارند.",
+      "main_function": "تخلیه گازهای سوخته و آب‌بندی محفظه احتراق در سایر زمان‌ها.",
+      "installation_location": "در سرسیلندر، متصل به مجرای خروجی هر سیلندر.",
+      "working_principle": "بادامک آن را از طریق اجزای محرک باز می‌کند و فنر سوپاپ آن را می‌بندد. در حالت بسته، تماس دقیق با نشیمنگاه به آب‌بندی و انتقال بخشی از گرما کمک می‌کند.",
+      "internal_components": [
+        "بشقاب؛ ساق؛ شیار خار؛ فنر؛ کاسه‌نمد؛ گاید و نشیمنگاه؛ در برخی موتورها ساق/توپی ویژه مقاوم به حرارت."
+      ],
+      "common_failures": [
+        "سوختگی لبه یا نشیمنگاه",
+        "خمیدگی",
+        "ترک",
+        "سایش ساق و گاید",
+        "شکستگی فنر",
+        "رسوب و گیرکردن."
+      ],
+      "failure_symptoms": [
+        "افت کمپرس",
+        "بدکارکردن و احتراق ناقص",
+        "صدای سوپاپ",
+        "افت توان",
+        "داغی غیرعادی موضعی."
+      ],
+      "testing_methods": [
+        "تست نشت سیلندر و کمپرس",
+        "بروسکوپی",
+        "بازرسی ساق و نشیمنگاه و اندازه‌گیری پس از بازکردن. سرسیلندر داغ و قطعات اگزوز خطر سوختگی دارند."
+      ],
+      "required_tools": [
+        "کمپرس‌سنج",
+        "تستر نشت سیلندر",
+        "بروسکوپ",
+        "ابزار فنر سوپاپ",
+        "ابزار اندازه‌گیری دقیق."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "MAHLE Aftermarket",
+          "title": "Engine damage diagnosis brochure",
+          "url": "https://www.mahle-aftermarket.com/media/homepage/facelift/media-center/workshop/schadensbroschuere_englisch_final.pdf",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "NGK / NTK",
+          "title": "Automotive technical information",
+          "url": "https://www.ngkntk.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": null,
+          "image_title": null,
+          "image_source": null,
+          "license": "unverified",
+          "attribution": null,
+          "image_subject": null
+        }
+      ],
+      "safety_notes": [
+        "سوپاپ و اجزای اگزوز پس از کار موتور می‌توانند داغ باشند؛ پیش از تماس اجازه دهید سرد شوند. بازکردن فنر سوپاپ فقط با ابزار مخصوص و محافظ چشم انجام شود."
+      ]
+    },
+    {
+      "id": "PART-000031",
+      "name_en": "Exhaust Manifold",
+      "name_fa": "منیفولد دود",
+      "pronunciation_fa": "اِگزاست مَنیفولد",
+      "ipa": "/ɪɡˈzɔːst ˈmænɪfoʊld/",
+      "description": "منیفولد دود گازهای خروجی سیلندرها را جمع‌آوری و به لوله اگزوز، توربوشارژر یا سامانه پس‌پالایش هدایت می‌کند.",
+      "main_function": "جمع‌کردن و هدایت گازهای خروجی با مدیریت پالس و گرما.",
+      "installation_location": "به سرسیلندر پیچ می‌شود و به ابتدای سامانه اگزوز/توربو متصل است.",
+      "working_principle": "مجرای جداگانه هر سیلندر به یک یا چند خروجی مشترک می‌پیوندد. هندسه آن بر جریان، دمای گاز و در موتور توربوشارژ بر انرژی توربین اثر می‌گذارد.",
+      "internal_components": [
+        "رانرها؛ فلنج سرسیلندر؛ فلنج خروجی؛ پایه‌ها؛ محل نصب سنسور؛ سپر حرارتی در برخی طرح‌ها."
+      ],
+      "common_failures": [
+        "ترک حرارتی",
+        "تابیدگی سطح اتصال",
+        "نشتی واشر",
+        "شکستگی پیچ/استاد",
+        "خوردگی و آسیب فلنج."
+      ],
+      "failure_symptoms": [
+        "صدای تیک‌تیک یا فوت اگزوز",
+        "بوی دود در محفظه موتور",
+        "دوده اطراف اتصال",
+        "افت عملکرد یا خطای سنسور مرتبط."
+      ],
+      "testing_methods": [
+        "بازرسی چشمی فقط پس از سرد شدن کامل",
+        "بررسی آثار دوده و نشتی با روش کارگاهی مجاز",
+        "کنترل سطح اتصال و ترک پس از بازکردن."
+      ],
+      "required_tools": [
+        "چراغ‌قوه",
+        "آینه بازرسی",
+        "ابزار تشخیص نشتی اگزوز کارگاهی",
+        "ابزار اندازه‌گیری سطح",
+        "تجهیزات حفاظت فردی."
+      ],
+      "category_id": "CAT-17",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Automotive exhaust and emissions systems",
+          "url": "https://www.bosch-mobility.com/en/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Automotive technical information",
+          "url": "https://www.hella.com/techworld/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://www.partsgeek.com/assets/products/fulln/SY16M6ST.jpg",
+          "image_title": "Exhaust manifold",
+          "image_source": "PartsGeek",
+          "license": "unverified",
+          "attribution": "PartsGeek / AC Delco product listing; verify permission",
+          "image_subject": "Cast exhaust manifold with multiple runners"
+        }
+      ],
+      "safety_notes": [
+        "منیفولد و اتصالات اگزوز پس از کار موتور بسیار داغ‌اند؛ پیش از بازکردن کاملاً سرد شوند. آزمون موتور فقط در فضای دارای تهویه انجام شود."
+      ]
+    },
+    {
+      "id": "PART-000032",
+      "name_en": "Catalytic Converter",
+      "name_fa": "مبدل کاتالیستی",
+      "pronunciation_fa": "کَتَلِیتیک کانوِرتِر",
+      "ipa": "/ˌkætəˈlɪtɪk kənˈvɜːrtər/",
+      "description": "مبدل کاتالیستی با واکنش‌های شیمیایی روی سطح کاتالیست، آلاینده‌های موجود در گاز خروجی را کاهش می‌دهد. نوع و آرایش آن به موتور و استاندارد آلایندگی بستگی دارد.",
+      "main_function": "کاهش هیدروکربن نسوخته، مونوکسیدکربن و اکسیدهای نیتروژن در مبدل‌های سه‌راهه مناسب.",
+      "installation_location": "در مسیر اگزوز؛ نزدیک موتور یا زیر خودرو، بسته به طراحی.",
+      "working_principle": "گازها از بستر سرامیکی یا فلزی با کانال‌های ریز و پوشش کاتالیستی عبور می‌کنند. در مبدل سه‌راهه، نسبت هوا به سوخت باید در محدوده کنترل‌شده سامانه موتور باشد تا واکنش‌های اکسایش و کاهش مؤثر بمانند.",
+      "internal_components": [
+        "پوسته فلزی؛ بستر لانه‌زنبوری؛ پوشش washcoat؛ فلزات کاتالیستی؛ عایق/نگهدارنده؛ اتصالات و سپر حرارتی."
+      ],
+      "common_failures": [
+        "ذوب یا شکست بستر بر اثر دمای بیش از حد",
+        "مسمومیت/آلودگی کاتالیست",
+        "گرفتگی",
+        "شکست مکانیکی",
+        "آسیب پوسته یا نشتی."
+      ],
+      "failure_symptoms": [
+        "چراغ چک و کد بازده کاتالیست",
+        "افت توان در گرفتگی شدید",
+        "صدای لق‌زدن",
+        "بوی غیرعادی اگزوز",
+        "افزایش آلایندگی."
+      ],
+      "testing_methods": [
+        "بررسی کدها و داده سنسورهای قبل/بعد",
+        "آزمون آلایندگی",
+        "ارزیابی محدودیت جریان/فشار برگشتی با روش سازنده. اگزوز بسیار داغ و مواد داخلی/گردوغبار آن خطرناک‌اند",
+        "از بازکردن یا دمیدن مواد خودداری شود."
+      ],
+      "required_tools": [
+        "دستگاه عیب‌یاب",
+        "تجهیزات آزمون آلایندگی",
+        "ابزار اندازه‌گیری فشار اگزوز مخصوص",
+        "تجهیزات حفاظت فردی."
+      ],
+      "category_id": "CAT-18",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Exhaust-gas aftertreatment systems",
+          "url": "https://www.bosch-mobility.com/en/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "DENSO",
+          "title": "Automotive emissions and sensor technologies",
+          "url": "https://www.denso.com/global/en/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://partsavatar.ca/cms/p2096-obd-ii-trouble-code-post-catalyst-fuel-trim-system-too-lean-bank-1-catalytic-converter/images/PartsAvatar_Canada_Parts_Catalytic_Converter.jpeg",
+          "image_title": "Catalytic converter",
+          "image_source": "PartsAvatar",
+          "license": "unverified",
+          "attribution": "PartsAvatar; verify permission before reuse",
+          "image_subject": "Automotive catalytic converter assembly"
+        }
+      ],
+      "safety_notes": [
+        "مبدل کاتالیستی در کارکرد عادی بسیار داغ می‌شود؛ پیش از لمس یا بازکردن سردشدن کامل را رعایت کنید. از تنفس گردوغبار بستر سرامیکی آسیب‌دیده خودداری کنید."
+      ]
+    },
+    {
+      "id": "PART-000033",
+      "name_en": "Oxygen Sensor",
+      "name_fa": "سنسور اکسیژن",
+      "pronunciation_fa": "آکسیجِن سِنسِر",
+      "ipa": "/ˈɒksɪdʒən ˈsɛnsər/",
+      "description": "سنسور اکسیژن یا لامبدا، مقدار اکسیژن باقی‌مانده در گاز اگزوز را اندازه می‌گیرد تا ECU بتواند ترکیب مخلوط را کنترل و بازده کاتالیست را پایش کند. انواع باریک‌باند و پهن‌باند رفتار و روش آزمون متفاوت دارند.",
+      "main_function": "بازخورد کنترل سوخت و/یا پایش عملکرد کاتالیست.",
+      "installation_location": "در منیفولد یا لوله اگزوز؛ سنسورهای بالادست و پایین‌دست کاتالیست نقش‌های متفاوتی دارند.",
+      "working_principle": "عنصر سرامیکی حساس به اکسیژن، اختلاف اکسیژن دو سوی عنصر را به سیگنال الکتریکی تبدیل می‌کند. نوع گرم‌شونده دارای گرم‌کن است؛ نوع پهن‌باند از مدار پمپ و کنترلر اختصاصی استفاده می‌کند.",
+      "internal_components": [
+        "عنصر حسگر؛ محافظ سوراخ‌دار؛ گرم‌کن در نوع گرم‌شونده؛ سیم‌ها و سوکت؛ مدار/کنترلر وابسته به نوع سنسور."
+      ],
+      "common_failures": [
+        "آلودگی ناشی از روغن/ضدیخ/سیلیکون",
+        "پیرشدن عنصر",
+        "خرابی گرم‌کن",
+        "قطعی یا اتصال کوتاه سیم",
+        "آسیب رزوه یا سوکت."
+      ],
+      "failure_symptoms": [
+        "افزایش مصرف سوخت",
+        "نوسان اصلاح سوخت",
+        "چراغ چک",
+        "بدکارکردن",
+        "خطاهای مدار یا پاسخ کند سنسور."
+      ],
+      "testing_methods": [
+        "خواندن کد و داده زنده با اسکنر",
+        "ارزیابی پاسخ سنسور و اصلاح سوخت با روش سازنده",
+        "بررسی مدار گرم‌کن و سیم‌کشی طبق نقشه. از اعمال ولتاژ آزمایشی نامشخص به پایه‌ها خودداری شود."
+      ],
+      "required_tools": [
+        "دستگاه عیب‌یاب با داده زنده",
+        "مولتی‌متر با امپدانس مناسب",
+        "نقشه سیم‌کشی",
+        "ابزار مخصوص سنسور اکسیژن."
+      ],
+      "category_id": "CAT-18",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "HELLA Tech World",
+          "title": "Test lambda sensor: expert guide",
+          "url": "https://www.hella.com/techworld/uk/technical/sensors-and-actuators/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "DENSO",
+          "title": "Oxygen sensor and automotive technology information",
+          "url": "https://www.denso.com/global/en/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "NGK / NTK",
+          "title": "Oxygen sensor technical information",
+          "url": "https://www.ngkntk.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": null,
+          "image_title": null,
+          "image_source": null,
+          "license": "unverified",
+          "attribution": null,
+          "image_subject": null
+        }
+      ],
+      "safety_notes": [
+        "سنسور اکسیژن و رزوه محل نصب پس از کار موتور داغ‌اند؛ پیش از بازکردن سردشدن را رعایت کنید. آزمون موتور در فضای دارای تهویه انجام شود و به سیم سنسور آسیب نزنید."
+      ]
+    },
+    {
+      "id": "PART-000034",
+      "name_en": "EGR Valve",
+      "name_fa": "سوپاپ EGR",
+      "pronunciation_fa": "ای‌جی‌آر وَلو",
+      "ipa": "/ˌiː dʒiː ˈɑːr vælv/",
+      "description": "شیر بازچرخانی گاز اگزوز، بخشی از گاز خروجی را در شرایط تعیین‌شده به مسیر ورودی بازمی‌گرداند. این کار دمای اوج احتراق و تشکیل اکسیدهای نیتروژن را کاهش می‌دهد.",
+      "main_function": "اندازه‌گیری و کنترل جریان گاز بازچرخانی برای کاهش NOx.",
+      "installation_location": "بین مسیر اگزوز و ورودی؛ ممکن است همراه خنک‌کننده EGR باشد.",
+      "working_principle": "ECU بر اساس بار، دور، دما و شرایط کاری فرمان شیر خلأیی یا الکترونیکی را کنترل می‌کند. شیر مقدار گاز برگشتی را تنظیم می‌کند؛ برخی سامانه‌ها موقعیت شیر را بازخورد می‌دهند.",
+      "internal_components": [
+        "بدنه و مجرای گاز؛ سوزن/دریچه؛ موتور و چرخ‌دنده در نوع برقی یا دیافراگم در نوع خلأیی؛ حسگر موقعیت در برخی مدل‌ها؛ خنک‌کننده در طرح‌های مربوط."
+      ],
+      "common_failures": [
+        "رسوب دوده و گیرکردن",
+        "خرابی موتور/چرخ‌دنده",
+        "نشتی دیافراگم یا مدار خلأ",
+        "خرابی حسگر موقعیت",
+        "نشتی خنک‌کننده در مجموعه‌های خنک‌شونده."
+      ],
+      "failure_symptoms": [
+        "دور آرام ناپایدار",
+        "خاموش شدن",
+        "افت توان",
+        "افزایش آلایندگی",
+        "چراغ چک و کدهای جریان/موقعیت EGR."
+      ],
+      "testing_methods": [
+        "خواندن کدها و داده موقعیت",
+        "آزمون عملگر با اسکنر در صورت پشتیبانی",
+        "بررسی مسیر خلأ/سیم‌کشی و نشتی",
+        "ارزیابی رسوب طبق دستور سازنده. قطعات اگزوز و خنک‌کننده ممکن است داغ یا تحت فشار باشند."
+      ],
+      "required_tools": [
+        "دستگاه عیب‌یاب",
+        "پمپ خلأ دستی برای نوع خلأیی",
+        "مولتی‌متر",
+        "نقشه سیم‌کشی",
+        "تجهیزات حفاظت فردی."
+      ],
+      "category_id": "CAT-18",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "HELLA",
+          "title": "Brief Information EGR",
+          "url": "https://www.hella.com/partnerworld/uk/Support-materials/Brief-Product-Information/BRIEF-INFORMATION-EGR-54005/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "Bosch Mobility",
+          "title": "Exhaust-gas recirculation and emissions systems",
+          "url": "https://www.bosch-mobility.com/en/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": null,
+          "image_title": null,
+          "image_source": null,
+          "license": "unverified",
+          "attribution": null,
+          "image_subject": null
+        }
+      ],
+      "safety_notes": [
+        "شیر EGR و مجاری آن ممکن است داغ و آلوده به دوده باشند؛ پیش از بازکردن سردشدن کامل را رعایت کنید و از استنشاق گردوغبار دوده خودداری کنید."
+      ]
+    },
+    {
+      "id": "PART-000035",
+      "name_en": "Turbocharger",
+      "name_fa": "توربوشارژر",
+      "pronunciation_fa": "تِربوچارجر",
+      "ipa": "/ˈtɜːrboʊˌtʃɑːrdʒər/",
+      "description": "توربوشارژر از انرژی گازهای خروجی برای چرخاندن توربین و کمپرسور هم‌محور استفاده می‌کند تا هوای بیشتری به موتور برسد. افزایش فشار هوا به‌تنهایی تضمین‌کننده توان نیست و باید با سوخت‌رسانی، خنک‌کاری و کنترل موتور هماهنگ باشد.",
+      "main_function": "افزایش جرم هوای ورودی و امکان تولید توان بیشتر از حجم موتور مشخص.",
+      "installation_location": "معمولاً متصل به منیفولد دود؛ کمپرسور در مسیر ورودی و توربین در مسیر اگزوز قرار دارد.",
+      "working_principle": "گاز خروجی توربین را می‌چرخاند؛ محور مشترک کمپرسور را می‌گرداند و کمپرسور هوای ورودی را فشرده می‌کند. کنترل بوست با wastegate یا هندسه متغیر و عملگر مربوط انجام می‌شود؛ روانکاری و گاه خنک‌کاری مایع ضروری است.",
+      "internal_components": [
+        "پوسته توربین؛ پوسته کمپرسور؛ چرخ توربین و کمپرسور؛ محور؛ مجموعه یاتاقان مرکزی؛ مجاری روغن؛ عملگر wastegate/VGT؛ شیرهای کنترلی در برخی سامانه‌ها."
+      ],
+      "common_failures": [
+        "آسیب یاتاقان یا محور",
+        "تماس چرخ با پوسته",
+        "ترک پوسته",
+        "نشتی روغن",
+        "خرابی عملگر یا هندسه متغیر",
+        "آسیب پره ناشی از جسم خارجی",
+        "گرفتگی/نشتی مسیر روغن."
+      ],
+      "failure_symptoms": [
+        "افت توان و بوست",
+        "صدای سوت یا ساییدگی غیرعادی",
+        "دود آبی یا سیاه",
+        "مصرف روغن",
+        "خطای کنترل فشار",
+        "نشتی در لوله‌های شارژ."
+      ],
+      "testing_methods": [
+        "ابتدا نشتی هوا/بوست و روغن و مسیرهای ورودی/خروجی بررسی شود",
+        "داده فشار درخواستی و واقعی و عملگر با اسکنر ارزیابی شود",
+        "بازرسی چرخ و لقی فقط طبق روش سازنده و توسط متخصص. توربو و اگزوز پس از کار بسیار داغ‌اند",
+        "به چرخ در حال دوران دست نزنید."
+      ],
+      "required_tools": [
+        "دستگاه عیب‌یاب",
+        "ابزار آزمون نشتی بوست",
+        "ابزار اندازه‌گیری مناسب",
+        "ابزار بازرسی",
+        "تجهیزات حفاظت فردی."
+      ],
+      "category_id": "CAT-01",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "publisher": "Garrett Motion",
+          "title": "Turbocharger technology and technical resources",
+          "url": "https://www.garrettmotion.com/",
+          "role": "technical_reference_candidate"
+        },
+        {
+          "publisher": "BorgWarner",
+          "title": "Turbocharger technology",
+          "url": "https://www.borgwarner.com/",
+          "role": "technical_reference_candidate"
+        }
+      ],
+      "images": [
+        {
+          "image_url": "https://www.speedupperformance.com.au/cdn/shop/files/DSC02326.jpg?v=1740633099",
+          "image_title": "Turbocharger assembly",
+          "image_source": "SpeedUp Auto Parts",
+          "license": "unverified",
+          "attribution": "SpeedUp Auto Parts; verify permission before reuse",
+          "image_subject": "Automotive turbocharger"
+        }
+      ],
+      "safety_notes": [
+        "توربوشارژر و لوله‌های متصل پس از کار موتور بسیار داغ‌اند و چرخ آن با سرعت بالا می‌چرخد؛ تا توقف کامل و سردشدن مجموعه به آن دست نزنید."
+      ]
+    }
+  ],
+  "category_mapping_note": "تمام category_id ها به شناسه‌های موجود در categories.json نگاشت شدند. تصاویر فقط نامزدهای تأییدنشده‌اند؛ مقدار null یعنی تصویر مستقیم و منطبق در ورودی موجود نبود. هیچ URL یا تصویری ساخته نشده است.",
+  "qa_notes": [
+    "JSON معتبر است.",
+    "دقیقاً ۲۰ رکورد با شناسه‌های متوالی PART-000016 تا PART-000035 وجود دارد.",
+    "تمام category_id ها در categories.json موجودند.",
+    "تصویر ساختگی یا URL جایگزین اختراع نشده است.",
+    "تصاویر با مجوز unverified تا زمان بررسی نباید به‌عنوان دارایی مجاز منتشر شوند.",
+    "وضعیت همه رکوردها needs_review باقی مانده است."
+  ]
+}
