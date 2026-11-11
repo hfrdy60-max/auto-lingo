@@ -1,0 +1,39 @@
+[
+  {
+    "id": "SCN-0001",
+    "title_en": "Random/Multiple Cylinder Misfire at Idle",
+    "title_fa": "بدسوزی تصادفی یا چندسیلندری در دور آرام",
+    "category_id": "CAT-06",
+    "vehicle_symptoms": [
+      "rough_idle",
+      "blinking_mil",
+      "power_loss"
+    ],
+    "dtc_codes": [
+      "P0300"
+    ],
+    "live_data_example": {
+      "rpm": 850,
+      "map_kpa": 48,
+      "stft_percent": 12,
+      "ect_c": 90
+    },
+    "possible_causes": [
+      "ignition_fault",
+      "injector_fault",
+      "vacuum_leak",
+      "low_compression",
+      "fuel_delivery_issue"
+    ],
+    "diagnostic_steps": [
+      "Confirm stored and pending DTCs and freeze-frame data.",
+      "Inspect plugs, coils and connectors using correct service information.",
+      "Check intake leaks and fuel trims under comparable conditions.",
+      "Perform cylinder contribution, compression or leak-down tests as appropriate.",
+      "Test injector electrical and hydraulic performance using approved procedures."
+    ],
+    "safety_notes": "A flashing malfunction indicator lamp can indicate catalyst-damaging misfire. Avoid continued driving under active severe misfire; diagnose promptly. Live data alone does not identify a failed part.",
+    "verification_status": "needs_review",
+    "difficulty": "advanced"
+  }
+]
