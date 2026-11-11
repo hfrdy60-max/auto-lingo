@@ -12,10 +12,12 @@
 <body>
 <header class="topbar">
  <a class="brand" href="#" id="homeLink"><span class="brand-mark">AL<span>✦</span></span><span class="brand-name">AUTO <b>LINGO</b><small>زبان تخصصی خودرو</small></span></a>
- <nav class="main-nav"><a href="#placement">تعیین سطح</a><a href="#paths">مسیرهای یادگیری</a><a href="#myProgress">پیشرفت من</a><a href="#technicalAcademy">آموزش فنی</a><a href="#learningLab">آزمایشگاه</a><a href="#smartReview">مرور هوشمند</a><a href="#dictionary">واژه‌نامه</a><a href="#how">روش یادگیری</a></nav>
+ <nav class="main-nav" aria-label="منوی اصلی">
+  <a href="#homeLink">خانه</a><a href="#guide">راهنمای شروع</a><a href="#paths">مسیرهای یادگیری</a><a href="#technicalAcademy">آکادمی فنی</a><a href="#learningLab">تمرین و آزمایشگاه</a><a href="#myProgress">پیشرفت من</a>
+ </nav>
  <div class="top-actions"><span class="edition">LEARN • PRACTICE • MASTER</span><button class="mobile-menu" id="mobileMenu" aria-label="باز کردن منو">☰</button></div>
 </header>
-<main>
+<main id="home">
 <section class="hero">
  <div class="hero-copy">
   <div class="eyebrow"><i></i> AUTOMOTIVE ENGLISH ACADEMY</div>
@@ -30,6 +32,17 @@
   <div class="visual-stamp">01 <small>START LEARNING</small></div>
  </div>
 </section>
+<section class="section start-guide" id="guide">
+ <div class="section-title"><div><span class="eyebrow">QUICK START</span><h2>راهنمای شروع؛ از کجا شروع کنم؟</h2><p>لازم نیست همه بخش‌ها را هم‌زمان استفاده کنی. این چهار مرحله را به‌ترتیب انجام بده.</p></div><span class="section-index">YOUR FIRST STEPS</span></div>
+ <div class="guide-grid">
+  <article class="guide-step"><span class="guide-number">۰۱</span><div><small>STEP ONE</small><h3>سطحت را مشخص کن</h3><p>آزمون کوتاه را انجام بده تا نقطه شروع مناسب پیشنهاد شود.</p><a href="#placement">رفتن به آزمون تعیین سطح ←</a></div></article>
+  <article class="guide-step"><span class="guide-number">۰۲</span><div><small>STEP TWO</small><h3>فقط یک مسیر انتخاب کن</h3><p>برای شروع «مکانیک خودرو» یا «برق خودرو» را انتخاب کن؛ بعداً می‌توانی مسیرهای دیگر را باز کنی.</p><a href="#paths">دیدن مسیرها ←</a></div></article>
+  <article class="guide-step"><span class="guide-number">۰۳</span><div><small>STEP THREE</small><h3>درس‌ها را به‌ترتیب بخوان</h3><p>واژه را ببین، معنی و مثال را بخوان، تلفظ را گوش کن و بازی و آزمون را انجام بده.</p><a href="#paths">شروع یادگیری ←</a></div></article>
+  <article class="guide-step"><span class="guide-number">۰۴</span><div><small>STEP FOUR</small><h3>پیشرفتت را بررسی کن</h3><p>بعد از چند درس، دفترچه اشتباهات و مرور هوشمند را استفاده کن تا مطالب فراموش نشوند.</p><a href="#myProgress">مشاهده کارنامه ←</a></div></article>
+ </div>
+ <div class="guide-tip"><b>پیشنهاد برنامه روزانه</b><span>روزانه ۱۵ تا ۲۰ دقیقه کافی است: یک درس کوتاه + تمرین + مرور اشتباهات. عجله نکن و تا وقتی یک درس را نفهمیدی سراغ درس بعدی نرو.</span></div>
+</section>
+
 <section class="section placement-section" id="placement">
  <div class="section-title"><div><span class="eyebrow">FIND YOUR STARTING POINT</span><h2>اول سطح خودت را بشناس</h2><p>با یک آزمون کوتاه، سطح پیشنهادی زبان تخصصی خودرو را پیدا کن.</p></div><span class="section-index">LEVEL CHECK</span></div>
  <div class="placement-card"><div class="placement-copy"><span class="placement-icon">◎</span><h3>آزمون تعیین سطح AUTO LINGO</h3><p>۸ پرسش کوتاه از واژگان و اصطلاحات خودرو. نتیجه فقط پیشنهاد شروع است و هر زمان می‌توانی مسیر دیگری را انتخاب کنی.</p><div class="placement-meta"><span>⏱ حدود ۳ دقیقه</span><span>۸ سؤال</span><span>بدون نیاز به ثبت‌نام</span></div></div><div class="placement-action"><div id="placementResult" class="placement-result"></div><button class="btn btn-primary" id="startPlacement">شروع آزمون <span>←</span></button></div></div>
