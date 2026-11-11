@@ -1,0 +1,234 @@
+{
+  "file": "progression_rules.json",
+  "schema_version": "1.0.0",
+  "generated_for": "AUTO LINGO",
+  "language_pair": [
+    "fa",
+    "en"
+  ],
+  "description_fa": "قوانین سیستم هوشمند پیشرفت",
+  "skills": [
+    {
+      "id": "vocabulary",
+      "weight_for_level_estimate": 0.18
+    },
+    {
+      "id": "part_recognition",
+      "weight_for_level_estimate": 0.14
+    },
+    {
+      "id": "listening",
+      "weight_for_level_estimate": 0.12
+    },
+    {
+      "id": "reading",
+      "weight_for_level_estimate": 0.12
+    },
+    {
+      "id": "translation_fa_to_en",
+      "weight_for_level_estimate": 0.12
+    },
+    {
+      "id": "translation_en_to_fa",
+      "weight_for_level_estimate": 0.12
+    },
+    {
+      "id": "sentence_writing",
+      "weight_for_level_estimate": 0.1
+    },
+    {
+      "id": "workshop_conversation",
+      "weight_for_level_estimate": 0.1
+    }
+  ],
+  "skill_score": {
+    "range": [
+      0,
+      100
+    ],
+    "initial": 50,
+    "update_formula": "new = old + alpha * (outcome*100 - old); outcome in {0,1} (partial 0.5 for near-miss spelling)",
+    "alpha_by_difficulty": {
+      "1": 0.08,
+      "2": 0.1,
+      "3": 0.12,
+      "4": 0.15,
+      "5": 0.18
+    },
+    "alpha_multiplier_first_10_attempts": 1.5,
+    "confidence": "attempts >= 10 per skill; below that mark as provisional",
+    "time_decay": {
+      "after_days_inactive": 21,
+      "points_per_week": 1.5,
+      "floor_relative_to_peak": 0.8
+    }
+  },
+  "placement_test": {
+    "trigger": "first launch or user requests 'find my level'",
+    "format": "adaptive, 20-30 items, no hints, mixed types (mcq, fa_to_en, en_to_fa, image_part_id, listening, fill_blank)",
+    "start_level": "LVL-2",
+    "algorithm": [
+      "Serve 3 items at current level (difficulty = level midpoint).",
+      "If >=2/3 correct move up one level; if 0/3 move down one; else stay and serve 3 more.",
+      "Stop when the level is stable for 2 rounds or 30 items are served.",
+      "Placement = highest level where accuracy >= 70% over its last 3+ items, minus 0 levels; cap at LVL-5 (higher levels require the exam).",
+      "Provide per-skill initial scores from item types."
+    ],
+    "allow_skip": true,
+    "retake_cooldown_days": 14
+  },
+  "term_srs": {
+    "states": [
+      "new",
+      "learning",
+      "review",
+      "mastered",
+      "lapsed"
+    ],
+    "boxes_interval_days": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "on_correct": "box += 1 (box += 2 if answered within 50% of time limit and difficulty >= 3)",
+    "on_wrong": "box = max(0, box - 2); lapses += 1; state = 'lapsed' if box <= 1",
+    "mastered_when": "box >= 6 and last 5 answers >= 80% correct",
+    "forgotten_detection": [
+      "lapses >= 2 within 14 days",
+      "accuracy over last 5 attempts < 60%",
+      "due for review > 2x interval"
+    ],
+    "reteach_protocol_fa": [
+      "نمایش دوبارهٔ تصویر/تعریف و نمونه جمله",
+      "سه تمرین ساده با راهنما",
+      "سه تمرین بدون راهنما",
+      "بازگشت به باکس ۱"
+    ],
+    "daily_review_cap": 30,
+    "target_retention": 0.85
+  },
+  "weakness_detection": {
+    "by_skill": "skill_score < (level_min_per_skill + 10) OR accuracy(last 20) < 65% with >= 8 attempts",
+    "by_category": "category accuracy(last 15) < 60% with >= 6 attempts (categories from parts_image_manifest)",
+    "by_confusion_pair": "wrong option chosen belongs to confusable_with of the correct part >= 2 times -> add pair to targeted drills",
+    "by_error_type": [
+      "spelling",
+      "word_order",
+      "wrong_translation_direction",
+      "listening_number_confusion"
+    ],
+    "report": "weekly summary with top 3 weak skills, top 5 weak categories, top 10 lapsed terms"
+  },
+  "adaptive_quiz": {
+    "composition": {
+      "current_lesson_or_level_items": 0.5,
+      "weak_items": 0.25,
+      "due_review_items": 0.25
+    },
+    "difficulty_targeting": "choose difficulty so that expected correctness is 70-80%; difficulty = clamp(round(skill_score/20), 1, 5) +/- 1",
+    "type_selection": "weight types by inverse skill score; at least 3 different types per quiz",
+    "no_repeat_window_days": 3,
+    "default_length": 10
+  },
+  "lesson_review": {
+    "schedule_days_after_completion": [
+      3,
+      7,
+      21,
+      60
+    ],
+    "mini_quiz_length": 5,
+    "if_score_below_pct": 60,
+    "action": "mark lesson 'recommended_review' and queue its weakest terms in SRS"
+  },
+  "level_progression": {
+    "unlock_exam_when": [
+      "all lessons in level completed",
+      "each lesson mastery >= level.exit_criteria.min_lesson_mastery_pct",
+      "no skill score below (min_per_skill - 10)"
+    ],
+    "exam": {
+      "question_count_source": "learning_levels.exit_criteria.level_exam.question_count",
+      "composition": "equal share per skill, difficulty centered on the level, no hints, items not seen in last 7 days",
+      "pass": [
+        "overall >= pass_overall_pct",
+        "every skill >= min_per_skill_pct",
+        "no part-category accuracy < 50%"
+      ],
+      "retake": {
+        "cooldown_hours": 24,
+        "after_2_fails": "3 targeted remediation sessions on weakest categories before 3rd attempt"
+      }
+    },
+    "demotion": "none; show 'level health' warning after 30 days inactive and schedule refresh quiz",
+    "fast_track": "score >= 95% on a level's exam without prior lessons allows skipping that level's lessons (terms still enter SRS)"
+  },
+  "anti_gaming": [
+    "Limit XP from repeated games to daily cap",
+    "Exam questions never reused within 7 days",
+    "Typing answers normalized; no partial credit for blank"
+  ],
+  "data_model": {
+    "user_skill_score": [
+      "user_id",
+      "skill_id",
+      "score",
+      "attempts",
+      "updated_at"
+    ],
+    "user_term_state": [
+      "user_id",
+      "term_id",
+      "box",
+      "state",
+      "lapses",
+      "last_seen_at",
+      "next_due_at",
+      "last5"
+    ],
+    "attempt_log": [
+      "id",
+      "user_id",
+      "question_id",
+      "type",
+      "skill",
+      "category_key",
+      "part_id",
+      "selected",
+      "correct",
+      "response_ms",
+      "hint_used",
+      "created_at"
+    ],
+    "user_lesson_progress": [
+      "user_id",
+      "lesson_id",
+      "status",
+      "mastery_pct",
+      "completed_at",
+      "next_review_at"
+    ],
+    "user_level_state": [
+      "user_id",
+      "level_id",
+      "status",
+      "exam_attempts",
+      "last_exam_at"
+    ],
+    "confusion_pairs": [
+      "user_id",
+      "part_id_a",
+      "part_id_b",
+      "count"
+    ]
+  },
+  "needs_review_fa": [
+    "مقادیر عددی آستانه‌ها باید با داده‌های واقعی کاربران کالیبره شود (A/B test).",
+    "الگوریتم placement با داده آزمایشی اعتبارسنجی شود."
+  ]
+}

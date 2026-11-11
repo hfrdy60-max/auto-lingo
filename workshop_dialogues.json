@@ -1,0 +1,935 @@
+{
+  "file": "workshop_dialogues.json",
+  "schema_version": "1.0.0",
+  "generated_for": "AUTO LINGO",
+  "language_pair": [
+    "fa",
+    "en"
+  ],
+  "description_fa": "مکالمه‌های دوزبانهٔ تعمیرگاهی",
+  "note": "Currency, plate formats and prices are illustrative placeholders; localize before release.",
+  "dialogues": [
+    {
+      "id": "DLG-001",
+      "scenario_key": "greeting",
+      "title_en": "Greeting a Customer",
+      "title_fa": "احوال‌پرسی با مشتری",
+      "level_id": "LVL-1",
+      "participants": [
+        "Service advisor",
+        "Customer"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Advisor",
+          "en": "Hello! Welcome to our workshop.",
+          "fa": "سلام! به تعمیرگاه ما خوش آمدید.",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Customer",
+          "en": "Hello. I have a problem with my car.",
+          "fa": "سلام. ماشینم مشکل دارد.",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Advisor",
+          "en": "What is your name, please?",
+          "fa": "لطفاً اسمتان چیست؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Customer",
+          "en": "My name is Ali.",
+          "fa": "اسم من علی است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Advisor",
+          "en": "What car do you have?",
+          "fa": "چه ماشینی دارید؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Customer",
+          "en": "I have a white sedan.",
+          "fa": "یک سدان سفید دارم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 7,
+          "speaker": "Advisor",
+          "en": "What is the problem?",
+          "fa": "مشکل چیست؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 8,
+          "speaker": "Customer",
+          "en": "The engine is loud.",
+          "fa": "صدای موتور زیاد است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 9,
+          "speaker": "Advisor",
+          "en": "OK. Please open the hood.",
+          "fa": "باشد. لطفاً کاپوت را باز کنید.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "Welcome to our workshop.",
+          "fa": "به تعمیرگاه ما خوش آمدید."
+        },
+        {
+          "en": "I have a problem with my car.",
+          "fa": "ماشینم مشکل دارد."
+        },
+        {
+          "en": "What is the problem?",
+          "fa": "مشکل چیست؟"
+        },
+        {
+          "en": "Please open the hood.",
+          "fa": "لطفاً کاپوت را باز کنید."
+        }
+      ],
+      "linked_lesson_ids": [
+        "B06",
+        "B12",
+        "E05"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-002",
+      "scenario_key": "reception",
+      "title_en": "Vehicle Reception",
+      "title_fa": "پذیرش خودرو",
+      "level_id": "LVL-3",
+      "participants": [
+        "Service advisor",
+        "Customer"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Advisor",
+          "en": "Good morning. How can I help you?",
+          "fa": "صبح بخیر. چطور می‌توانم کمکتان کنم؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Customer",
+          "en": "Good morning. I'd like to book my car in for a service.",
+          "fa": "صبح بخیر. می‌خواهم برای سرویس وقت بگیرم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Advisor",
+          "en": "Sure. Can I have your name and the registration number?",
+          "fa": "حتماً. اسم و شمارهٔ پلاک خودرو را بفرمایید.",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Customer",
+          "en": "It's Sara Ahmadi, and the registration number is AB 123 CD.",
+          "fa": "سارا احمدی هستم و شمارهٔ پلاک AB 123 CD است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Advisor",
+          "en": "What is the mileage, please?",
+          "fa": "کیلومتر کارکرد چقدر است؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Customer",
+          "en": "It's about 82,000 kilometers.",
+          "fa": "حدود ۸۲ هزار کیلومتر.",
+          "audio_asset": null
+        },
+        {
+          "turn": 7,
+          "speaker": "Advisor",
+          "en": "Do you have any other concerns?",
+          "fa": "مورد دیگری هست که نگرانتان کرده باشد؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 8,
+          "speaker": "Customer",
+          "en": "Yes. There's a noise from the front wheels.",
+          "fa": "بله. از چرخ‌های جلو صدا می‌آید.",
+          "audio_asset": null
+        },
+        {
+          "turn": 9,
+          "speaker": "Advisor",
+          "en": "OK, I'll note it on the repair order. Please leave the key with me. The car will be ready by five.",
+          "fa": "باشد، در برگهٔ تعمیر یادداشت می‌کنم. لطفاً سوئیچ را بدهید. خودرو تا ساعت پنج آماده می‌شود.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "I'd like to book my car in for a service.",
+          "fa": "می‌خواهم برای سرویس وقت بگیرم."
+        },
+        {
+          "en": "Can I have your registration number?",
+          "fa": "شمارهٔ پلاک را می‌شود بگویید؟"
+        },
+        {
+          "en": "What is the mileage?",
+          "fa": "کارکرد خودرو چقدر است؟"
+        },
+        {
+          "en": "I'll note it on the repair order.",
+          "fa": "در برگهٔ تعمیر یادداشت می‌کنم."
+        }
+      ],
+      "linked_lesson_ids": [
+        "P08",
+        "P10",
+        "PR10"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-003",
+      "scenario_key": "customer_problem",
+      "title_en": "Customer Describes the Problem",
+      "title_fa": "توضیح مشکل خودرو توسط مشتری",
+      "level_id": "LVL-2",
+      "participants": [
+        "Mechanic",
+        "Customer"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Customer",
+          "en": "My car doesn't start this morning.",
+          "fa": "ماشینم امروز صبح روشن نمی‌شود.",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Mechanic",
+          "en": "What happens when you turn the key?",
+          "fa": "وقتی سوئیچ را می‌چرخانید چه اتفاقی می‌افتد؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Customer",
+          "en": "The lights come on, but the engine only clicks.",
+          "fa": "چراغ‌ها روشن می‌شوند، ولی موتور فقط صدای تق می‌دهد.",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Mechanic",
+          "en": "Is the battery old?",
+          "fa": "باتری قدیمی است؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Customer",
+          "en": "Yes, it is about five years old.",
+          "fa": "بله، حدود پنج سال دارد.",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Mechanic",
+          "en": "I think the battery is weak. Let me test it.",
+          "fa": "فکر می‌کنم باتری ضعیف است. اجازه بدهید آن را تست کنم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 7,
+          "speaker": "Customer",
+          "en": "How long will it take?",
+          "fa": "چقدر طول می‌کشد؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 8,
+          "speaker": "Mechanic",
+          "en": "About twenty minutes.",
+          "fa": "حدود بیست دقیقه.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "The engine only clicks.",
+          "fa": "موتور فقط صدای تق می‌دهد."
+        },
+        {
+          "en": "What happens when you turn the key?",
+          "fa": "وقتی سوئیچ را می‌چرخانید چه می‌شود؟"
+        },
+        {
+          "en": "Let me test it.",
+          "fa": "اجازه بدهید تست کنم."
+        },
+        {
+          "en": "How long will it take?",
+          "fa": "چقدر طول می‌کشد؟"
+        }
+      ],
+      "linked_lesson_ids": [
+        "E08",
+        "E10",
+        "P08",
+        "PR10"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-004",
+      "scenario_key": "technical_questions",
+      "title_en": "Asking Technical Questions",
+      "title_fa": "پرسیدن سؤالات فنی",
+      "level_id": "LVL-4",
+      "participants": [
+        "Mechanic",
+        "Customer"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Mechanic",
+          "en": "When did the problem begin?",
+          "fa": "مشکل از کی شروع شد؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Customer",
+          "en": "About two weeks ago. The engine hesitates when I accelerate.",
+          "fa": "حدود دو هفته پیش. موقع گاز دادن موتور تردید می‌کند.",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Mechanic",
+          "en": "Does it happen when the engine is cold or warm?",
+          "fa": "وقتی موتور سرد است یا گرم؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Customer",
+          "en": "Mostly when it is warm.",
+          "fa": "بیشتر وقتی گرم است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Mechanic",
+          "en": "Has the check engine light come on?",
+          "fa": "چراغ چک موتور روشن شده است؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Customer",
+          "en": "Yes, last week.",
+          "fa": "بله، هفتهٔ پیش.",
+          "audio_asset": null
+        },
+        {
+          "turn": 7,
+          "speaker": "Mechanic",
+          "en": "Have you had any recent repairs?",
+          "fa": "اخیراً تعمیری انجام داده‌اید؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 8,
+          "speaker": "Customer",
+          "en": "I changed the spark plugs last month.",
+          "fa": "ماه پیش شمع‌ها را عوض کردم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 9,
+          "speaker": "Mechanic",
+          "en": "Thank you. I'll scan for fault codes and check the fuel pressure.",
+          "fa": "ممنون. کدهای خطا را می‌خوانم و فشار سوخت را بررسی می‌کنم.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "When did the problem begin?",
+          "fa": "مشکل از کی شروع شد؟"
+        },
+        {
+          "en": "Does it happen when the engine is cold or warm?",
+          "fa": "وقتی موتور سرد است یا گرم رخ می‌دهد؟"
+        },
+        {
+          "en": "Has the check engine light come on?",
+          "fa": "چراغ چک موتور روشن شده؟"
+        },
+        {
+          "en": "I'll scan for fault codes.",
+          "fa": "کدهای خطا را می‌خوانم."
+        }
+      ],
+      "linked_lesson_ids": [
+        "I10",
+        "I12"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-005",
+      "scenario_key": "explain_fault",
+      "title_en": "Explaining the Fault",
+      "title_fa": "توضیح عیب خودرو",
+      "level_id": "LVL-4",
+      "participants": [
+        "Mechanic",
+        "Customer"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Mechanic",
+          "en": "We found the cause of the overheating. The water pump is leaking, so the coolant level has dropped.",
+          "fa": "علت داغ‌کردن را پیدا کردیم. واترپمپ نشتی دارد، برای همین سطح مایع خنک‌کننده پایین آمده است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Customer",
+          "en": "Is it serious?",
+          "fa": "جدی است؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Mechanic",
+          "en": "Yes. If you keep driving, the engine could overheat and the head gasket might fail.",
+          "fa": "بله. اگر به رانندگی ادامه دهید، موتور ممکن است داغ کند و واشر سرسیلندر آسیب ببیند.",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Customer",
+          "en": "What do you recommend?",
+          "fa": "چه پیشنهادی دارید؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Mechanic",
+          "en": "We recommend replacing the water pump and the thermostat, and changing the coolant.",
+          "fa": "پیشنهاد ما تعویض واترپمپ و ترموستات و تعویض مایع خنک‌کننده است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Customer",
+          "en": "Why the thermostat too?",
+          "fa": "چرا ترموستات هم؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 7,
+          "speaker": "Mechanic",
+          "en": "The cooling system is already open, and the thermostat is the same age as the pump.",
+          "fa": "سیستم خنک‌کاری از قبل باز است و ترموستات هم‌سن واترپمپ است.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "The water pump is leaking.",
+          "fa": "واترپمپ نشتی دارد."
+        },
+        {
+          "en": "..., so the coolant level has dropped.",
+          "fa": "...، برای همین سطح مایع خنک‌کننده پایین آمده است."
+        },
+        {
+          "en": "If you keep driving, the engine could overheat.",
+          "fa": "اگر ادامه دهید، موتور ممکن است داغ کند."
+        },
+        {
+          "en": "We recommend replacing...",
+          "fa": "پیشنهاد ما تعویض ... است."
+        }
+      ],
+      "linked_lesson_ids": [
+        "I06",
+        "U11",
+        "PR10"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-006",
+      "scenario_key": "cost_estimate",
+      "title_en": "Announcing the Repair Cost",
+      "title_fa": "اعلام هزینهٔ تعمیر",
+      "level_id": "LVL-4",
+      "participants": [
+        "Service advisor",
+        "Customer"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Advisor",
+          "en": "Here is the estimate for the front brakes.",
+          "fa": "این برآورد هزینهٔ ترمز جلو است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Advisor",
+          "en": "Parts are 150 euros and labor is 130 euros. The total is 280 euros, including tax.",
+          "fa": "قطعات ۱۵۰ یورو و دستمزد ۱۳۰ یورو است. جمع ۲۸۰ یورو با مالیات است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Customer",
+          "en": "Is that the final price?",
+          "fa": "قیمت نهایی همین است؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Advisor",
+          "en": "It's an estimate. If we find additional problems, we will call you before doing any extra work.",
+          "fa": "این یک برآورد است. اگر مشکل دیگری ببینیم، قبل از هر کار اضافه با شما تماس می‌گیریم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Customer",
+          "en": "How long will the repair take?",
+          "fa": "تعمیر چقدر طول می‌کشد؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Advisor",
+          "en": "Two days, because we have to order the parts.",
+          "fa": "دو روز، چون باید قطعات را سفارش بدهیم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 7,
+          "speaker": "Customer",
+          "en": "OK, please go ahead.",
+          "fa": "باشد، لطفاً شروع کنید.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "Here is the estimate.",
+          "fa": "این برآورد است."
+        },
+        {
+          "en": "including tax / including parts and labor",
+          "fa": "با مالیات / شامل قطعات و دستمزد"
+        },
+        {
+          "en": "It's an estimate, not a final price.",
+          "fa": "برآورد است، نه قیمت نهایی."
+        },
+        {
+          "en": "We will call you before extra work.",
+          "fa": "قبل از کار اضافه تماس می‌گیریم."
+        }
+      ],
+      "linked_lesson_ids": [
+        "I08",
+        "I12",
+        "PR10"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-007",
+      "scenario_key": "order_parts",
+      "title_en": "Ordering a Part",
+      "title_fa": "سفارش قطعه",
+      "level_id": "LVL-5",
+      "participants": [
+        "Mechanic",
+        "Parts supplier"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Mechanic",
+          "en": "Hello, I need a front brake pad set. Could you check the part number using the VIN?",
+          "fa": "سلام، یک ست لنت ترمز جلو لازم دارم. می‌شود شماره قطعه را با VIN بررسی کنید؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Supplier",
+          "en": "Sure. Do you need OEM or aftermarket?",
+          "fa": "حتماً. اصلی (OEM) می‌خواهید یا غیراصلی؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Mechanic",
+          "en": "OEM, please.",
+          "fa": "اصلی، لطفاً.",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Supplier",
+          "en": "It's in stock. I can deliver it tomorrow morning.",
+          "fa": "موجود است. فردا صبح می‌توانم تحویل بدهم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Mechanic",
+          "en": "What is the warranty?",
+          "fa": "گارانتی چقدر است؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Supplier",
+          "en": "Twelve months.",
+          "fa": "دوازده ماه.",
+          "audio_asset": null
+        },
+        {
+          "turn": 7,
+          "speaker": "Mechanic",
+          "en": "Great. Please add the order to our account.",
+          "fa": "عالی. لطفاً سفارش را به حساب ما اضافه کنید.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "Could you check the part number using the VIN?",
+          "fa": "می‌شود شماره قطعه را با VIN بررسی کنید؟"
+        },
+        {
+          "en": "OEM or aftermarket?",
+          "fa": "اصلی یا غیراصلی؟"
+        },
+        {
+          "en": "Is it in stock?",
+          "fa": "موجود است؟"
+        },
+        {
+          "en": "What is the warranty?",
+          "fa": "گارانتی چقدر است؟"
+        }
+      ],
+      "linked_lesson_ids": [
+        "I09",
+        "PR06"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-008",
+      "scenario_key": "mechanic_electrician",
+      "title_en": "Mechanic and Electrician",
+      "title_fa": "صحبت مکانیک با برق‌کار",
+      "level_id": "LVL-5",
+      "participants": [
+        "Mechanic",
+        "Auto electrician"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Mechanic",
+          "en": "The cooling fan doesn't run, even when the engine is hot.",
+          "fa": "فن خنک‌کاری کار نمی‌کند، حتی وقتی موتور داغ است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Electrician",
+          "en": "Have you checked the fuse and the relay?",
+          "fa": "فیوز و رله را بررسی کرده‌اید؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Mechanic",
+          "en": "Yes, both are OK.",
+          "fa": "بله، هر دو سالم هستند.",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Electrician",
+          "en": "Then let's command the fan with the scan tool and measure the voltage at the fan connector.",
+          "fa": "پس با دستگاه دیاگ فرمان فن را بدهیم و ولتاژ سر کانکتور فن را اندازه بگیریم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Mechanic",
+          "en": "There is no voltage at the connector.",
+          "fa": "روی کانکتور ولتاژ نیست.",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Electrician",
+          "en": "So the problem is in the wiring or the relay output. I'll do a voltage-drop test and check the ground connection.",
+          "fa": "پس مشکل از سیم‌کشی یا خروجی رله است. تست افت ولتاژ و اتصال بدنه را بررسی می‌کنم.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "Have you checked the fuse and the relay?",
+          "fa": "فیوز و رله را چک کرده‌اید؟"
+        },
+        {
+          "en": "Let's measure the voltage at the connector.",
+          "fa": "ولتاژ سر کانکتور را اندازه بگیریم."
+        },
+        {
+          "en": "There is no voltage at the connector.",
+          "fa": "روی کانکتور ولتاژ نیست."
+        },
+        {
+          "en": "I'll do a voltage-drop test.",
+          "fa": "تست افت ولتاژ می‌کنم."
+        }
+      ],
+      "linked_lesson_ids": [
+        "U06",
+        "U12"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-009",
+      "scenario_key": "diag_specialist",
+      "title_en": "Talking to a Diagnostic Specialist",
+      "title_fa": "مکالمه با متخصص دیاگ",
+      "level_id": "LVL-6",
+      "participants": [
+        "Technician",
+        "Diagnostic specialist"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Technician",
+          "en": "The vehicle has an intermittent misfire on cylinder two. Compression is within specification.",
+          "fa": "خودرو روی سیلندر ۲ میس‌فایر مقطعی دارد. کمپرس در محدودهٔ مجاز است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Specialist",
+          "en": "Have you checked the ignition coil and the injector?",
+          "fa": "کویل و انژکتور را بررسی کرده‌اید؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Technician",
+          "en": "I swapped the coil, but the misfire stayed on cylinder two.",
+          "fa": "کویل را جابه‌جا کردم ولی میس‌فایر روی سیلندر ۲ ماند.",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Specialist",
+          "en": "Then capture the injector current waveform with the scope, and review the freeze frame data and the fuel trims.",
+          "fa": "پس شکل موج جریان انژکتور را با اسکوپ بگیرید و داده‌های freeze frame و fuel trim را بررسی کنید.",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Technician",
+          "en": "The fuel trims are plus twelve percent at idle.",
+          "fa": "fuel trim در دور آرام ۱۲+ درصد است.",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Specialist",
+          "en": "That could indicate a lean condition, possibly a vacuum leak. Perform a smoke test.",
+          "fa": "ممکن است نشانهٔ مخلوط رقیق باشد، شاید نشتی خلأ. تست دود انجام دهید.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "The compression is within specification.",
+          "fa": "کمپرس در محدودهٔ مجاز است."
+        },
+        {
+          "en": "I swapped the coil.",
+          "fa": "کویل را جابه‌جا کردم."
+        },
+        {
+          "en": "Capture the waveform with the scope.",
+          "fa": "شکل موج را با اسکوپ بگیرید."
+        },
+        {
+          "en": "That could indicate a lean condition.",
+          "fa": "ممکن است نشانهٔ مخلوط رقیق باشد."
+        }
+      ],
+      "linked_lesson_ids": [
+        "A03",
+        "A10",
+        "A12"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    },
+    {
+      "id": "DLG-010",
+      "scenario_key": "delivery",
+      "title_en": "Delivering the Car",
+      "title_fa": "تحویل خودرو به مشتری",
+      "level_id": "LVL-4",
+      "participants": [
+        "Service advisor",
+        "Customer"
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Advisor",
+          "en": "Your car is ready. We replaced the water pump, the thermostat and the coolant.",
+          "fa": "خودروی شما آماده است. واترپمپ، ترموستات و مایع خنک‌کننده را تعویض کردیم.",
+          "audio_asset": null
+        },
+        {
+          "turn": 2,
+          "speaker": "Customer",
+          "en": "Great. Is there anything I should know?",
+          "fa": "عالی. نکته‌ای هست که باید بدانم؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 3,
+          "speaker": "Advisor",
+          "en": "Please watch the temperature gauge for the next few days, and check the coolant level when the engine is cold.",
+          "fa": "لطفاً چند روز آینده نشانگر دما را زیر نظر بگیرید و وقتی موتور سرد است سطح مایع خنک‌کننده را چک کنید.",
+          "audio_asset": null
+        },
+        {
+          "turn": 4,
+          "speaker": "Customer",
+          "en": "Can I see the old parts?",
+          "fa": "می‌توانم قطعات قدیمی را ببینم؟",
+          "audio_asset": null
+        },
+        {
+          "turn": 5,
+          "speaker": "Advisor",
+          "en": "Of course. Here they are. And here is the invoice and the warranty document.",
+          "fa": "البته. بفرمایید. این هم فاکتور و برگهٔ گارانتی.",
+          "audio_asset": null
+        },
+        {
+          "turn": 6,
+          "speaker": "Customer",
+          "en": "Thank you very much.",
+          "fa": "خیلی ممنون.",
+          "audio_asset": null
+        },
+        {
+          "turn": 7,
+          "speaker": "Advisor",
+          "en": "You're welcome. Drive safely.",
+          "fa": "خواهش می‌کنم. سالم برسید.",
+          "audio_asset": null
+        }
+      ],
+      "key_phrases": [
+        {
+          "en": "Your car is ready.",
+          "fa": "خودروی شما آماده است."
+        },
+        {
+          "en": "We replaced...",
+          "fa": "ما ... را تعویض کردیم."
+        },
+        {
+          "en": "Here is the invoice and the warranty document.",
+          "fa": "این هم فاکتور و برگهٔ گارانتی."
+        },
+        {
+          "en": "Drive safely.",
+          "fa": "سالم برسید."
+        }
+      ],
+      "linked_lesson_ids": [
+        "I07",
+        "PR10"
+      ],
+      "review": {
+        "technical_accuracy": "needs_expert_review",
+        "fa_naturalness": "needs_native_review"
+      }
+    }
+  ]
+}

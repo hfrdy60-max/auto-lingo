@@ -1,0 +1,4868 @@
+{
+  "file": "lesson_blueprints.json",
+  "schema_version": "1.0.0",
+  "generated_for": "AUTO LINGO",
+  "language_pair": [
+    "fa",
+    "en"
+  ],
+  "description_fa": "طرح کلی همهٔ درس‌ها",
+  "lessons": [
+    {
+      "id": "B01",
+      "level_id": "LVL-1",
+      "order": 1,
+      "title_en": "Alphabet, Sounds and Spelling Car Words",
+      "title_fa": "الفبا، تلفظ و هجی کردن واژه‌های خودرویی",
+      "type": "lesson",
+      "language_focus_en": "Letter names; spelling aloud (e.g. VIN or plate characters); word stress basics",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B01",
+          "category_keys": []
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-B01",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B02",
+      "level_id": "LVL-1",
+      "order": 2,
+      "title_en": "The Car: Main Exterior Parts",
+      "title_fa": "خودرو: قطعات اصلی بیرونی",
+      "type": "lesson",
+      "language_focus_en": "Singular/plural nouns; 'This is a...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B02",
+          "category_keys": [
+            "body",
+            "electrical"
+          ]
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-BDY-001",
+        "PRT-BDY-002",
+        "PRT-BDY-003",
+        "PRT-BDY-004",
+        "PRT-BDY-005",
+        "PRT-BDY-006",
+        "PRT-BDY-007",
+        "PRT-BDY-008",
+        "PRT-BDY-009",
+        "PRT-BDY-011",
+        "PRT-BDY-012",
+        "PRT-ELE-009"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-01"
+      ],
+      "quiz_id": "QZ-B02",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B03",
+      "level_id": "LVL-1",
+      "order": 3,
+      "title_en": "Inside the Car",
+      "title_fa": "داخل خودرو",
+      "type": "lesson",
+      "language_focus_en": "'There is/There are'; this/that",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B03",
+          "category_keys": [
+            "body",
+            "ecu",
+            "steering"
+          ]
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-BDY-013",
+        "PRT-STR-001",
+        "PRT-BDY-015",
+        "PRT-BDY-010",
+        "PRT-BDY-014",
+        "PRT-BDY-016",
+        "PRT-ECU-007"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-01"
+      ],
+      "quiz_id": "QZ-B03",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B04",
+      "level_id": "LVL-1",
+      "order": 4,
+      "title_en": "Numbers, Units and Measurements",
+      "title_fa": "اعداد، واحدها و اندازه‌گیری",
+      "type": "lesson",
+      "language_focus_en": "Numbers 0-1000; km, litre, kg, bar; reading simple measurements",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B04",
+          "category_keys": []
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-B04",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B05",
+      "level_id": "LVL-1",
+      "order": 5,
+      "title_en": "Car Types and Colors",
+      "title_fa": "انواع خودرو و رنگ‌ها",
+      "type": "lesson",
+      "language_focus_en": "Adjectives (color, size); 'It is a...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B05",
+          "category_keys": []
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04"
+      ],
+      "quiz_id": "QZ-B05",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B06",
+      "level_id": "LVL-1",
+      "order": 6,
+      "title_en": "Greeting a Customer",
+      "title_fa": "احوال‌پرسی با مشتری",
+      "type": "lesson",
+      "language_focus_en": "Greetings; 'My name is...'; 'What is your name?'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B06",
+          "category_keys": []
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-001"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-B06",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B07",
+      "level_id": "LVL-1",
+      "order": 7,
+      "title_en": "Basic Hand Tools",
+      "title_fa": "ابزارهای دستی پایه",
+      "type": "lesson",
+      "language_focus_en": "'I need a...'; 'Give me the...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B07",
+          "category_keys": [
+            "tools"
+          ]
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-TLS-001",
+        "PRT-TLS-003",
+        "PRT-TLS-004",
+        "PRT-TLS-005",
+        "PRT-TLS-002",
+        "PRT-TLS-010",
+        "PRT-TLS-012",
+        "PRT-TLS-007"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-01"
+      ],
+      "quiz_id": "QZ-B07",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B08",
+      "level_id": "LVL-1",
+      "order": 8,
+      "title_en": "Basic Workshop Verbs",
+      "title_fa": "فعل‌های پایهٔ تعمیرگاه",
+      "type": "lesson",
+      "language_focus_en": "Imperatives: open, close, check, turn on/off, push, pull, fill, clean",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B08",
+          "category_keys": []
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-B08",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B09",
+      "level_id": "LVL-1",
+      "order": 9,
+      "title_en": "Under the Hood: Five Key Parts",
+      "title_fa": "زیر کاپوت: پنج قطعهٔ کلیدی",
+      "type": "lesson",
+      "language_focus_en": "Prepositions of place: under, on, next to, behind",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B09",
+          "category_keys": [
+            "cooling",
+            "electrical",
+            "fuel",
+            "lubrication"
+          ]
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-ELE-001",
+        "PRT-COL-001",
+        "PRT-FUE-007",
+        "PRT-LUB-004",
+        "PRT-COL-005"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-01"
+      ],
+      "quiz_id": "QZ-B09",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B10",
+      "level_id": "LVL-1",
+      "order": 10,
+      "title_en": "Car Fluids",
+      "title_fa": "مایعات خودرو",
+      "type": "lesson",
+      "language_focus_en": "Countable/uncountable: oil, fuel, water; 'a litre of...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B10",
+          "category_keys": [
+            "brakes",
+            "cooling",
+            "fuel",
+            "lubrication",
+            "steering"
+          ]
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-LUB-004",
+        "PRT-COL-005",
+        "PRT-LUB-005",
+        "PRT-BRK-003",
+        "PRT-STR-008",
+        "PRT-FUE-001"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-13"
+      ],
+      "quiz_id": "QZ-B10",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B11",
+      "level_id": "LVL-1",
+      "order": 11,
+      "title_en": "Talking About Your Car",
+      "title_fa": "صحبت دربارهٔ خودروی خود",
+      "type": "lesson",
+      "language_focus_en": "Verb 'be' and 'have'; short answers",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B11",
+          "category_keys": []
+        },
+        "target_new_terms": 8,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-B11",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 25,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "B12",
+      "level_id": "LVL-1",
+      "order": 12,
+      "title_en": "Beginner Review and Checkpoint",
+      "title_fa": "مرور و ایستگاه ارزیابی مبتدی",
+      "type": "review_checkpoint",
+      "language_focus_en": "Review of LVL-1",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-1",
+          "lesson_id": "B12",
+          "category_keys": []
+        },
+        "target_new_terms": 0,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-001"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-B12",
+      "activities": [
+        "mixed review",
+        "game",
+        "checkpoint quiz"
+      ],
+      "estimated_minutes": 45,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E01",
+      "level_id": "LVL-2",
+      "order": 1,
+      "title_en": "Engine Basics: Main Components",
+      "title_fa": "اصول موتور: اجزای اصلی",
+      "type": "lesson",
+      "language_focus_en": "'There is/are'; simple descriptions",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E01",
+          "category_keys": [
+            "engine",
+            "ignition",
+            "lubrication"
+          ]
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-ENG-003",
+        "PRT-ENG-002",
+        "PRT-ENG-001",
+        "PRT-ENG-005",
+        "PRT-IGN-001",
+        "PRT-ENG-007",
+        "PRT-LUB-001",
+        "PRT-ENG-006"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-01"
+      ],
+      "quiz_id": "QZ-E01",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E02",
+      "level_id": "LVL-2",
+      "order": 2,
+      "title_en": "What Does It Do? Functions of Parts",
+      "title_fa": "این قطعه چه کاری می‌کند؟",
+      "type": "lesson",
+      "language_focus_en": "Present simple for functions (3rd person -s)",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E02",
+          "category_keys": [
+            "cooling",
+            "electrical",
+            "fuel",
+            "lubrication"
+          ]
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-COL-001",
+        "PRT-COL-002",
+        "PRT-LUB-002",
+        "PRT-FUE-002",
+        "PRT-ELE-002",
+        "PRT-ELE-003"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-E02",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E03",
+      "level_id": "LVL-2",
+      "order": 3,
+      "title_en": "Basic Maintenance Tasks",
+      "title_fa": "کارهای ساده سرویس و نگهداری",
+      "type": "lesson",
+      "language_focus_en": "Imperatives; 'need to'; 'every 10,000 km'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E03",
+          "category_keys": [
+            "body",
+            "brakes",
+            "fuel",
+            "ignition",
+            "lubrication"
+          ]
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-LUB-003",
+        "PRT-FUE-007",
+        "PRT-IGN-001",
+        "PRT-BDY-008",
+        "PRT-BRK-005"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-E03",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E04",
+      "level_id": "LVL-2",
+      "order": 4,
+      "title_en": "Dashboard Warning Lights",
+      "title_fa": "چراغ‌های هشدار داشبورد",
+      "type": "lesson",
+      "language_focus_en": "'must/mustn't'; color words; 'The light is on/off'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E04",
+          "category_keys": [
+            "ecu",
+            "electrical",
+            "sensors"
+          ]
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-ECU-007",
+        "PRT-ELE-001",
+        "PRT-SEN-011"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-04"
+      ],
+      "quiz_id": "QZ-E04",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E05",
+      "level_id": "LVL-2",
+      "order": 5,
+      "title_en": "Simple Questions at the Workshop",
+      "title_fa": "سؤال‌های ساده در تعمیرگاه",
+      "type": "lesson",
+      "language_focus_en": "Wh- questions; 'Can you...?'; 'When did...?'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E05",
+          "category_keys": []
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-001"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-E05",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E06",
+      "level_id": "LVL-2",
+      "order": 6,
+      "title_en": "Tires and Wheels",
+      "title_fa": "لاستیک و چرخ",
+      "type": "lesson",
+      "language_focus_en": "'too high/too low'; comparatives",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E06",
+          "category_keys": [
+            "body",
+            "suspension",
+            "tools"
+          ]
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-BDY-008",
+        "PRT-BDY-009",
+        "PRT-SUS-011",
+        "PRT-SUS-010",
+        "PRT-TLS-011"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-13"
+      ],
+      "quiz_id": "QZ-E06",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E07",
+      "level_id": "LVL-2",
+      "order": 7,
+      "title_en": "Battery and Lights",
+      "title_fa": "باتری و چراغ‌ها",
+      "type": "lesson",
+      "language_focus_en": "'be' + adjectives (weak, dead, broken)",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E07",
+          "category_keys": [
+            "body",
+            "electrical"
+          ]
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-ELE-001",
+        "PRT-ELE-008",
+        "PRT-ELE-009",
+        "PRT-BDY-011",
+        "PRT-ELE-005"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-01"
+      ],
+      "quiz_id": "QZ-E07",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E08",
+      "level_id": "LVL-2",
+      "order": 8,
+      "title_en": "Describing a Problem: It Doesn't Start",
+      "title_fa": "توصیف مشکل: روشن نمی‌شود",
+      "type": "lesson",
+      "language_focus_en": "Present simple negative; 'There is a noise'; 'It makes a... sound'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E08",
+          "category_keys": []
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-003"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-E08",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E09",
+      "level_id": "LVL-2",
+      "order": 9,
+      "title_en": "Prices, Time and Appointments",
+      "title_fa": "قیمت، زمان و وقت ملاقات",
+      "type": "lesson",
+      "language_focus_en": "Numbers, clock times, dates; 'will be ready at...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E09",
+          "category_keys": []
+        },
+        "target_new_terms": 10,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-E09",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 27,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "E10",
+      "level_id": "LVL-2",
+      "order": 10,
+      "title_en": "Elementary Review and Checkpoint",
+      "title_fa": "مرور و ایستگاه ارزیابی ابتدایی",
+      "type": "review_checkpoint",
+      "language_focus_en": "Review of LVL-2",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-2",
+          "lesson_id": "E10",
+          "category_keys": []
+        },
+        "target_new_terms": 0,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-003"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-E10",
+      "activities": [
+        "mixed review",
+        "game",
+        "checkpoint quiz"
+      ],
+      "estimated_minutes": 45,
+      "mastery_threshold_pct": 70,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P01",
+      "level_id": "LVL-3",
+      "order": 1,
+      "title_en": "The Cooling System",
+      "title_fa": "سیستم خنک‌کاری",
+      "type": "lesson",
+      "language_focus_en": "Purpose with 'to + verb'; 'because'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P01",
+          "category_keys": [
+            "cooling"
+          ]
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-COL-001",
+        "PRT-COL-002",
+        "PRT-COL-003",
+        "PRT-COL-004",
+        "PRT-COL-005",
+        "PRT-COL-006",
+        "PRT-COL-007",
+        "PRT-COL-008"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-P01",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P02",
+      "level_id": "LVL-3",
+      "order": 2,
+      "title_en": "The Lubrication System",
+      "title_fa": "سیستم روغن‌کاری",
+      "type": "lesson",
+      "language_focus_en": "Quantifiers: some/any/a lot of/too much",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P02",
+          "category_keys": [
+            "lubrication"
+          ]
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-LUB-001",
+        "PRT-LUB-002",
+        "PRT-LUB-003",
+        "PRT-LUB-004",
+        "PRT-LUB-005",
+        "PRT-LUB-006",
+        "PRT-LUB-007"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-P02",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P03",
+      "level_id": "LVL-3",
+      "order": 3,
+      "title_en": "Brake System Basics",
+      "title_fa": "اصول سیستم ترمز",
+      "type": "lesson",
+      "language_focus_en": "Describing sequence: first, then, after that",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P03",
+          "category_keys": [
+            "brakes"
+          ]
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-BRK-001",
+        "PRT-BRK-002",
+        "PRT-BRK-003",
+        "PRT-BRK-004",
+        "PRT-BRK-005",
+        "PRT-BRK-006",
+        "PRT-BRK-007",
+        "PRT-BRK-008",
+        "PRT-BRK-009",
+        "PRT-BRK-010",
+        "PRT-BRK-011"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-P03",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P04",
+      "level_id": "LVL-3",
+      "order": 4,
+      "title_en": "Describing Work Done: Past Simple",
+      "title_fa": "گزارش کار انجام‌شده: گذشتهٔ ساده",
+      "type": "lesson",
+      "language_focus_en": "Past simple regular/irregular: replaced, changed, found",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P04",
+          "category_keys": [
+            "brakes",
+            "ignition",
+            "lubrication"
+          ]
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-BRK-005",
+        "PRT-LUB-003",
+        "PRT-IGN-001"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-P04",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P05",
+      "level_id": "LVL-3",
+      "order": 5,
+      "title_en": "Fuel System Basics",
+      "title_fa": "اصول سیستم سوخت‌رسانی",
+      "type": "lesson",
+      "language_focus_en": "Prepositions of movement; 'from...to...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P05",
+          "category_keys": [
+            "fuel"
+          ]
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-FUE-001",
+        "PRT-FUE-002",
+        "PRT-FUE-003",
+        "PRT-FUE-004",
+        "PRT-FUE-005",
+        "PRT-FUE-006",
+        "PRT-FUE-007",
+        "PRT-FUE-008",
+        "PRT-FUE-009"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-P05",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P06",
+      "level_id": "LVL-3",
+      "order": 6,
+      "title_en": "Safety Rules and Instructions",
+      "title_fa": "قوانین ایمنی و دستورالعمل",
+      "type": "lesson",
+      "language_focus_en": "Imperatives; must/mustn't/should; safety signs",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P06",
+          "category_keys": [
+            "electrical",
+            "tools"
+          ]
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-TLS-007",
+        "PRT-TLS-008",
+        "PRT-ELE-008"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-P06",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P07",
+      "level_id": "LVL-3",
+      "order": 7,
+      "title_en": "Reading a Service Schedule",
+      "title_fa": "خواندن برنامهٔ سرویس",
+      "type": "lesson",
+      "language_focus_en": "Frequency: every/each; 'next service at...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P07",
+          "category_keys": [
+            "engine",
+            "fuel",
+            "ignition",
+            "lubrication"
+          ]
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-LUB-003",
+        "PRT-FUE-007",
+        "PRT-ENG-008",
+        "PRT-IGN-001"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-06",
+        "GAME-01"
+      ],
+      "quiz_id": "QZ-P07",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P08",
+      "level_id": "LVL-3",
+      "order": 8,
+      "title_en": "Vehicle Reception Conversation",
+      "title_fa": "مکالمهٔ پذیرش خودرو",
+      "type": "lesson",
+      "language_focus_en": "Polite requests; 'Could I have...?'; 'I'd like to...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P08",
+          "category_keys": []
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-002",
+        "DLG-003"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-P08",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P09",
+      "level_id": "LVL-3",
+      "order": 9,
+      "title_en": "Suspension and Steering Basics",
+      "title_fa": "اصول تعلیق و فرمان",
+      "type": "lesson",
+      "language_focus_en": "Describing symptoms: noise, vibration, pull",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P09",
+          "category_keys": [
+            "steering",
+            "suspension"
+          ]
+        },
+        "target_new_terms": 12,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-SUS-001",
+        "PRT-SUS-002",
+        "PRT-SUS-004",
+        "PRT-SUS-005",
+        "PRT-STR-001",
+        "PRT-STR-003",
+        "PRT-STR-005",
+        "PRT-SUS-010"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-P09",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 29,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "P10",
+      "level_id": "LVL-3",
+      "order": 10,
+      "title_en": "Pre-Intermediate Review and Checkpoint",
+      "title_fa": "مرور و ایستگاه ارزیابی پیش‌متوسط",
+      "type": "review_checkpoint",
+      "language_focus_en": "Review of LVL-3",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-3",
+          "lesson_id": "P10",
+          "category_keys": []
+        },
+        "target_new_terms": 0,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-002"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-P10",
+      "activities": [
+        "mixed review",
+        "game",
+        "checkpoint quiz"
+      ],
+      "estimated_minutes": 45,
+      "mastery_threshold_pct": 72,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I01",
+      "level_id": "LVL-4",
+      "order": 1,
+      "title_en": "The Ignition System",
+      "title_fa": "سیستم جرقه‌زنی",
+      "type": "lesson",
+      "language_focus_en": "Relative clauses: 'the part that...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I01",
+          "category_keys": [
+            "ignition"
+          ]
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-IGN-001",
+        "PRT-IGN-002",
+        "PRT-IGN-003",
+        "PRT-IGN-004",
+        "PRT-IGN-005",
+        "PRT-IGN-006",
+        "PRT-IGN-007"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-I01",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I02",
+      "level_id": "LVL-4",
+      "order": 2,
+      "title_en": "Transmission and Driveline",
+      "title_fa": "گیربکس و سیستم انتقال قدرت",
+      "type": "lesson",
+      "language_focus_en": "Comparing: manual vs automatic",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I02",
+          "category_keys": [
+            "transmission"
+          ]
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-TRN-001",
+        "PRT-TRN-002",
+        "PRT-TRN-004",
+        "PRT-TRN-005",
+        "PRT-TRN-007",
+        "PRT-TRN-008",
+        "PRT-TRN-009",
+        "PRT-TRN-006"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-I02",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I03",
+      "level_id": "LVL-4",
+      "order": 3,
+      "title_en": "Electrical Basics",
+      "title_fa": "مبانی برق خودرو",
+      "type": "lesson",
+      "language_focus_en": "Describing circuits; open/short/ground",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I03",
+          "category_keys": [
+            "diagnostics",
+            "electrical"
+          ]
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-ELE-001",
+        "PRT-ELE-002",
+        "PRT-ELE-003",
+        "PRT-ELE-004",
+        "PRT-ELE-005",
+        "PRT-ELE-006",
+        "PRT-ELE-007",
+        "PRT-DIA-003"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-I03",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I04",
+      "level_id": "LVL-4",
+      "order": 4,
+      "title_en": "Repair History: Present Perfect",
+      "title_fa": "سابقهٔ تعمیر: حال کامل",
+      "type": "lesson",
+      "language_focus_en": "Present perfect: 'has been replaced', 'have you ever...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I04",
+          "category_keys": []
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-I04",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I05",
+      "level_id": "LVL-4",
+      "order": 5,
+      "title_en": "Sensors Overview",
+      "title_fa": "مروری بر سنسورها",
+      "type": "lesson",
+      "language_focus_en": "Input/output; 'sends a signal to the ECU'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I05",
+          "category_keys": [
+            "sensors"
+          ]
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-SEN-001",
+        "PRT-SEN-002",
+        "PRT-SEN-003",
+        "PRT-SEN-004",
+        "PRT-SEN-005",
+        "PRT-SEN-006",
+        "PRT-SEN-007",
+        "PRT-SEN-009"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-I05",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I06",
+      "level_id": "LVL-4",
+      "order": 6,
+      "title_en": "Explaining Faults: Cause and Effect",
+      "title_fa": "توضیح عیب: علت و معلول",
+      "type": "lesson",
+      "language_focus_en": "because / so / due to / caused by / as a result",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I06",
+          "category_keys": []
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-005"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-I06",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I07",
+      "level_id": "LVL-4",
+      "order": 7,
+      "title_en": "Repair Orders, Invoices and Delivery",
+      "title_fa": "برگهٔ تعمیر، فاکتور و تحویل",
+      "type": "lesson",
+      "language_focus_en": "Reading documents; 'including parts and labor'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I07",
+          "category_keys": []
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-010"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-I07",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I08",
+      "level_id": "LVL-4",
+      "order": 8,
+      "title_en": "Giving Cost Estimates",
+      "title_fa": "اعلام برآورد هزینه",
+      "type": "lesson",
+      "language_focus_en": "Numbers and money; 'estimate' vs 'final price'; will/may",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I08",
+          "category_keys": []
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-006"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-I08",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I09",
+      "level_id": "LVL-4",
+      "order": 9,
+      "title_en": "Ordering Parts",
+      "title_fa": "سفارش قطعه",
+      "type": "lesson",
+      "language_focus_en": "Part numbers, availability, delivery time; polite requests",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I09",
+          "category_keys": []
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-007"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-I09",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I10",
+      "level_id": "LVL-4",
+      "order": 10,
+      "title_en": "Modals for Diagnosis and Technical Questions",
+      "title_fa": "افعال مدال در عیب‌یابی و سؤال فنی",
+      "type": "lesson",
+      "language_focus_en": "should / must / might / could; asking diagnostic questions",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I10",
+          "category_keys": []
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-004"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-I10",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I11",
+      "level_id": "LVL-4",
+      "order": 11,
+      "title_en": "Exhaust and Emissions Basics",
+      "title_fa": "اصول اگزوز و آلایندگی",
+      "type": "lesson",
+      "language_focus_en": "Describing flow and function",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I11",
+          "category_keys": [
+            "engine",
+            "exhaust",
+            "sensors"
+          ]
+        },
+        "target_new_terms": 14,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-EXH-001",
+        "PRT-EXH-002",
+        "PRT-EXH-003",
+        "PRT-SEN-001",
+        "PRT-ENG-012"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-I11",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 31,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "I12",
+      "level_id": "LVL-4",
+      "order": 12,
+      "title_en": "Intermediate Review and Checkpoint",
+      "title_fa": "مرور و ایستگاه ارزیابی متوسط",
+      "type": "review_checkpoint",
+      "language_focus_en": "Review of LVL-4",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-4",
+          "lesson_id": "I12",
+          "category_keys": []
+        },
+        "target_new_terms": 0,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-004",
+        "DLG-006"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-I12",
+      "activities": [
+        "mixed review",
+        "game",
+        "checkpoint quiz"
+      ],
+      "estimated_minutes": 45,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U01",
+      "level_id": "LVL-5",
+      "order": 1,
+      "title_en": "Fuel Injection Systems",
+      "title_fa": "سیستم‌های انژکتور و پاشش سوخت",
+      "type": "lesson",
+      "language_focus_en": "Technical description; noun phrases",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U01",
+          "category_keys": [
+            "fuel",
+            "injector"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-INJ-001",
+        "PRT-INJ-002",
+        "PRT-INJ-003",
+        "PRT-INJ-004",
+        "PRT-INJ-005",
+        "PRT-INJ-006",
+        "PRT-FUE-004",
+        "PRT-FUE-005",
+        "PRT-FUE-006"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-U01",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U02",
+      "level_id": "LVL-5",
+      "order": 2,
+      "title_en": "ECU and Engine Management",
+      "title_fa": "ECU و مدیریت موتور",
+      "type": "lesson",
+      "language_focus_en": "Inputs, outputs, control strategy; 'based on'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U02",
+          "category_keys": [
+            "ecu"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-ECU-001",
+        "PRT-ECU-002",
+        "PRT-ECU-003",
+        "PRT-ECU-004",
+        "PRT-ECU-005",
+        "PRT-ECU-006",
+        "PRT-ECU-007"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-U02",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U03",
+      "level_id": "LVL-5",
+      "order": 3,
+      "title_en": "OBD-II and Diagnostic Trouble Codes",
+      "title_fa": "OBD-II و کدهای خطا",
+      "type": "lesson",
+      "language_focus_en": "Reading codes; 'stored/pending/active'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U03",
+          "category_keys": [
+            "diagnostics",
+            "ecu"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-DIA-001",
+        "PRT-DIA-002",
+        "PRT-ECU-001"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-U03",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U04",
+      "level_id": "LVL-5",
+      "order": 4,
+      "title_en": "Conditionals for Diagnosis",
+      "title_fa": "جمله‌های شرطی در عیب‌یابی",
+      "type": "lesson",
+      "language_focus_en": "Zero/first/second conditional: 'If the sensor is dirty, ...'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U04",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-06",
+        "GAME-12"
+      ],
+      "quiz_id": "QZ-U04",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U05",
+      "level_id": "LVL-5",
+      "order": 5,
+      "title_en": "Scan Tools and Live Data",
+      "title_fa": "دیاگ و داده‌های زنده",
+      "type": "lesson",
+      "language_focus_en": "Reading values; 'above/below specification'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U05",
+          "category_keys": [
+            "diagnostics",
+            "sensors"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-DIA-001",
+        "PRT-SEN-001",
+        "PRT-SEN-002",
+        "PRT-SEN-003"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-04"
+      ],
+      "quiz_id": "QZ-U05",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U06",
+      "level_id": "LVL-5",
+      "order": 6,
+      "title_en": "Mechanic and Electrician Communication",
+      "title_fa": "ارتباط مکانیک و برق‌کار",
+      "type": "lesson",
+      "language_focus_en": "Requests, confirmations, clarifying",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U06",
+          "category_keys": [
+            "diagnostics",
+            "ecu",
+            "electrical"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-DIA-003",
+        "PRT-ELE-007",
+        "PRT-ELE-006",
+        "PRT-ELE-004",
+        "PRT-ECU-006"
+      ],
+      "dialogue_ids": [
+        "DLG-008"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-U06",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U07",
+      "level_id": "LVL-5",
+      "order": 7,
+      "title_en": "Passive Voice in Service Reports",
+      "title_fa": "مجهول در گزارش‌های سرویس",
+      "type": "lesson",
+      "language_focus_en": "Passive voice: 'The code was stored by the ECU'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U07",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-06",
+        "GAME-12"
+      ],
+      "quiz_id": "QZ-U07",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U08",
+      "level_id": "LVL-5",
+      "order": 8,
+      "title_en": "Technical Manuals and Service Bulletins",
+      "title_fa": "راهنمای فنی و بولتن‌های سرویس",
+      "type": "lesson",
+      "language_focus_en": "Reading procedures; abbreviations; warnings/cautions",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U08",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-U08",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U09",
+      "level_id": "LVL-5",
+      "order": 9,
+      "title_en": "Advanced Brakes and Suspension",
+      "title_fa": "ترمز و تعلیق پیشرفته",
+      "type": "lesson",
+      "language_focus_en": "Defining relative clauses: 'which/that'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U09",
+          "category_keys": [
+            "brakes",
+            "sensors",
+            "suspension"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-BRK-011",
+        "PRT-SEN-010",
+        "PRT-BRK-004",
+        "PRT-SUS-004",
+        "PRT-SUS-003",
+        "PRT-SUS-006"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-U09",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U10",
+      "level_id": "LVL-5",
+      "order": 10,
+      "title_en": "Transmission Diagnostics",
+      "title_fa": "عیب‌یابی گیربکس",
+      "type": "lesson",
+      "language_focus_en": "Describing symptoms precisely: slip, shudder, delay",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U10",
+          "category_keys": [
+            "transmission"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-TRN-005",
+        "PRT-TRN-006",
+        "PRT-TRN-001",
+        "PRT-TRN-009"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-U10",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U11",
+      "level_id": "LVL-5",
+      "order": 11,
+      "title_en": "Explaining Complex Faults in Plain Language",
+      "title_fa": "توضیح ساده عیب‌های پیچیده به مشتری",
+      "type": "lesson",
+      "language_focus_en": "Analogies; paraphrasing; 'in other words'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U11",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-005"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-U11",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 33,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "U12",
+      "level_id": "LVL-5",
+      "order": 12,
+      "title_en": "Upper-Intermediate Review and Checkpoint",
+      "title_fa": "مرور و ایستگاه ارزیابی متوسط پیشرفته",
+      "type": "review_checkpoint",
+      "language_focus_en": "Review of LVL-5",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-5",
+          "lesson_id": "U12",
+          "category_keys": []
+        },
+        "target_new_terms": 0,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-008"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-U12",
+      "activities": [
+        "mixed review",
+        "game",
+        "checkpoint quiz"
+      ],
+      "estimated_minutes": 45,
+      "mastery_threshold_pct": 75,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A01",
+      "level_id": "LVL-6",
+      "order": 1,
+      "title_en": "Advanced Engine Diagnostics",
+      "title_fa": "عیب‌یابی پیشرفتهٔ موتور",
+      "type": "lesson",
+      "language_focus_en": "Reporting test results; percentages and ranges",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A01",
+          "category_keys": [
+            "diagnostics",
+            "engine"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-DIA-005",
+        "PRT-DIA-006",
+        "PRT-DIA-008",
+        "PRT-DIA-007",
+        "PRT-ENG-009"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-04"
+      ],
+      "quiz_id": "QZ-A01",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A02",
+      "level_id": "LVL-6",
+      "order": 2,
+      "title_en": "CAN Bus and Vehicle Networks",
+      "title_fa": "شبکهٔ CAN و شبکه‌های خودرو",
+      "type": "lesson",
+      "language_focus_en": "Describing communication: transmit, receive, node",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A02",
+          "category_keys": [
+            "diagnostics",
+            "ecu"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-ECU-001",
+        "PRT-ECU-003",
+        "PRT-ECU-004",
+        "PRT-DIA-002"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-A02",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A03",
+      "level_id": "LVL-6",
+      "order": 3,
+      "title_en": "Oscilloscope and Signal Analysis",
+      "title_fa": "اسیلوسکوپ و تحلیل سیگنال",
+      "type": "lesson",
+      "language_focus_en": "Describing waveforms: peak, noise, pattern",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A03",
+          "category_keys": [
+            "diagnostics",
+            "sensors"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-DIA-004",
+        "PRT-SEN-004",
+        "PRT-SEN-005",
+        "PRT-SEN-001"
+      ],
+      "dialogue_ids": [
+        "DLG-009"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-A03",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A04",
+      "level_id": "LVL-6",
+      "order": 4,
+      "title_en": "Hybrid and EV Awareness",
+      "title_fa": "آشنایی با هیبرید و برقی",
+      "type": "lesson",
+      "language_focus_en": "High-voltage safety vocabulary (needs dedicated image category)",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A04",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-A04",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      },
+      "image_gap": "Hybrid/EV parts are not in parts_image_manifest; add a hybrid_ev category."
+    },
+    {
+      "id": "A05",
+      "level_id": "LVL-6",
+      "order": 5,
+      "title_en": "Writing Technical Reports and Case Notes",
+      "title_fa": "نوشتن گزارش فنی و یادداشت پرونده",
+      "type": "lesson",
+      "language_focus_en": "Complaint-Cause-Correction structure; formal register",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A05",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-06",
+        "GAME-12"
+      ],
+      "quiz_id": "QZ-A05",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A06",
+      "level_id": "LVL-6",
+      "order": 6,
+      "title_en": "Reading Wiring Diagrams",
+      "title_fa": "خواندن نقشهٔ سیم‌کشی",
+      "type": "lesson",
+      "language_focus_en": "Symbols; circuit description language",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A06",
+          "category_keys": [
+            "ecu",
+            "electrical"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-ELE-007",
+        "PRT-ELE-006",
+        "PRT-ELE-004",
+        "PRT-ECU-006"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-A06",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A07",
+      "level_id": "LVL-6",
+      "order": 7,
+      "title_en": "Warranty, Recall and Liability Language",
+      "title_fa": "زبان گارانتی، فراخوان و مسئولیت",
+      "type": "lesson",
+      "language_focus_en": "Formal conditionals; 'covered under warranty'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A07",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-A07",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A08",
+      "level_id": "LVL-6",
+      "order": 8,
+      "title_en": "Negotiation and Handling Complaints",
+      "title_fa": "مذاکره و مدیریت شکایت",
+      "type": "lesson",
+      "language_focus_en": "Apologizing, offering solutions, softening language",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A08",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-A08",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A09",
+      "level_id": "LVL-6",
+      "order": 9,
+      "title_en": "Advanced Emissions Control",
+      "title_fa": "کنترل پیشرفتهٔ آلایندگی",
+      "type": "lesson",
+      "language_focus_en": "Cause-effect chains; technical nominalization",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "listening",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A09",
+          "category_keys": [
+            "engine",
+            "exhaust",
+            "sensors"
+          ]
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-EXH-001",
+        "PRT-EXH-005",
+        "PRT-EXH-004",
+        "PRT-SEN-001",
+        "PRT-ENG-013"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-04",
+        "GAME-11"
+      ],
+      "quiz_id": "QZ-A09",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A10",
+      "level_id": "LVL-6",
+      "order": 10,
+      "title_en": "Remote Technical Support",
+      "title_fa": "پشتیبانی فنی از راه دور",
+      "type": "lesson",
+      "language_focus_en": "Phone/chat language; asking for data; clarifying",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A10",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-009"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-A10",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A11",
+      "level_id": "LVL-6",
+      "order": 11,
+      "title_en": "Technical Presentations",
+      "title_fa": "ارائه‌های فنی",
+      "type": "lesson",
+      "language_focus_en": "Signposting; describing charts and results",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A11",
+          "category_keys": []
+        },
+        "target_new_terms": 15,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-06",
+        "GAME-12"
+      ],
+      "quiz_id": "QZ-A11",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 35,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "A12",
+      "level_id": "LVL-6",
+      "order": 12,
+      "title_en": "Advanced Review and Checkpoint",
+      "title_fa": "مرور و ایستگاه ارزیابی پیشرفته",
+      "type": "review_checkpoint",
+      "language_focus_en": "Review of LVL-6",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-6",
+          "lesson_id": "A12",
+          "category_keys": []
+        },
+        "target_new_terms": 0,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-009"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-A12",
+      "activities": [
+        "mixed review",
+        "game",
+        "checkpoint quiz"
+      ],
+      "estimated_minutes": 45,
+      "mastery_threshold_pct": 78,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR01",
+      "level_id": "LVL-7",
+      "order": 1,
+      "title_en": "Diagnostic Strategy and Root Cause Analysis",
+      "title_fa": "راهبرد عیب‌یابی و تحلیل ریشه‌ای",
+      "type": "lesson",
+      "language_focus_en": "Hypothesis testing; ruling out; 'consistent with'",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR01",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-PR01",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR02",
+      "level_id": "LVL-7",
+      "order": 2,
+      "title_en": "Communicating with OEM Technical Support",
+      "title_fa": "ارتباط با پشتیبانی فنی سازنده",
+      "type": "lesson",
+      "language_focus_en": "Formal technical enquiries; VIN, DTC, software versions",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR02",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-PR02",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR03",
+      "level_id": "LVL-7",
+      "order": 3,
+      "title_en": "Writing Service Procedures",
+      "title_fa": "نوشتن روش‌های سرویس",
+      "type": "lesson",
+      "language_focus_en": "Procedural writing; imperative + warnings",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR03",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-06",
+        "GAME-12"
+      ],
+      "quiz_id": "QZ-PR03",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR04",
+      "level_id": "LVL-7",
+      "order": 4,
+      "title_en": "ADAS and Safety Systems",
+      "title_fa": "ADAS و سیستم‌های ایمنی",
+      "type": "lesson",
+      "language_focus_en": "Calibration and verification language",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "translation_fa_to_en",
+        "sentence_writing",
+        "part_recognition"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR04",
+          "category_keys": [
+            "ecu",
+            "sensors"
+          ]
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [
+        "PRT-SEN-012",
+        "PRT-SEN-013",
+        "PRT-ECU-005"
+      ],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-04"
+      ],
+      "quiz_id": "QZ-PR04",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR05",
+      "level_id": "LVL-7",
+      "order": 5,
+      "title_en": "Workshop Management English",
+      "title_fa": "انگلیسی مدیریت تعمیرگاه",
+      "type": "lesson",
+      "language_focus_en": "KPIs, scheduling, capacity, workflow",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR05",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-PR05",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR06",
+      "level_id": "LVL-7",
+      "order": 6,
+      "title_en": "International Parts Sourcing",
+      "title_fa": "تأمین بین‌المللی قطعه",
+      "type": "lesson",
+      "language_focus_en": "OEM/aftermarket, lead time, returns, incoterm basics (needs expert review)",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR06",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-007"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-PR06",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR07",
+      "level_id": "LVL-7",
+      "order": 7,
+      "title_en": "Training Others: Technical Instruction",
+      "title_fa": "آموزش دیگران: دستورالعمل فنی",
+      "type": "lesson",
+      "language_focus_en": "Explaining, checking understanding, giving feedback",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR07",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-PR07",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR08",
+      "level_id": "LVL-7",
+      "order": 8,
+      "title_en": "Quality Control and Inspection Reports",
+      "title_fa": "کنترل کیفیت و گزارش بازرسی",
+      "type": "lesson",
+      "language_focus_en": "Passive reporting; findings and recommendations",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR08",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-06",
+        "GAME-12"
+      ],
+      "quiz_id": "QZ-PR08",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR09",
+      "level_id": "LVL-7",
+      "order": 9,
+      "title_en": "Accident Assessment and Insurance Language",
+      "title_fa": "ارزیابی خسارت و زبان بیمه",
+      "type": "lesson",
+      "language_focus_en": "Neutral reporting; damage descriptions; estimates",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "sentence_writing"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR09",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-06"
+      ],
+      "quiz_id": "QZ-PR09",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR10",
+      "level_id": "LVL-7",
+      "order": 10,
+      "title_en": "Capstone: Full Job Simulation",
+      "title_fa": "پروژهٔ پایانی: شبیه‌سازی کامل کار",
+      "type": "lesson",
+      "language_focus_en": "Reception to delivery in one scenario",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR10",
+          "category_keys": []
+        },
+        "target_new_terms": 16,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [
+        "DLG-002",
+        "DLG-003",
+        "DLG-005",
+        "DLG-006",
+        "DLG-010"
+      ],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-PR10",
+      "activities": [
+        "warm-up (review of previous lesson, 3 items)",
+        "vocabulary presentation (from main DB)",
+        "guided practice",
+        "skill activities",
+        "game",
+        "lesson quiz"
+      ],
+      "estimated_minutes": 37,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR11",
+      "level_id": "LVL-7",
+      "order": 11,
+      "title_en": "Professional Mock Exam",
+      "title_fa": "آزمون آزمایشی حرفه‌ای",
+      "type": "review_checkpoint",
+      "language_focus_en": "Listening, reading, writing, conversation",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR11",
+          "category_keys": []
+        },
+        "target_new_terms": 0,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-PR11",
+      "activities": [
+        "mixed review",
+        "game",
+        "checkpoint quiz"
+      ],
+      "estimated_minutes": 45,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    },
+    {
+      "id": "PR12",
+      "level_id": "LVL-7",
+      "order": 12,
+      "title_en": "Final Certification Exam",
+      "title_fa": "آزمون نهایی گواهی",
+      "type": "review_checkpoint",
+      "language_focus_en": "Level exam LVL-7",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "workshop_conversation",
+        "sentence_writing",
+        "translation_fa_to_en"
+      ],
+      "vocabulary_source": {
+        "source": "main_term_database",
+        "query": {
+          "level_id": "LVL-7",
+          "lesson_id": "PR12",
+          "category_keys": []
+        },
+        "target_new_terms": 0,
+        "note_fa": "اصطلاحات از بانک اطلاعاتی اصلی خوانده می‌شوند و در اینجا تولید نشده‌اند."
+      },
+      "featured_part_ids": [],
+      "dialogue_ids": [],
+      "game_ids": [
+        "GAME-14",
+        "GAME-07",
+        "GAME-13",
+        "GAME-10"
+      ],
+      "quiz_id": "QZ-PR12",
+      "activities": [
+        "mixed review",
+        "game",
+        "checkpoint quiz"
+      ],
+      "estimated_minutes": 45,
+      "mastery_threshold_pct": 80,
+      "review_schedule_days_after_completion": [
+        3,
+        7,
+        21,
+        60
+      ],
+      "content_status": {
+        "blueprint": "complete",
+        "lesson_text": "not_generated",
+        "audio": "not_generated"
+      }
+    }
+  ]
+}

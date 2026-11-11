@@ -1,0 +1,1035 @@
+{
+  "file": "games.json",
+  "schema_version": "1.0.0",
+  "generated_for": "AUTO LINGO",
+  "language_pair": [
+    "fa",
+    "en"
+  ],
+  "description_fa": "بازی‌های آموزشی",
+  "global_scoring": {
+    "stars": {
+      "1": 0.5,
+      "2": 0.75,
+      "3": 0.9
+    },
+    "xp_per_100_points": 10,
+    "daily_xp_cap_per_game": 300,
+    "note_fa": "ستاره‌ها بر اساس نسبت امتیاز کسب‌شده به حداکثر امتیاز مرحله محاسبه می‌شود."
+  },
+  "games": [
+    {
+      "id": "GAME-01",
+      "name_en": "Part Snap",
+      "name_fa": "تشخیص قطعه از روی تصویر",
+      "description_fa": "یک تصویر نمایش داده می‌شود و کاربر نام صحیح را از چهار گزینه انتخاب می‌کند.",
+      "skills_trained": [
+        "part_recognition",
+        "vocabulary"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "parts_image_manifest",
+        "main_term_database"
+      ],
+      "rules_fa": [
+        "هر سؤال یک تصویر و چهار گزینه دارد.",
+        "گزینه‌های غلط از قطعات confusable_with و سپس هم‌دسته انتخاب می‌شوند.",
+        "هر پاسخ غلط یک جان کم می‌کند."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "questions": 8,
+          "time_per_q_sec": 15,
+          "distractors": "random same category"
+        },
+        {
+          "stage": 2,
+          "questions": 10,
+          "time_per_q_sec": 12,
+          "distractors": "confusable first"
+        },
+        {
+          "stage": 3,
+          "questions": 12,
+          "time_per_q_sec": 9,
+          "distractors": "confusable only"
+        }
+      ],
+      "scoring": {
+        "correct": 10,
+        "speed_bonus_max": 5,
+        "streak_multiplier": {
+          "every": 3,
+          "add": 0.1,
+          "cap": 1.5
+        },
+        "wrong": 0,
+        "max_per_stage": "computed"
+      },
+      "limits": {
+        "lives": 3
+      },
+      "config_schema_example": {
+        "mode": "image_to_name",
+        "direction": "en",
+        "show_persian_hint": false,
+        "question_count": 10
+      },
+      "difficulty_scaling_fa": "از مرحله ۱ تا ۳ زمان کمتر و گزینه‌های مشابه‌تر می‌شود.",
+      "session_minutes": 4,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-02",
+      "name_en": "Match Pairs",
+      "name_fa": "وصل کردن نام قطعه به تصویر",
+      "description_fa": "شش تصویر و شش نام نمایش داده می‌شود و کاربر هر نام را به تصویر مربوط می‌کشد.",
+      "skills_trained": [
+        "part_recognition",
+        "vocabulary"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "parts_image_manifest"
+      ],
+      "rules_fa": [
+        "هر نام فقط به یک تصویر مربوط است.",
+        "هر تلاش غلط از امتیاز کم می‌کند ولی جان نمی‌گیرد.",
+        "بازی پس از وصل همهٔ جفت‌ها تمام می‌شود."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "pairs": 4
+        },
+        {
+          "stage": 2,
+          "pairs": 6
+        },
+        {
+          "stage": 3,
+          "pairs": 8
+        }
+      ],
+      "scoring": {
+        "correct_pair": 10,
+        "wrong_attempt": -3,
+        "time_bonus_per_sec_left": 0.5,
+        "perfect_bonus": 20
+      },
+      "limits": {
+        "time_limit_sec": 120
+      },
+      "config_schema_example": {
+        "pairs": 6,
+        "category_filter": "cooling",
+        "language": "en"
+      },
+      "difficulty_scaling_fa": "تعداد جفت‌ها و شباهت قطعات افزایش می‌یابد.",
+      "session_minutes": 4,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-03",
+      "name_en": "Auto Crossword",
+      "name_fa": "جورچین کلمات خودرویی",
+      "description_fa": "جدول کلمات متقاطع با سرنخ‌های انگلیسی یا فارسی.",
+      "skills_trained": [
+        "vocabulary",
+        "reading"
+      ],
+      "available_levels": [
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "main_term_database"
+      ],
+      "rules_fa": [
+        "سرنخ می‌تواند تعریف انگلیسی، معادل فارسی یا تصویر قطعه باشد.",
+        "هر راهنمایی ۵ امتیاز کم می‌کند.",
+        "جدول فقط از واژه‌هایی ساخته می‌شود که کاربر آموخته یا در حال مرور است."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "grid": "7x7",
+          "words": 6
+        },
+        {
+          "stage": 2,
+          "grid": "10x10",
+          "words": 10
+        },
+        {
+          "stage": 3,
+          "grid": "13x13",
+          "words": 14
+        }
+      ],
+      "scoring": {
+        "word_correct": "10 + length",
+        "hint_cost": -5,
+        "completion_bonus": 30
+      },
+      "limits": {
+        "time_limit_sec": null
+      },
+      "config_schema_example": {
+        "clue_language": "en_definition",
+        "word_source": "due_and_new",
+        "grid": "10x10"
+      },
+      "difficulty_scaling_fa": "جدول بزرگ‌تر و سرنخ‌های ایمنی‌تر.",
+      "session_minutes": 8,
+      "status": "design_ready",
+      "implementation_note_fa": "برای تولید جدول از الگوریتم چینش کلمات (greedy crossing) استفاده شود؛ واژه‌های بدون حرف مشترک کنار گذاشته شوند."
+    },
+    {
+      "id": "GAME-04",
+      "name_en": "Translation Sprint",
+      "name_fa": "مسابقهٔ سرعت ترجمه",
+      "description_fa": "ترجمهٔ سریع فارسی به انگلیسی و برعکس در زمان محدود.",
+      "skills_trained": [
+        "translation_fa_to_en",
+        "translation_en_to_fa",
+        "vocabulary"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "main_term_database"
+      ],
+      "rules_fa": [
+        "جهت‌ها به‌صورت تصادفی عوض می‌شود.",
+        "پاسخ تایپی یا انتخابی (بسته به سطح).",
+        "ترجمه‌های مجاز از فهرست accepted_answers می‌آید."
+      ],
+      "stages": [
+        {
+          "round": 1,
+          "seconds": 60
+        },
+        {
+          "round": 2,
+          "seconds": 60
+        },
+        {
+          "round": 3,
+          "seconds": 45
+        }
+      ],
+      "scoring": {
+        "correct": 10,
+        "speed_bonus_max": 5,
+        "combo_multiplier": {
+          "every": 5,
+          "add": 0.2,
+          "cap": 2.0
+        },
+        "wrong": -5
+      },
+      "limits": {
+        "time_limit_sec": 60,
+        "lives": null
+      },
+      "config_schema_example": {
+        "direction": "mixed",
+        "input": "typing",
+        "tier": "level_matched"
+      },
+      "difficulty_scaling_fa": "در سطوح بالاتر ورودی تایپی و واژه‌های چندکلمه‌ای.",
+      "session_minutes": 3,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-05",
+      "name_en": "Spot the Wrong Part",
+      "name_fa": "پیدا کردن قطعهٔ اشتباه",
+      "description_fa": "از بین چهار قطعه، قطعه‌ای که به سیستم موردنظر تعلق ندارد انتخاب می‌شود.",
+      "skills_trained": [
+        "vocabulary",
+        "part_recognition"
+      ],
+      "available_levels": [
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "parts_image_manifest"
+      ],
+      "rules_fa": [
+        "سؤال: Which part does NOT belong to the ___ system؟",
+        "سه قطعه از یک دسته و یک قطعه از دستهٔ دیگر.",
+        "پس از پاسخ، توضیح دلیل نمایش داده می‌شود."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "questions": 8,
+          "mix": "different systems"
+        },
+        {
+          "stage": 2,
+          "questions": 10,
+          "mix": "related systems (e.g. fuel vs injector)"
+        }
+      ],
+      "scoring": {
+        "correct": 10,
+        "wrong": 0,
+        "explanation_read_bonus": 2
+      },
+      "limits": {
+        "lives": 3
+      },
+      "config_schema_example": {
+        "question_count": 10,
+        "category_pool": [
+          "cooling",
+          "lubrication",
+          "brakes",
+          "fuel"
+        ]
+      },
+      "difficulty_scaling_fa": "سیستم‌های نزدیک‌تر انتخاب می‌شوند.",
+      "session_minutes": 4,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-06",
+      "name_en": "Sentence Gap Fill",
+      "name_fa": "تکمیل جمله",
+      "description_fa": "جای خالی جمله‌های واقعی تعمیرگاهی را پر کنید.",
+      "skills_trained": [
+        "reading",
+        "sentence_writing",
+        "vocabulary"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "quiz_bank",
+        "workshop_dialogues"
+      ],
+      "rules_fa": [
+        "گزینه‌ها یا تایپی.",
+        "هر جمله یک جای خالی دارد (سطوح بالا تا دو).",
+        "املای نادرست کوچک (یک حرف) نیمه‌امتیاز می‌گیرد."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "blanks_per_sentence": 1,
+          "input": "choice"
+        },
+        {
+          "stage": 2,
+          "blanks_per_sentence": 1,
+          "input": "typing"
+        },
+        {
+          "stage": 3,
+          "blanks_per_sentence": 2,
+          "input": "typing"
+        }
+      ],
+      "scoring": {
+        "correct": 10,
+        "near_miss_spelling": 5,
+        "wrong": 0
+      },
+      "limits": {
+        "time_per_q_sec": 30
+      },
+      "config_schema_example": {
+        "question_count": 10,
+        "focus": "grammar_or_term"
+      },
+      "difficulty_scaling_fa": "از انتخابی به تایپی و چندجای‌خالی.",
+      "session_minutes": 5,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-07",
+      "name_en": "Guess the Part",
+      "name_fa": "حدس زدن قطعه",
+      "description_fa": "با سرنخ‌های تدریجی قطعه را حدس بزنید؛ سرنخ کمتر، امتیاز بیشتر.",
+      "skills_trained": [
+        "vocabulary",
+        "reading",
+        "part_recognition"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "parts_image_manifest"
+      ],
+      "rules_fa": [
+        "سرنخ ۱: دسته‌بندی. سرنخ ۲: عملکرد. سرنخ ۳: محل نصب. سرنخ ۴: تصویر.",
+        "پاسخ تایپی یا انتخابی.",
+        "هر قطعه یک بار نمایش داده می‌شود."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "parts": 6
+        },
+        {
+          "stage": 2,
+          "parts": 8
+        }
+      ],
+      "scoring": {
+        "hint1": 20,
+        "hint2": 15,
+        "hint3": 10,
+        "hint4": 5,
+        "wrong": -2
+      },
+      "limits": {
+        "max_wrong_per_part": 2
+      },
+      "config_schema_example": {
+        "parts_per_stage": 6,
+        "hint_language": "en"
+      },
+      "difficulty_scaling_fa": "سرنخ‌ها در سطح بالاتر فقط انگلیسی و فنی‌ترند.",
+      "session_minutes": 6,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-08",
+      "name_en": "Beat the Clock",
+      "name_fa": "مسابقهٔ زمان‌دار",
+      "description_fa": "سؤال‌های متنوع با استخر زمانی مشترک.",
+      "skills_trained": [
+        "vocabulary",
+        "reading",
+        "translation_fa_to_en",
+        "part_recognition"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "quiz_bank",
+        "main_term_database",
+        "parts_image_manifest"
+      ],
+      "rules_fa": [
+        "زمان اولیه ۹۰ ثانیه است.",
+        "هر پاسخ درست ۳ ثانیه اضافه می‌کند.",
+        "هر پاسخ غلط ۵ ثانیه کم می‌کند.",
+        "بازی با صفر شدن زمان تمام می‌شود."
+      ],
+      "stages": [
+        {
+          "stage": "single",
+          "question_mix": "all types by level"
+        }
+      ],
+      "scoring": {
+        "correct": 10,
+        "time_added_sec": 3,
+        "wrong_time_penalty_sec": 5,
+        "streak_bonus": {
+          "every": 5,
+          "points": 15
+        }
+      },
+      "limits": {
+        "initial_time_sec": 90,
+        "max_time_sec": 120
+      },
+      "config_schema_example": {
+        "mix": [
+          "mcq",
+          "fa_to_en",
+          "image_part_id",
+          "fill_blank"
+        ],
+        "initial_time_sec": 90
+      },
+      "difficulty_scaling_fa": "سؤال‌ها با گذشت زمان دشوارتر می‌شوند.",
+      "session_minutes": 3,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-09",
+      "name_en": "Memory Flip",
+      "name_fa": "بازی حافظه",
+      "description_fa": "کارت‌ها را بچرخانید و تصویر، نام انگلیسی و نام فارسی مربوط به هم را پیدا کنید.",
+      "skills_trained": [
+        "vocabulary",
+        "part_recognition"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "parts_image_manifest"
+      ],
+      "rules_fa": [
+        "حالت جفت‌ساده: تصویر ↔ نام انگلیسی.",
+        "حالت سه‌گانه (سطح بالاتر): تصویر ↔ نام انگلیسی ↔ نام فارسی.",
+        "هر حرکت یک شمارش است."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "grid": "3x4",
+          "mode": "pairs"
+        },
+        {
+          "stage": 2,
+          "grid": "4x4",
+          "mode": "pairs"
+        },
+        {
+          "stage": 3,
+          "grid": "3x6",
+          "mode": "triples"
+        }
+      ],
+      "scoring": {
+        "match": 10,
+        "move_penalty": -1,
+        "under_par_bonus": 20
+      },
+      "limits": {
+        "par_moves": {
+          "3x4": 10,
+          "4x4": 14,
+          "3x6": 16
+        }
+      },
+      "config_schema_example": {
+        "grid": "4x4",
+        "mode": "pairs",
+        "category": "engine"
+      },
+      "difficulty_scaling_fa": "شبکه بزرگ‌تر و حالت سه‌گانه.",
+      "session_minutes": 5,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-10",
+      "name_en": "Customer Talk",
+      "name_fa": "مکالمهٔ تعاملی با مشتری",
+      "description_fa": "مکالمهٔ شاخه‌ای: مشتری حرف می‌زند و کاربر بهترین پاسخ را انتخاب یا تایپ می‌کند.",
+      "skills_trained": [
+        "workshop_conversation",
+        "listening",
+        "reading"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "workshop_dialogues"
+      ],
+      "rules_fa": [
+        "هر نوبت چند پاسخ با کیفیت متفاوت دارد.",
+        "پاسخ خیلی نامناسب رضایت مشتری را کم می‌کند.",
+        "اگر رضایت به صفر برسد، مکالمه شکست می‌خورد."
+      ],
+      "stages": [
+        {
+          "stage": "scenario",
+          "turns": "6-10",
+          "branching": "2-3 options per turn"
+        }
+      ],
+      "scoring": {
+        "best": 10,
+        "acceptable": 5,
+        "poor": 0,
+        "harmful": -5,
+        "satisfaction_meter": {
+          "start": 50,
+          "best": 10,
+          "acceptable": 3,
+          "poor": -10,
+          "harmful": -25,
+          "fail_below": 1
+        },
+        "completion_bonus_by_satisfaction": "satisfaction/5"
+      },
+      "limits": {
+        "max_turns": 12
+      },
+      "config_schema_example": {
+        "scenario_id": "DLG-002",
+        "input": "choice",
+        "voice": "tts",
+        "satisfaction_meter": true
+      },
+      "difficulty_scaling_fa": "در سطوح بالا ورودی تایپی/گفتاری و مشتری ناراضی.",
+      "session_minutes": 8,
+      "status": "design_ready",
+      "data_requirement_fa": "برای هر نوبت باید گزینه‌های امتیازدار (best/acceptable/poor/harmful) نوشته شود؛ در dialogue فعلی فقط پاسخ مرجع موجود است."
+    },
+    {
+      "id": "GAME-11",
+      "name_en": "Translation Error Hunter",
+      "name_fa": "پیدا کردن خطای ترجمه",
+      "description_fa": "یک ترجمهٔ فارسی با یک خطا نمایش داده می‌شود؛ کاربر خطا را پیدا و اصلاح می‌کند.",
+      "skills_trained": [
+        "translation_en_to_fa",
+        "translation_fa_to_en",
+        "reading"
+      ],
+      "available_levels": [
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "curated_translation_errors (to be authored)"
+      ],
+      "rules_fa": [
+        "هر آیتم دقیقاً یک خطا دارد.",
+        "ابتدا کلمهٔ غلط را انتخاب کنید، سپس اصلاح صحیح را بردارید.",
+        "نوع خطا (اصطلاح، فعل، نفی، عدد) پس از پاسخ نمایش داده می‌شود."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "error_types": [
+            "wrong_term"
+          ]
+        },
+        {
+          "stage": 2,
+          "error_types": [
+            "wrong_term",
+            "negation",
+            "number"
+          ]
+        },
+        {
+          "stage": 3,
+          "error_types": [
+            "all",
+            "subtle_register"
+          ]
+        }
+      ],
+      "scoring": {
+        "find_error": 10,
+        "correct_fix": 10,
+        "wrong_tap": -3
+      },
+      "limits": {
+        "lives": 3
+      },
+      "config_schema_example": {
+        "item_count": 8,
+        "error_types": [
+          "wrong_term",
+          "negation"
+        ]
+      },
+      "difficulty_scaling_fa": "خطاها ظریف‌تر می‌شوند.",
+      "session_minutes": 6,
+      "status": "needs_content_authoring",
+      "note_fa": "بانک جمله‌های دارای خطا باید به‌صورت کنترل‌شده نوشته شود؛ تولید خودکار بدون بازبینی انسانی توصیه نمی‌شود."
+    },
+    {
+      "id": "GAME-12",
+      "name_en": "Diagnostic Detective",
+      "name_fa": "کارآگاه عیب‌یاب",
+      "description_fa": "علائم یک خودرو نمایش داده می‌شود؛ با انتخاب آزمون‌ها و سؤال‌ها، علت را پیدا کنید.",
+      "skills_trained": [
+        "reading",
+        "vocabulary",
+        "workshop_conversation"
+      ],
+      "available_levels": [
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "curated_diagnostic_cases (to be authored)"
+      ],
+      "rules_fa": [
+        "بودجهٔ ۶ اقدام دارید.",
+        "هر اقدام اطلاعاتی می‌دهد.",
+        "در پایان یک علت را انتخاب می‌کنید."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "cases": 2,
+          "complexity": "1 fault"
+        },
+        {
+          "stage": 2,
+          "cases": 3,
+          "complexity": "1 fault + distractor"
+        }
+      ],
+      "scoring": {
+        "correct_cause": 50,
+        "unused_action_bonus": 8,
+        "wrong_cause": 0,
+        "irrelevant_action": -3
+      },
+      "limits": {
+        "actions": 6
+      },
+      "config_schema_example": {
+        "case_id": "CASE-001",
+        "language": "en"
+      },
+      "difficulty_scaling_fa": "چند علت محتمل و داده‌های ناقص.",
+      "session_minutes": 10,
+      "status": "needs_content_authoring",
+      "note_fa": "موارد عیب‌یابی باید توسط متخصص تعمیرات تأیید شود."
+    },
+    {
+      "id": "GAME-13",
+      "name_en": "Listen and Fix",
+      "name_fa": "بشنو و درست کن",
+      "description_fa": "یک جملهٔ گفتاری پخش می‌شود و کاربر کلمهٔ ناقص را تایپ یا اقدام درست را انتخاب می‌کند.",
+      "skills_trained": [
+        "listening",
+        "vocabulary"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "quiz_bank",
+        "workshop_dialogues"
+      ],
+      "rules_fa": [
+        "هر صوت حداکثر ۲ بار پخش می‌شود.",
+        "سرعت گفتار در سطوح پایین کند است.",
+        "پس از پاسخ، متن صوت نمایش داده می‌شود."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "rate": "slow"
+        },
+        {
+          "stage": 2,
+          "rate": "normal"
+        },
+        {
+          "stage": 3,
+          "rate": "normal+noise"
+        }
+      ],
+      "scoring": {
+        "correct_first_play": 10,
+        "correct_second_play": 6,
+        "wrong": 0
+      },
+      "limits": {
+        "max_plays": 2
+      },
+      "config_schema_example": {
+        "audio_set": "lesson_audio",
+        "answer_type": "choice"
+      },
+      "difficulty_scaling_fa": "سرعت و نویز پس‌زمینه افزایش می‌یابد.",
+      "session_minutes": 5,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-14",
+      "name_en": "Word Builder",
+      "name_fa": "ساخت کلمه",
+      "description_fa": "حروف درهم یک واژه نمایش داده می‌شود.",
+      "skills_trained": [
+        "vocabulary",
+        "sentence_writing"
+      ],
+      "available_levels": [
+        "LVL-1",
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "main_term_database"
+      ],
+      "rules_fa": [
+        "واژه با تصویر یا معادل فارسی معرفی می‌شود.",
+        "هر راهنمایی یک حرف را آشکار می‌کند و ۳ امتیاز کم می‌کند."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "max_length": 6
+        },
+        {
+          "stage": 2,
+          "max_length": 10
+        },
+        {
+          "stage": 3,
+          "multiword": true
+        }
+      ],
+      "scoring": {
+        "correct": 10,
+        "hint_cost": -3,
+        "speed_bonus_max": 5
+      },
+      "limits": {
+        "time_per_word_sec": 40
+      },
+      "config_schema_example": {
+        "clue": "image_or_fa",
+        "max_length": 10
+      },
+      "difficulty_scaling_fa": "واژه‌های بلندتر و چندکلمه‌ای.",
+      "session_minutes": 4,
+      "status": "design_ready"
+    },
+    {
+      "id": "GAME-15",
+      "name_en": "Label the Diagram",
+      "name_fa": "برچسب‌گذاری روی نمودار",
+      "description_fa": "برچسب‌ها را به فلش‌های روی تصویر قطعه بکشید.",
+      "skills_trained": [
+        "part_recognition",
+        "vocabulary"
+      ],
+      "available_levels": [
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "parts_image_manifest (labeled images + label_anchors)"
+      ],
+      "rules_fa": [
+        "فقط تصاویر دارای labeled=true استفاده می‌شود.",
+        "هر برچسب فقط یک جای درست دارد."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "labels": 3
+        },
+        {
+          "stage": 2,
+          "labels": 5
+        },
+        {
+          "stage": 3,
+          "labels": 8
+        }
+      ],
+      "scoring": {
+        "correct_label": 10,
+        "wrong_drop": -2,
+        "perfect_bonus": 20
+      },
+      "limits": {
+        "time_limit_sec": null
+      },
+      "config_schema_example": {
+        "part_id": "PRT-ENG-003",
+        "labels": 5
+      },
+      "difficulty_scaling_fa": "تعداد برچسب بیشتر و بدون راهنما.",
+      "session_minutes": 6,
+      "status": "needs_content_authoring",
+      "note_fa": "مختصات فلش‌ها (label_anchors) و نام‌های اجزای داخلی باید برای هر تصویر تعریف و بازبینی شوند."
+    },
+    {
+      "id": "GAME-16",
+      "name_en": "Repair Order Builder",
+      "name_fa": "ترتیب مراحل تعمیر",
+      "description_fa": "مراحل یک کار تعمیری (مثلاً تعویض روغن) را به ترتیب درست مرتب کنید.",
+      "skills_trained": [
+        "reading",
+        "vocabulary",
+        "sentence_writing"
+      ],
+      "available_levels": [
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "curated_procedures (to be authored)"
+      ],
+      "rules_fa": [
+        "مراحل درهم نمایش داده می‌شود.",
+        "جابه‌جایی با کشیدن.",
+        "ترتیب مرجع باید توسط متخصص تأیید شده باشد."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "steps": 4
+        },
+        {
+          "stage": 2,
+          "steps": 6
+        },
+        {
+          "stage": 3,
+          "steps": 8
+        }
+      ],
+      "scoring": {
+        "each_step_in_place": 5,
+        "perfect_bonus": 20,
+        "swap_penalty": -1
+      },
+      "limits": {
+        "time_limit_sec": null
+      },
+      "config_schema_example": {
+        "procedure_id": "PROC-001",
+        "steps": 6
+      },
+      "difficulty_scaling_fa": "مراحل بیشتر و شامل هشدار ایمنی.",
+      "session_minutes": 5,
+      "status": "needs_content_authoring",
+      "note_fa": "روش‌های سرویس باید طبق مرجع رسمی و با نکتهٔ ایمنی تأیید شوند."
+    },
+    {
+      "id": "GAME-17",
+      "name_en": "Function Match",
+      "name_fa": "وصل کردن قطعه به عملکرد",
+      "description_fa": "نام قطعه را به جملهٔ عملکرد آن وصل کنید.",
+      "skills_trained": [
+        "vocabulary",
+        "reading"
+      ],
+      "available_levels": [
+        "LVL-2",
+        "LVL-3",
+        "LVL-4",
+        "LVL-5",
+        "LVL-6",
+        "LVL-7"
+      ],
+      "data_sources": [
+        "parts_image_manifest (description_en)"
+      ],
+      "rules_fa": [
+        "هر جمله از description_en مانیفست آمده است.",
+        "نام قطعه در جمله پنهان است."
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "pairs": 4
+        },
+        {
+          "stage": 2,
+          "pairs": 6
+        }
+      ],
+      "scoring": {
+        "correct_pair": 10,
+        "wrong": -2,
+        "perfect_bonus": 15
+      },
+      "limits": {
+        "time_limit_sec": 90
+      },
+      "config_schema_example": {
+        "pairs": 6,
+        "category": "brakes"
+      },
+      "difficulty_scaling_fa": "جمله‌ها کوتاه‌تر و مشابه‌تر.",
+      "session_minutes": 4,
+      "status": "design_ready"
+    }
+  ]
+}
