@@ -1,0 +1,749 @@
+{
+  "dataset": "AUTO LINGO Parts Database",
+  "batch_id": "PARTS-BATCH-003",
+  "schema_version": "1.0.0",
+  "id_range": "PART-000036..PART-000055",
+  "record_count": 20,
+  "records": [
+    {
+      "id": "PART-000036",
+      "name_en": "Brake Pedal",
+      "name_fa": "پدال ترمز",
+      "pronunciation_fa": "پدال ترمز",
+      "ipa": null,
+      "description": "اهرم ورودی فرمان ترمز که نیروی پای راننده را به بوستر یا سیلندر اصلی منتقل می‌کند.",
+      "main_function": "انتقال نیروی پای راننده به سامانه ترمز.",
+      "installation_location": "زیر داشبورد، متصل به پایه پدال و دیواره جداکننده محفظه موتور.",
+      "working_principle": "با فشردن پدال، بازوی اهرمی حول محور می‌چرخد و میله رابط را حرکت می‌دهد؛ کلید چراغ ترمز یا حسگر موقعیت نیز ممکن است نصب باشد.",
+      "internal_components": "بازو، محور و بوش، فنر برگشت، پدال‌رویه، میله رابط، کلید یا حسگر موقعیت.",
+      "common_failures": "سایش بوش/محور، خمیدگی بازو، خرابی فنر یا کلید چراغ ترمز.",
+      "failure_symptoms": "لقی یا گیرکردن پدال، بازنگشتن کامل یا اختلال چراغ ترمز.",
+      "testing_methods": "بازرسی پایه و اتصالات؛ بررسی برگشت پدال و چراغ ترمز؛ کنترل حسگر با عیب‌یاب در صورت وجود.",
+      "required_tools": "چراغ‌قوه، ابزار دستی، مولتی‌متر و عیب‌یاب در صورت وجود حسگر.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Pedal",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "پیش از کار زیر داشبورد خودرو را ایمن و خاموش کنید؛ پدال گیرکرده یا معیوب باید پیش از رانندگی بررسی شود."
+    },
+    {
+      "id": "PART-000037",
+      "name_en": "Brake Booster",
+      "name_fa": "بوستر ترمز",
+      "pronunciation_fa": "بوستر ترمز",
+      "ipa": null,
+      "description": "واحد تقویت نیروی ترمز؛ نوع خلأیی با اختلاف فشار دو سوی دیافراگم و انواع دیگر با محرک الکتریکی کار می‌کنند.",
+      "main_function": "کاهش نیروی لازم از سوی راننده برای ایجاد فشار ترمز.",
+      "installation_location": "معمولاً بین پدال و سیلندر اصلی روی دیواره آتش.",
+      "working_principle": "در نوع خلأیی، ورود هوای کنترل‌شده به یک محفظه اختلاف فشار دیافراگم را ایجاد می‌کند؛ انواع برقی از محرک و کنترل الکترونیکی استفاده می‌کنند.",
+      "internal_components": "پوسته، دیافراگم یا محرک برقی، سوپاپ کنترل، فنر، میله ورودی/خروجی و سوپاپ یک‌طرفه در نوع خلأیی.",
+      "common_failures": "نشتی دیافراگم یا شیلنگ خلأ، خرابی سوپاپ یک‌طرفه یا نقص محرک برقی.",
+      "failure_symptoms": "سفتی پدال، صدای هیس، کاهش کمک ترمز یا هشدار سامانه.",
+      "testing_methods": "بازرسی شیلنگ؛ آزمون عملکرد طبق سازنده؛ گیج خلأ برای نوع خلأیی و اسکن نوع برقی.",
+      "required_tools": "گیج خلأ، عیب‌یاب، چراغ‌قوه و ابزار دستی.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/braking-systems/vacuum-brake-booster/",
+          "publisher": "Bosch Mobility",
+          "topic": "اصل عملکرد بوستر خلأیی و دیافراگم."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Booster",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "بوستر جزو سامانه حیاتی ترمز است؛ تخلیه خلأ و جداسازی باید طبق دستور سازنده و توسط فرد ماهر انجام شود."
+    },
+    {
+      "id": "PART-000038",
+      "name_en": "Brake Master Cylinder",
+      "name_fa": "سیلندر اصلی ترمز",
+      "pronunciation_fa": "سیلندر اصلی ترمز",
+      "ipa": null,
+      "description": "مبدل نیروی مکانیکی به فشار هیدرولیکی؛ در بسیاری از خودروها از ساختار دومداره تاندِم استفاده می‌شود.",
+      "main_function": "ایجاد فشار هیدرولیکی و توزیع آن میان مدارها.",
+      "installation_location": "روی بوستر ترمز در محفظه موتور.",
+      "working_principle": "حرکت پیستون‌ها پس از بسته‌شدن مجاری جبران، سیال محبوس را تحت فشار قرار می‌دهد؛ فنرها پیستون را بازمی‌گردانند.",
+      "internal_components": "بدنه، پیستون‌های اولیه و ثانویه، آب‌بندها، فنرها، مجاری تغذیه و خروجی.",
+      "common_failures": "فرسودگی آب‌بند، خوردگی سیلندر، نشتی خارجی یا گیرکردن پیستون.",
+      "failure_symptoms": "فرورفتن تدریجی پدال، نرمی غیرعادی یا نشتی اطراف سیلندر.",
+      "testing_methods": "بازرسی نشتی؛ آزمون نگهداشت پدال؛ اندازه‌گیری فشار فقط با تجهیزات و مشخصات سازنده.",
+      "required_tools": "چراغ‌قوه، تستر فشار تخصصی، ابزار لوله ترمز و دستگاه هواگیری.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Master Cylinder",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "مدار هیدرولیک را بی‌دلیل باز نکنید. روغن ترمز به رنگ بدنه آسیب می‌زند؛ از حفاظت فردی و جمع‌آوری صحیح استفاده شود."
+    },
+    {
+      "id": "PART-000039",
+      "name_en": "Brake Fluid Reservoir",
+      "name_fa": "مخزن روغن ترمز",
+      "pronunciation_fa": "مخزن روغن ترمز",
+      "ipa": null,
+      "description": "ذخیره‌کننده سیال هیدرولیک و تأمین‌کننده مجاری تغذیه سیلندر اصلی؛ ممکن است حسگر سطح داشته باشد.",
+      "main_function": "ذخیره و تأمین سیال ترمز برای سیلندر اصلی.",
+      "installation_location": "روی سیلندر اصلی یا متصل به آن در محفظه موتور.",
+      "working_principle": "با تغییر حجم موردنیاز مدار، سیال از مخزن به مجاری تغذیه سیلندر اصلی جریان می‌یابد؛ حسگر سطح می‌تواند هشدار دهد.",
+      "internal_components": "بدنه مخزن، درپوش، آب‌بند، مجاری تغذیه، شناور و حسگر سطح در برخی مدل‌ها.",
+      "common_failures": "ترک بدنه، نشتی اتصال، خرابی شناور/حسگر یا آلودگی سیال.",
+      "failure_symptoms": "افت سطح، هشدار سطح یا آثار نشتی اطراف مخزن.",
+      "testing_methods": "بررسی سطح و نشتی؛ کنترل سوکت و حسگر سطح؛ بررسی علت افت پیش از افزودن سیال.",
+      "required_tools": "چراغ‌قوه، دستکش مناسب، مولتی‌متر و عیب‌یاب.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Fluid Reservoir",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "از آلودگی مخزن جلوگیری کنید و فقط سیال مورد تأیید سازنده را به‌کار ببرید؛ افت سطح نیازمند یافتن علت است."
+    },
+    {
+      "id": "PART-000040",
+      "name_en": "Brake Pipe",
+      "name_fa": "لوله ترمز",
+      "pronunciation_fa": "لوله ترمز",
+      "ipa": null,
+      "description": "خط لوله صلب برای انتقال سیال ترمز تحت فشار میان سیلندر اصلی، مدولاتور و خطوط چرخ.",
+      "main_function": "انتقال فشار هیدرولیکی میان اجزای ترمز.",
+      "installation_location": "در امتداد شاسی و زیر بدنه؛ مسیر خودرو‌ویژه است.",
+      "working_principle": "سیال تقریباً تراکم‌ناپذیر فشار را در خط منتقل می‌کند؛ اتصالات فلر یا رزوه‌ای آب‌بندی‌شده مسیر را پیوسته می‌کنند.",
+      "internal_components": "لوله فلزی، پوشش ضدخوردگی، مهره، فلر، بست و محافظ مسیر.",
+      "common_failures": "خوردگی و سوراخ‌شدن، لهیدگی، ترک خستگی یا شل‌شدن اتصال.",
+      "failure_symptoms": "نشتی، افت سطح سیال و کاهش فشار یا کارایی ترمز.",
+      "testing_methods": "بازرسی مسیر روی بالابر ایمن؛ بررسی خوردگی و نشتی؛ آزمون فشار/هواگیری طبق سازنده.",
+      "required_tools": "بالابر استاندارد، چراغ‌قوه، آچار لوله ترمز و تجهیزات هواگیری.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Pipe",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "لوله ترمز را با قطعه یا اتصال غیراستاندارد جایگزین نکنید؛ زیر خودرویی که فقط با جک نگه داشته شده کار نکنید."
+    },
+    {
+      "id": "PART-000041",
+      "name_en": "Flexible Brake Hose",
+      "name_fa": "شیلنگ انعطاف‌پذیر ترمز",
+      "pronunciation_fa": "شیلنگ انعطاف‌پذیر ترمز",
+      "ipa": null,
+      "description": "بخش انعطاف‌پذیر مدار که حرکت نسبی چرخ و تعلیق را تحمل و فشار سیال را منتقل می‌کند.",
+      "main_function": "اتصال انعطاف‌پذیر میان لوله ثابت و عملگر چرخ.",
+      "installation_location": "نزدیک چرخ، بین لوله ثابت و کالیپر یا سیلندر چرخ.",
+      "working_principle": "فشار از لایه داخلی شیلنگ عبور می‌کند و لایه‌های تقویتی انبساط را محدود می‌کنند؛ بدنه انعطاف‌پذیر حرکت تعلیق را می‌پذیرد.",
+      "internal_components": "لایه داخلی، لایه‌های تقویتی، پوشش بیرونی، سرشلنگی و بست.",
+      "common_failures": "ترک، تورم، ساییدگی، انسداد داخلی یا خوردگی سراتصال.",
+      "failure_symptoms": "نشتی، ترک یا تورم؛ در انسداد داخلی احتمال آزاد نشدن ترمز چرخ.",
+      "testing_methods": "بازرسی ترک و تورم؛ کنترل مسیر در موقعیت‌های مجاز فرمان و تعلیق؛ بررسی آزادشدن فشار.",
+      "required_tools": "بالابر، چراغ‌قوه، ابزار دستی و دستگاه هواگیری.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Flexible Brake Hose",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "شیلنگ نباید پیچ‌خورده یا کشیده باشد؛ پس از مداخله، هواگیری و کنترل نشتی توسط متخصص لازم است."
+    },
+    {
+      "id": "PART-000042",
+      "name_en": "Brake Caliper",
+      "name_fa": "کالیپر ترمز",
+      "pronunciation_fa": "کالیپر ترمز",
+      "ipa": null,
+      "description": "عملگر ترمز دیسکی که پیستون آن لنت‌ها را به دیسک می‌فشارد؛ انواع ثابت و شناور دارد.",
+      "main_function": "تبدیل فشار هیدرولیک به نیروی گیره‌ای لنت‌ها.",
+      "installation_location": "روی سگدست یا پایه کالیپر پیرامون دیسک.",
+      "working_principle": "فشار سیال پیستون را به سمت لنت می‌راند؛ در نوع شناور، لغزش بدنه لنت بیرونی را نیز درگیر می‌کند.",
+      "internal_components": "بدنه، پیستون، آب‌بند، گردگیر، پیچ هواگیری و پین لغزنده در نوع شناور.",
+      "common_failures": "گیرپاژ پیستون، نشتی آب‌بند، پارگی گردگیر یا گیرکردن پین لغزنده.",
+      "failure_symptoms": "کشیدن خودرو، داغی یک چرخ، سایش نامتقارن یا نشتی.",
+      "testing_methods": "بررسی نشتی و گردگیر؛ اندازه‌گیری سایش لنت؛ بررسی پین و حرکت پیستون با ابزار مناسب.",
+      "required_tools": "بالابر، ابزار بازگرداندن پیستون، کولیس و آچار گشتاور.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Caliper",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "دیسک و کالیپر ممکن است داغ باشند؛ وزن کالیپر را به شیلنگ آویزان نکنید و با کالیپر باز پدال را نفشارید."
+    },
+    {
+      "id": "PART-000043",
+      "name_en": "Brake Pad",
+      "name_fa": "لنت ترمز",
+      "pronunciation_fa": "لنت ترمز",
+      "ipa": null,
+      "description": "عضو اصطکاکی ترمز دیسکی که انرژی جنبشی را به گرما تبدیل می‌کند.",
+      "main_function": "ایجاد اصطکاک کنترل‌شده با دیسک.",
+      "installation_location": "داخل کالیپر، دو سوی دیسک.",
+      "working_principle": "با فشردن لنت به دیسک، اصطکاک انرژی حرکت را به گرما تبدیل می‌کند؛ ضریب اصطکاک تابع ماده و دماست.",
+      "internal_components": "صفحه پشتی، ماده اصطکاکی، شیم و حسگر سایش در برخی مدل‌ها.",
+      "common_failures": "سایش، لعاب‌زدگی، آلودگی، ترک یا جداشدن ماده اصطکاکی.",
+      "failure_symptoms": "صدای سوت/خراش، لرزش، هشدار سایش یا کاهش کارایی.",
+      "testing_methods": "اندازه‌گیری ضخامت در چند نقطه؛ بررسی ترک، آلودگی و حسگر سایش.",
+      "required_tools": "بالابر، گیج ضخامت لنت، چراغ‌قوه و ابزار کالیپر.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://asia.bremboparts.com/europe/en/support/car/maintenance/indications-and-bedding-in-90374",
+          "publisher": "Brembo",
+          "topic": "بازرسی دیسک، ضخامت حداقل، ترک و عیوب سطح."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Pad",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "گردوغبار ترمز را با هوای فشرده پخش نکنید؛ قطعه اصطکاکی باید با مشخصات خودرو سازگار باشد."
+    },
+    {
+      "id": "PART-000044",
+      "name_en": "Brake Disc (Rotor)",
+      "name_fa": "دیسک ترمز",
+      "pronunciation_fa": "دیسک ترمز",
+      "ipa": null,
+      "description": "عضو چرخان ترمز دیسکی و سطح تماس لنت؛ ممکن است یکپارچه یا تهویه‌دار باشد.",
+      "main_function": "فراهم‌کردن سطح اصطکاک و دفع گرما.",
+      "installation_location": "روی توپی چرخ و داخل کالیپر.",
+      "working_principle": "نیروی گیره‌ای لنت گشتاور مقاوم ایجاد می‌کند و جرم و پره‌های دیسک گرما را دفع می‌کنند.",
+      "internal_components": "سطوح اصطکاکی، بخش مرکزی، پره‌های تهویه در نوع تهویه‌دار و سطح نصب.",
+      "common_failures": "کاهش ضخامت، تاب، تغییر ضخامت موضعی، ترک حرارتی یا خوردگی.",
+      "failure_symptoms": "لرزش پدال/فرمان، صدای غیرعادی، شیار یا ترک قابل مشاهده.",
+      "testing_methods": "اندازه‌گیری ضخامت با میکرومتر؛ سنجش تاب با ساعت؛ بررسی ترک و سطح توپی.",
+      "required_tools": "بالابر، میکرومتر، ساعت اندازه‌گیری و آچار گشتاور.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://asia.bremboparts.com/europe/en/support/car/maintenance/indications-and-bedding-in-90374",
+          "publisher": "Brembo",
+          "topic": "بازرسی دیسک، ضخامت حداقل، ترک و عیوب سطح."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Disc (Rotor)",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "دیسک می‌تواند بسیار داغ باشد؛ قطعه ترک‌خورده یا زیر حد ضخامت مجاز قابل استفاده نیست."
+    },
+    {
+      "id": "PART-000045",
+      "name_en": "Brake Drum",
+      "name_fa": "کاسه ترمز",
+      "pronunciation_fa": "کاسه ترمز",
+      "ipa": null,
+      "description": "عضو چرخان ترمز کاسه‌ای که کفشک‌ها از داخل به سطح آن فشار وارد می‌کنند.",
+      "main_function": "فراهم‌کردن سطح اصطکاک داخلی برای کفشک‌ها.",
+      "installation_location": "روی توپی چرخ، پیرامون کفشک‌ها.",
+      "working_principle": "فشار سیلندر چرخ کفشک‌ها را باز می‌کند تا لاینینگ با سطح داخلی کاسه تماس بگیرد.",
+      "internal_components": "پوسته، سطح اصطکاک داخلی، بخش مرکزی و لبه نگهدارنده.",
+      "common_failures": "سایش و افزایش قطر، بیضی‌شدن، ترک حرارتی یا شیار.",
+      "failure_symptoms": "صدای ضربه، لرزش، ترمز نامتقارن یا ضعف ترمز پارک.",
+      "testing_methods": "اندازه‌گیری قطر داخلی در چند جهت؛ بررسی ترک و سطح اصطکاک.",
+      "required_tools": "بالابر، گیج قطر داخلی، چراغ‌قوه و ابزار فنر کفشک.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Drum",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "فنرهای ترمز کاسه‌ای انرژی ذخیره‌شده دارند؛ از ابزار مخصوص و روش کنترل گردوغبار استفاده کنید."
+    },
+    {
+      "id": "PART-000046",
+      "name_en": "Brake Shoe",
+      "name_fa": "کفشک ترمز",
+      "pronunciation_fa": "کفشک ترمز",
+      "ipa": null,
+      "description": "حامل قوس‌دار لاینینگ اصطکاکی در ترمز کاسه‌ای.",
+      "main_function": "انتقال نیروی سیلندر چرخ به لاینینگ اصطکاکی.",
+      "installation_location": "داخل مجموعه ترمز کاسه‌ای روی صفحه پشتی.",
+      "working_principle": "سیلندر چرخ کفشک‌ها را از هم دور می‌کند؛ فنرها و تنظیم‌کننده، برگشت و فاصله را کنترل می‌کنند.",
+      "internal_components": "تنه فولادی قوس‌دار، لاینینگ، نقاط تکیه‌گاه، سوراخ فنر و اهرم پارک در برخی طرح‌ها.",
+      "common_failures": "سایش یا جداشدن لاینینگ، خمیدگی، آلودگی یا شیشه‌ای‌شدن سطح.",
+      "failure_symptoms": "صدای ترمز، کشیدن خودرو، ضعف ترمز یا سایش نامساوی.",
+      "testing_methods": "بررسی ضخامت و چسبندگی لاینینگ؛ بررسی نشتی سیلندر و نقاط تکیه‌گاه.",
+      "required_tools": "بالابر، کولیس، ابزار فنر کفشک و تجهیزات کنترل گردوغبار.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Brake Shoe",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "هنگام بازکردن فنرهای کفشک از ابزار مناسب استفاده کنید و از تنفس گردوغبار اصطکاکی بپرهیزید."
+    },
+    {
+      "id": "PART-000047",
+      "name_en": "Wheel Cylinder",
+      "name_fa": "سیلندر چرخ",
+      "pronunciation_fa": "سیلندر چرخ",
+      "ipa": null,
+      "description": "عملگر هیدرولیکی ترمز کاسه‌ای که فشار سیال را به نیروی بازکننده کفشک تبدیل می‌کند.",
+      "main_function": "بازکردن کفشک‌ها با فشار هیدرولیکی.",
+      "installation_location": "داخل مجموعه ترمز کاسه‌ای، معمولاً بالای صفحه پشتی.",
+      "working_principle": "فشار هیدرولیک به پیستون‌های دو سر سیلندر وارد می‌شود و کفشک‌ها را باز می‌کند.",
+      "internal_components": "بدنه، دو پیستون، کاسه‌نمد، گردگیر، پیچ هواگیری و ورودی لوله.",
+      "common_failures": "نشتی آب‌بند، خوردگی داخلی، گیرکردن پیستون یا پارگی گردگیر.",
+      "failure_symptoms": "خیس‌شدن کفشک، افت سیال، پدال نرم یا ترمز نامتقارن.",
+      "testing_methods": "بازرسی زیر گردگیر؛ بررسی آلودگی کفشک؛ تست نشتی و هواگیری تخصصی.",
+      "required_tools": "بالابر، آچار لوله ترمز، چراغ‌قوه و دستگاه هواگیری.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Wheel Cylinder",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "نشتی سیلندر چرخ می‌تواند ترمز را نامتقارن کند؛ هواگیری و آزمون تخصصی پس از تعمیر ضروری است."
+    },
+    {
+      "id": "PART-000048",
+      "name_en": "Parking Brake Cable",
+      "name_fa": "کابل ترمز دستی",
+      "pronunciation_fa": "کابل ترمز دستی",
+      "ipa": null,
+      "description": "کابل مکانیکی انتقال کشش از اهرم یا پدال ترمز پارک به مکانیزم چرخ.",
+      "main_function": "فعال‌کردن مکانیکی ترمز پارک.",
+      "installation_location": "از اهرم/پدال تا مکانیزم ترمز محور عقب.",
+      "working_principle": "کشش کابل، اهرم ترمز چرخ را فعال می‌کند؛ ضامن یا تنظیم‌کننده، کشش را نگه می‌دارد.",
+      "internal_components": "مغزی فولادی، غلاف، سراتصال‌ها، بست، تقسیم‌کننده و تنظیم‌کننده.",
+      "common_failures": "زنگ‌زدگی مغزی، پارگی رشته‌ها، گیرکردن در غلاف یا شکست سراتصال.",
+      "failure_symptoms": "اهرم با کورس زیاد، نگه‌نداشتن خودرو یا آزاد نشدن کامل.",
+      "testing_methods": "بازرسی مسیر و غلاف؛ کنترل حرکت و برگشت؛ تست نگهداری روی دستگاه مناسب.",
+      "required_tools": "بالابر، چراغ‌قوه، ابزار دستی و تستر ترمز.",
+      "category_id": "CAT-10",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/lehrtafeln/en/bremsen_lehrtafel_bosch_en.pdf",
+          "publisher": "Bosch Classic",
+          "topic": "نقشه آموزشی اجزای ترمز هیدرولیکی، بوستر، سیلندر اصلی، کالیپر و ترمز کاسه‌ای."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Parking Brake Cable",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "ترمز پارک جایگزین مهار چرخ‌ها هنگام سرویس نیست؛ خودرو باید با پایه‌های استاندارد مهار شود."
+    },
+    {
+      "id": "PART-000049",
+      "name_en": "ABS Wheel Speed Sensor",
+      "name_fa": "حسگر سرعت چرخ ABS",
+      "pronunciation_fa": "حسگر سرعت چرخ ABS",
+      "ipa": null,
+      "description": "حسگر سرعت دورانی چرخ با نوع القایی غیرفعال یا نوع فعال Hall/مغناطومقاومتی.",
+      "main_function": "ارسال سرعت چرخ به ABS و سامانه‌های پایداری.",
+      "installation_location": "نزدیک توپی، بلبرینگ یا محور چرخ روبه‌روی رینگ انکودر.",
+      "working_principle": "نوع القایی با تغییر شار ولتاژ متناوب می‌سازد؛ نوع فعال تغییر میدان را به سیگنال دیجیتال/پالسی تبدیل می‌کند.",
+      "internal_components": "عنصر حسگر، آهنربا/سیم‌پیچ یا مدار فعال، کابل، سوکت و رینگ انکودر.",
+      "common_failures": "قطعی سیم، اتصال کوتاه، آلودگی، خرابی رینگ انکودر یا لقی بلبرینگ.",
+      "failure_symptoms": "چراغ ABS/ESP، کد خطا، سرعت چرخ ناپایدار یا مداخله اشتباه.",
+      "testing_methods": "خواندن کد و داده زنده؛ بررسی سیم و سوکت؛ اسیلوسکوپ و بررسی رینگ؛ مقاومت فقط در نوع مجاز.",
+      "required_tools": "دستگاه عیب‌یاب، مولتی‌متر، اسیلوسکوپ و بالابر.",
+      "category_id": "CAT-11",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.hella.com/techworld/uk/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/",
+          "publisher": "HELLA Tech World",
+          "topic": "انواع حسگر سرعت چرخ، اصول سیگنال و روش تشخیص."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "ABS Wheel Speed Sensor",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "نوع فعال و غیرفعال حسگر آزمون‌های متفاوت دارند؛ ولتاژ یا مقاومت نامتناسب اعمال نکنید."
+    },
+    {
+      "id": "PART-000050",
+      "name_en": "ABS Hydraulic Control Unit",
+      "name_fa": "واحد هیدرولیکی ABS",
+      "pronunciation_fa": "واحد هیدرولیکی ABS",
+      "ipa": null,
+      "description": "مدولاتور هیدرولیکی ABS که با شیرها و پمپ، فشار مدار چرخ را تعدیل می‌کند.",
+      "main_function": "کنترل فشار هیدرولیک چرخ‌ها در ABS.",
+      "installation_location": "در محفظه موتور یا محفظه فنی، میان سیلندر اصلی و خطوط چرخ.",
+      "working_principle": "شیرهای ورودی و خروجی فازهای افزایش، نگهداشت و کاهش فشار را کنترل می‌کنند؛ پمپ سیال را بازمی‌گرداند.",
+      "internal_components": "بلوک هیدرولیک، مجاری، شیرهای برقی، پمپ برگشت، موتور و سوکت.",
+      "common_failures": "گیرکردن شیر، خرابی موتور پمپ، آلودگی داخلی یا نشتی اتصالات.",
+      "failure_symptoms": "چراغ ABS/ESP، کد شیر/پمپ، مداخله نامناسب یا تغییر حس پدال.",
+      "testing_methods": "بررسی نشتی و تغذیه؛ خواندن کد؛ آزمون عملگر و هواگیری فعال طبق دستور سازنده.",
+      "required_tools": "عیب‌یاب دوطرفه، مولتی‌متر و دستگاه هواگیری تخصصی.",
+      "category_id": "CAT-11",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.hella.com/techworld/uk/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/",
+          "publisher": "HELLA Tech World",
+          "topic": "واحد هیدرولیک ABS، شیرها، پمپ و واحد کنترل."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "ABS Hydraulic Control Unit",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "بازکردن واحد هیدرولیک می‌تواند هوا وارد مدار کند؛ آزمون و هواگیری فقط طبق روش سازنده انجام شود."
+    },
+    {
+      "id": "PART-000051",
+      "name_en": "ABS Control Module",
+      "name_fa": "واحد کنترل ABS",
+      "pronunciation_fa": "واحد کنترل ABS",
+      "ipa": null,
+      "description": "رایانه ABS که داده حسگرها را پردازش و به شیرها و پمپ فرمان می‌دهد.",
+      "main_function": "تشخیص تمایل به قفل چرخ و فرمان‌دهی به مدولاتور.",
+      "installation_location": "روی بلوک هیدرولیک یا محل الکترونیکی محافظت‌شده.",
+      "working_principle": "پردازنده سرعت چرخ‌ها را مقایسه و فرمان شیرها و پمپ را صادر می‌کند؛ خطاها در حافظه ذخیره می‌شوند.",
+      "internal_components": "برد مدار چاپی، پردازنده، درایور شیر/موتور، مدار تغذیه، حافظه و کانکتور.",
+      "common_failures": "نفوذ رطوبت، خوردگی سوکت، خرابی تغذیه یا درایور الکترونیکی.",
+      "failure_symptoms": "چراغ هشدار، عدم ارتباط با عیب‌یاب یا قطع عملکرد ABS.",
+      "testing_methods": "کنترل تغذیه، فیوز، زمین و شبکه؛ اسکن ماژول؛ بررسی سوکت و برنامه‌ریزی سازنده.",
+      "required_tools": "عیب‌یاب سازگار، مولتی‌متر، نقشه سیم‌کشی و ابزار شبکه.",
+      "category_id": "CAT-11",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.hella.com/techworld/uk/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/",
+          "publisher": "HELLA Tech World",
+          "topic": "واحد هیدرولیک ABS، شیرها، پمپ و واحد کنترل."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "ABS Control Module",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "پایه‌های ماژول را اتصال آزمایشی ندهید؛ الزامات قطع باتری و حفاظت الکترواستاتیک رعایت شود."
+    },
+    {
+      "id": "PART-000052",
+      "name_en": "Yaw Rate Sensor",
+      "name_fa": "حسگر نرخ گردش حول محور عمودی",
+      "pronunciation_fa": "حسگر نرخ گردش حول محور عمودی",
+      "ipa": null,
+      "description": "حسگر نرخ چرخش بدنه حول محور عمودی که برای کنترل پایداری به کار می‌رود.",
+      "main_function": "اندازه‌گیری نرخ گردش بدنه برای ESC.",
+      "installation_location": "معمولاً نزدیک مرکز ثقل خودرو؛ محل دقیق سازنده‌محور است.",
+      "working_principle": "عنصر MEMS نرخ چرخش را به سیگنال الکتریکی تبدیل می‌کند؛ ESC آن را با زاویه فرمان و سرعت چرخ مقایسه می‌کند.",
+      "internal_components": "عنصر ژیروسکوپی MEMS، مدار پردازش، سوکت و پایه نصب؛ گاهی حسگر شتاب در همان واحد.",
+      "common_failures": "خرابی عنصر MEMS، جابه‌جایی پایه، نفوذ رطوبت یا کالیبراسیون نامعتبر.",
+      "failure_symptoms": "چراغ ESP، کد نرخ گردش، داده غیرمنطقی یا غیرفعال‌شدن ESC.",
+      "testing_methods": "بررسی داده زنده در سکون؛ کنترل پایه و تغذیه؛ کالیبراسیون صفر طبق دستور سازنده.",
+      "required_tools": "عیب‌یاب با داده زنده/کالیبراسیون، مولتی‌متر و سطح مرجع مناسب.",
+      "category_id": "CAT-07",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://www.hella.com/techworld/ae/bi/vw-sharan-esp-lamp-lights-up/",
+          "publisher": "HELLA Tech World",
+          "topic": "نمونه عیب‌یابی حسگر دینامیک و کالیبراسیون؛ نمونه خودرو‌ویژه."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Yaw Rate Sensor",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "محل و جهت نصب و کالیبراسیون حسگر خودرو‌ویژه است؛ تا رفع خطای ESC به کنترل پایداری اتکا نکنید."
+    },
+    {
+      "id": "PART-000053",
+      "name_en": "Steering Rack",
+      "name_fa": "جعبه فرمان دنده‌شانه‌ای",
+      "pronunciation_fa": "جعبه فرمان دنده‌شانه‌ای",
+      "ipa": null,
+      "description": "مجموعه رک و پینیون که حرکت دورانی فرمان را به حرکت خطی میله‌های فرمان تبدیل می‌کند.",
+      "main_function": "تبدیل چرخش غربیلک فرمان به حرکت خطی اتصالات فرمان.",
+      "installation_location": "روی شاسی فرعی یا پشت محور جلو، متصل به ستون و میله‌های فرمان.",
+      "working_principle": "پینیون درگیر با دنده‌شانه‌ای آن را خطی جابه‌جا می‌کند؛ کمک هیدرولیکی یا برقی می‌تواند نیروی فرمان را تقویت کند.",
+      "internal_components": "پوسته، رک، پینیون، یاتاقان، بوش، آب‌بند و اجزای کمک‌فرمان متناسب با نوع.",
+      "common_failures": "سایش دنده/بوش، لقی، نشتی هیدرولیک یا خرابی موتور/حسگر برقی.",
+      "failure_symptoms": "لقی/سفتی فرمان، صدای تق‌تق، نشتی یا برگشت نامناسب.",
+      "testing_methods": "بررسی گردگیر و نشتی؛ کنترل لقی و صدا؛ اسکن EPS و میزان فرمان.",
+      "required_tools": "بالابر، ابزار بررسی لقی، عیب‌یاب و دستگاه میزان فرمان.",
+      "category_id": "CAT-13",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://aftermarket.zf.com/en/aftermarket-portal/for-workshops/useful-tips/steering/function-principle-of-electrohydraulic-power-steering/",
+          "publisher": "ZF Aftermarket",
+          "topic": "اصل عملکرد رک و پینیون و کمک‌فرمان الکتروهیدرولیکی."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Steering Rack",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "رک فرمان بر کنترل جهت اثر مستقیم دارد؛ زیر خودرو فقط با بالابر و پایه استاندارد کار کنید."
+    },
+    {
+      "id": "PART-000054",
+      "name_en": "Tie Rod End",
+      "name_fa": "سیبک فرمان",
+      "pronunciation_fa": "سیبک فرمان",
+      "ipa": null,
+      "description": "مفصل کروی انتهایی میله فرمان که نیرو را به سگدست منتقل و حرکت تعلیق را ممکن می‌کند.",
+      "main_function": "انتقال نیروی فرمان به سگدست با مفصل متحرک.",
+      "installation_location": "انتهای بیرونی میله فرمان، متصل به بازوی سگدست.",
+      "working_principle": "توپی کروی در نشیمن مفصل حرکت زاویه‌ای دارد و نیرو را به سگدست منتقل می‌کند.",
+      "internal_components": "بدنه مفصل، پین کروی، لاینر، گردگیر، گریس، مهره و رزوه تنظیم.",
+      "common_failures": "سایش مفصل، پارگی گردگیر، خروج گریس، خوردگی یا خمیدگی.",
+      "failure_symptoms": "لقی فرمان، صدای ناهمواری، سایش نامنظم تایر یا ناپایداری.",
+      "testing_methods": "بررسی گردگیر و لقی با روش سازنده؛ پس از تعویض، تنظیم toe.",
+      "required_tools": "بالابر، ابزار بررسی لقی، آچار گشتاور و دستگاه میزان فرمان.",
+      "category_id": "CAT-13",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://aftermarket.zf.com/sg/aftermarket-portal/our-portfolio/passenger-cars/products/steering-and-chassis-parts/",
+          "publisher": "ZF Aftermarket / LEMFÖRDER",
+          "topic": "سیبک فرمان، مفاصل کروی و اجزای شاسی."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Tie Rod End",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "در صورت لقی سیبک فرمان، رانندگی آزمایشی جاده‌ای انجام ندهید؛ پس از تعویض میزان فرمان لازم است."
+    },
+    {
+      "id": "PART-000055",
+      "name_en": "Ball Joint",
+      "name_fa": "سیبک تعلیق",
+      "pronunciation_fa": "سیبک تعلیق",
+      "ipa": null,
+      "description": "مفصل کروی اتصال بازوی تعلیق به سگدست که حرکت زاویه‌ای چرخ را ممکن می‌سازد.",
+      "main_function": "اتصال مفصلی اجزای تعلیق و هدایت حرکت سگدست.",
+      "installation_location": "بین طبق و سگدست؛ محل به معماری تعلیق بستگی دارد.",
+      "working_principle": "پین کروی در نشیمن می‌چرخد و حرکت زاویه‌ای چرخ در فرمان‌گیری و کورس تعلیق را ممکن می‌سازد.",
+      "internal_components": "پوسته، پین کروی، نشیمن، لاینر، گردگیر، گریس و اتصال پایه.",
+      "common_failures": "سایش نشیمن، لقی، پارگی گردگیر، خوردگی یا آسیب پین.",
+      "failure_symptoms": "کوبش، لقی چرخ، تغییر هندسه یا سایش تایر.",
+      "testing_methods": "بررسی گردگیر و لقی با بارگذاری مشخص‌شده؛ بررسی زوایای چرخ و تایر.",
+      "required_tools": "بالابر و پایه استاندارد، ابزار بررسی لقی و ابزار تخصصی مفصل.",
+      "category_id": "CAT-12",
+      "is_generic": true,
+      "verification_status": "needs_review",
+      "source_candidates": [
+        {
+          "url": "https://aftermarket.zf.com/sg/aftermarket-portal/our-portfolio/passenger-cars/products/steering-and-chassis-parts/",
+          "publisher": "ZF Aftermarket / LEMFÖRDER",
+          "topic": "سیبک فرمان، مفاصل کروی و اجزای شاسی."
+        }
+      ],
+      "images": [
+        {
+          "url": null,
+          "title": null,
+          "source": null,
+          "subject": "Ball Joint",
+          "attribution": null,
+          "license": "unverified"
+        }
+      ],
+      "safety_notes": "جداسازی سیبک ممکن است نیازمند مهار مجموعه تعلیق باشد؛ از نقاط بالابری و پایه‌های تأییدشده استفاده کنید."
+    }
+  ]
+}
