@@ -150,3 +150,56 @@ function renderTerms(){const q=document.getElementById("searchInput").value.trim
 document.getElementById("clearMistakes").addEventListener("click",()=>{if(!confirm("دفترچه اشتباهات پاک شود؟"))return;localStorage.removeItem("al_mistakes");renderDashboard()});
 document.getElementById("searchInput").addEventListener("input",renderTerms);document.getElementById("mobileMenu").addEventListener("click",()=>document.querySelector(".main-nav").classList.toggle("open"));document.getElementById("homeLink").addEventListener("click",()=>{document.getElementById("pathDetail").classList.add("hidden");activePath=null});
 renderPaths();renderFilters();renderTerms();renderDashboard();
+
+/* Placement assessment */
+const placementQuestions=[];
+let placementIndex=0,placementCorrect=0,placementCurrent=null;
+function makePlacementQuestions(){
+ const pool=[...allTerms];
+ const selected=[];
+ while(selected.length<8&&pool.length){const i=Math.floor(Math.random()*pool.length);selected.push(pool.splice(i,1)[0])}
+ return selected.map(term=>{
+  const candidates=allTerms.filter(t=>t.en!==term.en);
+  const distractors=[];
+  while(distractors.length<3&&candidates.length){const i=Math.floor(Math.random()*candidates.length);distractors.push(candidates.splice(i,1)[0].fa)}
+  return {term,options:[term.fa,...distractors].sort(()=>Math.random()-.5)};
+ });
+}
+function startPlacement(){
+ placementQuestions.splice(0,placementQuestions.length,...makePlacementQuestions());
+ placementIndex=0;placementCorrect=0;
+ document.getElementById("placementResult").innerHTML="";
+ document.getElementById("placementQuiz").classList.remove("hidden");
+ renderPlacementQuestion();
+ document.getElementById("placementQuiz").scrollIntoView({behavior:"smooth",block:"center"});
+}
+function renderPlacementQuestion(){
+ const q=placementQuestions[placementIndex];
+ document.getElementById("placementQuiz").innerHTML=`<div class="placement-question-head"><span>سؤال ${faNum(placementIndex+1)} از ۸</span><b>${faNum(Math.round(placementIndex/8*100))}٪</b></div><div class="progress-track"><i style="width:${placementIndex/8*100}%"></i></div><p>معنی درست اصطلاح زیر کدام است؟</p><h3 dir="ltr">${escapeHTML(q.term.en)}</h3><div class="placement-options">${q.options.map((o,i)=>`<button class="answer-option" data-placement="${i}">${escapeHTML(o)}</button>`).join("")}</div><p class="answer-feedback" id="placementFeedback"></p><button class="stage-next" id="placementNext" disabled>${placementIndex===7?"نمایش نتیجه":"سؤال بعدی ←"}</button>`;
+ document.querySelectorAll("[data-placement]").forEach(b=>b.onclick=()=>{
+  if(placementCurrent!==null)return;
+  placementCurrent=Number(b.dataset.placement);
+  const correct=q.options[placementCurrent]===q.term.fa;
+  if(correct)placementCorrect++;
+  document.querySelectorAll("[data-placement]").forEach(x=>{x.disabled=true;if(x.textContent===q.term.fa)x.classList.add("correct")});
+  if(!correct)b.classList.add("incorrect");
+  document.getElementById("placementFeedback").textContent=correct?"درست است!":"پاسخ درست: "+q.term.fa;
+  document.getElementById("placementFeedback").className="answer-feedback "+(correct?"good":"bad");
+  document.getElementById("placementNext").disabled=false;
+ });
+ document.getElementById("placementNext").onclick=()=>{
+  if(placementIndex<7){placementIndex++;placementCurrent=null;renderPlacementQuestion()}
+  else showPlacementResult();
+ };
+}
+function showPlacementResult(){
+ const score=Math.round(placementCorrect/8*100);
+ const level=score<35?{name:"مبتدی",en:"BEGINNER",desc:"از درس‌های پایه و شناخت قطعات شروع کن."}:score<65?{name:"مقدماتی رو به متوسط",en:"ELEMENTARY",desc:"مبانی را مرور کن و سپس سراغ جمله‌ها و سیستم‌های خودرو برو."}:score<88?{name:"متوسط",en:"INTERMEDIATE",desc:"تمرکزت را روی مکالمه فنی، عیب‌یابی و اصطلاحات سیستمی بگذار."}:{name:"پیشرفته",en:"ADVANCED",desc:"آمادگی خوبی در این واژگان داری؛ مستندات فنی و مکالمات تخصصی را دنبال کن."};
+ const result={score,level:level.en,levelFa:level.name,correct:placementCorrect,total:8,date:new Date().toISOString()};
+ localStorage.setItem("al_placement",JSON.stringify(result));
+ document.getElementById("placementQuiz").innerHTML=`<div class="placement-final"><span class="eyebrow">YOUR LEVEL RESULT</span><div class="placement-score">${faNum(score)}٪</div><h3>سطح پیشنهادی: ${level.name}</h3><b>${level.en}</b><p>${level.desc}</p><small>${faNum(placementCorrect)} پاسخ درست از ۸ سؤال</small><div class="placement-final-actions"><a class="btn btn-primary" href="#paths">انتخاب مسیر یادگیری</a><button class="stage-prev" id="retryPlacement">تکرار آزمون</button></div></div>`;
+ document.getElementById("placementResult").innerHTML=`<span>آخرین نتیجه</span><b>${level.name} • ${faNum(score)}٪</b>`;
+ document.getElementById("retryPlacement").onclick=startPlacement;
+}
+document.getElementById("startPlacement").addEventListener("click",startPlacement);
+(function restorePlacement(){const p=readStore("al_placement",null);if(p)document.getElementById("placementResult").innerHTML='<span>آخرین نتیجه</span><b>'+escapeHTML(p.levelFa)+' • '+faNum(p.score)+'٪</b>'})();
