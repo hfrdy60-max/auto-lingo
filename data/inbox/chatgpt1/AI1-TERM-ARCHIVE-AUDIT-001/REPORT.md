@@ -121,6 +121,18 @@ This only establishes repository upload order. It does **not** prove which conte
   - TERM-000235 → Suspension
 - These are referential-integrity review items, not proof that the underlying terms are invalid; the missing concepts may be intended for a later batch or may need normalization.
 
+
+
+## Source, category, and brand readiness audit
+The supporting reference data is not yet ready to substantiate technical verification:
+- `sources.json`: 11 candidate sources; all are `unverified`; only 4 have a URL and 7 have `url: null`.
+- All 11 source entries explicitly say that URL/content has not yet been checked or that clause-level citations still need to be added.
+- None of the 252 term records contains a source ID, citation, or source location. The archive itself notes that source links are not yet recorded in `entity_sources`.
+- `categories.json`: 26 categories; all have `parent_id: null` and `description_fa: null`. This may be intentional for a flat taxonomy, but category descriptions are not yet authored.
+- `brands.json`: 19 brands; all are `unverified`, all website fields are null, and the notes say details have not yet been researched.
+
+**QA conclusion:** the 252 terms may be structurally consistent, but the archive currently lacks item-level evidence. Do not change any term to `verified` until a reviewer can trace its technical definition and important claims to an appropriate source (OEM service information for vehicle-specific procedures/specifications; recognized standards for diagnostic protocol claims; supplier technical documentation for component principles).
+
 ## Safety / scope
 - This audit did not edit or replace source batches.
 - No term has been marked verified.
