@@ -64,3 +64,11 @@
 - Replaced misleading or missing image entries (Getty search page, absent images, and one shared valve image that did not distinguish intake from exhaust) with null placeholders; no replacement image URLs were invented. Remaining direct image URLs are unverified candidates and must not be published until subject match and reuse rights are checked.
 - Replaced unrelated boilerplate safety notes with component-specific precautions.
 - QA: exactly 20 sequential unique IDs; JSON valid; category IDs match existing category namespace; all records remain `needs_review`; no vehicle-specific specifications are asserted.
+
+## Stage 4 — Content QA & integration audit (IN PROGRESS)
+- Central audit: [QA/CONTENT_AUDIT.md](QA/CONTENT_AUDIT.md)
+- Six uploaded content files were structurally reviewed: games, lesson blueprints, image manifest, progression rules, quiz bank, workshop dialogues.
+- Recorded issues: 80 lesson blueprints have no generated lesson text; 43 lessons lack authored quiz questions; 4 games need content authoring; all 164 image assets are missing; 10 dialogue-to-lesson level mismatches require content review; image/category/part identifiers need a crosswalk; frontend does not yet load these six files.
+- Terms count discrepancy remains unresolved: this log previously recorded 41 terms in `terms_batch_01.json`; a separate AI report claims 82 across two batches, but `terms_batch_02.json` was not found in repository root or `data/` during the 2026-11-12 audit. Do not treat 82 as repository-verified until the second file is located.
+- No technical content was silently promoted to verified. Vehicle-specific repair values require vehicle-specific sources.
+- Next QA action: resolve the terms batch discrepancy, then build an explicit mapping file for image-manifest part/category IDs to canonical parts/categories.
