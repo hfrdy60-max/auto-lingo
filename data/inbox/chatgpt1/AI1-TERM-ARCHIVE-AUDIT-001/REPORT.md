@@ -23,7 +23,7 @@ The ZIP contains 15 files:
 - `REPORT.txt`
 - 4 Python utility scripts
 
-All 8 JSON files parsed successfully:
+All 9 JSON files parsed successfully:
 | File | Records |
 |---|---:|
 | terms_batch_01.json | 41 |
