@@ -56,3 +56,11 @@
 - Safety notes are embedded where relevant, including high-pressure GDI/diesel fuel precautions and hot pressurized cooling-system hazards.
 - Generic content only: no universal electrical values, pressures, torques, pinouts, or vehicle-specific repair steps are asserted.
 - Note: the supplied 2026-11-12 external progress report says 82 terms, while the repository's current `PROGRESS.md` still documents 41 terms and an earlier resume point. Reconcile the term batches and progress record before assigning more TERM IDs.
+
+
+## Stage 6 — Generic parts database (continued)
+- Added `data/parts_batch_02.json` with 20 generic part records (`PART-000016`–`PART-000035`).
+- Corrected all category IDs to existing `categories.json` values: cooling CAT-14, lubrication CAT-15, clutch CAT-09, engine/timing/valvetrain CAT-01, exhaust CAT-17, and emissions CAT-18.
+- Replaced misleading or missing image entries (Getty search page, absent images, and one shared valve image that did not distinguish intake from exhaust) with null placeholders; no replacement image URLs were invented. Remaining direct image URLs are unverified candidates and must not be published until subject match and reuse rights are checked.
+- Replaced unrelated boilerplate safety notes with component-specific precautions.
+- QA: exactly 20 sequential unique IDs; JSON valid; category IDs match existing category namespace; all records remain `needs_review`; no vehicle-specific specifications are asserted.
