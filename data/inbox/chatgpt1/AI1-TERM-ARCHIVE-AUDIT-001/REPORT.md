@@ -89,6 +89,19 @@ This proves the two Batch 01 files are competing content sets that reuse the sam
 4. Review whether the 6 batches have consistent schema semantics and field requirements.
 5. Only after review, propose a canonical import plan. No automatic promotion is recommended.
 
+
+
+## Additional structural QA across 252 terms
+- All 252 records use the same 21-field schema; no missing or unexpected fields were found.
+- All `category_id` values resolve to one of the 26 categories included in the same archive.
+- 118 non-`part` records have `null` in the five part-oriented fields (`function`, `location`, `working_principle`, `common_symptoms`, `testing_method`). This appears consistent by record kind, but should be confirmed as an intentional schema rule before import.
+- 38 records have an empty `synonyms` array.
+- Three `related_terms` references did not resolve to any `term_en` or synonym in the six archived batches:
+  - TERM-000218 → Suspension
+  - TERM-000224 → Seat Belt Pretensioner
+  - TERM-000235 → Suspension
+- These are referential-integrity review items, not proof that the underlying terms are invalid; the missing concepts may be intended for a later batch or may need normalization.
+
 ## Safety / scope
 - This audit did not edit or replace source batches.
 - No term has been marked verified.
