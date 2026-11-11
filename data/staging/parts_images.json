@@ -1,0 +1,47 @@
+[
+  {
+    "id": "IMG-INJ-001",
+    "subject": "Port Fuel Injector",
+    "url": "https://commons.wikimedia.org/wiki/File:Fuel_injector.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Fuel_injector.jpg",
+    "license_claim": "CC BY-SA 3.0",
+    "verification_status": "needs_review",
+    "notes": "Confirm image identity, author, exact license and attribution before production use."
+  },
+  {
+    "id": "IMG-GDI-001",
+    "subject": "GDI injector and high-pressure pump",
+    "url": "https://commons.wikimedia.org/wiki/File:Common_rail_diesel_injectors.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Common_rail_diesel_injectors.jpg",
+    "license_claim": null,
+    "verification_status": "needs_review",
+    "notes": "Likely diesel common-rail injectors, not gasoline GDI. Do not label as GDI unless independently confirmed."
+  },
+  {
+    "id": "IMG-SEN-001",
+    "subject": "Crankshaft position sensor (CKP)",
+    "url": "https://commons.wikimedia.org/wiki/File:Crankshaft_Position_Sensor.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Crankshaft_Position_Sensor.jpg",
+    "license_claim": "CC BY-SA 4.0",
+    "verification_status": "needs_review",
+    "notes": "Verify exact file, license and attribution."
+  },
+  {
+    "id": "IMG-IGN-001",
+    "subject": "Ignition coil and spark plug",
+    "url": "https://commons.wikimedia.org/wiki/File:Spark_plug_and_coil.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Spark_plug_and_coil.jpg",
+    "license_claim": "CC BY 2.0",
+    "verification_status": "needs_review",
+    "notes": "Verify exact file, license and attribution."
+  },
+  {
+    "id": "IMG-TURBO-001",
+    "subject": "Turbocharger cutaway",
+    "url": "https://commons.wikimedia.org/wiki/File:Turbocharger_cutaway.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Turbocharger_cutaway.jpg",
+    "license_claim": "CC BY-SA 3.0",
+    "verification_status": "needs_review",
+    "notes": "Verify license and whether wastegate is visible."
+  }
+]
