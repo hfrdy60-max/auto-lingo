@@ -5,7 +5,7 @@ Preliminary editorial and taxonomy review of the 252-term archived set in `AUTO_
 
 ## Summary
 - 17 candidate review findings recorded.
-- 5 P1 and 12 P2 findings.
+- 7 P1 and 10 P2 findings.
 - No source record changed.
 - No record was marked verified.
 - No canonical version was selected.
