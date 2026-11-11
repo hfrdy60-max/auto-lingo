@@ -72,3 +72,14 @@
 - Terms count discrepancy remains unresolved: this log previously recorded 41 terms in `terms_batch_01.json`; a separate AI report claims 82 across two batches, but `terms_batch_02.json` was not found in repository root or `data/` during the 2026-11-12 audit. Do not treat 82 as repository-verified until the second file is located.
 - No technical content was silently promoted to verified. Vehicle-specific repair values require vehicle-specific sources.
 - Next QA action: resolve the terms batch discrepancy, then build an explicit mapping file for image-manifest part/category IDs to canonical parts/categories.
+
+## Parts Batch 03 — QA intake (2026-11-12)
+- File: `parts_batch_03.json`
+- Batch: `PARTS-BATCH-003`; declared/actual records: 20.
+- IDs: `PART-000036`–`PART-000055`; all 20 unique and sequential; no duplicate IDs.
+- JSON parsed successfully; required descriptive fields present; every record includes a safety note and at least one source candidate.
+- Category IDs checked against canonical `categories.json`: CAT-07, CAT-10, CAT-11, CAT-12, CAT-13 all exist. No invented category IDs found.
+- All 20 records remain `needs_review` (correctly not promoted to verified).
+- Images: all 20 image URLs are null; image sourcing remains outstanding. This is preferable to fabricated or unlicensed image URLs.
+- Technical/source review still required: source_candidates are candidate references, not proof that every statement in every record is supported. Brake and steering content is safety-critical; test procedures and component descriptions require authoritative evidence and specialist review before publication.
+- Intake result: structurally accepted; not yet technically verified or production-ready.
