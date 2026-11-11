@@ -12,7 +12,7 @@
 <body>
 <header class="topbar">
  <a class="brand" href="#" id="homeLink"><span class="brand-mark">AL<span>✦</span></span><span class="brand-name">AUTO <b>LINGO</b><small>زبان تخصصی خودرو</small></span></a>
- <nav class="main-nav"><a href="#paths">مسیرهای یادگیری</a><a href="#dictionary">واژه‌نامه</a><a href="#how">روش یادگیری</a></nav>
+ <nav class="main-nav"><a href="#paths">مسیرهای یادگیری</a><a href="#myProgress">پیشرفت من</a><a href="#dictionary">واژه‌نامه</a><a href="#how">روش یادگیری</a></nav>
  <div class="top-actions"><span class="edition">LEARN • PRACTICE • MASTER</span><button class="mobile-menu" id="mobileMenu" aria-label="باز کردن منو">☰</button></div>
 </header>
 <main>
@@ -33,6 +33,11 @@
 <section class="section paths-section" id="paths">
  <div class="section-title"><div><span class="eyebrow">CHOOSE YOUR SPECIALTY</span><h2>مسیر تخصصی خودت را انتخاب کن</h2><p>هر تخصص، درس‌ها و پیشرفت مستقل خودش را دارد.</p></div><span class="section-index">01 / LEARNING PATHS</span></div>
  <div class="path-grid" id="pathGrid"></div>
+</section>
+<section class="section learner-dashboard" id="myProgress">
+ <div class="section-title"><div><span class="eyebrow">YOUR LEARNING JOURNEY</span><h2>گزارش پیشرفت من</h2><p>وضعیت یادگیری و پاسخ‌هایی را که نیاز به مرور دارند ببین.</p></div><span class="section-index">LEARNER DASHBOARD</span></div>
+ <div class="dashboard-stats" id="dashboardStats"></div>
+ <div class="mistakes-panel"><div class="mistakes-heading"><div><h3>دفترچه اشتباهات</h3><p>پاسخ‌های نادرستت اینجا ذخیره می‌شوند تا دوباره تمرین کنی.</p></div><button class="clear-mistakes" id="clearMistakes">پاک کردن دفترچه</button></div><div id="mistakeList"></div></div>
 </section>
 <section class="section path-detail hidden" id="pathDetail">
  <div class="detail-heading"><button class="back-btn" id="backPaths">→ بازگشت به مسیرها</button><div id="pathIntro"></div></div>
