@@ -88,7 +88,7 @@ jobs:
           report["duplicate_term_ids"] = {k:v for k,v in collections.Counter(ids).items() if v > 1}
           report["duplicate_term_en"] = {k:v for k,v in collections.Counter(en).items() if v > 1}
           report["duplicate_term_fa"] = {k:v for k,v in collections.Counter(fa).items() if v > 1}
-          active = root / "data/terms_batch_01.json"
+          active = root / "terms_batch_01.json"
           zip_batch01 = next((p for p in extracted.rglob("terms_batch_01.json")), None)
           if active.exists() and zip_batch01:
               a = active.read_bytes()
