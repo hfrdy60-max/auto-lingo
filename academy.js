@@ -107,6 +107,9 @@ const academyNodeDetails={
 ["موتور","سوخت و هوا در سیلندر یا مجرای ورودی ترکیب می‌شوند؛ محل پاشش به نوع سیستم وابسته است."],
 ["ECU و سنسورها","ECU داده سنسورها را پردازش می‌کند و زمان و مقدار پاشش را محاسبه می‌کند."]
 ]};
+function academyVocabMarkup(raw){
+ return '<div class="academy-vocab">'+raw.split(";").map(item=>{const pair=item.split("=");return '<article><b>'+((pair[0]||"").trim())+'</b><span>'+(pair.slice(1).join("=").trim())+'</span></article>'}).join("")+'</div>';
+}
 function academyDiagram(c){
  const names=c.id==="injection"?["باک و پمپ","فیلتر سوخت","ریل سوخت","انژکتور","موتور"]:c.flow;
  const nodes=names.map((n,i)=>'<button class="diagram-node" data-node="'+i+'"><small>مرحله '+faNum(i+1)+'</small><b>'+n+'</b></button>').join('<span class="diagram-arrow">←</span>');
@@ -118,7 +121,7 @@ function renderAcademy(){
  academyTabs.innerHTML=academyChapters.map((c,i)=>'<button class="academy-tab '+(i===activeChapter?'active':'')+'" data-chapter="'+i+'">'+c.title+'</button>').join('');
  academyTabs.querySelectorAll("button").forEach(b=>b.onclick=()=>{activeChapter=Number(b.dataset.chapter);activeSection=0;renderAcademy()});
  const c=academyChapters[activeChapter],s=c.sections[activeSection];
- academyContent.innerHTML='<span class="eyebrow">'+c.level+'</span><h3>'+c.title+'</h3><p>'+c.intro+'</p><div class="academy-flow">'+c.flow.map(x=>'<span>'+x+'</span>').join('')+'</div>'+academyDiagram(c)+'<div class="academy-tabs">'+c.sections.map((x,i)=>'<button class="academy-tab '+(i===activeSection?'active':'')+'" data-section="'+i+'">'+x[0]+'</button>').join('')+'</div><h4>'+s[0]+'</h4><p>'+s[1]+'</p><h4>واژگان کلیدی انگلیسی</h4><p>'+s[2]+'</p><div class="academy-note"><b>نکته آموزشی و ایمنی</b><p>برای مقادیر فشار، ولتاژ، مقاومت، روش تست و ترتیب بازکردن قطعات، مشخصات همان خودرو و دستورالعمل سازنده ملاک است. از تعمیم یک عدد یا روش به همه خودروها خودداری کن.</p></div><div class="academy-quiz"><b>سنجش سریع این فصل</b><p id="academyQuizText">در سیستم GDI سوخت به کجا تزریق می‌شود؟</p><div id="academyQuizOptions"></div><p id="academyQuizFeedback" class="review-feedback"></p></div>';
+ academyContent.innerHTML='<span class="eyebrow">'+c.level+'</span><h3>'+c.title+'</h3><p>'+c.intro+'</p><div class="academy-flow">'+c.flow.map(x=>'<span>'+x+'</span>').join('')+'</div>'+academyDiagram(c)+'<div class="academy-tabs">'+c.sections.map((x,i)=>'<button class="academy-tab '+(i===activeSection?'active':'')+'" data-section="'+i+'">'+x[0]+'</button>').join('')+'</div><h4>'+s[0]+'</h4><p>'+s[1]+'</p><h4>واژگان کلیدی انگلیسی</h4>'+academyVocabMarkup(s[2])+'<div class="academy-note"><b>نکته آموزشی و ایمنی</b><p>برای مقادیر فشار، ولتاژ، مقاومت، روش تست و ترتیب بازکردن قطعات، مشخصات همان خودرو و دستورالعمل سازنده ملاک است. از تعمیم یک عدد یا روش به همه خودروها خودداری کن.</p></div><div class="academy-quiz"><b>سنجش سریع این فصل</b><p id="academyQuizText">در سیستم GDI سوخت به کجا تزریق می‌شود؟</p><div id="academyQuizOptions"></div><p id="academyQuizFeedback" class="review-feedback"></p></div>';
  academyContent.querySelectorAll("[data-section]").forEach(b=>b.onclick=()=>{activeSection=Number(b.dataset.section);renderAcademy()});
  academyContent.querySelectorAll("[data-node]").forEach(b=>b.onclick=()=>{
   const idx=Number(b.dataset.node),details=academyNodeDetails[c.id]||c.flow.map(n=>[n,"این بخش بخشی از مسیر عملکرد «"+n+"» در سامانه "+c.title+" است."]);
