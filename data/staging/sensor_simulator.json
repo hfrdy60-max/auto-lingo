@@ -1,0 +1,29 @@
+[
+  {
+    "id": "SENSIM-MAP-001",
+    "sensor": "MAP",
+    "name_fa": "سنسور فشار مطلق منیفولد",
+    "verification_status": "needs_review",
+    "signal_model": "analog_voltage",
+    "example_range_v": [
+      0.5,
+      4.5
+    ],
+    "notes": "Illustrative range only. Transfer function and voltage range vary by sensor; configure by part number before numeric diagnosis."
+  },
+  {
+    "id": "SENSIM-CKP-001",
+    "sensor": "CKP",
+    "name_fa": "سنسور موقعیت میل‌لنگ",
+    "verification_status": "needs_review",
+    "signal_models": [
+      "hall_digital_square_wave",
+      "inductive_variable_reluctance_sine_wave"
+    ],
+    "features": [
+      "toothed_wheel",
+      "missing_tooth_reference"
+    ],
+    "notes": "Amplitude, polarity, tooth count, gap pattern and signal conditioning are application-specific."
+  }
+]
