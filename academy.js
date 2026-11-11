@@ -97,12 +97,35 @@ academyChapters.push(
 
 const academyTabs=document.getElementById("academyTabs"),academyContent=document.getElementById("academyContent");
 let activeChapter=0,activeSection=0;
+
+const academyNodeDetails={
+"injection":[
+["باک و پمپ","سوخت در باک ذخیره می‌شود. پمپ برقی آن را به مدار کم‌فشار می‌فرستد. در GDI پمپ فشاربالای جداگانه نیز وجود دارد."],
+["فیلتر سوخت","ذرات آلاینده را می‌گیرد. گرفتگی می‌تواند فشار یا دبی سوخت را کم کند."],
+["ریل سوخت","سوخت را بین انژکتورها توزیع می‌کند. در GDI فشار ریل با سنسور و شیر کنترل پایش می‌شود."],
+["انژکتور","با فرمان الکتریکی، مقدار کنترل‌شده‌ای سوخت را در محل طراحی‌شده می‌پاشد."],
+["موتور","سوخت و هوا در سیلندر یا مجرای ورودی ترکیب می‌شوند؛ محل پاشش به نوع سیستم وابسته است."],
+["ECU و سنسورها","ECU داده سنسورها را پردازش می‌کند و زمان و مقدار پاشش را محاسبه می‌کند."]
+]};
+function academyDiagram(c){
+ const names=c.id==="injection"?["باک و پمپ","فیلتر سوخت","ریل سوخت","انژکتور","موتور"]:c.flow;
+ const nodes=names.map((n,i)=>'<button class="diagram-node" data-node="'+i+'"><small>مرحله '+faNum(i+1)+'</small><b>'+n+'</b></button>').join('<span class="diagram-arrow">←</span>');
+ const details=academyNodeDetails[c.id]||names.map((n,i)=>[n,"این بخش بخشی از مسیر عملکرد «"+n+"» در سامانه "+c.title+" است. برای عیب‌یابی، داده ورودی، تغذیه، ارتباط شبکه و خروجی عملگر را طبق نقشه همان خودرو بررسی کن."]);
+ return '<section class="academy-diagram"><div class="diagram-heading"><div><span class="eyebrow">HOW THE SYSTEM WORKS</span><h4>نقشه تعاملی عملکرد سیستم</h4></div><span class="diagram-hint">روی هر مرحله بزن</span></div><div class="diagram-track">'+nodes+'</div><div class="diagram-detail" id="diagramDetail"><b>'+details[0][0]+'</b><p>'+details[0][1]+'</p></div>'+(c.id==="injection"?'<div class="ecu-feedback"><span>سنسورها: CKP • CMP • MAF/MAP • ECT • O₂</span><i>اطلاعات به ECU می‌رسد</i><span>ECU زمان پاشش و فرمان پمپ را مدیریت می‌کند</span></div>':'')+'</section>';
+}
+
 function renderAcademy(){
  academyTabs.innerHTML=academyChapters.map((c,i)=>'<button class="academy-tab '+(i===activeChapter?'active':'')+'" data-chapter="'+i+'">'+c.title+'</button>').join('');
  academyTabs.querySelectorAll("button").forEach(b=>b.onclick=()=>{activeChapter=Number(b.dataset.chapter);activeSection=0;renderAcademy()});
  const c=academyChapters[activeChapter],s=c.sections[activeSection];
- academyContent.innerHTML='<span class="eyebrow">'+c.level+'</span><h3>'+c.title+'</h3><p>'+c.intro+'</p><div class="academy-flow">'+c.flow.map(x=>'<span>'+x+'</span>').join('')+'</div><div class="academy-tabs">'+c.sections.map((x,i)=>'<button class="academy-tab '+(i===activeSection?'active':'')+'" data-section="'+i+'">'+x[0]+'</button>').join('')+'</div><h4>'+s[0]+'</h4><p>'+s[1]+'</p><h4>واژگان کلیدی انگلیسی</h4><p>'+s[2]+'</p><div class="academy-note"><b>نکته آموزشی و ایمنی</b><p>برای مقادیر فشار، ولتاژ، مقاومت، روش تست و ترتیب بازکردن قطعات، مشخصات همان خودرو و دستورالعمل سازنده ملاک است. از تعمیم یک عدد یا روش به همه خودروها خودداری کن.</p></div><div class="academy-quiz"><b>سنجش سریع این فصل</b><p id="academyQuizText">در سیستم GDI سوخت به کجا تزریق می‌شود؟</p><div id="academyQuizOptions"></div><p id="academyQuizFeedback" class="review-feedback"></p></div>';
+ academyContent.innerHTML='<span class="eyebrow">'+c.level+'</span><h3>'+c.title+'</h3><p>'+c.intro+'</p><div class="academy-flow">'+c.flow.map(x=>'<span>'+x+'</span>').join('')+'</div>'+academyDiagram(c)+'<div class="academy-tabs">'+c.sections.map((x,i)=>'<button class="academy-tab '+(i===activeSection?'active':'')+'" data-section="'+i+'">'+x[0]+'</button>').join('')+'</div><h4>'+s[0]+'</h4><p>'+s[1]+'</p><h4>واژگان کلیدی انگلیسی</h4><p>'+s[2]+'</p><div class="academy-note"><b>نکته آموزشی و ایمنی</b><p>برای مقادیر فشار، ولتاژ، مقاومت، روش تست و ترتیب بازکردن قطعات، مشخصات همان خودرو و دستورالعمل سازنده ملاک است. از تعمیم یک عدد یا روش به همه خودروها خودداری کن.</p></div><div class="academy-quiz"><b>سنجش سریع این فصل</b><p id="academyQuizText">در سیستم GDI سوخت به کجا تزریق می‌شود؟</p><div id="academyQuizOptions"></div><p id="academyQuizFeedback" class="review-feedback"></p></div>';
  academyContent.querySelectorAll("[data-section]").forEach(b=>b.onclick=()=>{activeSection=Number(b.dataset.section);renderAcademy()});
+ academyContent.querySelectorAll("[data-node]").forEach(b=>b.onclick=()=>{
+  const idx=Number(b.dataset.node),details=academyNodeDetails[c.id]||c.flow.map(n=>[n,"این بخش بخشی از مسیر عملکرد «"+n+"» در سامانه "+c.title+" است."]);
+  academyContent.querySelectorAll("[data-node]").forEach(x=>x.classList.toggle("selected",x===b));
+  const d=details[idx]||[c.flow[idx],"اطلاعات این مرحله را در بخش توضیحات فصل بخوان."];const box=document.getElementById("diagramDetail");box.innerHTML="<b>"+d[0]+"</b><p>"+d[1]+"</p>";
+ });
+
  const qbank=activeChapter===0?[["در سیستم GDI سوخت کجا پاشیده می‌شود؟",["داخل سیلندر","داخل باک","داخل رادیاتور"],0],["IPW به چه معناست؟",["فشار روغن","پهنای پالس انژکتور","دمای هوا"],1],["کدام پارامتر اصلاح سوخت کوتاه‌مدت است؟",["STFT","ECT","CKP"],0]]:activeChapter===1?[["ACC چه قابلیتی است؟",["کروز تطبیقی","ترمز پارک برقی","سنسور باران"],0],["وظیفه Gateway چیست؟",["پمپاژ سوخت","مدیریت ارتباط بین شبکه‌ها","شارژ باتری"],1],["BMS مربوط به کدام بخش است؟",["مدیریت باتری","تهویه","چراغ جلو"],0]]:[["Freeze Frame چه چیزی را نگه می‌دارد؟",["شرایط زمان ثبت خطا","نقشه موتور","کد سوئیچ"],0],["BCM بیشتر با کدام بخش مرتبط است؟",["کنترل بدنه","توربوشارژر","روغن‌کاری"],0],["Live Data چیست؟",["داده جاری ماژول","کد مکانیکی","نقشه سیم‌پیچ"],0]];
  let qi=0;const drawQ=()=>{const q=qbank[qi%qbank.length];document.getElementById("academyQuizText").textContent=q[0];document.getElementById("academyQuizOptions").innerHTML=q[1].map((o,i)=>'<button class="answer-option" data-q="'+i+'">'+o+'</button>').join('');document.querySelectorAll("[data-q]").forEach(b=>b.onclick=()=>{const ok=Number(b.dataset.q)===q[2];document.querySelectorAll("[data-q]").forEach(x=>{x.disabled=true;if(Number(x.dataset.q)===q[2])x.classList.add("correct")});document.getElementById("academyQuizFeedback").textContent=ok?"درست پاسخ دادی!":"پاسخ درست: "+q[1][q[2]];qi++})};drawQ();
 }
