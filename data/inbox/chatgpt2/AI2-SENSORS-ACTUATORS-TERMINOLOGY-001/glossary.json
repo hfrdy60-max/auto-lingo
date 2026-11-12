@@ -1,0 +1,1931 @@
+{
+  "schema_version": "1.0.0",
+  "mission_id": "AI2-SENSORS-ACTUATORS-TERMINOLOGY-001",
+  "status": "candidate_unverified",
+  "counts": {
+    "total": 65,
+    "sensors": 18,
+    "signals": 12,
+    "actuators": 16,
+    "diagnostic": 19
+  },
+  "records": [
+    {
+      "local_id": "SA-001",
+      "term_en": "Crankshaft position sensor (CKP)",
+      "term_fa": "حسگر موقعیت میل‌لنگ",
+      "pronunciation_fa": "کِرَنک‌شَفت پِزیشِن سِنسر",
+      "ipa": "/ˈkræŋkʃæft pəˈzɪʃən ˈsɛnsər/",
+      "definition_fa": "موقعیت و سرعت چرخش میل‌لنگ را برای راهبرد کنترل موتور گزارش می‌کند.",
+      "example_en": "The CKP signal provides crankshaft position information.",
+      "example_fa": "سیگنال CKP اطلاعات موقعیت میل‌لنگ را فراهم می‌کند.",
+      "collocations": [
+        "crankshaft position signal",
+        "engine speed reference"
+      ],
+      "workshop_note_fa": "نوع القایی یا اثر هال را نباید بدون اطلاعات فنی خودرو حدس زد.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-001",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Functional principle; crankshaft position sensor function."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-002",
+      "term_en": "Camshaft position sensor (CMP)",
+      "term_fa": "حسگر موقعیت میل‌بادامک",
+      "pronunciation_fa": "کَم‌شَفت پِزیشِن سِنسر",
+      "ipa": "/ˈkæmʃæft pəˈzɪʃən ˈsɛnsər/",
+      "definition_fa": "اطلاعات موقعیت و فاز میل‌بادامک را برای مدیریت موتور فراهم می‌کند.",
+      "example_en": "The CMP signal provides camshaft phase information.",
+      "example_fa": "سیگنال CMP اطلاعات فاز میل‌بادامک را فراهم می‌کند.",
+      "collocations": [
+        "camshaft phase",
+        "cylinder identification"
+      ],
+      "workshop_note_fa": "نقش آن به راهبرد مدیریت موتور وابسته است.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-002",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function and operating principle."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-003",
+      "term_en": "Manifold absolute pressure sensor (MAP)",
+      "term_fa": "حسگر فشار مطلق منیفولد",
+      "pronunciation_fa": "مَنیفولد اَبسولوت پِرِشِر سِنسر",
+      "ipa": "/ˈmænɪfoʊld ˈæbsəluːt ˈprɛʃər ˈsɛnsər/",
+      "definition_fa": "فشار مطلق منیفولد ورودی را گزارش می‌کند و می‌تواند در برآورد بار موتور به کار رود.",
+      "example_en": "The MAP sensor reports intake manifold pressure.",
+      "example_fa": "حسگر MAP فشار منیفولد ورودی را گزارش می‌کند.",
+      "collocations": [
+        "manifold pressure reading",
+        "engine load estimate"
+      ],
+      "workshop_note_fa": "فشار مطلق را با فشار نسبی یا خلأ یکی ندانید.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-004",
+      "term_en": "Mass air flow sensor (MAF)",
+      "term_fa": "حسگر جرم جریان هوا",
+      "pronunciation_fa": "مَس اِر فلو سِنسر",
+      "ipa": "/mæs ɛr floʊ ˈsɛnsər/",
+      "definition_fa": "جرم هوای ورودی به موتور را اندازه‌گیری یا برآورد می‌کند.",
+      "example_en": "The MAF sensor measures incoming air mass.",
+      "example_fa": "حسگر MAF جرم هوای ورودی را اندازه‌گیری می‌کند.",
+      "collocations": [
+        "air mass measurement",
+        "intake air flow"
+      ],
+      "workshop_note_fa": "جرم هوا با حجم جریان هوا یکسان نیست.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-005",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function section."
+        },
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-005",
+      "term_en": "Throttle position sensor (TPS)",
+      "term_fa": "حسگر موقعیت دریچه گاز",
+      "pronunciation_fa": "ثْراتِل پِزیشِن سِنسر",
+      "ipa": "/ˈθrɑːtəl pəˈzɪʃən ˈsɛnsər/",
+      "definition_fa": "موقعیت دریچه گاز را به واحد کنترل گزارش می‌کند.",
+      "example_en": "The TPS reports throttle plate position.",
+      "example_fa": "حسگر TPS موقعیت صفحه دریچه گاز را گزارش می‌کند.",
+      "collocations": [
+        "throttle angle",
+        "position feedback"
+      ],
+      "workshop_note_fa": "TPS را با APP که موقعیت پدال را گزارش می‌کند اشتباه نگیرید.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-006",
+      "term_en": "Accelerator pedal position sensor (APP)",
+      "term_fa": "حسگر موقعیت پدال گاز",
+      "pronunciation_fa": "اَکسِلِرِیتِر پِدِل پِزیشِن سِنسر",
+      "ipa": "/əkˈsɛləreɪtər ˈpɛdəl pəˈzɪʃən ˈsɛnsər/",
+      "definition_fa": "درخواست راننده را از طریق موقعیت پدال به واحد کنترل منتقل می‌کند.",
+      "example_en": "The APP sensor reports the driver's pedal request.",
+      "example_fa": "حسگر APP درخواست راننده از طریق پدال را گزارش می‌کند.",
+      "collocations": [
+        "pedal position signal",
+        "driver demand"
+      ],
+      "workshop_note_fa": "تعداد مسیرهای سیگنال و منطق هم‌خوانی مدل‌محور است.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-006",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function/design sections."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-007",
+      "term_en": "Engine coolant temperature sensor (ECT)",
+      "term_fa": "حسگر دمای مایع خنک‌کننده موتور",
+      "pronunciation_fa": "اِنجین کولَنت تِمپِرِچِر سِنسر",
+      "ipa": "/ˈɛndʒɪn ˈkuːlənt ˈtɛmprətʃər ˈsɛnsər/",
+      "definition_fa": "دمای مایع خنک‌کننده را برای راهبردهای مدیریت حرارتی و موتور گزارش می‌کند.",
+      "example_en": "The ECT value changes as the engine warms up.",
+      "example_fa": "مقدار ECT با گرم شدن موتور تغییر می‌کند.",
+      "collocations": [
+        "coolant temperature value",
+        "engine warm-up"
+      ],
+      "workshop_note_fa": "منحنی مشخصه و نوع حسگر را از سند همان خودرو بگیرید.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-004",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function and fault-description sections."
+        },
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-008",
+      "term_en": "Intake air temperature sensor (IAT)",
+      "term_fa": "حسگر دمای هوای ورودی",
+      "pronunciation_fa": "اینتِیک اِر تِمپِرِچِر سِنسر",
+      "ipa": "/ˈɪnteɪk ɛr ˈtɛmprətʃər ˈsɛnsər/",
+      "definition_fa": "دمای هوای ورودی را گزارش می‌کند؛ این داده ممکن است در محاسبات چگالی هوا استفاده شود.",
+      "example_en": "The IAT reading reflects intake air temperature.",
+      "example_fa": "مقدار IAT دمای هوای ورودی را نشان می‌دهد.",
+      "collocations": [
+        "intake air temperature",
+        "temperature compensation"
+      ],
+      "workshop_note_fa": "محل نصب ممکن است مستقل یا یکپارچه باشد.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-003",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function section."
+        },
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-009",
+      "term_en": "Narrowband oxygen sensor",
+      "term_fa": "حسگر اکسیژن باریک‌باند",
+      "pronunciation_fa": "نَرو بَند آکسِجِن سِنسر",
+      "ipa": "/ˈnæroʊbænd ˈɑːksɪdʒən ˈsɛnsər/",
+      "definition_fa": "حسگر اگزوز با پاسخ محدودتر پیرامون نسبت استوکیومتری برای بازخورد مخلوط.",
+      "example_en": "The narrowband oxygen sensor provides mixture feedback.",
+      "example_fa": "حسگر اکسیژن باریک‌باند بازخورد مخلوط را فراهم می‌کند.",
+      "collocations": [
+        "exhaust oxygen feedback",
+        "rich/lean indication"
+      ],
+      "workshop_note_fa": "خروجی آن را معادل اندازه‌گیری مستقیم گسترده نسبت هوا به سوخت ندانید.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-010",
+      "term_en": "Wideband air-fuel ratio sensor",
+      "term_fa": "حسگر پهن‌باند نسبت هوا به سوخت",
+      "pronunciation_fa": "واید بَند اِر فیوئِل رِیشیو سِنسر",
+      "ipa": "/ˈwaɪdˌbænd ɛr fjuːəl ˈreɪʃioʊ ˈsɛnsər/",
+      "definition_fa": "اطلاعات گسترده‌تری از نسبت هوا به سوخت برای کنترل موتور فراهم می‌کند.",
+      "example_en": "The wideband sensor reports air-fuel mixture information.",
+      "example_fa": "حسگر پهن‌باند اطلاعات نسبت هوا به سوخت را گزارش می‌کند.",
+      "collocations": [
+        "air-fuel ratio feedback",
+        "lambda measurement"
+      ],
+      "workshop_note_fa": "نام پارامترهای داده زنده به سازنده و ابزار وابسته است.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-011",
+      "term_en": "Wheel speed sensor (WSS)",
+      "term_fa": "حسگر سرعت چرخ",
+      "pronunciation_fa": "ویل سپید سِنسر",
+      "ipa": "/wiːl spiːd ˈsɛnsər/",
+      "definition_fa": "سرعت چرخ را برای سامانه‌هایی مانند ABS و کنترل پایداری گزارش می‌کند.",
+      "example_en": "The wheel speed sensor supplies rotation data to the ABS controller.",
+      "example_fa": "حسگر سرعت چرخ داده چرخش را به واحد ABS می‌فرستد.",
+      "collocations": [
+        "wheel speed signal",
+        "ABS input"
+      ],
+      "workshop_note_fa": "فناوری حسگر فعال یا غیرفعال بین خودروها متفاوت است.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-012",
+      "term_en": "Fuel rail pressure sensor",
+      "term_fa": "حسگر فشار ریل سوخت",
+      "pronunciation_fa": "فیول رِیل پِرِشِر سِنسر",
+      "ipa": "/ˈfjuːəl reɪl ˈprɛʃər ˈsɛnsər/",
+      "definition_fa": "فشار سوخت در ریل را به سامانه کنترل گزارش می‌کند.",
+      "example_en": "The fuel rail pressure sensor reports pressure information.",
+      "example_fa": "حسگر فشار ریل سوخت اطلاعات فشار را گزارش می‌کند.",
+      "collocations": [
+        "rail pressure feedback",
+        "fuel pressure value"
+      ],
+      "workshop_note_fa": "هیچ مقدار فشار یا مشخصه الکتریکی عمومی برای همه سامانه‌ها وجود ندارد.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-013",
+      "term_en": "Barometric pressure sensor (BARO)",
+      "term_fa": "حسگر فشار جو",
+      "pronunciation_fa": "بَرومِتریک پِرِشِر سِنسر",
+      "ipa": "/ˌbærəˈmɛtrɪk ˈprɛʃər ˈsɛnsər/",
+      "definition_fa": "فشار جو را برای جبران شرایط محیطی و محاسبات موتور گزارش می‌کند.",
+      "example_en": "The BARO value represents ambient pressure.",
+      "example_fa": "مقدار BARO فشار محیط را نشان می‌دهد.",
+      "collocations": [
+        "ambient pressure",
+        "altitude compensation"
+      ],
+      "workshop_note_fa": "برخی خودروها فشار جو را از حسگر مستقل و برخی به روش دیگر برآورد می‌کنند.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-014",
+      "term_en": "Knock sensor",
+      "term_fa": "حسگر ضربه موتور",
+      "pronunciation_fa": "ناک سِنسر",
+      "ipa": "/nɑːk ˈsɛnsər/",
+      "definition_fa": "ارتعاشات مرتبط با احتراق ضربه‌ای را برای راهبرد کنترل جرقه گزارش می‌کند.",
+      "example_en": "The knock sensor provides vibration information.",
+      "example_fa": "حسگر ضربه اطلاعات ارتعاشی را فراهم می‌کند.",
+      "collocations": [
+        "knock detection",
+        "ignition timing correction"
+      ],
+      "workshop_note_fa": "هر ارتعاشی به معنی ناک نیست؛ پردازش سازنده اهمیت دارد.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-015",
+      "term_en": "Exhaust gas temperature sensor (EGT)",
+      "term_fa": "حسگر دمای گاز اگزوز",
+      "pronunciation_fa": "اِگزاُست گَس تِمپِرِچِر سِنسر",
+      "ipa": "/ɪɡˈzɔːst ɡæs ˈtɛmprətʃər ˈsɛnsər/",
+      "definition_fa": "دمای گاز اگزوز را در محل نصب خود گزارش می‌کند.",
+      "example_en": "The EGT sensor reports exhaust temperature.",
+      "example_fa": "حسگر EGT دمای گاز اگزوز را گزارش می‌کند.",
+      "collocations": [
+        "exhaust temperature reading",
+        "thermal protection"
+      ],
+      "workshop_note_fa": "محل و کاربرد حسگر بین سامانه‌ها یکسان نیست.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-016",
+      "term_en": "Nitrogen oxide sensor (NOx)",
+      "term_fa": "حسگر اکسیدهای نیتروژن",
+      "pronunciation_fa": "نایتروژِن آکساید سِنسر",
+      "ipa": "/naɪˈtrɑːdʒən ˈɑːksaɪd ˈsɛnsər/",
+      "definition_fa": "میزان اکسیدهای نیتروژن اگزوز را برای پایش سامانه آلایندگی گزارش می‌کند.",
+      "example_en": "The NOx sensor provides emissions feedback.",
+      "example_fa": "حسگر NOx بازخوردی برای سامانه آلایندگی فراهم می‌کند.",
+      "collocations": [
+        "NOx concentration",
+        "aftertreatment feedback"
+      ],
+      "workshop_note_fa": "ممکن است مجموعه حسگر دارای واحد الکترونیکی اختصاصی باشد.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-017",
+      "term_en": "Transmission input speed sensor",
+      "term_fa": "حسگر سرعت ورودی گیربکس",
+      "pronunciation_fa": "ترَنزمیشِن اینپوت سپید سِنسر",
+      "ipa": "/trænzˈmɪʃən ˈɪnpʊt spiːd ˈsɛnsər/",
+      "definition_fa": "سرعت عضو ورودی گیربکس را برای کنترل انتقال قدرت گزارش می‌کند.",
+      "example_en": "The input speed value appears in the transmission data list.",
+      "example_fa": "مقدار سرعت ورودی در فهرست داده‌های گیربکس دیده می‌شود.",
+      "collocations": [
+        "input shaft speed",
+        "transmission speed data"
+      ],
+      "workshop_note_fa": "نام پارامتر به نوع گیربکس وابسته است.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-018",
+      "term_en": "EGR position sensor",
+      "term_fa": "حسگر موقعیت شیر EGR",
+      "pronunciation_fa": "ای جی آر پِزیشِن سِنسر",
+      "ipa": "/ˌiː dʒiː ˈɑːr pəˈzɪʃən ˈsɛnsər/",
+      "definition_fa": "در سامانه‌های مجهز به بازخورد، موقعیت شیر EGR را گزارش می‌کند.",
+      "example_en": "The EGR position sensor reports valve feedback.",
+      "example_fa": "حسگر موقعیت EGR بازخورد وضعیت شیر را گزارش می‌کند.",
+      "collocations": [
+        "EGR valve position",
+        "position feedback"
+      ],
+      "workshop_note_fa": "برخی طراحی‌ها بازخورد موقعیت مجزا ندارند.",
+      "category": "sensor",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        },
+        {
+          "source_id": "SRC-SA-011",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function/structure sections."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-019",
+      "term_en": "Analog output signal",
+      "term_fa": "سیگنال خروجی آنالوگ",
+      "pronunciation_fa": "اَنَلُگ آوت‌پوت سیگنَل",
+      "ipa": "/ˈænəlɔːɡ ˈaʊtpʊt ˈsɪɡnəl/",
+      "definition_fa": "سیگنالی پیوسته که مقدار آن در یک بازه با کمیت ورودی تغییر می‌کند.",
+      "example_en": "The sensor provides an analog output signal.",
+      "example_fa": "حسگر سیگنال خروجی آنالوگ فراهم می‌کند.",
+      "collocations": [
+        "analog signal level",
+        "continuous output"
+      ],
+      "workshop_note_fa": "آنالوگ بودن به‌تنهایی نوع حسگر یا محدوده مجاز را تعیین نمی‌کند.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-020",
+      "term_en": "Digital output signal",
+      "term_fa": "سیگنال خروجی دیجیتال",
+      "pronunciation_fa": "دیجیتَل آوت‌پوت سیگنَل",
+      "ipa": "/ˈdɪdʒɪtəl ˈaʊtpʊt ˈsɪɡnəl/",
+      "definition_fa": "سیگنالی با حالت‌ها یا داده‌های گسسته که می‌تواند به شکل پالس یا پیام منتقل شود.",
+      "example_en": "The controller receives a digital output signal.",
+      "example_fa": "واحد کنترل سیگنال خروجی دیجیتال دریافت می‌کند.",
+      "collocations": [
+        "digital signal state",
+        "digital message"
+      ],
+      "workshop_note_fa": "سیگنال دیجیتال الزاماً فقط موج مربعی ساده نیست.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-021",
+      "term_en": "Frequency signal",
+      "term_fa": "سیگنال فرکانسی",
+      "pronunciation_fa": "فریکوِنسی سیگنَل",
+      "ipa": "/ˈfriːkwənsi ˈsɪɡnəl/",
+      "definition_fa": "سیگنالی که فرکانس تکرار آن با کمیت یا وضعیت موردنظر ارتباط دارد.",
+      "example_en": "The scan tool displays the signal frequency.",
+      "example_fa": "دستگاه عیب‌یاب فرکانس سیگنال را نمایش می‌دهد.",
+      "collocations": [
+        "signal frequency",
+        "frequency response"
+      ],
+      "workshop_note_fa": "رابطه فرکانس و کمیت اندازه‌گیری‌شده به همان سامانه وابسته است.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-022",
+      "term_en": "Pulse train",
+      "term_fa": "قطار پالس",
+      "pronunciation_fa": "پالس تِرِین",
+      "ipa": "/pʌls treɪn/",
+      "definition_fa": "دنباله‌ای از پالس‌های تکرارشونده که ویژگی‌های زمانی آن می‌تواند اطلاعات حمل کند.",
+      "example_en": "The controller interprets the pulse train as timing information.",
+      "example_fa": "واحد کنترل قطار پالس را به‌عنوان اطلاعات زمان‌بندی تفسیر می‌کند.",
+      "collocations": [
+        "pulse train pattern",
+        "repeating pulses"
+      ],
+      "workshop_note_fa": "تعداد و شکل پالس‌ها در هر کاربرد متفاوت است.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-001",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Functional principle; crankshaft position sensor function."
+        },
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-023",
+      "term_en": "Pulse width",
+      "term_fa": "پهنای پالس",
+      "pronunciation_fa": "پالس ویدث",
+      "ipa": "/pʌls wɪdθ/",
+      "definition_fa": "مدت زمانی که پالس در حالت فعال قرار دارد.",
+      "example_en": "The report includes pulse width as a signal characteristic.",
+      "example_fa": "گزارش پهنای پالس را به‌عنوان ویژگی سیگنال ذکر می‌کند.",
+      "collocations": [
+        "pulse width measurement",
+        "pulse duration"
+      ],
+      "workshop_note_fa": "پهنای پالس با چرخه کاری مرتبط است اما مترادف کامل آن نیست.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-024",
+      "term_en": "Signal amplitude",
+      "term_fa": "دامنه سیگنال",
+      "pronunciation_fa": "سیگنَل اَمپلیتود",
+      "ipa": "/ˈsɪɡnəl ˈæmplɪtuːd/",
+      "definition_fa": "اندازه تغییر سیگنال نسبت به مرجع تعریف‌شده.",
+      "example_en": "The signal amplitude changes with the operating condition.",
+      "example_fa": "دامنه سیگنال با شرایط کاری تغییر می‌کند.",
+      "collocations": [
+        "signal amplitude level",
+        "amplitude variation"
+      ],
+      "workshop_note_fa": "برای مقایسه باید مرجع و شیوه بیان دامنه مشخص باشد.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-025",
+      "term_en": "Signal operating range",
+      "term_fa": "بازه عملکرد سیگنال",
+      "pronunciation_fa": "سیگنَل آپِرِیتینگ رِینج",
+      "ipa": "/ˈsɪɡnəl ˈɑːpəreɪtɪŋ reɪndʒ/",
+      "definition_fa": "محدوده مقادیری که برای کاربرد و شرایط مشخص، عملکرد مورد انتظار در آن تعریف شده است.",
+      "example_en": "The signal remains within its specified operating range.",
+      "example_fa": "سیگنال در بازه عملکرد تعیین‌شده باقی می‌ماند.",
+      "collocations": [
+        "specified signal range",
+        "operating window"
+      ],
+      "workshop_note_fa": "محدوده معتبر را باید از داده فنی همان خودرو گرفت.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-013",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Definitions: general circuit malfunction; range/performance."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-026",
+      "term_en": "Sensor offset",
+      "term_fa": "آفست حسگر؛ انحراف مبنا",
+      "pronunciation_fa": "سِنسر آف‌سِت",
+      "ipa": "/ˈsɛnsər ˈɔːfsɛt/",
+      "definition_fa": "اختلاف پایه میان خروجی حسگر و مقدار مرجع مورد انتظار در شرایط تعریف‌شده.",
+      "example_en": "A sensor offset may affect the reported value.",
+      "example_fa": "آفست حسگر ممکن است بر مقدار گزارش‌شده اثر بگذارد.",
+      "collocations": [
+        "zero offset",
+        "offset compensation"
+      ],
+      "workshop_note_fa": "آفست ممکن است ویژگی طراحی یا نشانه خطا باشد؛ علت را بدون شواهد تعیین نکنید.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-027",
+      "term_en": "Signal bias",
+      "term_fa": "بایاس سیگنال",
+      "pronunciation_fa": "سیگنَل بایِس",
+      "ipa": "/ˈsɪɡnəl ˈbaɪəs/",
+      "definition_fa": "سطح یا جابه‌جایی الکتریکی عمدی یا مشاهده‌شده که برای تعریف حالت سیگنال به کار می‌رود.",
+      "example_en": "The note refers to a signal bias condition.",
+      "example_fa": "یادداشت به وضعیت بایاس سیگنال اشاره می‌کند.",
+      "collocations": [
+        "bias voltage",
+        "biased input"
+      ],
+      "workshop_note_fa": "معنای دقیق bias به طراحی مدار وابسته است.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-028",
+      "term_en": "Signal dropout",
+      "term_fa": "قطع لحظه‌ای سیگنال",
+      "pronunciation_fa": "سیگنَل دراپ‌آوت",
+      "ipa": "/ˈsɪɡnəl ˈdrɑːpˌaʊt/",
+      "definition_fa": "از دست رفتن موقت اطلاعات سیگنال در بخشی از زمان عملکرد.",
+      "example_en": "The event log shows a brief signal dropout.",
+      "example_fa": "ثبت رویداد قطع لحظه‌ای سیگنال را نشان می‌دهد.",
+      "collocations": [
+        "intermittent signal dropout",
+        "data dropout"
+      ],
+      "workshop_note_fa": "این مشاهده به‌تنهایی قطعه معیوب را مشخص نمی‌کند.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-001",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Functional principle; crankshaft position sensor function."
+        },
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-029",
+      "term_en": "Signal saturation",
+      "term_fa": "اشباع سیگنال",
+      "pronunciation_fa": "سیگنَل سَچِرِیشِن",
+      "ipa": "/ˈsɪɡnəl ˌsætʃəˈreɪʃən/",
+      "definition_fa": "وضعیتی که خروجی به حد بالایی یا پایینی قابل ارائه می‌رسد.",
+      "example_en": "The displayed value appears to reach signal saturation.",
+      "example_fa": "به نظر می‌رسد مقدار نمایش‌داده‌شده به اشباع سیگنال رسیده است.",
+      "collocations": [
+        "upper saturation",
+        "lower saturation"
+      ],
+      "workshop_note_fa": "اشباع می‌تواند محدودیت طبیعی بازه یا وضعیت غیرعادی باشد.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-030",
+      "term_en": "Sensor response time",
+      "term_fa": "زمان پاسخ حسگر",
+      "pronunciation_fa": "سِنسر ریسپانس تایم",
+      "ipa": "/ˈsɛnsər rɪˈspɑːns taɪm/",
+      "definition_fa": "مدت لازم برای رسیدن خروجی حسگر به سطح پاسخ تعریف‌شده پس از تغییر ورودی.",
+      "example_en": "The sensor response time is part of the specification.",
+      "example_fa": "زمان پاسخ حسگر بخشی از مشخصات است.",
+      "collocations": [
+        "response time specification",
+        "dynamic response"
+      ],
+      "workshop_note_fa": "معیار و حد مجاز باید از مشخصات همان قطعه گرفته شود.",
+      "category": "signal",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-031",
+      "term_en": "Solenoid actuator",
+      "term_fa": "عملگر سلونوئیدی",
+      "pronunciation_fa": "سولِنُوید اَکچوِیتِر",
+      "ipa": "/ˈsoʊləˌnɔɪd ˈæktʃueɪtər/",
+      "definition_fa": "عملگر الکترومغناطیسی که با تحریک سیم‌پیچ حرکت یا تغییر وضعیت ایجاد می‌کند.",
+      "example_en": "The solenoid actuator changes the valve position.",
+      "example_fa": "عملگر سلونوئیدی موقعیت شیر را تغییر می‌دهد.",
+      "collocations": [
+        "solenoid coil",
+        "linear actuation"
+      ],
+      "workshop_note_fa": "طراحی و شیوه کنترل در خودروها متفاوت است.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        },
+        {
+          "source_id": "SRC-SA-011",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function/structure sections."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-032",
+      "term_en": "Fuel injector",
+      "term_fa": "انژکتور سوخت",
+      "pronunciation_fa": "فیول اینجِکتِر",
+      "ipa": "/ˈfjuːəl ɪnˈdʒɛktər/",
+      "definition_fa": "عملگری که مطابق راهبرد کنترل، سوخت را به مسیر یا محفظه تعیین‌شده تزریق می‌کند.",
+      "example_en": "The fuel injector delivers fuel when commanded.",
+      "example_fa": "انژکتور سوخت طبق فرمان، سوخت را تزریق می‌کند.",
+      "collocations": [
+        "injector pulse",
+        "fuel delivery"
+      ],
+      "workshop_note_fa": "نوع تزریق و راه‌اندازی به سامانه سوخت‌رسانی وابسته است.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-009",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function section."
+        },
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-033",
+      "term_en": "Ignition coil",
+      "term_fa": "کویل جرقه‌زنی",
+      "pronunciation_fa": "ایگنیشِن کویل",
+      "ipa": "/ɪɡˈnɪʃən kɔɪl/",
+      "definition_fa": "جزء الکتریکی سامانه جرقه‌زنی که انرژی لازم برای ایجاد جرقه را فراهم می‌کند.",
+      "example_en": "The ignition coil is part of the engine ignition system.",
+      "example_fa": "کویل جرقه‌زنی بخشی از سامانه جرقه موتور است.",
+      "collocations": [
+        "coil-on-plug",
+        "ignition event"
+      ],
+      "workshop_note_fa": "این واژه‌نامه صرفاً مفهوم را توضیح می‌دهد و روش کار با مدار جرقه را آموزش نمی‌دهد.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-010",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function and design sections."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-034",
+      "term_en": "Electronic throttle actuator",
+      "term_fa": "عملگر دریچه گاز الکترونیکی",
+      "pronunciation_fa": "اِلِکترانیک ثْراتِل اَکچوِیتِر",
+      "ipa": "/ɪˌlɛkˈtrɑːnɪk ˈθrɑːtəl ˈæktʃueɪtər/",
+      "definition_fa": "محرکی که طبق فرمان واحد کنترل زاویه دریچه گاز را تغییر می‌دهد.",
+      "example_en": "The electronic throttle actuator moves the throttle plate on command.",
+      "example_fa": "عملگر دریچه گاز الکترونیکی صفحه دریچه را طبق فرمان جابه‌جا می‌کند.",
+      "collocations": [
+        "throttle actuator command",
+        "throttle plate movement"
+      ],
+      "workshop_note_fa": "فرمان و بازخورد موقعیت دو داده جداگانه‌اند.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-035",
+      "term_en": "Evaporative purge valve",
+      "term_fa": "شیر تخلیه بخارات سامانه EVAP",
+      "pronunciation_fa": "اِوَپِرِیتیو پِرج وَلْو",
+      "ipa": "/ɪˈvæpəreɪtɪv pɜːrdʒ vælv/",
+      "definition_fa": "شیری که بخارات ذخیره‌شده سوخت را در شرایط کنترلی به مسیر ورودی موتور هدایت می‌کند.",
+      "example_en": "The purge valve belongs to the evaporative emissions system.",
+      "example_fa": "شیر purge به سامانه کنترل بخارات سوخت تعلق دارد.",
+      "collocations": [
+        "purge valve command",
+        "canister purge"
+      ],
+      "workshop_note_fa": "زمان فعال‌سازی تابع راهبرد سازنده است.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-036",
+      "term_en": "EGR valve actuator",
+      "term_fa": "عملگر شیر بازچرخانی گاز اگزوز",
+      "pronunciation_fa": "ای جی آر وَلْو اَکچوِیتِر",
+      "ipa": "/ˌiː dʒiː ˈɑːr vælv ˈæktʃueɪtər/",
+      "definition_fa": "محرکی که بازشدن شیر EGR را مطابق فرمان سامانه کنترل تنظیم می‌کند.",
+      "example_en": "The EGR valve actuator responds to a control request.",
+      "example_fa": "عملگر شیر EGR به درخواست کنترلی پاسخ می‌دهد.",
+      "collocations": [
+        "EGR valve movement",
+        "exhaust gas recirculation"
+      ],
+      "workshop_note_fa": "نوع عملگر و بازخورد به طراحی خودرو بستگی دارد.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-011",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function/structure sections."
+        },
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-037",
+      "term_en": "Variable valve timing solenoid",
+      "term_fa": "سلونوئید زمان‌بندی متغیر سوپاپ",
+      "pronunciation_fa": "وِریِبِل وَلْو تایمینگ سولِنُوید",
+      "ipa": "/ˈvɛriəbəl vælv ˈtaɪmɪŋ ˈsoʊləˌnɔɪd/",
+      "definition_fa": "عملگر کنترلی در سامانه زمان‌بندی متغیر که سازوکار تغییر فاز را مدیریت می‌کند.",
+      "example_en": "The variable valve timing solenoid is listed in the engine data.",
+      "example_fa": "سلونوئید زمان‌بندی متغیر در داده‌های موتور فهرست شده است.",
+      "collocations": [
+        "VVT solenoid command",
+        "cam phasing"
+      ],
+      "workshop_note_fa": "جزئیات عملکرد به طراحی VVT همان موتور وابسته است.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-038",
+      "term_en": "Turbocharger boost control actuator",
+      "term_fa": "عملگر کنترل فشار بوست توربوشارژر",
+      "pronunciation_fa": "توربوچارجر بوست کِنترول اَکچوِیتِر",
+      "ipa": "/ˈtɜːrboʊˌtʃɑːrdʒər buːst kənˈtroʊl ˈæktʃueɪtər/",
+      "definition_fa": "محرکی که موقعیت سازوکار تنظیم فشار بوست را تغییر می‌دهد.",
+      "example_en": "The boost control actuator position appears in live data.",
+      "example_fa": "موقعیت عملگر کنترل بوست در داده زنده دیده می‌شود.",
+      "collocations": [
+        "boost pressure control",
+        "actuator position"
+      ],
+      "workshop_note_fa": "عملگر ممکن است برقی یا پنوماتیکی باشد.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-039",
+      "term_en": "Idle speed control actuator",
+      "term_fa": "عملگر کنترل دور آرام",
+      "pronunciation_fa": "آیدِل سپید کِنترول اَکچوِیتِر",
+      "ipa": "/ˈaɪdəl spiːd kənˈtroʊl ˈæktʃueɪtər/",
+      "definition_fa": "محرکی که در برخی سامانه‌ها برای تنظیم هوای ورودی یا دور آرام استفاده می‌شود.",
+      "example_en": "The idle speed control actuator is part of engine management.",
+      "example_fa": "عملگر کنترل دور آرام بخشی از مدیریت موتور است.",
+      "collocations": [
+        "idle speed regulation",
+        "idle air control"
+      ],
+      "workshop_note_fa": "در بسیاری از دریچه‌های برقی، عملگر جداگانه وجود ندارد.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-040",
+      "term_en": "Cooling fan motor",
+      "term_fa": "موتور فن خنک‌کننده",
+      "pronunciation_fa": "کولینگ فَن موتور",
+      "ipa": "/ˈkuːlɪŋ fæn ˈmoʊtər/",
+      "definition_fa": "موتور الکتریکی که پروانه فن را برای جابه‌جایی هوا به حرکت درمی‌آورد.",
+      "example_en": "The cooling fan motor is listed as a system output.",
+      "example_fa": "موتور فن خنک‌کننده به‌عنوان خروجی سامانه فهرست شده است.",
+      "collocations": [
+        "fan motor command",
+        "cooling fan operation"
+      ],
+      "workshop_note_fa": "کنترل فن می‌تواند با رله یا ماژول الکترونیکی انجام شود.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-041",
+      "term_en": "Fuel pump control module",
+      "term_fa": "ماژول کنترل پمپ سوخت",
+      "pronunciation_fa": "فیول پامپ کِنترول ماجول",
+      "ipa": "/ˈfjuːəl pʌmp kənˈtroʊl ˈmɑːdʒuːl/",
+      "definition_fa": "ماژولی که در برخی خودروها فرمان یا توان پمپ سوخت را مدیریت می‌کند.",
+      "example_en": "The scan report lists the fuel pump control module status.",
+      "example_fa": "گزارش دیاگ وضعیت ماژول کنترل پمپ سوخت را نشان می‌دهد.",
+      "collocations": [
+        "pump command",
+        "module status"
+      ],
+      "workshop_note_fa": "وجود ماژول مستقل به پلتفرم خودرو وابسته است.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-042",
+      "term_en": "Intake manifold runner actuator",
+      "term_fa": "عملگر مجاری منیفولد ورودی",
+      "pronunciation_fa": "اینتِیک مَنیفولد رانِر اَکچوِیتِر",
+      "ipa": "/ˈɪnteɪk ˈmænɪfoʊld ˈrʌnər ˈæktʃueɪtər/",
+      "definition_fa": "محرکی که وضعیت دریچه‌های مجاری منیفولد ورودی را در سامانه‌های مجهز تغییر می‌دهد.",
+      "example_en": "The intake manifold runner actuator status is stored.",
+      "example_fa": "وضعیت عملگر مجاری منیفولد ورودی ذخیره شده است.",
+      "collocations": [
+        "runner position",
+        "intake tuning"
+      ],
+      "workshop_note_fa": "وجود و نام این عملگر در موتورهای مختلف فرق دارد.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-043",
+      "term_en": "Swirl flap actuator",
+      "term_fa": "عملگر دریچه چرخش جریان هوا",
+      "pronunciation_fa": "سوِرل فِلَپ اَکچوِیتِر",
+      "ipa": "/swɜːrl flæp ˈæktʃueɪtər/",
+      "definition_fa": "محرکی که دریچه‌های ورودی را برای تغییر الگوی جریان هوا جابه‌جا می‌کند.",
+      "example_en": "The swirl flap actuator belongs to the intake air system.",
+      "example_fa": "عملگر swirl flap به سامانه هوای ورودی تعلق دارد.",
+      "collocations": [
+        "swirl flap position",
+        "airflow control"
+      ],
+      "workshop_note_fa": "این اصطلاح با هر نوع دریچه منیفولد مترادف نیست.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-044",
+      "term_en": "Exhaust flap actuator",
+      "term_fa": "عملگر دریچه اگزوز",
+      "pronunciation_fa": "اِگزاُست فِلَپ اَکچوِیتِر",
+      "ipa": "/ɪɡˈzɔːst flæp ˈæktʃueɪtər/",
+      "definition_fa": "محرکی که موقعیت دریچه‌ای در مسیر اگزوز را طبق راهبرد خودرو تغییر می‌دهد.",
+      "example_en": "The exhaust flap actuator receives a control request.",
+      "example_fa": "عملگر دریچه اگزوز درخواست کنترلی دریافت می‌کند.",
+      "collocations": [
+        "exhaust flap position",
+        "exhaust flow control"
+      ],
+      "workshop_note_fa": "کارکرد آن ممکن است به صدا، آلایندگی یا مدیریت حرارتی مرتبط باشد.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-045",
+      "term_en": "Relay-controlled load",
+      "term_fa": "بار کنترل‌شده با رله",
+      "pronunciation_fa": "ریلی کِنترُلد لود",
+      "ipa": "/ˈriːleɪ kənˈtroʊld loʊd/",
+      "definition_fa": "مصرف‌کننده‌ای که فعال‌سازی یا تغذیه آن از طریق کنتاکت‌های رله مدیریت می‌شود.",
+      "example_en": "The fan is described as a relay-controlled load.",
+      "example_fa": "فن به‌عنوان بار کنترل‌شده با رله توصیف شده است.",
+      "collocations": [
+        "relay-switched load",
+        "load activation"
+      ],
+      "workshop_note_fa": "فرمان رله و عملکرد واقعی مصرف‌کننده دو مفهوم جدا هستند.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-046",
+      "term_en": "Motor actuator",
+      "term_fa": "عملگر موتوری",
+      "pronunciation_fa": "موتور اَکچوِیتِر",
+      "ipa": "/ˈmoʊtər ˈæktʃueɪtər/",
+      "definition_fa": "محرکی که انرژی الکتریکی را با استفاده از موتور به حرکت مکانیکی تبدیل می‌کند.",
+      "example_en": "The motor actuator changes the mechanism position.",
+      "example_fa": "عملگر موتوری موقعیت سازوکار را تغییر می‌دهد.",
+      "collocations": [
+        "motor-driven actuator",
+        "actuator movement"
+      ],
+      "workshop_note_fa": "جهت و بازه حرکت در هر کاربرد متفاوت است.",
+      "category": "actuator",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-012",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Function/system description."
+        },
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-047",
+      "term_en": "Circuit high input",
+      "term_fa": "ورودی مدار در سطح بالا",
+      "pronunciation_fa": "سِرکیت های اِنپوت",
+      "ipa": "/ˈsɜːrkɪt haɪ ˈɪnpʊt/",
+      "definition_fa": "شرحی برای ورودی پایش‌شده که بالاتر از محدوده تعریف‌شده تفسیر شده است.",
+      "example_en": "The diagnostic description refers to a circuit high input.",
+      "example_fa": "شرح عیب‌یابی به ورودی مدار در سطح بالا اشاره می‌کند.",
+      "collocations": [
+        "circuit high DTC",
+        "high input condition"
+      ],
+      "workshop_note_fa": "این عبارت به‌تنهایی اثبات اتصال به مثبت باتری نیست.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-013",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Definitions: general circuit malfunction; range/performance."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-048",
+      "term_en": "Circuit low input",
+      "term_fa": "ورودی مدار در سطح پایین",
+      "pronunciation_fa": "سِرکیت لو اِنپوت",
+      "ipa": "/ˈsɜːrkɪt loʊ ˈɪnpʊt/",
+      "definition_fa": "شرحی برای ورودی پایش‌شده که پایین‌تر از محدوده تعریف‌شده تفسیر شده است.",
+      "example_en": "The scan tool displays a circuit low input description.",
+      "example_fa": "دستگاه عیب‌یاب شرح ورودی مدار پایین را نمایش می‌دهد.",
+      "collocations": [
+        "circuit low DTC",
+        "low input condition"
+      ],
+      "workshop_note_fa": "معنای دقیق به طراحی ورودی و منطق پایش وابسته است.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-013",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Definitions: general circuit malfunction; range/performance."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-049",
+      "term_en": "Missing signal",
+      "term_fa": "سیگنال مفقود",
+      "pronunciation_fa": "مِسینگ سیگنَل",
+      "ipa": "/ˈmɪsɪŋ ˈsɪɡnəl/",
+      "definition_fa": "وضعیتی که اطلاعات مورد انتظار در شرایط پایش‌شده شناسایی نمی‌شود.",
+      "example_en": "The event record indicates a missing signal.",
+      "example_fa": "ثبت رویداد نبود سیگنال را نشان می‌دهد.",
+      "collocations": [
+        "missing sensor signal",
+        "signal not detected"
+      ],
+      "workshop_note_fa": "علت می‌تواند حسگر، مدار، تغذیه یا شرایط عملکرد باشد.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-001",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Functional principle; crankshaft position sensor function."
+        },
+        {
+          "source_id": "SRC-SA-013",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Definitions: general circuit malfunction; range/performance."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-050",
+      "term_en": "Implausible signal",
+      "term_fa": "سیگنال نامعقول",
+      "pronunciation_fa": "ایم‌پلازِبِل سیگنَل",
+      "ipa": "/ɪmˈplɔːzəbəl ˈsɪɡnəl/",
+      "definition_fa": "سیگنالی که با رابطه یا مدل عملکرد مورد انتظار سازگار نیست.",
+      "example_en": "The controller records an implausible signal condition.",
+      "example_fa": "واحد کنترل وضعیت سیگنال نامعقول را ثبت می‌کند.",
+      "collocations": [
+        "implausible value",
+        "signal plausibility"
+      ],
+      "workshop_note_fa": "این عبارت به‌تنهایی خرابی حسگر را ثابت نمی‌کند.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-013",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Definitions: general circuit malfunction; range/performance."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-051",
+      "term_en": "Commanded state",
+      "term_fa": "وضعیت فرمان‌داده‌شده",
+      "pronunciation_fa": "کَمَندِد اِستِیت",
+      "ipa": "/kəˈmændɪd steɪt/",
+      "definition_fa": "وضعیتی که واحد کنترل درخواست کرده است عملگر یا سامانه در آن قرار گیرد.",
+      "example_en": "The commanded state is shown separately from feedback.",
+      "example_fa": "وضعیت فرمان‌داده‌شده جدا از بازخورد نمایش داده می‌شود.",
+      "collocations": [
+        "commanded state value",
+        "requested position"
+      ],
+      "workshop_note_fa": "فرمان ثبت‌شده به معنی اجرای موفق عملگر نیست.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-052",
+      "term_en": "Actual value",
+      "term_fa": "مقدار واقعی؛ مقدار بازخورد",
+      "pronunciation_fa": "اَکچوئل وَلْیو",
+      "ipa": "/ˈæktʃuəl ˈvæljuː/",
+      "definition_fa": "مقداری که سامانه به‌عنوان وضعیت اندازه‌گیری‌شده یا بازخوردشده گزارش می‌کند.",
+      "example_en": "The actual value differs from the requested value.",
+      "example_fa": "مقدار واقعی با مقدار درخواستی تفاوت دارد.",
+      "collocations": [
+        "actual position",
+        "actual pressure"
+      ],
+      "workshop_note_fa": "در برخی ابزارها مقدار واقعی می‌تواند محاسبه‌شده باشد.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-053",
+      "term_en": "Command-to-actual deviation",
+      "term_fa": "اختلاف فرمان و مقدار واقعی",
+      "pronunciation_fa": "کَمَند تو اَکچوئل دیویِیشِن",
+      "ipa": "/kəˈmænd tə ˈæktʃuəl ˌdiːviˈeɪʃən/",
+      "definition_fa": "تفاوت میان وضعیت درخواستی واحد کنترل و وضعیت بازخوردشده سامانه.",
+      "example_en": "The report shows a command-to-actual deviation.",
+      "example_fa": "گزارش اختلاف فرمان و مقدار واقعی را نشان می‌دهد.",
+      "collocations": [
+        "command/feedback difference",
+        "position deviation"
+      ],
+      "workshop_note_fa": "تفسیر اختلاف به زمان پاسخ و شرایط کاری وابسته است.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-054",
+      "term_en": "Actuator test",
+      "term_fa": "آزمون عملگر",
+      "pronunciation_fa": "اَکچوِیتِر تِست",
+      "ipa": "/ˈæktʃueɪtər tɛst/",
+      "definition_fa": "قابلیت تشخیصی برای درخواست کنترل عملگر و مشاهده پاسخ آن، در صورت پشتیبانی خودرو و ابزار.",
+      "example_en": "The scan tool offers an actuator test for this system.",
+      "example_fa": "دستگاه عیب‌یاب برای این سامانه آزمون عملگر ارائه می‌کند.",
+      "collocations": [
+        "actuator test function",
+        "commanded activation"
+      ],
+      "workshop_note_fa": "این واژه‌نامه دستور اجرای آزمون فیزیکی نیست.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-055",
+      "term_en": "Output test",
+      "term_fa": "آزمون خروجی",
+      "pronunciation_fa": "آوت‌پوت تِست",
+      "ipa": "/ˈaʊtpʊt tɛst/",
+      "definition_fa": "قابلیت نرم‌افزاری برای ارزیابی پاسخ خروجی کنترلی یا مصرف‌کننده طبق امکانات سازنده.",
+      "example_en": "The service menu includes an output test entry.",
+      "example_fa": "منوی سرویس گزینه آزمون خروجی را دارد.",
+      "collocations": [
+        "output test menu",
+        "output control"
+      ],
+      "workshop_note_fa": "نام و دسترسی آن بین ابزارها و خودروها فرق دارد.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-056",
+      "term_en": "Bi-directional control",
+      "term_fa": "کنترل دوطرفه",
+      "pronunciation_fa": "بای دایرِکشِنَل کِنترول",
+      "ipa": "/ˌbaɪ dəˈrɛkʃənəl kənˈtroʊl/",
+      "definition_fa": "قابلیت ابزار برای خواندن داده و ارسال درخواست کنترلی پشتیبانی‌شده به واحدهای خودرو.",
+      "example_en": "This scan tool supports bi-directional control on selected systems.",
+      "example_fa": "این دستگاه در برخی سامانه‌ها از کنترل دوطرفه پشتیبانی می‌کند.",
+      "collocations": [
+        "bi-directional scan tool",
+        "active command"
+      ],
+      "workshop_note_fa": "پشتیبانی به خودرو، ECU و نسخه ابزار وابسته است.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-057",
+      "term_en": "Activation request",
+      "term_fa": "درخواست فعال‌سازی",
+      "pronunciation_fa": "اَکتیوِیشِن ریکوِست",
+      "ipa": "/ˌæktɪˈveɪʃən rɪˈkwɛst/",
+      "definition_fa": "درخواستی که سامانه کنترل برای فعال‌کردن یک عملگر یا عملکرد صادر می‌کند.",
+      "example_en": "The activation request is recorded in the diagnostic session.",
+      "example_fa": "درخواست فعال‌سازی در نشست عیب‌یابی ثبت شده است.",
+      "collocations": [
+        "activation request status",
+        "actuator request"
+      ],
+      "workshop_note_fa": "درخواست فعال‌سازی با اجرای واقعی یکسان نیست.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-058",
+      "term_en": "Adaptation value",
+      "term_fa": "مقدار تطبیقی",
+      "pronunciation_fa": "اَدَپتِیشِن وَلْیو",
+      "ipa": "/ˌædæpˈteɪʃən ˈvæljuː/",
+      "definition_fa": "مقداری که واحد کنترل برای جبران تغییرات یا سازگاری داخلی نگهداری می‌کند.",
+      "example_en": "The adaptation value appears in the control-unit data.",
+      "example_fa": "مقدار تطبیقی در داده‌های واحد کنترل دیده می‌شود.",
+      "collocations": [
+        "adaptation value reset",
+        "learned adaptation"
+      ],
+      "workshop_note_fa": "تغییر یا بازنشانی آن ممکن است نیازمند دستورالعمل اختصاصی باشد.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-059",
+      "term_en": "Learned value",
+      "term_fa": "مقدار یادگرفته‌شده",
+      "pronunciation_fa": "لِرند وَلْیو",
+      "ipa": "/lɜːrnd ˈvæljuː/",
+      "definition_fa": "مقداری که واحد کنترل از فرایند یادگیری داخلی به دست آورده و ذخیره کرده است.",
+      "example_en": "The learned value is stored by the control unit.",
+      "example_fa": "مقدار یادگرفته‌شده توسط واحد کنترل ذخیره می‌شود.",
+      "collocations": [
+        "learned parameter",
+        "learned position"
+      ],
+      "workshop_note_fa": "تعریف دقیق را از توضیح پارامتر همان خودرو بگیرید.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-060",
+      "term_en": "Fail-safe mode",
+      "term_fa": "حالت ایمن جایگزین",
+      "pronunciation_fa": "فِیل سیف مود",
+      "ipa": "/ˈfeɪl seɪf moʊd/",
+      "definition_fa": "وضعیت جایگزینی که سامانه هنگام برخی خطاها برای محدودکردن عملکرد یا حفظ کنترل پایه انتخاب می‌کند.",
+      "example_en": "The controller may enter a fail-safe mode after a fault.",
+      "example_fa": "واحد کنترل ممکن است پس از خطا وارد حالت fail-safe شود.",
+      "collocations": [
+        "fail-safe strategy",
+        "limited operation"
+      ],
+      "workshop_note_fa": "رفتار آن برای هر خودرو و سامانه متفاوت است.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        },
+        {
+          "source_id": "SRC-SA-013",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Definitions: general circuit malfunction; range/performance."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-061",
+      "term_en": "Substitute value",
+      "term_fa": "مقدار جایگزین",
+      "pronunciation_fa": "سابستیتوت وَلْیو",
+      "ipa": "/ˈsʌbstɪtuːt ˈvæljuː/",
+      "definition_fa": "مقداری که نرم‌افزار کنترل در شرایط مشخص به‌جای داده نامعتبر یا در دسترس‌نبوده استفاده می‌کند.",
+      "example_en": "The controller may use a substitute value when input is unavailable.",
+      "example_fa": "واحد کنترل ممکن است هنگام نبود ورودی از مقدار جایگزین استفاده کند.",
+      "collocations": [
+        "default substitute value",
+        "fallback value"
+      ],
+      "workshop_note_fa": "این مقدار لزوماً ثابت یا یکسان در همه شرایط نیست.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-008",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Sensors measure; actuators move."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-062",
+      "term_en": "Sensor rationality check",
+      "term_fa": "بررسی منطقی‌بودن داده حسگر",
+      "pronunciation_fa": "سِنسر رَشِنَلِتی چِک",
+      "ipa": "/ˈsɛnsər ˌræʃəˈnæləti tʃɛk/",
+      "definition_fa": "منطق پایشی که سازگاری داده حسگر با شرایط یا ورودی‌های مرتبط را ارزیابی می‌کند.",
+      "example_en": "The controller performs a sensor rationality check.",
+      "example_fa": "واحد کنترل بررسی منطقی‌بودن داده حسگر را انجام می‌دهد.",
+      "collocations": [
+        "rationality monitor",
+        "plausibility check"
+      ],
+      "workshop_note_fa": "حدود آن به کالیبراسیون سازنده وابسته است.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-013",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Definitions: general circuit malfunction; range/performance."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-063",
+      "term_en": "Correlation fault",
+      "term_fa": "خطای هم‌بستگی",
+      "pronunciation_fa": "کُرِلِیشِن فالت",
+      "ipa": "/ˌkɔːrəˈleɪʃən fɔːlt/",
+      "definition_fa": "خطایی که هنگام ناسازگاری رابطه مورد انتظار میان دو یا چند سیگنال ثبت می‌شود.",
+      "example_en": "The report describes a correlation fault between two position signals.",
+      "example_fa": "گزارش خطای هم‌بستگی میان دو سیگنال موقعیت را توصیف می‌کند.",
+      "collocations": [
+        "signal correlation",
+        "correlation DTC"
+      ],
+      "workshop_note_fa": "این خطا به‌تنهایی مشخص نمی‌کند کدام حسگر معیوب است.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-013",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Definitions: general circuit malfunction; range/performance."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-064",
+      "term_en": "Sensor 1 / Sensor 2",
+      "term_fa": "حسگر ۱ / حسگر ۲",
+      "pronunciation_fa": "سِنسر وان / سِنسر تو",
+      "ipa": "/ˈsɛnsər wʌn/; /ˈsɛnsər tuː/",
+      "definition_fa": "برچسبی برای تمایز حسگرهای مشابه؛ محل دقیق به آرایش خودرو وابسته است.",
+      "example_en": "The scan report identifies Sensor 1 and Sensor 2 separately.",
+      "example_fa": "گزارش دیاگ حسگر ۱ و حسگر ۲ را جداگانه مشخص می‌کند.",
+      "collocations": [
+        "Sensor 1 location",
+        "Sensor 2 signal"
+      ],
+      "workshop_note_fa": "شماره‌گذاری را بدون نقشه همان خودرو به بالادست یا پایین‌دست نسبت ندهید.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    },
+    {
+      "local_id": "SA-065",
+      "term_en": "Bank 1 / Bank 2",
+      "term_fa": "بانک ۱ / بانک ۲ سیلندرها",
+      "pronunciation_fa": "بَنک وان / بَنک تو",
+      "ipa": "/bæŋk wʌn/; /bæŋk tuː/",
+      "definition_fa": "برچسب‌هایی برای تفکیک ردیف‌های سیلندر در موتورهای چندبانکه.",
+      "example_en": "The diagnostic description specifies Bank 1.",
+      "example_fa": "شرح عیب‌یابی بانک ۱ را مشخص می‌کند.",
+      "collocations": [
+        "Bank 1 sensor",
+        "Bank 2 sensor"
+      ],
+      "workshop_note_fa": "تعریف بانک‌ها را از مرجع سیلندر شماره یک همان موتور تعیین کنید.",
+      "category": "diagnostic",
+      "canonical_term_id": null,
+      "overlap_status": "candidate_dedup_review",
+      "source_claims": [
+        {
+          "source_id": "SRC-SA-007",
+          "claim_scope": "general conceptual definition/function",
+          "claim_status": "candidate_unverified",
+          "locator": "Glossary entries."
+        }
+      ],
+      "record_status": "candidate_unverified",
+      "author_generated_example": true
+    }
+  ],
+  "overlap_register": [
+    {
+      "term": "Duty cycle, reference voltage, sensor ground, signal wire",
+      "overlap_with": [
+        "AI-1 electrical core glossary",
+        "AI-2 prior electrical diagnostics package"
+      ],
+      "action": "Not recreated as standalone records; retain canonical cross-references during integration."
+    },
+    {
+      "term": "Circuit high/low, open circuit, intermittent fault, implausible signal",
+      "overlap_with": [
+        "AI-1 electrical core glossary",
+        "AI-2 prior electrical diagnostics package"
+      ],
+      "action": "Specific diagnostic wording is included only as needed for this mission; deduplicate against canonical terms before integration."
+    },
+    {
+      "term": "Actuator control / active test",
+      "overlap_with": [
+        "AI-2 prior electrical diagnostics package"
+      ],
+      "action": "Actuator test, output test and bi-directional control are distinguished by usage; canonical mapping remains pending."
+    }
+  ]
+}
