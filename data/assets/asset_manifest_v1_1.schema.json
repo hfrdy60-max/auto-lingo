@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/hfrdy60-max/auto-lingo/blob/ai1-protocol-v2-ops-hardening-001/data/assets/asset_manifest_v1_1.schema.json",
+  "title":"AUTO LINGO Asset Manifest v1.1",
+  "type":"object","additionalProperties":false,
+  "required":["manifest_name","schema_version","status","description","assets"],
+  "properties":{
+   "manifest_name":{"const":"AUTO LINGO asset provenance manifest"},"schema_version":{"const":"1.1.0"},"status":{"enum":["proposed","active"]},"description":{"type":"string","minLength":1},
+   "assets":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["asset_id","entity_refs","asset_type","source_url","provider","creator","rights_holder","license_name","license_url","permission_evidence","attribution","accessed_at","sha256","file_path","modification_status","modifications","distribution_permissions","technical_identity_status","technical_reviewer","technical_reviewed_at","rights_status","rights_reviewer","rights_reviewed_at","release_status"],"properties":{
+    "asset_id":{"type":"string","pattern":"^ASSET-[A-Z0-9-]+$"},"entity_refs":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string","pattern":"^(PART-[0-9]{6}|TERM-[0-9]{6}|SYS-[0-9]{3,}|DIAG-[0-9]{5}|LESSON-[0-9]{4}|VM-[0-9]{5}|BRAND-[0-9]{3}|SCN-[0-9]{4})$"}},
+    "asset_type":{"enum":["image","audio","video","diagram","document","other"]},"source_url":{"type":"string","format":"uri"},"provider":{"type":"string","minLength":1},"creator":{"type":"string","minLength":1},"rights_holder":{"type":"string","minLength":1},"license_name":{"type":"string","minLength":1},"license_url":{"type":["string","null"],"format":"uri"},"permission_evidence":{"type":"string","minLength":1},"attribution":{"type":"string","minLength":1},"accessed_at":{"type":"string","format":"date"},"sha256":{"type":"string","pattern":"^[a-fA-F0-9]{64}$"},"file_path":{"type":"string","minLength":1},"modification_status":{"enum":["unmodified","modified","unknown"]},"modifications":{"type":"array","items":{"type":"string"}},
+    "distribution_permissions":{"type":"object","additionalProperties":false,"required":["educational","commercial","redistribution","derivatives"],"properties":{"educational":{"type":"boolean"},"commercial":{"type":"boolean"},"redistribution":{"type":"boolean"},"derivatives":{"type":"boolean"}}},
+    "technical_identity_status":{"enum":["pending","approved","rejected"]},"technical_reviewer":{"type":["string","null"]},"technical_reviewed_at":{"type":["string","null"],"format":"date"},"rights_status":{"enum":["pending","cleared","rejected"]},"rights_reviewer":{"type":["string","null"]},"rights_reviewed_at":{"type":["string","null"],"format":"date"},"release_status":{"enum":["blocked","eligible","retired"]}
+   }}}
+  }
+ } 
+}
