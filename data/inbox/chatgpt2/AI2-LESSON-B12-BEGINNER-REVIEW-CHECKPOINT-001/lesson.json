@@ -1,0 +1,874 @@
+{
+  "mission_id": "AI2-LESSON-B12-BEGINNER-REVIEW-CHECKPOINT-001",
+  "lesson_id": "B12",
+  "lesson_title_fa": "مرور و ایستگاه ارزیابی مبتدی",
+  "lesson_title_en": "Beginner Review and Checkpoint",
+  "level_id": "LVL-1",
+  "lesson_order": 12,
+  "content_language": "fa",
+  "support_language": "en",
+  "content_version": "1.0.0",
+  "content_status": "needs_review",
+  "review_note_fa": "این بسته یک درس جدید واژگانی نیست؛ یک ایستگاه مرور برای LVL-1 است. به‌دلیل نبود نگاشت قابل اتکای lesson-to-term برای B01 تا B08 در داده‌های قابل دسترس، پوشش محتوایی این نسخه به محتوای مستندشده B09 تا B11 و مکالمه DLG-001 محدود است. بنابراین تا تکمیل نگاشت کل سطح، نباید به‌عنوان مرور جامع تمام LVL-1 منتشر شود.",
+  "blueprint_alignment": {
+    "source_file": "lesson_blueprints.json",
+    "blueprint_id": "B12",
+    "level_id": "LVL-1",
+    "order": 12,
+    "type": "review_checkpoint",
+    "language_focus": "Review of LVL-1",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "listening",
+      "workshop_conversation",
+      "sentence_writing",
+      "translation_fa_to_en"
+    ],
+    "vocabulary_source": "main_term_database",
+    "vocabulary_query": {
+      "level_id": "LVL-1",
+      "lesson_id": "B12",
+      "category_keys": []
+    },
+    "target_new_terms": 0,
+    "featured_part_ids": [],
+    "dialogue_ids": [
+      "DLG-001"
+    ],
+    "game_ids": [
+      "GAME-14",
+      "GAME-07",
+      "GAME-13",
+      "GAME-10"
+    ],
+    "quiz_id": "QZ-B12",
+    "estimated_minutes": 45,
+    "mastery_threshold_pct": 70,
+    "review_schedule_days_after_completion": [
+      3,
+      7,
+      21,
+      60
+    ]
+  },
+  "learning_objectives": [
+    "واژگان مستندشده دربارهٔ قطعات زیر کاپوت و مایعات خودرو را مرور و در بافت جمله تشخیص دهد.",
+    "کاربرد عمومی battery، radiator، air filter، dipstick و coolant expansion tank را از هم تفکیک کند.",
+    "نام چند سیال رایج خودرو و کاربرد عمومی آن‌ها را تشخیص دهد، بدون حدس‌زدن نوع یا مقدار مناسب برای یک خودرو.",
+    "اصطلاحات پایه معرفی خودرو، transmission، mileage و odometer را در جمله و مکالمه به کار ببرد.",
+    "متن‌های کوتاه شنیداری/نوشتاری و پرسش‌های ساده تعمیرگاهی را درک کند.",
+    "جمله ساده بسازد و عبارت‌های فارسی فنی آموخته‌شده را به انگلیسی و برعکس برگرداند."
+  ],
+  "prerequisites": [
+    "محتوای قبلی LVL-1؛ به‌ویژه بسته‌های B09، B10 و B11 که در این نسخه قابل استناد هستند."
+  ],
+  "lesson_intro_fa": "این ایستگاه برای سنجش یادگیری است، نه آموزش اصطلاحات تازه. در ۴۵ دقیقه، واژگان قطعات، مایعات، مشخصات خودرو و مکالمهٔ پایه را مرور می‌کنی. تمرکز بر تشخیص معنی، فهم متن، ترجمه، ساخت جمله و انتخاب پاسخ مناسب در پذیرش تعمیرگاه است. هیچ مشخصه یا روش سرویس یک خودروی واقعی از روی مثال‌ها نتیجه‌گیری نمی‌شود.",
+  "sections": [
+    {
+      "section_id": "B12-S01",
+      "title_fa": "۱) نقشه مرور واژگان",
+      "title_en": "Vocabulary Review Map",
+      "explanation_fa": "واژگان این نسخه از بسته‌های موجود B09 تا B11 برداشته شده‌اند. آن‌ها را در چهار گروه مرور کن: قطعات زیر کاپوت، مایعات، مشخصات خودرو و ابزار/نمایشگرهای اندازه‌گیری. هدف، یادآوری معنی و کاربرد واژه در جمله است؛ واژه جدید canonical ساخته نمی‌شود.",
+      "vocabulary": [
+        {
+          "en": "battery",
+          "fa": "باتری"
+        },
+        {
+          "en": "radiator",
+          "fa": "رادیاتور"
+        },
+        {
+          "en": "air filter",
+          "fa": "فیلتر هوا"
+        },
+        {
+          "en": "dipstick",
+          "fa": "میله اندازه‌گیری روغن"
+        },
+        {
+          "en": "coolant expansion tank",
+          "fa": "منبع انبساط مایع خنک‌کننده"
+        },
+        {
+          "en": "engine oil",
+          "fa": "روغن موتور"
+        },
+        {
+          "en": "coolant",
+          "fa": "مایع خنک‌کننده"
+        },
+        {
+          "en": "brake fluid",
+          "fa": "روغن ترمز"
+        },
+        {
+          "en": "transmission",
+          "fa": "گیربکس / سامانه انتقال قدرت"
+        },
+        {
+          "en": "odometer",
+          "fa": "کیلومترشمار"
+        },
+        {
+          "en": "mileage",
+          "fa": "کارکرد خودرو"
+        }
+      ],
+      "key_points": [
+        "battery انرژی الکتریکی را ذخیره می‌کند.",
+        "radiator گرما را از مایع خنک‌کننده به هوا منتقل می‌کند.",
+        "air filter ذرات را از هوای ورودی می‌گیرد.",
+        "dipstick برای بررسی سطح روغن در خودروهای مجهز به آن به کار می‌رود؛ روش دقیق خودرو-خاص است.",
+        "نوع و مشخصات سیالات باید از دفترچه و اطلاعات سرویس همان خودرو تعیین شود."
+      ]
+    },
+    {
+      "section_id": "B12-S02",
+      "title_fa": "۲) مرور جمله و گرامر",
+      "title_en": "Sentence and Grammar Review",
+      "explanation_fa": "از ساختارهای B11 برای معرفی خودرو استفاده کن: It is برای هویت/توصیف و It has برای بیان داشتن ویژگی. برای پرسش درباره توصیف از Is it...? و برای پرسش درباره داشتن ویژگی از Does it have...? استفاده می‌شود. در پاسخ کوتاه، فعل کمکی را تکرار کن.",
+      "examples": [
+        {
+          "en": "It is a hatchback.",
+          "fa": "این خودرو هاچ‌بک است."
+        },
+        {
+          "en": "It has a manual transmission.",
+          "fa": "این خودرو گیربکس دستی دارد."
+        },
+        {
+          "en": "Is it a sedan? — Yes, it is.",
+          "fa": "آیا سدان است؟ — بله."
+        },
+        {
+          "en": "Does it have an automatic transmission? — No, it doesn't.",
+          "fa": "آیا گیربکس اتوماتیک دارد؟ — خیر."
+        }
+      ],
+      "key_points": [
+        "It is + noun/adjective برای توصیف.",
+        "It has + noun برای بیان ویژگی.",
+        "بعد از does، فعل have به شکل پایه می‌آید.",
+        "پاسخ کوتاه مثبت: Yes, it is / Yes, it does."
+      ]
+    },
+    {
+      "section_id": "B12-S03",
+      "title_fa": "۳) خواندن و استخراج اطلاعات",
+      "title_en": "Reading for Technical Information",
+      "explanation_fa": "متن زیر کاملاً آموزشی و ساختگی است. هنگام خواندن، نام قطعات، نقش آن‌ها و اطلاعات خودرو را از هم جدا کن. در متن فنی، ادعا باید به همان چیزی محدود بماند که جمله واقعاً می‌گوید.",
+      "reading": {
+        "title_en": "A Short Workshop Note",
+        "text_en": "The vehicle is a compact hatchback. It has a petrol engine and a manual transmission. The battery stores electrical energy. The air filter removes dust from intake air. The radiator transfers heat from the coolant to the air. The odometer shows 64,000 kilometres.",
+        "text_fa": "خودرو یک هاچ‌بک جمع‌وجور است. موتور بنزینی و گیربکس دستی دارد. باتری انرژی الکتریکی را ذخیره می‌کند. فیلتر هوا گردوغبار را از هوای ورودی جدا می‌کند. رادیاتور گرما را از مایع خنک‌کننده به هوا منتقل می‌کند. کیلومترشمار ۶۴ هزار کیلومتر را نشان می‌دهد.",
+        "note_fa": "اطلاعات خودرو و عدد کیلومترشمار ساختگی‌اند و مشخصات هیچ خودروی واقعی نیستند."
+      }
+    },
+    {
+      "section_id": "B12-S04",
+      "title_fa": "۴) مکالمه و درک گفتار",
+      "title_en": "Workshop Conversation and Listening",
+      "explanation_fa": "مکالمه DLG-001 شامل خوشامدگویی، پرسیدن نوع خودرو و بیان مشکل مشتری است. در این ایستگاه، هدف فهم جمله و انتخاب پاسخ مرتبط است. فایل صوتی مکالمه در مخزن برای این شناسه null است؛ بنابراین تا تولید صوت، فعالیت listening باید با transcript نمایش داده شود و نباید صوت موجود فرض شود.",
+      "dialogue_reference": {
+        "dialogue_id": "DLG-001",
+        "scenario_key": "greeting",
+        "review_points": [
+          "Welcome to our workshop.",
+          "I have a problem with my car.",
+          "What is the problem?",
+          "The engine is loud."
+        ]
+      },
+      "listening_transcripts": [
+        {
+          "script_en": "The radiator transfers heat from the coolant to the air.",
+          "task_fa": "نام قطعه را تشخیص بده."
+        },
+        {
+          "script_en": "Does it have a manual transmission? Yes, it does.",
+          "task_fa": "نوع گیربکس را از پاسخ استخراج کن."
+        }
+      ],
+      "note_fa": "هر دو مورد فعلاً transcript هستند؛ audio_asset تولید نشده است."
+    },
+    {
+      "section_id": "B12-S05",
+      "title_fa": "۵) فعالیت‌های بازی",
+      "title_en": "Game-Based Review",
+      "explanation_fa": "بازی‌های ذکرشده در blueprint به‌عنوان وابستگی حفظ شده‌اند؛ اما وجود شناسه در blueprint به معنی آماده‌بودن کامل داده اجرایی نیست. GAME-14 به بانک اصطلاحات نیاز دارد؛ GAME-07 به نگاشت قطعه/تصویر؛ GAME-13 به فایل‌های صوتی؛ GAME-10 به سناریوی شاخه‌ای و گزینه‌های امتیازدار نیاز دارد. تا تکمیل این وابستگی‌ها، این بازی‌ها را در این بسته فقط پیشنهاد فعالیت بدانید، نه قابلیت آزمایش‌شده.",
+      "game_dependencies": [
+        {
+          "id": "GAME-14",
+          "status": "design_ready",
+          "dependency": "main_term_database"
+        },
+        {
+          "id": "GAME-07",
+          "status": "design_ready",
+          "dependency": "parts_image_manifest و نگاشت قطعات"
+        },
+        {
+          "id": "GAME-13",
+          "status": "design_ready",
+          "dependency": "audio set و فایل صوتی"
+        },
+        {
+          "id": "GAME-10",
+          "status": "design_ready",
+          "dependency": "dialogue branching و پاسخ‌های امتیازدار"
+        }
+      ]
+    }
+  ],
+  "reading": {
+    "title_en": "A Short Workshop Note",
+    "text_en": "The vehicle is a compact hatchback. It has a petrol engine and a manual transmission. The battery stores electrical energy. The air filter removes dust from intake air. The radiator transfers heat from the coolant to the air. The odometer shows 64,000 kilometres.",
+    "text_fa": "خودرو یک هاچ‌بک جمع‌وجور است. موتور بنزینی و گیربکس دستی دارد. باتری انرژی الکتریکی را ذخیره می‌کند. فیلتر هوا گردوغبار را از هوای ورودی جدا می‌کند. رادیاتور گرما را از مایع خنک‌کننده به هوا منتقل می‌کند. کیلومترشمار ۶۴ هزار کیلومتر را نشان می‌دهد.",
+    "note_fa": "متن و اطلاعات خودرو ساختگی‌اند."
+  },
+  "practice": [
+    {
+      "prompt_fa": "جمله را کامل کن: The battery stores electrical ___.",
+      "answer": "energy",
+      "explanation_fa": "electrical energy = انرژی الکتریکی."
+    },
+    {
+      "prompt_fa": "ترجمه کن: این خودرو گیربکس دستی دارد.",
+      "answer": "It has a manual transmission.",
+      "explanation_fa": "فاعل it با has می‌آید."
+    },
+    {
+      "prompt_fa": "معنی odometer را بنویس.",
+      "answer": "کیلومترشمار",
+      "explanation_fa": "Odometer مسافت کل ثبت‌شده خودرو را نشان می‌دهد."
+    }
+  ],
+  "english_focus": {
+    "grammar_fa": "این ایستگاه ساختارهای پایه B11 را در کنار واژگان فنی مرور می‌کند؛ هدف آموزش گرامر جدید نیست.",
+    "patterns": [
+      {
+        "pattern": "It is a/an + [vehicle type].",
+        "translation_fa": "این خودرو یک [نوع خودرو] است."
+      },
+      {
+        "pattern": "It has + [feature].",
+        "translation_fa": "این خودرو [ویژگی] دارد."
+      },
+      {
+        "pattern": "Does it have + [feature]?",
+        "translation_fa": "آیا این خودرو [ویژگی] را دارد؟"
+      },
+      {
+        "pattern": "Yes, it does. / No, it doesn't.",
+        "translation_fa": "بله، دارد. / خیر، ندارد."
+      }
+    ],
+    "vocabulary": [
+      {
+        "en": "battery",
+        "fa": "باتری"
+      },
+      {
+        "en": "radiator",
+        "fa": "رادیاتور"
+      },
+      {
+        "en": "air filter",
+        "fa": "فیلتر هوا"
+      },
+      {
+        "en": "engine oil",
+        "fa": "روغن موتور"
+      },
+      {
+        "en": "coolant",
+        "fa": "مایع خنک‌کننده"
+      },
+      {
+        "en": "brake fluid",
+        "fa": "روغن ترمز"
+      },
+      {
+        "en": "odometer",
+        "fa": "کیلومترشمار"
+      },
+      {
+        "en": "transmission",
+        "fa": "گیربکس"
+      }
+    ]
+  },
+  "common_errors": [
+    {
+      "incorrect": "Does it has a manual transmission?",
+      "correct": "Does it have a manual transmission?",
+      "reason_fa": "بعد از does، فعل به شکل پایه have می‌آید."
+    },
+    {
+      "incorrect": "The battery makes coolant cold.",
+      "correct": "The battery stores electrical energy.",
+      "reason_fa": "وظیفه باتری و سامانه خنک‌کاری متفاوت است."
+    },
+    {
+      "incorrect": "Mileage and odometer are exactly the same.",
+      "correct": "The odometer records distance; mileage refers to the distance/usage figure.",
+      "reason_fa": "یکی ابزار/سامانه ثبت است و دیگری مقدار کارکرد."
+    }
+  ],
+  "knowledge_check": [
+    {
+      "id": "Q-B12-001",
+      "type": "mcq",
+      "question_fa": "کدام قطعه انرژی الکتریکی را برای سامانهٔ برق خودرو ذخیره می‌کند؟",
+      "answer": "b",
+      "explanation_fa": "باتری انرژی الکتریکی را ذخیره و در زمان نیاز تأمین می‌کند."
+    },
+    {
+      "id": "Q-B12-002",
+      "type": "mcq",
+      "question_fa": "کدام قطعه گرما را از مایع خنک‌کننده به هوای اطراف منتقل می‌کند؟",
+      "answer": "a",
+      "explanation_fa": "رادیاتور با کمک لوله‌ها و پره‌ها گرما را از مایع خنک‌کننده به هوا منتقل می‌کند."
+    },
+    {
+      "id": "Q-B12-003",
+      "type": "mcq",
+      "question_fa": "فیلتر هوای موتور چه چیزی را از هوای ورودی جدا می‌کند؟",
+      "answer": "b",
+      "explanation_fa": "فیلتر هوا ذراتی مانند گردوغبار را می‌گیرد تا وارد مسیر هوای موتور نشوند."
+    },
+    {
+      "id": "Q-B12-004",
+      "type": "mcq",
+      "question_fa": "در سامانهٔ هیدرولیکی ترمز از کدام سیال استفاده می‌شود؟",
+      "answer": "c",
+      "explanation_fa": "Brake fluid سیالی است که در مدار هیدرولیکی ترمز نیرو را منتقل می‌کند؛ نوع مناسب خودرو باید از مستندات همان خودرو مشخص شود."
+    },
+    {
+      "id": "Q-B12-005",
+      "type": "mcq",
+      "question_fa": "واژهٔ transmission در خودرو به چه چیزی اشاره می‌کند؟",
+      "answer": "a",
+      "explanation_fa": "Transmission به سامانهٔ انتقال قدرت و در کاربرد رایج آموزشی به گیربکس اشاره می‌کند."
+    },
+    {
+      "id": "Q-B12-006",
+      "type": "fa_to_en",
+      "question_fa": "منبع انبساط مایع خنک‌کننده",
+      "answer": "coolant expansion tank",
+      "explanation_fa": "Coolant expansion tank یا coolant reservoir نام رایج مخزن ذخیره و جبران تغییر حجم مایع خنک‌کننده است."
+    },
+    {
+      "id": "Q-B12-007",
+      "type": "fa_to_en",
+      "question_fa": "این خودرو گیربکس دستی دارد.",
+      "answer": "the car has a manual transmission",
+      "explanation_fa": "برای بیان داشتن یک ویژگی از has با فاعل مفرد سوم‌شخص استفاده می‌کنیم."
+    },
+    {
+      "id": "Q-B12-008",
+      "type": "en_to_fa",
+      "question_fa": "dipstick",
+      "answer": "میله اندازه گیری روغن",
+      "explanation_fa": "Dipstick میله‌ای برای سنجش سطح روغن در کاربردهایی است که خودرو به این نوع سنجش مجهز است."
+    },
+    {
+      "id": "Q-B12-009",
+      "type": "en_to_fa",
+      "question_fa": "brake fluid",
+      "answer": "روغن ترمز",
+      "explanation_fa": "Brake fluid در فارسی معمولاً روغن ترمز گفته می‌شود؛ از نظر فنی یک سیال هیدرولیکی است."
+    },
+    {
+      "id": "Q-B12-010",
+      "type": "fill_blank",
+      "question_fa": "The battery stores electrical ___.",
+      "answer": "energy",
+      "explanation_fa": "ترکیب درست electrical energy به معنی انرژی الکتریکی است."
+    },
+    {
+      "id": "Q-B12-011",
+      "type": "fill_blank",
+      "question_fa": "The air filter removes dust from the engine's ___ air.",
+      "answer": "intake",
+      "explanation_fa": "Intake air به هوایی گفته می‌شود که وارد مسیر ورودی موتور می‌شود."
+    },
+    {
+      "id": "Q-B12-012",
+      "type": "identify_correct_term",
+      "question_fa": "کدام اصطلاح به وسیله یا سامانه‌ای گفته می‌شود که مسافت کل طی‌شدهٔ خودرو را ثبت می‌کند؟",
+      "answer": "b",
+      "explanation_fa": "Odometer مسافت کل ثبت‌شده را نشان می‌دهد؛ trip meter معمولاً مسافت یک سفر یا بازه را ثبت می‌کند."
+    },
+    {
+      "id": "Q-B12-013",
+      "type": "listening",
+      "question_fa": "کدام قطعه توصیف می‌شود؟",
+      "answer": "a",
+      "explanation_fa": "جمله دربارهٔ انتقال گرما از مایع خنک‌کننده به هواست؛ این وظیفهٔ رادیاتور است."
+    },
+    {
+      "id": "Q-B12-014",
+      "type": "listening",
+      "question_fa": "خودرو چه نوع گیربکسی دارد؟",
+      "answer": "b",
+      "explanation_fa": "پاسخ Yes, it does به پرسش دربارهٔ داشتن گیربکس دستی پاسخ مثبت می‌دهد."
+    },
+    {
+      "id": "Q-B12-015",
+      "type": "sentence_building",
+      "question_fa": "جمله بساز: فیلتر هوا گردوغبار را از هوای ورودی جدا می‌کند.",
+      "answer": "The air filter removes dust from intake air.",
+      "explanation_fa": "ترتیب پایه جمله انگلیسی: فاعل + فعل + مفعول + عبارت تکمیلی."
+    },
+    {
+      "id": "Q-B12-016",
+      "type": "workshop_conversation",
+      "question_fa": "مناسب‌ترین پاسخ را انتخاب کنید.",
+      "answer": "a",
+      "explanation_fa": "پرسیدن make و model اطلاعات اولیه لازم برای ادامه گفت‌وگوی تعمیرگاهی را جمع‌آوری می‌کند؛ پاسخ‌های دیگر به گفته مشتری مرتبط نیستند."
+    }
+  ],
+  "assessment": {
+    "quiz_id": "QZ-B12",
+    "question_count": 16,
+    "suggested_pass_pct": 70,
+    "blueprint_distribution": {
+      "mcq": 5,
+      "fa_to_en": 2,
+      "en_to_fa": 2,
+      "fill_blank": 2,
+      "identify_correct_term": 1,
+      "listening": 2,
+      "sentence_building": 1,
+      "workshop_conversation": 1
+    },
+    "questions": [
+      {
+        "id": "Q-B12-001",
+        "lesson_id": "B12",
+        "type": "mcq",
+        "difficulty": 1,
+        "skill": "vocabulary",
+        "status": "authored",
+        "prompt_en": "Which component stores electrical energy for the vehicle's electrical system?",
+        "prompt_fa": "کدام قطعه انرژی الکتریکی را برای سامانهٔ برق خودرو ذخیره می‌کند؟",
+        "options": [
+          {
+            "id": "a",
+            "text": "Radiator"
+          },
+          {
+            "id": "b",
+            "text": "Battery"
+          },
+          {
+            "id": "c",
+            "text": "Air filter"
+          },
+          {
+            "id": "d",
+            "text": "Dipstick"
+          }
+        ],
+        "correct_option_id": "b",
+        "explanation_fa": "باتری انرژی الکتریکی را ذخیره و در زمان نیاز تأمین می‌کند."
+      },
+      {
+        "id": "Q-B12-002",
+        "lesson_id": "B12",
+        "type": "mcq",
+        "difficulty": 1,
+        "skill": "vocabulary",
+        "status": "authored",
+        "prompt_en": "Which component transfers heat from coolant to the surrounding air?",
+        "prompt_fa": "کدام قطعه گرما را از مایع خنک‌کننده به هوای اطراف منتقل می‌کند؟",
+        "options": [
+          {
+            "id": "a",
+            "text": "Radiator"
+          },
+          {
+            "id": "b",
+            "text": "Fuel tank"
+          },
+          {
+            "id": "c",
+            "text": "Odometer"
+          },
+          {
+            "id": "d",
+            "text": "Brake pedal"
+          }
+        ],
+        "correct_option_id": "a",
+        "explanation_fa": "رادیاتور با کمک لوله‌ها و پره‌ها گرما را از مایع خنک‌کننده به هوا منتقل می‌کند."
+      },
+      {
+        "id": "Q-B12-003",
+        "lesson_id": "B12",
+        "type": "mcq",
+        "difficulty": 1,
+        "skill": "vocabulary",
+        "status": "authored",
+        "prompt_en": "What does an engine air filter remove from intake air?",
+        "prompt_fa": "فیلتر هوای موتور چه چیزی را از هوای ورودی جدا می‌کند؟",
+        "options": [
+          {
+            "id": "a",
+            "text": "Brake fluid"
+          },
+          {
+            "id": "b",
+            "text": "Dust and particles"
+          },
+          {
+            "id": "c",
+            "text": "Engine oil"
+          },
+          {
+            "id": "d",
+            "text": "Coolant"
+          }
+        ],
+        "correct_option_id": "b",
+        "explanation_fa": "فیلتر هوا ذراتی مانند گردوغبار را می‌گیرد تا وارد مسیر هوای موتور نشوند."
+      },
+      {
+        "id": "Q-B12-004",
+        "lesson_id": "B12",
+        "type": "mcq",
+        "difficulty": 2,
+        "skill": "vocabulary",
+        "status": "authored",
+        "prompt_en": "Which fluid is used in the hydraulic brake system?",
+        "prompt_fa": "در سامانهٔ هیدرولیکی ترمز از کدام سیال استفاده می‌شود؟",
+        "options": [
+          {
+            "id": "a",
+            "text": "Washer fluid"
+          },
+          {
+            "id": "b",
+            "text": "Fuel"
+          },
+          {
+            "id": "c",
+            "text": "Brake fluid"
+          },
+          {
+            "id": "d",
+            "text": "Engine coolant"
+          }
+        ],
+        "correct_option_id": "c",
+        "explanation_fa": "Brake fluid سیالی است که در مدار هیدرولیکی ترمز نیرو را منتقل می‌کند؛ نوع مناسب خودرو باید از مستندات همان خودرو مشخص شود."
+      },
+      {
+        "id": "Q-B12-005",
+        "lesson_id": "B12",
+        "type": "mcq",
+        "difficulty": 2,
+        "skill": "vocabulary",
+        "status": "authored",
+        "prompt_en": "What does the word 'transmission' refer to in a vehicle?",
+        "prompt_fa": "واژهٔ transmission در خودرو به چه چیزی اشاره می‌کند؟",
+        "options": [
+          {
+            "id": "a",
+            "text": "سامانهٔ انتقال قدرت / گیربکس"
+          },
+          {
+            "id": "b",
+            "text": "کیلومترشمار"
+          },
+          {
+            "id": "c",
+            "text": "فیلتر هوا"
+          },
+          {
+            "id": "d",
+            "text": "منبع انبساط"
+          }
+        ],
+        "correct_option_id": "a",
+        "explanation_fa": "Transmission به سامانهٔ انتقال قدرت و در کاربرد رایج آموزشی به گیربکس اشاره می‌کند."
+      },
+      {
+        "id": "Q-B12-006",
+        "lesson_id": "B12",
+        "type": "fa_to_en",
+        "difficulty": 2,
+        "skill": "translation_fa_to_en",
+        "status": "authored",
+        "prompt_fa": "منبع انبساط مایع خنک‌کننده",
+        "accepted_answers_en": [
+          "coolant expansion tank",
+          "coolant reservoir",
+          "expansion tank"
+        ],
+        "answer_normalization": "trim, ignore case, unify Arabic/Persian ya and kaf, ignore ZWNJ",
+        "explanation_fa": "Coolant expansion tank یا coolant reservoir نام رایج مخزن ذخیره و جبران تغییر حجم مایع خنک‌کننده است."
+      },
+      {
+        "id": "Q-B12-007",
+        "lesson_id": "B12",
+        "type": "fa_to_en",
+        "difficulty": 3,
+        "skill": "translation_fa_to_en",
+        "status": "authored",
+        "prompt_fa": "این خودرو گیربکس دستی دارد.",
+        "accepted_answers_en": [
+          "the car has a manual transmission",
+          "it has a manual transmission"
+        ],
+        "answer_normalization": "trim, ignore case, ignore terminal punctuation",
+        "explanation_fa": "برای بیان داشتن یک ویژگی از has با فاعل مفرد سوم‌شخص استفاده می‌کنیم."
+      },
+      {
+        "id": "Q-B12-008",
+        "lesson_id": "B12",
+        "type": "en_to_fa",
+        "difficulty": 1,
+        "skill": "translation_en_to_fa",
+        "status": "authored",
+        "prompt_en": "dipstick",
+        "accepted_answers_fa": [
+          "میله اندازه گیری روغن",
+          "میلهٔ اندازه‌گیری روغن",
+          "گیج روغن",
+          "میل گیج",
+          "میل‌گیج"
+        ],
+        "explanation_fa": "Dipstick میله‌ای برای سنجش سطح روغن در کاربردهایی است که خودرو به این نوع سنجش مجهز است."
+      },
+      {
+        "id": "Q-B12-009",
+        "lesson_id": "B12",
+        "type": "en_to_fa",
+        "difficulty": 1,
+        "skill": "translation_en_to_fa",
+        "status": "authored",
+        "prompt_en": "brake fluid",
+        "accepted_answers_fa": [
+          "روغن ترمز",
+          "مایع ترمز",
+          "سیال ترمز"
+        ],
+        "explanation_fa": "Brake fluid در فارسی معمولاً روغن ترمز گفته می‌شود؛ از نظر فنی یک سیال هیدرولیکی است."
+      },
+      {
+        "id": "Q-B12-010",
+        "lesson_id": "B12",
+        "type": "fill_blank",
+        "difficulty": 1,
+        "skill": "reading",
+        "status": "authored",
+        "sentence_en": "The battery stores electrical ___.",
+        "accepted_answers": [
+          "energy"
+        ],
+        "hint_fa": "انرژی",
+        "explanation_fa": "ترکیب درست electrical energy به معنی انرژی الکتریکی است."
+      },
+      {
+        "id": "Q-B12-011",
+        "lesson_id": "B12",
+        "type": "fill_blank",
+        "difficulty": 2,
+        "skill": "reading",
+        "status": "authored",
+        "sentence_en": "The air filter removes dust from the engine's ___ air.",
+        "accepted_answers": [
+          "intake"
+        ],
+        "hint_fa": "هوای ورودی",
+        "explanation_fa": "Intake air به هوایی گفته می‌شود که وارد مسیر ورودی موتور می‌شود."
+      },
+      {
+        "id": "Q-B12-012",
+        "lesson_id": "B12",
+        "type": "identify_correct_term",
+        "difficulty": 2,
+        "skill": "vocabulary",
+        "status": "authored",
+        "prompt_en": "Which term means the instrument or system that records the total distance travelled by a vehicle?",
+        "prompt_fa": "کدام اصطلاح به وسیله یا سامانه‌ای گفته می‌شود که مسافت کل طی‌شدهٔ خودرو را ثبت می‌کند؟",
+        "options": [
+          {
+            "id": "a",
+            "text": "Trip meter"
+          },
+          {
+            "id": "b",
+            "text": "Odometer"
+          },
+          {
+            "id": "c",
+            "text": "Tachometer"
+          },
+          {
+            "id": "d",
+            "text": "Fuel gauge"
+          }
+        ],
+        "correct_option_id": "b",
+        "explanation_fa": "Odometer مسافت کل ثبت‌شده را نشان می‌دهد؛ trip meter معمولاً مسافت یک سفر یا بازه را ثبت می‌کند."
+      },
+      {
+        "id": "Q-B12-013",
+        "lesson_id": "B12",
+        "type": "listening",
+        "difficulty": 2,
+        "skill": "listening",
+        "status": "authored",
+        "audio": {
+          "script_en": "The radiator transfers heat from the coolant to the air.",
+          "speech_rate": "slow",
+          "asset_id": null,
+          "asset_status": "pending_tts_generation"
+        },
+        "prompt_en": "Which component is being described?",
+        "prompt_fa": "کدام قطعه توصیف می‌شود؟",
+        "options": [
+          {
+            "id": "a",
+            "text": "Radiator"
+          },
+          {
+            "id": "b",
+            "text": "Battery"
+          },
+          {
+            "id": "c",
+            "text": "Air filter"
+          },
+          {
+            "id": "d",
+            "text": "Odometer"
+          }
+        ],
+        "correct_option_id": "a",
+        "explanation_fa": "جمله دربارهٔ انتقال گرما از مایع خنک‌کننده به هواست؛ این وظیفهٔ رادیاتور است.",
+        "note_fa": "فعلاً فقط متن گفتاری ثبت شده؛ فایل صوتی تولید نشده است."
+      },
+      {
+        "id": "Q-B12-014",
+        "lesson_id": "B12",
+        "type": "listening",
+        "difficulty": 3,
+        "skill": "listening",
+        "status": "authored",
+        "audio": {
+          "script_en": "Does it have a manual transmission? Yes, it does.",
+          "speech_rate": "slow",
+          "asset_id": null,
+          "asset_status": "pending_tts_generation"
+        },
+        "prompt_en": "What type of transmission does the vehicle have?",
+        "prompt_fa": "خودرو چه نوع گیربکسی دارد؟",
+        "options": [
+          {
+            "id": "a",
+            "text": "Automatic"
+          },
+          {
+            "id": "b",
+            "text": "Manual"
+          },
+          {
+            "id": "c",
+            "text": "CVT"
+          },
+          {
+            "id": "d",
+            "text": "The audio does not say"
+          }
+        ],
+        "correct_option_id": "b",
+        "explanation_fa": "پاسخ Yes, it does به پرسش دربارهٔ داشتن گیربکس دستی پاسخ مثبت می‌دهد.",
+        "note_fa": "فعلاً فقط متن گفتاری ثبت شده؛ فایل صوتی تولید نشده است."
+      },
+      {
+        "id": "Q-B12-015",
+        "lesson_id": "B12",
+        "type": "sentence_building",
+        "difficulty": 1,
+        "skill": "sentence_writing",
+        "status": "authored",
+        "prompt_fa": "جمله بساز: فیلتر هوا گردوغبار را از هوای ورودی جدا می‌کند.",
+        "tokens": [
+          "dust",
+          "The",
+          "air",
+          "filter",
+          "removes",
+          "from",
+          "intake",
+          "air"
+        ],
+        "accepted_answers": [
+          "The air filter removes dust from intake air."
+        ],
+        "explanation_fa": "ترتیب پایه جمله انگلیسی: فاعل + فعل + مفعول + عبارت تکمیلی."
+      },
+      {
+        "id": "Q-B12-016",
+        "lesson_id": "B12",
+        "type": "workshop_conversation",
+        "difficulty": 1,
+        "skill": "workshop_conversation",
+        "status": "authored",
+        "scenario_fa": "مشتری در پذیرش تعمیرگاه می‌گوید صدای موتور زیاد است. مشاور باید پاسخ مرتبط بدهد.",
+        "dialogue_turn": {
+          "speaker": "Customer",
+          "line_en": "The engine is loud."
+        },
+        "prompt_en": "Choose the most appropriate response.",
+        "prompt_fa": "مناسب‌ترین پاسخ را انتخاب کنید.",
+        "options": [
+          {
+            "id": "a",
+            "text": "What is the make and model of your car?"
+          },
+          {
+            "id": "b",
+            "text": "The radiator is blue."
+          },
+          {
+            "id": "c",
+            "text": "Good night and goodbye."
+          },
+          {
+            "id": "d",
+            "text": "It has four doors."
+          }
+        ],
+        "correct_option_id": "a",
+        "explanation_fa": "پرسیدن make و model اطلاعات اولیه لازم برای ادامه گفت‌وگوی تعمیرگاهی را جمع‌آوری می‌کند؛ پاسخ‌های دیگر به گفته مشتری مرتبط نیستند."
+      }
+    ],
+    "scoring_note_fa": "توزیع ۱۶ سؤال با قالب QZ-B12 منطبق است. این‌ها سؤال‌های پیشنهادی تألیفی‌اند و هنوز به quiz_bank.json اضافه نشده‌اند؛ نمره رسمی mastery یا اجرای loader ادعا نمی‌شود."
+  },
+  "safe_learning_activity": {
+    "title_fa": "مرور گروهی با کارت‌های آموزشی ساختگی",
+    "steps": [
+      "کارت‌های واژگان B09 تا B11 را دسته‌بندی کن.",
+      "برای هر قطعه، یک جمله کوتاه درباره کاربرد عمومی آن بگو.",
+      "یک پروفایل ساختگی خودرو بنویس و با It is و It has معرفی‌اش کن.",
+      "مکالمه DLG-001 را نقش‌خوانی کن و پاسخ‌های مرتبط را انتخاب کن.",
+      "برای مرور بعدی، خطاهای واژگانی و گرامری را یادداشت کن."
+    ]
+  },
+  "limitations": [
+    "این بسته checkpoint است، نه درس واژگان جدید؛ target_new_terms=0 رعایت شده است.",
+    "پوشش کامل LVL-1 در این نسخه قابل ادعا نیست؛ محتوای مستندشده قابل استفاده عمدتاً B09 تا B11 و DLG-001 است. نگاشت B01 تا B08 و مجموعه کامل اصطلاحات سطح باید از مالک/AI-1 دریافت و QA شود.",
+    "فایل صوتی برای DLG-001 و دو سؤال listening وجود ندارد؛ audio asset برابر null/pending است.",
+    "بازی‌های GAME-14/07/13/10 در blueprint آمده‌اند اما وابستگی‌های اجرایی آن‌ها کامل/آزمایش‌شده نیست.",
+    "اصطلاحات از بسته‌های قبلی مرور شده‌اند؛ هیچ TERM ID جدید، canonical term یا verification status ساخته نشده است.",
+    "تمام منابع و بسته‌های مبنا همچنان نیازمند بررسی مستقل‌اند؛ این خروجی verified یا released نیست.",
+    "هیچ دستور تعمیر، بازکردن قطعات، سرویس سیالات یا روش عملیاتی خودرو ارائه نمی‌شود؛ محتوا صرفاً زبان و شناخت مفهومی است."
+  ]
+}
