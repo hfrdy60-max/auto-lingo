@@ -1,0 +1,27 @@
+[
+  {
+    "id": "S-01",
+    "path": "data/inbox/chatgpt1/AI1-PROTOCOL-V2-OPS-APPENDIX-001/OPERATIONAL_APPENDIX.md",
+    "ref": "ai1-protocol-v2-ops-appendix-001"
+  },
+  {
+    "id": "S-02",
+    "path": "data/assets/asset_manifest.json",
+    "ref": "ai1-protocol-v2-ops-appendix-001"
+  },
+  {
+    "id": "S-03",
+    "path": "data/assets/asset_manifest.schema.json",
+    "ref": "ai1-protocol-v2-ops-appendix-001"
+  },
+  {
+    "id": "S-04",
+    "path": "scripts/validate_asset_manifest.py",
+    "ref": "ai1-protocol-v2-ops-appendix-001"
+  },
+  {
+    "id": "S-05",
+    "path": "database_schema.sql",
+    "ref": "main"
+  }
+]
