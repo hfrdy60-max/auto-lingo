@@ -1,0 +1,52 @@
+[
+  {
+    "id": "S1",
+    "type": "repository_file",
+    "path": "data/inbox/chatgpt1/AI1-PROTOCOL-V2-OPS-HARDENING-001/HARDENING_ADDENDUM.md",
+    "ref": "ai2-protocol-v2-ops-hardening-review-001",
+    "commit": "66adb3ca274f4bc325cceb968182c0e20af04f82",
+    "use": "Hardening scope, owner decisions, and limitations."
+  },
+  {
+    "id": "S2",
+    "type": "repository_file",
+    "path": "data/assets/asset_manifest_v1_1.schema.json",
+    "ref": "ai2-protocol-v2-ops-hardening-review-001",
+    "use": "Manifest field and type constraints."
+  },
+  {
+    "id": "S3",
+    "type": "repository_file",
+    "path": "scripts/validate_asset_manifest_v2.py",
+    "ref": "ai2-protocol-v2-ops-hardening-review-001",
+    "use": "Custom validation and conditional eligibility logic."
+  },
+  {
+    "id": "S4",
+    "type": "repository_file",
+    "path": "data/qa/evidence_integrity_readonly.sql",
+    "ref": "ai2-protocol-v2-ops-hardening-review-001",
+    "use": "Read-only SQL diagnostics."
+  },
+  {
+    "id": "S5",
+    "type": "repository_file",
+    "path": "data/reviews/review_packet.schema.json",
+    "ref": "ai2-protocol-v2-ops-hardening-review-001",
+    "use": "Review packet constraints and governance fields."
+  },
+  {
+    "id": "S6",
+    "type": "repository_file",
+    "path": "database_schema.sql",
+    "ref": "main",
+    "use": "Baseline PostgreSQL table/column definitions."
+  },
+  {
+    "id": "S7",
+    "type": "repository_file",
+    "path": "data/inbox/chatgpt1/AI1-CONTENT-VERIFICATION-PROTOCOL-V2-001/CONTENT_VERIFICATION_PROTOCOL_V2.md",
+    "ref": "ai1-content-verification-protocol-v2-001",
+    "use": "Normative claim outcomes and human approval requirements."
+  }
+]
