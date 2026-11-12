@@ -1,0 +1,503 @@
+{
+  "mission_id": "AI1-MULTIMETER-TERMINOLOGY-RESEARCH-001",
+  "title_en": "Automotive Multimeter and Electrical Measurement Terminology",
+  "title_fa": "واژه‌نامه تخصصی مولتی‌متر و اندازه‌گیری برق خودرو",
+  "version": "0.1.0",
+  "status": "draft_needs_technical_review",
+  "scope_fa": "بسته مکمل زبان فنی ابزارهای اندازه‌گیری و اصطلاحات روی مولتی‌متر؛ این بسته درس رسمی یا بانک canonical نیست.",
+  "verification_policy_fa": "تعریف‌ها و ترجمه‌ها پیش‌نویس آموزشی‌اند. منبع‌ها candidate_unverified هستند تا متن دقیق راهنما و مدل ابزار بازبینی شود. هیچ TERM ID یا PART ID تولید نشده است.",
+  "entries": [
+    {
+      "entry_id": "DMM-001",
+      "term_en": "digital multimeter (DMM)",
+      "term_fa": "مولتی‌متر دیجیتال",
+      "pronunciation_fa": "دیجیتَل مالتی‌میتِر",
+      "ipa": "/ˈdɪdʒɪtəl ˈmʌltiˌmiːtər/",
+      "definition_en": "an electronic measuring instrument that can measure electrical quantities such as voltage, resistance and current, subject to its design and input limits",
+      "definition_fa": "ابزار اندازه‌گیری الکترونیکی که بسته به طراحی و محدودیت ورودی خود می‌تواند کمیت‌هایی مانند ولتاژ، مقاومت و جریان را اندازه‌گیری کند.",
+      "collocations": [
+        "digital multimeter display",
+        "DMM measurement"
+      ],
+      "example_en": "The technician records the DMM reading in the inspection report.",
+      "example_fa": "تکنسین مقدار نمایش‌داده‌شده روی مولتی‌متر دیجیتال را در گزارش بازرسی ثبت می‌کند.",
+      "usage_note_fa": "اصطلاح عمومی دستگاه است؛ قابلیت‌ها و محدودیت‌ها بین مدل‌ها تفاوت دارد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-002",
+      "term_en": "COM terminal",
+      "term_fa": "ترمینال مشترک COM",
+      "pronunciation_fa": "کام تِرمینَل",
+      "ipa": "/kɑːm ˈtɜːrmɪnəl/",
+      "definition_en": "the common meter input terminal used as one connection point for many measurements",
+      "definition_fa": "ورودی مشترک دستگاه اندازه‌گیری که برای بسیاری از اندازه‌گیری‌ها یکی از نقاط اتصال پراب محسوب می‌شود.",
+      "collocations": [
+        "COM input",
+        "common terminal"
+      ],
+      "example_en": "The black lead is connected to the COM terminal in the meter diagram.",
+      "example_fa": "در نمودار دستگاه، سیم مشکی به ترمینال COM وصل شده است.",
+      "usage_note_fa": "COM به‌خودی‌خود به معنی اتصال بدنه خودرو نیست؛ نقش آن را طبق راهنمای همان مولتی‌متر بخوان.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-003",
+      "term_en": "voltage input terminal",
+      "term_fa": "ورودی اندازه‌گیری ولتاژ",
+      "pronunciation_fa": "وُلتِج اینپوت تِرمینَل",
+      "ipa": "/ˈvoʊltɪdʒ ˈɪnpʊt ˈtɜːrmɪnəl/",
+      "definition_en": "the meter socket designated for voltage and, on many meters, resistance or continuity measurements",
+      "definition_fa": "سوکت مشخص‌شده روی مولتی‌متر برای اندازه‌گیری ولتاژ و در بسیاری از مدل‌ها مقاومت یا پیوستگی.",
+      "collocations": [
+        "V input",
+        "voltage measurement socket"
+      ],
+      "example_en": "Use the terminal identified for voltage in the instrument manual.",
+      "example_fa": "از ترمینالی استفاده کنید که در راهنمای دستگاه برای ولتاژ مشخص شده است.",
+      "usage_note_fa": "برچسب‌ها و ترکیب عملکرد سوکت‌ها مدل‌وابسته‌اند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-004",
+      "term_en": "fused current input",
+      "term_fa": "ورودی جریانِ فیوزدار",
+      "pronunciation_fa": "فیوزد کارِنت اینپوت",
+      "ipa": "/fjuːzd ˈkɜːrənt ˈɪnpʊt/",
+      "definition_en": "a meter input for current measurement protected by an internal fuse of a specified rating",
+      "definition_fa": "ورودی اندازه‌گیری جریان که با فیوز داخلی دارای مشخصات تعیین‌شده محافظت می‌شود.",
+      "collocations": [
+        "fused mA input",
+        "fused A input"
+      ],
+      "example_en": "The meter manual identifies the fused current input and its rating.",
+      "example_fa": "راهنمای مولتی‌متر ورودی جریان فیوزدار و مشخصات فیوز آن را معرفی می‌کند.",
+      "usage_note_fa": "وجود فیوز به معنی ایمن‌بودن هر اتصال یا هر جریان نیست؛ رده، مقدار فیوز و روش سازنده الزامی است.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-005",
+      "term_en": "test lead",
+      "term_fa": "سیم رابط اندازه‌گیری؛ سیم پراب",
+      "pronunciation_fa": "تِست لید",
+      "ipa": "/ˈtest liːd/",
+      "definition_en": "an insulated conductor assembly that connects a meter input to a measurement point",
+      "definition_fa": "مجموعه سیم عایق‌دار که ورودی دستگاه اندازه‌گیری را به نقطه اندازه‌گیری متصل می‌کند.",
+      "collocations": [
+        "test lead set",
+        "insulated test leads"
+      ],
+      "example_en": "Inspect the test leads for damaged insulation before use.",
+      "example_fa": "پیش از استفاده، عایق سیم‌های اندازه‌گیری را از نظر آسیب بررسی کنید.",
+      "usage_note_fa": "رده ولتاژ، CAT و وضعیت عایق سیم باید با ابزار و محیط کار سازگار باشد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-006",
+      "term_en": "test probe",
+      "term_fa": "نوک پراب اندازه‌گیری",
+      "pronunciation_fa": "تِست پروب",
+      "ipa": "/ˈtest proʊb/",
+      "definition_en": "the pointed or shaped contact at the end of a test lead used to contact a test point",
+      "definition_fa": "قسمت نوک‌دار یا شکل‌دار انتهای سیم اندازه‌گیری که با نقطه آزمون تماس پیدا می‌کند.",
+      "collocations": [
+        "probe tip",
+        "insulated probe"
+      ],
+      "example_en": "The probe tip must match the test point and the manufacturer's instructions.",
+      "example_fa": "نوک پراب باید با نقطه آزمون و دستورالعمل سازنده سازگار باشد.",
+      "usage_note_fa": "تماس اشتباه می‌تواند اتصال کوتاه یا آسیب ایجاد کند؛ نوع پراب و محافظ نوک اهمیت دارد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-007",
+      "term_en": "back-probing",
+      "term_fa": "اندازه‌گیری از پشت سوکت؛ بک‌پروب",
+      "pronunciation_fa": "بَک پروبینگ",
+      "ipa": "/ˈbæk ˌproʊbɪŋ/",
+      "definition_en": "a technique of accessing a connector circuit from the wire-entry side while the connector remains mated, using an appropriate probe or adapter",
+      "definition_fa": "روش دسترسی به مدار کانکتور از سمت ورود سیم، درحالی‌که کانکتور متصل باقی می‌ماند و از پراب یا آداپتور مناسب استفاده می‌شود.",
+      "collocations": [
+        "back-probe adapter",
+        "back-probing technique"
+      ],
+      "example_en": "The service procedure specifies an approved back-probing adapter.",
+      "example_fa": "روش تعمیراتی، آداپتور بک‌پروب مورد تأیید را مشخص کرده است.",
+      "usage_note_fa": "استفاده از سوزن یا ابزار نامناسب ممکن است آب‌بندی، ترمینال یا سیم را آسیب بزند؛ روش عمومی برای همه کانکتورها نیست.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-008",
+      "term_en": "clamp meter",
+      "term_fa": "کلمپ‌متر؛ آمپرمتر انبری",
+      "pronunciation_fa": "کِلَمپ میتِر",
+      "ipa": "/ˈklæmp ˌmiːtər/",
+      "definition_en": "an electrical measuring instrument that senses current using a clamp around a conductor, within its specified limits",
+      "definition_fa": "ابزار اندازه‌گیری جریان که با قرارگرفتن فک کلمپ پیرامون هادی، جریان را در محدوده مشخص دستگاه حس می‌کند.",
+      "collocations": [
+        "AC/DC clamp meter",
+        "clamp meter jaw"
+      ],
+      "example_en": "The technician selects a clamp meter rated for the measurement.",
+      "example_fa": "تکنسین کلمپ‌متری متناسب با مشخصات اندازه‌گیری انتخاب می‌کند.",
+      "usage_note_fa": "نوع AC-only و AC/DC، بازه، دقت و جهت‌گیری ممکن است متفاوت باشد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-009",
+      "term_en": "current clamp jaw",
+      "term_fa": "فک کلمپ جریان",
+      "pronunciation_fa": "کارِنت کِلَمپ جا",
+      "ipa": "/ˈkɜːrənt klæmp dʒɔː/",
+      "definition_en": "the hinged magnetic sensing part of a clamp meter that surrounds a conductor",
+      "definition_fa": "بخش مغناطیسی بازشونده کلمپ‌متر که یک هادی را دربر می‌گیرد.",
+      "collocations": [
+        "clamp jaw",
+        "jaw opening"
+      ],
+      "example_en": "Keep the conductor within the clamp jaw as specified by the instrument guide.",
+      "example_fa": "هادی را مطابق راهنمای ابزار در محدوده فک کلمپ قرار دهید.",
+      "usage_note_fa": "برای اندازه‌گیری جریان یک هادی، چیدمان هادی‌ها و جهت کلمپ باید طبق راهنمای ابزار باشد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-010",
+      "term_en": "test light",
+      "term_fa": "چراغ تست؛ لامپ آزمایش مدار",
+      "pronunciation_fa": "تِست لایت",
+      "ipa": "/ˈtest laɪt/",
+      "definition_en": "a simple electrical test instrument that indicates the presence of a voltage or electrical condition by illuminating a lamp or LED",
+      "definition_fa": "ابزار ساده آزمون برق که وجود ولتاژ یا وضعیت الکتریکی را با روشن‌شدن لامپ یا LED نشان می‌دهد.",
+      "collocations": [
+        "incandescent test light",
+        "LED test light"
+      ],
+      "example_en": "The service information specifies whether a test light is permitted for this circuit.",
+      "example_fa": "اطلاعات تعمیراتی مشخص می‌کند که آیا استفاده از تست‌لایت برای این مدار مجاز است یا خیر.",
+      "usage_note_fa": "تست‌لایت می‌تواند به مدار بار وارد کند؛ برای خطوط سیگنال ECU، شبکه و SRS بدون دستور سازنده استفاده نشود.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-011",
+      "term_en": "auto-ranging",
+      "term_fa": "انتخاب خودکار محدوده اندازه‌گیری",
+      "pronunciation_fa": "اوتو رِینجینگ",
+      "ipa": "/ˌɔːtoʊ ˈreɪndʒɪŋ/",
+      "definition_en": "a meter function that automatically selects a suitable measurement range",
+      "definition_fa": "قابلیتی در مولتی‌متر که محدوده مناسب اندازه‌گیری را به‌صورت خودکار انتخاب می‌کند.",
+      "collocations": [
+        "auto-ranging multimeter",
+        "auto-range mode"
+      ],
+      "example_en": "The meter is set to auto-ranging mode.",
+      "example_fa": "مولتی‌متر روی حالت انتخاب خودکار محدوده تنظیم شده است.",
+      "usage_note_fa": "انتخاب خودکار ممکن است زمان پاسخ یا نمایش را تغییر دهد؛ محدودیت دستگاه را بررسی کنید.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-012",
+      "term_en": "manual ranging",
+      "term_fa": "انتخاب دستی محدوده اندازه‌گیری",
+      "pronunciation_fa": "مَنیوئل رِینجینگ",
+      "ipa": "/ˈmænjuəl ˈreɪndʒɪŋ/",
+      "definition_en": "a function in which the user selects the measurement range instead of relying on automatic range selection",
+      "definition_fa": "حالتی که کاربر محدوده اندازه‌گیری را به‌جای انتخاب خودکار دستگاه تعیین می‌کند.",
+      "collocations": [
+        "manual range",
+        "range selector"
+      ],
+      "example_en": "The operator selects the range specified by the measurement procedure.",
+      "example_fa": "اپراتور محدوده‌ای را انتخاب می‌کند که در روش اندازه‌گیری مشخص شده است.",
+      "usage_note_fa": "محدوده اشتباه می‌تواند باعث نمایش نامعتبر یا اضافه‌بار ورودی شود.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-013",
+      "term_en": "input impedance",
+      "term_fa": "امپدانس ورودی",
+      "pronunciation_fa": "اینپوت ایمپیدِنس",
+      "ipa": "/ˈɪnpʊt ɪmˈpiːdəns/",
+      "definition_en": "the effective opposition presented by a measuring instrument at its input, which can influence the circuit being measured",
+      "definition_fa": "میزان امپدانسی که دستگاه اندازه‌گیری در ورودی خود به مدار ارائه می‌کند و می‌تواند بر مدار مورد اندازه‌گیری اثر بگذارد.",
+      "collocations": [
+        "high input impedance",
+        "meter input impedance"
+      ],
+      "example_en": "The technician checks the instrument's input impedance specification.",
+      "example_fa": "تکنسین مشخصات امپدانس ورودی دستگاه را بررسی می‌کند.",
+      "usage_note_fa": "مقدار و اثر آن به نوع ابزار، حالت اندازه‌گیری و مدار وابسته است.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-014",
+      "term_en": "overload indication (OL)",
+      "term_fa": "نمایش اضافه‌بار یا خارج از محدوده (OL)",
+      "pronunciation_fa": "اووِرلود ایندیکِیشن",
+      "ipa": "/ˈoʊvərloʊd ˌɪndɪˈkeɪʃən/",
+      "definition_en": "a display indication that the measured value is beyond the selected range or the instrument's measurement limit, depending on the meter",
+      "definition_fa": "نمایشی که بسته به مدل دستگاه می‌تواند نشان دهد مقدار اندازه‌گیری‌شده از محدوده انتخابی یا حد اندازه‌گیری دستگاه فراتر رفته است.",
+      "collocations": [
+        "OL display",
+        "over-range indication"
+      ],
+      "example_en": "The display shows OL; consult the meter manual before interpreting it.",
+      "example_fa": "نمایشگر OL را نشان می‌دهد؛ پیش از تفسیر آن به راهنمای مولتی‌متر مراجعه کنید.",
+      "usage_note_fa": "OL در همه مولتی‌مترها دقیقاً معنای یکسانی ندارد؛ ممکن است به اضافه‌بار، خارج‌بودن از رنج یا مدار باز در برخی حالت‌ها اشاره کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-015",
+      "term_en": "polarity",
+      "term_fa": "قطبیت",
+      "pronunciation_fa": "پولاریتی",
+      "ipa": "/pəˈlærɪti/",
+      "definition_en": "the designation of positive and negative electrical orientation in a circuit or measurement",
+      "definition_fa": "مشخص‌بودن جهت مثبت و منفی در مدار یا اندازه‌گیری الکتریکی.",
+      "collocations": [
+        "polarity indication",
+        "reverse polarity"
+      ],
+      "example_en": "The meter indicates a negative value when the leads are connected with the opposite polarity.",
+      "example_fa": "وقتی سیم‌های اندازه‌گیری با قطبیت معکوس متصل شوند، دستگاه مقدار منفی نشان می‌دهد.",
+      "usage_note_fa": "نحوه نمایش قطبیت در حالت‌ها و مدل‌های مختلف دستگاه ممکن است فرق کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-016",
+      "term_en": "DC voltage mode",
+      "term_fa": "حالت اندازه‌گیری ولتاژ مستقیم",
+      "pronunciation_fa": "دی‌سی وُلتِج مود",
+      "ipa": "/ˌdiː ˈsiː ˈvoʊltɪdʒ moʊd/",
+      "definition_en": "the meter function used to measure direct-current voltage within the instrument's rated limits",
+      "definition_fa": "حالت مولتی‌متر برای اندازه‌گیری ولتاژ جریان مستقیم در محدوده مجاز دستگاه.",
+      "collocations": [
+        "DC V setting",
+        "DC voltage range"
+      ],
+      "example_en": "Select the DC voltage function shown in the instrument guide.",
+      "example_fa": "عملکرد اندازه‌گیری ولتاژ DC را مطابق راهنمای دستگاه انتخاب کنید.",
+      "usage_note_fa": "محدوده، رده ایمنی و دستورالعمل وسیله نقلیه باید رعایت شود؛ مقدار عمومی برای تمام خودروها فرض نشود.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-017",
+      "term_en": "AC voltage mode",
+      "term_fa": "حالت اندازه‌گیری ولتاژ متناوب",
+      "pronunciation_fa": "اِی‌سی وُلتِج مود",
+      "ipa": "/ˌeɪ ˈsiː ˈvoʊltɪdʒ moʊd/",
+      "definition_en": "the meter function used to measure alternating-current voltage within the instrument's rated limits",
+      "definition_fa": "حالت مولتی‌متر برای اندازه‌گیری ولتاژ جریان متناوب در محدوده مجاز دستگاه.",
+      "collocations": [
+        "AC V setting",
+        "AC voltage range"
+      ],
+      "example_en": "The meter manual explains the AC voltage function and its frequency limits.",
+      "example_fa": "راهنمای مولتی‌متر عملکرد ولتاژ AC و محدودیت فرکانسی آن را توضیح می‌دهد.",
+      "usage_note_fa": "پاسخ فرکانسی و دقت AC بین مولتی‌مترها متفاوت است.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-018",
+      "term_en": "diode test mode",
+      "term_fa": "حالت تست دیود",
+      "pronunciation_fa": "دایود تِست مود",
+      "ipa": "/ˈdaɪoʊd test moʊd/",
+      "definition_en": "a meter function that applies a limited test signal and displays a voltage-related reading across a semiconductor junction",
+      "definition_fa": "حالتی از مولتی‌متر که سیگنال آزمون محدود اعمال می‌کند و قرائتی مرتبط با ولتاژ پیوند نیمه‌هادی نمایش می‌دهد.",
+      "collocations": [
+        "diode check",
+        "diode test function"
+      ],
+      "example_en": "The diode test mode is described in the meter's user manual.",
+      "example_fa": "حالت تست دیود در راهنمای کاربر مولتی‌متر توضیح داده شده است.",
+      "usage_note_fa": "این حالت را روی مدارهای متصل به ECU یا مدارهای حساس بدون روش سازنده اعمال نکنید.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-019",
+      "term_en": "frequency measurement",
+      "term_fa": "اندازه‌گیری فرکانس",
+      "pronunciation_fa": "فریکوِنسی مِژِرمِنت",
+      "ipa": "/ˈfriːkwənsi ˈmeʒərmənt/",
+      "definition_en": "measurement of the number of signal cycles per unit time, commonly expressed in hertz",
+      "definition_fa": "اندازه‌گیری تعداد چرخه‌های یک سیگنال در واحد زمان که معمولاً با هرتز بیان می‌شود.",
+      "collocations": [
+        "frequency in hertz",
+        "Hz measurement"
+      ],
+      "example_en": "The meter supports frequency measurement on the specified input.",
+      "example_fa": "مولتی‌متر از اندازه‌گیری فرکانس در ورودی مشخص‌شده پشتیبانی می‌کند.",
+      "usage_note_fa": "حداکثر فرکانس، دامنه ورودی و شکل موج قابل اندازه‌گیری به مدل وابسته است.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-020",
+      "term_en": "duty-cycle measurement",
+      "term_fa": "اندازه‌گیری چرخه کاری",
+      "pronunciation_fa": "دیوتی سایکِل مِژِرمِنت",
+      "ipa": "/ˈduːti ˌsaɪkəl ˈmeʒərmənt/",
+      "definition_en": "measurement of the proportion of one signal period during which the signal is in its active state, usually expressed as a percentage",
+      "definition_fa": "اندازه‌گیری سهمی از یک دوره سیگنال که سیگنال در وضعیت فعال قرار دارد و معمولاً به درصد بیان می‌شود.",
+      "collocations": [
+        "duty cycle percentage",
+        "PWM duty cycle"
+      ],
+      "example_en": "The duty-cycle reading is recorded as a percentage.",
+      "example_fa": "مقدار چرخه کاری به‌صورت درصد ثبت می‌شود.",
+      "usage_note_fa": "تعریف وضعیت فعال، قطبیت و نحوه محاسبه ممکن است به نوع سیگنال و ابزار وابسته باشد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-021",
+      "term_en": "MIN/MAX capture",
+      "term_fa": "ثبت کمینه و بیشینه",
+      "pronunciation_fa": "مِین مَکس کَپچِر",
+      "ipa": "/ˌmɪn ˈmæks ˈkæptʃər/",
+      "definition_en": "a meter function that records the minimum and maximum values observed during a measurement interval",
+      "definition_fa": "قابلیتی در دستگاه که کمترین و بیشترین مقادیر مشاهده‌شده را در بازه اندازه‌گیری ثبت می‌کند.",
+      "collocations": [
+        "MIN/MAX recording",
+        "maximum reading"
+      ],
+      "example_en": "The technician uses the MIN/MAX function to capture changing readings, when supported by the procedure.",
+      "example_fa": "تکنسین در صورت پشتیبانی روش آزمون، از قابلیت MIN/MAX برای ثبت تغییرات مقدار استفاده می‌کند.",
+      "usage_note_fa": "سرعت نمونه‌برداری و مدت ثبت در تشخیص افت‌های بسیار کوتاه محدودیت ایجاد می‌کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-022",
+      "term_en": "measurement category (CAT) rating",
+      "term_fa": "رده ایمنی اندازه‌گیری (CAT)",
+      "pronunciation_fa": "مِژِرمِنت کَتِگُری رِیتینگ",
+      "ipa": "/ˈmeʒərmənt ˈkætəɡɔːri ˈreɪtɪŋ/",
+      "definition_en": "a safety classification describing the electrical transient environment for which a measuring instrument and its accessories are rated",
+      "definition_fa": "رده‌بندی ایمنی که محیط گذراهای الکتریکی قابل تحمل برای ابزار اندازه‌گیری و متعلقات آن را مشخص می‌کند.",
+      "collocations": [
+        "CAT II",
+        "CAT III",
+        "CAT IV rating"
+      ],
+      "example_en": "Check the CAT rating of the meter and leads against the intended measurement environment.",
+      "example_fa": "رده CAT مولتی‌متر و سیم‌های آن را با محیط اندازه‌گیری موردنظر تطبیق دهید.",
+      "usage_note_fa": "CAT را با حداکثر ولتاژ اسمی یکی نگیرید؛ ابزار و پراب هر دو باید رده مناسب داشته باشند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-023",
+      "term_en": "breakout lead",
+      "term_fa": "سیم رابط واسط آزمون؛ بریک‌اوت لید",
+      "pronunciation_fa": "بِریک‌اوت لید",
+      "ipa": "/ˈbreɪkaʊt liːd/",
+      "definition_en": "an adapter lead that provides an accessible test connection between a vehicle harness and a component without directly probing a connector terminal",
+      "definition_fa": "آداپتور واسطی که بین دسته‌سیم خودرو و قطعه قرار می‌گیرد و نقطه اتصال آزمون فراهم می‌کند، بدون آن‌که مستقیماً به ترمینال کانکتور پراب زده شود.",
+      "collocations": [
+        "breakout harness",
+        "breakout adapter"
+      ],
+      "example_en": "The OEM procedure calls for a dedicated breakout lead.",
+      "example_fa": "روش سازنده استفاده از سیم رابط بریک‌اوت اختصاصی را درخواست می‌کند.",
+      "usage_note_fa": "تنها آداپتور منطبق با کانکتور و روش تأییدشده باید استفاده شود.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "DMM-024",
+      "term_en": "measurement range",
+      "term_fa": "محدوده اندازه‌گیری",
+      "pronunciation_fa": "مِژِرمِنت رِینج",
+      "ipa": "/ˈmeʒərmənt reɪndʒ/",
+      "definition_en": "the span of values that an instrument can measure under stated accuracy and operating conditions",
+      "definition_fa": "بازه مقادیری که ابزار در شرایط کاری و دقت تعیین‌شده قادر به اندازه‌گیری آن‌هاست.",
+      "collocations": [
+        "measurement range",
+        "selected range"
+      ],
+      "example_en": "The expected value must fall within the instrument's rated measurement range.",
+      "example_fa": "مقدار مورد انتظار باید در محدوده اندازه‌گیری نامی ابزار قرار گیرد.",
+      "usage_note_fa": "محدوده اندازه‌گیری را از مشخصات همان مدل بخوانید؛ از تعمیم مشخصات یک دستگاه به دستگاه دیگر خودداری کنید.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    }
+  ],
+  "language_notes": [
+    {
+      "topic": "COM is not automatically chassis ground",
+      "note_fa": "COM نام ترمینال مشترک مولتی‌متر است و نباید بدون توجه به مدار با اتصال بدنه خودرو یکی گرفته شود."
+    },
+    {
+      "topic": "test light versus DMM",
+      "note_fa": "تست‌لایت و مولتی‌متر از نظر امپدانس ورودی و باری که به مدار وارد می‌کنند یکسان نیستند؛ استفاده روی مدارهای الکترونیکی حساس باید تابع دستورالعمل سازنده باشد."
+    },
+    {
+      "topic": "OL display",
+      "note_fa": "OL بسته به مدل و حالت اندازه‌گیری ممکن است معانی متفاوتی داشته باشد؛ همیشه از دفترچه همان ابزار پیروی کنید."
+    },
+    {
+      "topic": "CAT rating",
+      "note_fa": "رده CAT درباره محیط گذراهای الکتریکی است؛ صرفاً عدد ولتاژ روی بدنه معیار کافی برای انتخاب ابزار نیست."
+    },
+    {
+      "topic": "back-probing",
+      "note_fa": "Back-probing یک تکنیک دسترسی است، نه مجوز استفاده از هر سوزن یا سوراخ‌کردن عایق سیم. آداپتور و روش OEM اولویت دارد."
+    }
+  ],
+  "workshop_phrases": [
+    {
+      "en": "Which input terminal does the meter manual specify?",
+      "fa": "راهنمای مولتی‌متر کدام ورودی را مشخص کرده است؟",
+      "purpose": "پرسش درباره انتخاب ورودی ابزار"
+    },
+    {
+      "en": "The display shows OL in this range.",
+      "fa": "نمایشگر در این محدوده OL را نشان می‌دهد.",
+      "purpose": "گزارش وضعیت نمایشگر"
+    },
+    {
+      "en": "This meter supports AC and DC current measurement.",
+      "fa": "این مولتی‌متر از اندازه‌گیری جریان AC و DC پشتیبانی می‌کند.",
+      "purpose": "شرح قابلیت ابزار"
+    },
+    {
+      "en": "Use the approved breakout adapter.",
+      "fa": "از آداپتور بریک‌اوت تأییدشده استفاده کنید.",
+      "purpose": "ارجاع به ابزار واسط مورد تأیید"
+    },
+    {
+      "en": "Do not use a test light on this circuit unless the service information allows it.",
+      "fa": "مگر آن‌که اطلاعات تعمیراتی اجازه دهد، از تست‌لایت روی این مدار استفاده نکنید.",
+      "purpose": "هشدار ایمنی/حفاظت مدار"
+    },
+    {
+      "en": "Check the meter and lead CAT ratings.",
+      "fa": "رده CAT مولتی‌متر و سیم‌های آن را بررسی کنید.",
+      "purpose": "کنترل رده ایمنی ابزار"
+    },
+    {
+      "en": "The duty-cycle reading is shown as a percentage.",
+      "fa": "مقدار چرخه کاری به‌صورت درصد نمایش داده می‌شود.",
+      "purpose": "گزارش قرائت سیگنال"
+    }
+  ]
+}
