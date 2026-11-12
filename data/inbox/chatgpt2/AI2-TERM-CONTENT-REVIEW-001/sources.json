@@ -1,0 +1,78 @@
+{
+  "task_id": "AI2-TERM-CONTENT-REVIEW-001",
+  "note": "References consulted for general terminology. None of the sources is asserted to validate every record or vehicle-specific application.",
+  "sources": [
+    {
+      "id": "SRC-01",
+      "title": "Automotive Technology — Manual Drive Train and Axles, clutch assembly components",
+      "url": "https://aaprostraining.com/wp-content/uploads/2019/10/Manual-Drivetrain-and-Axles.pdf",
+      "supports": [
+        "Pressure Plate and Clutch Disc are distinct components"
+      ],
+      "status": "consulted_general_reference"
+    },
+    {
+      "id": "SRC-02",
+      "title": "Handbook of Mechanical Engineering Terms — Automotive Vehicles",
+      "url": "https://ftp.idu.ac.id/wp-content/uploads/ebook/tdg/DESIGN%20SISTEM%20DAYA%20GERAK/Handbook%20of%20Mechanical%20Engineering%20Terms.pdf",
+      "supports": [
+        "Clutch pressure plate clamps clutch disc against flywheel"
+      ],
+      "status": "consulted_general_reference"
+    },
+    {
+      "id": "SRC-03",
+      "title": "Bosch Engine Sensor Glossary",
+      "url": "https://cdr.boschdiagnostics.com/cdr/node/326",
+      "supports": [
+        "Crankshaft/camshaft position sensor monitors engine rotation and supports injection/ignition timing"
+      ],
+      "status": "consulted_manufacturer_reference"
+    },
+    {
+      "id": "SRC-04",
+      "title": "Bosch Sensors for Engine Management brochure",
+      "url": "https://www.boschaftermarket.com/xrm/media/images/parts/sensors_2/pdf_41/en_7/brochure_sensors_vehicle.pdf",
+      "supports": [
+        "Crankshaft-speed sensors measure speed and position"
+      ],
+      "status": "consulted_manufacturer_reference"
+    },
+    {
+      "id": "SRC-05",
+      "title": "Cambridge Dictionary — Stalling",
+      "url": "https://dictionary.cambridge.org/dictionary/english/stalling",
+      "supports": [
+        "Engine stalls when it stops suddenly without intention"
+      ],
+      "status": "consulted_language_reference"
+    },
+    {
+      "id": "SRC-06",
+      "title": "Monroe — Shocks vs. Struts",
+      "url": "https://www.monroe.com/technical-resources/shocks-101/shocks-vs-struts.html",
+      "supports": [
+        "Struts are structural suspension components, distinct from individual shock absorbers; struts also provide damping"
+      ],
+      "status": "consulted_manufacturer_reference"
+    },
+    {
+      "id": "SRC-07",
+      "title": "SKF Training Solutions — Bearing Maintenance and Technology",
+      "url": "https://cdn.skfmediahub.skf.com/api/public/0901d19680535581/pdf_preview_medium/0901d19680535581_pdf_preview_medium.pdf",
+      "supports": [
+        "Rolling bearings and plain bearings are separate bearing types"
+      ],
+      "status": "consulted_manufacturer_reference"
+    },
+    {
+      "id": "SRC-08",
+      "title": "ASE Glossary of Automotive Terminology",
+      "url": "https://www.ase.com/uploads/ASE-Glossary---Test-Center-Version.pdf",
+      "supports": [
+        "Automotive terminology cross-check, including clutch and stall vocabulary"
+      ],
+      "status": "consulted_industry_reference"
+    }
+  ]
+}
