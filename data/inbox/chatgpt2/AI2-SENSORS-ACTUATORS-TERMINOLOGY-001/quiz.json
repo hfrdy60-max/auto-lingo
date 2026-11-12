@@ -1,0 +1,486 @@
+{
+  "mission_id": "AI2-SENSORS-ACTUATORS-TERMINOLOGY-001",
+  "status": "candidate_unverified",
+  "total_questions": 36,
+  "question_types": [
+    "multiple_choice",
+    "translation_fa_to_en",
+    "translation_en_to_fa",
+    "fill_gap",
+    "contextual_use",
+    "matching"
+  ],
+  "questions": [
+    {
+      "question_id": "SA-Q001",
+      "type": "multiple_choice",
+      "prompt_en": "Which sensor reports crankshaft position?",
+      "prompt_fa": "کدام حسگر موقعیت میل‌لنگ را گزارش می‌کند؟",
+      "options": [
+        "CKP",
+        "IAT",
+        "MAF",
+        "WSS"
+      ],
+      "answer": "CKP",
+      "explanation_en": "CKP مخفف حسگر موقعیت میل‌لنگ است.",
+      "explanation_fa": "CKP مخفف حسگر موقعیت میل‌لنگ است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q002",
+      "type": "multiple_choice",
+      "prompt_en": "Which sensor describes incoming air mass?",
+      "prompt_fa": "کدام حسگر جرم هوای ورودی را توصیف می‌کند؟",
+      "options": [
+        "MAP",
+        "MAF",
+        "ECT",
+        "APP"
+      ],
+      "answer": "MAF",
+      "explanation_en": "MAF به جرم جریان هوا اشاره دارد.",
+      "explanation_fa": "MAF به جرم جریان هوا اشاره دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q003",
+      "type": "multiple_choice",
+      "prompt_en": "What does APP primarily represent?",
+      "prompt_fa": "APP در درجه اول چه چیزی را نشان می‌دهد؟",
+      "options": [
+        "Driver pedal request",
+        "Coolant temperature",
+        "Exhaust oxygen",
+        "Wheel rotation"
+      ],
+      "answer": "Driver pedal request",
+      "explanation_en": "APP درخواست راننده از طریق پدال را گزارش می‌کند.",
+      "explanation_fa": "APP درخواست راننده از طریق پدال را گزارش می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q004",
+      "type": "multiple_choice",
+      "prompt_en": "Which item is an actuator?",
+      "prompt_fa": "کدام مورد عملگر است؟",
+      "options": [
+        "ECT sensor",
+        "Fuel injector",
+        "MAP sensor",
+        "Wheel speed sensor"
+      ],
+      "answer": "Fuel injector",
+      "explanation_en": "انژکتور سوخت عملگر تحویل سوخت است.",
+      "explanation_fa": "انژکتور سوخت عملگر تحویل سوخت است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q005",
+      "type": "multiple_choice",
+      "prompt_en": "What does implausible signal indicate?",
+      "prompt_fa": "سیگنال نامعقول چه چیزی را نشان می‌دهد؟",
+      "options": [
+        "A value inconsistent with expected logic",
+        "A confirmed failed sensor",
+        "A specific broken wire",
+        "A universal voltage limit"
+      ],
+      "answer": "A value inconsistent with expected logic",
+      "explanation_en": "نامعقول بودن به ناسازگاری با منطق مورد انتظار اشاره دارد.",
+      "explanation_fa": "نامعقول بودن به ناسازگاری با منطق مورد انتظار اشاره دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q006",
+      "type": "multiple_choice",
+      "prompt_en": "Which term means the state requested by a controller?",
+      "prompt_fa": "کدام اصطلاح به وضعیت درخواستی واحد کنترل اشاره دارد؟",
+      "options": [
+        "Actual value",
+        "Commanded state",
+        "Signal saturation",
+        "Sensor offset"
+      ],
+      "answer": "Commanded state",
+      "explanation_en": "Commanded state وضعیت درخواستی را بیان می‌کند.",
+      "explanation_fa": "Commanded state وضعیت درخواستی را بیان می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q007",
+      "type": "multiple_choice",
+      "prompt_en": "Which sensor measures intake-air temperature?",
+      "prompt_fa": "کدام حسگر دمای هوای ورودی را اندازه می‌گیرد؟",
+      "options": [
+        "IAT",
+        "ECT",
+        "NOx",
+        "CKP"
+      ],
+      "answer": "IAT",
+      "explanation_en": "IAT مخفف دمای هوای ورودی است.",
+      "explanation_fa": "IAT مخفف دمای هوای ورودی است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q008",
+      "type": "multiple_choice",
+      "prompt_en": "Which component can regulate exhaust-gas recirculation?",
+      "prompt_fa": "کدام قطعه بازچرخانی گاز اگزوز را تنظیم می‌کند؟",
+      "options": [
+        "EGR valve actuator",
+        "Wheel speed sensor",
+        "MAP sensor",
+        "Knock sensor"
+      ],
+      "answer": "EGR valve actuator",
+      "explanation_en": "عملگر EGR حرکت شیر را کنترل می‌کند.",
+      "explanation_fa": "عملگر EGR حرکت شیر را کنترل می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q009",
+      "type": "multiple_choice",
+      "prompt_en": "What does signal dropout describe?",
+      "prompt_fa": "Signal dropout چه چیزی را توصیف می‌کند؟",
+      "options": [
+        "Temporary loss of signal",
+        "Maximum signal limit",
+        "Requested position",
+        "Atmospheric pressure"
+      ],
+      "answer": "Temporary loss of signal",
+      "explanation_en": "Dropout به از دست رفتن موقت سیگنال اشاره دارد.",
+      "explanation_fa": "Dropout به از دست رفتن موقت سیگنال اشاره دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q010",
+      "type": "multiple_choice",
+      "prompt_en": "What does circuit-high wording indicate?",
+      "prompt_fa": "عبارت circuit high چه چیزی را بیان می‌کند؟",
+      "options": [
+        "Monitored input interpreted above its defined range",
+        "Always a short to battery",
+        "An ECU that must be replaced",
+        "A proven broken wire"
+      ],
+      "answer": "Monitored input interpreted above its defined range",
+      "explanation_en": "این عبارت ورودی بالاتر از محدوده تعریف‌شده را بیان می‌کند.",
+      "explanation_fa": "این عبارت ورودی بالاتر از محدوده تعریف‌شده را بیان می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q011",
+      "type": "translation_fa_to_en",
+      "prompt_en": "Translate: camshaft position sensor",
+      "prompt_fa": "ترجمه کن: حسگر موقعیت میل‌بادامک",
+      "options": null,
+      "answer": "Camshaft position sensor",
+      "explanation_en": "این معادل فنی رایج است.",
+      "explanation_fa": "این معادل فنی رایج است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q012",
+      "type": "translation_fa_to_en",
+      "prompt_en": "Translate: actual value",
+      "prompt_fa": "ترجمه کن: مقدار واقعی",
+      "options": null,
+      "answer": "Actual value",
+      "explanation_en": "این عبارت برای مقدار بازخورد به کار می‌رود.",
+      "explanation_fa": "این عبارت برای مقدار بازخورد به کار می‌رود.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q013",
+      "type": "translation_fa_to_en",
+      "prompt_en": "Translate: fuel rail pressure sensor",
+      "prompt_fa": "ترجمه کن: حسگر فشار ریل سوخت",
+      "options": null,
+      "answer": "Fuel rail pressure sensor",
+      "explanation_en": "این اصطلاح حسگر فشار ریل را نام می‌برد.",
+      "explanation_fa": "این اصطلاح حسگر فشار ریل را نام می‌برد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q014",
+      "type": "translation_fa_to_en",
+      "prompt_en": "Translate: command-to-actual deviation",
+      "prompt_fa": "ترجمه کن: اختلاف فرمان و مقدار واقعی",
+      "options": null,
+      "answer": "Command-to-actual deviation",
+      "explanation_en": "این عبارت اختلاف درخواست و بازخورد را توصیف می‌کند.",
+      "explanation_fa": "این عبارت اختلاف درخواست و بازخورد را توصیف می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q015",
+      "type": "translation_fa_to_en",
+      "prompt_en": "Translate: intake air temperature sensor",
+      "prompt_fa": "ترجمه کن: حسگر دمای هوای ورودی",
+      "options": null,
+      "answer": "Intake air temperature sensor",
+      "explanation_en": "IAT مخفف رایج آن است.",
+      "explanation_fa": "IAT مخفف رایج آن است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q016",
+      "type": "translation_fa_to_en",
+      "prompt_en": "Translate: signal saturation",
+      "prompt_fa": "ترجمه کن: اشباع سیگنال",
+      "options": null,
+      "answer": "Signal saturation",
+      "explanation_en": "اشباع به رسیدن خروجی به حد اشاره دارد.",
+      "explanation_fa": "اشباع به رسیدن خروجی به حد اشاره دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q017",
+      "type": "translation_en_to_fa",
+      "prompt_en": "Translate: narrowband oxygen sensor",
+      "prompt_fa": "ترجمه کن: narrowband oxygen sensor",
+      "options": null,
+      "answer": "حسگر اکسیژن باریک‌باند",
+      "explanation_en": "این اصطلاح نوع باریک‌باند حسگر اکسیژن را بیان می‌کند.",
+      "explanation_fa": "این اصطلاح نوع باریک‌باند حسگر اکسیژن را بیان می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q018",
+      "type": "translation_en_to_fa",
+      "prompt_en": "Translate: fuel injector",
+      "prompt_fa": "ترجمه کن: fuel injector",
+      "options": null,
+      "answer": "انژکتور سوخت",
+      "explanation_en": "انژکتور سوخت یک عملگر است.",
+      "explanation_fa": "انژکتور سوخت یک عملگر است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q019",
+      "type": "translation_en_to_fa",
+      "prompt_en": "Translate: signal dropout",
+      "prompt_fa": "ترجمه کن: signal dropout",
+      "options": null,
+      "answer": "قطع لحظه‌ای سیگنال",
+      "explanation_en": "این عبارت از دست رفتن موقت سیگنال را توصیف می‌کند.",
+      "explanation_fa": "این عبارت از دست رفتن موقت سیگنال را توصیف می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q020",
+      "type": "translation_en_to_fa",
+      "prompt_en": "Translate: fail-safe mode",
+      "prompt_fa": "ترجمه کن: fail-safe mode",
+      "options": null,
+      "answer": "حالت ایمن جایگزین",
+      "explanation_en": "این اصطلاح حالت عملکرد جایگزین را توصیف می‌کند.",
+      "explanation_fa": "این اصطلاح حالت عملکرد جایگزین را توصیف می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q021",
+      "type": "translation_en_to_fa",
+      "prompt_en": "Translate: sensor response time",
+      "prompt_fa": "ترجمه کن: sensor response time",
+      "options": null,
+      "answer": "زمان پاسخ حسگر",
+      "explanation_en": "این عبارت مدت پاسخ حسگر را بیان می‌کند.",
+      "explanation_fa": "این عبارت مدت پاسخ حسگر را بیان می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q022",
+      "type": "translation_en_to_fa",
+      "prompt_en": "Translate: commanded state",
+      "prompt_fa": "ترجمه کن: commanded state",
+      "options": null,
+      "answer": "وضعیت فرمان‌داده‌شده",
+      "explanation_en": "این عبارت وضعیت درخواست‌شده را نشان می‌دهد.",
+      "explanation_fa": "این عبارت وضعیت درخواست‌شده را نشان می‌دهد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q023",
+      "type": "fill_gap",
+      "prompt_en": "The ______ sensor reports crankshaft position.",
+      "prompt_fa": "جای خالی را پر کن: The ______ sensor reports crankshaft position.",
+      "options": null,
+      "answer": "CKP",
+      "explanation_en": "CKP حسگر موقعیت میل‌لنگ است.",
+      "explanation_fa": "CKP حسگر موقعیت میل‌لنگ است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q024",
+      "type": "fill_gap",
+      "prompt_en": "A ______ valve manages stored fuel vapour in an EVAP system.",
+      "prompt_fa": "جای خالی را پر کن: A ______ valve manages stored fuel vapour in an EVAP system.",
+      "options": null,
+      "answer": "purge",
+      "explanation_en": "شیر purge بخارات ذخیره‌شده را مدیریت می‌کند.",
+      "explanation_fa": "شیر purge بخارات ذخیره‌شده را مدیریت می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q025",
+      "type": "fill_gap",
+      "prompt_en": "The requested condition is called the ______ state.",
+      "prompt_fa": "جای خالی را پر کن: The requested condition is called the ______ state.",
+      "options": null,
+      "answer": "commanded",
+      "explanation_en": "Commanded state وضعیت درخواستی است.",
+      "explanation_fa": "Commanded state وضعیت درخواستی است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q026",
+      "type": "fill_gap",
+      "prompt_en": "A temporary loss of signal is a signal ______.",
+      "prompt_fa": "جای خالی را پر کن: A temporary loss of signal is a signal ______.",
+      "options": null,
+      "answer": "dropout",
+      "explanation_en": "Dropout به قطع موقت اشاره دارد.",
+      "explanation_fa": "Dropout به قطع موقت اشاره دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q027",
+      "type": "fill_gap",
+      "prompt_en": "The ______ sensor reports intake-air temperature.",
+      "prompt_fa": "جای خالی را پر کن: The ______ sensor reports intake-air temperature.",
+      "options": null,
+      "answer": "IAT",
+      "explanation_en": "IAT دمای هوای ورودی را گزارش می‌کند.",
+      "explanation_fa": "IAT دمای هوای ورودی را گزارش می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q028",
+      "type": "contextual_use",
+      "prompt_en": "Requested throttle position and feedback position differ. Which phrase describes the observation?",
+      "prompt_fa": "موقعیت درخواستی و بازخورد دریچه گاز متفاوت‌اند؛ کدام عبارت مناسب است؟",
+      "options": [
+        "Command-to-actual deviation",
+        "Sensor 1",
+        "Bank 2",
+        "Signal frequency"
+      ],
+      "answer": "Command-to-actual deviation",
+      "explanation_en": "این عبارت اختلاف را بدون فرض علت توصیف می‌کند.",
+      "explanation_fa": "این عبارت اختلاف را بدون فرض علت توصیف می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q029",
+      "type": "contextual_use",
+      "prompt_en": "The expected input was not detected. Which term fits?",
+      "prompt_fa": "ورودی مورد انتظار شناسایی نشده؛ کدام اصطلاح مناسب است؟",
+      "options": [
+        "Missing signal",
+        "Signal saturation",
+        "Actual value",
+        "Sensor offset"
+      ],
+      "answer": "Missing signal",
+      "explanation_en": "Missing signal نبود اطلاعات مورد انتظار را توصیف می‌کند.",
+      "explanation_fa": "Missing signal نبود اطلاعات مورد انتظار را توصیف می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q030",
+      "type": "contextual_use",
+      "prompt_en": "A controller checks whether related sensor values are consistent. What is this?",
+      "prompt_fa": "واحد کنترل سازگاری مقادیر حسگر مرتبط را بررسی می‌کند؛ این چیست؟",
+      "options": [
+        "Sensor rationality check",
+        "Pulse width",
+        "Fuel delivery",
+        "Actuator coil"
+      ],
+      "answer": "Sensor rationality check",
+      "explanation_en": "این بررسی رابطه ورودی‌ها را با منطق مورد انتظار می‌سنجد.",
+      "explanation_fa": "این بررسی رابطه ورودی‌ها را با منطق مورد انتظار می‌سنجد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q031",
+      "type": "contextual_use",
+      "prompt_en": "A report names Bank 1 Sensor 2. What should be consulted to identify its location?",
+      "prompt_fa": "گزارش Bank 1 Sensor 2 را نام می‌برد؛ برای تعیین محل آن چه چیزی لازم است؟",
+      "options": [
+        "Exact engine service information",
+        "Universal location chart",
+        "Vehicle colour",
+        "Tyre size"
+      ],
+      "answer": "Exact engine service information",
+      "explanation_en": "شماره‌گذاری را باید با اطلاعات همان موتور تطبیق داد.",
+      "explanation_fa": "شماره‌گذاری را باید با اطلاعات همان موتور تطبیق داد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q032",
+      "type": "contextual_use",
+      "prompt_en": "A scan tool sends a supported command as well as reading data. What capability is this?",
+      "prompt_fa": "دستگاه علاوه بر خواندن داده، فرمان پشتیبانی‌شده می‌فرستد؛ این قابلیت چیست؟",
+      "options": [
+        "Bi-directional control",
+        "Signal amplitude",
+        "Sensor offset",
+        "Bank numbering"
+      ],
+      "answer": "Bi-directional control",
+      "explanation_en": "کنترل دوطرفه شامل خواندن داده و ارسال فرمان پشتیبانی‌شده است.",
+      "explanation_fa": "کنترل دوطرفه شامل خواندن داده و ارسال فرمان پشتیبانی‌شده است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q033",
+      "type": "matching",
+      "prompt_en": "Match MAP with its measured quantity.",
+      "prompt_fa": "MAP را با کمیت اندازه‌گیری‌شده تطبیق بده.",
+      "options": null,
+      "answer": "Manifold absolute pressure",
+      "explanation_en": "MAP به فشار مطلق منیفولد اشاره دارد.",
+      "explanation_fa": "MAP به فشار مطلق منیفولد اشاره دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q034",
+      "type": "matching",
+      "prompt_en": "Match ECT with its measured quantity.",
+      "prompt_fa": "ECT را با کمیت اندازه‌گیری‌شده تطبیق بده.",
+      "options": null,
+      "answer": "Engine coolant temperature",
+      "explanation_en": "ECT به دمای مایع خنک‌کننده موتور اشاره دارد.",
+      "explanation_fa": "ECT به دمای مایع خنک‌کننده موتور اشاره دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q035",
+      "type": "matching",
+      "prompt_en": "Match APP with its measured quantity.",
+      "prompt_fa": "APP را با کمیت اندازه‌گیری‌شده تطبیق بده.",
+      "options": null,
+      "answer": "Accelerator pedal position",
+      "explanation_en": "APP به موقعیت پدال گاز اشاره دارد.",
+      "explanation_fa": "APP به موقعیت پدال گاز اشاره دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "question_id": "SA-Q036",
+      "type": "matching",
+      "prompt_en": "Match NOx sensor with its measured quantity.",
+      "prompt_fa": "حسگر NOx را با کمیت اندازه‌گیری‌شده تطبیق بده.",
+      "options": null,
+      "answer": "Nitrogen oxides in exhaust gas",
+      "explanation_en": "حسگر NOx با پایش اکسیدهای نیتروژن مرتبط است.",
+      "explanation_fa": "حسگر NOx با پایش اکسیدهای نیتروژن مرتبط است.",
+      "status": "candidate_unverified"
+    }
+  ]
+}
