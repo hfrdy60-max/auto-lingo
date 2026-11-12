@@ -1,0 +1,103 @@
+{
+  "lesson_id": "E01",
+  "target_new_terms": 10,
+  "matching_policy": "Exact term_en matches only; no canonical IDs are invented.",
+  "records": [
+    {
+      "term_en": "engine",
+      "term_fa": "موتور",
+      "canonical_term_id": null,
+      "canonical_part_id": null,
+      "mapping_status": "unmatched",
+      "counts_toward_10_new_terms": false
+    },
+    {
+      "term_en": "engine block",
+      "term_fa": "بلوک موتور / بلوک سیلندر",
+      "canonical_term_id": "TERM-000009",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "cylinder",
+      "term_fa": "سیلندر",
+      "canonical_term_id": "TERM-000002",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "cylinder head",
+      "term_fa": "سرسیلندر",
+      "canonical_term_id": "TERM-000008",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "combustion chamber",
+      "term_fa": "محفظه احتراق",
+      "canonical_term_id": "TERM-000010",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "piston",
+      "term_fa": "پیستون",
+      "canonical_term_id": "TERM-000003",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "connecting rod",
+      "term_fa": "شاتون",
+      "canonical_term_id": "TERM-000005",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "crankshaft",
+      "term_fa": "میل‌لنگ",
+      "canonical_term_id": "TERM-000006",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "camshaft",
+      "term_fa": "میل‌بادامک",
+      "canonical_term_id": "TERM-000025",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "intake valve",
+      "term_fa": "سوپاپ ورودی",
+      "canonical_term_id": "TERM-000023",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "exhaust valve",
+      "term_fa": "سوپاپ خروجی",
+      "canonical_term_id": "TERM-000024",
+      "canonical_part_id": null,
+      "mapping_status": "exact_term_match",
+      "counts_toward_10_new_terms": true
+    },
+    {
+      "term_en": "spark plug",
+      "term_fa": "شمع جرقه‌زن",
+      "canonical_term_id": null,
+      "canonical_part_id": "PART-000006",
+      "mapping_status": "part_only_match",
+      "counts_toward_10_new_terms": false
+    }
+  ]
+}
