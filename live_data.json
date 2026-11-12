@@ -1,0 +1,262 @@
+[
+  {
+    "id": "autel-ms906pro-live-data",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "category": "Live Data",
+    "term_en": "Live Data",
+    "term_en_as_written_in_manual": "Live Data",
+    "term_fa": "داده‌ی زنده",
+    "pronunciation_fa": "لایو دیتا",
+    "translation_status": "author_translation",
+    "technical_description_fa": "فهرست پارامترهای ماژول با ستون‌های Name، Value، Range و Unit. ترتیب پارامترها همان ترتیب ارسال از ECM است و بین خودروها فرق می‌کند.",
+    "usage_fa": "بررسی رفتار سنسورها و وضعیت‌ها در زمان واقعی.",
+    "related_terms": [
+      "PID",
+      "Parameter",
+      "Data stream"
+    ],
+    "workshop_example_fa": "برای بررسی ضعف سنسور، دمای آب را در Live Data نگاه می‌کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.36",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-live-data-display-mode",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "category": "Live Data",
+    "term_en": "Display Mode",
+    "term_en_as_written_in_manual": "Display Mode",
+    "term_fa": "حالت نمایش",
+    "pronunciation_fa": "دیسپلی مُد",
+    "translation_status": "author_translation",
+    "technical_description_fa": "چهار حالت نمایش: Analog Gauge Mode، Text Mode (پیش‌فرض)، Waveform Graph Mode و Digital Gauge Mode. پارامترهای وضعیتی مثل ON/OFF فقط در Text Mode نمایش داده می‌شوند.",
+    "usage_fa": "انتخاب مناسب‌ترین شکل نمایش هر پارامتر.",
+    "related_terms": [
+      "Analog Gauge",
+      "Text",
+      "Waveform Graph",
+      "Digital Gauge"
+    ],
+    "workshop_example_fa": "برای دیدن نوسان سنسور اکسیژن، حالت Waveform Graph را انتخاب می‌کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.36-39",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-live-data-trigger-setting",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "category": "Live Data",
+    "term_en": "Trigger Setting",
+    "term_en_as_written_in_manual": "Trigger Setting",
+    "term_fa": "تنظیم تریگر",
+    "pronunciation_fa": "تریگر ست‌اینگ",
+    "translation_status": "author_translation",
+    "technical_description_fa": "با تعیین MIN و MAX، اگر مقدار از بازه خارج شود دستگاه خودکار داده را ذخیره می‌کند. گزینه‌ی Buzzer alarm فقط در اولین تریگر بوق می‌زند.",
+    "usage_fa": "گرفتن خطای لحظه‌ای و گذرا.",
+    "related_terms": [
+      "MIN",
+      "MAX",
+      "Buzzer alarm",
+      "Review"
+    ],
+    "workshop_example_fa": "خودرو گاهی خاموش می‌شود؛ برای دور موتور بازه می‌گذاریم تا لحظه‌ی افت ثبت شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.39-40",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-live-data-graph-merge",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "category": "Live Data",
+    "term_en": "Graph Merge",
+    "term_en_as_written_in_manual": "Graph Merge",
+    "term_fa": "ادغام نمودار",
+    "pronunciation_fa": "گراف مرج",
+    "translation_status": "author_translation",
+    "technical_description_fa": "نمودار ۲ تا ۳ پارامتر را روی هم نشان می‌دهد (فقط در Waveform Graph Mode).",
+    "usage_fa": "مقایسه‌ی همزمان چند پارامتر.",
+    "related_terms": [
+      "Waveform Graph"
+    ],
+    "workshop_example_fa": "سیگنال دو سنسور را روی هم می‌گذاریم تا زمان‌بندی‌شان را مقایسه کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.40",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-live-data-freeze",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "category": "Live Data",
+    "term_en": "Freeze",
+    "term_en_as_written_in_manual": "Freeze",
+    "term_fa": "ثابت‌کردن داده",
+    "pronunciation_fa": "فریز",
+    "translation_status": "author_translation",
+    "technical_description_fa": "داده‌ی دریافتی را در حالت ثابت نشان می‌دهد؛ با Resume، Previous frame، Play/Pause و Next frame کنترل می‌شود.",
+    "usage_fa": "بررسی دقیق یک لحظه از داده‌ی زنده.",
+    "related_terms": [
+      "Resume",
+      "Previous frame",
+      "Next frame",
+      "Play/Pause"
+    ],
+    "workshop_example_fa": "در زمان مشکل، داده را Freeze می‌کنیم و فریم به فریم بررسی می‌کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.41",
+    "status": "verified",
+    "notes": "با Freeze frame (داده‌ی ذخیره‌شده با DTC) فرق دارد؛ ادغام نشده.",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-live-data-record",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "category": "Live Data",
+    "term_en": "Record",
+    "term_en_as_written_in_manual": "Record",
+    "term_fa": "ضبط",
+    "pronunciation_fa": "رکورد",
+    "translation_status": "author_translation",
+    "technical_description_fa": "ضبط داده‌ی پارامترهای انتخاب‌شده. با Resume ضبط متوقف می‌شود. در بخش Review یا Data Manager قابل مشاهده است. در Setting مدت ضبط بعد از تریگر: ۵، ۱۵، ۳۰، ۶۰ یا ۹۰ ثانیه.",
+    "usage_fa": "ثبت داده حین تست جاده.",
+    "related_terms": [
+      "Review",
+      "Setting",
+      "Data Manager"
+    ],
+    "workshop_example_fa": "حین تست جاده، پارامترهای انتخابی را ضبط و در تعمیرگاه مرور می‌کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.40-41",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-live-data-review",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "category": "Live Data",
+    "term_en": "Review",
+    "term_en_as_written_in_manual": "Review",
+    "term_fa": "مرور داده‌ی ضبط‌شده",
+    "pronunciation_fa": "ریویو",
+    "translation_status": "author_translation",
+    "technical_description_fa": "مرور داده‌های ضبط‌شده در همین جلسه. تاریخچه‌ی کامل در Review Data داخل Data Manager است.",
+    "usage_fa": "بازبینی ضبط‌ها.",
+    "related_terms": [
+      "Record",
+      "Review Data",
+      "Data Manager"
+    ],
+    "workshop_example_fa": "ضبط جاده را در تعمیرگاه با Review فریم به فریم نگاه می‌کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.41",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  }
+]

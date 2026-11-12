@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "id",
+    "brand",
+    "device_id",
+    "term_en",
+    "term_fa",
+    "source_ids",
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "verified",
+        "partially_verified",
+        "unverified",
+        "needs_review"
+      ]
+    },
+    "translation_status": {
+      "enum": [
+        "author_translation",
+        "reviewed"
+      ]
+    },
+    "workshop_example_status": {
+      "enum": [
+        "author_generated",
+        "sourced"
+      ]
+    }
+  }
+}

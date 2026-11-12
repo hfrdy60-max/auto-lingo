@@ -1,0 +1,111 @@
+[
+  {
+    "id": "autel-ms906pro-diagnosis-section",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis"
+    ],
+    "category": "System Scan",
+    "term_en": "Diagnosis",
+    "term_en_as_written_in_manual": "Diagnosis",
+    "term_fa": "عیب‌یابی",
+    "pronunciation_fa": "دایگْنُسیس",
+    "translation_status": "author_translation",
+    "technical_description_fa": "یکی از دو بخش اصلی صفحه‌ی Vehicle Diagnostics. همه‌ی عملکردهای خواندن، پاک‌کردن، ذخیره و چاپ اطلاعات تشخیصی و همچنین تست فعال و توابع ویژه در این بخش‌اند.",
+    "usage_fa": "ورود به عملیات تشخیصی روی ECUها.",
+    "related_terms": [
+      "Service",
+      "Auto Scan",
+      "Control Unit"
+    ],
+    "workshop_example_fa": "برای خودرویی که چراغ چک روشن دارد، اول وارد Diagnosis می‌شویم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.29",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-auto-scan",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Auto Scan"
+    ],
+    "category": "System Scan",
+    "term_en": "Auto Scan",
+    "term_en_as_written_in_manual": "Auto Scan",
+    "term_fa": "اسکن خودکار",
+    "pronunciation_fa": "اُتو اسکَن",
+    "translation_status": "author_translation",
+    "technical_description_fa": "همه‌ی سیستم‌های ECU خودرو را اسکن می‌کند تا سیستم‌های دارای خطا پیدا و کدها خوانده شوند. نتیجه هر سیستم یکی از وضعیت‌های Fault|#، Pass|No fault، Not Scanned یا No Response است.",
+    "usage_fa": "نگاه کلی سریع به سلامت همه‌ی ماژول‌ها.",
+    "related_terms": [
+      "DTC",
+      "System",
+      "Quick erase",
+      "Report",
+      "Enter system"
+    ],
+    "workshop_example_fa": "برای خودروی ناشناخته اول Auto Scan می‌زنیم تا ببینیم کدام ماژول‌ها خطا دارند.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.30-31",
+    "status": "verified",
+    "notes": "دکمه‌های همین صفحه: Report, Quick erase, Pause, Enter system, ESC (Table 4-3).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-control-unit",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit"
+    ],
+    "category": "System Scan",
+    "term_en": "Control Unit",
+    "term_en_as_written_in_manual": "Control Unit",
+    "term_fa": "واحد کنترل",
+    "pronunciation_fa": "کانترول یونیت",
+    "translation_status": "author_translation",
+    "technical_description_fa": "فهرست همه‌ی واحدهای کنترل موجود روی خودرو. کاربر دستی سیستم را انتخاب می‌کند و به منوی عملکردها می‌رسد.",
+    "usage_fa": "تست هدفمند یک سیستم مشخص (مثلاً موتور یا ABS).",
+    "related_terms": [
+      "ECU",
+      "Function Menu",
+      "Auto Scan"
+    ],
+    "workshop_example_fa": "وقتی می‌دانیم مشکل فقط در ABS است، مستقیم از Control Unit سیستم ABS را انتخاب می‌کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.31",
+    "status": "verified",
+    "notes": "منوی عملکردها بسته به خودرو کمی فرق می‌کند (p.31).",
+    "last_checked": "2026-11-12"
+  }
+]

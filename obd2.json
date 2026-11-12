@@ -1,0 +1,357 @@
+[
+  {
+    "id": "autel-ms906pro-eobd",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD"
+    ],
+    "category": "OBD-II",
+    "term_en": "EOBD",
+    "term_en_as_written_in_manual": "EOBD",
+    "term_fa": "اتصال OBDII/EOBD",
+    "pronunciation_fa": "ای‌او‌بی‌دی",
+    "translation_status": "author_translation",
+    "technical_description_fa": "دسترسی سریع به تشخیص عمومی OBDII/EOBD. دو روش ارتباط: Auto Scan و Protocol.",
+    "usage_fa": "تشخیص خودروهایی که در پایگاه‌داده نیستند.",
+    "related_terms": [
+      "Auto Scan",
+      "Protocol",
+      "OBD direct entry"
+    ],
+    "workshop_example_fa": "برای خودروی وارداتی که در لیست نیست، از EOBD وارد می‌شویم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.44-45",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-dtc-ffd",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "DTC & FFD"
+    ],
+    "category": "Read Codes",
+    "term_en": "DTC & FFD",
+    "term_en_as_written_in_manual": "DTC & FFD",
+    "term_fa": "کدهای خطا و داده‌ی لحظه‌ی خطا",
+    "pronunciation_fa": "دی‌تی‌سی اند اف‌اف‌دی",
+    "translation_status": "author_translation",
+    "technical_description_fa": "فهرست Stored Codes و Pending Codes. در صورت وجود داده‌ی فریز، آیکن دانه‌ی برف دیده می‌شود. Erase Codes هم از همین‌جا قابل اجراست.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.46",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-stored-codes",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "Stored Codes"
+    ],
+    "category": "Read Codes",
+    "term_en": "Stored Codes",
+    "term_en_as_written_in_manual": "Stored Codes",
+    "term_fa": "کدهای ذخیره‌شده",
+    "pronunciation_fa": "استُرد کُدز",
+    "translation_status": "author_translation",
+    "technical_description_fa": "کدهای مرتبط با آلایندگی ثبت‌شده در ECM. اولویت کدها بر اساس شدت آلایندگی است.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.46",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-pending-codes",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "Pending Codes"
+    ],
+    "category": "Read Codes",
+    "term_en": "Pending Codes",
+    "term_en_as_written_in_manual": "Pending Codes",
+    "term_fa": "کدهای در انتظار",
+    "pronunciation_fa": "پندینگ کُدز",
+    "translation_status": "author_translation",
+    "technical_description_fa": "کدهایی که شرط ثبتشان در آخرین سیکل رانندگی برقرار بوده ولی هنوز در چند سیکل متوالی کامل نشده. بعد از تعمیر برای بررسی مفید است.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.46-47",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-im-readiness",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "I/M readiness"
+    ],
+    "category": "OBD-II",
+    "term_en": "I/M readiness",
+    "term_en_as_written_in_manual": "I/M readiness",
+    "term_fa": "آمادگی I/M",
+    "pronunciation_fa": "آی/ام ردینس",
+    "translation_status": "author_translation",
+    "technical_description_fa": "وضعیت آمادگی مانیتورها. دو زیرگزینه: Since DTCs Cleared و This Driving Cycle.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.47",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-obd-live-data",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "Live data (OBDII)"
+    ],
+    "category": "Live Data",
+    "term_en": "Live data (OBDII)",
+    "term_en_as_written_in_manual": "Live data (OBDII)",
+    "term_fa": "داده‌ی زنده (OBDII)",
+    "pronunciation_fa": "لایو دیتا",
+    "translation_status": "author_translation",
+    "technical_description_fa": "داده‌ی لحظه‌ای PID از ECU در حالت OBDII.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.47",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-o2-sensor-monitor",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "O2 sensor monitor"
+    ],
+    "category": "OBD-II",
+    "term_en": "O2 sensor monitor",
+    "term_en_as_written_in_manual": "O2 sensor monitor",
+    "term_fa": "مانیتور سنسور اکسیژن",
+    "pronunciation_fa": "او‌تو سنسور مانیتور",
+    "translation_status": "author_translation",
+    "technical_description_fa": "نتایج آخرین تست سنسور اکسیژن. روی خودروهای CAN پشتیبانی نمی‌شود و باید از On-Board monitor استفاده شود.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.47",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-on-board-monitor",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "On-Board monitor"
+    ],
+    "category": "OBD-II",
+    "term_en": "On-Board monitor",
+    "term_en_as_written_in_manual": "On-Board monitor",
+    "term_fa": "مانیتور داخلی",
+    "pronunciation_fa": "آن‌برد مانیتور",
+    "translation_status": "author_translation",
+    "technical_description_fa": "نتایج تست‌های On-Board Monitor؛ بعد از سرویس یا پاک‌کردن حافظه مفید است.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.48",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-component-test",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "Component test"
+    ],
+    "category": "OBD-II",
+    "term_en": "Component test",
+    "term_en_as_written_in_manual": "Component test",
+    "term_fa": "تست قطعه",
+    "pronunciation_fa": "کامپوننت تست",
+    "translation_status": "author_translation",
+    "technical_description_fa": "کنترل دوطرفه‌ی ECM برای ارسال فرمان و بررسی پاسخ ECM.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.48",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-vehicle-information",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "Vehicle information"
+    ],
+    "category": "OBD-II",
+    "term_en": "Vehicle information",
+    "term_en_as_written_in_manual": "Vehicle information",
+    "term_fa": "اطلاعات خودرو",
+    "pronunciation_fa": "ویکل اینفورمیشن",
+    "translation_status": "author_translation",
+    "technical_description_fa": "نمایش VIN، شناسه‌ی کالیبراسیون، CVN و اطلاعات دیگر.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.48",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "id": "autel-ms906pro-obd2-vehicle-status",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "EOBD",
+      "Vehicle status"
+    ],
+    "category": "OBD-II",
+    "term_en": "Vehicle status",
+    "term_en_as_written_in_manual": "Vehicle status",
+    "term_fa": "وضعیت خودرو",
+    "pronunciation_fa": "ویکل استتس",
+    "translation_status": "author_translation",
+    "technical_description_fa": "پروتکل ارتباطی ماژول‌ها، تعداد کدهای دریافتی، وضعیت MIL و اطلاعات تکمیلی.",
+    "usage_fa": "تشخیص عمومی OBDII.",
+    "related_terms": [],
+    "workshop_example_fa": "مثال تعمیرگاهی هنوز تکمیل نشده؛ در فاز بعد افزوده می‌شود.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.48",
+    "status": "verified",
+    "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+    "last_checked": "2026-11-12"
+  }
+]

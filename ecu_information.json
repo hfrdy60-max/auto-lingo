@@ -1,0 +1,39 @@
+[
+  {
+    "id": "autel-ms906pro-ecu-information",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "ECU information"
+    ],
+    "category": "ECU Information",
+    "term_en": "ECU Information",
+    "term_en_as_written_in_manual": "ECU information",
+    "term_fa": "اطلاعات ECU",
+    "pronunciation_fa": "ای‌سی‌یو اینفورمیشن",
+    "translation_status": "author_translation",
+    "technical_description_fa": "مشخصات واحد کنترل تست‌شده، شامل نوع واحد، شماره نسخه‌ها و سایر مشخصات را نشان می‌دهد. ستون چپ نام آیتم و ستون راست مقدار است.",
+    "usage_fa": "تطبیق قطعه، نسخه‌ی نرم‌افزار و کالیبراسیون قبل از تعویض یا برنامه‌ریزی.",
+    "related_terms": [
+      "ECU",
+      "Software version",
+      "Hardware version"
+    ],
+    "workshop_example_fa": "قبل از تعویض ECU، شماره‌ی نسخه را از این صفحه می‌خوانیم و با قطعه‌ی جدید مقایسه می‌کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.33",
+    "status": "verified",
+    "notes": "",
+    "last_checked": "2026-11-12"
+  }
+]

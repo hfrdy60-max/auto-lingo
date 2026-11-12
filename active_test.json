@@ -1,0 +1,40 @@
+[
+  {
+    "id": "autel-ms906pro-active-test",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "software_version": null,
+    "software_version_note": "Not stated in the manual; document version V2.1 only",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Active test"
+    ],
+    "category": "Active Test",
+    "term_en": "Active Test",
+    "term_en_as_written_in_manual": "Active Test",
+    "term_fa": "تست فعال",
+    "pronunciation_fa": "اکتیو تست",
+    "translation_status": "author_translation",
+    "technical_description_fa": "دستگاه فرمان به ECU می‌دهد تا عملگرها (مثل سلنوئید یا رله) بین دو حالت کار کنند. نتیجه‌ی موفق با پیامی مثل Command Finished یا Activation Successful نشان داده می‌شود.",
+    "usage_fa": "بررسی سلامت قطعه با فعال‌سازی مستقیم.",
+    "related_terms": [
+      "Actuators",
+      "Actuator Test",
+      "Function Tests",
+      "Bi-directional"
+    ],
+    "workshop_example_fa": "برای اطمینان از سالم بودن رله‌ی فن، از Active Test آن را روشن می‌کنیم.",
+    "workshop_example_status": "author_generated",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_ids": [
+      "src-001"
+    ],
+    "source_pages": "p.41-42",
+    "status": "verified",
+    "notes": "طبق راهنما همین گزینه ممکن است با نام Actuators، Actuator Test یا Function Tests ظاهر شود. Actuation Test به‌عنوان نام جدا در این راهنما پیدا نشد.",
+    "last_checked": "2026-11-12"
+  }
+]
