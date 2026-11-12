@@ -1,0 +1,608 @@
+{
+  "mission_id": "AI2-ELECTRICAL-DIAGNOSTICS-RESEARCH-001",
+  "question_count": 40,
+  "questions": [
+    {
+      "id": "Q-ED-001",
+      "type": "multiple_choice",
+      "question_en": "What does DMM stand for?",
+      "question_fa": "DMM مخفف چیست؟",
+      "options_en": [
+        "Digital multimeter",
+        "Direct motor module",
+        "Diagnostic memory map",
+        "Dual measurement mode"
+      ],
+      "answer": "Digital multimeter",
+      "explanation_fa": "DMM به معنی مولتی‌متر دیجیتال است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-002",
+      "type": "term_to_definition",
+      "question_en": "Which term means the rate of flow of electric charge?",
+      "question_fa": "کدام اصطلاح به نرخ عبور بار الکتریکی اشاره دارد؟",
+      "options_en": [
+        "Resistance",
+        "Current",
+        "Frequency",
+        "Cavity"
+      ],
+      "answer": "Current",
+      "explanation_fa": "Current یعنی جریان الکتریکی.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-003",
+      "type": "multiple_choice",
+      "question_en": "What does continuity indicate?",
+      "question_fa": "پیوستگی چه چیزی را نشان می‌دهد؟",
+      "options_en": [
+        "A conductive path under test conditions",
+        "Guaranteed loaded performance",
+        "A failed ECU",
+        "A network address"
+      ],
+      "answer": "A conductive path under test conditions",
+      "explanation_fa": "پیوستگی وجود مسیر رسانا را در شرایط آزمون نشان می‌دهد، نه سلامت زیر بار را.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-004",
+      "type": "multiple_choice",
+      "question_en": "Voltage drop is associated with which condition?",
+      "question_fa": "افت ولتاژ با کدام وضعیت مرتبط است؟",
+      "options_en": [
+        "Current flow through a circuit section",
+        "A disconnected battery only",
+        "A software update",
+        "A connector color"
+      ],
+      "answer": "Current flow through a circuit section",
+      "explanation_fa": "افت ولتاژ در ارتباط با عبور جریان تفسیر می‌شود.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-005",
+      "type": "term_to_definition",
+      "question_en": "What is input impedance?",
+      "question_fa": "Input impedance چیست؟",
+      "options_en": [
+        "The meter's electrical loading characteristic",
+        "The wire's color",
+        "The connector's lock",
+        "The ECU's software version"
+      ],
+      "answer": "The meter's electrical loading characteristic",
+      "explanation_fa": "امپدانس ورودی بر میزان بارگذاری ابزار بر مدار اثر دارد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-006",
+      "type": "multiple_choice",
+      "question_en": "What does AC/DC describe?",
+      "question_fa": "AC/DC چه چیزی را توصیف می‌کند؟",
+      "options_en": [
+        "Signal/current type",
+        "Connector size",
+        "Fuse color",
+        "Terminal gender"
+      ],
+      "answer": "Signal/current type",
+      "explanation_fa": "AC و DC نوع کمیت الکتریکی را توصیف می‌کنند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-007",
+      "type": "multiple_choice",
+      "question_en": "What does an overload indication generally mean?",
+      "question_fa": "نمایش Overload معمولاً چه معنایی دارد؟",
+      "options_en": [
+        "Reading is outside the selected display range",
+        "The battery is always faulty",
+        "The circuit is verified",
+        "The connector is locked"
+      ],
+      "answer": "Reading is outside the selected display range",
+      "explanation_fa": "معنای دقیق به ابزار وابسته است، اما معمولاً مقدار بیرون از محدوده انتخابی است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-008",
+      "type": "term_to_definition",
+      "question_en": "What is a clamp meter?",
+      "question_fa": "Clamp meter چیست؟",
+      "options_en": [
+        "An instrument that senses current magnetically",
+        "A wiring diagram",
+        "A connector seal",
+        "A scan-tool code"
+      ],
+      "answer": "An instrument that senses current magnetically",
+      "explanation_fa": "کلمپ‌متر جریان را با حس‌کردن میدان مغناطیسی اندازه می‌گیرد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-009",
+      "type": "multiple_choice",
+      "question_en": "What is a wiring diagram?",
+      "question_fa": "نقشه سیم‌کشی چیست؟",
+      "options_en": [
+        "A representation of vehicle electrical connections",
+        "A list of engine oils",
+        "A tire pressure chart",
+        "A customer invoice"
+      ],
+      "answer": "A representation of vehicle electrical connections",
+      "explanation_fa": "نقشه سیم‌کشی ارتباطات الکتریکی خودرو را نمایش می‌دهد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-010",
+      "type": "multiple_choice",
+      "question_en": "What does a schematic usually emphasize?",
+      "question_fa": "شماتیک معمولاً بر چه چیزی تأکید دارد؟",
+      "options_en": [
+        "Circuit function",
+        "Paint finish",
+        "Vehicle dimensions",
+        "Part price"
+      ],
+      "answer": "Circuit function",
+      "explanation_fa": "شماتیک بیشتر عملکرد مدار را نشان می‌دهد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-011",
+      "type": "term_to_definition",
+      "question_en": "What is a splice?",
+      "question_fa": "Splice چیست؟",
+      "options_en": [
+        "A wire junction or branch connection",
+        "A connector lock tab",
+        "A scan-tool menu",
+        "A battery case"
+      ],
+      "answer": "A wire junction or branch connection",
+      "explanation_fa": "Splice محل اتصال یا انشعاب سیم‌هاست.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-012",
+      "type": "multiple_choice",
+      "question_en": "Why is connector-view direction important?",
+      "question_fa": "چرا جهت نمای کانکتور مهم است؟",
+      "options_en": [
+        "The viewing side can change the apparent pin layout",
+        "It changes battery chemistry",
+        "It sets the DTC status",
+        "It defines tire size"
+      ],
+      "answer": "The viewing side can change the apparent pin layout",
+      "explanation_fa": "نمای سمت سیم و سمت قطعه ممکن است از نظر چیدمان ظاهری متفاوت باشد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-013",
+      "type": "term_to_definition",
+      "question_en": "What is a cavity?",
+      "question_fa": "Cavity چیست؟",
+      "options_en": [
+        "A physical position in a connector housing",
+        "A current unit",
+        "A software fault",
+        "A ground cable"
+      ],
+      "answer": "A physical position in a connector housing",
+      "explanation_fa": "Cavity خانه فیزیکی داخل پوسته کانکتور است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-014",
+      "type": "multiple_choice",
+      "question_en": "Is wire color coding universal across manufacturers?",
+      "question_fa": "آیا کد رنگ سیم بین همه سازندگان یکسان است؟",
+      "options_en": [
+        "No",
+        "Yes, always",
+        "Only on older cars",
+        "Only on CAN networks"
+      ],
+      "answer": "No",
+      "explanation_fa": "کد رنگ به سازنده و مستندات همان خودرو وابسته است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-015",
+      "type": "multiple_choice",
+      "question_en": "What does terminal describe most directly?",
+      "question_fa": "Terminal مستقیماً به چه چیزی اشاره دارد؟",
+      "options_en": [
+        "A conductive contact element",
+        "A whole vehicle network",
+        "A warning lamp",
+        "A scan report"
+      ],
+      "answer": "A conductive contact element",
+      "explanation_fa": "ترمینال عنصر رسانای تماس است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-016",
+      "type": "term_to_definition",
+      "question_en": "What is fretting corrosion?",
+      "question_fa": "Fretting corrosion چیست؟",
+      "options_en": [
+        "Wear and environmental degradation at a moving contact interface",
+        "A software update",
+        "A type of fuse",
+        "A battery charging mode"
+      ],
+      "answer": "Wear and environmental degradation at a moving contact interface",
+      "explanation_fa": "فرتینگ ترکیبی از حرکت نسبی کوچک، سایش و واکنش‌های محیطی در سطح تماس است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-017",
+      "type": "multiple_choice",
+      "question_en": "What is strain relief designed to do?",
+      "question_fa": "Strain relief برای چه طراحی می‌شود؟",
+      "options_en": [
+        "Reduce mechanical load transferred to a connection",
+        "Increase signal frequency",
+        "Store freeze-frame data",
+        "Change wire color"
+      ],
+      "answer": "Reduce mechanical load transferred to a connection",
+      "explanation_fa": "مهار کشش انتقال نیروی مکانیکی به محل اتصال را کاهش می‌دهد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-018",
+      "type": "multiple_choice",
+      "question_en": "What does a sensor reference voltage provide?",
+      "question_fa": "ولتاژ مرجع سنسور چه چیزی فراهم می‌کند؟",
+      "options_en": [
+        "A defined electrical reference for a sensor circuit",
+        "A universal value for all vehicles",
+        "A network password",
+        "A connector seal"
+      ],
+      "answer": "A defined electrical reference for a sensor circuit",
+      "explanation_fa": "ولتاژ مرجع سطح تعریف‌شده‌ای برای مدار سنسور فراهم می‌کند و مقدار آن خودرو-ویژه است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-019",
+      "type": "term_to_definition",
+      "question_en": "What is a low-side driver?",
+      "question_fa": "Low-side driver چیست؟",
+      "options_en": [
+        "A switching circuit controlling the return/ground side of a load",
+        "A battery terminal",
+        "A diagram symbol for a fuse",
+        "A scan-tool display"
+      ],
+      "answer": "A switching circuit controlling the return/ground side of a load",
+      "explanation_fa": "درایور سمت زمین بار را از مسیر برگشت کنترل می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-020",
+      "type": "multiple_choice",
+      "question_en": "What does PWM stand for?",
+      "question_fa": "PWM مخفف چیست؟",
+      "options_en": [
+        "Pulse-width modulation",
+        "Power wire measurement",
+        "Pin wiring map",
+        "Permanent warning mode"
+      ],
+      "answer": "Pulse-width modulation",
+      "explanation_fa": "PWM به معنی مدولاسیون پهنای پالس است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-021",
+      "type": "multiple_choice",
+      "question_en": "What does CAN refer to in vehicle electronics?",
+      "question_fa": "CAN در الکترونیک خودرو به چه چیزی اشاره دارد؟",
+      "options_en": [
+        "A communication network",
+        "A fuse type",
+        "A connector cavity",
+        "A battery chemistry"
+      ],
+      "answer": "A communication network",
+      "explanation_fa": "CAN یک شبکه ارتباطی خودرو است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-022",
+      "type": "term_to_definition",
+      "question_en": "What is termination in a network context?",
+      "question_fa": "Termination در شبکه به چه معناست؟",
+      "options_en": [
+        "An end-of-line matching element or network",
+        "Turning the ignition off",
+        "Deleting a DTC",
+        "A wire splice"
+      ],
+      "answer": "An end-of-line matching element or network",
+      "explanation_fa": "ترمینیشن برای تطبیق انتهای شبکه در توپولوژی تعریف‌شده به‌کار می‌رود.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-023",
+      "type": "multiple_choice",
+      "question_en": "What does bus-off describe?",
+      "question_fa": "Bus-off چه وضعیتی را توصیف می‌کند؟",
+      "options_en": [
+        "A CAN node stops active transmission after error handling",
+        "The battery is disconnected",
+        "A fuse is replaced",
+        "A sensor is calibrated"
+      ],
+      "answer": "A CAN node stops active transmission after error handling",
+      "explanation_fa": "Bus-off وضعیت کناررفتن یک گره CAN از ارسال فعال پس از خطاهاست.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-024",
+      "type": "multiple_choice",
+      "question_en": "What is sleep mode?",
+      "question_fa": "Sleep mode چیست؟",
+      "options_en": [
+        "A defined low-power state",
+        "A short circuit",
+        "A connector pin",
+        "A DTC category only"
+      ],
+      "answer": "A defined low-power state",
+      "explanation_fa": "حالت خواب وضعیت کم‌مصرف واحدها یا شبکه است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-025",
+      "type": "term_to_definition",
+      "question_en": "What does wake-up mean?",
+      "question_fa": "Wake-up یعنی چه؟",
+      "options_en": [
+        "An event that brings a unit or network out of sleep",
+        "A current measurement",
+        "A wire color code",
+        "A connector cavity"
+      ],
+      "answer": "An event that brings a unit or network out of sleep",
+      "explanation_fa": "بیدارسازی رویدادی است که واحد یا شبکه را از حالت خواب خارج می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-026",
+      "type": "multiple_choice",
+      "question_en": "What is a DTC?",
+      "question_fa": "DTC چیست؟",
+      "options_en": [
+        "A diagnostic trouble code",
+        "A digital test connector",
+        "A direct terminal current",
+        "A data timing cycle"
+      ],
+      "answer": "A diagnostic trouble code",
+      "explanation_fa": "DTC شناسه کد عیب‌یابی است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-027",
+      "type": "multiple_choice",
+      "question_en": "Does a DTC alone prove a part has failed?",
+      "question_fa": "آیا کد عیب به‌تنهایی خرابی قطعه را ثابت می‌کند؟",
+      "options_en": [
+        "No",
+        "Yes, always",
+        "Only if current",
+        "Only on older cars"
+      ],
+      "answer": "No",
+      "explanation_fa": "کد عیب سرنخ است و برای تعیین علت به شواهد دیگر نیاز است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-028",
+      "type": "term_to_definition",
+      "question_en": "What is freeze-frame data?",
+      "question_fa": "Freeze-frame data چیست؟",
+      "options_en": [
+        "Operating context saved around a fault event",
+        "A connector lock",
+        "A permanent wire color",
+        "A current clamp"
+      ],
+      "answer": "Operating context saved around a fault event",
+      "explanation_fa": "فریزفریم شرایط عملکرد مرتبط با زمان ثبت عیب را حفظ می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-029",
+      "type": "term_to_definition",
+      "question_en": "What is live data?",
+      "question_fa": "Live data چیست؟",
+      "options_en": [
+        "Values or states reported during diagnostic communication",
+        "A stored paper invoice",
+        "A wiring harness",
+        "A type of resistance"
+      ],
+      "answer": "Values or states reported during diagnostic communication",
+      "explanation_fa": "داده زنده مقادیر یا وضعیت‌های گزارش‌شده هنگام ارتباط را نمایش می‌دهد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-030",
+      "type": "multiple_choice",
+      "question_en": "What does pending DTC generally mean?",
+      "question_fa": "Pending DTC معمولاً چه معنایی دارد؟",
+      "options_en": [
+        "A condition awaiting confirmation under the system logic",
+        "A code that proves a part failed",
+        "A permanent hardware defect",
+        "A completed repair"
+      ],
+      "answer": "A condition awaiting confirmation under the system logic",
+      "explanation_fa": "کد در انتظار تأیید هنوز ممکن است معیارهای نهایی ثبت را تکمیل نکرده باشد.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-031",
+      "type": "multiple_choice",
+      "question_en": "What is a communication fault?",
+      "question_fa": "Communication fault چیست؟",
+      "options_en": [
+        "A problem in data exchange between units or a tool and a unit",
+        "A low tire",
+        "A mechanical noise",
+        "A paint defect"
+      ],
+      "answer": "A problem in data exchange between units or a tool and a unit",
+      "explanation_fa": "خطای ارتباطی اختلال در تبادل داده را توصیف می‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-032",
+      "type": "multiple_choice",
+      "question_en": "Which report statement is most evidence-based?",
+      "question_fa": "کدام جمله گزارش بر شواهد تکیه دارد؟",
+      "options_en": [
+        "The available evidence does not identify a failed component.",
+        "The sensor is definitely bad because a code exists.",
+        "Replace the ECU immediately.",
+        "All similar vehicles have the same fault."
+      ],
+      "answer": "The available evidence does not identify a failed component.",
+      "explanation_fa": "گزارش حرفه‌ای محدودیت شواهد را روشن می‌کند و قطعه را بی‌دلیل محکوم نمی‌کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-033",
+      "type": "multiple_choice",
+      "question_en": "Which term means a fault that does not occur continuously?",
+      "question_fa": "کدام اصطلاح به عیبی اشاره دارد که پیوسته رخ نمی‌دهد؟",
+      "options_en": [
+        "Intermittent fault",
+        "Permanent DTC",
+        "Open circuit only",
+        "Readiness"
+      ],
+      "answer": "Intermittent fault",
+      "explanation_fa": "Intermittent fault یعنی عیب متناوب.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-034",
+      "type": "term_to_definition",
+      "question_en": "What is parasitic current draw?",
+      "question_fa": "Parasitic current draw چیست؟",
+      "options_en": [
+        "Current consumed by vehicle systems in a defined off/sleep state",
+        "Current used only by the starter",
+        "A short to voltage",
+        "A wiring diagram reference"
+      ],
+      "answer": "Current consumed by vehicle systems in a defined off/sleep state",
+      "explanation_fa": "مصرف جریان باقی‌مانده در وضعیت خاموش/خواب تعریف‌شده است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-035",
+      "type": "multiple_choice",
+      "question_en": "Why should vehicle-specific service information be used?",
+      "question_fa": "چرا باید از اطلاعات تعمیراتی مخصوص خودرو استفاده کرد؟",
+      "options_en": [
+        "Specifications and circuit designs vary by model and system",
+        "All vehicles use identical circuits",
+        "It replaces technician training",
+        "It makes every DTC permanent"
+      ],
+      "answer": "Specifications and circuit designs vary by model and system",
+      "explanation_fa": "طراحی مدار و مشخصات بین مدل‌ها و سامانه‌ها متفاوت است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-036",
+      "type": "multiple_choice",
+      "question_en": "What is the safest interpretation of a scan-tool code?",
+      "question_fa": "ایمن‌ترین تفسیر کد دیاگ چیست؟",
+      "options_en": [
+        "A clue that must be assessed with symptoms and service data",
+        "A guaranteed parts replacement instruction",
+        "Proof of a failed ECU",
+        "A universal repair procedure"
+      ],
+      "answer": "A clue that must be assessed with symptoms and service data",
+      "explanation_fa": "کد باید همراه علائم و داده تعمیراتی بررسی شود.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-037",
+      "type": "multiple_choice",
+      "question_en": "Which item is model-specific?",
+      "question_fa": "کدام مورد به مدل خودرو وابسته است؟",
+      "options_en": [
+        "Wire color and pin assignment",
+        "The English word current",
+        "The definition of frequency",
+        "The word connector"
+      ],
+      "answer": "Wire color and pin assignment",
+      "explanation_fa": "رنگ سیم و تخصیص پین خودرو-ویژه است.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-038",
+      "type": "multiple_choice",
+      "question_en": "What should happen before hands-on work on safety or high-voltage systems?",
+      "question_fa": "پیش از کار عملی روی سامانه‌های ایمنی یا ولتاژ بالا چه باید کرد؟",
+      "options_en": [
+        "A qualified technician must follow authorized training and vehicle procedures",
+        "Use a generic online diagram",
+        "Guess the connector pins",
+        "Apply a universal voltage limit"
+      ],
+      "answer": "A qualified technician must follow authorized training and vehicle procedures",
+      "explanation_fa": "این کارها نیازمند صلاحیت، آموزش مجاز و دستورالعمل همان خودرو هستند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-039",
+      "type": "multiple_choice",
+      "question_en": "Which is a suitable technical-report practice?",
+      "question_fa": "کدام مورد روش مناسب گزارش فنی است؟",
+      "options_en": [
+        "Separate observations, interpretations, and confirmed causes",
+        "Present assumptions as verified facts",
+        "Omit test conditions",
+        "Use an unrelated vehicle specification"
+      ],
+      "answer": "Separate observations, interpretations, and confirmed causes",
+      "explanation_fa": "گزارش باید مشاهده، تفسیر و علت تأییدشده را جدا کند.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "Q-ED-040",
+      "type": "multiple_choice",
+      "question_en": "What does a high-side driver control?",
+      "question_fa": "High-side driver چه چیزی را کنترل می‌کند؟",
+      "options_en": [
+        "The supply side of a load",
+        "The tire pressure",
+        "A connector cavity number",
+        "The DTC history list"
+      ],
+      "answer": "The supply side of a load",
+      "explanation_fa": "درایور سمت مثبت، سمت تغذیه بار را کنترل می‌کند.",
+      "status": "candidate_unverified"
+    }
+  ],
+  "status": "candidate_unverified",
+  "note_fa": "آزمون زبان و مفاهیم است؛ دستور اجرای عملی آزمون الکتریکی نیست."
+}
