@@ -1,0 +1,112 @@
+{
+  "mission_id": "AI2-LESSON-E02-ELECTRICAL-COMPONENTS-001",
+  "lesson_id": "E02",
+  "status": "candidate_terms_only_not_canonical",
+  "canonical_database_checked": "terms_batch_01.json on main",
+  "canonical_records_found": 0,
+  "target_new_terms": 10,
+  "note_fa": "هیچ TERM ID جدیدی ساخته نشده است. فایل terms_batch_02.json در main موجود نبود. رکوردهای زیر نامزدهای واژگانی درس‌اند و باید پیش از canonical شدن در main term database بررسی و تصویب شوند.",
+  "records": [
+    {
+      "candidate_key": "E02-T01",
+      "term_en": "battery",
+      "term_fa": "باتری",
+      "pronunciation_fa": "بَتِری",
+      "ipa": "/ˈbætəri/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T02",
+      "term_en": "battery terminal",
+      "term_fa": "پایانه باتری",
+      "pronunciation_fa": "بَتِری تِرمینَل",
+      "ipa": "/ˈbætəri ˈtɜːrmɪnəl/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T03",
+      "term_en": "alternator",
+      "term_fa": "دینام / آلترناتور",
+      "pronunciation_fa": "آلْتِرنِیتِر",
+      "ipa": "/ˈɔːltərneɪtər/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T04",
+      "term_en": "starter motor",
+      "term_fa": "موتور استارت",
+      "pronunciation_fa": "اِستارتر موتِر",
+      "ipa": "/ˈstɑːrtər ˈmoʊtər/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T05",
+      "term_en": "fuse",
+      "term_fa": "فیوز",
+      "pronunciation_fa": "فیوز",
+      "ipa": "/fjuːz/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T06",
+      "term_en": "relay",
+      "term_fa": "رله",
+      "pronunciation_fa": "ری‌لِی",
+      "ipa": "/ˈriːleɪ/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T07",
+      "term_en": "wiring connector",
+      "term_fa": "کانکتور سیم‌کشی / سوکت",
+      "pronunciation_fa": "وایِرینگ کِنِکتِر",
+      "ipa": "/ˈwaɪərɪŋ kəˈnektər/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T08",
+      "term_en": "wiring harness",
+      "term_fa": "دسته‌سیم",
+      "pronunciation_fa": "وایِرینگ هارْنِس",
+      "ipa": "/ˈwaɪərɪŋ ˈhɑːrnɪs/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T09",
+      "term_en": "charging system",
+      "term_fa": "سامانه شارژ",
+      "pronunciation_fa": "چارْجینگ سیستِم",
+      "ipa": "/ˈtʃɑːrdʒɪŋ ˈsɪstəm/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "E02-T10",
+      "term_en": "starting circuit",
+      "term_fa": "مدار راه‌اندازی",
+      "pronunciation_fa": "اِستارتینگ سِرکیت",
+      "ipa": "/ˈstɑːrtɪŋ ˈsɜːrkɪt/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    }
+  ],
+  "required_followup": "AI-1 باید پس از تعیین تکلیف batchهای اصطلاحات، موارد تکراری/هم‌معنی را بررسی و در صورت تصویب در مسیر canonical مناسب ثبت کند."
+}
