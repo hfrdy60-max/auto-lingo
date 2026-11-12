@@ -1,0 +1,83 @@
+{
+  "mission_id": "AI2-LESSON-B11-TALKING-ABOUT-YOUR-CAR-001",
+  "status": "candidate_sources_unverified",
+  "sources": [
+    {
+      "id": "SRC-NHTSA-MAKE-MODEL-001",
+      "title": "Vehicle Make, Model, and Year data elements / Vehicle Information",
+      "publisher": "National Highway Traffic Safety Administration (NHTSA)",
+      "source_type": "government_technical_reference",
+      "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/vehdb-v4.pdf",
+      "supports": [
+        "تفکیک make به‌عنوان سازنده، model به‌عنوان مدل خودرو و year به‌عنوان سال مدل"
+      ],
+      "limitations": "راهنمای دادهٔ خودرو برای زمینهٔ NHTSA است؛ برای همهٔ نظام‌های نام‌گذاری جهانی سند واحد محسوب نمی‌شود."
+    },
+    {
+      "id": "SRC-US-CFR-MODEL-YEAR-001",
+      "title": "49 CFR § 565.12 — Definitions",
+      "publisher": "U.S. Electronic Code of Federal Regulations",
+      "source_type": "government_regulation",
+      "url": "https://www.law.cornell.edu/cfr/text/49/565.12",
+      "supports": [
+        "تعریف model و model year؛ model year الزاماً سال تقویمی تولید نیست"
+      ],
+      "limitations": "تعریف مقررات ایالات متحده؛ مثال آموزشی باید به‌عنوان توضیح اصطلاح در آن زمینه خوانده شود."
+    },
+    {
+      "id": "SRC-NHTSA-VPIC-001",
+      "title": "vPIC — Vehicle Product Information Catalog",
+      "publisher": "NHTSA",
+      "source_type": "government_database_documentation",
+      "url": "https://vpic.nhtsa.dot.gov/about/",
+      "supports": [
+        "داده‌های make/model و اطلاعات VIN مبتنی بر اطلاعات ارسالی سازندگان"
+      ],
+      "limitations": "پوشش و کاربرد vPIC عمدتاً برای مدل‌سال 1981 به بعد و داده‌های ارسالی به NHTSA است."
+    },
+    {
+      "id": "SRC-USCODE-ODOMETER-001",
+      "title": "49 U.S.C. § 32702 — Definitions",
+      "publisher": "United States Code, Office of the Law Revision Counsel",
+      "source_type": "government_statute",
+      "url": "https://uscode.house.gov/us/usc/119-120/t49/s32702/",
+      "supports": [
+        "تعریف odometer به‌عنوان ابزار یا سامانه‌ای برای اندازه‌گیری و ثبت مسافت طی‌شده"
+      ],
+      "limitations": "تعریف قانونی ایالات متحده؛ برای درس فقط مفهوم فنی پایه استفاده شده است."
+    },
+    {
+      "id": "SRC-EUROSTAT-ODOMETER-001",
+      "title": "Glossary for Transport Statistics — Odometer Readings",
+      "publisher": "Eurostat, United Nations Economic Commission for Europe and International Transport Forum",
+      "source_type": "intergovernmental_glossary",
+      "url": "https://ec.europa.eu/eurostat/documents/3859598/23063655/KS-01-25-048-EN-N.pdf",
+      "supports": [
+        "odometer مسافت طی‌شده را بر حسب کیلومتر یا مایل نشان می‌دهد"
+      ],
+      "limitations": "واژه‌نامهٔ آمار حمل‌ونقل؛ نه راهنمای تعمیراتی."
+    },
+    {
+      "id": "SRC-BC-BE-001",
+      "title": "Present simple: to be",
+      "publisher": "British Council LearnEnglish",
+      "source_type": "language_learning_reference",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple-be",
+      "supports": [
+        "شکل‌های am/is/are، ساخت سؤال با جابه‌جایی فعل و فاعل و پاسخ‌های کوتاه"
+      ],
+      "limitations": "منبع آموزشی دستور زبان انگلیسی؛ مثال‌های این درس در بافت خودرو تألیف شده‌اند."
+    },
+    {
+      "id": "SRC-BC-HAVE-GOT-001",
+      "title": "Present simple: have got",
+      "publisher": "British Council LearnEnglish",
+      "source_type": "language_learning_reference",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple-have-got",
+      "supports": [
+        "کاربرد have/has و ساخت سؤال و پاسخ کوتاه در ساختار have got"
+      ],
+      "limitations": "درس از ساختار do/does + have نیز استفاده می‌کند؛ برای جزئیات پرسش‌های be، منبع جداگانهٔ be به‌کار رفته است."
+    }
+  ]
+}
