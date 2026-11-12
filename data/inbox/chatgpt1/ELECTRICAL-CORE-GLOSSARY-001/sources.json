@@ -1,0 +1,52 @@
+{
+  "package_id": "AI1-ELECTRICAL-CORE-GLOSSARY-001",
+  "status": "discovery_sources_only",
+  "note_fa": "این منابع مسیر تحقیق هستند، نه مدرک تأیید تک‌تک ادعاها. برای انتشار باید هر ادعا به صفحه یا بخش مشخص منبع متصل شود.",
+  "sources": [
+    {
+      "source_id": "SRC-ELC-001",
+      "title": "Bosch Automotive Handbook",
+      "publisher": "Robert Bosch GmbH",
+      "source_type": "technical_reference_book",
+      "status": "candidate_unverified",
+      "claim_scope": "general automotive electrical and electronic terminology",
+      "locator": null
+    },
+    {
+      "source_id": "SRC-ELC-002",
+      "title": "Automotive Electrics and Automotive Electronics",
+      "publisher": "Robert Bosch GmbH",
+      "source_type": "technical_reference_book",
+      "status": "candidate_unverified",
+      "claim_scope": "electrical circuits, sensors, actuators and vehicle electronics",
+      "locator": null
+    },
+    {
+      "source_id": "SRC-ELC-003",
+      "title": "Automotive electrical system technical information",
+      "publisher": "HELLA Tech World",
+      "source_type": "technical_reference_portal",
+      "status": "candidate_unverified",
+      "claim_scope": "component function, diagnostics and electrical testing",
+      "locator": null
+    },
+    {
+      "source_id": "SRC-ELC-004",
+      "title": "Vehicle-specific wiring diagrams and service information",
+      "publisher": "Vehicle OEM service information",
+      "source_type": "oem_service_documentation",
+      "status": "required_per_vehicle",
+      "claim_scope": "pinout, wire routing, fuse ratings, test conditions and repair procedures",
+      "locator": null
+    },
+    {
+      "source_id": "SRC-ELC-005",
+      "title": "Digital Multimeter user and safety documentation",
+      "publisher": "Instrument manufacturer",
+      "source_type": "instrument_manual",
+      "status": "required_per_meter_model",
+      "claim_scope": "measurement category, current measurement, continuity and resistance safety",
+      "locator": null
+    }
+  ]
+}

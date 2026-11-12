@@ -1,0 +1,944 @@
+{
+  "schema_version": "1.0",
+  "package_id": "AI1-ELECTRICAL-CORE-GLOSSARY-001",
+  "title_en": "Automotive Electrical Core Terminology",
+  "title_fa": "واژگان هسته‌ای برق خودرو",
+  "language_pair": [
+    "en",
+    "fa"
+  ],
+  "scope": "Core electrical-circuit, wiring, connection and measurement terminology for automotive technical English.",
+  "level": "A2-B2 technical English",
+  "status": "research_draft_candidate_unverified",
+  "count": 40,
+  "records": [
+    {
+      "term_id": "ELC-001",
+      "term_en": "electrical circuit",
+      "term_fa": "مدار الکتریکی",
+      "pronunciation_fa": "اِلِکتریکَل سِرکیت",
+      "ipa": "/ɪˈlɛktrɪkəl ˈsɜːrkɪt/",
+      "definition_fa": "مسیر پیوسته اجزای الکتریکی برای عبور جریان.",
+      "example_en": "The electrical circuit is complete.",
+      "example_fa": "مدار الکتریکی کامل است.",
+      "collocations": [
+        "complete a circuit",
+        "circuit path"
+      ],
+      "workshop_note_fa": "مدار شامل منبع، مسیر مصرف‌کننده و مسیر برگشت است؛ نقشه همان خودرو را ملاک بگیرید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-002",
+      "term_en": "current",
+      "term_fa": "جریان الکتریکی",
+      "pronunciation_fa": "کارِنت",
+      "ipa": "/ˈkɜːrənt/",
+      "definition_fa": "نرخ عبور بار الکتریکی؛ واحد آمپر.",
+      "example_en": "Current flows through the load.",
+      "example_fa": "جریان از مصرف‌کننده عبور می‌کند.",
+      "collocations": [
+        "current flow",
+        "current draw",
+        "measure current"
+      ],
+      "workshop_note_fa": "برای اندازه‌گیری جریان، روش اتصال و ورودی مناسب ابزار را رعایت کنید؛ آمپرمتر را موازی باتری نگذارید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-003",
+      "term_en": "voltage",
+      "term_fa": "ولتاژ؛ اختلاف پتانسیل",
+      "pronunciation_fa": "وُلتِج",
+      "ipa": "/ˈvoʊltɪdʒ/",
+      "definition_fa": "اختلاف پتانسیل الکتریکی بین دو نقطه؛ واحد ولت.",
+      "example_en": "Measure the voltage across the connector.",
+      "example_fa": "ولتاژ دو سر سوکت را اندازه بگیر.",
+      "collocations": [
+        "voltage drop",
+        "supply voltage",
+        "reference voltage"
+      ],
+      "workshop_note_fa": "ولتاژ بین دو نقطه سنجیده می‌شود؛ مرجع اندازه‌گیری را مشخص کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-004",
+      "term_en": "resistance",
+      "term_fa": "مقاومت الکتریکی",
+      "pronunciation_fa": "ریزِستِنس",
+      "ipa": "/rɪˈzɪstəns/",
+      "definition_fa": "میزان مخالفت مسیر یا قطعه با عبور جریان؛ واحد اهم.",
+      "example_en": "High resistance can reduce current flow.",
+      "example_fa": "مقاومت زیاد می‌تواند جریان را کاهش دهد.",
+      "collocations": [
+        "circuit resistance",
+        "measure resistance"
+      ],
+      "workshop_note_fa": "مقاومت را روی مدار بی‌برق و طبق دستورالعمل بسنجید؛ اهم‌متر را به مدار برق‌دار وصل نکنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-005",
+      "term_en": "ground",
+      "term_fa": "اتصال بدنه؛ زمین الکتریکی",
+      "pronunciation_fa": "گراوند",
+      "ipa": "/ɡraʊnd/",
+      "definition_fa": "نقطه یا مسیر مرجع/برگشت الکتریکی مدار.",
+      "example_en": "Check the ground connection.",
+      "example_fa": "اتصال بدنه را بررسی کن.",
+      "collocations": [
+        "ground point",
+        "ground wire",
+        "poor ground"
+      ],
+      "workshop_note_fa": "Ground همیشه معادل شاسی نیست؛ طراحی مسیر برگشت را از نقشه مشخص کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-006",
+      "term_en": "chassis ground",
+      "term_fa": "اتصال بدنه شاسی",
+      "pronunciation_fa": "چَسیس گراوند",
+      "ipa": "/ˈʃæsi ɡraʊnd/",
+      "definition_fa": "اتصال مدار به بدنه فلزی خودرو در نقطه تعیین‌شده.",
+      "example_en": "The sensor uses a chassis ground.",
+      "example_fa": "این سنسور از اتصال بدنه شاسی استفاده می‌کند.",
+      "collocations": [
+        "chassis ground point",
+        "ground to chassis"
+      ],
+      "workshop_note_fa": "رنگ، خوردگی و شل بودن اتصال می‌تواند پیوستگی الکتریکی را مختل کند.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-007",
+      "term_en": "ground circuit",
+      "term_fa": "مدار اتصال بدنه",
+      "pronunciation_fa": "گراوند سِرکیت",
+      "ipa": "/ɡraʊnd ˈsɜːrkɪt/",
+      "definition_fa": "بخش مدار که مسیر برگشت جریان را طبق طراحی فراهم می‌کند.",
+      "example_en": "A fault in the ground circuit may affect several systems.",
+      "example_fa": "خرابی مدار اتصال بدنه ممکن است چند سامانه را تحت تأثیر قرار دهد.",
+      "collocations": [
+        "ground circuit fault",
+        "ground-side voltage drop"
+      ],
+      "workshop_note_fa": "در برخی خودروها برگشت از ماژول کنترل می‌گذرد؛ اتصال مستقیم به شاسی فرض نکنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-008",
+      "term_en": "open circuit",
+      "term_fa": "مدار باز",
+      "pronunciation_fa": "اوپِن سِرکیت",
+      "ipa": "/ˈoʊpən ˈsɜːrkɪt/",
+      "definition_fa": "مداری که در مسیر موردنظر پیوستگی ندارد و جریان عادی عبور نمی‌کند.",
+      "example_en": "An open circuit prevents the lamp from turning on.",
+      "example_fa": "مدار باز مانع روشن شدن چراغ می‌شود.",
+      "collocations": [
+        "open-circuit fault",
+        "circuit is open"
+      ],
+      "workshop_note_fa": "علت می‌تواند سیم قطع، سوکت جدا یا فیوز بازشده باشد؛ DTC به‌تنهایی محل را تعیین نمی‌کند.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-009",
+      "term_en": "short circuit",
+      "term_fa": "اتصال کوتاه",
+      "pronunciation_fa": "شورت سِرکیت",
+      "ipa": "/ˌʃɔːrt ˈsɜːrkɪt/",
+      "definition_fa": "اتصال ناخواسته با امپدانس کم میان نقاطی که نباید متصل باشند.",
+      "example_en": "A short circuit may blow the fuse.",
+      "example_fa": "اتصال کوتاه ممکن است فیوز را بسوزاند.",
+      "collocations": [
+        "short-circuit fault",
+        "short to ground"
+      ],
+      "workshop_note_fa": "نوع اتصال را مشخص کنید: به بدنه، مثبت یا سیم دیگر؛ سپس طبق روش ایمن عیب‌یابی کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-010",
+      "term_en": "short to ground",
+      "term_fa": "اتصال کوتاه به بدنه",
+      "pronunciation_fa": "شورت تو گراوند",
+      "ipa": "/ʃɔːrt tə ɡraʊnd/",
+      "definition_fa": "تماس ناخواسته خط یا سیم با بدنه/زمین برخلاف طراحی مدار.",
+      "example_en": "The scan tool reports a short to ground.",
+      "example_fa": "دستگاه دیاگ اتصال کوتاه به بدنه را گزارش می‌کند.",
+      "collocations": [
+        "signal short to ground",
+        "short-to-ground fault"
+      ],
+      "workshop_note_fa": "عبارت نوع عیب را می‌گوید، نه محل آن؛ نقشه و آزمون تأییدی لازم است.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-011",
+      "term_en": "short to voltage",
+      "term_fa": "اتصال ناخواسته به ولتاژ",
+      "pronunciation_fa": "شورت تو وُلتِج",
+      "ipa": "/ʃɔːrt tə ˈvoʊltɪdʒ/",
+      "definition_fa": "اتصال ناخواسته خط سیگنال یا مدار به منبع ولتاژ.",
+      "example_en": "The signal wire may be shorted to voltage.",
+      "example_fa": "ممکن است سیم سیگنال به ولتاژ اتصال پیدا کرده باشد.",
+      "collocations": [
+        "short to battery",
+        "short to voltage"
+      ],
+      "workshop_note_fa": "عبارت دقیق دستگاه را حفظ کنید؛ short to battery و short to voltage را بی‌دلیل یکسان نکنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-012",
+      "term_en": "voltage drop",
+      "term_fa": "افت ولتاژ",
+      "pronunciation_fa": "وُلتِج دراپ",
+      "ipa": "/ˈvoʊltɪdʒ drɑːp/",
+      "definition_fa": "کاهش ولتاژ در طول مسیر یا اتصال هنگام عبور جریان.",
+      "example_en": "Excessive voltage drop can indicate a poor connection.",
+      "example_fa": "افت ولتاژ زیاد می‌تواند نشانه اتصال نامناسب باشد.",
+      "collocations": [
+        "voltage-drop test",
+        "excessive voltage drop"
+      ],
+      "workshop_note_fa": "آزمون افت ولتاژ معمولاً زیر بار انجام می‌شود؛ حد مجاز را از اطلاعات همان خودرو بگیرید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-013",
+      "term_en": "continuity",
+      "term_fa": "پیوستگی الکتریکی",
+      "pronunciation_fa": "کانتینیوئِتی",
+      "ipa": "/ˌkɑːntɪˈnuːəti/",
+      "definition_fa": "وجود مسیر رسانای پیوسته بین دو نقطه.",
+      "example_en": "Check continuity between the two terminals.",
+      "example_fa": "پیوستگی بین دو ترمینال را بررسی کن.",
+      "collocations": [
+        "continuity test",
+        "check for continuity"
+      ],
+      "workshop_note_fa": "بوق مولتی‌متر به‌تنهایی توانایی مسیر برای عبور جریان کاری را ثابت نمی‌کند.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-014",
+      "term_en": "electrical load",
+      "term_fa": "بار الکتریکی؛ مصرف‌کننده",
+      "pronunciation_fa": "اِلِکتریکَل لود",
+      "ipa": "/ɪˈlɛktrɪkəl loʊd/",
+      "definition_fa": "قطعه یا مجموعه‌ای که انرژی الکتریکی مصرف می‌کند.",
+      "example_en": "The electrical load is controlled by the module.",
+      "example_fa": "بار الکتریکی توسط ماژول کنترل می‌شود.",
+      "collocations": [
+        "apply a load",
+        "load current",
+        "resistive load"
+      ],
+      "workshop_note_fa": "بار مقاومتی، القایی و الکترونیکی رفتار یکسان ندارند.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-015",
+      "term_en": "power supply",
+      "term_fa": "منبع تغذیه",
+      "pronunciation_fa": "پاوِر سَپلای",
+      "ipa": "/ˈpaʊər səˌplaɪ/",
+      "definition_fa": "منبع تأمین انرژی الکتریکی مدار.",
+      "example_en": "Check the module's power supply.",
+      "example_fa": "منبع تغذیه ماژول را بررسی کن.",
+      "collocations": [
+        "battery supply",
+        "ignition supply"
+      ],
+      "workshop_note_fa": "تغذیه دائمی باتری را از تغذیه سوئیچی/پس از باز شدن سوئیچ تفکیک کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-016",
+      "term_en": "battery positive",
+      "term_fa": "مثبت باتری",
+      "pronunciation_fa": "بَتِری پازِتیو",
+      "ipa": "/ˈbætəri ˈpɑːzətɪv/",
+      "definition_fa": "ترمینال مثبت باتری یا خط مثبت مشخص‌شده در نقشه.",
+      "example_en": "The red lead is connected to battery positive.",
+      "example_fa": "سیم قرمز به مثبت باتری متصل است.",
+      "collocations": [
+        "battery positive terminal",
+        "B+ supply"
+      ],
+      "workshop_note_fa": "نام‌گذاری ترمینال و نقطه آزمون را با نقشه همان خودرو تطبیق دهید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-017",
+      "term_en": "fuse",
+      "term_fa": "فیوز",
+      "pronunciation_fa": "فیوز",
+      "ipa": "/fjuːz/",
+      "definition_fa": "وسیله حفاظتی که در جریان بیش از حدِ تعریف‌شده مدار را قطع می‌کند.",
+      "example_en": "The fuse protects the circuit.",
+      "example_fa": "فیوز از مدار محافظت می‌کند.",
+      "collocations": [
+        "blown fuse",
+        "fuse rating",
+        "fuse box"
+      ],
+      "workshop_note_fa": "فقط نوع و ظرفیت مورد تأیید سازنده را جایگزین کنید؛ فیوز قوی‌تر نصب نکنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-018",
+      "term_en": "fuse rating",
+      "term_fa": "ظرفیت نامی فیوز",
+      "pronunciation_fa": "فیوز رِیتینگ",
+      "ipa": "/fjuːz ˈreɪtɪŋ/",
+      "definition_fa": "مقدار جریان نامی درج‌شده برای فیوز.",
+      "example_en": "Use the specified fuse rating.",
+      "example_fa": "از ظرفیت نامی تعیین‌شده فیوز استفاده کن.",
+      "collocations": [
+        "correct fuse rating",
+        "rated current"
+      ],
+      "workshop_note_fa": "آمپراژ صحیح وابسته به مدار و خودروست؛ عدد عمومی برای همه مدل‌ها وجود ندارد.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-019",
+      "term_en": "relay",
+      "term_fa": "رله",
+      "pronunciation_fa": "ریلی",
+      "ipa": "/ˈriːleɪ/",
+      "definition_fa": "کلید الکترومغناطیسی یا الکترونیکی برای کنترل یک مدار با مدار فرمان.",
+      "example_en": "The ECU controls the relay.",
+      "example_fa": "ECU رله را کنترل می‌کند.",
+      "collocations": [
+        "relay coil",
+        "relay contacts",
+        "control relay"
+      ],
+      "workshop_note_fa": "آرایش پایه رله‌ها یکسان نیست؛ نقشه داخلی همان قطعه را بررسی کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-020",
+      "term_en": "relay coil",
+      "term_fa": "بوبین رله",
+      "pronunciation_fa": "ریلی کویل",
+      "ipa": "/ˈriːleɪ kɔɪl/",
+      "definition_fa": "سیم‌پیچ رله که با عبور جریان میدان مغناطیسی ایجاد می‌کند.",
+      "example_en": "The relay coil is not energized.",
+      "example_fa": "بوبین رله تحریک نمی‌شود.",
+      "collocations": [
+        "energize the relay coil",
+        "coil resistance"
+      ],
+      "workshop_note_fa": "وجود دیود داخلی می‌تواند قطبیت تحریک را مهم کند؛ دیتاشیت قطعه را ببینید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-021",
+      "term_en": "relay contacts",
+      "term_fa": "کنتاکت‌های رله",
+      "pronunciation_fa": "ریلی کانتَکتس",
+      "ipa": "/ˈriːleɪ ˈkɑːntækts/",
+      "definition_fa": "اتصالات کلیدزنی رله برای باز یا بسته کردن مدار بار.",
+      "example_en": "The relay contacts are stuck closed.",
+      "example_fa": "کنتاکت‌های رله در حالت بسته گیر کرده‌اند.",
+      "collocations": [
+        "normally open",
+        "normally closed"
+      ],
+      "workshop_note_fa": "NO و NC وضعیت عادیِ بدون تحریک را بیان می‌کنند؛ شماره پایه را تأیید کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-022",
+      "term_en": "connector",
+      "term_fa": "سوکت؛ اتصال‌دهنده",
+      "pronunciation_fa": "کِنِکتِر",
+      "ipa": "/kəˈnɛktər/",
+      "definition_fa": "قطعه اتصال جداشدنی سیم‌ها یا اجزای الکتریکی.",
+      "example_en": "Inspect the connector for damage.",
+      "example_fa": "سوکت را از نظر آسیب بررسی کن.",
+      "collocations": [
+        "electrical connector",
+        "connector housing"
+      ],
+      "workshop_note_fa": "ظاهر سالم سوکت، سلامت ترمینال داخلی یا نیروی تماس مناسب را تضمین نمی‌کند.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-023",
+      "term_en": "terminal",
+      "term_fa": "ترمینال؛ پایه اتصال",
+      "pronunciation_fa": "تِرمینَل",
+      "ipa": "/ˈtɜːrmɪnəl/",
+      "definition_fa": "بخش رسانای داخل سوکت یا قطعه که اتصال الکتریکی را برقرار می‌کند.",
+      "example_en": "The terminal is loose in the housing.",
+      "example_fa": "ترمینال داخل بدنه سوکت شل است.",
+      "collocations": [
+        "terminal pin",
+        "female terminal",
+        "terminal tension"
+      ],
+      "workshop_note_fa": "ترمینال عقب‌رفته، گشاد یا خورده ممکن است عیب متناوب بسازد.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-024",
+      "term_en": "wiring harness",
+      "term_fa": "دسته‌سیم",
+      "pronunciation_fa": "وایِرینگ هارنس",
+      "ipa": "/ˈwaɪərɪŋ ˈhɑːrnɪs/",
+      "definition_fa": "مجموعه سیم‌ها، شاخه‌ها، روکش‌ها و اتصالات مدارهای خودرو.",
+      "example_en": "Inspect the wiring harness near the engine.",
+      "example_fa": "دسته‌سیم نزدیک موتور را بررسی کن.",
+      "collocations": [
+        "engine wiring harness",
+        "harness routing"
+      ],
+      "workshop_note_fa": "نقاط ساییدگی و حرارت را با مسیر واقعی همان مدل بررسی کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-025",
+      "term_en": "wire insulation",
+      "term_fa": "عایق سیم",
+      "pronunciation_fa": "وایِر اینسولِیشن",
+      "ipa": "/ˈwaɪər ˌɪnsəˈleɪʃən/",
+      "definition_fa": "لایه نارسانای اطراف هادی برای جلوگیری از تماس ناخواسته.",
+      "example_en": "The wire insulation is damaged.",
+      "example_fa": "عایق سیم آسیب دیده است.",
+      "collocations": [
+        "damaged insulation",
+        "insulation resistance"
+      ],
+      "workshop_note_fa": "ترمیم باید با روش و مواد مورد تأیید سازنده انجام شود.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-026",
+      "term_en": "wire gauge",
+      "term_fa": "سایز سیم؛ سطح مقطع هادی",
+      "pronunciation_fa": "وایِر گِیج",
+      "ipa": "/ˈwaɪər ɡeɪdʒ/",
+      "definition_fa": "اندازه هادی که با استانداردهایی مانند AWG یا mm² بیان می‌شود.",
+      "example_en": "Check the specified wire gauge.",
+      "example_fa": "سایز سیم تعیین‌شده را بررسی کن.",
+      "collocations": [
+        "wire gauge chart",
+        "correct wire size"
+      ],
+      "workshop_note_fa": "AWG و mm² دو شیوه متفاوت‌اند؛ انتخاب سیم باید با طراحی مدار تطبیق داشته باشد.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-027",
+      "term_en": "splice",
+      "term_fa": "محل انشعاب/اتصال سیم",
+      "pronunciation_fa": "اِسپلایس",
+      "ipa": "/splaɪs/",
+      "definition_fa": "نقطه‌ای که دو یا چند هادی در دسته‌سیم به هم متصل می‌شوند.",
+      "example_en": "Corrosion was found at the splice.",
+      "example_fa": "در محل اتصال سیم‌ها خوردگی پیدا شد.",
+      "collocations": [
+        "wiring splice",
+        "splice joint"
+      ],
+      "workshop_note_fa": "محل splice ممکن است با نماد یا کد در نقشه مشخص شود؛ محل فیزیکی را حدس نزنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-028",
+      "term_en": "circuit protection",
+      "term_fa": "حفاظت مدار",
+      "pronunciation_fa": "سِرکیت پرُتِکشِن",
+      "ipa": "/ˈsɜːrkɪt prəˈtɛkʃən/",
+      "definition_fa": "اجزا و روش‌های محافظت مدار در برابر جریان یا شرایط غیرعادی.",
+      "example_en": "Circuit protection helps prevent wiring damage.",
+      "example_fa": "حفاظت مدار به جلوگیری از آسیب سیم‌کشی کمک می‌کند.",
+      "collocations": [
+        "overcurrent protection",
+        "protective device"
+      ],
+      "workshop_note_fa": "حفاظت می‌تواند فیوز یا مدار حفاظتی الکترونیکی داخل ماژول باشد.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-029",
+      "term_en": "reference voltage",
+      "term_fa": "ولتاژ مرجع",
+      "pronunciation_fa": "رِفِرِنس وُلتِج",
+      "ipa": "/ˈrɛfərəns ˈvoʊltɪdʒ/",
+      "definition_fa": "ولتاژی که ماژول برای تغذیه یا مرجع‌دهی مدار حسگر فراهم می‌کند.",
+      "example_en": "The sensor uses a reference voltage from the ECU.",
+      "example_fa": "سنسور از ولتاژ مرجع ECU استفاده می‌کند.",
+      "collocations": [
+        "reference circuit",
+        "5-volt reference"
+      ],
+      "workshop_note_fa": "مقدار و معماری مرجع در همه خودروها یکسان نیست؛ مشخصات OEM لازم است.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-030",
+      "term_en": "signal wire",
+      "term_fa": "سیم سیگنال",
+      "pronunciation_fa": "سیگنَل وایِر",
+      "ipa": "/ˈsɪɡnəl waɪər/",
+      "definition_fa": "سیمی برای انتقال اطلاعات الکتریکی یا داده‌ای میان اجزا.",
+      "example_en": "Check the signal wire for an open circuit.",
+      "example_fa": "سیم سیگنال را از نظر مدار باز بررسی کن.",
+      "collocations": [
+        "sensor signal wire",
+        "signal circuit"
+      ],
+      "workshop_note_fa": "سیگنال می‌تواند آنالوگ، پالسی یا دیجیتال باشد؛ روش آزمون را متناسب انتخاب کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-031",
+      "term_en": "sensor ground",
+      "term_fa": "اتصال بدنه سنسور",
+      "pronunciation_fa": "سِنسِر گراوند",
+      "ipa": "/ˈsɛnsər ɡraʊnd/",
+      "definition_fa": "مسیر مرجع یا برگشت سنسور طبق طراحی سازنده.",
+      "example_en": "A sensor ground fault can affect the reading.",
+      "example_fa": "خرابی اتصال بدنه سنسور می‌تواند روی مقدار خوانده‌شده اثر بگذارد.",
+      "collocations": [
+        "sensor ground circuit",
+        "low reference"
+      ],
+      "workshop_note_fa": "Sensor ground را بدون نقشه معادل chassis ground فرض نکنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-032",
+      "term_en": "back-probing",
+      "term_fa": "اندازه‌گیری از پشت سوکت",
+      "pronunciation_fa": "بَک‌پروبینگ",
+      "ipa": "/ˈbæk ˌproʊbɪŋ/",
+      "definition_fa": "دسترسی به سیگنال از پشت سوکت متصل با ابزار مناسب و بدون آسیب.",
+      "example_en": "Use the approved back-probing method.",
+      "example_fa": "از روش مجاز اندازه‌گیری از پشت سوکت استفاده کن.",
+      "collocations": [
+        "back-probe adapter",
+        "back-probe a connector"
+      ],
+      "workshop_note_fa": "سوراخ‌کردن عایق یا پراب نامناسب می‌تواند آب‌بندی و ترمینال را خراب کند.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-033",
+      "term_en": "intermittent fault",
+      "term_fa": "عیب متناوب",
+      "pronunciation_fa": "اینتِرمیتِنت فالت",
+      "ipa": "/ˌɪntərˈmɪtənt fɔːlt/",
+      "definition_fa": "عیبی که فقط در زمان یا شرایط خاص ظاهر می‌شود.",
+      "example_en": "The customer reports an intermittent electrical fault.",
+      "example_fa": "مشتری از عیب الکتریکی متناوب گزارش می‌دهد.",
+      "collocations": [
+        "intermittent connection",
+        "intermittent DTC"
+      ],
+      "workshop_note_fa": "شرایط وقوع و freeze frame را پیش از پاک‌کردن خطا ثبت کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-034",
+      "term_en": "high resistance",
+      "term_fa": "مقاومت بالا",
+      "pronunciation_fa": "های ریزِستِنس",
+      "ipa": "/haɪ rɪˈzɪstəns/",
+      "definition_fa": "مقاومت ناخواسته زیاد در مسیر، مثلاً بر اثر خوردگی یا اتصال شل.",
+      "example_en": "High resistance at the ground point causes a voltage drop.",
+      "example_fa": "مقاومت بالا در نقطه اتصال بدنه باعث افت ولتاژ می‌شود.",
+      "collocations": [
+        "high-resistance connection",
+        "excessive resistance"
+      ],
+      "workshop_note_fa": "ممکن است با تست پیوستگی بدون بار آشکار نشود؛ آزمون مناسب لازم است.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-035",
+      "term_en": "electrical noise",
+      "term_fa": "نویز الکتریکی",
+      "pronunciation_fa": "اِلِکتریکَل نویز",
+      "ipa": "/ɪˈlɛktrɪkəl nɔɪz/",
+      "definition_fa": "اختلال ناخواسته در سیگنال که می‌تواند اندازه‌گیری یا ارتباط را مختل کند.",
+      "example_en": "Electrical noise affects the sensor signal.",
+      "example_fa": "نویز الکتریکی روی سیگنال سنسور اثر می‌گذارد.",
+      "collocations": [
+        "electromagnetic interference",
+        "signal noise"
+      ],
+      "workshop_note_fa": "منشأ نویز و روش تشخیص به نوع سیگنال و ابزار بستگی دارد.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-036",
+      "term_en": "shielded wire",
+      "term_fa": "سیم شیلددار",
+      "pronunciation_fa": "شیلدِد وایِر",
+      "ipa": "/ˈʃiːldɪd ˈwaɪər/",
+      "definition_fa": "سیمی با لایه رسانای محافظ برای کاهش تداخل الکترومغناطیسی.",
+      "example_en": "Do not alter the shielded wire routing.",
+      "example_fa": "مسیر سیم شیلددار را تغییر نده.",
+      "collocations": [
+        "shielded cable",
+        "cable shielding"
+      ],
+      "workshop_note_fa": "اتصال شیلد به زمین وابسته به طراحی است؛ خودسرانه به بدنه متصل نکنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-037",
+      "term_en": "pinout",
+      "term_fa": "آرایش پایه‌ها؛ پین‌آوت",
+      "pronunciation_fa": "پین‌آوت",
+      "ipa": "/ˈpɪnˌaʊt/",
+      "definition_fa": "جدول یا نقشه عملکرد و شماره پایه‌های سوکت/ماژول.",
+      "example_en": "Verify the connector pinout before testing.",
+      "example_fa": "پیش از آزمون آرایش پایه‌های سوکت را تأیید کن.",
+      "collocations": [
+        "connector pinout",
+        "pin assignment"
+      ],
+      "workshop_note_fa": "نمای سمت سیم و سمت پایه ممکن است وارونه باشد؛ جهت دید را کنترل کنید.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-038",
+      "term_en": "wiring diagram",
+      "term_fa": "نقشه سیم‌کشی",
+      "pronunciation_fa": "وایِرینگ دایَگرام",
+      "ipa": "/ˈwaɪərɪŋ ˈdaɪəɡræm/",
+      "definition_fa": "نمای شماتیک اتصالات، اجزا، مسیرها و نقاط اتصال سامانه.",
+      "example_en": "Follow the wiring diagram for this model.",
+      "example_fa": "نقشه سیم‌کشی همین مدل را دنبال کن.",
+      "collocations": [
+        "read a wiring diagram",
+        "circuit diagram"
+      ],
+      "workshop_note_fa": "نقشه باید با سال، موتور، بازار و تیپ خودرو تطبیق داشته باشد.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-039",
+      "term_en": "connector view",
+      "term_fa": "نمای سوکت",
+      "pronunciation_fa": "کِنِکتِر ویو",
+      "ipa": "/kəˈnɛktər vjuː/",
+      "definition_fa": "تصویری از شکل سوکت و جهت/شماره‌گذاری پایه‌ها از سمت مشخص.",
+      "example_en": "Compare the connector view with the actual plug.",
+      "example_fa": "نمای سوکت را با فیش واقعی مقایسه کن.",
+      "collocations": [
+        "front view",
+        "wire-side view",
+        "terminal view"
+      ],
+      "workshop_note_fa": "سمت مشاهده را دقیق کنترل کنید تا شماره پایه‌ها وارونه خوانده نشوند.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    },
+    {
+      "term_id": "ELC-040",
+      "term_en": "test lead",
+      "term_fa": "سیم رابط اندازه‌گیری",
+      "pronunciation_fa": "تِست لید",
+      "ipa": "/ˈtɛst liːd/",
+      "definition_fa": "سیم و پراب رابط میان ابزار اندازه‌گیری و نقطه آزمون.",
+      "example_en": "Inspect the test leads before measuring.",
+      "example_fa": "پیش از اندازه‌گیری سیم‌های رابط را بررسی کن.",
+      "collocations": [
+        "test lead set",
+        "fused test lead"
+      ],
+      "workshop_note_fa": "رده ایمنی و فیوز داخلی سیم رابط باید متناسب با آزمون باشد.",
+      "canonical_term_id": null,
+      "evidence_status": "candidate_unverified",
+      "review_required": [
+        "technical_definition",
+        "translation",
+        "pronunciation",
+        "OEM_scope"
+      ]
+    }
+  ]
+}
