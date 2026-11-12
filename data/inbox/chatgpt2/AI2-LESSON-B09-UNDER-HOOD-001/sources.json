@@ -1,0 +1,64 @@
+[
+  {
+    "id": "SRC-BOSCH-BATTERY-001",
+    "title": "Bosch Classic — Quality spare parts for classic cars (Battery section)",
+    "publisher": "Robert Bosch GmbH / Bosch Classic",
+    "source_type": "manufacturer_technical_brochure",
+    "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/broschueren/boschclassic_spareparts.pdf",
+    "locator": "PDF pp. 7–8; section “Batteries — Charge, install, start”, lines 164–178 in indexed text",
+    "published_or_revision": "PDF edition shown on official Bosch Classic website; publication date not stated in retrieved copy",
+    "accessed_at": "2026-11-12",
+    "application_scope": "General starter-battery function; brochure is oriented to classic vehicles and is used only for basic energy-storage principles.",
+    "claims_supported": [
+      "B09-S01: battery stores electrical energy and supplies consumers when needed; charging system replenishes it while driving."
+    ],
+    "limitations": "Does not establish specifications or test procedures for any particular vehicle."
+  },
+  {
+    "id": "SRC-GATES-COOLING-001",
+    "title": "Troubleshooting Guide — Cooling System",
+    "publisher": "Gates",
+    "source_type": "manufacturer_technical_guide",
+    "url": "https://www.gatesaustralia.com.au/-/media/files/gates-au/automotive/catalogues/cooling-system-troubleshooting-manual-ausnz-august-2020.pdf?hash=414F365DB6CA4A98C1902EF1DFB934A7EB7D0E86&la=en",
+    "locator": "PDF pp. 9–10 for component roles; pp. 34–36 for radiator, expansion tank and cap; indexed lines 113–141 and 526–592",
+    "published_or_revision": "August 2020 (filename/version metadata)",
+    "accessed_at": "2026-11-12",
+    "application_scope": "General liquid-cooled automotive systems; actual layout and service procedures remain vehicle-specific.",
+    "claims_supported": [
+      "B09-S02: radiator transfers heat from coolant to air through tubes and fins.",
+      "B09-S05: expansion tank stores reserve coolant and accommodates thermal volume changes.",
+      "Safety: never remove cooling-system cap while engine is hot."
+    ],
+    "limitations": "Manufacturer guide; exact procedures, coolant and pressure ratings must come from vehicle OEM documentation."
+  },
+  {
+    "id": "SRC-MANN-AIRFILTER-001",
+    "title": "Air filters — high engine protection",
+    "publisher": "MANN-FILTER / MANN+HUMMEL",
+    "source_type": "manufacturer_technical_webpage",
+    "url": "https://www.mann-filter.com/uk-en/parts/air-filter.html",
+    "locator": "Sections “What your engine air cleaner will do for your engine” and “Reasons to install an engine air filter”, indexed lines 119–143",
+    "published_or_revision": "Current web page; no fixed revision date shown",
+    "accessed_at": "2026-11-12",
+    "application_scope": "General engine air filtration; filter selection remains application-specific.",
+    "claims_supported": [
+      "B09-S03: engine air filters capture dust and other particles from intake air and protect engine/air-measurement components."
+    ],
+    "limitations": "Product information is not a substitute for vehicle-specific filter selection or replacement intervals."
+  },
+  {
+    "id": "SRC-FORD-OIL-001",
+    "title": "Engine Oil — Checking the Engine Oil Level",
+    "publisher": "Ford Motor Company",
+    "source_type": "OEM_owner_manual",
+    "url": "https://www.fordservicecontent.dealerconnection.com/Ford_Content/vdirsnet/OwnerManual/Home/Content?ProcUid=G2135710&Uid=G2135699&buildType=web&countryCode=USA&div=f&languageCode=EN&userMarket=USA&vCode=1FTFW1ED1NFB51413&vFilteringEnabled=False&variantid=8665",
+    "locator": "Owner's Manual section “Checking the Engine Oil Level”, indexed lines 19–45",
+    "published_or_revision": "Online owner manual; page states current information may vary by vehicle",
+    "accessed_at": "2026-11-12",
+    "application_scope": "Specific Ford vehicle manual page; used only as an example that dipstick measurement conditions are OEM-defined.",
+    "claims_supported": [
+      "B09-S04: dipstick is wiped, fully reinserted and read; oil level between min/max is acceptable for this manual's application; timing is vehicle-specific."
+    ],
+    "limitations": "Do not generalize its waiting time or exact procedure to other makes/models."
+  }
+]
