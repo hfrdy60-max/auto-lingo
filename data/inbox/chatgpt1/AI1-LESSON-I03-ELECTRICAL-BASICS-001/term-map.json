@@ -1,0 +1,151 @@
+{
+  "mission_id": "AI1-LESSON-I03-ELECTRICAL-BASICS-001",
+  "lesson_id": "I03",
+  "status": "candidate_terms_only_not_canonical",
+  "canonical_database_checked": "terms_batch_01.json on main",
+  "canonical_records_found": 0,
+  "target_new_terms": 14,
+  "note_fa": "در terms_batch_01.json فعلی هیچ‌یک از این ۱۴ اصطلاح الکتریکی/مداری یافت نشد. هیچ TERM ID ساخته نشده است؛ همه موارد باید پس از توسعه بانک اصلی بازبینی شوند.",
+  "records": [
+    {
+      "candidate_key": "I03-T01",
+      "term_en": "circuit",
+      "term_fa": "مدار الکتریکی",
+      "pronunciation_fa": "سِرکیت",
+      "ipa": "/ˈsɜːrkɪt/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T02",
+      "term_en": "electrical current",
+      "term_fa": "جریان الکتریکی",
+      "pronunciation_fa": "اِلِکتریکَل کارِنت",
+      "ipa": "/ɪˈlektrɪkəl ˈkɜːrənt/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T03",
+      "term_en": "voltage",
+      "term_fa": "ولتاژ / اختلاف پتانسیل",
+      "pronunciation_fa": "وُلتِج",
+      "ipa": "/ˈvoʊltɪdʒ/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T04",
+      "term_en": "resistance",
+      "term_fa": "مقاومت الکتریکی",
+      "pronunciation_fa": "ریزِستَنس",
+      "ipa": "/rɪˈzɪstəns/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T05",
+      "term_en": "ground",
+      "term_fa": "اتصال بدنه / زمین الکتریکی",
+      "pronunciation_fa": "گراوند",
+      "ipa": "/ɡraʊnd/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T06",
+      "term_en": "open circuit",
+      "term_fa": "مدار باز / قطعی مدار",
+      "pronunciation_fa": "اوپِن سِرکیت",
+      "ipa": "/ˈoʊpən ˈsɜːrkɪt/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T07",
+      "term_en": "short circuit",
+      "term_fa": "اتصال کوتاه",
+      "pronunciation_fa": "شورت سِرکیت",
+      "ipa": "/ˌʃɔːrt ˈsɜːrkɪt/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T08",
+      "term_en": "short to ground",
+      "term_fa": "اتصال کوتاه به بدنه",
+      "pronunciation_fa": "شورت تو گراوند",
+      "ipa": "/ˌʃɔːrt tə ˈɡraʊnd/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T09",
+      "term_en": "power supply",
+      "term_fa": "منبع تغذیه",
+      "pronunciation_fa": "پاوِر سَپلای",
+      "ipa": "/ˈpaʊər səˌplaɪ/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T10",
+      "term_en": "load",
+      "term_fa": "بار الکتریکی",
+      "pronunciation_fa": "لود",
+      "ipa": "/loʊd/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T11",
+      "term_en": "continuity",
+      "term_fa": "پیوستگی الکتریکی",
+      "pronunciation_fa": "کانتینیوئیتی",
+      "ipa": "/ˌkɑːntəˈnuːəti/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T12",
+      "term_en": "wire",
+      "term_fa": "سیم",
+      "pronunciation_fa": "وایِر",
+      "ipa": "/ˈwaɪər/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T13",
+      "term_en": "connector",
+      "term_fa": "کانکتور / سوکت",
+      "pronunciation_fa": "کِنِکتِر",
+      "ipa": "/kəˈnektər/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    },
+    {
+      "candidate_key": "I03-T14",
+      "term_en": "wiring diagram",
+      "term_fa": "نقشه سیم‌کشی",
+      "pronunciation_fa": "وایِرینگ دایَگرام",
+      "ipa": "/ˈwaɪərɪŋ ˈdaɪəɡræm/",
+      "term_id": null,
+      "canonical_status": "candidate_not_canonical",
+      "source_ids": []
+    }
+  ]
+}
