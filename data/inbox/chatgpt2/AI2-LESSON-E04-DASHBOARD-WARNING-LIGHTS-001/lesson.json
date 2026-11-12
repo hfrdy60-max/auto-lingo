@@ -187,20 +187,6 @@
           ],
           "example_en": "The charging system warning light remains on.",
           "example_fa": "چراغ هشدار سامانه شارژ همچنان روشن مانده است."
-        },
-        {
-          "en": "battery warning light",
-          "fa": "چراغ هشدار باتری",
-          "pronunciation_fa": "بَتِری وُرنینگ لایت",
-          "ipa": "/ˈbætəri ˈwɔːrnɪŋ laɪt/",
-          "term_id": null,
-          "canonical_status": "unmatched_candidate",
-          "collocations": [
-            "battery symbol",
-            "battery warning"
-          ],
-          "example_en": "The battery warning light is red on this vehicle.",
-          "example_fa": "چراغ هشدار باتری در این خودرو قرمز است."
         }
       ],
       "key_points": [
