@@ -17,7 +17,7 @@ The contents pages and selected technical sections were reviewed. This is a focu
 - Updated `index.html` to load the two source-course assets.
 
 ## Course coverage
-### Hyundai/Kia — 6 modules, 18 lessons
+### Hyundai/Kia — 6 modules, 23 lessons
 - Wiring-diagram structure, connector views, wire color codes and harness identification.
 - Potentiometers, NTC/PTC thermistors, diodes, transistors, fuses and relay diagnosis.
 - Multiplexing, CAN frame concepts, LIN, K-Line and communication fault workflow.
@@ -25,7 +25,7 @@ The contents pages and selected technical sections were reviewed. This is a focu
 - MIL/DTC workflow, MAF/MAP/IAT, APP/ETC and fuel supply/injector fundamentals.
 - Immobilizer service concepts and ADAS overview.
 
-### Bosch — 7 modules, 15 lessons
+### Bosch — 7 modules, 20 lessons
 - Four-stroke SI engine and engine-management goals.
 - Electronic throttle, VVT, EGR, turbocharging, supercharging and intercooling.
 - MPI/TBI/GDI architecture and electromagnetic injector basics.
@@ -50,3 +50,8 @@ The contents pages and selected technical sections were reviewed. This is a focu
 ## Release status
 **Content integration: first structured release.**
 **Technical publication: conditional.** Model-specific procedures and figures must be verified against OEM manuals before being presented as repair instructions. The source chapters are educational references, not vehicle-specific service instructions.
+
+## Follow-up content expansion
+- Hyundai/Kia dataset expanded from 18 to **23 lessons** across 6 modules. New coverage: smart fuse and electronic protection, automatic lighting/headlamp leveling, power seats/seat heating/memory, parking assist/rear camera/electrochromic mirrors, and SRS/airbag safety.
+- Bosch dataset expanded from 15 to **20 lessons** across 7 modules. New coverage: torque/power/efficiency, mixture formation, fuel rail/regulator/damper/return line, spark energy and breakdown voltage, NOx storage catalyst and catalyst heating.
+- Updated totals are checked from the committed JSON files; the UI renders topics dynamically from the dataset, so no additional UI template is required.
