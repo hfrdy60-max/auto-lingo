@@ -1,0 +1,40 @@
+{
+  "mission_id": "AI1-LESSON-I03-ELECTRICAL-BASICS-001",
+  "lesson_id": "I03",
+  "status_policy": "All sources are candidate/unverified; broad supplier portals are not claim-level evidence. Do not promote without exact document and supporting passage.",
+  "sources": [
+    {
+      "id": "SRC-001",
+      "publisher": "HELLA",
+      "title": "HELLA Tech World — technical information portal",
+      "url": "https://www.hella.com/techworld",
+      "supports": [
+        "General automotive electrical systems and component technical information"
+      ],
+      "claim_scope": "Discovery portal only; exact supporting document and passages must be identified.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-002",
+      "publisher": "Bosch",
+      "title": "Bosch Mobility — automotive systems and components",
+      "url": "https://www.bosch-mobility.com",
+      "supports": [
+        "General automotive electrical and electronic system context"
+      ],
+      "claim_scope": "General portal only; not sufficient to verify a specific circuit diagnosis claim.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-011",
+      "publisher": "Vehicle manufacturers",
+      "title": "Official OEM workshop / wiring diagrams and repair information",
+      "url": null,
+      "supports": [
+        "Vehicle-specific circuit topology, connector pinouts, ground locations and approved test procedures"
+      ],
+      "claim_scope": "Must be replaced with exact manufacturer/model/year documentation before any vehicle-specific claim or procedure is published.",
+      "status": "candidate_unverified"
+    }
+  ]
+}
