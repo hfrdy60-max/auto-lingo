@@ -36,14 +36,6 @@
       "match_note": "candidate; no exact match in terms_batch_01.json"
     },
     {
-      "term_en": "battery warning light",
-      "term_fa": "چراغ هشدار باتری",
-      "term_id": null,
-      "mapping_status": "unmatched",
-      "canonical_status": "candidate_unverified",
-      "match_note": "candidate; no exact match in terms_batch_01.json"
-    },
-    {
       "term_en": "Malfunction Indicator Lamp (MIL)",
       "term_fa": "چراغ نشانگر خرابی / چراغ چک موتور",
       "term_id": null,
@@ -78,6 +70,14 @@
     {
       "term_en": "Electric Power Steering (EPS) warning light",
       "term_fa": "چراغ هشدار فرمان کمکی برقی",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "Anti-lock Braking System (ABS)",
+      "term_fa": "سامانه ترمز ضدقفل",
       "term_id": null,
       "mapping_status": "unmatched",
       "canonical_status": "candidate_unverified",
