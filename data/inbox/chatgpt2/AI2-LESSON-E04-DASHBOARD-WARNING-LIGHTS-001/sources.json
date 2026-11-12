@@ -1,0 +1,132 @@
+{
+  "mission_id": "AI2-LESSON-E04-DASHBOARD-WARNING-LIGHTS-001",
+  "lesson_id": "E04",
+  "status_policy": "All technical references are candidate_unverified pending AI-1 review. Image license was inspected on the source page; attribution is required.",
+  "sources": [
+    {
+      "id": "SRC-ISO-2575-2021",
+      "publisher": "International Organization for Standardization (ISO)",
+      "title": "ISO 2575:2021 — Road vehicles — Symbols for controls, indicators and tell-tales",
+      "url": "https://www.iso.org/standard/68409.html",
+      "supports": [
+        "Scope and purpose of standardized vehicle control/indicator/tell-tale symbols",
+        "Standard includes information about possible optical tell-tale colours"
+      ],
+      "claim_scope": "Standard overview only; does not replace model-specific owner information. Full standard text is not reproduced.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-TOYOTA-WARNINGS",
+      "publisher": "Toyota Owners",
+      "title": "Dashboard Symbols & Warning Lights Meaning",
+      "url": "https://www.toyota.com/owners/warning-lights",
+      "supports": [
+        "ABS warning light may indicate ABS or Brake Assist malfunction",
+        "Charging system warning light indicates a charging-system malfunction",
+        "EPS warning light indicates an EPS-system malfunction",
+        "SRS warning light indicates an SRS airbag-system malfunction",
+        "Toyota explicitly advises consulting the vehicle owner's manual; symbol colours vary by vehicle/system"
+      ],
+      "claim_scope": "Toyota's general warning-light reference; exact meaning and response remain vehicle-specific.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-TOYOTA-CLUSTER-2024",
+      "publisher": "Toyota Owners",
+      "title": "2024 Corolla Owner's Manual — Warning lights and indicators",
+      "url": "https://www.toyota.com/owners/warranty-owners-manuals/digital/article/corolla/2024/om02684u/ch02se010401/",
+      "supports": [
+        "Instrument-cluster warning lights and indicators inform the driver about vehicle-system status",
+        "The page distinguishes warning lights from indicators and lists charging, MIL, SRS and ABS lights"
+      ],
+      "claim_scope": "2024 Toyota Corolla manual example; not universal across makes/models.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-TOYOTA-MIL-2026",
+      "publisher": "Toyota Owners",
+      "title": "2026 Prius Owner's Manual — If a warning light turns on",
+      "url": "https://www.toyota.com/owners/warranty-owners-manuals/digital/article/prius/2026/om47f65u/ch07se020403/",
+      "supports": [
+        "MIL may relate to hybrid, electronic engine, electronic throttle or emissions control systems",
+        "SRS warning light can concern airbags or seat-belt pretensioners",
+        "ABS warning light can concern ABS or brake assist",
+        "EPS warning light indicates an EPS malfunction"
+      ],
+      "claim_scope": "2026 Toyota Prius example; system coverage differs by vehicle.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-TOYOTA-86-MANUAL",
+      "publisher": "Toyota Europe",
+      "title": "Toyota 86 Owner's Manual — Steps to take in an emergency",
+      "url": "https://myportalcontent.toyota-europe.com/Manuals/toyota/86_OM_EE_OM18058E.book.pdf",
+      "supports": [
+        "MIL, SRS, ABS and EPS warning-light examples and model-specific interpretations"
+      ],
+      "claim_scope": "Toyota 86 manual example; do not generalize its actions or warning timing.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-KIA-CHARGING-2025",
+      "publisher": "Kia Owners Manual",
+      "title": "2025 Kia Owner's Manual — Warning lights (charging system and MIL)",
+      "url": "https://ownersmanual.kia.com/full_webhelp/DL3/2025/en_US/topics/chapter4_17_1.html",
+      "supports": [
+        "Charging-system warning may concern alternator or electrical charging system",
+        "MIL illuminates during the vehicle's start-up check and may remain on for a malfunction; exact interpretation is model-specific"
+      ],
+      "claim_scope": "Kia model-specific online owner's manual page; not a universal repair procedure.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-KIA-ABS-EPS-2025",
+      "publisher": "Kia Owners Manual",
+      "title": "2025 Kia Owner's Manual — ABS, EPS and charging warning lights",
+      "url": "https://ownersmanual.kia.com/full_webhelp/NQ5/2025/en_GB/topics/chapter4_18.html",
+      "supports": [
+        "ABS warning lamp indicates ABS malfunction in the cited model",
+        "EPS warning lamp indicates an electric power steering malfunction in the cited model",
+        "Charging-system warning lamp may indicate alternator or charging-system malfunction"
+      ],
+      "claim_scope": "Kia model-specific owner's manual; actions and display behavior must not be generalized.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-VW-ATLAS-2025",
+      "publisher": "Volkswagen",
+      "title": "Atlas 2025 Quick Start Guide — Warning/Indicator Lights",
+      "url": "https://www.vw.com/en/owners-and-services/about-my-vehicle/quick-start-guides.html/__app/2025/atlas/Warning-Indicator-Lights.app",
+      "supports": [
+        "VW distinguishes steady/flashing ESC states and identifies ABS, MIL and airbag/seat-belt tensioner warnings",
+        "Warning-light interpretation is tied to the specific vehicle guide"
+      ],
+      "claim_scope": "Volkswagen Atlas 2025 quick-start guide; model-specific.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-MOPAR-WARNINGS",
+      "publisher": "Mopar",
+      "title": "Dashboard Warning Lights & Symbols",
+      "url": "https://www.mopar.com/en-us/dashboard-warning-lights.html",
+      "supports": [
+        "Battery warning light may indicate the 12-volt battery is not charging properly",
+        "Warning/indicator lamps may be accompanied by a message or acoustic signal",
+        "Owner's Manual remains the detailed vehicle-specific reference"
+      ],
+      "claim_scope": "Mopar general guide; not universal across manufacturers.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-COMMONS-DASHBOARD-CCBY2",
+      "publisher": "Wikimedia Commons / photographer Shixart1985",
+      "title": "Warning lights on a vehicle's dashboard glow brightly — photograph",
+      "url": "https://commons.wikimedia.org/wiki/File:Warning_lights_on_a_vehicle%27s_dashboard_glow_brightly,_indicating_possible_engine_problems._The_display_shows_the_time_as_1806_on_September_4,_2020,_creating_urgency.jpg",
+      "supports": [
+        "Real photograph of an illuminated vehicle dashboard/instrument panel for the image-recognition slot"
+      ],
+      "claim_scope": "Photograph only; it is not evidence for the technical meaning of any particular warning symbol. CC BY 2.0 requires attribution to Shixart1985 and a link to the license.",
+      "status": "candidate_unverified"
+    }
+  ]
+}
