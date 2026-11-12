@@ -1,0 +1,153 @@
+{
+  "mission_id": "AI2-LESSON-E02-ELECTRICAL-COMPONENTS-001",
+  "lesson_id": "E02",
+  "status_policy": "All sources are candidate/unverified; inclusion does not imply approval or verification.",
+  "sources": [
+    {
+      "id": "SRC-INTERSTATE-GLOSSARY-001",
+      "publisher": "Interstate Batteries",
+      "title": "Battery Glossary",
+      "url": "https://www.interstatebatteries.com/support/glossary",
+      "supports": [
+        "Battery stores electrical energy through electrochemical processes",
+        "Automotive battery is commonly described as a starting, lighting and ignition battery"
+      ],
+      "claim_scope": "General battery terminology; not a vehicle-specific service specification.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-BOSCH-BATTERY-AMS-001",
+      "publisher": "Bosch Aftermarket",
+      "title": "Bosch Battery Holistic Brochure",
+      "url": "https://www.boschaftermarket.com/xrm/media/images/parts/xx_pdfs_7/bosch_battery_holistic_brochure_ap_69436.pdf",
+      "supports": [
+        "Energy management systems monitor operating conditions and battery state of charge",
+        "Alternator function and battery power supply may be actively managed"
+      ],
+      "claim_scope": "General explanation of battery/alternator energy management; system behavior varies by vehicle.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-DENSO-ROTATING-ELECTRICS-001",
+      "publisher": "DENSO Aftermarket Europe",
+      "title": "Rotating Electrics: Car Starter Motors and Car Alternators",
+      "url": "https://www.denso-am.eu/products/rotating-electrics",
+      "supports": [
+        "Starter motor cranks the engine using battery power",
+        "Starter solenoid engages the pinion gear",
+        "Alternator/starter terminology and component roles"
+      ],
+      "claim_scope": "General starter/alternator principles; no universal repair values.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-BOSCH-SMART-CHARGE-001",
+      "publisher": "Bosch Automotive Aftermarket",
+      "title": "Alternators for Ford Smart Charge Systems — Technical Information",
+      "url": "https://www.boschaftermarket.com/ch/media/haendlerportal/pdf/technische_informationen/starter_und_generatoren/bosch_technische_info_rm_alternator_nr-1.pdf",
+      "supports": [
+        "Smart charging strategy can control alternator output according to operating parameters",
+        "Alternator connectors and control communication are vehicle/system-specific"
+      ],
+      "claim_scope": "Specific Ford Smart Charge examples; not a generic pinout or universal test procedure.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-DENSO-GLOSSARY-001",
+      "publisher": "DENSO Auto Parts",
+      "title": "Glossary of Terms — Starter & Alternator",
+      "url": "https://www.densoautoparts.com/glossary-of-terms-starter-alternator/",
+      "supports": [
+        "Starter cranks engine",
+        "Rectifier converts alternator AC output to DC",
+        "Voltage regulator controls alternator output"
+      ],
+      "claim_scope": "General terminology reference.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-DENSO-STARTER-TROUBLESHOOTING-001",
+      "publisher": "DENSO Aftermarket Europe",
+      "title": "Starter Troubleshooting",
+      "url": "https://www.denso-am.eu/news/starter-troubleshooting",
+      "supports": [
+        "Starter uses battery as power source to initiate engine operation",
+        "Starter has motor and engagement/disengagement mechanisms",
+        "Starter circuit/wiring and connections can affect operation"
+      ],
+      "claim_scope": "General technical explanation and fault context; vehicle-specific procedures must follow manufacturer information.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-HELLA-FUSE-INSTALLATION-001",
+      "publisher": "HELLA TechWorld",
+      "title": "Installation Material — Workshop-Relevant Product Range",
+      "url": "https://www.hella.com/techworld/us/passenger-car-parts/service-parts/installationsmaterial/",
+      "supports": [
+        "Automotive fuses are used in vehicle electrical fuse systems",
+        "Circuit breakers interrupt circuits to protect against overload and short circuit"
+      ],
+      "claim_scope": "General component functions and product categories.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-HELLA-CIRCUIT-BREAKERS-001",
+      "publisher": "HELLA TechWorld",
+      "title": "Vehicle Installation — Circuit-breakers",
+      "url": "https://www.hella.com/techworld/assets/documents/1267_BR_Fahrzeuginstallation_HELLA_EN_print.pdf",
+      "supports": [
+        "Circuit protection interrupts a circuit under overload/short-circuit conditions"
+      ],
+      "claim_scope": "General protection principle; not a fuse sizing chart.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-HELLA-RELAYS-001",
+      "publisher": "HELLA TechWorld",
+      "title": "Automotive Relays",
+      "url": "https://www.hella.com/techworld/en/car-parts/auto-electrics/automotive-relays/",
+      "supports": [
+        "Automotive relays are used in vehicle electrical applications",
+        "Vehicle-specific relay identification should use OE/vehicle data"
+      ],
+      "claim_scope": "Product/technical overview; individual relay pinout and rating must be verified per part.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-HELLA-RELAY-CATALOGUE-001",
+      "publisher": "HELLA",
+      "title": "HELLA Relays — Products and Applications Catalogue",
+      "url": "https://www.hella.com/salesapp/production/5021/HELLA_Relays_Catalogue_2022_EN_LRes.pdf",
+      "supports": [
+        "Electromechanical relay coil and contact operation",
+        "Example relay applications and terminal designations"
+      ],
+      "claim_scope": "Examples only; terminal numbers are not universal across every relay.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-TE-AUTOMOTIVE-TERMINALS-001",
+      "publisher": "TE Connectivity",
+      "title": "Automotive Terminals for Efficient Cable Connections",
+      "url": "https://www.te.com/en/products/terminals-splices/automotive-terminals.html",
+      "supports": [
+        "Automotive connector terminals provide robust electrical cable connections",
+        "Terminals connect wires to headers or other wires and are designed for environmental demands"
+      ],
+      "claim_scope": "General terminal/connector terminology.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-HELLA-INSTALLATION-MATERIAL-001",
+      "publisher": "HELLA TechWorld",
+      "title": "Installation Material — Cables and Plug Connections",
+      "url": "https://www.hella.com/techworld/us/passenger-car-parts/service-parts/installationsmaterial/",
+      "supports": [
+        "Automotive electrical installation uses cables, connectors and fuse systems",
+        "Cable design depends on electrical and environmental requirements"
+      ],
+      "claim_scope": "General installation material overview.",
+      "status": "candidate_unverified"
+    }
+  ]
+}
