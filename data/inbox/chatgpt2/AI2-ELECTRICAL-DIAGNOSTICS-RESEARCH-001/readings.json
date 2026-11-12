@@ -1,0 +1,138 @@
+{
+  "mission_id": "AI2-ELECTRICAL-DIAGNOSTICS-RESEARCH-001",
+  "readings": [
+    {
+      "id": "READ-ED-01",
+      "title": "Why Measurement Context Matters",
+      "en": "An electrical measurement is meaningful only when its context is known. A voltage value, resistance value, or continuity indication cannot be interpreted in isolation. The technician must know which system is being discussed, what operating state was specified, which reference is used, and which instrument capability is relevant. A continuity buzzer may indicate a conductive path, but it does not prove that the path can perform correctly under operating load. Voltage drop is a different concept because it is associated with current flowing through a circuit section. The acceptable result, if one is specified, belongs to the exact vehicle and test condition. Generic numbers copied from another model can lead to a false conclusion. A professional report therefore records the vehicle identity, the observed symptom, the measurement context, the source of the specification, and any limitation. It separates an observation from an interpretation and an interpretation from a confirmed cause. This careful language prevents a measurement from being turned into an unsupported parts diagnosis.",
+      "fa": "یک اندازه‌گیری الکتریکی تنها زمانی معنا دارد که شرایط آن مشخص باشد. مقدار ولتاژ، مقاومت یا نمایش پیوستگی را نمی‌توان جدا از زمینه تفسیر کرد. تکنسین باید بداند کدام سامانه بررسی می‌شود، وضعیت عملکرد تعریف‌شده چیست، کدام مرجع به‌کار رفته و قابلیت ابزار اندازه‌گیری چه محدودیتی دارد. بوق پیوستگی ممکن است وجود مسیر رسانا را نشان دهد، اما ثابت نمی‌کند مسیر زیر بار کاری عملکرد مناسبی دارد. افت ولتاژ مفهوم متفاوتی است، زیرا با عبور جریان از بخشی از مدار ارتباط دارد. نتیجه قابل قبول، اگر مشخص شده باشد، به خودرو و شرایط آزمون دقیق آن تعلق دارد. اعداد عمومیِ برداشته‌شده از مدل دیگر می‌توانند نتیجه‌گیری اشتباه ایجاد کنند. گزارش حرفه‌ای مشخصات خودرو، علامت مشاهده‌شده، زمینه اندازه‌گیری، منبع مشخصات و محدودیت‌ها را ثبت می‌کند و مشاهده را از تفسیر و علت تأییدشده جدا نگه می‌دارد.",
+      "questions": [
+        [
+          "Why is measurement context important?",
+          "Because a value cannot be interpreted correctly without the system, operating state, reference, and instrument context.",
+          "زیرا بدون دانستن سامانه، وضعیت عملکرد، مرجع و شرایط ابزار، تفسیر درست مقدار ممکن نیست."
+        ],
+        [
+          "What does a continuity buzzer fail to prove?",
+          "It does not prove correct performance under operating load.",
+          "عملکرد صحیح مسیر زیر بار کاری را ثابت نمی‌کند."
+        ],
+        [
+          "How is voltage drop distinguished in the text?",
+          "It is associated with current flowing through a circuit section.",
+          "با عبور جریان از بخشی از مدار مرتبط است."
+        ],
+        [
+          "Why should generic limits not be copied between models?",
+          "Because acceptable results depend on the exact vehicle and test condition.",
+          "زیرا نتیجه قابل قبول به خودرو و شرایط آزمون دقیق وابسته است."
+        ],
+        [
+          "Name two things a professional report should record.",
+          "Vehicle identity and measurement context (also symptom, source, and limitations).",
+          "مشخصات خودرو و زمینه اندازه‌گیری؛ همچنین علامت، منبع و محدودیت‌ها."
+        ]
+      ]
+    },
+    {
+      "id": "READ-ED-02",
+      "title": "Reading a Wiring Diagram",
+      "en": "A wiring diagram is a technical representation of electrical connections in a particular vehicle. It may identify connectors, wire colors, circuit references, ground points, splices, and component locations. A schematic often emphasizes how a circuit functions, while a wiring diagram may provide more connection and routing information. The exact conventions are not universal. One manufacturer may use a particular abbreviation or connector-view orientation that differs from another manufacturer's documentation. For this reason, a reader must use the legend, notes, and viewing-direction labels supplied with the document. A pin number is not always the same thing as a terminal number, and a cavity is the physical position in the connector housing. These distinctions matter when describing a circuit in English. The diagram should be treated as model-specific technical information, not as a generic picture that can be transferred to a different vehicle. If a page contains a cross-reference, it points the reader to another related section of the same documentation set.",
+      "fa": "نقشه سیم‌کشی نمایش فنی اتصالات الکتریکی در یک خودروی مشخص است. این نقشه ممکن است کانکتورها، رنگ سیم‌ها، مراجع مدار، نقاط اتصال زمین، انشعاب‌ها و محل قطعات را مشخص کند. شماتیک معمولاً بر نحوه عملکرد مدار تأکید دارد، در حالی که نقشه سیم‌کشی می‌تواند اطلاعات بیشتری درباره اتصال و مسیر سیم‌ها ارائه کند. قراردادها جهانی نیستند. یک سازنده ممکن است از مخفف یا جهت نمای کانکتوری استفاده کند که با مستندات سازنده دیگر فرق دارد. بنابراین خواننده باید راهنمای نمادها، یادداشت‌ها و برچسب جهت مشاهده را دنبال کند. شماره پین همیشه با شماره ترمینال یکی نیست و cavity موقعیت فیزیکی داخل پوسته کانکتور است. این تفاوت‌ها هنگام توصیف مدار به انگلیسی اهمیت دارند. نقشه باید اطلاعات فنی مخصوص مدل تلقی شود، نه تصویری عمومی که بتوان آن را به خودروی دیگری تعمیم داد.",
+      "questions": [
+        [
+          "What information may a wiring diagram identify?",
+          "Connectors, wire colors, circuit references, grounds, splices, and component locations.",
+          "کانکتورها، رنگ سیم، مراجع مدار، زمین‌ها، انشعاب‌ها و محل قطعات."
+        ],
+        [
+          "What does a schematic usually emphasize?",
+          "How a circuit functions.",
+          "نحوه عملکرد مدار."
+        ],
+        [
+          "Why must the document legend be read?",
+          "Because conventions and abbreviations differ among manufacturers.",
+          "زیرا قراردادها و مخفف‌ها بین سازندگان متفاوت‌اند."
+        ],
+        [
+          "What is a cavity?",
+          "The physical position in the connector housing.",
+          "موقعیت فیزیکی در پوسته کانکتور."
+        ],
+        [
+          "Can a wiring diagram be transferred to another vehicle model?",
+          "No. It is model-specific technical information.",
+          "خیر؛ اطلاعات فنی مخصوص همان مدل است."
+        ]
+      ]
+    },
+    {
+      "id": "READ-ED-03",
+      "title": "Connectors and Intermittent Faults",
+      "en": "Automotive connectors are designed to maintain electrical contact while exposed to vibration, temperature changes, moisture, and normal service conditions. Their performance depends on several interacting features, including the terminal material, contact force, housing design, seals, locking features, and harness support. A connector can look acceptable from the outside while its contact interface requires further assessment. Corrosion and fretting are different terms. Corrosion describes material degradation caused by chemical or electrochemical processes. Fretting corrosion involves small relative movement at a loaded contact interface together with wear and environmental reactions. Either condition may be associated with unstable electrical behavior, but appearance alone does not identify the mechanism. Technical reports should distinguish the connector housing, terminal, pin, socket, and cavity. These words describe different features and should not be used as interchangeable labels. When an intermittent symptom is reported, the documentation should preserve the observed conditions and avoid claiming that a connector is defective before the evidence supports that conclusion.",
+      "fa": "کانکتورهای خودرو برای حفظ تماس الکتریکی در برابر لرزش، تغییر دما، رطوبت و شرایط عادی سرویس طراحی می‌شوند. عملکرد آن‌ها به چند ویژگی وابسته است؛ از جمله جنس ترمینال، نیروی تماس، طراحی پوسته، آب‌بندها، قفل‌ها و مهار دسته‌سیم. ممکن است کانکتور از بیرون سالم به نظر برسد، در حالی که سطح تماس آن به بررسی بیشتری نیاز داشته باشد. خوردگی و فرتینگ دو اصطلاح متفاوت‌اند. خوردگی تخریب ماده بر اثر فرایندهای شیمیایی یا الکتروشیمیایی است. خوردگی فرتینگ شامل حرکت نسبی کوچک در سطح تماس تحت بار، همراه با سایش و واکنش‌های محیطی است. هر دو ممکن است با رفتار الکتریکی ناپایدار همراه شوند، اما ظاهر به‌تنهایی سازوکار را مشخص نمی‌کند. گزارش فنی باید پوسته کانکتور، ترمینال، پین، سوکت و حفره را از هم تفکیک کند. این واژه‌ها ویژگی‌های متفاوتی را توصیف می‌کنند و نباید مترادف به‌کار روند.",
+      "questions": [
+        [
+          "Name three factors affecting connector performance.",
+          "Terminal material, contact force, housing design, seals, locks, or harness support.",
+          "جنس ترمینال، نیروی تماس، طراحی پوسته، آب‌بند، قفل یا مهار دسته‌سیم."
+        ],
+        [
+          "How does the text define corrosion?",
+          "Material degradation from chemical or electrochemical processes.",
+          "تخریب ماده بر اثر فرایندهای شیمیایی یا الکتروشیمیایی."
+        ],
+        [
+          "What additional mechanism is involved in fretting corrosion?",
+          "Small relative movement and wear at a loaded contact interface.",
+          "حرکت نسبی کوچک و سایش در سطح تماس تحت بار."
+        ],
+        [
+          "Does external appearance prove the contact condition?",
+          "No, appearance alone is insufficient.",
+          "خیر، ظاهر به‌تنهایی کافی نیست."
+        ],
+        [
+          "Why distinguish pin, terminal, socket, and cavity?",
+          "They describe different connector features.",
+          "زیرا ویژگی‌های متفاوت کانکتور را توصیف می‌کنند."
+        ]
+      ]
+    },
+    {
+      "id": "READ-ED-04",
+      "title": "Diagnostic Trouble Codes and Network Language",
+      "en": "A diagnostic trouble code is a structured report generated when a control unit detects a condition that meets its monitoring logic. It is useful evidence, but it is not a direct verdict that a particular component has failed. A code may describe a circuit condition, a signal outside an expected range, a communication problem, or a monitored system result. The code status may be current, pending, history, or permanent, depending on the vehicle and diagnostic standard. Freeze-frame data can preserve operating information associated with a fault event, while live data shows values or states being reported during communication. Network terms such as CAN High, CAN Low, termination, and bus-off describe communication architecture and status. A careful technician records the exact code, status, symptoms, related data, and vehicle-specific service information. The final report should state what the evidence supports and what remains unknown. Replacing a part solely because a code names a circuit or sensor is not a sound diagnostic conclusion.",
+      "fa": "کد عیب‌یابی گزارشی ساختاریافته است که وقتی واحد کنترل شرایطی مطابق منطق پایش خود تشخیص دهد، ایجاد می‌شود. این کد مدرک مفیدی است، اما حکم مستقیم خرابی یک قطعه مشخص نیست. کد ممکن است وضعیت مدار، سیگنال خارج از محدوده مورد انتظار، مشکل ارتباطی یا نتیجه پایش یک سامانه را توصیف کند. وضعیت کد بسته به خودرو و استاندارد تشخیصی می‌تواند جاری، در انتظار تأیید، تاریخی یا دائمی باشد. داده فریزفریم ممکن است اطلاعات عملکردی مرتبط با زمان رویداد عیب را حفظ کند، در حالی که داده زنده مقادیر یا وضعیت‌های گزارش‌شده هنگام ارتباط را نمایش می‌دهد. اصطلاحات شبکه مانند CAN High، CAN Low، ترمینیشن و Bus-off معماری و وضعیت ارتباط را توصیف می‌کنند. تکنسین دقیق، کد و وضعیت آن، علائم، داده‌های مرتبط و اطلاعات تعمیراتی مخصوص خودرو را ثبت می‌کند. گزارش نهایی باید بگوید شواهد چه چیزی را پشتیبانی می‌کنند و چه چیزهایی هنوز نامشخص‌اند.",
+      "questions": [
+        [
+          "What does a DTC represent?",
+          "A monitored condition detected according to a control unit's logic.",
+          "وضعیتی که طبق منطق پایش واحد کنترل تشخیص داده شده است."
+        ],
+        [
+          "Does a DTC prove a component has failed?",
+          "No. It is evidence or a diagnostic clue, not a parts verdict.",
+          "خیر؛ سرنخ تشخیصی است، نه حکم خرابی قطعه."
+        ],
+        [
+          "What is freeze-frame data?",
+          "Operating information associated with a fault event.",
+          "اطلاعات عملکردی مرتبط با زمان رخداد عیب."
+        ],
+        [
+          "What does live data show?",
+          "Values or states reported during diagnostic communication.",
+          "مقادیر یا وضعیت‌های گزارش‌شده هنگام ارتباط دیاگ."
+        ],
+        [
+          "What should a careful technician record?",
+          "The code, status, symptoms, related data, and vehicle-specific service information.",
+          "کد، وضعیت، علائم، داده‌های مرتبط و اطلاعات تعمیراتی همان خودرو."
+        ]
+      ]
+    }
+  ],
+  "status": "candidate_unverified"
+}
