@@ -257,3 +257,27 @@ body{background:#080e14;overflow:hidden}
  .mobile-dock button{border:0;background:transparent;color:#8798a2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font:inherit;font-size:9px;border-radius:9px}
  .mobile-dock button i{font-style:normal;font-size:19px}.mobile-dock button.active{color:#65e5bd;background:#55e0b410}
 }
+
+
+/* Structured curriculum */
+.curriculum-status{padding:14px 18px;border:1px solid var(--line);border-radius:14px;color:var(--muted);background:var(--panel);margin:18px 0}
+.curriculum-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.curriculum-card{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.curriculum-card .curriculum-code{color:var(--mint);font-size:12px;font-weight:800;letter-spacing:1px}
+.curriculum-card h3{margin:0;font-size:19px}.curriculum-card p{margin:0;color:var(--muted);font-size:13px}
+.curriculum-card button,.curriculum-lesson button{border:1px solid #55e0b455;background:#55e0b414;color:var(--mint);padding:9px 14px;border-radius:11px;cursor:pointer;margin-top:8px}
+.curriculum-lesson{margin-top:20px;padding:clamp(16px,3vw,28px);border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+.curriculum-lesson h2{margin:6px 0}.curriculum-lesson h3{margin:22px 0 8px}.curriculum-lesson p{color:var(--muted)}
+.curriculum-meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.curriculum-meta span{padding:5px 10px;border:1px solid var(--line);border-radius:20px;color:var(--muted);font-size:12px}
+.curriculum-objectives,.curriculum-words,.curriculum-quiz{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.curriculum-item{padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--panel2)}
+.curriculum-item b{display:block;color:var(--text)}.curriculum-item small{color:var(--muted)}
+.curriculum-section details{border:1px solid var(--line);border-radius:13px;padding:12px 15px;margin:10px 0;background:#ffffff05}
+.curriculum-section summary{cursor:pointer;font-weight:700}
+.curriculum-section .lesson-body{padding:8px 2px;color:var(--muted)}
+.curriculum-section .lesson-body li{margin:5px 0}
+.curriculum-question{padding:14px;border:1px solid var(--line);border-radius:13px}
+.curriculum-question button{display:block;width:100%;text-align:right;margin:7px 0;color:var(--text);background:var(--panel2);border-color:var(--line)}
+.curriculum-question button.correct{border-color:var(--mint);color:var(--mint)}
+.curriculum-question button.wrong{border-color:var(--gold);color:var(--gold)}
+@media(max-width:600px){.curriculum-cards{grid-template-columns:1fr}.curriculum-meta span{font-size:11px}}
