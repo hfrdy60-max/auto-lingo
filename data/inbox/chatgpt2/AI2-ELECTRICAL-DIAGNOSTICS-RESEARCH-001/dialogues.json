@@ -1,0 +1,310 @@
+{
+  "mission_id": "AI2-ELECTRICAL-DIAGNOSTICS-RESEARCH-001",
+  "dialogues": [
+    {
+      "id": "DLG-ED-01",
+      "title": "Measurement context",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The customer reports an intermittent lighting issue.",
+          "fa": "مشتری از اختلال متناوب چراغ‌ها گزارش داده است."
+        },
+        {
+          "speaker": "مشتری از اختلال متناوب چراغ‌ها گزارش داده است.",
+          "en": "Supervisor",
+          "fa": "Is the symptom present all the time?"
+        },
+        {
+          "speaker": "Is the symptom present all the time?",
+          "en": "آیا علامت همیشه وجود دارد؟",
+          "fa": "Technician"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. It appears under certain operating conditions.",
+          "fa": "خیر. در برخی شرایط کاری ظاهر می‌شود."
+        },
+        {
+          "speaker": "خیر. در برخی شرایط کاری ظاهر می‌شود.",
+          "en": "Supervisor",
+          "fa": "Record the conditions and the exact vehicle details."
+        },
+        {
+          "speaker": "Record the conditions and the exact vehicle details.",
+          "en": "شرایط و مشخصات دقیق خودرو را ثبت کن.",
+          "fa": "Technician"
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "id": "DLG-ED-02",
+      "title": "Voltage drop terminology",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The report mentions a voltage-drop concern.",
+          "fa": "گزارش به احتمال افت ولتاژ اشاره می‌کند."
+        },
+        {
+          "speaker": "گزارش به احتمال افت ولتاژ اشاره می‌کند.",
+          "en": "Supervisor",
+          "fa": "Does that term describe an unloaded resistance check?"
+        },
+        {
+          "speaker": "Does that term describe an unloaded resistance check?",
+          "en": "آیا این اصطلاح آزمون مقاومتِ بدون بار را توصیف می‌کند؟",
+          "fa": "Technician"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. Voltage drop is interpreted in relation to current flow.",
+          "fa": "خیر. افت ولتاژ در ارتباط با عبور جریان تفسیر می‌شود."
+        },
+        {
+          "speaker": "خیر. افت ولتاژ در ارتباط با عبور جریان تفسیر می‌شود.",
+          "en": "Supervisor",
+          "fa": "Correct. The test conditions must be documented."
+        },
+        {
+          "speaker": "Correct. The test conditions must be documented.",
+          "en": "درست است. شرایط آزمون باید ثبت شود.",
+          "fa": "Technician"
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "id": "DLG-ED-03",
+      "title": "Wiring diagram",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "I found the circuit reference in the wiring diagram.",
+          "fa": "مرجع مدار را در نقشه سیم‌کشی پیدا کردم."
+        },
+        {
+          "speaker": "مرجع مدار را در نقشه سیم‌کشی پیدا کردم.",
+          "en": "Supervisor",
+          "fa": "Which connector view does the document show?"
+        },
+        {
+          "speaker": "Which connector view does the document show?",
+          "en": "سند کدام نمای کانکتور را نشان می‌دهد؟",
+          "fa": "Technician"
+        },
+        {
+          "speaker": "Technician",
+          "en": "It identifies the component side and the wire side separately.",
+          "fa": "سمت قطعه و سمت سیم را جداگانه مشخص می‌کند."
+        },
+        {
+          "speaker": "سمت قطعه و سمت سیم را جداگانه مشخص می‌کند.",
+          "en": "Supervisor",
+          "fa": "Remember that the viewing direction matters."
+        },
+        {
+          "speaker": "Remember that the viewing direction matters.",
+          "en": "یادت باشد جهت مشاهده اهمیت دارد.",
+          "fa": "Technician"
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "id": "DLG-ED-04",
+      "title": "Connector condition",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The service history mentions an intermittent connection.",
+          "fa": "سوابق تعمیر به اتصال متناوب اشاره می‌کند."
+        },
+        {
+          "speaker": "سوابق تعمیر به اتصال متناوب اشاره می‌کند.",
+          "en": "Supervisor",
+          "fa": "Does the outside appearance prove the contact condition?"
+        },
+        {
+          "speaker": "Does the outside appearance prove the contact condition?",
+          "en": "آیا ظاهر بیرونی وضعیت کنتاکت را ثابت می‌کند؟",
+          "fa": "Technician"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. Appearance alone is not enough evidence.",
+          "fa": "خیر. ظاهر به‌تنهایی مدرک کافی نیست."
+        },
+        {
+          "speaker": "خیر. ظاهر به‌تنهایی مدرک کافی نیست.",
+          "en": "Supervisor",
+          "fa": "What terms should the report distinguish?"
+        },
+        {
+          "speaker": "What terms should the report distinguish?",
+          "en": "گزارش باید چه اصطلاحاتی را از هم جدا کند؟",
+          "fa": "Technician"
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "id": "DLG-ED-05",
+      "title": "Sensor signal",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The scan report describes a signal as implausible.",
+          "fa": "گزارش دیاگ سیگنال را نامعقول توصیف کرده است."
+        },
+        {
+          "speaker": "گزارش دیاگ سیگنال را نامعقول توصیف کرده است.",
+          "en": "Supervisor",
+          "fa": "Does that prove the sensor itself is defective?"
+        },
+        {
+          "speaker": "Does that prove the sensor itself is defective?",
+          "en": "آیا این موضوع ثابت می‌کند خود سنسور معیوب است؟",
+          "fa": "Technician"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. Wiring, supply, reference, ground, and other inputs may matter.",
+          "fa": "خیر. سیم‌کشی، تغذیه، مرجع، زمین و ورودی‌های دیگر هم ممکن است مؤثر باشند."
+        },
+        {
+          "speaker": "خیر. سیم‌کشی، تغذیه، مرجع، زمین و ورودی‌های دیگر هم ممکن است مؤثر باشند.",
+          "en": "Supervisor",
+          "fa": "Keep the conclusion open until the evidence is reviewed."
+        },
+        {
+          "speaker": "Keep the conclusion open until the evidence is reviewed.",
+          "en": "تا بررسی شواهد، نتیجه‌گیری را قطعی نکن.",
+          "fa": "Technician"
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "id": "DLG-ED-06",
+      "title": "CAN communication",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "Several control units report a communication concern.",
+          "fa": "چند واحد کنترل مشکل ارتباطی گزارش می‌کنند."
+        },
+        {
+          "speaker": "چند واحد کنترل مشکل ارتباطی گزارش می‌کنند.",
+          "en": "Supervisor",
+          "fa": "Could this be a network-level issue?"
+        },
+        {
+          "speaker": "Could this be a network-level issue?",
+          "en": "آیا ممکن است مشکل در سطح شبکه باشد؟",
+          "fa": "Technician"
+        },
+        {
+          "speaker": "Technician",
+          "en": "It is one possibility, but the report does not identify a failed unit.",
+          "fa": "یکی از احتمال‌هاست، اما گزارش واحد معیوبی را مشخص نمی‌کند."
+        },
+        {
+          "speaker": "یکی از احتمال‌هاست، اما گزارش واحد معیوبی را مشخص نمی‌کند.",
+          "en": "Supervisor",
+          "fa": "What network terms appear in the technical note?"
+        },
+        {
+          "speaker": "What network terms appear in the technical note?",
+          "en": "چه اصطلاحات شبکه‌ای در یادداشت فنی آمده است؟",
+          "fa": "Technician"
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "id": "DLG-ED-07",
+      "title": "DTC interpretation",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "A current DTC is stored in the control unit.",
+          "fa": "یک کد عیب جاری در واحد کنترل ذخیره شده است."
+        },
+        {
+          "speaker": "یک کد عیب جاری در واحد کنترل ذخیره شده است.",
+          "en": "Supervisor",
+          "fa": "What does the DTC tell us?"
+        },
+        {
+          "speaker": "What does the DTC tell us?",
+          "en": "کد عیب چه چیزی به ما می‌گوید؟",
+          "fa": "Technician"
+        },
+        {
+          "speaker": "Technician",
+          "en": "It identifies a monitored condition, not necessarily a failed part.",
+          "fa": "یک وضعیت پایش‌شده را مشخص می‌کند، نه لزوماً قطعه خراب را."
+        },
+        {
+          "speaker": "یک وضعیت پایش‌شده را مشخص می‌کند، نه لزوماً قطعه خراب را.",
+          "en": "Supervisor",
+          "fa": "What additional information is useful?"
+        },
+        {
+          "speaker": "What additional information is useful?",
+          "en": "چه اطلاعات تکمیلی مفید است؟",
+          "fa": "Technician"
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "id": "DLG-ED-08",
+      "title": "Repair verification",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The customer says the warning appeared again.",
+          "fa": "مشتری می‌گوید چراغ هشدار دوباره ظاهر شده است."
+        },
+        {
+          "speaker": "مشتری می‌گوید چراغ هشدار دوباره ظاهر شده است.",
+          "en": "Supervisor",
+          "fa": "Was the original operating condition recorded?"
+        },
+        {
+          "speaker": "Was the original operating condition recorded?",
+          "en": "آیا شرایط عملکرد اولیه ثبت شده بود؟",
+          "fa": "Technician"
+        },
+        {
+          "speaker": "Technician",
+          "en": "Yes. The report includes the conditions and stored status.",
+          "fa": "بله. گزارش شرایط و وضعیت ذخیره‌شده را شامل می‌شود."
+        },
+        {
+          "speaker": "بله. گزارش شرایط و وضعیت ذخیره‌شده را شامل می‌شود.",
+          "en": "Supervisor",
+          "fa": "Can we say the repair is confirmed?"
+        },
+        {
+          "speaker": "Can we say the repair is confirmed?",
+          "en": "آیا می‌توانیم بگوییم تعمیر تأیید شده است؟",
+          "fa": "Technician"
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    }
+  ],
+  "status": "candidate_unverified"
+}
