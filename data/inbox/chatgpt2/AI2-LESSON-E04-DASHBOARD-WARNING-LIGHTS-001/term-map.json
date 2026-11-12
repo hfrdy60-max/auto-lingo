@@ -1,0 +1,87 @@
+{
+  "mission_id": "AI2-LESSON-E04-DASHBOARD-WARNING-LIGHTS-001",
+  "lesson_id": "E04",
+  "status_policy": "All proposed terms remain candidate/unverified. No canonical TERM IDs were created.",
+  "records": [
+    {
+      "term_en": "warning light",
+      "term_fa": "چراغ هشدار",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "indicator light",
+      "term_fa": "چراغ نشانگر",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "instrument cluster",
+      "term_fa": "پنل آمپر",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "charging system warning light",
+      "term_fa": "چراغ هشدار سامانه شارژ",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "battery warning light",
+      "term_fa": "چراغ هشدار باتری",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "Malfunction Indicator Lamp (MIL)",
+      "term_fa": "چراغ نشانگر خرابی / چراغ چک موتور",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "Diagnostic Trouble Code (DTC)",
+      "term_fa": "کد عیب‌یابی",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "ABS warning light",
+      "term_fa": "چراغ هشدار ABS",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "SRS warning light",
+      "term_fa": "چراغ هشدار SRS",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    },
+    {
+      "term_en": "Electric Power Steering (EPS) warning light",
+      "term_fa": "چراغ هشدار فرمان کمکی برقی",
+      "term_id": null,
+      "mapping_status": "unmatched",
+      "canonical_status": "candidate_unverified",
+      "match_note": "candidate; no exact match in terms_batch_01.json"
+    }
+  ]
+}
