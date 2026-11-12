@@ -11,8 +11,8 @@
           "id": "V-001",
           "term_en": "Digital multimeter (DMM)",
           "term_fa": "مولتی‌متر دیجیتال",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "دیجیتال مالتی‌میتر",
+          "ipa": "/ˈdɪdʒɪtəl ˌmʌltiˈmiːtər/",
           "definition_fa": "ابزار الکترونیکی اندازه‌گیری کمیت‌هایی مانند ولتاژ، جریان و مقاومت؛ قابلیت‌ها به مدل دستگاه بستگی دارد.",
           "example_en": "The technician selected the appropriate DMM function.",
           "collocations": [
@@ -32,8 +32,8 @@
           "id": "V-002",
           "term_en": "Test lead",
           "term_fa": "سیم رابط اندازه‌گیری",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "تِست لید",
+          "ipa": "/ˈtɛst liːd/",
           "definition_fa": "سیم و مجموعه اتصال بین ابزار اندازه‌گیری و نقطه آزمون؛ رده ایمنی و وضعیت آن اهمیت دارد.",
           "example_en": "The test leads must be in good condition.",
           "collocations": [
@@ -53,8 +53,8 @@
           "id": "V-003",
           "term_en": "Probe",
           "term_fa": "پراب اندازه‌گیری",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "پروب",
+          "ipa": "/proʊb/",
           "definition_fa": "نوک یا رابط رسانای ابزار برای تماس اندازه‌گیری؛ کاربرد و شکل آن با نوع آزمون فرق دارد.",
           "example_en": "The probe is part of the measuring accessory.",
           "collocations": [
@@ -94,8 +94,8 @@
           "id": "V-005",
           "term_en": "Clamp meter",
           "term_fa": "کلمپ‌متر / آمپرمتر انبری",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "کْلَمپ میتر",
+          "ipa": "/ˈklæmp ˌmiːtər/",
           "definition_fa": "ابزاری که جریان را با حس‌کردن میدان مغناطیسی پیرامون هادی اندازه می‌گیرد؛ نوع AC/DC و محدوده آن مهم است.",
           "example_en": "A clamp meter can measure current without opening the conductor path.",
           "collocations": [
@@ -115,8 +115,8 @@
           "id": "V-006",
           "term_en": "Test light",
           "term_fa": "چراغ تست",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "تِست لایت",
+          "ipa": "/ˈtɛst laɪt/",
           "definition_fa": "ابزار ساده نشان‌دهنده وجود برخی شرایط الکتریکی؛ بارگذاری آن ممکن است برای مدارهای الکترونیکی حساس نامناسب باشد.",
           "example_en": "A test light is not suitable for every electronic circuit.",
           "collocations": [
@@ -136,8 +136,8 @@
           "id": "V-007",
           "term_en": "Voltage",
           "term_fa": "ولتاژ / اختلاف پتانسیل",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "وُلتِج",
+          "ipa": "/ˈvoʊltɪdʒ/",
           "definition_fa": "اختلاف پتانسیل الکتریکی بین دو نقطه؛ مقدار مرجع و شرایط اندازه‌گیری باید از مستندات همان سامانه گرفته شود.",
           "example_en": "The report records the measured voltage and test conditions.",
           "collocations": [
@@ -157,8 +157,8 @@
           "id": "V-008",
           "term_en": "Current",
           "term_fa": "جریان الکتریکی",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "کارِنت",
+          "ipa": "/ˈkɜːrənt/",
           "definition_fa": "نرخ عبور بار الکتریکی از یک مسیر؛ واحد SI آن آمپر است.",
           "example_en": "The current value depends on the operating condition.",
           "collocations": [
@@ -178,8 +178,8 @@
           "id": "V-009",
           "term_en": "Resistance",
           "term_fa": "مقاومت الکتریکی",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "ریزِستِنس",
+          "ipa": "/rɪˈzɪstəns/",
           "definition_fa": "میزان مخالفت یک عنصر با عبور جریان؛ اندازه‌گیری مقاومت به شرایط مدار و ابزار وابسته است.",
           "example_en": "The resistance reading must be interpreted in context.",
           "collocations": [
@@ -199,8 +199,8 @@
           "id": "V-010",
           "term_en": "Continuity",
           "term_fa": "پیوستگی الکتریکی",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "کانتینیوئیتی",
+          "ipa": "/ˌkɑːntɪˈnuːəti/",
           "definition_fa": "وجود مسیر رسانای پیوسته در شرایط آزمون؛ نتیجه پیوستگی به‌تنهایی سلامت مدار زیر بار را اثبات نمی‌کند.",
           "example_en": "A continuity result alone does not prove loaded-circuit performance.",
           "collocations": [
@@ -301,8 +301,8 @@
           "id": "V-015",
           "term_en": "Auto-ranging",
           "term_fa": "انتخاب خودکار محدوده",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "اوتو رِینجینگ",
+          "ipa": "/ˌɔːtoʊ ˈreɪndʒɪŋ/",
           "definition_fa": "قابلیتی که ابزار محدوده مناسب را برای نمایش اندازه‌گیری انتخاب می‌کند.",
           "example_en": "This meter supports auto-ranging.",
           "collocations": [
@@ -321,8 +321,8 @@
           "id": "V-016",
           "term_en": "Polarity",
           "term_fa": "قطبیت",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "پُلارِتی",
+          "ipa": "/pəˈlærəti/",
           "definition_fa": "جهت مثبت و منفی بودن کمیت یا اتصال نسبت به مرجع تعریف‌شده.",
           "example_en": "The display indicates reversed polarity.",
           "collocations": [
@@ -361,8 +361,8 @@
           "id": "V-018",
           "term_en": "Input impedance",
           "term_fa": "امپدانس ورودی",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "ایمپوت ایمپیدِنس",
+          "ipa": "/ˈɪnpʊt ɪmˈpiːdəns/",
           "definition_fa": "میزان بارگذاری الکتریکی ورودی ابزار بر مدار؛ در اندازه‌گیری مدارهای سیگنال اهمیت دارد.",
           "example_en": "Input impedance affects how the meter interacts with a circuit.",
           "collocations": [
@@ -381,8 +381,8 @@
           "id": "V-019",
           "term_en": "Fused current input",
           "term_fa": "ورودی جریانِ فیوزدار",
-          "pronunciation_fa": null,
-          "ipa": null,
+          "pronunciation_fa": "فیوزد کارِنت ایمپوت",
+          "ipa": "/fjuːzd ˈkɜːrənt ˈɪnpʊt/",
           "definition_fa": "ورودی اختصاصی اندازه‌گیری جریان که حفاظت فیوزی آن وابسته به مشخصات سازنده ابزار است؛ اشتباه در ورودی می‌تواند خطرناک باشد.",
           "example_en": "The meter manual identifies the fused current input.",
           "collocations": [
@@ -578,7 +578,9 @@
             "SRC-ED-001",
             "SRC-ED-002",
             "SRC-ED-003"
-          ]
+          ],
+          "pronunciation_fa": "پَرَسیتیک کارِنت درا",
+          "ipa": "/ˌpærəˈsɪtɪk ˈkɜːrənt drɔː/"
         },
         {
           "id": "T-007",
@@ -670,7 +672,9 @@
             "SRC-ED-001",
             "SRC-ED-002",
             "SRC-ED-003"
-          ]
+          ],
+          "pronunciation_fa": "اینترمیتِنت فالت",
+          "ipa": "/ˌɪntərˈmɪtənt fɔːlt/"
         },
         {
           "id": "T-011",
@@ -785,7 +789,9 @@
             "SRC-ED-001",
             "SRC-ED-002",
             "SRC-ED-003"
-          ]
+          ],
+          "pronunciation_fa": "اوپِن سِرکیت",
+          "ipa": "/ˈoʊpən ˈsɜːrkɪt/"
         },
         {
           "id": "T-016",
@@ -838,7 +844,9 @@
           "source_ids": [
             "SRC-ED-003",
             "SRC-ED-004"
-          ]
+          ],
+          "pronunciation_fa": "سکِمَتیک",
+          "ipa": "/skɪˈmætɪk/"
         },
         {
           "id": "W-003",
@@ -851,7 +859,9 @@
           "source_ids": [
             "SRC-ED-003",
             "SRC-ED-004"
-          ]
+          ],
+          "pronunciation_fa": "وایِرینگ دایَگرام",
+          "ipa": "/ˈwaɪərɪŋ ˌdaɪəɡræm/"
         },
         {
           "id": "W-004",
@@ -877,7 +887,9 @@
           "source_ids": [
             "SRC-ED-003",
             "SRC-ED-004"
-          ]
+          ],
+          "pronunciation_fa": "سپلایس",
+          "ipa": "/splaɪs/"
         },
         {
           "id": "W-006",
@@ -903,7 +915,9 @@
           "source_ids": [
             "SRC-ED-003",
             "SRC-ED-004"
-          ]
+          ],
+          "pronunciation_fa": "گراوند پوینت",
+          "ipa": "/ˈɡraʊnd pɔɪnt/"
         },
         {
           "id": "W-008",
@@ -968,7 +982,9 @@
           "source_ids": [
             "SRC-ED-003",
             "SRC-ED-004"
-          ]
+          ],
+          "pronunciation_fa": "کَوِتی",
+          "ipa": "/ˈkævəti/"
         },
         {
           "id": "W-013",
@@ -1154,7 +1170,9 @@
           "source_ids": [
             "SRC-ED-006",
             "SRC-ED-007"
-          ]
+          ],
+          "pronunciation_fa": "تِرمینَل",
+          "ipa": "/ˈtɜːrmɪnəl/"
         },
         {
           "id": "C-003",
@@ -1167,7 +1185,9 @@
           "source_ids": [
             "SRC-ED-006",
             "SRC-ED-007"
-          ]
+          ],
+          "pronunciation_fa": "پین",
+          "ipa": "/pɪn/"
         },
         {
           "id": "C-004",
@@ -1180,7 +1200,9 @@
           "source_ids": [
             "SRC-ED-006",
             "SRC-ED-007"
-          ]
+          ],
+          "pronunciation_fa": "ساکِت",
+          "ipa": "/ˈsɑːkɪt/"
         },
         {
           "id": "C-005",
@@ -1258,7 +1280,9 @@
           "source_ids": [
             "SRC-ED-006",
             "SRC-ED-007"
-          ]
+          ],
+          "pronunciation_fa": "فْرِتینگ کِرُوژِن",
+          "ipa": "/ˈfrɛtɪŋ kəˈroʊʒən/"
         },
         {
           "id": "C-011",
@@ -1284,7 +1308,9 @@
           "source_ids": [
             "SRC-ED-006",
             "SRC-ED-007"
-          ]
+          ],
+          "pronunciation_fa": "سپلایس",
+          "ipa": "/splaɪs/"
         },
         {
           "id": "C-013",
@@ -1388,7 +1414,9 @@
           "source_ids": [
             "SRC-ED-006",
             "SRC-ED-007"
-          ]
+          ],
+          "pronunciation_fa": "اِسترِین رِلیف",
+          "ipa": "/ˈstreɪn rɪˌliːf/"
         },
         {
           "id": "C-021",
@@ -1470,7 +1498,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "رِفِرِنس وُلتِج",
+          "ipa": "/ˈrɛfərəns ˈvoʊltɪdʒ/"
         },
         {
           "id": "S-006",
@@ -1522,7 +1552,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "های ساید درایوِر",
+          "ipa": "/ˈhaɪ saɪd ˈdraɪvər/"
         },
         {
           "id": "S-010",
@@ -1535,7 +1567,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "لو ساید درایوِر",
+          "ipa": "/ˈloʊ saɪd ˈdraɪvər/"
         },
         {
           "id": "S-011",
@@ -1626,7 +1660,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "تِرمینِیشِن",
+          "ipa": "/ˌtɜːrmɪˈneɪʃən/"
         },
         {
           "id": "S-018",
@@ -1639,7 +1675,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "باس آف",
+          "ipa": "/ˌbʌs ˈɔːf/"
         },
         {
           "id": "S-019",
@@ -1665,7 +1703,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "وِیک آپ",
+          "ipa": "/ˈweɪk ʌp/"
         },
         {
           "id": "S-021",
@@ -1678,7 +1718,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "سلیپ مود",
+          "ipa": "/ˈsliːp moʊd/"
         },
         {
           "id": "S-022",
@@ -1691,7 +1733,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "پَرَسیتیک کارِنت درا",
+          "ipa": "/ˌpærəˈsɪtɪk ˈkɜːrənt drɔː/"
         }
       ]
     },
@@ -1786,7 +1830,9 @@
           "source_ids": [
             "SRC-ED-004",
             "SRC-ED-005"
-          ]
+          ],
+          "pronunciation_fa": "لایو دیتا",
+          "ipa": "/laɪv ˈdeɪtə/"
         },
         {
           "id": "D-008",
@@ -2209,5 +2255,29 @@
       "note_fa": "در خودرو معمولاً کلید حفاظتی قابل بازنشانی/قطع‌کننده مدار است؛ با fuse یکسان نیست."
     }
   ],
-  "safety_boundary_fa": "این بسته واژه‌نامه و مرجع مفهومی است. برای کاربر نوجوان، هیچ دستور عملی اتصال پراب، بازکردن کانکتور، آزمون مدار SRS/ایربگ، مدار ولتاژ بالا، اندازه‌گیری جریان یا کار روی خودرو ارائه نمی‌شود. چنین کارهایی فقط توسط تکنسین واجد صلاحیت و طبق اطلاعات تعمیراتی همان خودرو انجام می‌شود. هیچ مقدار عمومی ولتاژ/مقاومت/جریان یا pinout ارائه نشده است."
+  "safety_boundary_fa": "این بسته واژه‌نامه و مرجع مفهومی است. برای کاربر نوجوان، هیچ دستور عملی اتصال پراب، بازکردن کانکتور، آزمون مدار SRS/ایربگ، مدار ولتاژ بالا، اندازه‌گیری جریان یا کار روی خودرو ارائه نمی‌شود. چنین کارهایی فقط توسط تکنسین واجد صلاحیت و طبق اطلاعات تعمیراتی همان خودرو انجام می‌شود. هیچ مقدار عمومی ولتاژ/مقاومت/جریان یا pinout ارائه نشده است.",
+  "pronunciation_coverage": {
+    "total_records": 121,
+    "pronunciation_fa_filled": 36,
+    "ipa_filled": 36,
+    "coverage_percent": 29.8,
+    "scope": "Core vocabulary selected for learner-facing pronunciation support; other entries intentionally remain null pending pronunciation review.",
+    "review_status": "candidate_unverified",
+    "note_fa": "آوانویسی فارسی تقریبی و IPA پیشنهادی هستند و باید پیش از انتشار با گویش/لهجه آموزشی پروژه بازبینی شوند."
+  },
+  "overlap_review": {
+    "related_ai1_bundle": "AI-1 multimeter package (per QA feedback)",
+    "overlap_terms": [
+      "Digital multimeter (DMM)",
+      "Test lead",
+      "Clamp meter",
+      "Test light",
+      "Auto-ranging",
+      "Polarity",
+      "Input impedance",
+      "Fused current input"
+    ],
+    "handling": "Retained in this research dataset for traceability; do not create duplicate canonical terms during integration. Cross-reference the AI-1 canonical record/package when mapping becomes available. AI-2 package focuses on wider electrical diagnostics, wiring, connectors, networks and scan-tool language.",
+    "canonical_ids_assigned": false
+  }
 }
