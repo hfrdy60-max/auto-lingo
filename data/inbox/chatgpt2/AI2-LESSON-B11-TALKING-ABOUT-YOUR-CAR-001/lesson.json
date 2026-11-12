@@ -1,0 +1,694 @@
+{
+  "mission_id": "AI2-LESSON-B11-TALKING-ABOUT-YOUR-CAR-001",
+  "lesson_id": "B11",
+  "lesson_title_fa": "صحبت دربارهٔ خودروی خود",
+  "lesson_title_en": "Talking About Your Car",
+  "level_id": "LVL-1",
+  "lesson_order": 11,
+  "content_language": "fa",
+  "support_language": "en",
+  "content_version": "1.0.0",
+  "content_status": "needs_review",
+  "review_note_fa": "بستهٔ آموزشی مستقل در حوزهٔ زبان فنی خودرو. محور درس توصیف مشخصات عمومی خودرو با فعل‌های be و have و پاسخ کوتاه است. هشت واژهٔ کلیدی در این فایل صرفاً واژگان آموزشی/نامزد تطبیق‌اند؛ به‌عنوان رکورد canonical بانک اصطلاحات ساخته یا verified نشده‌اند. مطابق blueprint، منبع واژگان باید بانک اصلی باشد و تطبیق نهایی این واژه‌ها با term database نیازمند QA است.",
+  "blueprint_alignment": {
+    "source_file": "lesson_blueprints.json",
+    "blueprint_id": "B11",
+    "level_id": "LVL-1",
+    "order": 11,
+    "language_focus": "Verb be and have; short answers",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "listening",
+      "workshop_conversation"
+    ],
+    "vocabulary_source": "main_term_database",
+    "vocabulary_query": {
+      "level_id": "LVL-1",
+      "lesson_id": "B11",
+      "category_keys": []
+    },
+    "target_new_terms": 8,
+    "featured_part_ids": [],
+    "dialogue_ids": [],
+    "game_ids": [
+      "GAME-14",
+      "GAME-07",
+      "GAME-13",
+      "GAME-10"
+    ],
+    "quiz_id": "QZ-B11",
+    "estimated_minutes": 25,
+    "mastery_threshold_pct": 70
+  },
+  "learning_objectives": [
+    "اطلاعات پایهٔ یک خودرو را با واژه‌های make، model، model year، body type، engine، transmission، fuel type و mileage بیان کند.",
+    "برای معرفی یا توصیف خودرو از am/is/are به‌درستی استفاده کند.",
+    "برای بیان ویژگی‌ها یا تجهیزات خودرو از have/has و ساختار do/does استفاده کند.",
+    "پرسش‌های سادهٔ بله/خیر دربارهٔ خودرو بسازد و با short answers پاسخ دهد.",
+    "تفاوت Is it ...? / Yes, it is. با Does it have ...? / Yes, it does. را تشخیص دهد.",
+    "در یک مکالمهٔ کوتاه تعمیرگاهی مشخصات عمومی خودرو را معرفی و اطلاعات را تأیید کند."
+  ],
+  "prerequisites": [
+    "درس B10: آشنایی با واژگان فنی پایه و عبارت‌های ساده",
+    "آشنایی مقدماتی با ضمایر I، you، it و جملهٔ ساده"
+  ],
+  "lesson_intro_fa": "در محیط تعمیرگاه، اولین قدم برای صحبت دقیق دربارهٔ خودرو این است که بتوانیم آن را معرفی کنیم: سازنده و مدل چیست؟ مدل‌سال آن کدام است؟ بدنه چه نوعی دارد؟ موتور و گیربکس آن چیست و کیلومترشمار چه عددی را نشان می‌دهد؟ در این درس یاد می‌گیریم این اطلاعات را با جمله‌های کوتاه انگلیسی بیان کنیم. دو فعل اصلی درس be و have هستند: با be هویت یا ویژگی خودرو را توصیف می‌کنیم و با have دربارهٔ چیزهایی که خودرو دارد حرف می‌زنیم. همچنین پاسخ‌های کوتاه و طبیعی بله/خیر را تمرین می‌کنیم.",
+  "sections": [
+    {
+      "section_id": "B11-S01",
+      "title_fa": "۱) مشخصات شناسایی خودرو",
+      "title_en": "Basic Vehicle Identification",
+      "explanation_fa": "برای معرفی خودرو چند واژهٔ کلیدی داریم. Make یعنی سازنده یا نشان تجاری خودرو؛ Model نام مدل خودرو است؛ Model Year سال مدل است و لزوماً با سال تقویمی تولید یا اولین شماره‌گذاری یکی نیست. Body type نوع بدنه را توصیف می‌کند؛ مانند sedan، hatchback، SUV یا pickup. این واژه‌ها در مکالمهٔ تعمیرگاهی کمک می‌کنند دربارهٔ یک خودرو دقیق‌تر صحبت کنیم.",
+      "vocabulary": [
+        {
+          "en": "make",
+          "fa": "سازنده / نشان تجاری خودرو",
+          "example_en": "The make is Toyota.",
+          "example_fa": "سازندهٔ خودرو تویوتا است."
+        },
+        {
+          "en": "model",
+          "fa": "مدل خودرو",
+          "example_en": "The model is Corolla.",
+          "example_fa": "مدل خودرو کرولا است."
+        },
+        {
+          "en": "model year",
+          "fa": "سال مدل خودرو",
+          "example_en": "It is a 2020 model.",
+          "example_fa": "این خودرو مدل ۲۰۲۰ است."
+        },
+        {
+          "en": "body type",
+          "fa": "نوع بدنه",
+          "example_en": "It is a hatchback.",
+          "example_fa": "این خودرو هاچ‌بک است."
+        }
+      ],
+      "key_points": [
+        "Make و model دو مفهوم متفاوت‌اند: سازنده در برابر نام مدل.",
+        "Model year با calendar year (سال تقویمی) یکسان فرض نمی‌شود.",
+        "نوع بدنه را می‌توان با ساختار It is a/an + body type بیان کرد."
+      ],
+      "source_ids": [
+        "SRC-NHTSA-MAKE-MODEL-001",
+        "SRC-US-CFR-MODEL-YEAR-001"
+      ]
+    },
+    {
+      "section_id": "B11-S02",
+      "title_fa": "۲) توصیف موتور و گیربکس",
+      "title_en": "Describing the Engine and Transmission",
+      "explanation_fa": "برای معرفی مشخصات فنی سادهٔ خودرو می‌توانیم از engine و transmission استفاده کنیم. Engine یعنی موتور و transmission یعنی سامانهٔ انتقال قدرت یا گیربکس. در سطح مقدماتی، لازم نیست وارد جزئیات تعمیراتی شویم؛ کافی است نوع کلی را در یک جمله بیان کنیم. برای نمونه: It has a petrol engine. یا It has a manual transmission. نوع موتور، سوخت و گیربکس در خودروهای مختلف متفاوت است و نباید از ظاهر خودرو دربارهٔ مشخصات دقیق آن نتیجه‌گیری کرد.",
+      "vocabulary": [
+        {
+          "en": "engine",
+          "fa": "موتور",
+          "example_en": "It has a petrol engine.",
+          "example_fa": "این خودرو موتور بنزینی دارد."
+        },
+        {
+          "en": "transmission",
+          "fa": "گیربکس / سامانهٔ انتقال قدرت",
+          "example_en": "It has an automatic transmission.",
+          "example_fa": "این خودرو گیربکس اتوماتیک دارد."
+        },
+        {
+          "en": "fuel type",
+          "fa": "نوع سوخت",
+          "example_en": "The fuel type is diesel.",
+          "example_fa": "نوع سوخت گازوئیل است."
+        }
+      ],
+      "key_points": [
+        "engine و transmission اسم هستند؛ برای ویژگی داشتن از has استفاده می‌کنیم.",
+        "manual = دستی؛ automatic = خودکار/اتوماتیک.",
+        "petrol (بریتانیایی) و gasoline (آمریکایی) هر دو به بنزین اشاره دارند.",
+        "برای بیان مشخصات واقعی باید به اطلاعات معتبر همان خودرو رجوع کرد."
+      ],
+      "source_ids": [
+        "SRC-NHTSA-VPIC-001"
+      ]
+    },
+    {
+      "section_id": "B11-S03",
+      "title_fa": "۳) کارکرد خودرو و کیلومترشمار",
+      "title_en": "Mileage and Odometer Reading",
+      "explanation_fa": "Odometer وسیله یا سامانه‌ای است که مسافت طی‌شدهٔ خودرو را ثبت یا نمایش می‌دهد. Odometer reading عددی است که روی آن دیده می‌شود. Mileage در مکالمهٔ روزمره معمولاً برای اشاره به میزان کارکرد خودرو به‌کار می‌رود؛ در کشورهایی که از کیلومتر استفاده می‌کنند می‌توان عدد را با kilometres بیان کرد. مراقب باش trip meter با odometer یکی نیست: trip meter معمولاً مسافت یک سفر یا بازه را ثبت می‌کند و قابل صفرکردن است.",
+      "vocabulary": [
+        {
+          "en": "odometer",
+          "fa": "کیلومترشمار / مسافت‌سنج خودرو",
+          "example_en": "The odometer shows 82,000 kilometres.",
+          "example_fa": "کیلومترشمار ۸۲ هزار کیلومتر را نشان می‌دهد."
+        },
+        {
+          "en": "mileage",
+          "fa": "کارکرد / مسافت طی‌شده",
+          "example_en": "The car has high mileage.",
+          "example_fa": "این خودرو کارکرد بالایی دارد."
+        },
+        {
+          "en": "odometer reading",
+          "fa": "عدد نمایش‌داده‌شدهٔ کیلومترشمار",
+          "example_en": "What is the odometer reading?",
+          "example_fa": "عدد کیلومترشمار چقدر است؟"
+        }
+      ],
+      "key_points": [
+        "odometer ابزار/سامانهٔ اندازه‌گیری مسافت است؛ mileage مقدار مسافت/کارکرد است.",
+        "در متن‌های بین‌المللی واحد می‌تواند kilometres یا miles باشد.",
+        "trip meter معمولاً مسافت سفر را ثبت می‌کند و با کیلومترشمار کل خودرو تفاوت دارد."
+      ],
+      "source_ids": [
+        "SRC-USCODE-ODOMETER-001",
+        "SRC-EUROSTAT-ODOMETER-001"
+      ]
+    },
+    {
+      "section_id": "B11-S04",
+      "title_fa": "۴) فعل be برای معرفی و توصیف",
+      "title_en": "Using Be to Identify and Describe a Car",
+      "explanation_fa": "فعل be در زمان حال سه شکل اصلی دارد: am برای I، is برای he/she/it و are برای you/we/they. وقتی دربارهٔ خودرو صحبت می‌کنیم، معمولاً از it استفاده می‌کنیم؛ بنابراین می‌گوییم It is a sedan یا It is a 2020 model. برای سؤال بله/خیر، جای فعل و فاعل عوض می‌شود: Is it a sedan? پاسخ کوتاه مثبت Yes, it is و پاسخ کوتاه منفی No, it isn't است. در پاسخ کوتاه مثبت، فعل را کامل نگه می‌داریم و نمی‌گوییم Yes, it's.",
+      "key_points": [
+        "I am; you/we/they are; he/she/it is.",
+        "It is → It's؛ اما پاسخ کوتاه مثبت: Yes, it is.",
+        "سؤال: Is + subject + complement?",
+        "پاسخ کوتاه منفی: No, it isn't / No, it is not."
+      ],
+      "examples": [
+        {
+          "en": "My car is a sedan.",
+          "fa": "خودروی من یک سدان است."
+        },
+        {
+          "en": "Is it a hatchback? — Yes, it is.",
+          "fa": "آیا هاچ‌بک است؟ — بله، هست."
+        },
+        {
+          "en": "Is it a diesel vehicle? — No, it isn't.",
+          "fa": "آیا خودروی دیزلی است؟ — خیر، نیست."
+        }
+      ],
+      "source_ids": [
+        "SRC-BC-BE-001"
+      ]
+    },
+    {
+      "section_id": "B11-S05",
+      "title_fa": "۵) فعل have برای بیان ویژگی‌های خودرو",
+      "title_en": "Using Have to Talk About Vehicle Features",
+      "explanation_fa": "از have برای بیان مالکیت یا داشتن یک ویژگی استفاده می‌کنیم. با I/you/we/they از have و با he/she/it از has استفاده می‌شود. چون در این درس دربارهٔ خودرو با it حرف می‌زنیم، می‌گوییم It has a manual transmission یا It has four doors. برای ساخت سؤال در زمان حال ساده از do/does کمک می‌گیریم: Does it have a turbocharger? پاسخ کوتاه مثبت Yes, it does و منفی No, it doesn't است. در این ساختار بعد از does، فعل have به شکل ساده می‌آید، نه has.",
+      "key_points": [
+        "I/you/we/they have؛ he/she/it has.",
+        "سؤال: Do you have ...? / Does it have ...?",
+        "بعد از does، شکل پایهٔ have می‌آید: Does it have ...?",
+        "پاسخ کوتاه: Yes, it does. / No, it doesn't."
+      ],
+      "examples": [
+        {
+          "en": "It has four doors.",
+          "fa": "این خودرو چهار در دارد."
+        },
+        {
+          "en": "Does it have an automatic transmission? — Yes, it does.",
+          "fa": "آیا گیربکس اتوماتیک دارد؟ — بله، دارد."
+        },
+        {
+          "en": "Does it have a diesel engine? — No, it doesn't.",
+          "fa": "آیا موتور دیزلی دارد؟ — خیر، ندارد."
+        }
+      ],
+      "source_ids": [
+        "SRC-BC-HAVE-GOT-001"
+      ]
+    },
+    {
+      "section_id": "B11-S06",
+      "title_fa": "۶) مکالمهٔ کوتاه برای معرفی خودرو",
+      "title_en": "Workshop Conversation: Describing a Vehicle",
+      "explanation_fa": "در مکالمهٔ زیر، مشاور خدمات با پرسش‌های ساده اطلاعات عمومی خودرو را می‌گیرد. اطلاعات خودرو در این مکالمه ساختگی و صرفاً برای تمرین زبان است.",
+      "dialogue": [
+        {
+          "speaker": "Service Advisor",
+          "en": "What is the make and model of your car?",
+          "fa": "سازنده و مدل خودروی شما چیست؟"
+        },
+        {
+          "speaker": "Customer",
+          "en": "It is a Toyota Corolla.",
+          "fa": "یک تویوتا کرولا است."
+        },
+        {
+          "speaker": "Service Advisor",
+          "en": "What model year is it?",
+          "fa": "مدل‌سال آن چیست؟"
+        },
+        {
+          "speaker": "Customer",
+          "en": "It is a 2020 model.",
+          "fa": "مدل ۲۰۲۰ است."
+        },
+        {
+          "speaker": "Service Advisor",
+          "en": "Is it a sedan?",
+          "fa": "آیا سدان است؟"
+        },
+        {
+          "speaker": "Customer",
+          "en": "Yes, it is.",
+          "fa": "بله، هست."
+        },
+        {
+          "speaker": "Service Advisor",
+          "en": "Does it have an automatic transmission?",
+          "fa": "آیا گیربکس اتوماتیک دارد؟"
+        },
+        {
+          "speaker": "Customer",
+          "en": "No, it doesn't. It has a manual transmission.",
+          "fa": "خیر، ندارد. گیربکس دستی دارد."
+        },
+        {
+          "speaker": "Service Advisor",
+          "en": "What is the odometer reading?",
+          "fa": "عدد کیلومترشمار چقدر است؟"
+        },
+        {
+          "speaker": "Customer",
+          "en": "It shows 82,000 kilometres.",
+          "fa": "۸۲ هزار کیلومتر را نشان می‌دهد."
+        }
+      ],
+      "source_ids": [
+        "SRC-NHTSA-MAKE-MODEL-001",
+        "SRC-BC-BE-001",
+        "SRC-BC-HAVE-GOT-001",
+        "SRC-USCODE-ODOMETER-001"
+      ]
+    }
+  ],
+  "system_relationships": [
+    {
+      "concept": "Vehicle identity",
+      "items": [
+        "make",
+        "model",
+        "model year",
+        "body type"
+      ],
+      "note_fa": "این موارد برای شناسایی و توصیف کلی خودرو به‌کار می‌روند؛ سال مدل را با سال تقویمی تولید یکی ندان."
+    },
+    {
+      "concept": "Powertrain description",
+      "items": [
+        "engine",
+        "transmission",
+        "fuel type"
+      ],
+      "note_fa": "این واژه‌ها مشخصات کلی پیشرانه و انتقال قدرت را توصیف می‌کنند؛ مشخصات واقعی باید از اطلاعات همان خودرو تأیید شود."
+    },
+    {
+      "concept": "Distance information",
+      "items": [
+        "odometer",
+        "odometer reading",
+        "mileage"
+      ],
+      "note_fa": "odometer ابزار نمایش/ثبت مسافت است؛ odometer reading عدد آن و mileage اصطلاح رایج برای کارکرد خودرو است."
+    }
+  ],
+  "english_focus": {
+    "grammar_fa": "درس دو ساختار را کنار هم آموزش می‌دهد. be برای معرفی یا توصیف: It is a sedan. have برای بیان ویژگی داشتن: It has four doors. در سؤال‌های be، خود am/is/are به ابتدای جمله می‌رود؛ در سؤال‌های have، از do/does استفاده می‌کنیم. پاسخ کوتاه باید فعل کمکی درست را تکرار کند.",
+    "patterns": [
+      {
+        "pattern": "It is a/an + [body type].",
+        "translation_fa": "این خودرو یک [نوع بدنه] است."
+      },
+      {
+        "pattern": "It has + [feature].",
+        "translation_fa": "این خودرو [ویژگی] دارد."
+      },
+      {
+        "pattern": "Is it a/an + [description]?",
+        "translation_fa": "آیا این خودرو [توصیف] است؟"
+      },
+      {
+        "pattern": "Yes, it is. / No, it isn't.",
+        "translation_fa": "بله، هست. / خیر، نیست."
+      },
+      {
+        "pattern": "Does it have + [feature]?",
+        "translation_fa": "آیا این خودرو [ویژگی] را دارد؟"
+      },
+      {
+        "pattern": "Yes, it does. / No, it doesn't.",
+        "translation_fa": "بله، دارد. / خیر، ندارد."
+      },
+      {
+        "pattern": "What is the make and model?",
+        "translation_fa": "سازنده و مدل چیست؟"
+      },
+      {
+        "pattern": "What is the odometer reading?",
+        "translation_fa": "عدد کیلومترشمار چقدر است؟"
+      }
+    ],
+    "vocabulary": [
+      {
+        "en": "make",
+        "fa": "سازنده / نشان تجاری"
+      },
+      {
+        "en": "model",
+        "fa": "مدل"
+      },
+      {
+        "en": "model year",
+        "fa": "سال مدل"
+      },
+      {
+        "en": "body type",
+        "fa": "نوع بدنه"
+      },
+      {
+        "en": "engine",
+        "fa": "موتور"
+      },
+      {
+        "en": "transmission",
+        "fa": "گیربکس / سامانهٔ انتقال قدرت"
+      },
+      {
+        "en": "fuel type",
+        "fa": "نوع سوخت"
+      },
+      {
+        "en": "mileage",
+        "fa": "کارکرد خودرو"
+      },
+      {
+        "en": "odometer",
+        "fa": "کیلومترشمار"
+      },
+      {
+        "en": "manual",
+        "fa": "دستی"
+      },
+      {
+        "en": "automatic",
+        "fa": "اتوماتیک"
+      },
+      {
+        "en": "sedan",
+        "fa": "سدان"
+      },
+      {
+        "en": "hatchback",
+        "fa": "هاچ‌بک"
+      },
+      {
+        "en": "SUV",
+        "fa": "خودروی شاسی‌بلند / چندمنظوره"
+      }
+    ],
+    "grammar_tables": {
+      "be_present": [
+        {
+          "subject": "I",
+          "positive": "am",
+          "negative": "am not",
+          "question": "Am I...?"
+        },
+        {
+          "subject": "You / We / They",
+          "positive": "are",
+          "negative": "are not",
+          "question": "Are you/we/they...?"
+        },
+        {
+          "subject": "He / She / It",
+          "positive": "is",
+          "negative": "is not",
+          "question": "Is he/she/it...?"
+        }
+      ],
+      "have_present": [
+        {
+          "subject": "I / You / We / They",
+          "positive": "have",
+          "negative": "do not have",
+          "question": "Do ... have...?"
+        },
+        {
+          "subject": "He / She / It",
+          "positive": "has",
+          "negative": "does not have",
+          "question": "Does ... have...?"
+        }
+      ],
+      "short_answers": [
+        {
+          "question": "Is it a sedan?",
+          "yes": "Yes, it is.",
+          "no": "No, it isn't."
+        },
+        {
+          "question": "Does it have four doors?",
+          "yes": "Yes, it does.",
+          "no": "No, it doesn't."
+        },
+        {
+          "question": "Do you have a car?",
+          "yes": "Yes, I do.",
+          "no": "No, I don't."
+        }
+      ]
+    },
+    "common_errors": [
+      {
+        "incorrect": "It are a sedan.",
+        "correct": "It is a sedan.",
+        "reason_fa": "برای it از is استفاده می‌کنیم."
+      },
+      {
+        "incorrect": "It have four doors.",
+        "correct": "It has four doors.",
+        "reason_fa": "برای it در جملهٔ مثبت از has استفاده می‌شود."
+      },
+      {
+        "incorrect": "Does it has a turbocharger?",
+        "correct": "Does it have a turbocharger?",
+        "reason_fa": "بعد از does فعل به شکل پایه می‌آید."
+      },
+      {
+        "incorrect": "Is it have four doors?",
+        "correct": "Does it have four doors?",
+        "reason_fa": "برای پرسیدن دربارهٔ داشتن ویژگی از do/does استفاده می‌کنیم."
+      },
+      {
+        "incorrect": "Yes, it's.",
+        "correct": "Yes, it is.",
+        "reason_fa": "در پاسخ کوتاه مثبت، صورت کامل فعل be می‌آید."
+      },
+      {
+        "incorrect": "Yes, it has.",
+        "correct": "Yes, it does.",
+        "reason_fa": "در پاسخ کوتاه به سؤال Does it have... از does استفاده می‌شود."
+      }
+    ],
+    "reading": {
+      "title_en": "A Short Vehicle Profile",
+      "text_en": "This is a 2020 compact hatchback. It is a petrol vehicle. It has a 1.6-litre engine and a manual transmission. It has five doors. The odometer shows 82,000 kilometres.",
+      "text_fa": "این یک خودروی هاچ‌بک جمع‌وجور مدل ۲۰۲۰ است. بنزینی است. موتور ۱٫۶ لیتری و گیربکس دستی دارد. پنج در دارد. کیلومترشمار ۸۲ هزار کیلومتر را نشان می‌دهد.",
+      "note_fa": "تمام مشخصات این متن نمونه و ساختگی‌اند و به مدل واقعی خاصی اشاره ندارند."
+    },
+    "practice": [
+      {
+        "prompt_fa": "جای خالی را پر کن: It ___ a sedan.",
+        "answer": "is",
+        "explanation_fa": "برای توصیف نوع بدنه از فعل be استفاده می‌شود."
+      },
+      {
+        "prompt_fa": "جای خالی را پر کن: It ___ four doors.",
+        "answer": "has",
+        "explanation_fa": "برای it در جملهٔ مثبت have به has تبدیل می‌شود."
+      },
+      {
+        "prompt_fa": "پرسش بساز: (it / automatic transmission)",
+        "answer": "Does it have an automatic transmission?",
+        "explanation_fa": "برای سؤال have با فاعل it از does استفاده می‌کنیم."
+      },
+      {
+        "prompt_fa": "پاسخ کوتاه مثبت بده: Is it a hatchback?",
+        "answer": "Yes, it is.",
+        "explanation_fa": "پاسخ کوتاه سؤال be با تکرار is ساخته می‌شود."
+      },
+      {
+        "prompt_fa": "پاسخ کوتاه منفی بده: Does it have a diesel engine?",
+        "answer": "No, it doesn't.",
+        "explanation_fa": "پاسخ کوتاه منفی سؤال does با doesn't ساخته می‌شود."
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "Service Advisor",
+        "en": "What is the make and model?",
+        "fa": "سازنده و مدل چیست؟"
+      },
+      {
+        "speaker": "Customer",
+        "en": "It is a Ford Focus.",
+        "fa": "یک فورد فوکوس است."
+      },
+      {
+        "speaker": "Service Advisor",
+        "en": "Is it a hatchback?",
+        "fa": "آیا هاچ‌بک است؟"
+      },
+      {
+        "speaker": "Customer",
+        "en": "Yes, it is.",
+        "fa": "بله، هست."
+      },
+      {
+        "speaker": "Service Advisor",
+        "en": "Does it have a manual transmission?",
+        "fa": "آیا گیربکس دستی دارد؟"
+      },
+      {
+        "speaker": "Customer",
+        "en": "No, it doesn't. It has an automatic transmission.",
+        "fa": "خیر، ندارد. گیربکس اتوماتیک دارد."
+      }
+    ]
+  },
+  "safe_learning_activity": {
+    "title_fa": "تمرین معرفی خودرو با کارت اطلاعات ساختگی",
+    "steps": [
+      "یک کارت آموزشی ساختگی با make، model، model year، body type، engine، transmission و mileage انتخاب کن.",
+      "با جمله‌های It is... و It has... خودرو را معرفی کن.",
+      "سه سؤال Is it...? و سه سؤال Does it have...? بساز.",
+      "به هر سؤال با short answer درست پاسخ بده.",
+      "برای تمرین از اطلاعات ساختگی استفاده کن؛ نیازی به ارائهٔ شماره VIN یا اطلاعات شناسایی واقعی خودرو نیست."
+    ]
+  },
+  "knowledge_check": [
+    {
+      "id": "B11-K01",
+      "type": "mcq",
+      "question_fa": "واژهٔ make در معرفی خودرو به چه معناست؟",
+      "options": [
+        "مدل خودرو",
+        "سازنده یا نشان تجاری",
+        "نوع گیربکس",
+        "کارکرد خودرو"
+      ],
+      "answer": "سازنده یا نشان تجاری",
+      "explanation_fa": "Make به سازنده/نشان تجاری اشاره می‌کند و با model متفاوت است."
+    },
+    {
+      "id": "B11-K02",
+      "type": "mcq",
+      "question_fa": "کدام جمله درست است؟",
+      "options": [
+        "It are a sedan.",
+        "It is a sedan.",
+        "It am a sedan.",
+        "It be a sedan."
+      ],
+      "answer": "It is a sedan.",
+      "explanation_fa": "برای it از is استفاده می‌شود."
+    },
+    {
+      "id": "B11-K03",
+      "type": "mcq",
+      "question_fa": "کدام پرسش از نظر گرامری درست است؟",
+      "options": [
+        "Does it has four doors?",
+        "Is it have four doors?",
+        "Does it have four doors?",
+        "Do it has four doors?"
+      ],
+      "answer": "Does it have four doors?",
+      "explanation_fa": "بعد از does فعل اصلی به شکل پایه یعنی have می‌آید."
+    },
+    {
+      "id": "B11-K04",
+      "type": "fa_to_en",
+      "question_fa": "ترجمه کن: این خودرو گیربکس دستی دارد.",
+      "answer": "It has a manual transmission.",
+      "explanation_fa": "برای بیان ویژگی داشتن از It has استفاده می‌کنیم."
+    },
+    {
+      "id": "B11-K05",
+      "type": "en_to_fa",
+      "question_fa": "ترجمه کن: What is the odometer reading?",
+      "answer": "عدد کیلومترشمار چقدر است؟",
+      "explanation_fa": "Odometer reading عدد نمایش‌داده‌شدهٔ کیلومترشمار است."
+    },
+    {
+      "id": "B11-K06",
+      "type": "fill_blank",
+      "question_fa": "جای خالی را پر کن: Is it a hatchback? — Yes, it ___.",
+      "answer": "is",
+      "explanation_fa": "پاسخ کوتاه مثبت سؤال be، فعل be را تکرار می‌کند."
+    },
+    {
+      "id": "B11-K07",
+      "type": "identify_correct_term",
+      "question_fa": "کدام واژه به نامی اشاره می‌کند که سازنده برای یک خانواده/مدل خودرو به کار می‌برد؟",
+      "options": [
+        "Mileage",
+        "Model",
+        "Odometer",
+        "Fuel"
+      ],
+      "answer": "Model",
+      "explanation_fa": "Model نام مدل خودرو است؛ make سازنده است."
+    },
+    {
+      "id": "B11-K08",
+      "type": "listening",
+      "question_fa": "متن را بشنو و به سؤال پاسخ بده: “It is a 2020 hatchback. It has a petrol engine.” چه نوع بدنه‌ای دارد؟",
+      "audio_asset": null,
+      "transcript_en": "It is a 2020 hatchback. It has a petrol engine.",
+      "answer": "Hatchback",
+      "explanation_fa": "واژهٔ hatchback نوع بدنهٔ خودرو را مشخص می‌کند.",
+      "note_fa": "تا زمان تولید و تأیید فایل صوتی، این سؤال فقط transcript متنی دارد و listening audio تولیدشده محسوب نمی‌شود."
+    }
+  ],
+  "assessment": {
+    "quiz_id": "QZ-B11",
+    "question_count": 8,
+    "suggested_pass_pct": 70,
+    "blueprint_distribution": {
+      "mcq": 3,
+      "fa_to_en": 1,
+      "en_to_fa": 1,
+      "fill_blank": 1,
+      "identify_correct_term": 1,
+      "listening": 1
+    },
+    "scoring_note_fa": "سؤال‌ها با توزیع قالب QZ-B11 نوشته شده‌اند؛ این بسته هنوز جایگزین authored_questions در بانک اصلی نشده و تا تأیید QA/اتصال loader، نمره معیار رسمی mastery نیست."
+  },
+  "source_ids": [
+    "SRC-NHTSA-MAKE-MODEL-001",
+    "SRC-US-CFR-MODEL-YEAR-001",
+    "SRC-NHTSA-VPIC-001",
+    "SRC-USCODE-ODOMETER-001",
+    "SRC-EUROSTAT-ODOMETER-001",
+    "SRC-BC-BE-001",
+    "SRC-BC-HAVE-GOT-001"
+  ],
+  "limitations": [
+    "هشت واژهٔ هدف blueprint باید از main_term_database خوانده شوند؛ این بسته آن‌ها را به‌صورت contextual vocabulary نامزد کرده و هیچ TERM ID یا رکورد canonical جدید نساخته است.",
+    "featured_part_ids و dialogue_ids در blueprint خالی‌اند؛ این بسته قطعهٔ featured یا شناسهٔ مکالمهٔ canonical جعل نمی‌کند.",
+    "متن listening فقط transcript پیشنهادی است؛ فایل صوتی وجود ندارد و audio status تولیدشده نیست.",
+    "اطلاعات خودرو در مثال‌ها ساختگی است و به‌عنوان مشخصات واقعی خودرو قابل استفاده نیست.",
+    "تعریف make/model/model year بر اساس منابع NHTSA و مقررات ایالات متحده توضیح داده شده؛ جزئیات شناسایی و ثبت خودرو ممکن است در کشورها متفاوت باشد.",
+    "این درس محتوای زبان فنی است، نه دستور تشخیص، تعمیر یا سرویس خودرو.",
+    "تمام منابع candidate و unverified هستند و برای release نیازمند بازبینی مستقل‌اند."
+  ]
+}
