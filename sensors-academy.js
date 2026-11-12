@@ -61,6 +61,7 @@
       '<h4 class="sensor-block-title">نمونه ECUهای ذکرشده در منبع</h4><p class="sensor-muted">'+esc(e.catalog_note)+'</p>'+
       '<div class="sensor-table-wrap"><table class="sensor-table"><thead><tr><th>مدل ECU</th><th>خودرو / کاربرد ذکرشده</th><th>کانکتور و پایه</th></tr></thead><tbody>'+arr(e.ecu_catalog).map(row=>'<tr><td dir="ltr">'+esc(row[0])+'</td><td>'+esc(row[1])+'</td><td>'+esc(row[2])+'</td></tr>').join("")+'</tbody></table></div>'+
       '<h4 class="sensor-block-title">مروری بر تاریخچه حسگرهای خودرو</h4><div class="sensor-timeline">'+arr(e.timeline).map(item=>'<article><b>'+esc(item[0])+'</b><p>'+esc(item[1])+'</p></article>').join("")+'</div>'+
+      '<h4 class="sensor-block-title">تصاویر و نمودارهای اصلی پروژه</h4><div class="sensor-figure-links">'+arr(e.figures).map(fig=>'<a href="'+encodeURI("فردین گردی - سنسورهای خودرو_CY2wHXq.pdf")+'#page='+encodeURIComponent(fig.page)+'" target="_blank" rel="noopener"><b>صفحه '+faNum(fig.page)+' — '+esc(fig.title)+'</b><span>'+esc(fig.caption)+'</span><small>'+esc(fig.use)+'</small></a>').join("")+'</div>'+
       '<h4 class="sensor-block-title">روش استاندارد فکرکردن در عیب‌یابی سنسور</h4><ol class="sensor-method-list">'+arr(ref.diagnostic_method).map(x=>'<li>'+esc(x)+'</li>').join("")+'</ol>';
   }
   const detailDefinitions = [
@@ -90,6 +91,7 @@
       '<div class="sensor-detail-top"><div><span class="sensor-code">'+esc(sensor.id)+'</span><span class="sensor-category">'+esc(sensor.category)+'</span><h3>'+esc(sensor.name_fa)+'</h3><p dir="ltr">'+esc(sensor.name_en)+'</p></div><span class="sensor-page">صفحات '+esc(sensor.pages)+'</span></div>'+
       '<div class="sensor-detail-tabs">'+detailDefinitions.map(x=>'<button type="button" class="sensor-subtab '+(detailTab===x[0]?'active':'')+'" data-sensor-detail="'+esc(x[0])+'">'+esc(x[1])+'</button>').join("")+'</div>'+
       '<div class="sensor-detail-content">'+detailBody(sensor)+'</div>'+
+      '<div class="sensor-source-link"><span>تصویر، نقشه یا نمودار این سنسور در PDF اصلی</span><a href="'+encodeURI("فردین گردی - سنسورهای خودرو_CY2wHXq.pdf")+'#page='+encodeURIComponent(sensor.source_page_anchor||1)+'" target="_blank" rel="noopener">مشاهده صفحه '+faNum(sensor.source_page_anchor||1)+' ↗</a></div>'+
       '<div class="sensor-quiz"><div><span>CHECK YOUR KNOWLEDGE</span><b>سنجش سریع: '+esc(sensor.id)+'</b></div><p>'+esc(quiz.q||"")+'</p><div class="sensor-quiz-options">'+arr(quiz.options).map((x,i)=>'<button type="button" data-sensor-answer="'+i+'" '+(quizAnswered?'disabled':'')+'>'+esc(x)+'</button>').join("")+'</div><p class="sensor-quiz-feedback" id="sensorQuizFeedback">'+(quizAnswered?'<span>'+esc(quiz.why||"")+'</span>':"")+'</p></div>'+
       '</article>';
   }
