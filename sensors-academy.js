@@ -55,6 +55,7 @@
   function renderOverview() {
     const e = ref.ecu;
     return '<div class="sensor-reference-heading"><span class="eyebrow">ECU FUNDAMENTALS</span><h3>'+esc(e.title)+'</h3><p>'+esc(e.intro)+'</p></div>'+
+      '<div class="sensor-research-cards"><article><b>هدف تحقیق</b><p>'+esc(e.research_objective||"")+'</p></article><article><b>مسئله و چالش</b><p>'+esc(e.research_problem||"")+'</p></article></div>'+
       '<div class="sensor-info-grid">'+arr(e.responsibilities).map((x,i)=>'<article class="sensor-info-card"><small>وظیفه '+faNum(i+1)+'</small><b>'+esc(x)+'</b></article>').join("")+'</div>'+
       '<h4 class="sensor-block-title">انواع حافظه ECU</h4><div class="sensor-memory-grid">'+arr(e.memories).map(m=>'<article class="sensor-memory-card"><span>'+esc(m.en)+'</span><h4>'+esc(m.name)+'</h4><b>'+esc(m.types)+'</b><p>'+esc(m.description)+'</p></article>').join("")+'</div>'+
       '<div class="sensor-callout"><b>نکته مهم</b><p>رفتار حافظه و داده‌های تطبیقی در ECUهای مختلف یکسان نیست. زمان قطع برق و پیامدهای آن را از دستورالعمل همان خودرو بررسی کن.</p></div>'+
@@ -113,7 +114,9 @@
     return '<div class="sensor-reference-heading"><span class="eyebrow">SOURCE REVIEW</span><h3>راهنمای اعتبارسنجی و محدودیت‌های منبع</h3><p>محتوای تحقیق در برنامه حفظ شده، اما موارد مدل‌محور به‌عنوان قانون همگانی عرضه نمی‌شوند.</p></div>'+
       '<div class="sensor-limitations">'+arr(ref.source_limitations).map((x,i)=>'<article><b>'+faNum(i+1)+'</b><p>'+esc(x)+'</p></article>').join("")+'</div>'+
       '<div class="sensor-callout warning"><b>قانون اصلی تعمیرگاهی</b><p>ابتدا شماره فنی قطعه و نقشه همان خودرو را پیدا کن. سپس تغذیه، زمین، سیگنال و شرایط واقعی کار را اندازه بگیر. تعویض قطعه فقط به‌دلیل ثبت یک کد خطا روش تشخیص قابل اتکایی نیست.</p></div>'+
-      '<div class="sensor-source-strip"><div><b>مشخصات فایل منبع</b><span>'+esc(ref.meta.title_fa)+' • '+faNum(ref.meta.document_pages)+' صفحه • '+esc(ref.meta.source_pages)+'</span><small>منابع فهرست‌شده در PDF شامل کتاب «سنسورها در خودرو» و چند منبع عمومی وب است؛ برای تمام مقادیر فنی ارجاع مستقل و صفحه‌به‌صفحه ارائه نشده است.</small></div></div>';
+      '<h4 class="sensor-block-title">نتیجه‌گیری تحقیق</h4><div class="sensor-conclusion">'+esc(ref.conclusion||"")+'</div>'+
+      '<h4 class="sensor-block-title">منابع معرفی‌شده در پروژه</h4><ol class="sensor-method-list">'+arr(ref.bibliography).map(x=>'<li>'+esc(x)+'</li>').join("")+'</ol>'+
+      '<div class="sensor-source-strip"><div><b>مشخصات فایل منبع</b><span>'+esc(ref.meta.title_fa)+' • '+faNum(ref.meta.document_pages)+' صفحه • '+esc(ref.meta.source_pages)+'</span><small>فهرست منابع در PDF کلی است و برای همه مقادیر فنی ارجاع مستقل صفحه‌به‌صفحه ارائه نمی‌کند.</small></div></div>';
   }
   function renderSensorModule() {
     sensorChapterHeader();
