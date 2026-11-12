@@ -1,0 +1,20 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "$id":"https://github.com/hfrdy60-max/auto-lingo/blob/ai1-protocol-v2-ops-hardening-001/data/reviews/review_packet.schema.json",
+ "title":"AUTO LINGO Review Packet","type":"object","additionalProperties":false,
+ "required":["review_id","task_id","entity_table","entity_id","source_commit","reviewed_path","reviewed_blob_sha","reviewed_at","reviewer","claims","evidence","issues","required_actions","decision","limitations","supersedes_review_id"],
+ "properties":{
+  "review_id":{"type":"string","minLength":1},"task_id":{"type":"string","minLength":1},
+  "entity_table":{"type":"string","minLength":1},"entity_id":{"type":"string","minLength":1},
+  "source_commit":{"type":"string","pattern":"^[a-f0-9]{40}$"},"reviewed_path":{"type":"string","minLength":1},
+  "reviewed_blob_sha":{"type":"string","pattern":"^[a-f0-9]{40}$"},"reviewed_at":{"type":"string","format":"date-time"},
+  "reviewer":{"type":"object","additionalProperties":false,"required":["name","role","competency_scope","reviewer_type"],"properties":{
+   "name":{"type":"string","minLength":1},"role":{"type":"string","minLength":1},"competency_scope":{"type":"string","minLength":1},"reviewer_type":{"enum":["human","AI"]}}},
+  "claims":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["claim_key","claim_text","outcome","severity","rationale"],"properties":{
+   "claim_key":{"type":"string","minLength":1},"claim_text":{"type":"string","minLength":1},"outcome":{"enum":["supported","contradicted","uncertain","not_reviewed"]},"severity":{"enum":["P0","P1","P2","P3"]},"rationale":{"type":"string","minLength":1}}}},
+  "evidence":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["source_id","title","publisher","revision","url_or_document_id","locator","application_scope","accessed_at"],"properties":{
+   "source_id":{"type":"string","minLength":1},"title":{"type":"string","minLength":1},"publisher":{"type":"string","minLength":1},"revision":{"type":["string","null"]},"url_or_document_id":{"type":"string","minLength":1},"locator":{"type":"string","minLength":1},"application_scope":{"type":"string","minLength":1},"accessed_at":{"type":"string","format":"date"}}}},
+  "issues":{"type":"array","items":{"type":"string"}},"required_actions":{"type":"array","items":{"type":"string"}},
+  "decision":{"enum":["verified","needs_review","rejected","blocked"]},"limitations":{"type":"array","items":{"type":"string"}},"supersedes_review_id":{"type":["string","null"]}
+ }
+}
