@@ -1,0 +1,16 @@
+[
+  {
+    "source_id": "S-01",
+    "type": "repository_file",
+    "path": "database_schema.sql",
+    "ref": "main",
+    "use": "Primary evidence for table definitions, constraints, entity_sources, QA view, and learning/media fields."
+  },
+  {
+    "source_id": "S-02",
+    "type": "repository_file",
+    "path": "data/inbox/chatgpt1/AI1-SCHEMA-EVIDENCE-COVERAGE-AUDIT-001/REPORT.md",
+    "ref": "ai1-schema-evidence-coverage-audit-001",
+    "use": "AI-1 audit findings F-01 through F-08 reviewed independently."
+  }
+]
