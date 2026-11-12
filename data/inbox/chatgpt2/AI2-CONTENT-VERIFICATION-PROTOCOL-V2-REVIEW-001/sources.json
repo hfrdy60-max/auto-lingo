@@ -1,0 +1,35 @@
+{
+  "task_id": "AI2-CONTENT-VERIFICATION-PROTOCOL-V2-REVIEW-001",
+  "sources": [
+    {
+      "id": "SRC-V2-REVIEW-001",
+      "type": "project_artifact",
+      "title": "AUTO LINGO Content Verification Protocol v2",
+      "location": "data/inbox/chatgpt1/AI1-CONTENT-VERIFICATION-PROTOCOL-V2-001/CONTENT_VERIFICATION_PROTOCOL_V2.md",
+      "ref": "ai1-content-verification-protocol-v2-001",
+      "commit": "83d5c1e743ad5a074556fbf67024c9456426ba73",
+      "usage": "Primary policy draft reviewed."
+    },
+    {
+      "id": "SRC-V2-REVIEW-002",
+      "type": "project_artifact",
+      "title": "AUTO LINGO Content Verification Protocol v2 Change Log",
+      "location": "data/inbox/chatgpt1/AI1-CONTENT-VERIFICATION-PROTOCOL-V2-001/CHANGELOG.md",
+      "ref": "ai1-content-verification-protocol-v2-001",
+      "usage": "Checked disposition of the ten prior findings."
+    },
+    {
+      "id": "SRC-V2-REVIEW-003",
+      "type": "project_artifact",
+      "title": "AUTO LINGO database_schema.sql",
+      "location": "database_schema.sql",
+      "ref": "main",
+      "usage": "Checked verification enums, entity_sources, QA view coverage, lessons, quizzes, quiz_questions, vehicle_models, brands, vehicle_specifications and part_vehicle_compatibility."
+    }
+  ],
+  "limitations": [
+    "This is a governance/schema-fit review only.",
+    "No external automotive technical sources were needed or used.",
+    "The review does not validate production records or image license terms."
+  ]
+}
