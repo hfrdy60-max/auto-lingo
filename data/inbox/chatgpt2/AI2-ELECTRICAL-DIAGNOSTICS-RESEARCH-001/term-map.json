@@ -1,0 +1,977 @@
+{
+  "mission_id": "AI2-ELECTRICAL-DIAGNOSTICS-RESEARCH-001",
+  "source_database": "terms_batch_01.json (main branch)",
+  "canonical_term_count": 41,
+  "matching_method": "Exact and semantic review against the available 41-record engine-only term batch. No electrical diagnostics terms found as canonical records.",
+  "records": [
+    {
+      "local_id": "V-001",
+      "term_en": "Digital multimeter (DMM)",
+      "term_fa": "مولتی‌متر دیجیتال",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-002",
+      "term_en": "Test lead",
+      "term_fa": "سیم رابط اندازه‌گیری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-003",
+      "term_en": "Probe",
+      "term_fa": "پراب اندازه‌گیری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-004",
+      "term_en": "Back-probe",
+      "term_fa": "پراب پشت‌سوکت / اندازه‌گیری از پشت کانکتور",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-005",
+      "term_en": "Clamp meter",
+      "term_fa": "کلمپ‌متر / آمپرمتر انبری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-006",
+      "term_en": "Test light",
+      "term_fa": "چراغ تست",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-007",
+      "term_en": "Voltage",
+      "term_fa": "ولتاژ / اختلاف پتانسیل",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-008",
+      "term_en": "Current",
+      "term_fa": "جریان الکتریکی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-009",
+      "term_en": "Resistance",
+      "term_fa": "مقاومت الکتریکی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-010",
+      "term_en": "Continuity",
+      "term_fa": "پیوستگی الکتریکی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-011",
+      "term_en": "Frequency",
+      "term_fa": "فرکانس",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-012",
+      "term_en": "Duty cycle",
+      "term_fa": "چرخه کاری / نسبت زمان روشن‌بودن",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-013",
+      "term_en": "AC/DC",
+      "term_fa": "متناوب / مستقیم",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-014",
+      "term_en": "Range",
+      "term_fa": "محدوده اندازه‌گیری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-015",
+      "term_en": "Auto-ranging",
+      "term_fa": "انتخاب خودکار محدوده",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-016",
+      "term_en": "Polarity",
+      "term_fa": "قطبیت",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-017",
+      "term_en": "Overload indication",
+      "term_fa": "نمایش اضافه‌محدوده",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-018",
+      "term_en": "Input impedance",
+      "term_fa": "امپدانس ورودی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-019",
+      "term_en": "Fused current input",
+      "term_fa": "ورودی جریانِ فیوزدار",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-020",
+      "term_en": "COM",
+      "term_fa": "پایانه مشترک (COM)",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "V-021",
+      "term_en": "Ground reference",
+      "term_fa": "مرجع زمین / مرجع بدنه",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-001",
+      "term_en": "Voltage measurement",
+      "term_fa": "اندازه‌گیری ولتاژ",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-002",
+      "term_en": "Voltage-drop test",
+      "term_fa": "آزمون افت ولتاژ",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-003",
+      "term_en": "Resistance test",
+      "term_fa": "آزمون مقاومت",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-004",
+      "term_en": "Continuity test",
+      "term_fa": "آزمون پیوستگی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-005",
+      "term_en": "Current measurement",
+      "term_fa": "اندازه‌گیری جریان",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-006",
+      "term_en": "Parasitic current draw",
+      "term_fa": "مصرف جریان انگلی در حالت خاموش",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-007",
+      "term_en": "Open-circuit voltage",
+      "term_fa": "ولتاژ مدار باز",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-008",
+      "term_en": "Loaded circuit",
+      "term_fa": "مدار زیر بار",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-009",
+      "term_en": "Unloaded circuit",
+      "term_fa": "مدار بدون بار",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-010",
+      "term_en": "Intermittent fault",
+      "term_fa": "عیب متناوب",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-011",
+      "term_en": "High resistance",
+      "term_fa": "مقاومت بالا",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-012",
+      "term_en": "Poor connection",
+      "term_fa": "اتصال نامناسب",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-013",
+      "term_en": "Short to ground",
+      "term_fa": "اتصال کوتاه به زمین",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-014",
+      "term_en": "Short to voltage/power",
+      "term_fa": "اتصال ناخواسته به ولتاژ/تغذیه",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-015",
+      "term_en": "Open circuit",
+      "term_fa": "مدار باز / قطعی مسیر",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "T-016",
+      "term_en": "Cross-circuit fault",
+      "term_fa": "خطای اتصال بین مدارها",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-001",
+      "term_en": "Circuit",
+      "term_fa": "مدار",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-002",
+      "term_en": "Schematic",
+      "term_fa": "شماتیک / نقشه مداری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-003",
+      "term_en": "Wiring diagram",
+      "term_fa": "نقشه سیم‌کشی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-004",
+      "term_en": "Connector view",
+      "term_fa": "نمای کانکتور",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-005",
+      "term_en": "Splice",
+      "term_fa": "اتصال انشعابی سیم",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-006",
+      "term_en": "Junction",
+      "term_fa": "محل اتصال / جعبه اتصال",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-007",
+      "term_en": "Ground point",
+      "term_fa": "نقطه اتصال زمین",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-008",
+      "term_en": "Wire color/code",
+      "term_fa": "رنگ/کد سیم",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-009",
+      "term_en": "Wire gauge",
+      "term_fa": "گیج / سطح مقطع نامی سیم",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-010",
+      "term_en": "Terminal number",
+      "term_fa": "شماره ترمینال",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-011",
+      "term_en": "Pin number",
+      "term_fa": "شماره پین",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-012",
+      "term_en": "Cavity",
+      "term_fa": "حفره/خانه کانکتور",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-013",
+      "term_en": "Connector ID",
+      "term_fa": "شناسه کانکتور",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-014",
+      "term_en": "Normally open (NO)",
+      "term_fa": "معمولاً باز",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-015",
+      "term_en": "Normally closed (NC)",
+      "term_fa": "معمولاً بسته",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-016",
+      "term_en": "Switched power",
+      "term_fa": "تغذیه سوئیچ‌شونده",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-017",
+      "term_en": "Constant battery power",
+      "term_fa": "تغذیه دائم باتری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-018",
+      "term_en": "Ignition feed",
+      "term_fa": "تغذیه وابسته به سوئیچ/وضعیت احتراق",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-019",
+      "term_en": "Circuit reference",
+      "term_fa": "مرجع ارجاع مدار",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-020",
+      "term_en": "Cross-reference",
+      "term_fa": "ارجاع متقابل",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-021",
+      "term_en": "Component location",
+      "term_fa": "محل قطعه",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-022",
+      "term_en": "Shielded cable",
+      "term_fa": "کابل شیلددار",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-023",
+      "term_en": "Twisted pair",
+      "term_fa": "زوج سیم تابیده",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "W-024",
+      "term_en": "Splice pack",
+      "term_fa": "مجموعه اتصال انشعابی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-001",
+      "term_en": "Connector housing",
+      "term_fa": "بدنه/پوسته کانکتور",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-002",
+      "term_en": "Terminal",
+      "term_fa": "ترمینال / کنتاکت",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-003",
+      "term_en": "Pin",
+      "term_fa": "پین",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-004",
+      "term_en": "Socket",
+      "term_fa": "سوکت / کنتاکت مادگی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-005",
+      "term_en": "Female terminal",
+      "term_fa": "ترمینال مادگی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-006",
+      "term_en": "Male terminal",
+      "term_fa": "ترمینال نری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-007",
+      "term_en": "Terminal tension",
+      "term_fa": "نیروی تماس ترمینال",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-008",
+      "term_en": "Pin fit",
+      "term_fa": "تناسب/گیرایی پین",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-009",
+      "term_en": "Corrosion",
+      "term_fa": "خوردگی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-010",
+      "term_en": "Fretting corrosion",
+      "term_fa": "خوردگی فرتینگ / سایشی-خوردگی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-011",
+      "term_en": "Crimp",
+      "term_fa": "پرس اتصال",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-012",
+      "term_en": "Splice",
+      "term_fa": "اتصال انشعابی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-013",
+      "term_en": "Repair wire",
+      "term_fa": "سیم تعمیراتی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-014",
+      "term_en": "Seal",
+      "term_fa": "آب‌بند",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-015",
+      "term_en": "Lock tab",
+      "term_fa": "زبانه قفل",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-016",
+      "term_en": "Secondary lock / CPA / TPA",
+      "term_fa": "قفل ثانویه / ضامن اطمینان ترمینال",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-017",
+      "term_en": "Harness routing",
+      "term_fa": "مسیرگذاری دسته‌سیم",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-018",
+      "term_en": "Chafing",
+      "term_fa": "ساییدگی ناشی از تماس",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-019",
+      "term_en": "Abrasion",
+      "term_fa": "سایش",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-020",
+      "term_en": "Strain relief",
+      "term_fa": "مهار کشش",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "C-021",
+      "term_en": "Terminal back-out",
+      "term_fa": "عقب‌نشینی ترمینال",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-001",
+      "term_en": "Battery circuit",
+      "term_fa": "مدار باتری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-002",
+      "term_en": "Charging circuit",
+      "term_fa": "مدار شارژ",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-003",
+      "term_en": "Starting circuit",
+      "term_fa": "مدار استارت",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-004",
+      "term_en": "Sensor supply",
+      "term_fa": "تغذیه سنسور",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-005",
+      "term_en": "Reference voltage",
+      "term_fa": "ولتاژ مرجع",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-006",
+      "term_en": "Sensor ground",
+      "term_fa": "زمین سنسور",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-007",
+      "term_en": "Signal wire",
+      "term_fa": "سیم سیگنال",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-008",
+      "term_en": "Actuator control",
+      "term_fa": "کنترل عملگر",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-009",
+      "term_en": "High-side driver",
+      "term_fa": "درایور سمت مثبت",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-010",
+      "term_en": "Low-side driver",
+      "term_fa": "درایور سمت زمین",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-011",
+      "term_en": "Relay control",
+      "term_fa": "کنترل رله",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-012",
+      "term_en": "PWM control",
+      "term_fa": "کنترل مدولاسیون پهنای پالس",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-013",
+      "term_en": "Pull-up resistor",
+      "term_fa": "مقاومت بالاکش",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-014",
+      "term_en": "Pull-down resistor",
+      "term_fa": "مقاومت پایین‌کش",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-015",
+      "term_en": "CAN High / CAN Low",
+      "term_fa": "خط CAN-High / CAN-Low",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-016",
+      "term_en": "LIN bus",
+      "term_fa": "گذرگاه LIN",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-017",
+      "term_en": "Termination",
+      "term_fa": "مقاومت/شبکه انتهایی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-018",
+      "term_en": "Bus-off",
+      "term_fa": "وضعیت Bus-off",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-019",
+      "term_en": "ECU power and ground",
+      "term_fa": "تغذیه و زمین ECU",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-020",
+      "term_en": "Wake-up",
+      "term_fa": "بیدارسازی شبکه/واحد",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-021",
+      "term_en": "Sleep mode",
+      "term_fa": "حالت خواب",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "S-022",
+      "term_en": "Parasitic current draw",
+      "term_fa": "مصرف جریان انگلی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-001",
+      "term_en": "DTC",
+      "term_fa": "کد عیب‌یابی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-002",
+      "term_en": "Current DTC",
+      "term_fa": "کد جاری",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-003",
+      "term_en": "History DTC",
+      "term_fa": "کد تاریخی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-004",
+      "term_en": "Pending DTC",
+      "term_fa": "کد در انتظار تأیید",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-005",
+      "term_en": "Permanent DTC",
+      "term_fa": "کد دائمی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-006",
+      "term_en": "Freeze frame",
+      "term_fa": "داده فریزفریم",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-007",
+      "term_en": "Live data",
+      "term_fa": "داده زنده",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-008",
+      "term_en": "Status",
+      "term_fa": "وضعیت",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-009",
+      "term_en": "Circuit high",
+      "term_fa": "سطح سیگنال/مدار بالا",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-010",
+      "term_en": "Circuit low",
+      "term_fa": "سطح سیگنال/مدار پایین",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-011",
+      "term_en": "Signal implausible",
+      "term_fa": "سیگنال نامعقول/ناسازگار",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-012",
+      "term_en": "Open/short fault",
+      "term_fa": "خطای مدار باز/اتصال کوتاه",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-013",
+      "term_en": "Reference voltage fault",
+      "term_fa": "خطای ولتاژ مرجع",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-014",
+      "term_en": "Active test",
+      "term_fa": "آزمون فعال/فرمان عملگر",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-015",
+      "term_en": "Monitor status",
+      "term_fa": "وضعیت مانیتور",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-016",
+      "term_en": "Readiness",
+      "term_fa": "آمادگی مانیتورهای OBD",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    },
+    {
+      "local_id": "D-017",
+      "term_en": "Communication fault",
+      "term_fa": "خطای ارتباطی",
+      "term_id": null,
+      "mapping_status": "unmatched_review_required",
+      "canonical_status": "not_in_available_term_batch"
+    }
+  ],
+  "note_fa": "فایل terms_batch_01.json شامل 41 اصطلاح CAT-01 مربوط به موتور است؛ terms_batch_02 در مخزن پیدا نشد. هیچ TERM ID ساخته یا حدس زده نشده است."
+}
