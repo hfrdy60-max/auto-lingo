@@ -116,3 +116,16 @@
 - Visual source review identified a contradiction on PDF page 35: the APP heading states S2=2×S1 while the plotted channels appear to show Signal 1 approximately twice Signal 2. This conflict is explicitly flagged; neither relation is presented as a universal specification.
 - Validation completed: source JSON parses; ten sensor records and required fields are present; the frontend module passes JavaScript syntax parsing; index.html loads the module; stylesheet selectors exist; original PDF and linked data paths are present.
 - Not yet completed: in-browser interaction/responsive testing, specialist technical review, and cross-checking every model-specific value/procedure against OEM repair information. No numerical value from the source is promoted to a universal standard.
+
+
+## Integration update — Hyundai/Kia and Bosch source books (2026-11-13)
+- Added structured course data for the 275-page Persian Hyundai/Kia electrical and fuel-system book: `data/technical_reference/hyundai_kia_electrical_fuel.json`.
+- Added structured course data for Bosch `Gasoline-engine Management: Basics and Components` (2001, 89 pages): `data/technical_reference/bosch_gasoline_engine_management.json`.
+- Added two independent academy chapters using `source-academy.js` and `source-academy.css`; they load the JSON datasets, filter lessons, display diagnostic workflows and English/Persian terminology, and provide interactive checks.
+- Hyundai/Kia coverage: wiring diagrams and wire codes; electrical components; multiplexing; CAN, LIN and K-Line; network diagnostics; BCM and distribution modules; rain sensor/wipers; body convenience systems; MIL; MAF/MAP/IAT; APP/ETC; fuel supply; immobilizer; ADAS.
+- Bosch coverage: four-stroke basics; engine management; electronic throttle; VVT/EGR; turbo/supercharging/intercooling; injection architectures; injectors; low-pressure fuel supply; EVAP; GDI; ignition coil/spark/timing/knock; catalyst and Lambda closed-loop control.
+- The source contents were reviewed via their contents pages and selected technical sections. This is a structured first integration, not a claim that every page has been independently audited.
+- New source PDFs have not been copied to the public repository. The app contains independently worded instructional summaries and source page references rather than reproducing the books.
+- Technical values, pinouts, connector views, wiring colors, CAN termination, fuel pressures, sensor signal ranges and diagnostic strategies remain vehicle-specific and require OEM verification.
+- Bosch edition dates from 2001; use it for principles and compare technology-specific details against current vehicle documentation.
+- Static JSON/JavaScript validation and browser-level testing remain to be reported separately; see `QA/SOURCE_BOOKS_INTEGRATION_2026-11-13.md`.
