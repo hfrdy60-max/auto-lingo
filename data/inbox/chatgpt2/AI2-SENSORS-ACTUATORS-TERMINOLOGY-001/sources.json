@@ -1,0 +1,138 @@
+{
+  "mission_id": "AI2-SENSORS-ACTUATORS-TERMINOLOGY-001",
+  "status": "candidate_unverified",
+  "source_count": 13,
+  "verification_policy": "All sources and claims remain candidate_unverified pending independent review.",
+  "sources": [
+    {
+      "source_id": "SRC-SA-001",
+      "title": "HELLA — Crankshaft sensor",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/sensors-and-actuators/crankshaft-sensor/",
+      "scope": "CKP function, speed/position information, inductive and Hall sensor distinctions",
+      "locator": "Functional principle; crankshaft position sensor function.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-002",
+      "title": "HELLA — Camshaft position sensor",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/sensors-and-actuators/camshaft-position-sensor/",
+      "scope": "CMP function and camshaft phase",
+      "locator": "Function and operating principle.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-003",
+      "title": "HELLA — Intake-air temperature sensor",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/sensors-and-actuators/intake-air-temperature-sensor/",
+      "scope": "IAT function",
+      "locator": "Function section.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-004",
+      "title": "HELLA — Coolant temperature sensor",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/sensors-and-actuators/test-coolant-temperature-sensor/",
+      "scope": "ECT function",
+      "locator": "Function and fault-description sections.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-005",
+      "title": "HELLA — Air-mass sensor",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/sensors-and-actuators/check-air-mass-sensor/",
+      "scope": "MAF function",
+      "locator": "Function section.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-006",
+      "title": "HELLA — Accelerator pedal sensor",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/sensors-and-actuators/accelerator-pedal-sensor/",
+      "scope": "APP function and driver-demand input",
+      "locator": "Function/design sections.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-007",
+      "title": "Bosch Diagnostics — Engine Sensor Glossary",
+      "publisher": "Bosch Automotive Service Solutions",
+      "url": "https://cdr.boschdiagnostics.com/cdr/node/326",
+      "scope": "MAP, MAF, oxygen sensor, TPS, ECT, CKP/CMP, injector, EGR",
+      "locator": "Glossary entries.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-008",
+      "title": "HELLA — Sensors and actuators overview",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/en/lounge/sensors-actuators/",
+      "scope": "Sensor versus actuator roles; data and command concepts",
+      "locator": "Sensors measure; actuators move.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-009",
+      "title": "HELLA — Injection nozzle/injection valve",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/sensors-and-actuators/injection-nozzle/",
+      "scope": "Fuel injector function",
+      "locator": "Function section.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-010",
+      "title": "HELLA — Ignition coil",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/car-electronics-and-electrics/check-ignition-coil/",
+      "scope": "Ignition coil role",
+      "locator": "Function and design sections.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-011",
+      "title": "HELLA — EGR valve",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/car-electronics-and-electrics/exhaust-gas-recirculation/",
+      "scope": "EGR valve function and control",
+      "locator": "Function/structure sections.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-012",
+      "title": "HELLA — Electric hatchback actuator",
+      "publisher": "HELLA TECH WORLD",
+      "url": "https://www.hella.com/techworld/us/technical/sensors-and-actuators/electric-hatchback-actuator/",
+      "scope": "Motor actuator and commanded movement",
+      "locator": "Function/system description.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    },
+    {
+      "source_id": "SRC-SA-013",
+      "title": "EUR-Lex — OBD diagnostic terminology",
+      "publisher": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:51996PC0248(02)",
+      "scope": "General circuit malfunction and range/performance terms",
+      "locator": "Definitions: general circuit malfunction; range/performance.",
+      "claim_status": "candidate_unverified",
+      "limitations": "General educational reference only; not OEM-specific service information. Human claim-level review remains required."
+    }
+  ]
+}
