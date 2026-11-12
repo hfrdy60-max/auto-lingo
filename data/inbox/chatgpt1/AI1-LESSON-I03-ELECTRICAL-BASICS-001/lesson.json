@@ -1,0 +1,649 @@
+{
+  "mission_id": "AI1-LESSON-I03-ELECTRICAL-BASICS-001",
+  "lesson_id": "I03",
+  "lesson_title_fa": "مبانی برق خودرو: مدار، اتصال بدنه و عیب‌های مدار",
+  "lesson_title_en": "Electrical Basics: Circuits, Ground and Circuit Faults",
+  "level_id": "LVL-4",
+  "lesson_order": 3,
+  "content_language": "fa",
+  "support_language": "en",
+  "content_version": "0.1.0",
+  "content_status": "needs_review",
+  "review_note_fa": "پیش‌نویس مستقل AI-1 بر اساس Blueprint اصلی I03. تمام واژگان candidate هستند و شناسه canonical ندارند؛ منابع عمومی پروژه هنوز unverified هستند؛ featured part IDs نیز در crosswalk نگاشت قطعی ندارند. این درس آموزش زبان و مفاهیم عمومی است، نه دستورالعمل تعمیر یا اندازه‌گیری خودرو.",
+  "blueprint_alignment": {
+    "source_file": "lesson_blueprints.json",
+    "blueprint_id": "I03",
+    "level_id": "LVL-4",
+    "order": 3,
+    "curriculum_position": null,
+    "language_focus": "Describing circuits; open/short/ground",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "translation_fa_to_en",
+      "sentence_writing",
+      "part_recognition"
+    ],
+    "vocabulary_source": "main_term_database",
+    "vocabulary_query": {
+      "level_id": "LVL-4",
+      "lesson_id": "I03",
+      "category_keys": [
+        "diagnostics",
+        "electrical"
+      ]
+    },
+    "target_new_terms": 14,
+    "featured_part_ids": [
+      "PRT-ELE-001",
+      "PRT-ELE-002",
+      "PRT-ELE-003",
+      "PRT-ELE-004",
+      "PRT-ELE-005",
+      "PRT-ELE-006",
+      "PRT-ELE-007",
+      "PRT-DIA-003"
+    ],
+    "dialogue_ids": [],
+    "game_ids": [
+      "GAME-14",
+      "GAME-07",
+      "GAME-04",
+      "GAME-11"
+    ],
+    "quiz_id": "QZ-I03",
+    "estimated_minutes": 31,
+    "mastery_threshold_pct": 75
+  },
+  "learning_objectives": [
+    "مدار الکتریکی و مسیر عبور جریان را با اصطلاحات انگلیسی توصیف کند.",
+    "تفاوت open circuit، short circuit و short to ground را در سطح مفهومی تشخیص دهد.",
+    "کاربرد voltage، current و resistance را در جمله‌های فنی ساده بیان کند.",
+    "معنی ground، continuity، load و power supply را در متن فنی تشخیص دهد.",
+    "یک توضیح کوتاه از وضعیت مدار را بخواند و به انگلیسی بازگو کند.",
+    "در مکالمه تعمیرگاهی درباره نیاز به نقشه سیم‌کشی و بررسی مدار سؤال کند."
+  ],
+  "prerequisites": [
+    "آشنایی مقدماتی با نام قطعات الکتریکی خودرو",
+    "آشنایی با جمله خبری حال ساده در انگلیسی",
+    "آشنایی مقدماتی با واحدهای ولتاژ و جریان؛ بدون ورود به مقادیر آزمون"
+  ],
+  "lesson_intro_fa": "در عیب‌یابی برق خودرو، تکنسین باید بتواند وضعیت مدار را دقیق توصیف کند. واژه‌هایی مانند circuit، ground، open circuit و short circuit در نقشه‌ها، گزارش خطا و مکالمه تعمیرگاهی بسیار رایج‌اند. در این درس معنی فنی این اصطلاحات و جمله‌سازی انگلیسی را یاد می‌گیریم. تعریف‌ها عمومی‌اند؛ مسیر سیم، نقطه اتصال بدنه، روش آزمون و مشخصات الکتریکی باید همیشه با نقشه و دستورالعمل همان خودرو تطبیق داده شوند.",
+  "sections": [
+    {
+      "section_id": "I03-S01",
+      "title_fa": "۱) مدار و جریان الکتریکی",
+      "title_en": "Electrical Circuit and Current",
+      "explanation_fa": "مدار الکتریکی مسیر به‌هم‌پیوسته‌ای است که در شرایط مناسب امکان عبور جریان را فراهم می‌کند. برای توصیف یک مدار، معمولاً از power supply، wire، load و مسیر برگشت صحبت می‌کنیم. جریان تنها زمانی در مدار برقرار می‌شود که مسیر الکتریکی کامل باشد و شرایط منبع و بار اجازه عبور بدهند.",
+      "vocabulary": [
+        {
+          "en": "circuit",
+          "fa": "مدار الکتریکی",
+          "pronunciation_fa": "سِرکیت",
+          "ipa": "/ˈsɜːrkɪt/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "A circuit carries electrical current along a complete path.",
+          "example_fa": "یک مدار، جریان الکتریکی را در یک مسیر کامل عبور می‌دهد."
+        },
+        {
+          "en": "electrical current",
+          "fa": "جریان الکتریکی",
+          "pronunciation_fa": "اِلِکتریکَل کارِنت",
+          "ipa": "/ɪˈlektrɪkəl ˈkɜːrənt/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "Current flows through a closed circuit.",
+          "example_fa": "جریان در یک مدار بسته عبور می‌کند."
+        },
+        {
+          "en": "voltage",
+          "fa": "ولتاژ / اختلاف پتانسیل",
+          "pronunciation_fa": "وُلتِج",
+          "ipa": "/ˈvoʊltɪdʒ/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "Voltage is present across the two test points.",
+          "example_fa": "بین دو نقطه آزمون، ولتاژ وجود دارد."
+        },
+        {
+          "en": "resistance",
+          "fa": "مقاومت الکتریکی",
+          "pronunciation_fa": "ریزِستَنس",
+          "ipa": "/rɪˈzɪstəns/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "Resistance opposes the flow of current.",
+          "example_fa": "مقاومت در برابر عبور جریان قرار می‌گیرد."
+        }
+      ],
+      "key_points": [
+        "circuit یعنی مسیر الکتریکی، نه صرفاً یک سیم منفرد.",
+        "current به معنی جریان الکتریکی است؛ voltage با current یکسان نیست.",
+        "مقادیر و شرایط کاری مدار به طراحی خودرو وابسته‌اند."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ]
+    },
+    {
+      "section_id": "I03-S02",
+      "title_fa": "۲) اتصال بدنه و مسیر برگشت",
+      "title_en": "Ground and Return Path",
+      "explanation_fa": "در بسیاری از سامانه‌های خودرو، بدنه فلزی خودرو بخشی از مسیر برگشت جریان است و به آن ground یا chassis ground گفته می‌شود. بااین‌حال، همه مدارها و معماری‌ها دقیقاً یکسان نیستند؛ برخی مدارها مسیر برگشت اختصاصی یا کنترل‌شده دارند. بنابراین ground را نباید بدون بررسی نقشه، به هر نقطه فلزی خودرو تعمیم داد.",
+      "vocabulary": [
+        {
+          "en": "ground",
+          "fa": "اتصال بدنه / زمین الکتریکی",
+          "pronunciation_fa": "گراوند",
+          "ipa": "/ɡraʊnd/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The ground connection provides a return path in this circuit.",
+          "example_fa": "اتصال بدنه در این مدار مسیر برگشت را فراهم می‌کند."
+        },
+        {
+          "en": "power supply",
+          "fa": "منبع تغذیه",
+          "pronunciation_fa": "پاوِر سَپلای",
+          "ipa": "/ˈpaʊər səˌplaɪ/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "Check the specified power supply before diagnosis.",
+          "example_fa": "پیش از عیب‌یابی، منبع تغذیه مشخص‌شده را بررسی کنید."
+        },
+        {
+          "en": "wire",
+          "fa": "سیم",
+          "pronunciation_fa": "وایِر",
+          "ipa": "/ˈwaɪər/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The wire connects the sensor to the control unit.",
+          "example_fa": "سیم، سنسور را به واحد کنترل متصل می‌کند."
+        },
+        {
+          "en": "connector",
+          "fa": "کانکتور / سوکت",
+          "pronunciation_fa": "کِنِکتِر",
+          "ipa": "/kəˈnektər/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The connector joins the wiring to the component.",
+          "example_fa": "کانکتور سیم‌کشی را به قطعه متصل می‌کند."
+        }
+      ],
+      "key_points": [
+        "ground در نقشه خودرو معمولاً به مرجع یا مسیر برگشت الکتریکی اشاره می‌کند.",
+        "chassis ground اصطلاح دقیق‌تری برای اتصال بدنه در موارد مرتبط است.",
+        "نقطه ground و مسیر برگشت باید از نقشه همان خودرو شناسایی شود."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-011"
+      ]
+    },
+    {
+      "section_id": "I03-S03",
+      "title_fa": "۳) مدار باز و قطعی",
+      "title_en": "Open Circuit",
+      "explanation_fa": "open circuit یعنی مسیر رسانای موردنیاز در جایی قطع یا باز شده است؛ در نتیجه جریان مورد انتظار از آن مسیر عبور نمی‌کند. علت می‌تواند قطع‌شدن سیم، اتصال جداشده، ترمینال معیوب یا کلید باز باشد؛ اما تشخیص علت واقعی به بررسی مدار و اطلاعات همان خودرو نیاز دارد.",
+      "vocabulary": [
+        {
+          "en": "open circuit",
+          "fa": "مدار باز / قطعی مدار",
+          "pronunciation_fa": "اوپِن سِرکیت",
+          "ipa": "/ˈoʊpən ˈsɜːrkɪt/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "An open circuit interrupts the current path.",
+          "example_fa": "مدار باز مسیر عبور جریان را قطع می‌کند."
+        },
+        {
+          "en": "continuity",
+          "fa": "پیوستگی الکتریکی",
+          "pronunciation_fa": "کانتینیوئیتی",
+          "ipa": "/ˌkɑːntəˈnuːəti/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The continuity test checks whether a conductive path exists.",
+          "example_fa": "آزمون پیوستگی بررسی می‌کند که آیا مسیر رسانا وجود دارد یا نه."
+        }
+      ],
+      "key_points": [
+        "open circuit به معنی قطع مسیر است؛ لزوماً به معنی خرابی یک قطعه خاص نیست.",
+        "continuity test فقط در شرایط ایمن و طبق دستورالعمل مناسب انجام می‌شود.",
+        "پیش از آزمون پیوستگی، مدار باید طبق روش سازنده ایمن و بی‌برق شود."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-011"
+      ]
+    },
+    {
+      "section_id": "I03-S04",
+      "title_fa": "۴) اتصال کوتاه و اتصال به بدنه",
+      "title_en": "Short Circuit and Short to Ground",
+      "explanation_fa": "short circuit زمانی رخ می‌دهد که یک اتصال ناخواسته، مسیری با مقاومت بسیار کم ایجاد کند و جریان از مسیر طراحی‌شده منحرف شود. short to ground نوعی توصیف خطاست که در آن یک سیم یا مسیر به ground اتصال ناخواسته پیدا کرده است. اتصال کوتاه ممکن است باعث عمل‌کردن حفاظت مدار شود، اما علت و پیامد دقیق باید با نقشه، حفاظت مدار و اطلاعات خودرو بررسی شود.",
+      "vocabulary": [
+        {
+          "en": "short circuit",
+          "fa": "اتصال کوتاه",
+          "pronunciation_fa": "شورت سِرکیت",
+          "ipa": "/ˌʃɔːrt ˈsɜːrkɪt/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "A short circuit creates an unintended low-resistance path.",
+          "example_fa": "اتصال کوتاه یک مسیر ناخواسته با مقاومت کم ایجاد می‌کند."
+        },
+        {
+          "en": "short to ground",
+          "fa": "اتصال کوتاه به بدنه",
+          "pronunciation_fa": "شورت تو گراوند",
+          "ipa": "/ˌʃɔːrt tə ˈɡraʊnd/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The wire may be shorted to ground.",
+          "example_fa": "ممکن است سیم به بدنه اتصال کوتاه کرده باشد."
+        },
+        {
+          "en": "power supply",
+          "fa": "منبع تغذیه",
+          "pronunciation_fa": "پاوِر سَپلای",
+          "ipa": "/ˈpaʊər səˌplaɪ/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "Check the specified power supply before diagnosis.",
+          "example_fa": "پیش از عیب‌یابی، منبع تغذیه مشخص‌شده را بررسی کنید."
+        },
+        {
+          "en": "load",
+          "fa": "بار الکتریکی",
+          "pronunciation_fa": "لود",
+          "ipa": "/loʊd/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The load is connected to the output side of the circuit.",
+          "example_fa": "بار به سمت خروجی مدار متصل است."
+        }
+      ],
+      "key_points": [
+        "short circuit اصطلاح عمومی اتصال کوتاه است.",
+        "short to ground نوع مشخصی از اتصال ناخواسته به مسیر ground است.",
+        "اتصال کوتاه را با open circuit اشتباه نگیرید؛ یکی مسیر ناخواسته ایجاد می‌کند و دیگری مسیر را قطع می‌کند.",
+        "هیچ فیوزی را با آمپراژ بالاتر جایگزین نکنید؛ انتخاب حفاظت باید مطابق مشخصات سازنده باشد."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-011"
+      ]
+    },
+    {
+      "section_id": "I03-S05",
+      "title_fa": "۵) نقشه سیم‌کشی و توصیف مدار",
+      "title_en": "Wiring Diagram and Circuit Description",
+      "explanation_fa": "نقشه سیم‌کشی، ارتباط الکتریکی میان منبع، فیوز، کلید، بار، واحد کنترل و مسیرهای اتصال را نشان می‌دهد. نمادها، رنگ سیم‌ها، شماره پایه‌ها و روش اندازه‌گیری ممکن است بین سازندگان و مدل‌ها متفاوت باشد. همیشه نسخه درست نقشه و اطلاعات خودرو را انتخاب کنید.",
+      "vocabulary": [
+        {
+          "en": "continuity",
+          "fa": "پیوستگی الکتریکی",
+          "pronunciation_fa": "کانتینیوئیتی",
+          "ipa": "/ˌkɑːntəˈnuːəti/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The continuity test checks whether a conductive path exists.",
+          "example_fa": "آزمون پیوستگی بررسی می‌کند که آیا مسیر رسانا وجود دارد یا نه."
+        },
+        {
+          "en": "wire",
+          "fa": "سیم",
+          "pronunciation_fa": "وایِر",
+          "ipa": "/ˈwaɪər/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The wire connects the sensor to the control unit.",
+          "example_fa": "سیم، سنسور را به واحد کنترل متصل می‌کند."
+        },
+        {
+          "en": "connector",
+          "fa": "کانکتور / سوکت",
+          "pronunciation_fa": "کِنِکتِر",
+          "ipa": "/kəˈnektər/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "The connector joins the wiring to the component.",
+          "example_fa": "کانکتور سیم‌کشی را به قطعه متصل می‌کند."
+        },
+        {
+          "en": "wiring diagram",
+          "fa": "نقشه سیم‌کشی",
+          "pronunciation_fa": "وایِرینگ دایَگرام",
+          "ipa": "/ˈwaɪərɪŋ ˈdaɪəɡræm/",
+          "term_id": null,
+          "canonical_status": "candidate_not_canonical",
+          "example_en": "Use the correct wiring diagram for the vehicle.",
+          "example_fa": "از نقشه سیم‌کشی صحیح همان خودرو استفاده کنید."
+        }
+      ],
+      "key_points": [
+        "wiring diagram باید با مدل، سال و نسخه سامانه خودرو تطبیق داشته باشد.",
+        "connector و wire دو اصطلاح متفاوت‌اند؛ کانکتور محل اتصال و wire رسانای سیمی است.",
+        "شناسه پین، رنگ سیم یا روش اندازه‌گیری عمومی و یکسان برای همه خودروها وجود ندارد."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-011"
+      ]
+    }
+  ],
+  "system_relationships": [
+    {
+      "concept": "Basic circuit path",
+      "items": [
+        "power supply",
+        "wire",
+        "load",
+        "ground",
+        "circuit"
+      ],
+      "note_fa": "یک مدار می‌تواند شامل منبع تغذیه، سیم، بار و مسیر برگشت باشد؛ آرایش واقعی از نقشه خودرو مشخص می‌شود."
+    },
+    {
+      "concept": "Circuit fault descriptions",
+      "items": [
+        "open circuit",
+        "short circuit",
+        "short to ground",
+        "continuity"
+      ],
+      "note_fa": "این اصطلاحات وضعیت مسیر الکتریکی را توصیف می‌کنند و به‌تنهایی قطعه معیوب را مشخص نمی‌کنند."
+    }
+  ],
+  "english_focus": {
+    "grammar": "Describing circuit conditions with be and simple present",
+    "rule_fa": "برای توصیف وضعیت مدار از ساختارهایی مانند The circuit is open و The wire is connected to ground استفاده می‌کنیم. برای بیان عملکرد یا واقعیت عمومی از حال ساده استفاده می‌شود؛ مانند Current flows through a closed circuit. در گزارش فنی، از عبارت دقیق استفاده کنید و علت خرابی را بدون شواهد قطعی اعلام نکنید.",
+    "examples": [
+      {
+        "en": "The circuit is open.",
+        "fa": "مدار باز است."
+      },
+      {
+        "en": "The ground connection is loose.",
+        "fa": "اتصال بدنه شل است."
+      },
+      {
+        "en": "The wire may be shorted to ground.",
+        "fa": "ممکن است سیم به بدنه اتصال کوتاه کرده باشد."
+      },
+      {
+        "en": "Current flows through a complete circuit.",
+        "fa": "جریان از یک مدار کامل عبور می‌کند."
+      },
+      {
+        "en": "Please check the wiring diagram for this model.",
+        "fa": "لطفاً نقشه سیم‌کشی این مدل را بررسی کنید."
+      }
+    ],
+    "common_errors": [
+      {
+        "incorrect": "The circuit have an open.",
+        "correct": "The circuit is open.",
+        "reason_fa": "برای توصیف وضعیت مدار از صفت open پس از فعل be استفاده می‌کنیم."
+      },
+      {
+        "incorrect": "The wire short to ground.",
+        "correct": "The wire is shorted to ground.",
+        "reason_fa": "برای بیان وضعیت اتصال ناخواسته، ساختار is shorted to ground مناسب است."
+      }
+    ],
+    "workshop_requests": [
+      {
+        "en": "Can you confirm the ground point in the wiring diagram?",
+        "fa": "می‌توانید نقطه اتصال بدنه را در نقشه سیم‌کشی تأیید کنید؟"
+      },
+      {
+        "en": "The circuit appears to be open. We need to follow the vehicle-specific test procedure.",
+        "fa": "به نظر می‌رسد مدار قطع است. باید روش آزمون مخصوص همین خودرو را دنبال کنیم."
+      }
+    ]
+  },
+  "reading": {
+    "title_en": "Describing a Basic Electrical Circuit",
+    "title_fa": "توصیف یک مدار الکتریکی پایه",
+    "text_en": "A basic electrical circuit has a power supply, a load and a complete path for current. The wiring diagram shows how the components are connected. If the path is interrupted, the circuit is open and the expected current cannot flow through that path. A short circuit creates an unintended path. A short to ground means that a conductor has an unintended connection to ground. The technician should identify the correct vehicle and use its wiring diagram and approved test procedure before making a diagnosis.",
+    "text_fa": "یک مدار الکتریکی پایه دارای منبع تغذیه، بار و مسیر کامل برای عبور جریان است. نقشه سیم‌کشی نشان می‌دهد قطعات چگونه به یکدیگر متصل شده‌اند. اگر مسیر قطع شود، مدار باز است و جریان مورد انتظار نمی‌تواند از آن مسیر عبور کند. اتصال کوتاه یک مسیر ناخواسته ایجاد می‌کند. short to ground یعنی یک رسانا به‌طور ناخواسته به اتصال بدنه متصل شده است. تکنسین باید پیش از تشخیص، خودرو را به‌درستی شناسایی کند و از نقشه سیم‌کشی و روش آزمون تأییدشده همان خودرو استفاده کند.",
+    "comprehension_questions": [
+      {
+        "q_fa": "مدار باز چه اثری بر مسیر جریان دارد؟",
+        "answer_fa": "مسیر را قطع می‌کند و جریان مورد انتظار از آن مسیر عبور نمی‌کند."
+      },
+      {
+        "q_fa": "short to ground چه مفهومی دارد؟",
+        "answer_fa": "اتصال ناخواسته یک رسانا به ground یا مسیر بدنه."
+      },
+      {
+        "q_fa": "چرا باید نقشه مخصوص خودرو استفاده شود؟",
+        "answer_fa": "چون آرایش مدار، پین‌ها و روش آزمون با مدل و سازنده تفاوت دارد."
+      }
+    ]
+  },
+  "guided_practice": [
+    {
+      "id": "I03-GP01",
+      "type": "match",
+      "instruction_fa": "اصطلاح را با معنی درست تطبیق دهید.",
+      "items": [
+        {
+          "en": "open circuit",
+          "fa": "مدار باز"
+        },
+        {
+          "en": "short circuit",
+          "fa": "اتصال کوتاه"
+        },
+        {
+          "en": "ground",
+          "fa": "اتصال بدنه / زمین الکتریکی"
+        },
+        {
+          "en": "wiring diagram",
+          "fa": "نقشه سیم‌کشی"
+        }
+      ]
+    },
+    {
+      "id": "I03-GP02",
+      "type": "translation_fa_to_en",
+      "instruction_fa": "جمله‌ها را به انگلیسی ترجمه کنید.",
+      "items": [
+        {
+          "fa": "مدار باز است.",
+          "answer": "The circuit is open."
+        },
+        {
+          "fa": "ممکن است سیم به بدنه اتصال کوتاه کرده باشد.",
+          "answer": "The wire may be shorted to ground."
+        }
+      ]
+    },
+    {
+      "id": "I03-GP03",
+      "type": "distinction",
+      "instruction_fa": "تفاوت اصطلاح‌ها را توضیح دهید.",
+      "items": [
+        {
+          "pair": [
+            "open circuit",
+            "short circuit"
+          ],
+          "answer_fa": "open circuit مسیر را قطع می‌کند؛ short circuit یک مسیر ناخواسته با مقاومت کم ایجاد می‌کند."
+        },
+        {
+          "pair": [
+            "ground",
+            "short to ground"
+          ],
+          "answer_fa": "ground می‌تواند مسیر مرجع/برگشت طراحی‌شده باشد؛ short to ground اتصال ناخواسته به آن مسیر است."
+        }
+      ]
+    }
+  ],
+  "knowledge_check": [
+    {
+      "slot_id": "QZ-I03-S01",
+      "type": "mcq",
+      "difficulty_target": 2,
+      "skill": "vocabulary",
+      "question_fa": "کدام اصطلاح به مسیر قطع‌شده‌ای اشاره دارد که جریان مورد انتظار از آن عبور نمی‌کند؟",
+      "options": [
+        "Open circuit",
+        "Short circuit",
+        "Power supply",
+        "Load"
+      ],
+      "correct_answer": "Open circuit",
+      "explanation_fa": "open circuit یعنی مسیر الکتریکی موردنیاز باز یا قطع شده است."
+    },
+    {
+      "slot_id": "QZ-I03-S02",
+      "type": "mcq",
+      "difficulty_target": 3,
+      "skill": "vocabulary",
+      "question_fa": "short to ground چه چیزی را توصیف می‌کند؟",
+      "options": [
+        "اتصال ناخواسته رسانا به ground",
+        "مدار کاملاً سالم",
+        "افزایش ظرفیت باتری",
+        "قطع ارتباط دیاگ"
+      ],
+      "correct_answer": "اتصال ناخواسته رسانا به ground",
+      "explanation_fa": "این اصطلاح نوعی اتصال کوتاه به مسیر ground را توصیف می‌کند."
+    },
+    {
+      "slot_id": "QZ-I03-S03",
+      "type": "fa_to_en",
+      "difficulty_target": 3,
+      "skill": "translation_fa_to_en",
+      "question_fa": "«مدار باز است.»",
+      "accepted_answers": [
+        "The circuit is open."
+      ]
+    },
+    {
+      "slot_id": "QZ-I03-S04",
+      "type": "en_to_fa",
+      "difficulty_target": 3,
+      "skill": "translation_en_to_fa",
+      "question_en": "The ground connection is loose.",
+      "accepted_answers": [
+        "اتصال بدنه شل است.",
+        "اتصال زمین شل است."
+      ]
+    },
+    {
+      "slot_id": "QZ-I03-S05",
+      "type": "fill_blank",
+      "difficulty_target": 4,
+      "skill": "reading",
+      "question_en": "An ______ circuit interrupts the current path.",
+      "accepted_answers": [
+        "open"
+      ]
+    },
+    {
+      "slot_id": "QZ-I03-S06",
+      "type": "fill_blank",
+      "difficulty_target": 4,
+      "skill": "reading",
+      "question_en": "A wiring ______ shows how electrical components are connected.",
+      "accepted_answers": [
+        "diagram"
+      ]
+    },
+    {
+      "slot_id": "QZ-I03-S07",
+      "type": "identify_correct_term",
+      "difficulty_target": 2,
+      "skill": "vocabulary",
+      "question_fa": "کدام اصطلاح به اتصال ناخواسته یک سیم به مسیر بدنه اشاره می‌کند؟",
+      "accepted_answers": [
+        "short to ground"
+      ]
+    },
+    {
+      "slot_id": "QZ-I03-S08",
+      "type": "listening",
+      "difficulty_target": 3,
+      "skill": "listening",
+      "transcript_en": "The circuit is open. Please check the wiring diagram and confirm the ground connection.",
+      "transcript_fa": "مدار باز است. لطفاً نقشه سیم‌کشی را بررسی کنید و اتصال بدنه را تأیید کنید.",
+      "audio_asset": null,
+      "audio_status": "not_provided",
+      "question_fa": "تکنسین باید چه چیزی را تأیید کند؟",
+      "accepted_answers": [
+        "اتصال بدنه / ground connection"
+      ]
+    },
+    {
+      "slot_id": "QZ-I03-S09",
+      "type": "image_part_id",
+      "difficulty_target": 3,
+      "skill": "part_recognition",
+      "image_asset": null,
+      "image_status": "not_provided",
+      "expected_term": "wiring diagram symbol or ground point",
+      "question_fa": "نماد ground یا مسیر اتصال مشخص‌شده را در تصویر واقعی نقشه سیم‌کشی شناسایی کنید.",
+      "answer_status": "pending_real_image_and_mapping"
+    },
+    {
+      "slot_id": "QZ-I03-S10",
+      "type": "sentence_building",
+      "difficulty_target": 3,
+      "skill": "sentence_writing",
+      "word_bank": [
+        "The",
+        "circuit",
+        "is",
+        "open"
+      ],
+      "accepted_answers": [
+        "The circuit is open."
+      ]
+    },
+    {
+      "slot_id": "QZ-I03-S11",
+      "type": "workshop_conversation",
+      "difficulty_target": 4,
+      "skill": "workshop_conversation",
+      "prompt_fa": "تکنسین می‌گوید مدار باز به نظر می‌رسد. پاسخ مناسب همکار چیست؟",
+      "accepted_answers": [
+        "Let's check the vehicle-specific wiring diagram.",
+        "We need to follow the manufacturer's test procedure."
+      ]
+    },
+    {
+      "slot_id": "QZ-I03-S12",
+      "type": "workshop_conversation",
+      "difficulty_target": 4,
+      "skill": "workshop_conversation",
+      "prompt_fa": "برای تأیید نقطه اتصال بدنه چه سؤالی می‌پرسید؟",
+      "accepted_answers": [
+        "Can you confirm the ground point in the wiring diagram?"
+      ]
+    }
+  ],
+  "delivery_constraints": {
+    "vocabulary_candidates_only": true,
+    "canonical_term_ids_assigned": false,
+    "featured_part_ids_unmapped": true,
+    "audio_asset_status": "not_provided",
+    "image_asset_status": "not_provided",
+    "vehicle_specific_specs_included": false,
+    "repair_procedures_included": false,
+    "safety_review_required": true
+  }
+}
