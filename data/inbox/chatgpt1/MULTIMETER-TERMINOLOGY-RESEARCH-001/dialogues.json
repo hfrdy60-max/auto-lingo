@@ -1,0 +1,138 @@
+{
+  "mission_id": "AI1-MULTIMETER-TERMINOLOGY-RESEARCH-001",
+  "status": "draft_needs_language_review",
+  "dialogues": [
+    {
+      "id": "DMM-DLG-01",
+      "title_en": "Choosing the Correct Meter Input",
+      "title_fa": "انتخاب ورودی درست مولتی‌متر",
+      "context_fa": "گفت‌وگوی آموزشی درباره نام ورودی‌های دستگاه؛ بدون آموزش اتصال عملی.",
+      "lines": [
+        {
+          "speaker": "Trainee",
+          "en": "Which terminal is used as the common input?",
+          "fa": "کدام ترمینال به‌عنوان ورودی مشترک استفاده می‌شود؟"
+        },
+        {
+          "speaker": "Instructor",
+          "en": "It is usually marked COM, but check the meter manual.",
+          "fa": "معمولاً با COM مشخص می‌شود، اما راهنمای همان دستگاه را بررسی کن."
+        },
+        {
+          "speaker": "Trainee",
+          "en": "Is COM the same as chassis ground?",
+          "fa": "آیا COM همان اتصال بدنه خودرو است؟"
+        },
+        {
+          "speaker": "Instructor",
+          "en": "No. COM is a meter terminal; ground is a circuit reference or return path.",
+          "fa": "خیر. COM یک ترمینال مولتی‌متر است؛ ground مرجع یا مسیر برگشت مدار است."
+        },
+        {
+          "speaker": "Trainee",
+          "en": "So I should not translate both terms as the same thing.",
+          "fa": "پس نباید هر دو اصطلاح را یکسان ترجمه کنم."
+        }
+      ]
+    },
+    {
+      "id": "DMM-DLG-02",
+      "title_en": "A Test Light Is Not Always Suitable",
+      "title_fa": "تست‌لایت همیشه مناسب نیست",
+      "context_fa": "مکالمه درباره تفاوت ابزارها و اهمیت دستورالعمل سازنده.",
+      "lines": [
+        {
+          "speaker": "Technician",
+          "en": "Can I use a test light on this signal circuit?",
+          "fa": "آیا می‌توانم روی این مدار سیگنال از تست‌لایت استفاده کنم؟"
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Do not assume that it is permitted.",
+          "fa": "فرض نکن که استفاده از آن مجاز است."
+        },
+        {
+          "speaker": "Technician",
+          "en": "Why not?",
+          "fa": "چرا؟"
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "A test light can load a circuit. Check the OEM service information and the tool requirements.",
+          "fa": "تست‌لایت می‌تواند به مدار بار وارد کند. اطلاعات تعمیراتی OEM و الزامات ابزار را بررسی کن."
+        },
+        {
+          "speaker": "Technician",
+          "en": "Understood. The tool must be suitable for the circuit.",
+          "fa": "متوجه شدم. ابزار باید برای آن مدار مناسب باشد."
+        }
+      ]
+    },
+    {
+      "id": "DMM-DLG-03",
+      "title_en": "Understanding an OL Display",
+      "title_fa": "درک نمایش OL",
+      "context_fa": "گفت‌وگو درباره معنی وابسته به مدلِ نمایش OL.",
+      "lines": [
+        {
+          "speaker": "Trainee",
+          "en": "The display shows OL. Does it always mean an open circuit?",
+          "fa": "نمایشگر OL را نشان می‌دهد. آیا همیشه به معنی مدار باز است؟"
+        },
+        {
+          "speaker": "Instructor",
+          "en": "No. Its meaning depends on the meter and the selected function.",
+          "fa": "خیر. معنای آن به مولتی‌متر و عملکرد انتخاب‌شده بستگی دارد."
+        },
+        {
+          "speaker": "Trainee",
+          "en": "Could it indicate an over-range condition?",
+          "fa": "آیا ممکن است نشان‌دهنده خارج‌بودن از محدوده باشد؟"
+        },
+        {
+          "speaker": "Instructor",
+          "en": "Yes. Read the instrument manual before interpreting the display.",
+          "fa": "بله. پیش از تفسیر نمایشگر، راهنمای دستگاه را بخوان."
+        },
+        {
+          "speaker": "Trainee",
+          "en": "I will record the exact display and meter model in the report.",
+          "fa": "مدل دقیق دستگاه و عبارت نمایش‌داده‌شده را در گزارش ثبت می‌کنم."
+        }
+      ]
+    },
+    {
+      "id": "DMM-DLG-04",
+      "title_en": "Meter and Lead Safety Rating",
+      "title_fa": "رده ایمنی مولتی‌متر و سیم‌ها",
+      "context_fa": "مکالمه زبان‌آموزی درباره CAT rating و متعلقات.",
+      "lines": [
+        {
+          "speaker": "Technician",
+          "en": "Have you checked the meter's CAT rating?",
+          "fa": "رده CAT مولتی‌متر را بررسی کرده‌ای؟"
+        },
+        {
+          "speaker": "Trainee",
+          "en": "Yes, and I checked the test leads as well.",
+          "fa": "بله، سیم‌های اندازه‌گیری را هم بررسی کردم."
+        },
+        {
+          "speaker": "Technician",
+          "en": "Good. The meter and its accessories must be suitable for the measurement environment.",
+          "fa": "خوب است. مولتی‌متر و متعلقاتش باید برای محیط اندازه‌گیری مناسب باشند."
+        },
+        {
+          "speaker": "Trainee",
+          "en": "Does the voltage marking alone determine the CAT rating?",
+          "fa": "آیا فقط عدد ولتاژ درج‌شده، رده CAT را تعیین می‌کند؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. Follow the instrument manufacturer's safety information.",
+          "fa": "خیر. اطلاعات ایمنی سازنده ابزار را دنبال کن."
+        }
+      ]
+    }
+  ]
+}
