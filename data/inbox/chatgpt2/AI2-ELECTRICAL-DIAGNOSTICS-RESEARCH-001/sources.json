@@ -1,0 +1,108 @@
+{
+  "mission_id": "AI2-ELECTRICAL-DIAGNOSTICS-RESEARCH-001",
+  "sources": [
+    {
+      "id": "SRC-ED-001",
+      "title": "Diagnosing Voltage Drops: Electrical Automotive Troubleshooting",
+      "publisher": "Fluke",
+      "url": "https://www.fluke.com/en/learn/blog/automotive/electrical-automotive-troubleshooting",
+      "type": "technical_article",
+      "status": "candidate_unverified",
+      "scope": "Voltage-drop concept, loaded-circuit distinction, high-impedance DMM context; no universal limits copied into this package."
+    },
+    {
+      "id": "SRC-ED-002",
+      "title": "APP NOTE 2418158 — Diagnosing voltage drop: electrical automotive troubleshooting",
+      "publisher": "Fluke",
+      "url": "https://media.fluke.com/d2ea9167-56d8-4bc4-b4cb-b1060066c4e0_original%20file.pdf",
+      "type": "manufacturer_application_note",
+      "status": "candidate_unverified",
+      "scope": "Automotive voltage-drop concept and diagnostic interpretation."
+    },
+    {
+      "id": "SRC-ED-003",
+      "title": "Advanced Vehicle Diagnosis — Reference Manual",
+      "publisher": "BMW Group Technical Training",
+      "url": "https://bmwtechinfo.bmwgroup.com/tech_training_manual/ST1102%20Advanced%20Vehicle%20Diagnosis.pdf",
+      "type": "manufacturer_training_manual",
+      "status": "candidate_unverified",
+      "scope": "Voltage-drop testing as an active-circuit concept; source-specific examples require model/application context."
+    },
+    {
+      "id": "SRC-ED-004",
+      "title": "Technical Training Academy",
+      "publisher": "Bosch Mobility",
+      "url": "https://www.bosch-mobility.com/en/solutions/services/technical-training-academy/",
+      "type": "manufacturer_training",
+      "status": "candidate_unverified",
+      "scope": "Automotive diagnostics, electronics and training context."
+    },
+    {
+      "id": "SRC-ED-005",
+      "title": "Basic training in CAN | CAN FD",
+      "publisher": "Bosch Engineering",
+      "url": "https://www.bosch-engineering.com/services/consulting-and-trainings/trainings/",
+      "type": "manufacturer_training",
+      "status": "candidate_unverified",
+      "scope": "CAN/CAN FD physical layer, termination, message formats and error handling."
+    },
+    {
+      "id": "SRC-ED-006",
+      "title": "Validation of Low Voltage Automotive Connectors — Technical Guideline TLF0214",
+      "publisher": "ZVEI",
+      "url": "https://www.zvei.org/fileadmin/user_upload/Presse_und_Medien/Publikationen/2024/Juni/ZVEI_TLF0214_Validation-of-Low-Voltage-Automotive-Connectors/ZVEI_TLF0214_Validation-of-Low-Voltage-Automotive-Connectors.pdf",
+      "type": "industry_technical_guideline",
+      "status": "candidate_unverified",
+      "scope": "Automotive low-voltage connector validation, contact behavior, fretting corrosion and electrical/mechanical testing."
+    },
+    {
+      "id": "SRC-ED-007",
+      "title": "Connector Corrosion and Fretting Corrosion Guide",
+      "publisher": "Teyconn",
+      "url": "https://teyconn.com/engineering/connector-corrosion-fretting-guide/",
+      "type": "engineering_article",
+      "status": "candidate_unverified",
+      "scope": "General contact corrosion/fretting terminology; secondary source, not OEM acceptance criteria."
+    }
+  ],
+  "claim_source_map": [
+    {
+      "claim_scope": "Loaded-circuit voltage drop is distinct from unloaded continuity/resistance concepts.",
+      "source_ids": [
+        "SRC-ED-001",
+        "SRC-ED-002",
+        "SRC-ED-003"
+      ],
+      "status": "candidate_unverified"
+    },
+    {
+      "claim_scope": "Automotive technical training includes diagnostics and vehicle electrical/electronic systems.",
+      "source_ids": [
+        "SRC-ED-004"
+      ],
+      "status": "candidate_unverified"
+    },
+    {
+      "claim_scope": "CAN/CAN FD training covers physical layer, termination, message formats and error handling.",
+      "source_ids": [
+        "SRC-ED-005"
+      ],
+      "status": "candidate_unverified"
+    },
+    {
+      "claim_scope": "Automotive connector validation includes contact mechanics, fretting and electrical/mechanical test families.",
+      "source_ids": [
+        "SRC-ED-006"
+      ],
+      "status": "candidate_unverified"
+    },
+    {
+      "claim_scope": "Connector corrosion/fretting terminology and mechanisms (secondary technical source).",
+      "source_ids": [
+        "SRC-ED-007"
+      ],
+      "status": "candidate_unverified"
+    }
+  ],
+  "policy_fa": "هر منبع در مرحله پژوهش باز شده یا از نتیجه ناشر/فهرست سند شناسایی شده، اما تا بازبینی کامل claim-level توسط AI-1 در وضعیت candidate_unverified باقی می‌ماند."
+}
