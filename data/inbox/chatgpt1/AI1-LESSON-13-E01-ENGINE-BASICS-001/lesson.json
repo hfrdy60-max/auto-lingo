@@ -1,0 +1,480 @@
+{
+  "mission_id": "AI1-LESSON-13-E01-ENGINE-BASICS-001",
+  "lesson_id": "E01",
+  "lesson_title_fa": "اصول موتور: اجزای اصلی",
+  "lesson_title_en": "Engine Basics: Main Components",
+  "level_id": "LVL-2",
+  "lesson_order": 13,
+  "content_language": "fa",
+  "support_language": "en",
+  "content_version": "1.0.0",
+  "content_status": "needs_review",
+  "review_note_fa": "بسته تحقیقاتی مستقل برای سیزدهمین درس در ترتیب کلی برنامه. در فایل blueprint شناسه این درس E01 است، نه B13. واژگان این فایل نامزدهای آموزشی‌اند و هنوز به شناسه‌های canonical بانک اصطلاحات متصل نشده‌اند. منابع و ادعاهای فنی نیازمند راستی‌آزمایی نهایی‌اند.",
+  "blueprint_alignment": {
+    "source_file": "lesson_blueprints.json",
+    "blueprint_id": "E01",
+    "level_id": "LVL-2",
+    "order": 1,
+    "curriculum_position": 13,
+    "language_focus": "There is/There are; simple descriptions",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "translation_fa_to_en",
+      "part_recognition"
+    ],
+    "vocabulary_source": "main_term_database",
+    "vocabulary_query": {
+      "level_id": "LVL-2",
+      "lesson_id": "E01",
+      "category_keys": [
+        "engine",
+        "ignition",
+        "lubrication"
+      ]
+    },
+    "target_new_terms": 10,
+    "featured_part_ids": [
+      "PRT-ENG-003",
+      "PRT-ENG-002",
+      "PRT-ENG-001",
+      "PRT-ENG-005",
+      "PRT-IGN-001",
+      "PRT-ENG-007",
+      "PRT-LUB-001",
+      "PRT-ENG-006"
+    ],
+    "dialogue_ids": [],
+    "game_ids": [
+      "GAME-14",
+      "GAME-07",
+      "GAME-04",
+      "GAME-01"
+    ],
+    "quiz_id": "QZ-E01",
+    "estimated_minutes": 27,
+    "mastery_threshold_pct": 70
+  },
+  "learning_objectives": [
+    "نام و معنی انگلیسی اجزای اصلی موتور را در سطح مقدماتی تشخیص دهد.",
+    "وظیفه کلی بلوک سیلندر، سرسیلندر، پیستون، شاتون و میل‌لنگ را توضیح دهد.",
+    "تفاوت میل‌بادامک و میل‌لنگ را در سطح پایه بیان کند.",
+    "وظیفه سوپاپ ورودی و سوپاپ خروجی را از هم تشخیص دهد.",
+    "با There is و There are وجود یک یا چند قطعه را توصیف کند.",
+    "یک توصیف کوتاه و ساده از اجزای موتور را بخواند و جمله بسازد."
+  ],
+  "prerequisites": [
+    "آشنایی با واژه‌های پایه خودرو و موتور از درس‌های پیشین",
+    "آشنایی مقدماتی با اسم مفرد و جمع در انگلیسی"
+  ],
+  "lesson_intro_fa": "در این درس وارد قلب بسیاری از خودروها می‌شویم: موتور. موتور احتراق داخلی انرژی سوخت را به حرکت مکانیکی تبدیل می‌کند. برای فهم توضیح‌های تعمیرگاهی باید بتوانیم قطعات اصلی را به انگلیسی بشناسیم و وظیفه کلی هرکدام را بدانیم. در این سطح وارد اندازه‌گیری، تعمیر یا اعداد فنی نمی‌شویم؛ فقط ساختار پایه و واژه‌های مهم را یاد می‌گیریم.",
+  "sections": [
+    {
+      "section_id": "E01-S01",
+      "title_fa": "۱) موتور و بلوک سیلندر",
+      "title_en": "The Engine and Engine Block",
+      "explanation_fa": "Engine به معنی موتور است. در موتورهای پیستونی، Engine block یا بلوک موتور بدنه اصلی سازه‌ای موتور است و در بسیاری از طراحی‌ها سیلندرها درون آن ساخته شده‌اند یا در آن قرار می‌گیرند. Cylinder یعنی سیلندر؛ فضای استوانه‌ای است که پیستون در آن بالا و پایین حرکت می‌کند. تعداد و آرایش سیلندرها بسته به طراحی موتور متفاوت است.",
+      "vocabulary": [
+        {
+          "en": "engine",
+          "fa": "موتور",
+          "example_en": "The engine is in the engine bay.",
+          "example_fa": "موتور در محفظه موتور قرار دارد."
+        },
+        {
+          "en": "engine block",
+          "fa": "بلوک موتور / بلوک سیلندر",
+          "example_en": "The engine block supports the cylinders.",
+          "example_fa": "بلوک موتور سیلندرها را در خود جای می‌دهد."
+        },
+        {
+          "en": "cylinder",
+          "fa": "سیلندر",
+          "example_en": "There are four cylinders in this engine.",
+          "example_fa": "در این موتور چهار سیلندر وجود دارد."
+        }
+      ],
+      "key_points": [
+        "Engine نام مجموعه موتور است؛ engine block فقط یکی از اجزای اصلی آن است.",
+        "پیستون درون سیلندر حرکت رفت‌وبرگشتی دارد.",
+        "تعداد سیلندرها در همه خودروها یکسان نیست."
+      ],
+      "source_ids": [
+        "SRC-BRITANNICA-ICE-001",
+        "SRC-HOWSTUFFWORKS-ENGINE-001"
+      ]
+    },
+    {
+      "section_id": "E01-S02",
+      "title_fa": "۲) سرسیلندر و محفظه احتراق",
+      "title_en": "Cylinder Head and Combustion Chamber",
+      "explanation_fa": "Cylinder head یعنی سرسیلندر؛ این قطعه روی بلوک موتور قرار می‌گیرد و در بسیاری از موتورهای چهارزمانه، مجاری هوا و دود، سوپاپ‌ها و بخشی از محفظه احتراق را در خود جای می‌دهد. Combustion chamber یعنی محفظه احتراق؛ فضایی است که مخلوط هوا و سوخت در موتورهای جرقه‌ای، یا سوخت تزریق‌شده در موتورهای دیزلی، در آن می‌سوزد. شکل دقیق این فضا به طراحی موتور بستگی دارد.",
+      "vocabulary": [
+        {
+          "en": "cylinder head",
+          "fa": "سرسیلندر",
+          "example_en": "The cylinder head is above the engine block.",
+          "example_fa": "سرسیلندر بالای بلوک موتور قرار دارد."
+        },
+        {
+          "en": "combustion chamber",
+          "fa": "محفظه احتراق",
+          "example_en": "The combustion chamber is inside the cylinder area.",
+          "example_fa": "محفظه احتراق در ناحیه بالای سیلندر قرار دارد."
+        }
+      ],
+      "key_points": [
+        "سرسیلندر و بلوک موتور دو قطعه متفاوت‌اند.",
+        "محفظه احتراق فضای عملکردی است، نه لزوماً یک قطعه جداگانه.",
+        "ساختار موتورهای بنزینی و دیزلی در روش آغاز احتراق تفاوت دارد."
+      ],
+      "source_ids": [
+        "SRC-BRITANNICA-ICE-001",
+        "SRC-MOTOR-SERVICE-ENGINE-001"
+      ]
+    },
+    {
+      "section_id": "E01-S03",
+      "title_fa": "۳) پیستون، شاتون و میل‌لنگ",
+      "title_en": "Piston, Connecting Rod and Crankshaft",
+      "explanation_fa": "Piston یعنی پیستون؛ داخل سیلندر حرکت رفت‌وبرگشتی دارد. Connecting rod یا شاتون، پیستون را به میل‌لنگ متصل می‌کند. Crankshaft یا میل‌لنگ حرکت رفت‌وبرگشتی پیستون‌ها را به حرکت چرخشی تبدیل می‌کند. این سه جزء با هم در تبدیل انرژی حاصل از احتراق به حرکت چرخشی نقش دارند.",
+      "vocabulary": [
+        {
+          "en": "piston",
+          "fa": "پیستون",
+          "example_en": "The piston moves inside the cylinder.",
+          "example_fa": "پیستون درون سیلندر حرکت می‌کند."
+        },
+        {
+          "en": "connecting rod",
+          "fa": "شاتون",
+          "example_en": "The connecting rod links the piston to the crankshaft.",
+          "example_fa": "شاتون پیستون را به میل‌لنگ متصل می‌کند."
+        },
+        {
+          "en": "crankshaft",
+          "fa": "میل‌لنگ",
+          "example_en": "The crankshaft rotates.",
+          "example_fa": "میل‌لنگ می‌چرخد."
+        }
+      ],
+      "key_points": [
+        "پیستون حرکت خطی رفت‌وبرگشتی دارد.",
+        "شاتون رابط مکانیکی پیستون و میل‌لنگ است.",
+        "میل‌لنگ خروجی حرکت چرخشی را فراهم می‌کند."
+      ],
+      "source_ids": [
+        "SRC-HOWSTUFFWORKS-ENGINE-001",
+        "SRC-MOTOR-SERVICE-ENGINE-001"
+      ]
+    },
+    {
+      "section_id": "E01-S04",
+      "title_fa": "۴) میل‌بادامک و سوپاپ‌ها",
+      "title_en": "Camshaft and Valves",
+      "explanation_fa": "Camshaft یعنی میل‌بادامک؛ با بادامک‌های خود زمان باز و بسته شدن سوپاپ‌ها را کنترل می‌کند. Intake valve سوپاپ ورودی است و مسیر ورود هوا یا مخلوط هوا و سوخت را باز می‌کند. Exhaust valve سوپاپ خروجی است و مسیر خروج گازهای حاصل از احتراق را باز می‌کند. تعداد میل‌بادامک‌ها و آرایش سوپاپ‌ها در موتورهای مختلف متفاوت است.",
+      "vocabulary": [
+        {
+          "en": "camshaft",
+          "fa": "میل‌بادامک",
+          "example_en": "The camshaft controls valve timing.",
+          "example_fa": "میل‌بادامک زمان‌بندی سوپاپ‌ها را کنترل می‌کند."
+        },
+        {
+          "en": "intake valve",
+          "fa": "سوپاپ ورودی",
+          "example_en": "The intake valve lets air enter.",
+          "example_fa": "سوپاپ ورودی اجازه ورود هوا را می‌دهد."
+        },
+        {
+          "en": "exhaust valve",
+          "fa": "سوپاپ خروجی",
+          "example_en": "The exhaust valve lets exhaust gas leave.",
+          "example_fa": "سوپاپ خروجی اجازه خروج گاز دود را می‌دهد."
+        }
+      ],
+      "key_points": [
+        "Camshaft با crankshaft یکی نیست؛ وظایف متفاوتی دارند.",
+        "سوپاپ ورودی برای ورود و سوپاپ خروجی برای تخلیه است.",
+        "زمان‌بندی سوپاپ‌ها به طراحی موتور وابسته است."
+      ],
+      "source_ids": [
+        "SRC-MOTOR-SERVICE-ENGINE-001",
+        "SRC-MAHLE-VALVETRAIN-001"
+      ]
+    },
+    {
+      "section_id": "E01-S05",
+      "title_fa": "۵) شمع و تفاوت موتورهای جرقه‌ای و دیزلی",
+      "title_en": "Spark Plug and Ignition Types",
+      "explanation_fa": "Spark plug یعنی شمع؛ در موتورهای بنزینی جرقه‌ای، جرقه الکتریکی لازم برای آغاز احتراق مخلوط را ایجاد می‌کند. موتور دیزل معمولی برای آغاز احتراق سوخت به شمع جرقه‌زن نیاز ندارد؛ در آن هوا فشرده و داغ می‌شود و سوخت تزریق‌شده مشتعل می‌شود. بعضی موتورهای دیزلی از glow plug یا شمع گرم‌کن برای کمک به استارت سرد استفاده می‌کنند؛ glow plug با spark plug یکسان نیست.",
+      "vocabulary": [
+        {
+          "en": "spark plug",
+          "fa": "شمع جرقه‌زن",
+          "example_en": "A spark plug ignites the air-fuel mixture in a spark-ignition engine.",
+          "example_fa": "شمع در موتور جرقه‌ای مخلوط هوا و سوخت را مشتعل می‌کند."
+        }
+      ],
+      "key_points": [
+        "Spark plug در موتور جرقه‌ای استفاده می‌شود.",
+        "Glow plug در برخی موتورهای دیزل برای کمک به استارت سرد است و جرقه‌زن نیست.",
+        "این توضیح کلی است؛ معماری موتورهای خاص ممکن است تفاوت داشته باشد."
+      ],
+      "source_ids": [
+        "SRC-NGK-SPARKPLUG-001",
+        "SRC-BOSCH-DIESEL-001"
+      ]
+    }
+  ],
+  "system_relationships": [
+    {
+      "concept": "Cylinder assembly",
+      "items": [
+        "engine block",
+        "cylinder",
+        "piston",
+        "connecting rod",
+        "crankshaft"
+      ],
+      "note_fa": "پیستون در سیلندر حرکت می‌کند؛ شاتون آن را به میل‌لنگ وصل می‌کند."
+    },
+    {
+      "concept": "Valve train",
+      "items": [
+        "cylinder head",
+        "camshaft",
+        "intake valve",
+        "exhaust valve"
+      ],
+      "note_fa": "میل‌بادامک زمان‌بندی عملکرد سوپاپ‌ها را کنترل می‌کند."
+    },
+    {
+      "concept": "Ignition",
+      "items": [
+        "spark plug"
+      ],
+      "note_fa": "شمع جرقه‌زن مربوط به موتورهای جرقه‌ای است و نباید با شمع گرم‌کن دیزل اشتباه شود."
+    }
+  ],
+  "english_focus": {
+    "grammar_fa": "There is برای بیان وجود یک مورد مفرد و There are برای بیان وجود چند مورد به‌کار می‌رود. پس از There is معمولاً اسم مفرد یا غیرقابل‌شمارش و پس از There are اسم جمع می‌آید. برای پرسش، Is there...? و Are there...? استفاده می‌کنیم.",
+    "patterns": [
+      {
+        "pattern": "There is a + singular noun.",
+        "translation_fa": "یک ... وجود دارد."
+      },
+      {
+        "pattern": "There are + plural noun.",
+        "translation_fa": "... وجود دارند."
+      },
+      {
+        "pattern": "There is a piston in the cylinder.",
+        "translation_fa": "یک پیستون در سیلندر وجود دارد."
+      },
+      {
+        "pattern": "There are four cylinders in this engine.",
+        "translation_fa": "در این موتور چهار سیلندر وجود دارد."
+      },
+      {
+        "pattern": "Is there a spark plug in this engine?",
+        "translation_fa": "آیا در این موتور شمع جرقه‌زن وجود دارد؟"
+      },
+      {
+        "pattern": "Are there two camshafts?",
+        "translation_fa": "آیا دو میل‌بادامک وجود دارد؟"
+      }
+    ],
+    "common_errors": [
+      {
+        "wrong": "There are a piston.",
+        "correct": "There is a piston.",
+        "reason_fa": "piston مفرد است؛ از There is استفاده می‌کنیم."
+      },
+      {
+        "wrong": "There is four cylinders.",
+        "correct": "There are four cylinders.",
+        "reason_fa": "cylinders جمع است؛ از There are استفاده می‌کنیم."
+      },
+      {
+        "wrong": "There are an engine block.",
+        "correct": "There is an engine block.",
+        "reason_fa": "engine block در این جمله مفرد است."
+      }
+    ]
+  },
+  "reading": {
+    "title_en": "A Simple Engine Description",
+    "text_en": "This engine has four cylinders. There is a piston in each cylinder. The pistons move up and down. Connecting rods link the pistons to the crankshaft. The crankshaft rotates. There is a cylinder head above the engine block. The camshaft controls the valves. The intake valves let air enter, and the exhaust valves let exhaust gas leave.",
+    "text_fa": "این موتور چهار سیلندر دارد. در هر سیلندر یک پیستون وجود دارد. پیستون‌ها بالا و پایین حرکت می‌کنند. شاتون‌ها پیستون‌ها را به میل‌لنگ متصل می‌کنند. میل‌لنگ می‌چرخد. سرسیلندر بالای بلوک موتور قرار دارد. میل‌بادامک سوپاپ‌ها را کنترل می‌کند. سوپاپ‌های ورودی اجازه ورود هوا و سوپاپ‌های خروجی اجازه خروج گاز دود را می‌دهند.",
+    "comprehension": [
+      {
+        "question_fa": "چه قطعه‌ای پیستون را به میل‌لنگ وصل می‌کند؟",
+        "answer_fa": "شاتون (connecting rod)."
+      },
+      {
+        "question_fa": "کدام قطعه زمان‌بندی سوپاپ‌ها را کنترل می‌کند؟",
+        "answer_fa": "میل‌بادامک (camshaft)."
+      },
+      {
+        "question_fa": "وظیفه سوپاپ خروجی چیست؟",
+        "answer_fa": "خارج کردن گازهای حاصل از احتراق."
+      }
+    ]
+  },
+  "guided_practice": [
+    {
+      "type": "choose",
+      "prompt_fa": "قطعه‌ای که حرکت پیستون را به میل‌لنگ منتقل می‌کند کدام است؟",
+      "options": [
+        "Connecting rod",
+        "Camshaft",
+        "Spark plug"
+      ],
+      "answer": "Connecting rod"
+    },
+    {
+      "type": "translate",
+      "prompt_fa": "در این موتور چهار سیلندر وجود دارد.",
+      "answer_en": "There are four cylinders in this engine."
+    },
+    {
+      "type": "classify",
+      "prompt_fa": "Intake valve یا Exhaust valve؟ قطعه‌ای که مسیر خروج گاز دود را باز می‌کند.",
+      "answer": "Exhaust valve"
+    }
+  ],
+  "knowledge_check": [
+    {
+      "question_id": "E01-K01",
+      "type": "mcq",
+      "difficulty": 1,
+      "question_fa": "کدام قطعه درون سیلندر حرکت رفت‌وبرگشتی دارد؟",
+      "options": [
+        "Piston",
+        "Camshaft",
+        "Spark plug",
+        "Oil pump"
+      ],
+      "correct_answer": "Piston",
+      "explanation_fa": "پیستون درون سیلندر بالا و پایین حرکت می‌کند."
+    },
+    {
+      "question_id": "E01-K02",
+      "type": "mcq",
+      "difficulty": 2,
+      "question_fa": "وظیفه اصلی میل‌لنگ چیست؟",
+      "options": [
+        "تبدیل حرکت رفت‌وبرگشتی به چرخشی",
+        "باز کردن سوپاپ ورودی",
+        "ایجاد جرقه",
+        "فیلتر کردن روغن"
+      ],
+      "correct_answer": "تبدیل حرکت رفت‌وبرگشتی به چرخشی",
+      "explanation_fa": "میل‌لنگ حرکت پیستون‌ها را به حرکت چرخشی تبدیل می‌کند."
+    },
+    {
+      "question_id": "E01-K03",
+      "type": "fa_to_en",
+      "difficulty": 2,
+      "question_fa": "میل‌بادامک",
+      "accepted_answers": [
+        "camshaft"
+      ],
+      "correct_answer": "camshaft"
+    },
+    {
+      "question_id": "E01-K04",
+      "type": "fa_to_en",
+      "difficulty": 2,
+      "question_fa": "سوپاپ ورودی",
+      "accepted_answers": [
+        "intake valve"
+      ],
+      "correct_answer": "intake valve"
+    },
+    {
+      "question_id": "E01-K05",
+      "type": "en_to_fa",
+      "difficulty": 3,
+      "question_en": "Connecting rod",
+      "accepted_answers": [
+        "شاتون"
+      ],
+      "correct_answer": "شاتون"
+    },
+    {
+      "question_id": "E01-K06",
+      "type": "fill_blank",
+      "difficulty": 3,
+      "question_en": "There ____ four cylinders in this engine.",
+      "accepted_answers": [
+        "are"
+      ],
+      "correct_answer": "are",
+      "explanation_fa": "برای اسم جمع cylinders از There are استفاده می‌کنیم."
+    },
+    {
+      "question_id": "E01-K07",
+      "type": "identify_correct_term",
+      "difficulty": 1,
+      "question_fa": "کدام اصطلاح به قطعه‌ای اشاره می‌کند که پیستون را به میل‌لنگ متصل می‌کند؟",
+      "options": [
+        "Connecting rod",
+        "Cylinder head",
+        "Intake valve"
+      ],
+      "correct_answer": "Connecting rod"
+    },
+    {
+      "question_id": "E01-K08",
+      "type": "listening",
+      "difficulty": 2,
+      "audio_asset": null,
+      "transcript_en": "There is a cylinder head above the engine block. The camshaft controls the valves.",
+      "question_fa": "در متن شنیداری، کدام قطعه سوپاپ‌ها را کنترل می‌کند؟",
+      "options": [
+        "Crankshaft",
+        "Camshaft",
+        "Piston"
+      ],
+      "correct_answer": "Camshaft",
+      "note_fa": "فایل صوتی واقعی هنوز تولید/تأمین نشده؛ این مورد فعلاً فقط transcript است."
+    },
+    {
+      "question_id": "E01-K09",
+      "type": "image_part_id",
+      "difficulty": 2,
+      "image_asset": null,
+      "part_id": null,
+      "question_fa": "در تصویر برچسب‌گذاری‌شده، قطعه مشخص‌شده را نام ببرید.",
+      "answer_status": "pending_image_and_canonical_part_mapping",
+      "note_fa": "تا زمان دریافت تصویر واقعی و تطبیق شناسه قطعه، این سؤال قابل انتشار نیست."
+    },
+    {
+      "question_id": "E01-K10",
+      "type": "sentence_building",
+      "difficulty": 2,
+      "word_bank": [
+        "are",
+        "There",
+        "four",
+        "cylinders"
+      ],
+      "correct_answer": "There are four cylinders.",
+      "accepted_answers": [
+        "There are four cylinders."
+      ],
+      "explanation_fa": "برای اسم جمع cylinders از There are استفاده می‌کنیم."
+    }
+  ],
+  "delivery_constraints": {
+    "vocabulary_candidates_only": true,
+    "canonical_term_ids_assigned": false,
+    "featured_part_ids_unmapped": true,
+    "audio_asset_status": "not_provided",
+    "image_asset_status": "not_provided",
+    "vehicle_specific_specs_included": false,
+    "repair_procedures_included": false
+  }
+}

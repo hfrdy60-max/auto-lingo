@@ -10,6 +10,7 @@
   detail:document.getElementById('pathDetail'),
   progress:document.getElementById('myProgress'),
   academy:document.getElementById('technicalAcademy'),
+  curriculum:document.getElementById('structuredLessons'),
   lab:document.getElementById('learningLab'),
   review:document.getElementById('smartReview'),
   dictionary:document.getElementById('dictionary'),
@@ -17,7 +18,7 @@
  };
  const panes={
   home:[hero,sections.guide],
-  learn:[sections.placement,sections.paths,sections.detail,sections.academy],
+  learn:[sections.placement,sections.paths,sections.detail,sections.curriculum,sections.academy],
   practice:[sections.lab,sections.review],
   dictionary:[sections.dictionary],
   progress:[sections.progress]
