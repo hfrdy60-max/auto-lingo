@@ -1,0 +1,2213 @@
+{
+  "project": "AUTO LINGO",
+  "mission_id": "AI2-ELECTRICAL-DIAGNOSTICS-RESEARCH-001",
+  "schema_version": "1.0.0",
+  "status": "candidate_unverified",
+  "scope": "A-F initial research delivery; language and conceptual reference only, not a practical repair procedure.",
+  "sections": {
+    "A_measurement_tools": {
+      "records": [
+        {
+          "id": "V-001",
+          "term_en": "Digital multimeter (DMM)",
+          "term_fa": "مولتی‌متر دیجیتال",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "ابزار الکترونیکی اندازه‌گیری کمیت‌هایی مانند ولتاژ، جریان و مقاومت؛ قابلیت‌ها به مدل دستگاه بستگی دارد.",
+          "example_en": "The technician selected the appropriate DMM function.",
+          "collocations": [
+            "technician selected",
+            "DMM function",
+            "measurement range"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-002",
+          "term_en": "Test lead",
+          "term_fa": "سیم رابط اندازه‌گیری",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "سیم و مجموعه اتصال بین ابزار اندازه‌گیری و نقطه آزمون؛ رده ایمنی و وضعیت آن اهمیت دارد.",
+          "example_en": "The test leads must be in good condition.",
+          "collocations": [
+            "test lead set",
+            "lead insulation",
+            "lead rating"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-003",
+          "term_en": "Probe",
+          "term_fa": "پراب اندازه‌گیری",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "نوک یا رابط رسانای ابزار برای تماس اندازه‌گیری؛ کاربرد و شکل آن با نوع آزمون فرق دارد.",
+          "example_en": "The probe is part of the measuring accessory.",
+          "collocations": [
+            "probe tip",
+            "insulated probe",
+            "probe accessory"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-004",
+          "term_en": "Back-probe",
+          "term_fa": "پراب پشت‌سوکت / اندازه‌گیری از پشت کانکتور",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "اصطلاحی برای دسترسی اندازه‌گیری از سمت سیمِ متصل به کانکتور؛ انجام فیزیکی آن ممکن است به آب‌بندی یا ترمینال آسیب بزند و باید فقط طبق دستورالعمل سازنده و توسط تکنسین آموزش‌دیده انجام شود.",
+          "example_en": "The service document mentions a back-probe adapter.",
+          "collocations": [
+            "back-probe adapter",
+            "back-probing method"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-005",
+          "term_en": "Clamp meter",
+          "term_fa": "کلمپ‌متر / آمپرمتر انبری",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "ابزاری که جریان را با حس‌کردن میدان مغناطیسی پیرامون هادی اندازه می‌گیرد؛ نوع AC/DC و محدوده آن مهم است.",
+          "example_en": "A clamp meter can measure current without opening the conductor path.",
+          "collocations": [
+            "DC clamp meter",
+            "current clamp",
+            "clamp jaw"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-006",
+          "term_en": "Test light",
+          "term_fa": "چراغ تست",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "ابزار ساده نشان‌دهنده وجود برخی شرایط الکتریکی؛ بارگذاری آن ممکن است برای مدارهای الکترونیکی حساس نامناسب باشد.",
+          "example_en": "A test light is not suitable for every electronic circuit.",
+          "collocations": [
+            "incandescent test light",
+            "LED test light",
+            "circuit suitability"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-007",
+          "term_en": "Voltage",
+          "term_fa": "ولتاژ / اختلاف پتانسیل",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "اختلاف پتانسیل الکتریکی بین دو نقطه؛ مقدار مرجع و شرایط اندازه‌گیری باید از مستندات همان سامانه گرفته شود.",
+          "example_en": "The report records the measured voltage and test conditions.",
+          "collocations": [
+            "voltage supply",
+            "voltage reference",
+            "voltage reading"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-008",
+          "term_en": "Current",
+          "term_fa": "جریان الکتریکی",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "نرخ عبور بار الکتریکی از یک مسیر؛ واحد SI آن آمپر است.",
+          "example_en": "The current value depends on the operating condition.",
+          "collocations": [
+            "current flow",
+            "current draw",
+            "current measurement"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-009",
+          "term_en": "Resistance",
+          "term_fa": "مقاومت الکتریکی",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "میزان مخالفت یک عنصر با عبور جریان؛ اندازه‌گیری مقاومت به شرایط مدار و ابزار وابسته است.",
+          "example_en": "The resistance reading must be interpreted in context.",
+          "collocations": [
+            "contact resistance",
+            "internal resistance",
+            "resistance value"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-010",
+          "term_en": "Continuity",
+          "term_fa": "پیوستگی الکتریکی",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "وجود مسیر رسانای پیوسته در شرایط آزمون؛ نتیجه پیوستگی به‌تنهایی سلامت مدار زیر بار را اثبات نمی‌کند.",
+          "example_en": "A continuity result alone does not prove loaded-circuit performance.",
+          "collocations": [
+            "continuity check",
+            "continuity buzzer",
+            "electrical continuity"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-011",
+          "term_en": "Frequency",
+          "term_fa": "فرکانس",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "تعداد چرخه‌های یک سیگنال تناوبی در واحد زمان؛ معمولاً با هرتز بیان می‌شود.",
+          "example_en": "The sensor signal frequency changes with operating conditions.",
+          "collocations": [
+            "signal frequency",
+            "frequency range"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-012",
+          "term_en": "Duty cycle",
+          "term_fa": "چرخه کاری / نسبت زمان روشن‌بودن",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "نسبت زمان فعال بودن یک سیگنال دوره‌ای به کل دوره آن، معمولاً به درصد بیان می‌شود.",
+          "example_en": "The scan tool displays the commanded duty cycle.",
+          "collocations": [
+            "PWM duty cycle",
+            "duty-cycle percentage"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-013",
+          "term_en": "AC/DC",
+          "term_fa": "متناوب / مستقیم",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "AC به کمیت متناوب و DC به کمیت با قطبیت ثابت اشاره دارد؛ انتخاب حالت باید با نوع سیگنال سازگار باشد.",
+          "example_en": "The instrument must be configured for the signal type.",
+          "collocations": [
+            "AC voltage",
+            "DC voltage",
+            "AC/DC range"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-014",
+          "term_en": "Range",
+          "term_fa": "محدوده اندازه‌گیری",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "بازه‌ای که ابزار برای نمایش یا اندازه‌گیری انتخاب می‌کند؛ قابلیت auto-ranging انتخاب بازه را خودکار می‌کند.",
+          "example_en": "The selected range must match the instrument specification.",
+          "collocations": [
+            "measurement range",
+            "range selection"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-015",
+          "term_en": "Auto-ranging",
+          "term_fa": "انتخاب خودکار محدوده",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "قابلیتی که ابزار محدوده مناسب را برای نمایش اندازه‌گیری انتخاب می‌کند.",
+          "example_en": "This meter supports auto-ranging.",
+          "collocations": [
+            "auto-ranging DMM",
+            "manual range"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-016",
+          "term_en": "Polarity",
+          "term_fa": "قطبیت",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "جهت مثبت و منفی بودن کمیت یا اتصال نسبت به مرجع تعریف‌شده.",
+          "example_en": "The display indicates reversed polarity.",
+          "collocations": [
+            "polarity indication",
+            "reverse polarity"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-017",
+          "term_en": "Overload indication",
+          "term_fa": "نمایش اضافه‌محدوده",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "پیام یا نمادی که نشان می‌دهد مقدار از محدوده قابل نمایش/اندازه‌گیری فراتر رفته است؛ معنی دقیق به مدل ابزار وابسته است.",
+          "example_en": "The overload symbol means the reading is outside the selected range.",
+          "collocations": [
+            "overload symbol",
+            "input overload"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-018",
+          "term_en": "Input impedance",
+          "term_fa": "امپدانس ورودی",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "میزان بارگذاری الکتریکی ورودی ابزار بر مدار؛ در اندازه‌گیری مدارهای سیگنال اهمیت دارد.",
+          "example_en": "Input impedance affects how the meter interacts with a circuit.",
+          "collocations": [
+            "high input impedance",
+            "meter loading"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-019",
+          "term_en": "Fused current input",
+          "term_fa": "ورودی جریانِ فیوزدار",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "ورودی اختصاصی اندازه‌گیری جریان که حفاظت فیوزی آن وابسته به مشخصات سازنده ابزار است؛ اشتباه در ورودی می‌تواند خطرناک باشد.",
+          "example_en": "The meter manual identifies the fused current input.",
+          "collocations": [
+            "current input jack",
+            "input fuse rating"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-020",
+          "term_en": "COM",
+          "term_fa": "پایانه مشترک (COM)",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "پایانه مرجع مشترک ابزار اندازه‌گیری؛ جایگاه و کاربرد آن باید مطابق دفترچه همان ابزار باشد.",
+          "example_en": "The black lead is normally associated with the COM terminal.",
+          "collocations": [
+            "COM terminal",
+            "common input"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        },
+        {
+          "id": "V-021",
+          "term_en": "Ground reference",
+          "term_fa": "مرجع زمین / مرجع بدنه",
+          "pronunciation_fa": null,
+          "ipa": null,
+          "definition_fa": "نقطه مرجع الکتریکی که نسبت به آن ولتاژ بیان می‌شود؛ لزوماً هر نقطه فلزی بدنه مرجع صحیح نیست.",
+          "example_en": "The signal is described relative to its specified ground reference.",
+          "collocations": [
+            "signal ground",
+            "chassis ground",
+            "reference point"
+          ],
+          "section": "A_measurement_tools",
+          "author_generated": true,
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-003"
+          ],
+          "status": "candidate_unverified"
+        }
+      ]
+    },
+    "B_test_language": {
+      "records": [
+        {
+          "id": "T-001",
+          "term_en": "Voltage measurement",
+          "term_fa": "اندازه‌گیری ولتاژ",
+          "definition_fa": "تعیین اختلاف پتانسیل میان دو نقطه با شرایط مرجع مشخص؛ نتیجه باید همراه با وضعیت عملکرد سامانه تفسیر شود.",
+          "example_en": "Record the voltage reading with the specified operating condition.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-002",
+          "term_en": "Voltage-drop test",
+          "term_fa": "آزمون افت ولتاژ",
+          "definition_fa": "ارزیابی اختلاف پتانسیل ایجادشده در بخشی از مدار هنگام عبور جریان؛ با آزمون مقاومتِ مدار بی‌بار یکسان نیست.",
+          "example_en": "A voltage-drop test evaluates a circuit under current flow.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-003",
+          "term_en": "Resistance test",
+          "term_fa": "آزمون مقاومت",
+          "definition_fa": "برآورد مقاومت الکتریکی یک جزء یا مسیر؛ شرایط جداسازی و آزمون باید طبق دستورالعمل سازنده باشد.",
+          "example_en": "The resistance test is interpreted against the vehicle-specific specification.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-004",
+          "term_en": "Continuity test",
+          "term_fa": "آزمون پیوستگی",
+          "definition_fa": "بررسی وجود مسیر رسانا؛ پیوستگی ظاهری، توانایی مدار برای کار زیر بار را تضمین نمی‌کند.",
+          "example_en": "A continuity test may not reveal a high-resistance fault under load.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-005",
+          "term_en": "Current measurement",
+          "term_fa": "اندازه‌گیری جریان",
+          "definition_fa": "اندازه‌گیری نرخ عبور جریان با ابزار و روش سازگار با مدار؛ انتخاب ورودی نادرست ابزار می‌تواند خطر ایجاد کند.",
+          "example_en": "Current measurement requires the correct instrument configuration.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-006",
+          "term_en": "Parasitic current draw",
+          "term_fa": "مصرف جریان انگلی در حالت خاموش",
+          "definition_fa": "جریان مصرفی سامانه‌ها در وضعیت خواب/خاموش تعریف‌شده؛ مقدار قابل قبول به خودرو و شرایط خواب شبکه بستگی دارد.",
+          "example_en": "The report describes an abnormal parasitic current draw.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-007",
+          "term_en": "Open-circuit voltage",
+          "term_fa": "ولتاژ مدار باز",
+          "definition_fa": "ولتاژ اندازه‌گیری‌شده در شرایطی که مسیر بار باز یا بدون بار تعریف شده است؛ با ولتاژ زیر بار یکسان نیست.",
+          "example_en": "Open-circuit voltage does not describe performance under load.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-008",
+          "term_en": "Loaded circuit",
+          "term_fa": "مدار زیر بار",
+          "definition_fa": "مداری که مصرف‌کننده یا بار آن در وضعیت کاری قرار دارد و جریان از آن عبور می‌کند.",
+          "example_en": "The loaded-circuit condition is part of the test description.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-009",
+          "term_en": "Unloaded circuit",
+          "term_fa": "مدار بدون بار",
+          "definition_fa": "مداری که بار کاری موردنظر از آن جریان نمی‌کشد؛ نتایج آن ممکن است محدودیت‌های اتصالات را آشکار نکند.",
+          "example_en": "An unloaded circuit may appear normal despite a connection problem.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-010",
+          "term_en": "Intermittent fault",
+          "term_fa": "عیب متناوب",
+          "definition_fa": "نقصی که پیوسته رخ نمی‌دهد و ممکن است با زمان، دما، لرزش یا شرایط عملکرد تغییر کند.",
+          "example_en": "The intermittent fault was not present during every observation.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-011",
+          "term_en": "High resistance",
+          "term_fa": "مقاومت بالا",
+          "definition_fa": "مقاومت غیرعادی در مسیر یا اتصال که می‌تواند عملکرد مدار را مختل کند؛ معیار پذیرش باید اختصاصی باشد.",
+          "example_en": "A high-resistance connection can affect circuit performance.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-012",
+          "term_en": "Poor connection",
+          "term_fa": "اتصال نامناسب",
+          "definition_fa": "وضعیت مکانیکی یا الکتریکی نامطلوب در محل اتصال، مانند شل‌شدگی یا آلودگی؛ ظاهر به‌تنهایی تشخیص قطعی نیست.",
+          "example_en": "The inspection report notes a suspected poor connection.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-013",
+          "term_en": "Short to ground",
+          "term_fa": "اتصال کوتاه به زمین",
+          "definition_fa": "اتصال ناخواسته مسیر به مرجع زمین/بدنه؛ معنی دقیق و تشخیص آن وابسته به نقشه و معماری مدار است.",
+          "example_en": "The fault description indicates a possible short to ground.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-014",
+          "term_en": "Short to voltage/power",
+          "term_fa": "اتصال ناخواسته به ولتاژ/تغذیه",
+          "definition_fa": "تماس ناخواسته یک مسیر با منبع ولتاژ یا خط تغذیه دیگر؛ باید در متن نقشه و سامانه مشخص شود.",
+          "example_en": "The diagnostic description reports a short to voltage.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-015",
+          "term_en": "Open circuit",
+          "term_fa": "مدار باز / قطعی مسیر",
+          "definition_fa": "گسست الکتریکی مسیر که پیوستگی مورد انتظار را از بین می‌برد.",
+          "example_en": "The circuit is reported as open.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        },
+        {
+          "id": "T-016",
+          "term_en": "Cross-circuit fault",
+          "term_fa": "خطای اتصال بین مدارها",
+          "definition_fa": "اتصال ناخواسته میان دو مسیر مستقل یا سیگنال؛ تفسیر آن به توپولوژی سیم‌کشی وابسته است.",
+          "example_en": "The technician documented a suspected cross-circuit fault.",
+          "verbs": [
+            "measure",
+            "check",
+            "verify",
+            "compare",
+            "document",
+            "isolate"
+          ],
+          "section": "B_test_language",
+          "safety_note": "این رکورد زبان‌شناختی است، نه دستور اجرای آزمون. اجرای اندازه‌گیری عملی فقط توسط تکنسین آموزش‌دیده، با مستندات همان خودرو و ابزار مناسب انجام شود.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-001",
+            "SRC-ED-002",
+            "SRC-ED-003"
+          ]
+        }
+      ]
+    },
+    "C_wiring_diagrams": {
+      "records": [
+        {
+          "id": "W-001",
+          "term_en": "Circuit",
+          "term_fa": "مدار",
+          "definition_fa": "مجموعه مسیرها و اجزای به‌هم‌پیوسته که عملکرد الکتریکی مشخصی را انجام می‌دهند.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for circuit.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-002",
+          "term_en": "Schematic",
+          "term_fa": "شماتیک / نقشه مداری",
+          "definition_fa": "نمای ساده‌شده عملکردی از ارتباط اجزای مدار؛ الزاماً محل فیزیکی قطعات را نشان نمی‌دهد.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for schematic.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-003",
+          "term_en": "Wiring diagram",
+          "term_fa": "نقشه سیم‌کشی",
+          "definition_fa": "نمایی از سیم‌ها، کانکتورها و اتصالات الکتریکی؛ قالب و نمادها می‌تواند بین سازندگان فرق کند.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for wiring diagram.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-004",
+          "term_en": "Connector view",
+          "term_fa": "نمای کانکتور",
+          "definition_fa": "نمای روبه‌رو یا سمت سیم/قطعه از کانکتور؛ جهت دید باید از عنوان نقشه مشخص شود.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for connector view.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-005",
+          "term_en": "Splice",
+          "term_fa": "اتصال انشعابی سیم",
+          "definition_fa": "نقطه‌ای که یک هادی به چند شاخه یا مسیر متصل می‌شود.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for splice.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-006",
+          "term_en": "Junction",
+          "term_fa": "محل اتصال / جعبه اتصال",
+          "definition_fa": "محل پیوند یا توزیع چند مسیر؛ کاربرد دقیق در مستندات OEM متفاوت است.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for junction.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-007",
+          "term_en": "Ground point",
+          "term_fa": "نقطه اتصال زمین",
+          "definition_fa": "محل تعریف‌شده اتصال مسیر برگشت به بدنه یا مرجع زمین خودرو.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for ground point.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-008",
+          "term_en": "Wire color/code",
+          "term_fa": "رنگ/کد سیم",
+          "definition_fa": "شناسه رنگی یا حرفی سیم؛ کدگذاری بین سازندگان و بازارها یکسان نیست.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for wire color/code.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-009",
+          "term_en": "Wire gauge",
+          "term_fa": "گیج / سطح مقطع نامی سیم",
+          "definition_fa": "شناسه اندازه هادی؛ سیستم AWG یا واحد سطح مقطع متریک ممکن است استفاده شود.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for wire gauge.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-010",
+          "term_en": "Terminal number",
+          "term_fa": "شماره ترمینال",
+          "definition_fa": "شناسه تماس الکتریکی در مستندات قطعه یا کانکتور.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for terminal number.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-011",
+          "term_en": "Pin number",
+          "term_fa": "شماره پین",
+          "definition_fa": "شماره‌گذاری موقعیت اتصال در نمای کانکتور؛ ممکن است با cavity numbering فرق داشته باشد.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for pin number.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-012",
+          "term_en": "Cavity",
+          "term_fa": "حفره/خانه کانکتور",
+          "definition_fa": "موقعیت فیزیکی در بدنه کانکتور که می‌تواند ترمینال در آن قرار گیرد.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for cavity.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-013",
+          "term_en": "Connector ID",
+          "term_fa": "شناسه کانکتور",
+          "definition_fa": "کد مرجع کانکتور در نقشه یا راهنمای تعمیر.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for connector id.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-014",
+          "term_en": "Normally open (NO)",
+          "term_fa": "معمولاً باز",
+          "definition_fa": "وضعیت عادی کنتاکت که در حالت تعریف‌شده اتصال ندارد؛ وضعیت عادی باید از مشخصات قطعه فهمیده شود.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for normally open (no).",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-015",
+          "term_en": "Normally closed (NC)",
+          "term_fa": "معمولاً بسته",
+          "definition_fa": "وضعیت عادی کنتاکت که در حالت تعریف‌شده اتصال دارد.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for normally closed (nc).",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-016",
+          "term_en": "Switched power",
+          "term_fa": "تغذیه سوئیچ‌شونده",
+          "definition_fa": "منبع تغذیه‌ای که وضعیت آن تحت کنترل کلید یا واحد کنترل است.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for switched power.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-017",
+          "term_en": "Constant battery power",
+          "term_fa": "تغذیه دائم باتری",
+          "definition_fa": "خط تغذیه‌ای که طبق معماری خودرو حتی در برخی وضعیت‌های خاموش فعال می‌ماند.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for constant battery power.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-018",
+          "term_en": "Ignition feed",
+          "term_fa": "تغذیه وابسته به سوئیچ/وضعیت احتراق",
+          "definition_fa": "خط تغذیه مرتبط با وضعیت ignition؛ تعریف وضعیت‌ها وابسته به خودرو است.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for ignition feed.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-019",
+          "term_en": "Circuit reference",
+          "term_fa": "مرجع ارجاع مدار",
+          "definition_fa": "شناسه‌ای برای پیگیری ادامه مدار در صفحه یا بخش دیگر نقشه.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for circuit reference.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-020",
+          "term_en": "Cross-reference",
+          "term_fa": "ارجاع متقابل",
+          "definition_fa": "ارجاع بین صفحه‌ها، قطعات یا بخش‌های مرتبط در مستندات.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for cross-reference.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-021",
+          "term_en": "Component location",
+          "term_fa": "محل قطعه",
+          "definition_fa": "راهنمای محل فیزیکی قطعه در خودرو؛ ممکن است تصویر یا کد ناحیه داشته باشد.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for component location.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-022",
+          "term_en": "Shielded cable",
+          "term_fa": "کابل شیلددار",
+          "definition_fa": "کابلی با لایه محافظ برای کاهش اثر تداخل الکترومغناطیسی.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for shielded cable.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-023",
+          "term_en": "Twisted pair",
+          "term_fa": "زوج سیم تابیده",
+          "definition_fa": "دو هادی تابیده‌شده برای بهبود رفتار در برابر نویز؛ کاربرد در شبکه‌های داده رایج است.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for twisted pair.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        },
+        {
+          "id": "W-024",
+          "term_en": "Splice pack",
+          "term_fa": "مجموعه اتصال انشعابی",
+          "definition_fa": "اتصال یا مجموعه توزیع چند شاخه سیم؛ اصطلاح و ساختار در OEMها متفاوت است.",
+          "section": "C_wiring_diagrams",
+          "example_en": "Refer to the vehicle-specific wiring diagram for splice pack.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-003",
+            "SRC-ED-004"
+          ]
+        }
+      ]
+    },
+    "D_connectors_harnesses": {
+      "records": [
+        {
+          "id": "C-001",
+          "term_en": "Connector housing",
+          "term_fa": "بدنه/پوسته کانکتور",
+          "definition_fa": "بدنه عایق یا محافظی که ترمینال‌ها را در موقعیت نگه می‌دارد.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the connector housing as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-002",
+          "term_en": "Terminal",
+          "term_fa": "ترمینال / کنتاکت",
+          "definition_fa": "عنصر رسانای فلزی که تماس الکتریکی را برقرار می‌کند.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the terminal as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-003",
+          "term_en": "Pin",
+          "term_fa": "پین",
+          "definition_fa": "اصطلاحی که بسته به طراحی می‌تواند به کنتاکت نری یا موقعیت شماره‌گذاری‌شده اشاره کند؛ همیشه مترادف terminal نیست.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the pin as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-004",
+          "term_en": "Socket",
+          "term_fa": "سوکت / کنتاکت مادگی",
+          "definition_fa": "کنتاکت مادگی که با پین یا کنتاکت جفت‌شونده سازگار می‌شود.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the socket as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-005",
+          "term_en": "Female terminal",
+          "term_fa": "ترمینال مادگی",
+          "definition_fa": "کنتاکت مادگی در سامانه اتصال؛ نام‌گذاری ممکن است با استاندارد سازنده فرق کند.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the female terminal as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-006",
+          "term_en": "Male terminal",
+          "term_fa": "ترمینال نری",
+          "definition_fa": "کنتاکت نری در سامانه اتصال.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the male terminal as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-007",
+          "term_en": "Terminal tension",
+          "term_fa": "نیروی تماس ترمینال",
+          "definition_fa": "نیروی مکانیکی تماس میان ترمینال‌های جفت‌شونده؛ معیار آن باید از مشخصات قطعه گرفته شود.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the terminal tension as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-008",
+          "term_en": "Pin fit",
+          "term_fa": "تناسب/گیرایی پین",
+          "definition_fa": "کیفیت جفت‌شدن مکانیکی پین و سوکت؛ ارزیابی نادرست می‌تواند به کنتاکت آسیب بزند.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the pin fit as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-009",
+          "term_en": "Corrosion",
+          "term_fa": "خوردگی",
+          "definition_fa": "تخریب شیمیایی یا الکتروشیمیایی مواد سطحی یا تماس‌ها.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the corrosion as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-010",
+          "term_en": "Fretting corrosion",
+          "term_fa": "خوردگی فرتینگ / سایشی-خوردگی",
+          "definition_fa": "تخریب تماس ناشی از حرکت‌های نسبی کوچک همراه با سایش و واکنش‌های محیطی.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the fretting corrosion as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-011",
+          "term_en": "Crimp",
+          "term_fa": "پرس اتصال",
+          "definition_fa": "اتصال مکانیکی-الکتریکی هادی به ترمینال با تغییر شکل کنترل‌شده؛ کیفیت آن تابع ابزار و مشخصات سازنده است.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the crimp as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-012",
+          "term_en": "Splice",
+          "term_fa": "اتصال انشعابی",
+          "definition_fa": "محل اتصال دو یا چند هادی؛ روش مجاز تعمیر خودرو-ویژه است.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the splice as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-013",
+          "term_en": "Repair wire",
+          "term_fa": "سیم تعمیراتی",
+          "definition_fa": "سیم یا قطعه سیم جایگزین که برای تعمیر دسته‌سیم مطابق مشخصات کاربرد استفاده می‌شود.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the repair wire as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-014",
+          "term_en": "Seal",
+          "term_fa": "آب‌بند",
+          "definition_fa": "جزءی برای محدودکردن نفوذ رطوبت یا آلودگی به ناحیه اتصال.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the seal as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-015",
+          "term_en": "Lock tab",
+          "term_fa": "زبانه قفل",
+          "definition_fa": "ویژگی مکانیکی برای نگه‌داشتن اتصال در وضعیت جفت‌شده.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the lock tab as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-016",
+          "term_en": "Secondary lock / CPA / TPA",
+          "term_fa": "قفل ثانویه / ضامن اطمینان ترمینال",
+          "definition_fa": "ویژگی ثانویه برای اطمینان از قفل کانکتور یا موقعیت ترمینال؛ نام دقیق وابسته به سازنده است.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the secondary lock / cpa / tpa as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-017",
+          "term_en": "Harness routing",
+          "term_fa": "مسیرگذاری دسته‌سیم",
+          "definition_fa": "مسیر عبور دسته‌سیم در خودرو با رعایت فاصله و مهار مناسب.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the harness routing as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-018",
+          "term_en": "Chafing",
+          "term_fa": "ساییدگی ناشی از تماس",
+          "definition_fa": "آسیب تدریجی عایق یا هادی در اثر تماس و حرکت نسبت به سطح دیگر.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the chafing as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-019",
+          "term_en": "Abrasion",
+          "term_fa": "سایش",
+          "definition_fa": "فرسایش سطحی ناشی از اصطکاک یا تماس مکرر.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the abrasion as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-020",
+          "term_en": "Strain relief",
+          "term_fa": "مهار کشش",
+          "definition_fa": "ساختار یا روش کاهش انتقال نیروی کششی به محل اتصال.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the strain relief as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        },
+        {
+          "id": "C-021",
+          "term_en": "Terminal back-out",
+          "term_fa": "عقب‌نشینی ترمینال",
+          "definition_fa": "خارج‌شدن یا عقب‌رفتن ترمینال از موقعیت طراحی‌شده داخل پوسته کانکتور.",
+          "section": "D_connectors_harnesses",
+          "example_en": "The service information identifies the terminal back-out as a connector feature.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-006",
+            "SRC-ED-007"
+          ]
+        }
+      ]
+    },
+    "E_vehicle_electronics": {
+      "records": [
+        {
+          "id": "S-001",
+          "term_en": "Battery circuit",
+          "term_fa": "مدار باتری",
+          "definition_fa": "مسیرهای مرتبط با ذخیره و توزیع انرژی الکتریکی باتری.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to battery circuit.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-002",
+          "term_en": "Charging circuit",
+          "term_fa": "مدار شارژ",
+          "definition_fa": "مدارها و کنترل‌هایی که شارژ باتری را در شرایط تعریف‌شده مدیریت می‌کنند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to charging circuit.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-003",
+          "term_en": "Starting circuit",
+          "term_fa": "مدار استارت",
+          "definition_fa": "مدار کنترل و توان مرتبط با راه‌اندازی موتور.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to starting circuit.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-004",
+          "term_en": "Sensor supply",
+          "term_fa": "تغذیه سنسور",
+          "definition_fa": "منبع تغذیه اختصاص‌یافته به سنسور؛ مقدار و ماهیت آن به طراحی خودرو وابسته است.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to sensor supply.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-005",
+          "term_en": "Reference voltage",
+          "term_fa": "ولتاژ مرجع",
+          "definition_fa": "سطح ولتاژ مرجعی که واحد کنترل یا مدار برای اندازه‌گیری/حس‌کردن استفاده می‌کند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to reference voltage.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-006",
+          "term_en": "Sensor ground",
+          "term_fa": "زمین سنسور",
+          "definition_fa": "مسیر مرجع برگشت اختصاص‌یافته یا تعریف‌شده برای سنسور.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to sensor ground.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-007",
+          "term_en": "Signal wire",
+          "term_fa": "سیم سیگنال",
+          "definition_fa": "هادی حامل اطلاعات الکتریکی از سنسور یا به/از واحد کنترل.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to signal wire.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-008",
+          "term_en": "Actuator control",
+          "term_fa": "کنترل عملگر",
+          "definition_fa": "فرمان الکتریکی واحد کنترل برای تغییر وضعیت یک عملگر.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to actuator control.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-009",
+          "term_en": "High-side driver",
+          "term_fa": "درایور سمت مثبت",
+          "definition_fa": "مدار سوئیچ‌کننده‌ای که بار را از سمت تغذیه مثبت کنترل می‌کند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to high-side driver.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-010",
+          "term_en": "Low-side driver",
+          "term_fa": "درایور سمت زمین",
+          "definition_fa": "مدار سوئیچ‌کننده‌ای که بار را از سمت زمین/برگشت کنترل می‌کند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to low-side driver.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-011",
+          "term_en": "Relay control",
+          "term_fa": "کنترل رله",
+          "definition_fa": "مدار فرمانی که وضعیت کنتاکت رله را کنترل می‌کند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to relay control.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-012",
+          "term_en": "PWM control",
+          "term_fa": "کنترل مدولاسیون پهنای پالس",
+          "definition_fa": "روش کنترل با تغییر نسبت زمان فعال بودن سیگنال دوره‌ای.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to pwm control.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-013",
+          "term_en": "Pull-up resistor",
+          "term_fa": "مقاومت بالاکش",
+          "definition_fa": "مقاومتی که یک خط سیگنال را به سطح مرجع بالاتر می‌کشاند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to pull-up resistor.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-014",
+          "term_en": "Pull-down resistor",
+          "term_fa": "مقاومت پایین‌کش",
+          "definition_fa": "مقاومتی که یک خط سیگنال را به سطح مرجع پایین‌تر می‌کشاند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to pull-down resistor.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-015",
+          "term_en": "CAN High / CAN Low",
+          "term_fa": "خط CAN-High / CAN-Low",
+          "definition_fa": "دو خط سیگنال در لایه فیزیکی شبکه CAN؛ رفتار الکتریکی به استاندارد و پیاده‌سازی وابسته است.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to can high / can low.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-016",
+          "term_en": "LIN bus",
+          "term_fa": "گذرگاه LIN",
+          "definition_fa": "شبکه ارتباطی سریال کم‌هزینه برای کاربردهای مشخص خودرو.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to lin bus.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-017",
+          "term_en": "Termination",
+          "term_fa": "مقاومت/شبکه انتهایی",
+          "definition_fa": "عنصر تطبیق انتهای شبکه که بازتاب سیگنال را در توپولوژی‌های مشخص کنترل می‌کند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to termination.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-018",
+          "term_en": "Bus-off",
+          "term_fa": "وضعیت Bus-off",
+          "definition_fa": "وضعیتی در CAN که یک گره به‌دلیل خطاهای ارتباطی از ارسال فعال کنار می‌رود.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to bus-off.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-019",
+          "term_en": "ECU power and ground",
+          "term_fa": "تغذیه و زمین ECU",
+          "definition_fa": "مسیرهای تغذیه و برگشت واحد کنترل؛ بررسی آن‌ها باید مطابق مستندات خودرو باشد.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to ecu power and ground.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-020",
+          "term_en": "Wake-up",
+          "term_fa": "بیدارسازی شبکه/واحد",
+          "definition_fa": "رویداد یا سیگنالی که واحد یا شبکه را از وضعیت خواب خارج می‌کند.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to wake-up.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-021",
+          "term_en": "Sleep mode",
+          "term_fa": "حالت خواب",
+          "definition_fa": "وضعیت کم‌مصرف واحدها/شبکه پس از شرایط خاموشی تعریف‌شده.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to sleep mode.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "S-022",
+          "term_en": "Parasitic current draw",
+          "term_fa": "مصرف جریان انگلی",
+          "definition_fa": "جریان باقی‌مانده در وضعیت خواب؛ مقدار و زمان ورود به خواب وابسته به خودرو است.",
+          "section": "E_vehicle_electronics",
+          "example_en": "The technical description refers to parasitic current draw.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        }
+      ]
+    },
+    "F_scan_tool_language": {
+      "records": [
+        {
+          "id": "D-001",
+          "term_en": "DTC",
+          "term_fa": "کد عیب‌یابی",
+          "definition_fa": "شناسه‌ای که یک سامانه برای گزارش وضعیت یا نقص تشخیص‌داده‌شده ذخیره/ارسال می‌کند؛ به‌تنهایی اثبات خرابی یک قطعه نیست.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists DTC as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-002",
+          "term_en": "Current DTC",
+          "term_fa": "کد جاری",
+          "definition_fa": "کدی که در وضعیت جاری معیارهای تشخیص را برآورده می‌کند؛ تعریف دقیق در سامانه متفاوت است.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Current DTC as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-003",
+          "term_en": "History DTC",
+          "term_fa": "کد تاریخی",
+          "definition_fa": "کدی که در گذشته ثبت شده و ممکن است در زمان بررسی دیگر فعال نباشد.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists History DTC as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-004",
+          "term_en": "Pending DTC",
+          "term_fa": "کد در انتظار تأیید",
+          "definition_fa": "کدی که شرایط اولیه تشخیص را ثبت کرده اما ممکن است هنوز معیارهای نهایی ثبت را برآورده نکرده باشد.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Pending DTC as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-005",
+          "term_en": "Permanent DTC",
+          "term_fa": "کد دائمی",
+          "definition_fa": "نوعی کد آلایندگی/OBD که پاک‌کردن دستی معمولاً آن را حذف نمی‌کند و منطق تأیید سامانه برای پاک‌شدن لازم است.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Permanent DTC as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-006",
+          "term_en": "Freeze frame",
+          "term_fa": "داده فریزفریم",
+          "definition_fa": "مجموعه‌ای از داده‌های عملیاتی ثبت‌شده هنگام وقوع یک رویداد تشخیصی.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Freeze frame as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-007",
+          "term_en": "Live data",
+          "term_fa": "داده زنده",
+          "definition_fa": "مقادیر یا وضعیت‌هایی که ابزار از واحد کنترل در زمان ارتباط نمایش می‌دهد.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Live data as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-008",
+          "term_en": "Status",
+          "term_fa": "وضعیت",
+          "definition_fa": "برچسبی برای توصیف حالت کد، مانیتور یا پارامتر؛ معنی به نرم‌افزار و OEM وابسته است.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Status as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-009",
+          "term_en": "Circuit high",
+          "term_fa": "سطح سیگنال/مدار بالا",
+          "definition_fa": "توصیف تشخیصی از سطح بالاتر از محدوده مورد انتظار؛ علت دقیق بدون آزمون و اطلاعات خودرو معلوم نمی‌شود.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Circuit high as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-010",
+          "term_en": "Circuit low",
+          "term_fa": "سطح سیگنال/مدار پایین",
+          "definition_fa": "توصیف تشخیصی از سطح پایین‌تر از محدوده مورد انتظار؛ به‌تنهایی قطعه معیوب را مشخص نمی‌کند.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Circuit low as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-011",
+          "term_en": "Signal implausible",
+          "term_fa": "سیگنال نامعقول/ناسازگار",
+          "definition_fa": "سیگنالی که با مدل منطقی یا داده‌های دیگر سازگار نیست.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Signal implausible as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-012",
+          "term_en": "Open/short fault",
+          "term_fa": "خطای مدار باز/اتصال کوتاه",
+          "definition_fa": "توصیف نوع نقص الکتریکی در مسیر؛ محل و علت باید جداگانه مشخص شود.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Open/short fault as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-013",
+          "term_en": "Reference voltage fault",
+          "term_fa": "خطای ولتاژ مرجع",
+          "definition_fa": "وضعیت غیرعادی در خط مرجع؛ چندین علت ممکن است و قطعه خاصی را به‌تنهایی محکوم نمی‌کند.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Reference voltage fault as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-014",
+          "term_en": "Active test",
+          "term_fa": "آزمون فعال/فرمان عملگر",
+          "definition_fa": "قابلیتی برای درخواست عملکرد یک جزء از طریق ابزار؛ استفاده از آن باید فقط طبق رویه سازنده و با نظارت تکنسین باشد.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Active test as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-015",
+          "term_en": "Monitor status",
+          "term_fa": "وضعیت مانیتور",
+          "definition_fa": "نشان می‌دهد مانیتور تشخیصی سامانه در چه وضعیتی است.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Monitor status as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-016",
+          "term_en": "Readiness",
+          "term_fa": "آمادگی مانیتورهای OBD",
+          "definition_fa": "وضعیت تکمیل آزمون‌های خودپایشی آلایندگی در شرایط تعریف‌شده.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Readiness as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        },
+        {
+          "id": "D-017",
+          "term_en": "Communication fault",
+          "term_fa": "خطای ارتباطی",
+          "definition_fa": "اختلال در تبادل داده بین ابزار و واحد یا میان واحدهای شبکه.",
+          "section": "F_scan_tool_language",
+          "example_en": "The scan report lists Communication fault as a status or diagnostic term.",
+          "status": "candidate_unverified",
+          "source_ids": [
+            "SRC-ED-004",
+            "SRC-ED-005"
+          ]
+        }
+      ]
+    }
+  },
+  "workshop_phrases": [
+    {
+      "id": "PH-001",
+      "en": "The meter is set to the correct function.",
+      "fa": "ابزار روی عملکرد اندازه‌گیری درست تنظیم شده است.",
+      "category": "measurement",
+      "register": "neutral",
+      "author_generated": true
+    },
+    {
+      "id": "PH-002",
+      "en": "Record the reading and the operating condition.",
+      "fa": "عدد خوانده‌شده و شرایط عملکرد را ثبت کنید.",
+      "category": "measurement",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-003",
+      "en": "The result must be compared with the vehicle specification.",
+      "fa": "نتیجه باید با مشخصات همان خودرو مقایسه شود.",
+      "category": "measurement",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-004",
+      "en": "The circuit is being evaluated under load.",
+      "fa": "مدار در وضعیت زیر بار ارزیابی می‌شود.",
+      "category": "measurement",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-005",
+      "en": "A continuity result does not prove performance under load.",
+      "fa": "نتیجه آزمون پیوستگی، عملکرد زیر بار را اثبات نمی‌کند.",
+      "category": "measurement",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-006",
+      "en": "The voltage-drop result depends on current flow.",
+      "fa": "نتیجه افت ولتاژ به عبور جریان وابسته است.",
+      "category": "measurement",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-007",
+      "en": "The report does not include a universal pass/fail value.",
+      "fa": "گزارش هیچ مقدار عمومیِ قبولی/ردی ارائه نمی‌کند.",
+      "category": "measurement",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-008",
+      "en": "The wiring diagram shows the circuit reference.",
+      "fa": "نقشه سیم‌کشی مرجع ارجاع مدار را نشان می‌دهد.",
+      "category": "diagram",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-009",
+      "en": "Check the connector view before interpreting pin numbers.",
+      "fa": "پیش از تفسیر شماره پین‌ها، نمای کانکتور را بررسی کنید.",
+      "category": "diagram",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-010",
+      "en": "The wire color code varies by manufacturer.",
+      "fa": "کد رنگ سیم بین سازندگان متفاوت است.",
+      "category": "diagram",
+      "register": "neutral",
+      "author_generated": true
+    },
+    {
+      "id": "PH-011",
+      "en": "The splice is shown on the next page.",
+      "fa": "اتصال انشعابی در صفحه بعد نشان داده شده است.",
+      "category": "diagram",
+      "register": "neutral",
+      "author_generated": true
+    },
+    {
+      "id": "PH-012",
+      "en": "The ground point is identified in the service information.",
+      "fa": "نقطه اتصال زمین در اطلاعات تعمیراتی مشخص شده است.",
+      "category": "diagram",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-013",
+      "en": "The component location is shown in a separate illustration.",
+      "fa": "محل قطعه در تصویر جداگانه نشان داده شده است.",
+      "category": "diagram",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-014",
+      "en": "The connector has a secondary locking feature.",
+      "fa": "کانکتور دارای ویژگی قفل ثانویه است.",
+      "category": "connector",
+      "register": "neutral",
+      "author_generated": true
+    },
+    {
+      "id": "PH-015",
+      "en": "The terminal position must match the connector drawing.",
+      "fa": "موقعیت ترمینال باید با نقشه کانکتور مطابقت داشته باشد.",
+      "category": "connector",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-016",
+      "en": "The harness shows signs of abrasion.",
+      "fa": "دسته‌سیم نشانه‌هایی از سایش دارد.",
+      "category": "connector",
+      "register": "neutral",
+      "author_generated": true
+    },
+    {
+      "id": "PH-017",
+      "en": "The fault may be intermittent.",
+      "fa": "ممکن است عیب متناوب باشد.",
+      "category": "reporting",
+      "register": "neutral",
+      "author_generated": true
+    },
+    {
+      "id": "PH-018",
+      "en": "The connection condition requires further assessment.",
+      "fa": "وضعیت اتصال به ارزیابی بیشتری نیاز دارد.",
+      "category": "reporting",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-019",
+      "en": "The available evidence does not identify a failed component.",
+      "fa": "شواهد موجود قطعه معیوب را مشخص نمی‌کند.",
+      "category": "reporting",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-020",
+      "en": "The DTC is a diagnostic clue, not a parts verdict.",
+      "fa": "کد عیب یک سرنخ تشخیصی است، نه حکم خرابی قطعه.",
+      "category": "reporting",
+      "register": "neutral",
+      "author_generated": true
+    },
+    {
+      "id": "PH-021",
+      "en": "The code was stored during the previous drive cycle.",
+      "fa": "کد در چرخه رانندگی قبلی ذخیره شده است.",
+      "category": "reporting",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-022",
+      "en": "The freeze-frame data records the operating context.",
+      "fa": "داده فریزفریم شرایط عملکرد را ثبت می‌کند.",
+      "category": "reporting",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-023",
+      "en": "The scan tool displays live data from the control unit.",
+      "fa": "دستگاه دیاگ داده زنده را از واحد کنترل نمایش می‌دهد.",
+      "category": "reporting",
+      "register": "neutral",
+      "author_generated": true
+    },
+    {
+      "id": "PH-024",
+      "en": "The network communication status is abnormal.",
+      "fa": "وضعیت ارتباط شبکه غیرعادی است.",
+      "category": "reporting",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-025",
+      "en": "The repair outcome must be confirmed using the approved procedure.",
+      "fa": "نتیجه تعمیر باید با روش تأییدشده بررسی شود.",
+      "category": "verification",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-026",
+      "en": "The original symptom could not be reproduced.",
+      "fa": "علامت اولیه قابل بازتولید نبود.",
+      "category": "verification",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-027",
+      "en": "The system completed its self-check successfully.",
+      "fa": "سامانه خودآزمایی خود را با موفقیت تکمیل کرد.",
+      "category": "verification",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-028",
+      "en": "No conclusion should be drawn from one code alone.",
+      "fa": "نباید تنها بر اساس یک کد نتیجه‌گیری کرد.",
+      "category": "verification",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-029",
+      "en": "Follow the vehicle manufacturer's safety information.",
+      "fa": "اطلاعات ایمنی سازنده خودرو را رعایت کنید.",
+      "category": "safety",
+      "register": "formal",
+      "author_generated": true
+    },
+    {
+      "id": "PH-030",
+      "en": "Do not probe safety-system or high-voltage circuits without authorized training.",
+      "fa": "بدون آموزش و صلاحیت مجاز، مدارهای سامانه‌های ایمنی یا ولتاژ بالا را اندازه‌گیری نکنید.",
+      "category": "safety",
+      "register": "formal",
+      "author_generated": true
+    }
+  ],
+  "translation_notes": [
+    {
+      "term": "ground / earth",
+      "note_fa": "در خودرو معمولاً ground به مرجع برگشت/بدنه اشاره دارد؛ earth در انگلیسی بریتانیایی و متون برق عمومی رایج‌تر است. در خودرو، این دو را بدون توجه به نقشه و مرجع سازنده یکسان فرض نکنید."
+    },
+    {
+      "term": "short",
+      "note_fa": "در زبان عمومی کوتاه؛ در برق خودرو معمولاً کوتاه‌شدن ناخواسته مسیر با مسیر دیگر یا مرجع است. عبارت دقیق short to ground یا short to voltage لازم است."
+    },
+    {
+      "term": "open",
+      "note_fa": "در open circuit منظور مدار باز/گسست مسیر است، نه «باز کردن» مکانیکی قطعه."
+    },
+    {
+      "term": "draw",
+      "note_fa": "در current draw به معنی مصرف/کشیدن جریان است، نه ترسیم."
+    },
+    {
+      "term": "feed",
+      "note_fa": "در power feed به معنی خط یا مسیر تغذیه است."
+    },
+    {
+      "term": "load",
+      "note_fa": "در مدار به مصرف‌کننده/بار الکتریکی اشاره دارد؛ در مکالمه عمومی معنی بار یا محموله هم می‌دهد."
+    },
+    {
+      "term": "drop",
+      "note_fa": "در voltage drop به معنی افت اختلاف پتانسیل در بخشی از مدار است، نه سقوط فیزیکی."
+    },
+    {
+      "term": "reference",
+      "note_fa": "در reference voltage/ground reference به معنی مرجع اندازه‌گیری یا سطح مرجع است."
+    },
+    {
+      "term": "signal",
+      "note_fa": "سیگنال حامل اطلاعات است؛ لزوماً همان تغذیه یا توان قطعه نیست."
+    },
+    {
+      "term": "terminal / pin / socket / cavity",
+      "note_fa": "terminal عنصر تماس رسانا؛ pin می‌تواند تماس نری یا شماره موقعیت باشد؛ socket کنتاکت مادگی؛ cavity خانه فیزیکی در پوسته کانکتور است. کاربرد دقیق OEMمحور است."
+    },
+    {
+      "term": "circuit breaker",
+      "note_fa": "در خودرو معمولاً کلید حفاظتی قابل بازنشانی/قطع‌کننده مدار است؛ با fuse یکسان نیست."
+    }
+  ],
+  "safety_boundary_fa": "این بسته واژه‌نامه و مرجع مفهومی است. برای کاربر نوجوان، هیچ دستور عملی اتصال پراب، بازکردن کانکتور، آزمون مدار SRS/ایربگ، مدار ولتاژ بالا، اندازه‌گیری جریان یا کار روی خودرو ارائه نمی‌شود. چنین کارهایی فقط توسط تکنسین واجد صلاحیت و طبق اطلاعات تعمیراتی همان خودرو انجام می‌شود. هیچ مقدار عمومی ولتاژ/مقاومت/جریان یا pinout ارائه نشده است."
+}
