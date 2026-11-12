@@ -1,0 +1,196 @@
+{
+  "mission_id": "AI2-SENSORS-ACTUATORS-TERMINOLOGY-001",
+  "status": "candidate_unverified",
+  "dialogues": [
+    {
+      "dialogue_id": "SA-DLG-001",
+      "title": "Separating CKP and CMP information",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The scan report shows an engine speed value, but synchronization status is not available.",
+          "fa": "گزارش دیاگ مقدار دور موتور را نشان می‌دهد، اما وضعیت هم‌زمانی در دسترس نیست."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Which position inputs are listed for this engine?",
+          "fa": "برای این موتور کدام ورودی‌های موقعیت فهرست شده‌اند؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "The data list includes crankshaft and camshaft position signals.",
+          "fa": "فهرست داده‌ها شامل سیگنال‌های موقعیت میل‌لنگ و میل‌بادامک است."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Describe their roles without assuming that both sensors use the same technology.",
+          "fa": "نقش آن‌ها را توضیح بده، بدون اینکه فرض کنی هر دو از فناوری یکسانی استفاده می‌کنند."
+        },
+        {
+          "speaker": "Technician",
+          "en": "CKP provides crankshaft speed and position information; CMP adds camshaft phase information.",
+          "fa": "CKP اطلاعات سرعت و موقعیت میل‌لنگ را فراهم می‌کند؛ CMP اطلاعات فاز میل‌بادامک را اضافه می‌کند."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Good. Record the exact engine application before interpreting the signal design.",
+          "fa": "خوب است. پیش از تفسیر طراحی سیگنال، مشخصات دقیق موتور را ثبت کن."
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "dialogue_id": "SA-DLG-002",
+      "title": "Understanding air and temperature data",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The live-data screen contains MAP, MAF and IAT values.",
+          "fa": "صفحه داده زنده شامل مقادیر MAP، MAF و IAT است."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "What does each label describe?",
+          "fa": "هر برچسب چه چیزی را توصیف می‌کند؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "MAP refers to manifold pressure, MAF to air mass, and IAT to intake-air temperature.",
+          "fa": "MAP به فشار منیفولد، MAF به جرم هوا و IAT به دمای هوای ورودی اشاره دارد."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Are those values interchangeable?",
+          "fa": "آیا این مقادیر قابل جایگزینی هستند؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. They describe different physical quantities and may be used together by the control strategy.",
+          "fa": "خیر. آن‌ها کمیت‌های فیزیکی متفاوتی را توصیف می‌کنند و ممکن است در راهبرد کنترل با هم استفاده شوند."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Exactly. Keep the units and parameter definitions visible in the report.",
+          "fa": "دقیقاً. واحدها و تعریف پارامترها را در گزارش مشخص نگه دار."
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "dialogue_id": "SA-DLG-003",
+      "title": "Commanded state and actual value",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The screen shows a commanded throttle position and a separate actual value.",
+          "fa": "صفحه، موقعیت فرمان‌داده‌شده دریچه گاز و یک مقدار واقعی جداگانه را نشان می‌دهد."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Why are both values useful?",
+          "fa": "چرا هر دو مقدار مفید هستند؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "They describe the requested state and the feedback reported by the system.",
+          "fa": "آن‌ها وضعیت درخواستی و بازخورد گزارش‌شده از سامانه را توصیف می‌کنند."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Does a difference automatically prove actuator failure?",
+          "fa": "آیا اختلاف به‌طور خودکار خرابی عملگر را ثابت می‌کند؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. Operating conditions, response time and feedback design also matter.",
+          "fa": "خیر. شرایط کاری، زمان پاسخ و طراحی بازخورد نیز اهمیت دارند."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "State the observed deviation without naming an unconfirmed failed part.",
+          "fa": "اختلاف مشاهده‌شده را بیان کن، بدون اینکه قطعه‌ای تأییدنشده را معیوب اعلام کنی."
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "dialogue_id": "SA-DLG-004",
+      "title": "Interpreting a plausibility fault",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The control unit stored an implausible signal description for the temperature input.",
+          "fa": "واحد کنترل برای ورودی دما شرح سیگنال نامعقول را ذخیره کرده است."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Does that description identify the sensor as the cause?",
+          "fa": "آیا این شرح، حسگر را به‌عنوان علت مشخص می‌کند؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. It describes a monitored relationship that did not meet the expected logic.",
+          "fa": "خیر. این عبارت رابطه‌ای پایش‌شده را توصیف می‌کند که با منطق مورد انتظار سازگار نبوده است."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "What context should accompany the diagnostic wording?",
+          "fa": "چه اطلاعاتی باید همراه عبارت عیب‌یابی ثبت شود؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "Fault status, freeze-frame context, related inputs and exact vehicle documentation.",
+          "fa": "وضعیت خطا، شرایط ثبت‌شده، ورودی‌های مرتبط و مستندات دقیق خودرو."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Keep the cause open until evidence supports a conclusion.",
+          "fa": "تا زمانی که شواهد از نتیجه پشتیبانی نکرده‌اند، علت را قطعی نکن."
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    },
+    {
+      "dialogue_id": "SA-DLG-005",
+      "title": "Fuel injector terminology",
+      "turns": [
+        {
+          "speaker": "Technician",
+          "en": "The service description refers to an injector command and a fuel-delivery concern.",
+          "fa": "شرح سرویس به فرمان انژکتور و مسئله‌ای در تحویل سوخت اشاره می‌کند."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "What is the injector's role in engine management?",
+          "fa": "نقش انژکتور در مدیریت موتور چیست؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "It is an actuator that delivers fuel according to the control strategy.",
+          "fa": "انژکتور عملگری است که مطابق راهبرد کنترل، سوخت را تحویل می‌دهد."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Does an electrical command alone confirm the expected fuel delivery?",
+          "fa": "آیا صرف فرمان الکتریکی، تحویل سوخت مورد انتظار را تأیید می‌کند؟"
+        },
+        {
+          "speaker": "Technician",
+          "en": "No. The command and the physical result are separate pieces of information.",
+          "fa": "خیر. فرمان و نتیجه فیزیکی دو نوع اطلاعات جداگانه هستند."
+        },
+        {
+          "speaker": "Supervisor",
+          "en": "Use precise wording and avoid inferring injector condition from one data item.",
+          "fa": "از عبارت دقیق استفاده کن و وضعیت انژکتور را از روی یک داده به‌تنهایی نتیجه نگیر."
+        }
+      ],
+      "status": "candidate_unverified",
+      "author_generated": true
+    }
+  ]
+}
