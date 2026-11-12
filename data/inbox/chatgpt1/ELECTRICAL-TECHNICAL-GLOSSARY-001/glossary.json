@@ -1,0 +1,406 @@
+{
+  "mission_id": "AI1-ELECTRICAL-TECHNICAL-GLOSSARY-001",
+  "title_en": "Automotive Electrical English — Core Diagnostic Vocabulary",
+  "title_fa": "واژه‌نامه پایه زبان تخصصی برق و عیب‌یابی خودرو",
+  "version": "0.1.0",
+  "status": "draft_needs_technical_review",
+  "scope_fa": "واژگان فنی برق و الکترونیک خودرو با تمرکز بر فهم نقشه، گزارش عیب و مکالمه تعمیرگاهی. این فایل مکمل آموزشی است و هنوز به بانک اصلی اصطلاحات متصل نشده است.",
+  "verification_policy_fa": "ترجمه‌ها، تلفظ‌ها و تعریف‌ها پیش‌نویس آموزشی هستند؛ تا زمان تطبیق با منابع فنی معتبر و بازبینی انسانی verified محسوب نمی‌شوند. هیچ TERM ID یا PART ID ساخته نشده است.",
+  "entries": [
+    {
+      "entry_id": "ELX-001",
+      "term_en": "electrical circuit",
+      "term_fa": "مدار الکتریکی",
+      "pronunciation_fa": "اِلِکتریکَل سِرکیت",
+      "ipa": "/ɪˈlektrɪkəl ˈsɜːrkɪt/",
+      "definition_en": "a complete path through which current can flow under suitable conditions",
+      "definition_fa": "مدار، مسیر الکتریکی کامل برای عبور جریان در شرایط مناسب است.",
+      "collocations": [
+        "complete circuit",
+        "circuit diagram",
+        "circuit fault"
+      ],
+      "example_en": "The circuit is complete.",
+      "example_fa": "مدار کامل است.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-002",
+      "term_en": "voltage",
+      "term_fa": "ولتاژ؛ اختلاف پتانسیل",
+      "pronunciation_fa": "وُلتِج",
+      "ipa": "/ˈvoʊltɪdʒ/",
+      "definition_en": "electrical potential difference between two points",
+      "definition_fa": "ولتاژ اختلاف پتانسیل الکتریکی بین دو نقطه است.",
+      "collocations": [
+        "voltage supply",
+        "reference voltage",
+        "voltage reading"
+      ],
+      "example_en": "The sensor receives a specified voltage.",
+      "example_fa": "سنسور ولتاژ مشخص‌شده‌ای دریافت می‌کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-003",
+      "term_en": "current",
+      "term_fa": "جریان الکتریکی",
+      "pronunciation_fa": "کارِنت",
+      "ipa": "/ˈkɜːrənt/",
+      "definition_en": "the rate of flow of electric charge",
+      "definition_fa": "جریان، نرخ عبور بار الکتریکی است.",
+      "collocations": [
+        "current flow",
+        "current draw",
+        "excessive current"
+      ],
+      "example_en": "The circuit draws too much current.",
+      "example_fa": "این مدار جریان بیش از حدی می‌کشد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-004",
+      "term_en": "resistance",
+      "term_fa": "مقاومت الکتریکی",
+      "pronunciation_fa": "ریزِستَنس",
+      "ipa": "/rɪˈzɪstəns/",
+      "definition_en": "opposition to the flow of electric current",
+      "definition_fa": "مقاومت، میزان مخالفت با عبور جریان الکتریکی است.",
+      "collocations": [
+        "electrical resistance",
+        "high resistance",
+        "resistance measurement"
+      ],
+      "example_en": "High resistance can affect circuit operation.",
+      "example_fa": "مقاومت بالا می‌تواند بر عملکرد مدار اثر بگذارد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-005",
+      "term_en": "voltage drop",
+      "term_fa": "افت ولتاژ",
+      "pronunciation_fa": "وُلتِج دراپ",
+      "ipa": "/ˈvoʊltɪdʒ drɑːp/",
+      "definition_en": "the reduction in voltage across a component or section of a circuit when current flows",
+      "definition_fa": "کاهش ولتاژ در دو سر یک قطعه یا بخش مدار هنگام عبور جریان.",
+      "collocations": [
+        "voltage-drop test",
+        "excessive voltage drop"
+      ],
+      "example_en": "The report mentions excessive voltage drop.",
+      "example_fa": "در گزارش به افت ولتاژ بیش از حد اشاره شده است.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-006",
+      "term_en": "continuity",
+      "term_fa": "پیوستگی الکتریکی",
+      "pronunciation_fa": "کانتینیوئیتی",
+      "ipa": "/ˌkɑːntəˈnuːəti/",
+      "definition_en": "the existence of an electrically conductive path between points",
+      "definition_fa": "وجود مسیر رسانای الکتریکی بین نقاط موردنظر.",
+      "collocations": [
+        "continuity test",
+        "check continuity"
+      ],
+      "example_en": "The technician checks circuit continuity.",
+      "example_fa": "تکنسین پیوستگی مدار را بررسی می‌کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-007",
+      "term_en": "open circuit",
+      "term_fa": "مدار باز؛ قطعی مدار",
+      "pronunciation_fa": "اوپِن سِرکیت",
+      "ipa": "/ˈoʊpən ˈsɜːrkɪt/",
+      "definition_en": "a circuit path interrupted so the intended current cannot flow through that path",
+      "definition_fa": "مسیر مدار قطع شده و جریان مورد انتظار از آن مسیر عبور نمی‌کند.",
+      "collocations": [
+        "open-circuit fault",
+        "open wire"
+      ],
+      "example_en": "The scan report indicates an open circuit.",
+      "example_fa": "گزارش دستگاه دیاگ وجود مدار باز را نشان می‌دهد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-008",
+      "term_en": "short circuit",
+      "term_fa": "اتصال کوتاه",
+      "pronunciation_fa": "شورت سِرکیت",
+      "ipa": "/ˌʃɔːrt ˈsɜːrkɪt/",
+      "definition_en": "an unintended low-resistance connection that diverts current from its intended path",
+      "definition_fa": "اتصال ناخواسته‌ای با مقاومت کم که جریان را از مسیر طراحی‌شده منحرف می‌کند.",
+      "collocations": [
+        "short-circuit fault",
+        "short-circuit protection"
+      ],
+      "example_en": "A short circuit may trigger circuit protection.",
+      "example_fa": "اتصال کوتاه ممکن است حفاظت مدار را فعال کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-009",
+      "term_en": "short to ground",
+      "term_fa": "اتصال کوتاه به بدنه",
+      "pronunciation_fa": "شورت تو گراوند",
+      "ipa": "/ˌʃɔːrt tə ˈɡraʊnd/",
+      "definition_en": "an unintended connection between a circuit conductor and ground",
+      "definition_fa": "اتصال ناخواسته یک هادی مدار به زمین یا بدنه الکتریکی.",
+      "collocations": [
+        "short to ground fault",
+        "wire shorted to ground"
+      ],
+      "example_en": "The fault description says short to ground.",
+      "example_fa": "شرح خطا عبارت اتصال کوتاه به بدنه را نشان می‌دهد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-010",
+      "term_en": "short to power",
+      "term_fa": "اتصال ناخواسته به تغذیه",
+      "pronunciation_fa": "شورت تو پاوِر",
+      "ipa": "/ˌʃɔːrt tə ˈpaʊər/",
+      "definition_en": "an unintended connection between a circuit and a power source or supply line",
+      "definition_fa": "اتصال ناخواسته یک مدار به منبع یا خط تغذیه.",
+      "collocations": [
+        "short to power fault",
+        "shorted to battery voltage"
+      ],
+      "example_en": "The diagnostic description reports a short to power.",
+      "example_fa": "شرح عیب دیاگ اتصال ناخواسته به تغذیه را گزارش می‌کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-011",
+      "term_en": "ground",
+      "term_fa": "زمین الکتریکی؛ اتصال بدنه",
+      "pronunciation_fa": "گراوند",
+      "ipa": "/ɡraʊnd/",
+      "definition_en": "an electrical reference point or return path, depending on circuit design",
+      "definition_fa": "بسته به طراحی مدار، مرجع الکتریکی یا مسیر برگشت جریان است.",
+      "collocations": [
+        "ground point",
+        "chassis ground",
+        "ground connection"
+      ],
+      "example_en": "Check the ground point in the wiring diagram.",
+      "example_fa": "نقطه اتصال بدنه را در نقشه سیم‌کشی بررسی کنید.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-012",
+      "term_en": "ground circuit",
+      "term_fa": "مدار اتصال بدنه",
+      "pronunciation_fa": "گراوند سِرکیت",
+      "ipa": "/ˈɡraʊnd ˈsɜːrkɪt/",
+      "definition_en": "the part of a circuit that provides its specified ground or return connection",
+      "definition_fa": "بخشی از مدار که اتصال زمین یا مسیر برگشت تعیین‌شده را فراهم می‌کند.",
+      "collocations": [
+        "ground circuit fault",
+        "ground path"
+      ],
+      "example_en": "The ground circuit is shown on the diagram.",
+      "example_fa": "مدار اتصال بدنه در نقشه نشان داده شده است.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-013",
+      "term_en": "power supply",
+      "term_fa": "منبع تغذیه",
+      "pronunciation_fa": "پاوِر سَپلای",
+      "ipa": "/ˈpaʊər səˌplaɪ/",
+      "definition_en": "a source that provides electrical energy to a circuit",
+      "definition_fa": "منبعی که انرژی الکتریکی موردنیاز مدار را فراهم می‌کند.",
+      "collocations": [
+        "power supply circuit",
+        "supply voltage"
+      ],
+      "example_en": "The control unit needs its specified power supply.",
+      "example_fa": "واحد کنترل به منبع تغذیه تعیین‌شده خود نیاز دارد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-014",
+      "term_en": "reference voltage",
+      "term_fa": "ولتاژ مرجع",
+      "pronunciation_fa": "رِفِرِنس وُلتِج",
+      "ipa": "/ˈrefərəns ˈvoʊltɪdʒ/",
+      "definition_en": "a defined voltage used by a circuit or sensor as a reference",
+      "definition_fa": "ولتاژ تعریف‌شده‌ای که مدار یا سنسور از آن به‌عنوان مرجع استفاده می‌کند.",
+      "collocations": [
+        "reference voltage circuit",
+        "sensor reference"
+      ],
+      "example_en": "The sensor reference voltage is monitored by the control system.",
+      "example_fa": "ولتاژ مرجع سنسور توسط سامانه کنترل پایش می‌شود.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-015",
+      "term_en": "signal wire",
+      "term_fa": "سیم سیگنال",
+      "pronunciation_fa": "سیگنَل وایِر",
+      "ipa": "/ˈsɪɡnəl ˈwaɪər/",
+      "definition_en": "a conductor that carries an electrical signal between components",
+      "definition_fa": "هادی‌ای که سیگنال الکتریکی را بین اجزا منتقل می‌کند.",
+      "collocations": [
+        "sensor signal wire",
+        "signal circuit"
+      ],
+      "example_en": "The signal wire connects the sensor to the ECU.",
+      "example_fa": "سیم سیگنال، سنسور را به ECU متصل می‌کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-016",
+      "term_en": "electrical load",
+      "term_fa": "بار الکتریکی",
+      "pronunciation_fa": "اِلِکتریکَل لود",
+      "ipa": "/ɪˈlektrɪkəl loʊd/",
+      "definition_en": "a component or group of components that uses electrical power",
+      "definition_fa": "قطعه یا مجموعه‌ای از قطعات که توان الکتریکی مصرف می‌کنند.",
+      "collocations": [
+        "circuit load",
+        "load current",
+        "electrical load"
+      ],
+      "example_en": "The lamp is the load in this simple circuit.",
+      "example_fa": "لامپ در این مدار ساده، بار الکتریکی است.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-017",
+      "term_en": "wiring harness",
+      "term_fa": "دسته‌سیم",
+      "pronunciation_fa": "وایِرینگ هَرنِس",
+      "ipa": "/ˈwaɪərɪŋ ˈhɑːrnɪs/",
+      "definition_en": "an organized assembly of wires and related connectors for a vehicle system",
+      "definition_fa": "مجموعه سازمان‌یافته‌ای از سیم‌ها و اتصالات مربوط به یک سامانه خودرو.",
+      "collocations": [
+        "engine wiring harness",
+        "harness connector"
+      ],
+      "example_en": "The wiring harness connects several components.",
+      "example_fa": "دسته‌سیم چند قطعه را به یکدیگر متصل می‌کند.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-018",
+      "term_en": "terminal",
+      "term_fa": "پایه اتصال؛ ترمینال",
+      "pronunciation_fa": "تِرمینَل",
+      "ipa": "/ˈtɜːrmɪnəl/",
+      "definition_en": "a conductive connection point in a component or connector",
+      "definition_fa": "نقطه اتصال رسانا در یک قطعه یا کانکتور.",
+      "collocations": [
+        "connector terminal",
+        "terminal pin",
+        "loose terminal"
+      ],
+      "example_en": "A loose terminal can cause an intermittent connection.",
+      "example_fa": "شل بودن ترمینال می‌تواند باعث اتصال متناوب شود.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-019",
+      "term_en": "intermittent fault",
+      "term_fa": "عیب متناوب",
+      "pronunciation_fa": "اینترمیتِنت فالت",
+      "ipa": "/ˌɪntərˈmɪtənt fɔːlt/",
+      "definition_en": "a fault that occurs irregularly rather than continuously",
+      "definition_fa": "عیبی که به‌صورت نامنظم رخ می‌دهد و دائمی نیست.",
+      "collocations": [
+        "intermittent electrical fault",
+        "fault occurs intermittently"
+      ],
+      "example_en": "The customer reports an intermittent electrical fault.",
+      "example_fa": "مشتری از یک عیب الکتریکی متناوب گزارش می‌دهد.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    },
+    {
+      "entry_id": "ELX-020",
+      "term_en": "wiring diagram",
+      "term_fa": "نقشه سیم‌کشی",
+      "pronunciation_fa": "وایِرینگ دایَگرام",
+      "ipa": "/ˈwaɪərɪŋ ˈdaɪəɡræm/",
+      "definition_en": "a diagram showing electrical connections and circuit paths",
+      "definition_fa": "نقشه‌ای که اتصالات الکتریکی و مسیرهای مدار را نشان می‌دهد.",
+      "collocations": [
+        "wiring diagram",
+        "circuit diagram",
+        "connector view"
+      ],
+      "example_en": "Use the correct wiring diagram for this vehicle.",
+      "example_fa": "از نقشه سیم‌کشی صحیح همین خودرو استفاده کنید.",
+      "canonical_term_id": null,
+      "verification_status": "candidate_unverified"
+    }
+  ],
+  "language_notes": [
+    {
+      "topic": "voltage vs current",
+      "note_fa": "voltage (ولتاژ) و current (جریان) دو مفهوم متفاوت‌اند؛ در ترجمه یا مکالمه تعمیرگاهی نباید به‌جای هم به‌کار روند."
+    },
+    {
+      "topic": "ground",
+      "note_fa": "ground را با توجه به نقشه و معماری مدار ترجمه کن؛ همیشه به معنی هر نقطه فلزی بدنه نیست."
+    },
+    {
+      "topic": "short to ground vs short to power",
+      "note_fa": "این دو شرح عیب متفاوت‌اند؛ اولی اتصال ناخواسته به زمین/بدنه و دومی اتصال ناخواسته به خط تغذیه است."
+    },
+    {
+      "topic": "voltage drop",
+      "note_fa": "voltage drop را «افت ولتاژ» ترجمه کن، نه «ولتاژ پایین»؛ این اصطلاح به کاهش ولتاژ در یک بخش مدار اشاره دارد."
+    }
+  ],
+  "workshop_phrases": [
+    {
+      "en": "Can you show me the wiring diagram?",
+      "fa": "می‌توانید نقشه سیم‌کشی را به من نشان دهید؟"
+    },
+    {
+      "en": "The fault is intermittent.",
+      "fa": "عیب متناوب است."
+    },
+    {
+      "en": "The scan tool reports an open circuit.",
+      "fa": "دستگاه دیاگ مدار باز را گزارش می‌کند."
+    },
+    {
+      "en": "We need to identify the correct ground point.",
+      "fa": "باید نقطه اتصال بدنه صحیح را مشخص کنیم."
+    },
+    {
+      "en": "The connector terminal may be loose.",
+      "fa": "ممکن است ترمینال کانکتور شل باشد."
+    }
+  ],
+  "source_requirements": [
+    "برای تعریف‌های عمومی مدار، ولتاژ، جریان و مقاومت: مرجع معتبر مبانی برق/الکترونیک.",
+    "برای voltage drop، continuity و روش آزمون: راهنمای آموزشی سازنده ابزار اندازه‌گیری یا مرجع تخصصی عیب‌یابی خودرو.",
+    "برای اصطلاحات short to ground و short to power: راهنمای رسمی OEM یا راهنمای سرویس همان سامانه؛ از تعمیم متن یک سازنده به همه خودروها پرهیز شود.",
+    "برای ground، wiring harness و terminal: نقشه سیم‌کشی و مستندات OEM برای مثال‌های مدل‌محور."
+  ],
+  "safety_note_fa": "این واژه‌نامه برای یادگیری زبان و فهم مفاهیم است، نه دستورالعمل آزمون. پیش از هر اندازه‌گیری یا دستکاری مدار، روش سازنده، شرایط ایمن‌سازی سامانه و به‌ویژه الزامات سامانه‌های SRS و ولتاژبالا باید رعایت شود."
+}
