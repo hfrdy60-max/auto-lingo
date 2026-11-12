@@ -1,0 +1,95 @@
+{
+  "task_id": "AI2-PROTOCOL-V2-OPS-HARDENING-REVIEW-001",
+  "reviewed_branch": "ai1-protocol-v2-ops-hardening-001",
+  "reviewed_commit": "66adb3ca274f4bc325cceb968182c0e20af04f82",
+  "baseline": "main:database_schema.sql",
+  "decision": "agree_with_changes",
+  "summary": {
+    "p1": 5,
+    "p2": 4,
+    "ready_for_owner_adoption": false
+  },
+  "findings": [
+    {
+      "id": "H-01",
+      "severity": "P1",
+      "topic": "review claim outcome enum mismatch",
+      "decision": "agree_with_changes",
+      "required_action": "Align to supported/contradicted/unresolved/not_applicable."
+    },
+    {
+      "id": "H-02",
+      "severity": "P1",
+      "topic": "AI review decision can be marked verified",
+      "decision": "agree_with_changes",
+      "required_action": "Separate recommendation from human owner/release authorization; prevent AI from authoritative verified/P0 clearance."
+    },
+    {
+      "id": "H-03",
+      "severity": "P1",
+      "topic": "Evidence not mapped to claim keys",
+      "decision": "agree_with_changes",
+      "required_action": "Add claim mapping and validate all referenced claim keys."
+    },
+    {
+      "id": "H-04",
+      "severity": "P1",
+      "topic": "Unconstrained entity identity",
+      "decision": "agree_with_changes",
+      "required_action": "Constrain entity types and validate table-specific IDs, including learning objects."
+    },
+    {
+      "id": "H-05",
+      "severity": "P1",
+      "topic": "Asset eligibility lacks intended distribution profile",
+      "decision": "agree_with_changes",
+      "required_action": "Enforce permissions required by declared deployment profile."
+    },
+    {
+      "id": "H-06",
+      "severity": "P2",
+      "topic": "Malformed URL crash and permissive date parsing",
+      "decision": "agree_with_changes",
+      "required_action": "Catch URL parsing errors and enforce canonical dates; add negative fixtures."
+    },
+    {
+      "id": "H-07",
+      "severity": "P2",
+      "topic": "File path traversal validation only under --verify-files",
+      "decision": "agree_with_changes",
+      "required_action": "Always validate safe repository-relative path and containment."
+    },
+    {
+      "id": "H-08",
+      "severity": "P2",
+      "topic": "No validator/schema parity fixtures",
+      "decision": "agree_with_changes",
+      "required_action": "Add valid/invalid fixtures and CI parity tests."
+    },
+    {
+      "id": "H-09",
+      "severity": "P2",
+      "topic": "Duplicate claim keys and unchecked supersession lineage",
+      "decision": "agree_with_changes",
+      "required_action": "Enforce unique keys and same-entity supersession references."
+    }
+  ],
+  "sql_review": {
+    "f09": "Read-only query covers all eight allowed entity_sources target tables; catches orphan/mismatched polymorphic links but does not replace FK integrity.",
+    "f10": "Source status/freshness/locator columns exist in main; 365-day value remains unapproved placeholder.",
+    "direct_sources": "vehicle_specifications and part_vehicle_compatibility columns match main; fitment locator absent.",
+    "execution": "Static review only; no live DB execution."
+  },
+  "limitations": [
+    "Static review; validator was not executed against repository fixture files.",
+    "No PostgreSQL instance or populated database was available for runtime SQL execution.",
+    "No branch protection, CI, or publishing pipeline was tested.",
+    "No rights authenticity or asset technical identity can be established by schema/validator alone."
+  ],
+  "non_actions": [
+    "No AI-1 files modified.",
+    "No main/production files modified.",
+    "No SQL or migration executed.",
+    "No production data, verification status, canonical selection, or frontend changed."
+  ]
+}
