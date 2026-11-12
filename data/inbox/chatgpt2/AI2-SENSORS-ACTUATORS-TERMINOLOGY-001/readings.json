@@ -1,0 +1,105 @@
+{
+  "mission_id": "AI2-SENSORS-ACTUATORS-TERMINOLOGY-001",
+  "status": "candidate_unverified",
+  "readings": [
+    {
+      "reading_id": "SA-READ-001",
+      "title_en": "How sensors inform engine management",
+      "title_fa": "سنسورها چگونه اطلاعات مدیریت موتور را فراهم می‌کنند",
+      "text_en": "An engine control unit receives information from sensors and uses programmed strategies to estimate operating conditions. A crankshaft position sensor provides information about crankshaft speed and position. A camshaft position sensor adds information about camshaft phase. Air-management inputs may include manifold absolute pressure, mass air flow and intake-air temperature. These measurements describe different quantities and should not be treated as interchangeable labels. Coolant temperature and oxygen-sensor information can also influence engine-management decisions. The exact sensor arrangement depends on engine design. A scan-tool parameter may be abbreviated, translated differently or calculated by the control unit. A technician reading a data list should identify the parameter definition, unit, operating context and vehicle application. An unusual value is a reason to review the context, not automatic proof that a sensor has failed. Clear technical English separates the measured quantity, the reported value and the suspected cause.",
+      "text_fa": "واحد کنترل موتور اطلاعات را از حسگرها دریافت می‌کند و با راهبردهای برنامه‌ریزی‌شده شرایط کاری را برآورد می‌کند. حسگر موقعیت میل‌لنگ اطلاعات سرعت و موقعیت میل‌لنگ را فراهم می‌کند. حسگر موقعیت میل‌بادامک اطلاعات فاز میل‌بادامک را اضافه می‌کند. ورودی‌های مدیریت هوا ممکن است شامل فشار مطلق منیفولد، جرم جریان هوا و دمای هوای ورودی باشند. این اندازه‌گیری‌ها کمیت‌های متفاوتی را توصیف می‌کنند و نباید قابل‌جایگزینی تلقی شوند. اطلاعات دمای مایع خنک‌کننده و حسگر اکسیژن نیز می‌توانند بر تصمیم‌های مدیریت موتور اثر بگذارند. آرایش حسگرها به طراحی موتور وابسته است. نام پارامتر در دستگاه عیب‌یاب ممکن است مخفف یا محاسبه‌شده باشد. تکنسین باید تعریف پارامتر، واحد، شرایط کاری و کاربرد خودرو را مشخص کند. مقدار غیرعادی دلیل بررسی زمینه است، نه اثبات خودکار خرابی حسگر. زبان فنی دقیق، کمیت اندازه‌گیری‌شده، مقدار گزارش‌شده و علت احتمالی را از هم جدا می‌کند.",
+      "questions": [
+        {
+          "question_en": "What does the CKP sensor report?",
+          "question_fa": "حسگر CKP چه چیزی را گزارش می‌کند؟",
+          "answer_en": "Crankshaft speed and position.",
+          "answer_fa": "سرعت و موقعیت میل‌لنگ."
+        },
+        {
+          "question_en": "Why are MAP, MAF and IAT different?",
+          "question_fa": "چرا MAP، MAF و IAT متفاوت‌اند؟",
+          "answer_en": "They describe different physical quantities.",
+          "answer_fa": "آن‌ها کمیت‌های فیزیکی متفاوتی را توصیف می‌کنند."
+        },
+        {
+          "question_en": "Does an unusual value prove sensor failure?",
+          "question_fa": "آیا مقدار غیرعادی خرابی حسگر را ثابت می‌کند؟",
+          "answer_en": "No; context and evidence must be reviewed.",
+          "answer_fa": "خیر؛ زمینه و شواهد باید بررسی شوند."
+        },
+        {
+          "question_en": "Name two items to identify in a data list.",
+          "question_fa": "دو مورد لازم برای شناسایی در فهرست داده‌ها را نام ببر.",
+          "answer_en": "Parameter definition and unit.",
+          "answer_fa": "تعریف پارامتر و واحد."
+        }
+      ]
+    },
+    {
+      "reading_id": "SA-READ-002",
+      "title_en": "Sensors and actuators: input versus output",
+      "title_fa": "سنسورها و عملگرها: ورودی در برابر خروجی",
+      "text_en": "Sensors and actuators have different roles in an electronically controlled vehicle. A sensor provides information about a physical condition such as position, pressure, temperature, speed or oxygen content. The control unit interprets this information within a programmed strategy. An actuator performs an action after receiving a command. Examples include a fuel injector, ignition coil, electronic throttle actuator, purge valve and EGR valve actuator. The distinction between a command and a result is important in diagnostic language. A scan tool may display a commanded state and a separate actual value. These values help describe whether feedback follows the request, but their meaning depends on the system and data definition. An actuator-related fault does not by itself identify a failed part. The cause may involve the actuator, electrical supply, control path, feedback information or another condition. A careful report states what the control unit requested, what value was reported and what evidence remains unavailable. Vehicle-specific service information is needed before drawing a repair conclusion.",
+      "text_fa": "سنسورها و عملگرها در خودروی دارای کنترل الکترونیکی نقش‌های متفاوتی دارند. سنسور درباره وضعیت فیزیکی مانند موقعیت، فشار، دما، سرعت یا میزان اکسیژن اطلاعات فراهم می‌کند. واحد کنترل این اطلاعات را تفسیر می‌کند. عملگر پس از دریافت فرمان، عملی انجام می‌دهد. نمونه‌ها شامل انژکتور، کویل جرقه‌زنی، عملگر دریچه گاز، شیر purge و عملگر EGR هستند. تفاوت میان فرمان و نتیجه در زبان عیب‌یابی اهمیت دارد. دستگاه عیب‌یاب ممکن است وضعیت فرمان‌داده‌شده و مقدار واقعی جداگانه‌ای را نمایش دهد. این مقادیر به توصیف بازخورد کمک می‌کنند، اما معنای آن‌ها به سامانه و تعریف داده وابسته است. خطای مرتبط با عملگر به‌تنهایی قطعه معیوب را مشخص نمی‌کند. علت ممکن است به عملگر، تغذیه، مسیر کنترل، بازخورد یا شرایط دیگری مربوط باشد. گزارش دقیق مشخص می‌کند واحد کنترل چه درخواستی داشته، چه مقداری گزارش شده و چه شواهدی در دسترس نیست. پیش از نتیجه‌گیری درباره تعمیر، اطلاعات سرویس همان خودرو لازم است.",
+      "questions": [
+        {
+          "question_en": "What is the main role of a sensor?",
+          "question_fa": "نقش اصلی سنسور چیست؟",
+          "answer_en": "Provide information about a physical condition.",
+          "answer_fa": "فراهم‌کردن اطلاعات درباره یک وضعیت فیزیکی."
+        },
+        {
+          "question_en": "Give two actuator examples.",
+          "question_fa": "دو نمونه عملگر نام ببر.",
+          "answer_en": "Fuel injector and ignition coil.",
+          "answer_fa": "انژکتور سوخت و کویل جرقه‌زنی."
+        },
+        {
+          "question_en": "Does an actuator fault prove the actuator is defective?",
+          "question_fa": "آیا خطای عملگر خرابی خود عملگر را ثابت می‌کند؟",
+          "answer_en": "No; other control or feedback elements may be involved.",
+          "answer_fa": "خیر؛ اجزای دیگر کنترل یا بازخورد ممکن است دخیل باشند."
+        },
+        {
+          "question_en": "What should a careful report state?",
+          "question_fa": "گزارش دقیق باید چه مواردی را بیان کند؟",
+          "answer_en": "Requested command, reported value and unavailable evidence.",
+          "answer_fa": "فرمان درخواستی، مقدار گزارش‌شده و شواهد در دسترس‌نبوده."
+        }
+      ]
+    },
+    {
+      "reading_id": "SA-READ-003",
+      "title_en": "Reading diagnostic signal descriptions",
+      "title_fa": "خواندن شرح‌های تشخیصی سیگنال",
+      "text_en": "Diagnostic descriptions use words that refer to different observations. A circuit-high description indicates that a monitored input was interpreted above its defined range. A circuit-low description indicates the opposite relationship. Neither phrase should be translated automatically into a specific wiring failure without vehicle documentation. An implausible signal may be present but does not fit an expected relationship. A missing signal means expected information was not detected under monitored conditions. Signal dropout describes a temporary loss, while signal saturation describes an output that has reached a limit. These terms describe observations, not confirmed component failures. The same principle applies to actuator data. Commanded state refers to the requested condition; actual value refers to reported feedback. A command-to-actual deviation may deserve attention, but interpretation depends on response time, operating conditions and system design. Technicians should preserve diagnostic wording, record context and avoid claiming an unproven cause. Exact definitions and thresholds must come from applicable technical documentation.",
+      "text_fa": "شرح‌های عیب‌یابی واژه‌هایی دارند که به مشاهده‌های متفاوت اشاره می‌کنند. شرح circuit high نشان می‌دهد ورودی پایش‌شده بالاتر از محدوده تعریف‌شده تفسیر شده است. circuit low رابطه مخالف را نشان می‌دهد. هیچ‌یک را نباید بدون مستندات خودرو به خرابی مشخص سیم‌کشی ترجمه کرد. سیگنال نامعقول ممکن است وجود داشته باشد اما با رابطه مورد انتظار سازگار نباشد. سیگنال مفقود یعنی اطلاعات مورد انتظار در شرایط پایش‌شده شناسایی نشده است. قطع لحظه‌ای به از دست رفتن موقت اشاره دارد و اشباع سیگنال خروجی رسیده به حد را توصیف می‌کند. این اصطلاحات مشاهده‌ها را بیان می‌کنند، نه خرابی قطعات تأییدشده را. همین اصل درباره داده‌های عملگر صدق می‌کند. وضعیت فرمان‌داده‌شده به شرایط درخواستی و مقدار واقعی به بازخورد گزارش‌شده اشاره دارد. اختلاف فرمان و مقدار واقعی ممکن است مهم باشد، اما تفسیر آن به زمان پاسخ، شرایط کاری و طراحی سامانه بستگی دارد. تکنسین باید عبارت عیب‌یابی را حفظ کند، زمینه را ثبت کند و علت اثبات‌نشده اعلام نکند. تعریف‌ها و آستانه‌های دقیق باید از مستندات فنی مربوط گرفته شوند.",
+      "questions": [
+        {
+          "question_en": "How does an implausible signal differ from a missing signal?",
+          "question_fa": "سیگنال نامعقول چه تفاوتی با سیگنال مفقود دارد؟",
+          "answer_en": "Implausible is present but inconsistent; missing was not detected.",
+          "answer_fa": "نامعقول وجود دارد اما ناسازگار است؛ مفقود شناسایی نشده است."
+        },
+        {
+          "question_en": "What does signal saturation mean?",
+          "question_fa": "اشباع سیگنال یعنی چه؟",
+          "answer_en": "An output has reached a limit.",
+          "answer_fa": "خروجی به یک حد رسیده است."
+        },
+        {
+          "question_en": "What does commanded state refer to?",
+          "question_fa": "وضعیت فرمان‌داده‌شده به چه چیزی اشاره دارد؟",
+          "answer_en": "The requested condition.",
+          "answer_fa": "وضعیت درخواستی."
+        },
+        {
+          "question_en": "Where do exact thresholds come from?",
+          "question_fa": "آستانه‌های دقیق از کجا گرفته می‌شوند؟",
+          "answer_en": "Applicable technical documentation.",
+          "answer_fa": "مستندات فنی مربوط."
+        }
+      ]
+    }
+  ]
+}
