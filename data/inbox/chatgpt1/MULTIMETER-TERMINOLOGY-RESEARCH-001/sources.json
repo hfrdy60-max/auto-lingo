@@ -1,0 +1,50 @@
+{
+  "mission_id": "AI1-MULTIMETER-TERMINOLOGY-RESEARCH-001",
+  "status_policy": "All source records remain candidate_unverified. Homepage or general learning portals are discovery leads, not claim-level verification.",
+  "sources": [
+    {
+      "id": "SRC-FLUKE-DMM-LEARNING",
+      "publisher": "Fluke",
+      "title": "Digital multimeter learning and measurement guidance",
+      "url": "https://www.fluke.com/en-us/learn/blog/digital-multimeters",
+      "supports": [
+        "General terminology and operating concepts for digital multimeters"
+      ],
+      "claim_scope": "Discovery landing page only; locate and cite the exact article/manual for each instrument claim.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-FLUKE-SAFETY",
+      "publisher": "Fluke",
+      "title": "Electrical measurement safety and multimeter guidance",
+      "url": "https://www.fluke.com/en-us/learn/blog",
+      "supports": [
+        "General safety concepts, meter inputs, measurement category and correct instrument use"
+      ],
+      "claim_scope": "General publisher learning portal; not yet checked against a specific passage or model.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-PICO-AUTOMOTIVE",
+      "publisher": "Pico Technology",
+      "title": "Automotive guided tests and measurement application information",
+      "url": "https://www.picoauto.com/library/automotive-guided-tests",
+      "supports": [
+        "Automotive measurement context and test-accessory terminology"
+      ],
+      "claim_scope": "Discovery source; select a specific guided test or accessory document before using as claim evidence.",
+      "status": "candidate_unverified"
+    },
+    {
+      "id": "SRC-HELLA-TECHWORLD",
+      "publisher": "HELLA",
+      "title": "HELLA Tech World — technical information",
+      "url": "https://www.hella.com/techworld/",
+      "supports": [
+        "Automotive electrical and electronic system context"
+      ],
+      "claim_scope": "General technical portal; no exact article/page has been tied to these glossary entries yet.",
+      "status": "candidate_unverified"
+    }
+  ]
+}
