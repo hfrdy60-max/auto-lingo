@@ -1,0 +1,147 @@
+{
+  "mission_id": "AI2-LESSON-E02-FUNCTIONS-OF-PARTS-001",
+  "status": "candidate_sources_unverified",
+  "claim_source_map": [
+    {
+      "claim": "رادیاتور گرما را از مایع خنک‌کننده به هوا منتقل می‌کند و واترپمپ گردش مایع را برقرار می‌کند.",
+      "source_ids": [
+        "SRC-HELLA-COOLING-001",
+        "SRC-ASTEMO-WATERPUMP-001"
+      ]
+    },
+    {
+      "claim": "پمپ روغن روغن را با گردش اجباری به قطعات متحرک موتور می‌رساند.",
+      "source_ids": [
+        "SRC-ISO-LUBRICATION-001"
+      ]
+    },
+    {
+      "claim": "ماژول پمپ سوخت، سوخت را از مخزن به ریل سوخت با فشار مناسب سامانه منتقل می‌کند.",
+      "source_ids": [
+        "SRC-BOSCH-FUEL-001"
+      ]
+    },
+    {
+      "claim": "دینام هنگام کار موتور انرژی الکتریکی تولید می‌کند و می‌تواند باتری را شارژ کند.",
+      "source_ids": [
+        "SRC-MAHLE-ALTERNATOR-001",
+        "SRC-HELLA-ALTERNATOR-001"
+      ]
+    },
+    {
+      "claim": "موتور استارت نیروی چرخشی اولیه لازم برای آغاز کار موتور احتراقی را فراهم می‌کند.",
+      "source_ids": [
+        "SRC-DENSO-STARTER-001"
+      ]
+    },
+    {
+      "claim": "در سوم‌شخص مفرد حال ساده به فعل s/es افزوده می‌شود؛ در پرسش و منفی از does/doesn't و شکل پایه فعل استفاده می‌شود.",
+      "source_ids": [
+        "SRC-BC-PRESENT-SIMPLE-001"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-HELLA-COOLING-001",
+      "title": "Engine cooling — design & function",
+      "publisher": "HELLA Tech World",
+      "source_type": "supplier_technical_webpage",
+      "url": "https://www.hella.com/techworld/ae/technical/car-cooling-system/engine-cooling/",
+      "locator": "Modern engine cooling; operating principle; radiator, coolant pump and heat transfer",
+      "supports": [
+        "cooling system component roles",
+        "coolant transfers heat to ambient air",
+        "fan supports heat rejection"
+      ],
+      "limitations": "General explanation; layouts and control strategies vary by vehicle."
+    },
+    {
+      "id": "SRC-ASTEMO-WATERPUMP-001",
+      "title": "Water Pump Technical Support Book, Technical Information #019",
+      "publisher": "Astemo Ltd.",
+      "source_type": "supplier_technical_pdf",
+      "url": "https://www.aftermarket.astemo.com/emea/it/techcare/assets/docs/WTP_WATER%20PUMP-TECHNICAL%20SUPPORT%20BOOK_en_019_R2.pdf",
+      "locator": "Page 2: function of radiator, water pump, thermostat and fan",
+      "supports": [
+        "radiator dissipates heat from coolant",
+        "water pump forcibly circulates coolant"
+      ],
+      "limitations": "General cooling-system overview; no vehicle-specific service instructions."
+    },
+    {
+      "id": "SRC-ISO-LUBRICATION-001",
+      "title": "ISO 7967-6 — Lubricating systems terminology",
+      "publisher": "International Organization for Standardization",
+      "source_type": "standard",
+      "url": "https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso%3A7967%3A-6%3Adis%3Aed-3%3Av1%3Aen",
+      "locator": "Definition 3.3.13: lubricating oil pump",
+      "supports": [
+        "lubricating oil pump provides force-feed circulation and delivers oil to moving engine parts"
+      ],
+      "limitations": "Terminology/definition source; consult the applicable published edition and full standard for formal use."
+    },
+    {
+      "id": "SRC-BOSCH-FUEL-001",
+      "title": "Fuel-supply module",
+      "publisher": "Bosch Mobility",
+      "source_type": "manufacturer_technical_webpage",
+      "url": "https://www.bosch-mobility.com/en/solutions/pumps/fuel-supply-module/",
+      "locator": "Operating principle",
+      "supports": [
+        "fuel-supply module pumps fuel from tank to fuel rail at specified system pressure"
+      ],
+      "limitations": "Applies to described fuel-supply module; system architecture and pressure vary."
+    },
+    {
+      "id": "SRC-MAHLE-ALTERNATOR-001",
+      "title": "Design and function of an alternator",
+      "publisher": "MAHLE Aftermarket",
+      "source_type": "supplier_technical_pdf",
+      "url": "https://www.mahle-aftermarket.com/media/homepage/facelift/media-center/workshop/schadensbroschuere_generatoren_2020_en_final_low_.pdf",
+      "locator": "Section: Design and function of an alternator",
+      "supports": [
+        "alternator generates electrical power while combustion engine runs",
+        "alternator is driven by engine in common belt-driven designs"
+      ],
+      "limitations": "General alternator description; charging strategy varies by vehicle."
+    },
+    {
+      "id": "SRC-HELLA-ALTERNATOR-001",
+      "title": "Service work on the charging system",
+      "publisher": "HELLA Tech World",
+      "source_type": "supplier_technical_webpage",
+      "url": "https://www.hella.com/techworld/sg/technical/car-electronics-and-electrics/starting-and-charging-system/service-work-on-the-charging-system/",
+      "locator": "Alternator with overrunning alternator pulley",
+      "supports": [
+        "alternator supplies vehicle consumers while engine runs and maintains battery charge"
+      ],
+      "limitations": "Describes general charging-system function and selected system examples."
+    },
+    {
+      "id": "SRC-DENSO-STARTER-001",
+      "title": "Starter troubleshooting",
+      "publisher": "DENSO Aftermarket",
+      "source_type": "supplier_technical_webpage",
+      "url": "https://www.denso-am.eu/news/starter-troubleshooting",
+      "locator": "Starter overview",
+      "supports": [
+        "starter provides external force and rotational speed to initiate engine operation"
+      ],
+      "limitations": "General starter overview; no diagnostic procedure included in this lesson."
+    },
+    {
+      "id": "SRC-BC-PRESENT-SIMPLE-001",
+      "title": "Present simple",
+      "publisher": "British Council LearnEnglish",
+      "source_type": "educational_grammar_reference",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/present-simple",
+      "locator": "Third-person singular -s; do/does questions and negatives",
+      "supports": [
+        "third-person singular takes -s",
+        "do/does forms for questions and negatives"
+      ],
+      "limitations": "Grammar source; not an automotive technical source."
+    }
+  ]
+}
