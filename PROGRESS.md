@@ -105,3 +105,12 @@
 - Confirmed `data/parts_batch_02.json` and root `parts_batch_02.json` contain the same 20 PART IDs but differ in fields: category_id and safety_notes differ in all 20 records; images also differ in 4 records. Keep both until an explicit version reconciliation; the corrected data/ copy is the current preferred review candidate based on prior QA notes, not a verified final release.
 - Confirmed current repository contains 41 terms in `terms_batch_01.json`; `terms_batch_02.json` was not found in root or data. Do not generate more TERM IDs until the discrepancy is resolved.
 - External source links in the catalog are research starting points only. No technical record was promoted to verified in this stage.
+
+
+## Stage 7 — Structured lesson content UI (in progress)
+- Added curriculum content for the 13th curriculum item: E01, Engine Basics: Main Components (LVL-2). Note: canonical blueprint ID is E01, not B13.
+- Organized lesson data into `data/lessons/E01.json`, sources into `data/lessons/E01.sources.json`, vocabulary mapping into `data/lessons/E01.term-map.json`, and index into `data/lessons/index.json`.
+- Added `curriculum.js` and a responsive structured lesson area to the learning page; it renders objectives, lesson sections, vocabulary/examples, grammar, reading, guided practice, quiz, term mappings and source links.
+- Added exact matches to the existing term bank only. Ten vocabulary items have exact TERM IDs; spark plug has a part-only match; engine has no exact term match. No IDs were fabricated.
+- Validation performed: JSON parse checks passed for all lesson assets; JavaScript syntax checks passed for `curriculum.js` and `app-shell.js`; HTML section and script references confirmed.
+- Release status remains `needs_review`: candidate sources are unverified, audio and real part images are not supplied, and browser-level QA has not yet been run. Changes are isolated on branch `ai1-lesson-13-e01-engine-basics-001`; production/main data has not been replaced.
