@@ -1,0 +1,27 @@
+{
+  "task_id": "AI2-CONTENT-VERIFICATION-PROTOCOL-REVIEW-001",
+  "sources": [
+    {
+      "id": "SRC-REVIEW-001",
+      "type": "project_artifact",
+      "title": "AUTO LINGO Content Verification Protocol",
+      "location": "data/inbox/chatgpt1/AI1-CONTENT-VERIFICATION-PROTOCOL-001/CONTENT_VERIFICATION_PROTOCOL.md",
+      "ref": "ai1-content-verification-protocol-001",
+      "commit": "f83d55ed90544929149ec3a2af71a8bcff1d29d7",
+      "usage": "Primary artifact reviewed; internal project document, not external technical evidence."
+    },
+    {
+      "id": "SRC-REVIEW-002",
+      "type": "project_artifact",
+      "title": "AUTO LINGO database_schema.sql",
+      "location": "database_schema.sql",
+      "ref": "main",
+      "usage": "Checked verification_status, sources, entity_sources, citation_note, last_checked_at, last_reviewed_at, term_kind and QA view design."
+    }
+  ],
+  "limitations": [
+    "No external technical claims were verified in this process review.",
+    "No separate sources.json accompanied the protocol artifact on its branch.",
+    "Review concerns governance and schema fit, not validation of automotive lesson or term content."
+  ]
+}
