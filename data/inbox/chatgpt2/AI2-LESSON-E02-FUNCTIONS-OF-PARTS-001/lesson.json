@@ -1,0 +1,651 @@
+{
+  "mission_id": "AI2-LESSON-E02-FUNCTIONS-OF-PARTS-001",
+  "lesson_id": "E02",
+  "lesson_title_fa": "این قطعه چه کاری می‌کند؟",
+  "lesson_title_en": "What Does It Do? Functions of Parts",
+  "level_id": "LVL-2",
+  "lesson_order": 2,
+  "content_language": "fa",
+  "support_language": "en",
+  "content_version": "1.0.0",
+  "content_status": "needs_review",
+  "review_note_fa": "بسته پژوهشی مستقل مطابق blueprint درس E02 تهیه شده است. چهار قطعه از شش featured_part_id به شناسه‌های canonical بانک قطعات نگاشت اولیه دارند؛ دو قطعه Alternator و Starter motor در crosswalk فعلی شناسه canonical ندارند. بانک اصطلاحات اصلی فقط 41 رکورد دارد و هیچ‌یک برای query دسته‌های cooling/electrical/fuel/lubrication و lesson_id=E02 قابل بازیابی نیست؛ بنابراین ده واژهٔ هدف blueprint به‌عنوان اصطلاح canonical یا verified ساخته نشده‌اند. واژگان عملکردی این درس نامزدهای آموزشی بدون TERM ID هستند. فایل صوتی و تصویر دارای مجوز قطعی نیز موجود نیست.",
+  "blueprint_alignment": {
+    "source_file": "lesson_blueprints.json",
+    "blueprint_id": "E02",
+    "level_id": "LVL-2",
+    "order": 2,
+    "title_en": "What Does It Do? Functions of Parts",
+    "title_fa": "این قطعه چه کاری می‌کند؟",
+    "language_focus": "Present simple for functions (3rd person -s)",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "translation_fa_to_en",
+      "sentence_writing",
+      "part_recognition"
+    ],
+    "vocabulary_source": "main_term_database",
+    "vocabulary_query": {
+      "level_id": "LVL-2",
+      "lesson_id": "E02",
+      "category_keys": [
+        "cooling",
+        "electrical",
+        "fuel",
+        "lubrication"
+      ]
+    },
+    "target_new_terms": 10,
+    "featured_part_ids": [
+      "PRT-COL-001",
+      "PRT-COL-002",
+      "PRT-LUB-002",
+      "PRT-FUE-002",
+      "PRT-ELE-002",
+      "PRT-ELE-003"
+    ],
+    "dialogue_ids": [],
+    "game_ids": [
+      "GAME-14",
+      "GAME-07",
+      "GAME-04",
+      "GAME-06"
+    ],
+    "quiz_id": "QZ-E02",
+    "estimated_minutes": 27,
+    "mastery_threshold_pct": 70,
+    "review_schedule_days_after_completion": [
+      3,
+      7,
+      21,
+      60
+    ]
+  },
+  "learning_objectives": [
+    "کارکرد عمومی رادیاتور، واترپمپ، پمپ روغن، پمپ سوخت، دینام و موتور استارت را با زبان ساده توضیح دهد.",
+    "در جمله‌های خبری حال ساده، برای فاعل سوم‌شخص مفرد (it/part name) به فعل s یا es اضافه کند.",
+    "در جمله‌های منفی و پرسشی با does، شکل پایه فعل را به کار ببرد.",
+    "بین نام قطعه و عملکرد اصلی آن ارتباط برقرار کند.",
+    "جمله‌های کوتاه فارسی درباره عملکرد قطعات را به انگلیسی ترجمه کند و جمله انگلیسی بسازد."
+  ],
+  "prerequisites": [
+    "آشنایی مقدماتی با نام قطعات اصلی موتور و سامانه‌های خودرو",
+    "آشنایی با فاعل it و جمله ساده انگلیسی"
+  ],
+  "lesson_intro_fa": "در درس قبل با نام و جایگاه برخی اجزای موتور آشنا شدیم. حالا می‌خواهیم دربارهٔ کاری که هر قطعه انجام می‌دهد صحبت کنیم. در زبان انگلیسی برای بیان عملکرد عمومی قطعات معمولاً از حال ساده استفاده می‌کنیم: The pump moves coolant. چون pump یا it سوم‌شخص مفرد است، در جمله مثبت معمولاً به فعل s یا es اضافه می‌شود. هدف این درس شناخت مفهوم عملکرد قطعه و بیان آن با جمله‌های دقیق و کوتاه است؛ نه انجام تعمیر یا آزمون عملی روی خودرو.",
+  "sections": [
+    {
+      "section_id": "E02-S01",
+      "title_fa": "۱) از نام قطعه تا عملکرد آن",
+      "title_en": "From a Part Name to Its Function",
+      "explanation_fa": "برای توضیح یک قطعه از الگوی سادهٔ «نام قطعه + فعل عملکرد + مفعول/توضیح» استفاده می‌کنیم. Function یعنی وظیفه یا کارکرد. برای نمونه، رادیاتور گرما را از مایع خنک‌کننده به هوای اطراف منتقل می‌کند. واترپمپ مایع خنک‌کننده را در مدار به گردش درمی‌آورد. این توضیح‌ها اصول عمومی‌اند؛ شکل مدار، نوع محرک و کنترل الکترونیکی در خودروهای مختلف متفاوت است.",
+      "key_points": [
+        "A part has a function. = هر قطعه‌ای وظیفه‌ای دارد.",
+        "The radiator transfers heat. = رادیاتور گرما را منتقل می‌کند.",
+        "The pump circulates coolant. = پمپ مایع خنک‌کننده را به گردش درمی‌آورد.",
+        "Function را با purpose اشتباه نگیریم: هر دو نزدیک‌اند، اما function در این درس برای کارکرد فنی قطعه به‌کار می‌رود."
+      ],
+      "vocabulary": [
+        {
+          "en": "function",
+          "fa": "کارکرد / وظیفه",
+          "term_id": null,
+          "canonical_status": "candidate_not_in_term_database",
+          "example_en": "The function of the radiator is to remove heat from the coolant.",
+          "example_fa": "وظیفه رادیاتور دفع گرما از مایع خنک‌کننده است."
+        },
+        {
+          "en": "transfer",
+          "fa": "منتقل کردن",
+          "term_id": null,
+          "canonical_status": "candidate_not_in_term_database",
+          "example_en": "The radiator transfers heat to the air.",
+          "example_fa": "رادیاتور گرما را به هوا منتقل می‌کند."
+        },
+        {
+          "en": "circulate",
+          "fa": "به گردش درآوردن",
+          "term_id": null,
+          "canonical_status": "candidate_not_in_term_database",
+          "example_en": "The water pump circulates coolant.",
+          "example_fa": "واترپمپ مایع خنک‌کننده را به گردش درمی‌آورد."
+        }
+      ],
+      "source_ids": [
+        "SRC-HELLA-COOLING-001",
+        "SRC-ASTEMO-WATERPUMP-001"
+      ]
+    },
+    {
+      "section_id": "E02-S02",
+      "title_fa": "۲) قطعات سامانه خنک‌کاری و روان‌کاری",
+      "title_en": "Cooling and Lubrication Components",
+      "explanation_fa": "رادیاتور یک مبدل حرارتی است و گرما را از مایع خنک‌کننده به جریان هوا می‌دهد. واترپمپ گردش مایع را در مسیر طراحی‌شده حفظ می‌کند. پمپ روغن نیز روغن موتور را با جریان و فشار لازم به بخش‌های متحرک می‌رساند. این قطعات با هم کار می‌کنند، اما وظیفه یکسانی ندارند: واترپمپ مایع خنک‌کننده را جابه‌جا می‌کند و پمپ روغن روغن روان‌کار را.",
+      "featured_parts": [
+        {
+          "manifest_part_id": "PRT-COL-001",
+          "canonical_part_id": "PART-000014",
+          "name_en": "Radiator",
+          "name_fa": "رادیاتور",
+          "mapping_status": "exact_name_match_needs_review",
+          "function_fa": "گرما را از مایع خنک‌کننده به هوای عبوری منتقل می‌کند.",
+          "example_en": "The radiator transfers heat from the coolant to the air.",
+          "example_fa": "رادیاتور گرما را از مایع خنک‌کننده به هوا منتقل می‌کند.",
+          "source_ids": [
+            "SRC-HELLA-COOLING-001",
+            "SRC-ASTEMO-WATERPUMP-001"
+          ]
+        },
+        {
+          "manifest_part_id": "PRT-COL-002",
+          "canonical_part_id": "PART-000015",
+          "name_en": "Water pump",
+          "name_fa": "واترپمپ / پمپ آب",
+          "mapping_status": "exact_name_match_needs_review",
+          "function_fa": "مایع خنک‌کننده را در مدار خنک‌کاری به گردش درمی‌آورد.",
+          "example_en": "The water pump circulates coolant through the cooling system.",
+          "example_fa": "واترپمپ مایع خنک‌کننده را در سامانه خنک‌کاری به گردش درمی‌آورد.",
+          "source_ids": [
+            "SRC-ASTEMO-WATERPUMP-001",
+            "SRC-HELLA-COOLING-001"
+          ]
+        },
+        {
+          "manifest_part_id": "PRT-LUB-002",
+          "canonical_part_id": "PART-000017",
+          "name_en": "Oil pump",
+          "name_fa": "پمپ روغن",
+          "mapping_status": "exact_name_match_needs_review",
+          "function_fa": "روغن را برای روان‌کاری به بخش‌های موردنیاز موتور می‌رساند.",
+          "example_en": "The oil pump supplies oil to the engine's moving parts.",
+          "example_fa": "پمپ روغن، روغن را به قطعات متحرک موتور می‌رساند.",
+          "source_ids": [
+            "SRC-ISO-LUBRICATION-001"
+          ]
+        },
+        {
+          "manifest_part_id": "PRT-FUE-002",
+          "canonical_part_id": "PART-000004",
+          "name_en": "Fuel pump",
+          "name_fa": "پمپ سوخت",
+          "mapping_status": "exact_name_match_needs_review",
+          "function_fa": "سوخت را از مخزن به بخش بعدی سامانه سوخت‌رسانی می‌رساند؛ فشار و معماری به نوع سامانه وابسته است.",
+          "example_en": "The fuel pump delivers fuel to the fuel system.",
+          "example_fa": "پمپ سوخت، سوخت را به سامانه سوخت‌رسانی می‌رساند.",
+          "source_ids": [
+            "SRC-BOSCH-FUEL-001"
+          ]
+        }
+      ],
+      "key_points": [
+        "Radiator ≠ water pump: یکی گرما را دفع می‌کند و دیگری مایع را به گردش درمی‌آورد.",
+        "Oil pump و water pump دو مدار و دو سیال متفاوت دارند.",
+        "در سامانه‌های تزریق مستقیم ممکن است پمپ کم‌فشار و پمپ پرفشار وجود داشته باشد؛ جمله عمومی درس به معنی یکسان‌بودن همه طراحی‌ها نیست."
+      ],
+      "source_ids": [
+        "SRC-HELLA-COOLING-001",
+        "SRC-ASTEMO-WATERPUMP-001",
+        "SRC-ISO-LUBRICATION-001",
+        "SRC-BOSCH-FUEL-001"
+      ]
+    },
+    {
+      "section_id": "E02-S03",
+      "title_fa": "۳) قطعات سامانه برق و راه‌اندازی",
+      "title_en": "Electrical and Starting Components",
+      "explanation_fa": "دینام (alternator) هنگام کار موتور انرژی مکانیکی را به انرژی الکتریکی تبدیل می‌کند و برق مصرف‌کننده‌ها را فراهم می‌کند؛ در شرایط مناسب باتری را نیز شارژ می‌کند. موتور استارت (starter motor) برای آغاز چرخش موتور احتراقی، نیروی چرخشی اولیه را فراهم می‌کند و معمولاً فقط برای مدت کوتاه هنگام راه‌اندازی فعال است. این دو قطعه را نباید با هم اشتباه گرفت: دینام بخشی از تولید و تأمین برق هنگام کار موتور است و استارت به راه‌اندازی موتور کمک می‌کند.",
+      "featured_parts": [
+        {
+          "manifest_part_id": "PRT-ELE-002",
+          "canonical_part_id": null,
+          "name_en": "Alternator",
+          "name_fa": "دینام",
+          "mapping_status": "unmatched_in_current_crosswalk",
+          "function_fa": "هنگام کار موتور برق تولید می‌کند و در سامانه‌های متعارف، باتری را شارژ می‌کند.",
+          "example_en": "The alternator generates electrical power while the engine runs.",
+          "example_fa": "دینام هنگام کار موتور برق تولید می‌کند.",
+          "source_ids": [
+            "SRC-MAHLE-ALTERNATOR-001",
+            "SRC-HELLA-ALTERNATOR-001"
+          ]
+        },
+        {
+          "manifest_part_id": "PRT-ELE-003",
+          "canonical_part_id": null,
+          "name_en": "Starter motor",
+          "name_fa": "موتور استارت",
+          "mapping_status": "unmatched_in_current_crosswalk",
+          "function_fa": "چرخش اولیه لازم برای راه‌اندازی موتور احتراقی را فراهم می‌کند.",
+          "example_en": "The starter motor turns the engine during starting.",
+          "example_fa": "موتور استارت هنگام راه‌اندازی موتور را می‌چرخاند.",
+          "source_ids": [
+            "SRC-DENSO-STARTER-001"
+          ]
+        }
+      ],
+      "key_points": [
+        "The alternator generates electrical power. = دینام برق تولید می‌کند.",
+        "The starter motor turns the engine during starting. = موتور استارت هنگام راه‌اندازی موتور را می‌چرخاند.",
+        "The alternator does not normally start the engine; the starter system performs that task.",
+        "جزئیات عملکرد و کنترل شارژ در خودروهای جدید می‌تواند هوشمند و وابسته به معماری خودرو باشد."
+      ],
+      "source_ids": [
+        "SRC-MAHLE-ALTERNATOR-001",
+        "SRC-HELLA-ALTERNATOR-001",
+        "SRC-DENSO-STARTER-001"
+      ]
+    },
+    {
+      "section_id": "E02-S04",
+      "title_fa": "۴) دستور زبان: حال ساده و s سوم‌شخص مفرد",
+      "title_en": "Grammar: Present Simple and Third-Person -s",
+      "explanation_fa": "برای بیان حقیقت‌ها و کارکردهای عمومی از حال ساده استفاده می‌کنیم. با فاعل I/you/we/they فعل پایه می‌آید؛ با he/she/it و اسم مفرد معمولاً به فعل s اضافه می‌شود. اگر فعل به ch, sh, ss, x یا بعضی پایان‌های خاص برسد، معمولاً es می‌گیرد. در جمله منفی و پرسشی، از does/doesn't استفاده می‌کنیم و فعل اصلی به شکل پایه برمی‌گردد.",
+      "grammar_table": [
+        {
+          "subject": "The pump",
+          "form": "circulates",
+          "example": "The pump circulates coolant.",
+          "translation": "پمپ مایع خنک‌کننده را به گردش درمی‌آورد."
+        },
+        {
+          "subject": "The pumps",
+          "form": "circulate",
+          "example": "The pumps circulate coolant.",
+          "translation": "پمپ‌ها مایع خنک‌کننده را به گردش درمی‌آورند."
+        },
+        {
+          "subject": "It",
+          "form": "does not supply",
+          "example": "It does not supply fuel.",
+          "translation": "این قطعه سوخت را تأمین نمی‌کند."
+        },
+        {
+          "subject": "Does the pump",
+          "form": "move",
+          "example": "Does the pump move coolant?",
+          "translation": "آیا پمپ مایع خنک‌کننده را جابه‌جا می‌کند؟"
+        }
+      ],
+      "key_points": [
+        "مثبت: The alternator charges the battery.",
+        "منفی: The alternator does not charge the battery in every operating condition. (جمله زبانی؛ رفتار واقعی تابع وضعیت سامانه است.)",
+        "سؤالی: Does the alternator generate electricity?",
+        "پس از does یا doesn't، فعل اصلی بدون s می‌آید: Does it transfer? نه Does it transfers?",
+        "have در سوم‌شخص مفرد به has تبدیل می‌شود؛ این فعل بی‌قاعده است."
+      ],
+      "source_ids": [
+        "SRC-BC-PRESENT-SIMPLE-001"
+      ]
+    }
+  ],
+  "function_vocabulary_candidates": [
+    {
+      "en": "transfer",
+      "fa": "منتقل کردن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "circulate",
+      "fa": "به گردش درآوردن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "supply",
+      "fa": "تأمین / رساندن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "deliver",
+      "fa": "تحویل دادن / رساندن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "generate",
+      "fa": "تولید کردن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "charge",
+      "fa": "شارژ کردن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "start",
+      "fa": "راه‌اندازی کردن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "turn",
+      "fa": "چرخاندن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "lubricate",
+      "fa": "روان‌کاری کردن",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    },
+    {
+      "en": "coolant",
+      "fa": "مایع خنک‌کننده",
+      "term_id": null,
+      "status": "candidate_not_canonical"
+    }
+  ],
+  "reading": {
+    "title_en": "Six Parts, Six Jobs",
+    "title_fa": "شش قطعه، شش وظیفه",
+    "text_en": "A vehicle uses different parts to control temperature, move fluids and provide electrical power. The radiator transfers heat from the coolant to the air. The water pump circulates coolant through the cooling system. The oil pump supplies oil to moving engine parts. The fuel pump delivers fuel to the fuel system. The alternator generates electrical power while the engine runs. The starter motor turns the engine during starting. Each part has a different function.",
+    "text_fa": "یک خودرو از قطعات مختلفی برای کنترل دما، جابه‌جایی سیالات و تأمین برق استفاده می‌کند. رادیاتور گرما را از مایع خنک‌کننده به هوا منتقل می‌کند. واترپمپ مایع خنک‌کننده را در مدار به گردش درمی‌آورد. پمپ روغن، روغن را به قطعات متحرک موتور می‌رساند. پمپ سوخت، سوخت را به سامانه سوخت‌رسانی تحویل می‌دهد. دینام هنگام کار موتور برق تولید می‌کند. موتور استارت هنگام راه‌اندازی، موتور را می‌چرخاند. هر قطعه وظیفه متفاوتی دارد.",
+    "comprehension_questions": [
+      {
+        "question_en": "Which part transfers heat from coolant to air?",
+        "question_fa": "کدام قطعه گرما را از مایع خنک‌کننده به هوا منتقل می‌کند؟",
+        "answer_en": "The radiator.",
+        "answer_fa": "رادیاتور."
+      },
+      {
+        "question_en": "Which pump circulates coolant?",
+        "question_fa": "کدام پمپ مایع خنک‌کننده را به گردش درمی‌آورد؟",
+        "answer_en": "The water pump.",
+        "answer_fa": "واترپمپ."
+      },
+      {
+        "question_en": "When does the alternator generate electrical power?",
+        "question_fa": "دینام چه زمانی برق تولید می‌کند؟",
+        "answer_en": "While the engine runs.",
+        "answer_fa": "هنگام کار موتور."
+      }
+    ]
+  },
+  "guided_practice": [
+    {
+      "id": "E02-P01",
+      "type": "choose_verb",
+      "prompt_fa": "گزینه درست را انتخاب کن: The radiator ___ heat.",
+      "options": [
+        "transfer",
+        "transfers",
+        "transferring"
+      ],
+      "answer": "transfers",
+      "explanation_fa": "Radiator فاعل مفرد سوم‌شخص است؛ در جمله مثبت حال ساده به فعل s اضافه می‌شود."
+    },
+    {
+      "id": "E02-P02",
+      "type": "correct_error",
+      "prompt_fa": "اشتباه جمله را اصلاح کن: Does the water pump circulates coolant?",
+      "answer": "Does the water pump circulate coolant?",
+      "explanation_fa": "بعد از does، فعل اصلی به شکل پایه می‌آید."
+    },
+    {
+      "id": "E02-P03",
+      "type": "translation",
+      "prompt_fa": "ترجمه کن: پمپ روغن، روغن را به قطعات متحرک می‌رساند.",
+      "answer": "The oil pump supplies oil to the moving parts.",
+      "explanation_fa": "Oil pump مفرد است؛ supplies با s می‌آید."
+    },
+    {
+      "id": "E02-P04",
+      "type": "sentence_building",
+      "prompt_fa": "با واژه‌های The / alternator / generate / electrical power یک جمله بساز.",
+      "answer": "The alternator generates electrical power.",
+      "explanation_fa": "برای فاعل مفرد سوم‌شخص، generate به generates تبدیل می‌شود."
+    }
+  ],
+  "activities": [
+    {
+      "activity_id": "E02-A01",
+      "title_fa": "گرم‌کردن: قطعه و وظیفه",
+      "type": "matching",
+      "instructions_fa": "نام هر قطعه را به وظیفه عمومی آن وصل کن.",
+      "pairs": [
+        [
+          "Radiator",
+          "transfers heat"
+        ],
+        [
+          "Water pump",
+          "circulates coolant"
+        ],
+        [
+          "Oil pump",
+          "supplies oil"
+        ],
+        [
+          "Fuel pump",
+          "delivers fuel"
+        ],
+        [
+          "Alternator",
+          "generates electrical power"
+        ],
+        [
+          "Starter motor",
+          "turns the engine during starting"
+        ]
+      ]
+    },
+    {
+      "activity_id": "E02-A02",
+      "title_fa": "جمله‌سازی کنترل‌شده",
+      "type": "sentence_writing",
+      "instructions_fa": "با هر قطعه یک جمله در زمان حال ساده بساز؛ سپس فاعل را از مفرد به جمع تغییر بده و فعل را اصلاح کن."
+    },
+    {
+      "activity_id": "E02-A03",
+      "title_fa": "شناسایی قطعه",
+      "type": "part_recognition",
+      "instructions_fa": "از روی شرح عملکرد، قطعه را انتخاب کن. تصاویر تا تأیید منبع و مجوز در نسخه نهایی جایگزین متن نمی‌شوند."
+    }
+  ],
+  "quiz": {
+    "quiz_id": "QZ-E02",
+    "question_count": 10,
+    "pass_score_pct": 70,
+    "status": "authored_needs_review",
+    "type_distribution": {
+      "mcq": 2,
+      "fa_to_en": 2,
+      "en_to_fa": 1,
+      "fill_blank": 1,
+      "identify_correct_term": 1,
+      "listening": 1,
+      "image_part_id": 1,
+      "sentence_building": 1
+    },
+    "questions": [
+      {
+        "id": "Q-E02-002",
+        "slot_id": "QZ-E02-S01",
+        "type": "mcq",
+        "difficulty": 1,
+        "prompt_fa": "کدام قطعه گرما را از مایع خنک‌کننده به هوا منتقل می‌کند؟",
+        "options": [
+          "Radiator",
+          "Oil pump",
+          "Starter motor",
+          "Fuel pump"
+        ],
+        "answer": "Radiator",
+        "explanation_fa": "رادیاتور مبدل حرارتی مدار خنک‌کاری است.",
+        "source_ids": [
+          "SRC-HELLA-COOLING-001",
+          "SRC-ASTEMO-WATERPUMP-001"
+        ]
+      },
+      {
+        "id": "Q-E02-003",
+        "slot_id": "QZ-E02-S02",
+        "type": "mcq",
+        "difficulty": 2,
+        "prompt_en": "Which part circulates coolant through the cooling system?",
+        "options": [
+          "Alternator",
+          "Water pump",
+          "Oil pump",
+          "Starter motor"
+        ],
+        "answer": "Water pump",
+        "explanation_fa": "واترپمپ مایع خنک‌کننده را در مدار به گردش درمی‌آورد.",
+        "source_ids": [
+          "SRC-ASTEMO-WATERPUMP-001"
+        ]
+      },
+      {
+        "id": "Q-E02-004",
+        "slot_id": "QZ-E02-S03",
+        "type": "fa_to_en",
+        "difficulty": 2,
+        "prompt_fa": "ترجمه کن: دینام هنگام کار موتور برق تولید می‌کند.",
+        "accepted_answers": [
+          "The alternator generates electrical power while the engine runs.",
+          "The alternator generates electricity while the engine is running."
+        ],
+        "explanation_fa": "Alternator فاعل مفرد است؛ generate به generates تبدیل می‌شود.",
+        "source_ids": [
+          "SRC-MAHLE-ALTERNATOR-001"
+        ]
+      },
+      {
+        "id": "Q-E02-005",
+        "slot_id": "QZ-E02-S04",
+        "type": "fa_to_en",
+        "difficulty": 2,
+        "prompt_fa": "ترجمه کن: پمپ سوخت، سوخت را به سامانه سوخت‌رسانی می‌رساند.",
+        "accepted_answers": [
+          "The fuel pump delivers fuel to the fuel system.",
+          "The fuel pump supplies fuel to the fuel system."
+        ],
+        "explanation_fa": "در جمله مثبت با fuel pump مفرد، deliver/supply به‌ترتیب delivers/supplies می‌شوند.",
+        "source_ids": [
+          "SRC-BOSCH-FUEL-001"
+        ]
+      },
+      {
+        "id": "Q-E02-006",
+        "slot_id": "QZ-E02-S05",
+        "type": "en_to_fa",
+        "difficulty": 3,
+        "prompt_en": "The oil pump supplies oil to the engine's moving parts.",
+        "accepted_answers_fa": [
+          "پمپ روغن، روغن را به قطعات متحرک موتور می‌رساند.",
+          "پمپ روغن روغن را به بخش‌های متحرک موتور تأمین می‌کند."
+        ],
+        "explanation_fa": "supplies در اینجا به معنی می‌رساند/تأمین می‌کند است.",
+        "source_ids": [
+          "SRC-ISO-LUBRICATION-001"
+        ]
+      },
+      {
+        "id": "Q-E02-007",
+        "slot_id": "QZ-E02-S06",
+        "type": "fill_blank",
+        "difficulty": 3,
+        "prompt_en": "The radiator ______ heat from the coolant to the air.",
+        "accepted_answers": [
+          "transfers"
+        ],
+        "explanation_fa": "فاعل مفرد سوم‌شخص است؛ transfer به transfers تبدیل می‌شود.",
+        "source_ids": [
+          "SRC-HELLA-COOLING-001"
+        ]
+      },
+      {
+        "id": "Q-E02-008",
+        "slot_id": "QZ-E02-S07",
+        "type": "identify_correct_term",
+        "difficulty": 1,
+        "prompt_fa": "کدام اصطلاح به موتور الکتریکی‌ای اشاره دارد که موتور احتراقی را هنگام روشن‌شدن اولیه می‌چرخاند؟",
+        "options": [
+          "Alternator",
+          "Starter motor",
+          "Radiator",
+          "Oil pump"
+        ],
+        "answer": "Starter motor",
+        "explanation_fa": "Starter motor نیروی چرخش اولیه برای آغاز کار موتور را فراهم می‌کند.",
+        "source_ids": [
+          "SRC-DENSO-STARTER-001"
+        ]
+      },
+      {
+        "id": "Q-E02-009",
+        "slot_id": "QZ-E02-S08",
+        "type": "listening",
+        "difficulty": 2,
+        "prompt_fa": "متن شنیداری پیشنهادی (فایل صوتی هنوز تولید نشده):",
+        "transcript_en": "The water pump circulates coolant. The radiator transfers heat to the air.",
+        "question_en": "Which part transfers heat to the air?",
+        "answer": "The radiator.",
+        "audio_asset": null,
+        "audio_status": "pending_recording",
+        "explanation_fa": "پاسخ در جمله دوم متن شنیداری آمده است.",
+        "source_ids": [
+          "SRC-ASTEMO-WATERPUMP-001",
+          "SRC-HELLA-COOLING-001"
+        ]
+      },
+      {
+        "id": "Q-E02-010",
+        "slot_id": "QZ-E02-S09",
+        "type": "image_part_id",
+        "difficulty": 2,
+        "prompt_fa": "تصویر واقعی و دارای مجوز از یکی از قطعات featured باید اینجا نمایش داده شود. تا زمان تأیید asset، این slot قابل انتشار نیست.",
+        "image_asset": null,
+        "image_status": "pending_rights_and_asset",
+        "expected_part_ids": [
+          "PRT-COL-001",
+          "PRT-COL-002",
+          "PRT-LUB-002",
+          "PRT-FUE-002",
+          "PRT-ELE-002",
+          "PRT-ELE-003"
+        ],
+        "answer": null,
+        "explanation_fa": "این سؤال تا اتصال تصویر واقعی و تأیید مجوز تکمیل نمی‌شود."
+      },
+      {
+        "id": "Q-E02-011",
+        "slot_id": "QZ-E02-S10",
+        "type": "sentence_building",
+        "difficulty": 2,
+        "prompt_fa": "واژه‌ها را مرتب کن: The / starter motor / turn / the engine / during starting.",
+        "answer": "The starter motor turns the engine during starting.",
+        "explanation_fa": "Starter motor مفرد سوم‌شخص است؛ turn به turns تبدیل می‌شود.",
+        "source_ids": [
+          "SRC-DENSO-STARTER-001"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "dialogue_ids": [],
+    "audio_assets": [],
+    "image_assets": [],
+    "game_ids": [
+      "GAME-14",
+      "GAME-07",
+      "GAME-04",
+      "GAME-06"
+    ],
+    "dependency_status": "pending_external_QA",
+    "notes_fa": "شناسه‌های بازی مطابق blueprint نگه داشته شده‌اند؛ وجود ID به معنی آماده‌بودن اجرای بازی نیست. تصویر slot آزمون و فایل صوتی هنوز موجود نیست."
+  },
+  "qa_notes": [
+    "چهار نگاشت featured part در crosswalk exact-name match هستند اما همچنان needs_review باقی می‌مانند: Radiator→PART-000014، Water pump→PART-000015، Oil pump→PART-000017، Fuel pump→PART-000004.",
+    "Alternator و Starter motor در crosswalk فعلی canonical_part_id ندارند؛ شناسه PART جدید ساخته نشده است.",
+    "terms_batch_01.json فقط 41 رکورد دارد و هیچ رکوردی برای واژگان query شده با دسته‌های cooling/electrical/fuel/lubrication و lesson_id=E02 موجود نیست؛ 10 واژهٔ عملکردی این درس canonical نشده‌اند.",
+    "QZ-E02 با 10 slot و توزیع نوع سؤال blueprint تهیه شده است؛ listening و image_part_id به‌ترتیب بدون فایل صوتی و تصویر دارای مجوز باقی می‌مانند.",
+    "هیچ audio یا image با هوش مصنوعی ساخته نشده است؛ هیچ تصویر اینترنتی بدون بررسی مجوز وارد نشده است."
+  ]
+}
