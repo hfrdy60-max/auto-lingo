@@ -1,0 +1,75 @@
+{
+  "mission_id": "AI1-LESSON-13-E01-ENGINE-BASICS-001",
+  "status": "candidate_sources_unverified",
+  "sources": [
+    {
+      "id": "SRC-BRITANNICA-ICE-001",
+      "title": "Internal-combustion engine",
+      "publisher": "Encyclopaedia Britannica",
+      "source_type": "technical_encyclopedia",
+      "url": "https://www.britannica.com/technology/internal-combustion-engine",
+      "supports": [
+        "اصول کلی تبدیل انرژی شیمیایی سوخت به کار مکانیکی",
+        "ساختار کلی موتورهای احتراق داخلی"
+      ],
+      "limitations": "مرجع عمومی؛ برای مشخصات یک موتور یا روش تعمیر خودرو خاص کافی نیست."
+    },
+    {
+      "id": "SRC-HOWSTUFFWORKS-ENGINE-001",
+      "title": "How Car Engines Work",
+      "publisher": "HowStuffWorks",
+      "source_type": "educational_technical_article",
+      "url": "https://auto.howstuffworks.com/engine.htm",
+      "supports": [
+        "توضیح آموزشی چرخه موتور پیستونی",
+        "نقش پیستون، شاتون و میل‌لنگ"
+      ],
+      "limitations": "منبع آموزشی عمومی؛ جزئیات طراحی بین موتورها متفاوت است و باید با مرجع تخصصی تکمیل شود."
+    },
+    {
+      "id": "SRC-MOTOR-SERVICE-ENGINE-001",
+      "title": "Technical information and engine components",
+      "publisher": "MS Motorservice",
+      "source_type": "manufacturer_technical_information",
+      "url": "https://www.ms-motorservice.com/",
+      "supports": [
+        "اطلاعات فنی عمومی درباره اجزای موتور و سامانه‌های مکانیکی"
+      ],
+      "limitations": "صفحه اصلی/درگاه اطلاعات است؛ باید مقاله یا سند دقیق و بخش مرتبط برای هر ادعا مشخص شود."
+    },
+    {
+      "id": "SRC-MAHLE-VALVETRAIN-001",
+      "title": "Engine components and valve train technical information",
+      "publisher": "MAHLE",
+      "source_type": "manufacturer_technical_information",
+      "url": "https://www.mahle-aftermarket.com/",
+      "supports": [
+        "اطلاعات فنی قطعات موتور و مجموعه سوپاپ"
+      ],
+      "limitations": "صفحه اصلی است و هنوز سند/صفحه دقیق مرتبط با میل‌بادامک و سوپاپ انتخاب نشده."
+    },
+    {
+      "id": "SRC-NGK-SPARKPLUG-001",
+      "title": "Spark plug technical information",
+      "publisher": "NGK / Niterra",
+      "source_type": "manufacturer_technical_information",
+      "url": "https://www.ngkntk.com/",
+      "supports": [
+        "کاربرد شمع جرقه‌زن در موتورهای جرقه‌ای"
+      ],
+      "limitations": "صفحه اصلی شرکت است؛ باید مقاله فنی مشخص درباره عملکرد شمع به منبع پیوند داده شود."
+    },
+    {
+      "id": "SRC-BOSCH-DIESEL-001",
+      "title": "Diesel systems technical information",
+      "publisher": "Bosch Mobility",
+      "source_type": "manufacturer_technical_information",
+      "url": "https://www.bosch-mobility.com/",
+      "supports": [
+        "تفاوت کلی احتراق دیزل و سامانه جرقه‌زنی موتور بنزینی",
+        "اطلاعات عمومی درباره سیستم‌های دیزل"
+      ],
+      "limitations": "صفحه اصلی/پورتال است؛ منبع دقیق درباره شمع گرم‌کن و احتراق دیزل هنوز باید انتخاب شود."
+    }
+  ]
+}
