@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "description_fa": "فهرست محتوای درس‌های ساختاریافته آماده‌شده برای نمایش در برنامه؛ وضعیت هر درس مستقل از blueprint است.",
+  "lessons": [
+    {
+      "lesson_id": "E01",
+      "curriculum_position": 13,
+      "level_id": "LVL-2",
+      "title_fa": "اصول موتور: اجزای اصلی",
+      "title_en": "Engine Basics: Main Components",
+      "content_path": "data/lessons/E01.json",
+      "sources_path": "data/lessons/E01.sources.json",
+      "term_mapping_path": "data/lessons/E01.term-map.json",
+      "status": "needs_review",
+      "ui_ready": true
+    }
+  ]
+}
