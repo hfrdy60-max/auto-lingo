@@ -1,0 +1,83 @@
+{
+  "mission_id": "AI2-LESSON-B10-CAR-FLUIDS-001",
+  "status": "candidate_sources_unverified",
+  "sources": [
+    {
+      "id": "SRC-FORD-FLUID-CHECKLIST-001",
+      "title": "Ford Blue Advantage — Blue Certified Inspection: Underhood Fluids",
+      "publisher": "Ford",
+      "source_type": "manufacturer_website",
+      "url": "https://www.ford.com/used/about-certified/blue-certification/",
+      "supports": [
+        "وجود دسته‌های engine oil, coolant, brake fluid, transmission fluid, power steering fluid و washer fluid در فهرست بازرسی"
+      ],
+      "limitations": "فهرست بازرسی است و جایگزین دفترچه سرویس مدل‌محور نیست."
+    },
+    {
+      "id": "SRC-CASTROL-ENGINE-OIL-001",
+      "title": "Differences in the lubrication of passenger cars and motorbikes",
+      "publisher": "Castrol",
+      "source_type": "supplier_technical_article",
+      "url": "https://www.castrol.com/en_gb/united-kingdom/home/learn/castrol-fastscan/differences-in-the-lubrication-of-passenger-cars-and-motorbikes.html",
+      "supports": [
+        "نقش روغن موتور در کاهش اصطکاک، محافظت، خنک‌کاری و نگه‌داری آلاینده‌ها"
+      ],
+      "limitations": "توضیح عمومی؛ انتخاب گرید و استاندارد باید بر اساس موتور مشخص باشد."
+    },
+    {
+      "id": "SRC-PRESTONE-COOLANT-001",
+      "title": "Changing Your Antifreeze And Coolant",
+      "publisher": "Prestone",
+      "source_type": "supplier_technical_website",
+      "url": "https://www.prestone.com/how-to/flush-and-fill/",
+      "supports": [
+        "اهمیت مایع خنک‌کننده برای انتقال گرما و ارتباط افت سطح با کاهش انتقال گرما"
+      ],
+      "limitations": "صفحهٔ آموزشی سازندهٔ محصول است؛ دستورهای آن برای همهٔ خودروها قابل تعمیم نیست."
+    },
+    {
+      "id": "SRC-FORD-COOLANT-SAFETY-001",
+      "title": "Vehicle Health Alerts Visual Reference Guide",
+      "publisher": "Ford",
+      "source_type": "manufacturer_technical_document",
+      "url": "https://api.mss.ford.com/dbi-kb/api/knowledge/v1/search/get-drupal-file/sites/default/files/2024-06/6cfa0f3d-b52e-4feb-ba58-ef0b60e1da98.pdf",
+      "supports": [
+        "هشدار عدم بازکردن درپوش مخزن خنک‌کننده هنگام روشن یا داغ بودن موتور"
+      ],
+      "limitations": "هشدار ایمنی عمومی از سند Ford؛ روش سرویس خاصی ارائه نمی‌کند."
+    },
+    {
+      "id": "SRC-BOSCH-BRAKE-FLUID-001",
+      "title": "Bosch brake fluid: the safety factor",
+      "publisher": "Bosch",
+      "source_type": "supplier_technical_document",
+      "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/au/download_centre_2/parts_10/brake/xx_pdfs_34/brake_fluid_4pp_broch_2020.pdf",
+      "supports": [
+        "انتقال نیرو در مدار ترمز، جذب رطوبت توسط برخی سیالات ترمز و اثر رطوبت بر نقطهٔ جوش"
+      ],
+      "limitations": "توضیح فنی عمومی؛ نوع سیال و دورهٔ تعویض خودرو-خاص است."
+    },
+    {
+      "id": "SRC-BOSCH-BRAKE-SYSTEM-001",
+      "title": "Braking systems: safety & innovation",
+      "publisher": "Bosch",
+      "source_type": "supplier_technical_website",
+      "url": "https://www.boschaftermarket.com/gb/en/parts/products/braking-systems/",
+      "supports": [
+        "نقش brake fluid در سامانهٔ ترمز و اهمیت ویژگی‌های حرارتی"
+      ],
+      "limitations": "اطلاعات عمومی سامانه؛ جایگزین مستندات تعمیراتی خودرو نیست."
+    },
+    {
+      "id": "SRC-CASTROL-ATF-001",
+      "title": "Automatic transmission fluid types and uses",
+      "publisher": "Castrol",
+      "source_type": "supplier_technical_website",
+      "url": "https://www.castrol.com/en_us/united-states/home/learn/car-maintenance/atf-oil-uses-types.html",
+      "supports": [
+        "وظایف عمومی ATF و وابستگی مشخصات سیال به سازنده، مدل و سال خودرو"
+      ],
+      "limitations": "اطلاعات عمومی؛ برای انتخاب سیال باید توصیهٔ OEM همان خودرو بررسی شود."
+    }
+  ]
+}
