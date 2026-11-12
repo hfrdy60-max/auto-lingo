@@ -105,3 +105,14 @@
 - Confirmed `data/parts_batch_02.json` and root `parts_batch_02.json` contain the same 20 PART IDs but differ in fields: category_id and safety_notes differ in all 20 records; images also differ in 4 records. Keep both until an explicit version reconciliation; the corrected data/ copy is the current preferred review candidate based on prior QA notes, not a verified final release.
 - Confirmed current repository contains 41 terms in `terms_batch_01.json`; `terms_batch_02.json` was not found in root or data. Do not generate more TERM IDs until the discrepancy is resolved.
 - External source links in the catalog are research starting points only. No technical record was promoted to verified in this stage.
+
+
+## Stage 10 — Automotive sensor reference integration (2026-11-13)
+- Reviewed the 40-page Persian research PDF on automotive sensors and integrated its useful content into the AUTONEX technical academy.
+- Added `data/technical_reference/automotive_sensors_fardin_ghordi.json` with ten sensor reference records: CKP, CMP, TPS, Knock, ECT, O2, VSS, MAP, IAT and APP. Each record has operating principle, ECU uses, installation context, pins/signals, symptoms, tests, workshop notes, caveats, English terminology, a short quiz and a direct source-page anchor.
+- Added ECU overview, memory types, the ECU examples table quoted by the source, a short technology timeline, research objective/problem, source conclusion, bibliography and a staged diagnostic method.
+- Added `sensors-academy.js` and connected it in `index.html`. The new academy chapter includes three internal views: sensor library, ECU fundamentals, and source/diagnostic limitations.
+- Added responsive purple/blue/green UI styles. The source PDF remains available in the repository; page links open the original illustrations/graphs (overview pages 13–14 and the corresponding sensor pages).
+- Visual source review identified a contradiction on PDF page 35: the APP heading states S2=2×S1 while the plotted channels appear to show Signal 1 approximately twice Signal 2. This conflict is explicitly flagged; neither relation is presented as a universal specification.
+- Validation completed: source JSON parses; ten sensor records and required fields are present; the frontend module passes JavaScript syntax parsing; index.html loads the module; stylesheet selectors exist; original PDF and linked data paths are present.
+- Not yet completed: in-browser interaction/responsive testing, specialist technical review, and cross-checking every model-specific value/procedure against OEM repair information. No numerical value from the source is promoted to a universal standard.
