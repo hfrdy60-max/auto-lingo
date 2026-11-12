@@ -129,3 +129,6 @@
 - Technical values, pinouts, connector views, wiring colors, CAN termination, fuel pressures, sensor signal ranges and diagnostic strategies remain vehicle-specific and require OEM verification.
 - Bosch edition dates from 2001; use it for principles and compare technology-specific details against current vehicle documentation.
 - Static JSON/JavaScript validation and browser-level testing remain to be reported separately; see `QA/SOURCE_BOOKS_INTEGRATION_2026-11-13.md`.
+
+- Expanded follow-up: Hyundai/Kia course now contains 23 lessons across 6 modules, adding smart fuse/power distribution, lighting, electric seats/heaters/memory, parking sensors/rear camera/electrochromic mirror, and SRS airbag safety.
+- Bosch course now contains 20 lessons across 7 modules, adding torque/power/efficiency, mixture formation, rail/regulator/damper details, spark energy, NOx storage catalyst and catalyst heating.
