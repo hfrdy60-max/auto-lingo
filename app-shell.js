@@ -44,59 +44,27 @@
  const home=document.createElement('section');
  home.className='autonex-home';
  home.innerHTML=`
-  <div class="home-welcome">
-   <div class="home-welcome-copy">
-    <div class="home-kicker"><span></span> AUTONEX • AUTOMOTIVE KNOWLEDGE ACADEMY</div>
-    <div class="home-greeting">به دنیای تخصصی خودرو خوش آمدی</div>
-    <h1>دانش فنی را یاد بگیر؛<br><em>هوشمندانه‌تر عیب‌یابی کن.</em></h1>
-    <p>از زبان تخصصی و برق خودرو تا ECU، سنسورها، نقشه‌خوانی و دستگاه‌های دیاگ؛ مسیر یادگیری‌ات را یک‌جا و مرحله‌به‌مرحله دنبال کن.</p>
-    <div class="home-cta-row">
-     <button class="home-cta primary" data-page="learn" data-scroll="paths">شروع یادگیری <span>←</span></button>
-     <button class="home-cta secondary" data-page="dictionary">جست‌وجوی اصطلاحات <span>⌕</span></button>
-    </div>
-    <div class="home-trust-line"><span>✓</span> آموزش فارسی همراه با اصطلاحات استاندارد انگلیسی</div>
-   </div>
-   <div class="home-art" aria-hidden="true">
-    <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-    <div class="art-core"><span class="art-core-mark">AN</span><b>AUTONEX</b><small>LEARN • ANALYZE • MASTER</small></div>
-    <div class="art-chip chip-top"><i>ϟ</i><span><b>ECU</b><small>کنترل الکترونیکی</small></span></div>
-    <div class="art-chip chip-side"><i>⌁</i><span><b>LIVE DATA</b><small>داده‌های زنده</small></span></div>
-    <div class="art-chip chip-bottom"><i>▦</i><span><b>DIAGNOSTICS</b><small>تحلیل و عیب‌یابی</small></span></div>
-    <div class="art-spark spark-a">✦</div><div class="art-spark spark-b">+</div>
-   </div>
-  </div>
-  <div class="home-section-heading"><div><span class="home-overline">YOUR LEARNING OVERVIEW</span><h2>نمای کلی یادگیری</h2><p>آمار محتوای آموزشی و پیشرفت ثبت‌شده روی همین دستگاه</p></div><span class="home-live-badge"><i></i> به‌روز‌رسانی خودکار</span></div>
+  <div class="home-welcome home-welcome-compact"><div class="home-welcome-copy">
+   <div class="home-kicker"><span></span> AUTONEX • AUTOMOTIVE ACADEMY</div><div class="home-greeting">آکادمی دانش و زبان خودرو</div>
+   <h1>هوشمند یاد بگیر؛<br><em>حرفه‌ای عیب‌یابی کن.</em></h1>
+   <p>آموزش زبان فنی، برق خودرو، ECU و دستگاه‌های دیاگ؛ همه در یک مسیر منظم.</p>
+   <div class="home-cta-row"><button class="home-cta primary" data-page="learn" data-scroll="paths">شروع یادگیری <span>←</span></button><button class="home-cta secondary" data-page="dictionary">واژه‌نامه <span>⌕</span></button></div>
+  </div><div class="home-mini-art" aria-hidden="true"><span>AN</span><b>AUTONEX</b><small>LEARN • ANALYZE • MASTER</small><i>ϟ</i></div></div>
+  <div class="home-section-heading compact-heading"><div><span class="home-overline">LEARNING OVERVIEW</span><h2>نمای کلی آکادمی</h2></div><span class="home-live-badge"><i></i> آمار محتوا</span></div>
   <div class="home-stats" id="homeStats">
-   <article class="home-stat"><span class="stat-icon purple">▤</span><div><b id="statPaths">—</b><small>مسیر آموزشی</small></div><em>مسیرها</em></article>
-   <article class="home-stat"><span class="stat-icon blue">Aa</span><div><b id="statWords">—</b><small>واژه و اصطلاح</small></div><em>واژه‌نامه</em></article>
-   <article class="home-stat"><span class="stat-icon green">▣</span><div><b id="statLessons">—</b><small>درس آموزشی</small></div><em>درس‌ها</em></article>
-   <article class="home-stat"><span class="stat-icon purple">✓</span><div><b id="statCompleted">۰</b><small>واژه تکمیل‌شده</small></div><em>پیشرفت</em></article>
+   <article class="home-stat"><span class="stat-icon purple">▤</span><div><b id="statPaths">—</b><small>مسیر آموزشی</small></div></article>
+   <article class="home-stat"><span class="stat-icon blue">Aa</span><div><b id="statWords">—</b><small>واژه و اصطلاح</small></div></article>
+   <article class="home-stat"><span class="stat-icon green">▣</span><div><b id="statLessons">—</b><small>درس آموزشی</small></div></article>
+   <article class="home-stat"><span class="stat-icon orange">✓</span><div><b id="statCompleted">۰</b><small>واژه تکمیل‌شده</small></div></article>
   </div>
-  <div class="home-section-heading quick-heading"><div><span class="home-overline">EXPLORE THE ACADEMY</span><h2>دسترسی سریع به بخش‌ها</h2><p>مستقیم وارد موضوع موردنظرت شو.</p></div><span class="home-section-note">۱۲ بخش تخصصی</span></div>
-  <div class="quick-menu-grid">
-   <button class="quick-card violet" data-page="learn" data-scroll="paths"><span class="quick-icon">▣</span><b>مسیرهای آموزشی</b><small>درس‌های مرحله‌ای تخصصی</small></button>
-   <button class="quick-card blue" data-page="learn" data-scroll="technicalAcademy"><span class="quick-icon">ϟ</span><b>برق خودرو و ECU</b><small>مدارها و واحدهای کنترل</small></button>
-   <button class="quick-card green" data-page="learn" data-scroll="technicalAcademy"><span class="quick-icon">⌁</span><b>سنسورها و عملگرها</b><small>عملکرد و تحلیل سیگنال</small></button>
-   <button class="quick-card violet" data-page="learn" data-scroll="technicalAcademy"><span class="quick-icon">▤</span><b>دستگاه‌های دیاگ</b><small>منوها و توابع تخصصی</small></button>
-   <button class="quick-card blue" data-page="dictionary"><span class="quick-icon">Aa</span><b>واژه‌نامه فنی</b><small>جست‌وجوی فارسی و انگلیسی</small></button>
-   <button class="quick-card green" data-page="learn" data-scroll="technicalAcademy"><span class="quick-icon">⌗</span><b>نقشه‌خوانی برق</b><small>علائم و مدارها</small></button>
-   <button class="quick-card violet" data-page="learn" data-scroll="technicalAcademy"><span class="quick-icon">⚠</span><b>کدهای خطا</b><small>مفهوم و بررسی DTC</small></button>
-   <button class="quick-card blue" data-page="learn" data-scroll="technicalAcademy"><span class="quick-icon">◉</span><b>پارامترهای لایودیتا</b><small>خواندن داده‌های زنده</small></button>
-   <button class="quick-card green" data-page="practice" data-scroll="learningLab"><span class="quick-icon">▷</span><b>سناریوهای عیب‌یابی</b><small>تمرین تحلیل مرحله‌ای</small></button>
-   <button class="quick-card violet" data-page="practice"><span class="quick-icon">✓</span><b>آزمون و تمرین</b><small>سنجش آموخته‌ها</small></button>
-   <button class="quick-card blue" data-page="practice" data-scroll="smartReview"><span class="quick-icon">↻</span><b>مرور هوشمند</b><small>مرور واژه‌های دشوار</small></button>
-   <button class="quick-card green" data-page="progress"><span class="quick-icon">▥</span><b>گزارش پیشرفت</b><small>کارنامه و اشتباهات من</small></button>
-  </div>
-  <div class="home-bottom-grid">
-   <article class="home-note-card">
-    <span class="home-note-icon">✦</span><div><span class="home-overline">LEARNING TIP</span><h3>یادگیری عمیق، نه حفظ کردن</h3><p>هر اصطلاح را همراه با عملکرد قطعه، مدار مرتبط و کاربرد آن در عیب‌یابی یاد بگیر. این روش کمک می‌کند دانش فنی را در موقعیت واقعی به‌کار ببری.</p></div>
-    <button data-page="learn" data-scroll="technicalAcademy">مشاهده آموزش فنی <b>←</b></button>
-   </article>
-   <article class="home-focus-card">
-    <span class="home-overline">CORE SPECIALTIES</span><h3>محورهای اصلی آکادمی</h3>
-    <div class="focus-tags"><span>برق خودرو</span><span>ECU</span><span>سنسورها</span><span>دیاگ</span><span>نقشه‌خوانی</span><span>زبان فنی</span></div>
-    <small>محتوا بر اساس ساختار تخصصی و منابع قابل ردیابی توسعه پیدا می‌کند.</small>
-   </article>
+  <div class="home-section-heading quick-heading compact-heading"><div><span class="home-overline">EXPLORE AUTONEX</span><h2>بخش‌های تخصصی</h2></div><span class="home-section-note">۶ حوزه اصلی</span></div>
+  <div class="quick-menu-grid quick-menu-compact">
+   <button class="quick-card violet" data-page="learn" data-scroll="paths"><span class="quick-icon">▣</span><b>مسیرهای آموزشی</b><small>درس‌های مرحله‌ای</small></button>
+   <button class="quick-card blue" data-page="learn" data-scroll="technicalAcademy"><span class="quick-icon">ϟ</span><b>برق خودرو و ECU</b><small>مدارها، کنترلرها و سنسورها</small></button>
+   <button class="quick-card green" data-page="learn" data-scroll="technicalAcademy"><span class="quick-icon">⌗</span><b>دیاگ و نقشه‌خوانی</b><small>منوها، توابع و نقشه‌ها</small></button>
+   <button class="quick-card orange" data-page="dictionary"><span class="quick-icon">Aa</span><b>واژه‌نامه فنی</b><small>اصطلاحات فارسی و انگلیسی</small></button>
+   <button class="quick-card pink" data-page="practice"><span class="quick-icon">✧</span><b>تمرین و سناریوها</b><small>آزمون و عیب‌یابی آموزشی</small></button>
+   <button class="quick-card gold" data-page="progress"><span class="quick-icon">▥</span><b>کارنامه و مرور</b><small>پیشرفت و اشتباهات من</small></button>
   </div>`;
  Object.entries(panes).forEach(([key,nodes])=>{
   const pane=document.createElement('div');pane.className='app-page';pane.dataset.pane=key;
