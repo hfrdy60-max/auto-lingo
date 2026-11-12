@@ -17,7 +17,7 @@ The contents pages and selected technical sections were reviewed. This is a focu
 - Updated `index.html` to load the two source-course assets.
 
 ## Course coverage
-### Hyundai/Kia — 6 modules, 17 lessons
+### Hyundai/Kia — 6 modules, 18 lessons
 - Wiring-diagram structure, connector views, wire color codes and harness identification.
 - Potentiometers, NTC/PTC thermistors, diodes, transistors, fuses and relay diagnosis.
 - Multiplexing, CAN frame concepts, LIN, K-Line and communication fault workflow.
