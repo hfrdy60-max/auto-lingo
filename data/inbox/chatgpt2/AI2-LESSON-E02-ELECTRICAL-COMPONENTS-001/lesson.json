@@ -1,0 +1,926 @@
+{
+  "mission_id": "AI2-LESSON-E02-ELECTRICAL-COMPONENTS-001",
+  "lesson_id": "E02",
+  "lesson_title_fa": "قطعات الکتریکی خودرو و عملکرد آن‌ها",
+  "lesson_title_en": "Electrical Components and Their Functions",
+  "level_id": "LVL-2",
+  "lesson_order": 2,
+  "content_language": "fa",
+  "support_language": "en",
+  "content_version": "2.0.0",
+  "content_status": "needs_review",
+  "review_note_fa": "نسخه بازنویسی‌شده طبق تأیید AI-1. جایگاه E02 حفظ شده است. محتوای شش‌گانه الکتریکی مطابق مأموریت جدید است، اما featured_part_ids در blueprint فعلی هنوز چهار قطعه غیرالکتریکی دارد و فقط Alternator و Starter motor از شش شناسه فعلی در محدوده جدید قرار می‌گیرند. هیچ blueprint، بانک اصلی، شناسه canonical یا داده production تغییر نکرده است.",
+  "blueprint_alignment": {
+    "source_file": "lesson_blueprints.json",
+    "blueprint_id": "E02",
+    "level_id": "LVL-2",
+    "order": 2,
+    "canonical_array_position": 14,
+    "approved_title_en": "Electrical Components and Their Functions",
+    "approved_title_fa": "قطعات الکتریکی خودرو و عملکرد آن‌ها",
+    "existing_blueprint_title_en": "What Does It Do? Functions of Parts",
+    "existing_blueprint_title_fa": "این قطعه چه کاری می‌کند؟",
+    "title_change_approved_by": "AI-1 comment 6824453437",
+    "language_focus": "Present simple for functions (3rd person -s)",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "translation_fa_to_en",
+      "sentence_writing",
+      "part_recognition"
+    ],
+    "vocabulary_source": "main_term_database",
+    "vocabulary_query": {
+      "level_id": "LVL-2",
+      "lesson_id": "E02",
+      "category_keys": [
+        "cooling",
+        "electrical",
+        "fuel",
+        "lubrication"
+      ]
+    },
+    "target_new_terms": 10,
+    "existing_featured_part_ids": [
+      "PRT-COL-001",
+      "PRT-COL-002",
+      "PRT-LUB-002",
+      "PRT-FUE-002",
+      "PRT-ELE-002",
+      "PRT-ELE-003"
+    ],
+    "existing_dialogue_ids": [],
+    "game_ids": [
+      "GAME-14",
+      "GAME-07",
+      "GAME-04",
+      "GAME-06"
+    ],
+    "quiz_id": "QZ-E02",
+    "estimated_minutes": 27,
+    "mastery_threshold_pct": 70,
+    "review_schedule_days_after_completion": [
+      3,
+      7,
+      21,
+      60
+    ],
+    "change_proposals_not_applied": [
+      "عنوان blueprint به عنوان تأییدشده AI-1 تغییر کند.",
+      "featured_part_ids از چهار قطعه غیرالکتریکی فعلی به شناسه‌های الکتریکی battery, alternator, starter motor, fuse, relay و wiring connector بازنگری شود؛ نیازمند تصمیم/ویرایش مالک یا AI-1 است.",
+      "vocabulary query به CAT-04/electrical و target_new_terms=10 متصل شود؛ taxonomy و main term DB فعلی باید ابتدا تکمیل شوند.",
+      "quiz image_part_id باید به تصویر واقعی دارای مجوز و قطعه‌ای با نگاشت روشن متصل شود."
+    ]
+  },
+  "learning_objectives": [
+    "نام شش گروه/قطعه الکتریکی پایه را به انگلیسی تشخیص دهد و معنی فارسی و تلفظ تقریبی آن‌ها را بیان کند.",
+    "تفاوت battery و alternator را در نقش ذخیره/تأمین انرژی الکتریکی توضیح دهد.",
+    "کارکرد عمومی starter motor، fuse، relay و wiring connector را با جمله‌های کوتاه انگلیسی بیان کند.",
+    "از collocationهای رایج مانند battery terminal، charging system، starter circuit، blown fuse، relay coil و wiring harness در جمله استفاده کند.",
+    "در Present Simple برای فاعل سوم‌شخص مفرد از فعل s/es استفاده کند.",
+    "در مکالمه تعمیرگاهی درباره نشانه یا نام قطعه سؤال ساده بپرسد و پاسخ کوتاه بدهد."
+  ],
+  "prerequisites": [
+    "آشنایی مقدماتی با واژه‌های car, engine, wire و electricity.",
+    "آشنایی پایه با جمله خبری انگلیسی و فاعل/فعل."
+  ],
+  "lesson_intro_fa": "در این درس با واژگان پایه‌ای برق خودرو آشنا می‌شویم. هدف، یادگیری زبان فنی برای خواندن متن، تشخیص اصطلاح و گفت‌وگوی تعمیرگاهی است؛ نه انجام تعمیر یا آزمون عملی. مثال‌ها درباره سامانه برق کم‌ولتاژ متداول خودروهای سواری هستند و به همه خودروها تعمیم داده نمی‌شوند. سامانه ولتاژبالای خودروهای هیبریدی و برقی موضوع این درس نیست و نباید با باتری کم‌ولتاژ معمولی اشتباه گرفته شود.",
+  "sections": [
+    {
+      "section_id": "E02-S01",
+      "title_fa": "۱) باتری و پایانه‌های آن",
+      "title_en": "Battery and Battery Terminals",
+      "explanation_fa": "باتری کم‌ولتاژ خودرو انرژی الکتریکی را به شکل شیمیایی ذخیره می‌کند و هنگام نیاز، برق موردنیاز مدارهای خودرو را فراهم می‌سازد. در بسیاری از خودروهای سواری متداول، باتری ۱۲ ولتی به کار می‌رود؛ بااین‌حال معماری و ولتاژ سامانه باید از اطلاعات همان خودرو مشخص شود. Terminal به محل اتصال الکتریکی باتری اشاره دارد؛ terminal با connector یکسان نیست.",
+      "vocabulary": [
+        {
+          "en": "battery",
+          "fa": "باتری",
+          "pronunciation_fa": "بَتِری",
+          "ipa": "/ˈbætəri/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "car battery",
+            "battery capacity",
+            "battery state of charge"
+          ],
+          "example_en": "The battery stores electrical energy.",
+          "example_fa": "باتری انرژی الکتریکی را ذخیره می‌کند."
+        },
+        {
+          "en": "battery terminal",
+          "fa": "پایانه باتری",
+          "pronunciation_fa": "بَتِری تِرمینَل",
+          "ipa": "/ˈbætəri ˈtɜːrmɪnəl/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "positive battery terminal",
+            "negative battery terminal",
+            "corroded terminal"
+          ],
+          "example_en": "The battery terminal provides an electrical connection.",
+          "example_fa": "پایانه باتری اتصال الکتریکی را فراهم می‌کند."
+        },
+        {
+          "en": "state of charge (SoC)",
+          "fa": "وضعیت شارژ",
+          "pronunciation_fa": "اِستِیت آو چارْج",
+          "ipa": "/ˌsteɪt əv ˈtʃɑːrdʒ/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "battery state of charge",
+            "low state of charge"
+          ],
+          "example_en": "The scan tool may display the battery state of charge.",
+          "example_fa": "دستگاه دیاگ ممکن است وضعیت شارژ باتری را نمایش دهد."
+        }
+      ],
+      "key_points": [
+        "Battery معمولاً نقش ذخیره انرژی را دارد؛ alternator در سامانه شارژ نقش تولید برق هنگام کار موتور را بر عهده دارد.",
+        "Terminal محل اتصال رسانا است؛ connector قطعه اتصال‌دهنده دو یا چند بخش سیم‌کشی است.",
+        "اصطلاح low-voltage battery را با high-voltage traction battery در خودروهای برقی یکی ندانید."
+      ],
+      "contrast_note_fa": "battery نام خود منبع ذخیره انرژی است؛ battery terminal نام پایانه اتصال آن است.",
+      "dialogue": {
+        "en": [
+          "Technician: Is the battery state of charge available?",
+          "Service advisor: The scan report shows a low state of charge."
+        ],
+        "fa": [
+          "تکنسین: وضعیت شارژ باتری مشخص است؟",
+          "پذیرش: گزارش دیاگ وضعیت شارژ پایین را نشان می‌دهد."
+        ]
+      },
+      "practice": {
+        "prompt_fa": "جای خالی را با battery یا battery terminal کامل کنید: “The ___ stores electrical energy.”",
+        "answer": "battery"
+      },
+      "source_ids": [
+        "SRC-INTERSTATE-GLOSSARY-001",
+        "SRC-BOSCH-BATTERY-AMS-001"
+      ]
+    },
+    {
+      "section_id": "E02-S02",
+      "title_fa": "۲) دینام و سامانه شارژ",
+      "title_en": "Alternator and Charging System",
+      "explanation_fa": "Alternator یا generator در بسیاری از خودروهای احتراق داخلی، هنگام کار موتور انرژی مکانیکی را به انرژی الکتریکی تبدیل می‌کند و در تأمین بارهای الکتریکی و شارژ باتری نقش دارد. سامانه‌های مدیریت انرژی هوشمند می‌توانند خروجی دینام را با توجه به وضعیت خودرو کنترل کنند؛ بنابراین یک مقدار ولتاژ ثابت یا یک روش آزمون را نباید برای همه خودروها نسخه عمومی دانست.",
+      "vocabulary": [
+        {
+          "en": "alternator",
+          "fa": "دینام / آلترناتور",
+          "pronunciation_fa": "آلْتِرنِیتِر",
+          "ipa": "/ˈɔːltərneɪtər/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "alternator output",
+            "alternator pulley",
+            "alternator connector"
+          ],
+          "example_en": "The alternator supplies electrical power when the engine runs.",
+          "example_fa": "دینام هنگام کار موتور برق موردنیاز سامانه را تأمین می‌کند."
+        },
+        {
+          "en": "charging system",
+          "fa": "سامانه شارژ",
+          "pronunciation_fa": "چارْجینگ سیستِم",
+          "ipa": "/ˈtʃɑːrdʒɪŋ ˈsɪstəm/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "charging system warning light",
+            "charging system fault"
+          ],
+          "example_en": "The charging system maintains the battery charge.",
+          "example_fa": "سامانه شارژ وضعیت شارژ باتری را حفظ می‌کند."
+        },
+        {
+          "en": "voltage regulator",
+          "fa": "تنظیم‌کننده ولتاژ",
+          "pronunciation_fa": "وُلتِج رِگیولِیتِر",
+          "ipa": "/ˈvoʊltɪdʒ ˈrɛɡjəleɪtər/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "electronic voltage regulator",
+            "internal voltage regulator"
+          ],
+          "example_en": "The voltage regulator controls alternator output.",
+          "example_fa": "تنظیم‌کننده ولتاژ، خروجی دینام را کنترل می‌کند."
+        }
+      ],
+      "key_points": [
+        "alternator با starter motor فرق دارد: دینام به سامانه شارژ مربوط است و استارت برای چرخاندن اولیه موتور به کار می‌رود.",
+        "در بعضی طراحی‌ها کنترل شارژ با ECU یا ماژول مدیریت انرژی هماهنگ است.",
+        "چراغ هشدار شارژ به معنی تشخیص قطعی خرابی خود دینام نیست؛ مدار، اتصالات و راهبرد کنترل نیز ممکن است دخیل باشند."
+      ],
+      "contrast_note_fa": "alternator برق تولید می‌کند؛ starter motor برای مدت کوتاه انرژی الکتریکی را به حرکت مکانیکی تبدیل می‌کند.",
+      "dialogue": {
+        "en": [
+          "Customer: The charging warning light is on.",
+          "Technician: We need the vehicle-specific diagnostic information before identifying the cause."
+        ],
+        "fa": [
+          "مشتری: چراغ هشدار شارژ روشن شده است.",
+          "تکنسین: پیش از تشخیص علت، به اطلاعات عیب‌یابی مخصوص همین خودرو نیاز داریم."
+        ]
+      },
+      "practice": {
+        "prompt_fa": "ترجمه کنید: «دینام خروجی الکتریکی سامانه شارژ را کنترل می‌کند.»",
+        "answer": "The alternator controls the electrical output of the charging system."
+      },
+      "source_ids": [
+        "SRC-DENSO-ROTATING-ELECTRICS-001",
+        "SRC-BOSCH-SMART-CHARGE-001",
+        "SRC-DENSO-GLOSSARY-001"
+      ]
+    },
+    {
+      "section_id": "E02-S03",
+      "title_fa": "۳) موتور استارت و مدار راه‌اندازی",
+      "title_en": "Starter Motor and Starting Circuit",
+      "explanation_fa": "Starter motor یک موتور الکتریکی است که در مرحله راه‌اندازی، با استفاده از انرژی باتری، میل‌لنگ را می‌چرخاند تا موتور احتراق داخلی بتواند کار خود را آغاز کند. در بسیاری از طراحی‌ها، solenoid یا magnetic switch مکانیزم درگیری دنده استارت با دنده فلایویل را فعال می‌کند. اصطلاح cranking به چرخش موتور توسط استارت اشاره دارد.",
+      "vocabulary": [
+        {
+          "en": "starter motor",
+          "fa": "موتور استارت",
+          "pronunciation_fa": "اِستارتر موتِر",
+          "ipa": "/ˈstɑːrtər ˈmoʊtər/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "starter motor assembly",
+            "starter motor operation"
+          ],
+          "example_en": "The starter motor cranks the engine.",
+          "example_fa": "موتور استارت، موتور را می‌چرخاند."
+        },
+        {
+          "en": "starting circuit",
+          "fa": "مدار راه‌اندازی",
+          "pronunciation_fa": "اِستارتینگ سِرکیت",
+          "ipa": "/ˈstɑːrtɪŋ ˈsɜːrkɪt/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "starter control circuit",
+            "starting circuit fault"
+          ],
+          "example_en": "The starting circuit controls starter operation.",
+          "example_fa": "مدار راه‌اندازی، عملکرد استارت را کنترل می‌کند."
+        },
+        {
+          "en": "solenoid",
+          "fa": "سلونوئید / کلید مغناطیسی",
+          "pronunciation_fa": "سولِنویید",
+          "ipa": "/ˈsoʊləˌnɔɪd/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "starter solenoid",
+            "solenoid switch"
+          ],
+          "example_en": "The starter solenoid engages the pinion drive.",
+          "example_fa": "سلونوئید استارت، مکانیزم درگیری دنده را فعال می‌کند."
+        }
+      ],
+      "key_points": [
+        "starter motor برای چرخاندن اولیه موتور است، نه شارژ باتری.",
+        "crank و start نزدیک‌اند اما دقیقاً مترادف نیستند: crank یعنی چرخاندن موتور توسط استارت؛ start یعنی آغاز به کار موتور.",
+        "مدار کنترل استارت و مدار جریان اصلی آن ممکن است بخش‌ها و مسیرهای متفاوتی داشته باشند."
+      ],
+      "contrast_note_fa": "starter motor نام موتور الکتریکی است؛ starting circuit نام مدار کنترل/تغذیه مرتبط با راه‌اندازی است.",
+      "dialogue": {
+        "en": [
+          "Customer: The engine does not crank.",
+          "Technician: The starting circuit and its connections need a vehicle-specific diagnosis."
+        ],
+        "fa": [
+          "مشتری: موتور نمی‌چرخد.",
+          "تکنسین: مدار راه‌اندازی و اتصالات آن باید طبق اطلاعات همین خودرو عیب‌یابی شوند."
+        ]
+      },
+      "practice": {
+        "prompt_fa": "کدام عبارت به معنی «موتور را با استارت چرخاندن» است؟ A) charge the battery B) crank the engine C) protect the circuit",
+        "answer": "B) crank the engine"
+      },
+      "source_ids": [
+        "SRC-DENSO-STARTER-TROUBLESHOOTING-001",
+        "SRC-DENSO-ROTATING-ELECTRICS-001"
+      ]
+    },
+    {
+      "section_id": "E02-S04",
+      "title_fa": "۴) فیوز و حفاظت مدار",
+      "title_en": "Fuse and Circuit Protection",
+      "explanation_fa": "Fuse قطعه حفاظتی است که در شرایط اضافه‌جریان طبق طراحی خود مدار را قطع می‌کند تا از سیم‌کشی و تجهیزات در برابر آثار جریان بیش از حد محافظت شود. اصطلاح blown fuse به فیوزی اشاره دارد که عنصر حفاظتی آن قطع شده است. ظرفیت فیوز و جایگزین آن کاملاً وابسته به طراحی سازنده است؛ انتخاب مقدار نامناسب می‌تواند حفاظت مدار را مختل کند.",
+      "vocabulary": [
+        {
+          "en": "fuse",
+          "fa": "فیوز",
+          "pronunciation_fa": "فیوز",
+          "ipa": "/fjuːz/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "blade fuse",
+            "fuse rating",
+            "fuse box"
+          ],
+          "example_en": "The fuse protects the circuit against excessive current.",
+          "example_fa": "فیوز از مدار در برابر جریان بیش از حد محافظت می‌کند."
+        },
+        {
+          "en": "blown fuse",
+          "fa": "فیوز سوخته / قطع‌شده",
+          "pronunciation_fa": "بلون فیوز",
+          "ipa": "/bloʊn fjuːz/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "blown fuse indication",
+            "replace a blown fuse"
+          ],
+          "example_en": "A blown fuse can interrupt the circuit.",
+          "example_fa": "فیوز قطع‌شده می‌تواند مدار را از کار بیندازد."
+        },
+        {
+          "en": "fuse rating",
+          "fa": "مشخصه نامی فیوز",
+          "pronunciation_fa": "فیوز رِیتینگ",
+          "ipa": "/fjuːz ˈreɪtɪŋ/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "correct fuse rating",
+            "specified fuse rating"
+          ],
+          "example_en": "The fuse rating must match the vehicle specification.",
+          "example_fa": "مشخصه نامی فیوز باید با مشخصات خودرو مطابقت داشته باشد."
+        }
+      ],
+      "key_points": [
+        "فیوز برای حفاظت مدار است؛ نقش آن با relay که مدار را کنترل/کلیدزنی می‌کند متفاوت است.",
+        "هرگز مقدار فیوز را از روی ظاهر یا یک خودروی دیگر حدس نزنید؛ مرجع، دفترچه و نقشه همان خودرو است.",
+        "عبارت blown fuse یک وضعیت قطعه را بیان می‌کند، نه علت ریشه‌ای اضافه‌جریان را."
+      ],
+      "contrast_note_fa": "fuse مدار را در وضعیت اضافه‌جریان قطع می‌کند؛ relay با فرمان کنترلی، اتصال مدار بار را برقرار یا قطع می‌کند.",
+      "dialogue": {
+        "en": [
+          "Technician A: The lighting circuit is not operating.",
+          "Technician B: The wiring diagram identifies the specified fuse for that circuit."
+        ],
+        "fa": [
+          "تکنسین الف: مدار روشنایی کار نمی‌کند.",
+          "تکنسین ب: نقشه سیم‌کشی، فیوز مشخص‌شده برای آن مدار را نشان می‌دهد."
+        ]
+      },
+      "practice": {
+        "prompt_fa": "جای خالی را کامل کنید: “A ___ protects an electrical circuit against excessive current.”",
+        "answer": "fuse"
+      },
+      "source_ids": [
+        "SRC-HELLA-FUSE-INSTALLATION-001",
+        "SRC-HELLA-CIRCUIT-BREAKERS-001"
+      ]
+    },
+    {
+      "section_id": "E02-S05",
+      "title_fa": "۵) رله و مدار کنترل",
+      "title_en": "Relay and Control Circuit",
+      "explanation_fa": "Relay یک کلید الکتریکی کنترل‌شونده است. در بسیاری از رله‌های الکترومکانیکی، جریان در سیم‌پیچ (relay coil) میدان مغناطیسی ایجاد می‌کند و کنتاکت‌ها را تغییر وضعیت می‌دهد. این ساختار اجازه می‌دهد یک مدار کنترلی، مدار بار دیگری را کنترل کند. آرایش پایه‌ها و منطق normally open/normally closed باید از نقشه یا مشخصات همان رله خوانده شود.",
+      "vocabulary": [
+        {
+          "en": "relay",
+          "fa": "رله",
+          "pronunciation_fa": "ری‌لِی",
+          "ipa": "/ˈriːleɪ/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "automotive relay",
+            "relay socket",
+            "relay circuit"
+          ],
+          "example_en": "The relay switches the load circuit.",
+          "example_fa": "رله مدار بار را کلیدزنی می‌کند."
+        },
+        {
+          "en": "relay coil",
+          "fa": "سیم‌پیچ رله",
+          "pronunciation_fa": "ری‌لِی کویل",
+          "ipa": "/ˈriːleɪ kɔɪl/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "energize the relay coil",
+            "relay coil resistance"
+          ],
+          "example_en": "The relay coil creates a magnetic field when energized.",
+          "example_fa": "با برق‌دار شدن سیم‌پیچ رله، میدان مغناطیسی ایجاد می‌شود."
+        },
+        {
+          "en": "normally open (NO)",
+          "fa": "در حالت عادی باز",
+          "pronunciation_fa": "نورمَلی اوپِن",
+          "ipa": "/ˈnɔːrməli ˈoʊpən/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "normally open contact",
+            "NO relay contact"
+          ],
+          "example_en": "A normally open contact is open in its normal state.",
+          "example_fa": "کنتاکت normally open در وضعیت عادی باز است."
+        }
+      ],
+      "key_points": [
+        "relay معمولاً مدار بار را با یک مدار فرمان کنترل می‌کند.",
+        "coil بخش ایجاد میدان مغناطیسی در رله الکترومکانیکی است؛ contact بخش کلیدزنی مدار است.",
+        "شماره پایه‌ها، ظرفیت جریان و نوع رله باید با مستندات قطعه و خودرو تطبیق داده شود."
+      ],
+      "contrast_note_fa": "coil بخش تحریک رله است؛ contact بخشی است که مسیر مدار بار را وصل یا قطع می‌کند.",
+      "dialogue": {
+        "en": [
+          "Technician: Is the relay command present in the control circuit?",
+          "Colleague: The wiring diagram and the vehicle data are needed to confirm it."
+        ],
+        "fa": [
+          "تکنسین: فرمان رله در مدار کنترل وجود دارد؟",
+          "همکار: برای تأیید آن به نقشه سیم‌کشی و اطلاعات خودرو نیاز داریم."
+        ]
+      },
+      "practice": {
+        "prompt_fa": "معنی relay coil کدام است؟ A) کنتاکت رله B) سیم‌پیچ رله C) جعبه فیوز",
+        "answer": "B) سیم‌پیچ رله"
+      },
+      "source_ids": [
+        "SRC-HELLA-RELAYS-001",
+        "SRC-HELLA-RELAY-CATALOGUE-001"
+      ]
+    },
+    {
+      "section_id": "E02-S06",
+      "title_fa": "۶) کانکتور، دسته‌سیم و اتصالات",
+      "title_en": "Wiring Connector and Wiring Harness",
+      "explanation_fa": "Wiring connector مجموعه‌ای از بدنه عایق و ترمینال‌های رساناست که اتصال قابل‌جداشدن میان سیم‌ها، قطعات یا واحدهای الکترونیکی را برقرار می‌کند. Wiring harness یا loom دسته‌ای از سیم‌ها و شاخه‌های مرتب‌شده است که اتصالات چند مدار را در خودرو سازمان‌دهی می‌کند. connector با terminal یکسان نیست: terminal بخش فلزی رسانا درون کانکتور است.",
+      "vocabulary": [
+        {
+          "en": "wiring connector",
+          "fa": "کانکتور سیم‌کشی / سوکت",
+          "pronunciation_fa": "وایِرینگ کِنِکتِر",
+          "ipa": "/ˈwaɪərɪŋ kəˈnektər/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "electrical connector",
+            "connector housing",
+            "connector terminal"
+          ],
+          "example_en": "The wiring connector joins the harness to the component.",
+          "example_fa": "کانکتور سیم‌کشی، دسته‌سیم را به قطعه متصل می‌کند."
+        },
+        {
+          "en": "wiring harness",
+          "fa": "دسته‌سیم",
+          "pronunciation_fa": "وایِرینگ هارْنِس",
+          "ipa": "/ˈwaɪərɪŋ ˈhɑːrnɪs/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "engine wiring harness",
+            "main wiring harness",
+            "harness branch"
+          ],
+          "example_en": "The wiring harness routes electrical connections around the vehicle.",
+          "example_fa": "دسته‌سیم، اتصالات الکتریکی را در خودرو مسیر‌دهی می‌کند."
+        },
+        {
+          "en": "terminal",
+          "fa": "ترمینال / سرسیم",
+          "pronunciation_fa": "تِرمینَل",
+          "ipa": "/ˈtɜːrmɪnəl/",
+          "term_id": null,
+          "canonical_status": "not_found_in_current_term_database",
+          "collocations": [
+            "crimp terminal",
+            "connector terminal",
+            "terminal lock"
+          ],
+          "example_en": "The terminal forms the conductive contact inside the connector.",
+          "example_fa": "ترمینال، تماس رسانا را درون کانکتور ایجاد می‌کند."
+        }
+      ],
+      "key_points": [
+        "connector معمولاً قابل جداکردن است؛ terminal بخش رسانای داخل آن است.",
+        "harness یک مجموعه سیم و شاخه‌هاست؛ connector یکی از نقاط اتصال این مجموعه است.",
+        "آرایش پین‌ها، رنگ سیم‌ها و روش بازکردن قفل کانکتور به مدل و سازنده وابسته است؛ این درس هیچ pinout یا روش عملی بازکردن ارائه نمی‌کند."
+      ],
+      "contrast_note_fa": "wire یعنی یک سیم؛ wiring harness مجموعه‌ای از سیم‌ها و شاخه‌ها؛ connector محل اتصال؛ terminal بخش رسانای درون آن است.",
+      "dialogue": {
+        "en": [
+          "Technician: The connector housing looks different from the reference.",
+          "Parts specialist: Please confirm the vehicle model and connector part number."
+        ],
+        "fa": [
+          "تکنسین: بدنه کانکتور با نمونه مرجع متفاوت به نظر می‌رسد.",
+          "کارشناس قطعات: لطفاً مدل خودرو و شماره قطعه کانکتور را تأیید کنید."
+        ]
+      },
+      "practice": {
+        "prompt_fa": "کدام واژه به مجموعه‌ای از سیم‌ها و شاخه‌های مرتب‌شده اشاره دارد؟",
+        "answer": "wiring harness"
+      },
+      "source_ids": [
+        "SRC-TE-AUTOMOTIVE-TERMINALS-001",
+        "SRC-HELLA-INSTALLATION-MATERIAL-001"
+      ]
+    }
+  ],
+  "english_focus": {
+    "grammar": "Present Simple for technical functions; third-person singular -s/-es",
+    "rule_fa": "وقتی فاعل مفردی مانند the battery، the alternator یا it داریم، در جمله خبری حال ساده معمولاً به فعل s یا es اضافه می‌شود. در سؤال و منفی با does، فعل اصلی به شکل پایه برمی‌گردد.",
+    "examples": [
+      {
+        "en": "The battery stores electrical energy.",
+        "fa": "باتری انرژی الکتریکی را ذخیره می‌کند."
+      },
+      {
+        "en": "The alternator supplies electrical power.",
+        "fa": "دینام برق موردنیاز را تأمین می‌کند."
+      },
+      {
+        "en": "The fuse protects the circuit.",
+        "fa": "فیوز از مدار محافظت می‌کند."
+      },
+      {
+        "en": "Does the relay control this circuit?",
+        "fa": "آیا رله این مدار را کنترل می‌کند؟"
+      },
+      {
+        "en": "The connector does not fit this socket.",
+        "fa": "این کانکتور با این سوکت جور نمی‌شود."
+      }
+    ],
+    "common_errors": [
+      {
+        "incorrect": "The alternator supply power.",
+        "correct": "The alternator supplies power.",
+        "reason_fa": "برای فاعل سوم‌شخص مفرد، فعل supply به supplies تبدیل می‌شود."
+      },
+      {
+        "incorrect": "Does the fuse protects the circuit?",
+        "correct": "Does the fuse protect the circuit?",
+        "reason_fa": "پس از does فعل اصلی بدون s می‌آید."
+      }
+    ],
+    "workshop_requests": [
+      {
+        "en": "Could you check the vehicle identification first?",
+        "fa": "ممکن است ابتدا شناسه خودرو را بررسی کنید؟"
+      },
+      {
+        "en": "Please refer to the manufacturer's wiring diagram.",
+        "fa": "لطفاً به نقشه سیم‌کشی سازنده مراجعه کنید."
+      }
+    ]
+  },
+  "reading": {
+    "title_en": "A Basic Electrical-System Discussion",
+    "title_fa": "گفت‌وگو درباره سامانه برق پایه",
+    "text_en": "A vehicle uses several electrical components. The battery stores electrical energy and supplies power when the engine is off or when electrical demand is high. When the engine runs, the alternator contributes to the vehicle's electrical supply and charging strategy. The starter motor cranks the engine during start-up. A fuse protects a circuit against excessive current, while a relay switches a load circuit under electrical control. The wiring harness routes wires through the vehicle, and connectors join the harness to components. The exact design, ratings and diagnostic procedures depend on the vehicle manufacturer and model.",
+    "text_fa": "یک خودرو از چندین قطعه الکتریکی استفاده می‌کند. باتری انرژی الکتریکی را ذخیره می‌کند و هنگامی که موتور خاموش است یا نیاز الکتریکی زیاد می‌شود، برق فراهم می‌کند. هنگام کار موتور، دینام در تأمین برق خودرو و راهبرد شارژ نقش دارد. موتور استارت هنگام راه‌اندازی، موتور را می‌چرخاند. فیوز از مدار در برابر جریان بیش از حد محافظت می‌کند، درحالی‌که رله یک مدار بار را تحت کنترل الکتریکی کلیدزنی می‌کند. دسته‌سیم، سیم‌ها را در خودرو مسیر‌دهی می‌کند و کانکتورها دسته‌سیم را به قطعات متصل می‌کنند. طراحی دقیق، مشخصات نامی و روش‌های عیب‌یابی به سازنده و مدل خودرو وابسته‌اند.",
+    "comprehension_questions": [
+      {
+        "q_fa": "کدام قطعه انرژی الکتریکی را ذخیره می‌کند؟",
+        "answer_fa": "باتری."
+      },
+      {
+        "q_fa": "وظیفه اصلی فیوز در متن چیست؟",
+        "answer_fa": "محافظت از مدار در برابر جریان بیش از حد."
+      },
+      {
+        "q_fa": "چرا نمی‌توان مشخصات و روش آزمون را برای همه خودروها یکسان دانست؟",
+        "answer_fa": "زیرا طراحی و دستورالعمل‌ها به سازنده و مدل خودرو وابسته‌اند."
+      }
+    ],
+    "source_ids": [
+      "SRC-INTERSTATE-GLOSSARY-001",
+      "SRC-DENSO-ROTATING-ELECTRICS-001",
+      "SRC-DENSO-STARTER-TROUBLESHOOTING-001",
+      "SRC-HELLA-FUSE-INSTALLATION-001",
+      "SRC-HELLA-RELAYS-001",
+      "SRC-TE-AUTOMOTIVE-TERMINALS-001"
+    ]
+  },
+  "guided_practice": [
+    {
+      "id": "E02-GP01",
+      "type": "match",
+      "instruction_fa": "هر اصطلاح را به معنی درست وصل کنید.",
+      "items": [
+        {
+          "en": "alternator",
+          "fa": "دینام"
+        },
+        {
+          "en": "fuse",
+          "fa": "فیوز"
+        },
+        {
+          "en": "relay coil",
+          "fa": "سیم‌پیچ رله"
+        },
+        {
+          "en": "wiring harness",
+          "fa": "دسته‌سیم"
+        }
+      ]
+    },
+    {
+      "id": "E02-GP02",
+      "type": "translation_fa_to_en",
+      "instruction_fa": "جمله‌ها را به انگلیسی ترجمه کنید.",
+      "items": [
+        {
+          "fa": "باتری انرژی الکتریکی را ذخیره می‌کند.",
+          "answer": "The battery stores electrical energy."
+        },
+        {
+          "fa": "فیوز از مدار محافظت می‌کند.",
+          "answer": "The fuse protects the circuit."
+        }
+      ]
+    },
+    {
+      "id": "E02-GP03",
+      "type": "error_correction",
+      "instruction_fa": "اشتباه دستوری را اصلاح کنید.",
+      "items": [
+        {
+          "incorrect": "The starter motor crank the engine.",
+          "answer": "The starter motor cranks the engine."
+        },
+        {
+          "incorrect": "Does the relay controls the circuit?",
+          "answer": "Does the relay control the circuit?"
+        }
+      ]
+    },
+    {
+      "id": "E02-GP04",
+      "type": "term_distinction",
+      "instruction_fa": "تفاوت واژه‌ها را توضیح دهید.",
+      "items": [
+        {
+          "pair": [
+            "connector",
+            "terminal"
+          ],
+          "answer_fa": "connector بدنه/مجموعه اتصال است؛ terminal بخش رسانای فلزی درون آن است."
+        },
+        {
+          "pair": [
+            "fuse",
+            "relay"
+          ],
+          "answer_fa": "فیوز حفاظت اضافه‌جریان را انجام می‌دهد؛ رله مدار را تحت فرمان کلیدزنی می‌کند."
+        }
+      ]
+    }
+  ],
+  "knowledge_check": [
+    {
+      "slot_id": "QZ-E02-S01",
+      "type": "mcq",
+      "difficulty_target": 1,
+      "skill": "vocabulary",
+      "question_fa": "کدام قطعه انرژی الکتریکی را ذخیره می‌کند؟",
+      "options": [
+        "Alternator",
+        "Battery",
+        "Relay",
+        "Fuse"
+      ],
+      "correct_answer": "Battery",
+      "explanation_fa": "باتری انرژی را ذخیره می‌کند."
+    },
+    {
+      "slot_id": "QZ-E02-S02",
+      "type": "mcq",
+      "difficulty_target": 2,
+      "skill": "vocabulary",
+      "question_fa": "کدام قطعه مدار بار را تحت کنترل الکتریکی کلیدزنی می‌کند؟",
+      "options": [
+        "Fuse",
+        "Wiring harness",
+        "Relay",
+        "Battery terminal"
+      ],
+      "correct_answer": "Relay",
+      "explanation_fa": "رله یک کلید الکتریکی کنترل‌شونده است."
+    },
+    {
+      "slot_id": "QZ-E02-S03",
+      "type": "fa_to_en",
+      "difficulty_target": 2,
+      "skill": "translation_fa_to_en",
+      "question_fa": "«دینام برق موردنیاز سامانه را تأمین می‌کند.»",
+      "accepted_answers": [
+        "The alternator supplies electrical power to the system."
+      ],
+      "explanation_fa": "برای فاعل سوم‌شخص مفرد، supplies به کار می‌رود."
+    },
+    {
+      "slot_id": "QZ-E02-S04",
+      "type": "fa_to_en",
+      "difficulty_target": 2,
+      "skill": "translation_fa_to_en",
+      "question_fa": "«فیوز از مدار محافظت می‌کند.»",
+      "accepted_answers": [
+        "The fuse protects the circuit."
+      ],
+      "explanation_fa": "فعل protect برای فاعل مفرد به protects تبدیل می‌شود."
+    },
+    {
+      "slot_id": "QZ-E02-S05",
+      "type": "en_to_fa",
+      "difficulty_target": 3,
+      "skill": "translation_en_to_fa",
+      "question_en": "The starter motor cranks the engine during start-up.",
+      "accepted_answers": [
+        "موتور استارت هنگام راه‌اندازی، موتور را می‌چرخاند."
+      ],
+      "explanation_fa": "crank در این بافت به چرخاندن موتور توسط استارت اشاره دارد."
+    },
+    {
+      "slot_id": "QZ-E02-S06",
+      "type": "fill_blank",
+      "difficulty_target": 3,
+      "skill": "reading",
+      "question_en": "The wiring ______ joins the harness to an electrical component.",
+      "accepted_answers": [
+        "connector"
+      ],
+      "explanation_fa": "connector محل اتصال دسته‌سیم به قطعه است."
+    },
+    {
+      "slot_id": "QZ-E02-S07",
+      "type": "identify_correct_term",
+      "difficulty_target": 1,
+      "skill": "vocabulary",
+      "question_fa": "«سیم‌پیچی که در رله الکترومکانیکی میدان مغناطیسی ایجاد می‌کند» کدام است؟",
+      "accepted_answers": [
+        "relay coil"
+      ],
+      "explanation_fa": "relay coil یعنی سیم‌پیچ رله."
+    },
+    {
+      "slot_id": "QZ-E02-S08",
+      "type": "listening",
+      "difficulty_target": 2,
+      "skill": "listening",
+      "transcript_en": "The battery stores energy, and the alternator supports the charging system.",
+      "transcript_fa": "باتری انرژی را ذخیره می‌کند و دینام از سامانه شارژ پشتیبانی می‌کند.",
+      "audio_asset": null,
+      "audio_status": "not_created",
+      "explanation_fa": "فایل صوتی واقعی تولید نشده است؛ این slot تا افزودن صوت گوینده و کنترل تلفظ قابل انتشار نیست."
+    },
+    {
+      "slot_id": "QZ-E02-S09",
+      "type": "image_part_id",
+      "difficulty_target": 2,
+      "skill": "part_recognition",
+      "question_fa": "تصویر واقعیِ یک فیوز تیغه‌ای خودرو را شناسایی کنید.",
+      "image_asset": null,
+      "image_status": "not_available_license_unverified",
+      "expected_term": "fuse",
+      "explanation_fa": "تصویر واقعی با مجوز/شرایط استفاده روشن در این بسته موجود نیست؛ این slot هنوز قابل انتشار نیست."
+    },
+    {
+      "slot_id": "QZ-E02-S10",
+      "type": "sentence_building",
+      "difficulty_target": 2,
+      "skill": "sentence_writing",
+      "word_bank": [
+        "battery",
+        "stores",
+        "electrical",
+        "energy"
+      ],
+      "accepted_answers": [
+        "The battery stores electrical energy."
+      ],
+      "explanation_fa": "فاعل مفرد battery است؛ فعل stores با s می‌آید."
+    }
+  ],
+  "activities": [
+    {
+      "activity_id": "E02-ACT01",
+      "type": "vocabulary_recall",
+      "description_fa": "کارت‌های اصطلاح و معنی را در دو جهت انگلیسی به فارسی و فارسی به انگلیسی مرور کنید."
+    },
+    {
+      "activity_id": "E02-ACT02",
+      "type": "sentence_builder",
+      "description_fa": "با شش واژه اصلی درس جمله خبری حال ساده بسازید."
+    },
+    {
+      "activity_id": "E02-ACT03",
+      "type": "workshop_roleplay",
+      "description_fa": "در نقش تکنسین، نام قطعه را از مشتری بپرسید و با جمله کوتاه درباره عملکرد آن توضیح دهید؛ هیچ عملیات واقعی انجام نمی‌شود."
+    }
+  ],
+  "assessment": {
+    "quiz_id": "QZ-E02",
+    "question_count": 10,
+    "pass_score_pct": 70,
+    "type_distribution": {
+      "mcq": 2,
+      "fa_to_en": 2,
+      "en_to_fa": 1,
+      "fill_blank": 1,
+      "identify_correct_term": 1,
+      "listening": 1,
+      "image_part_id": 1,
+      "sentence_building": 1
+    },
+    "template_alignment": "matches current QZ-E02 template distribution",
+    "publication_blockers": [
+      "audio_asset for QZ-E02-S08 is null",
+      "licensed real image for QZ-E02-S09 is unavailable",
+      "blueprint featured_part_ids conflict with newly approved six-topic electrical scope"
+    ]
+  },
+  "part_reference_candidates": [
+    {
+      "term_en": "Battery",
+      "manifest_part_id": "PRT-ELE-001",
+      "canonical_part_id": null,
+      "crosswalk_status": "unmatched_review_required",
+      "qa_status": "needs_review"
+    },
+    {
+      "term_en": "Alternator",
+      "manifest_part_id": "PRT-ELE-002",
+      "canonical_part_id": null,
+      "crosswalk_status": "unmatched_review_required",
+      "qa_status": "needs_review"
+    },
+    {
+      "term_en": "Starter motor",
+      "manifest_part_id": "PRT-ELE-003",
+      "canonical_part_id": null,
+      "crosswalk_status": "unmatched_review_required",
+      "qa_status": "needs_review"
+    },
+    {
+      "term_en": "Fuse",
+      "manifest_part_id": "PRT-ELE-005",
+      "canonical_part_id": null,
+      "crosswalk_status": "unmatched_review_required",
+      "qa_status": "needs_review"
+    },
+    {
+      "term_en": "Relay",
+      "manifest_part_id": "PRT-ELE-006",
+      "canonical_part_id": null,
+      "crosswalk_status": "unmatched_review_required",
+      "qa_status": "needs_review"
+    },
+    {
+      "term_en": "Wiring connector",
+      "manifest_part_id": null,
+      "canonical_part_id": null,
+      "crosswalk_status": "no_manifest_record_found",
+      "qa_status": "needs_review"
+    }
+  ],
+  "source_ids": [
+    "SRC-INTERSTATE-GLOSSARY-001",
+    "SRC-BOSCH-BATTERY-AMS-001",
+    "SRC-DENSO-ROTATING-ELECTRICS-001",
+    "SRC-BOSCH-SMART-CHARGE-001",
+    "SRC-DENSO-GLOSSARY-001",
+    "SRC-DENSO-STARTER-TROUBLESHOOTING-001",
+    "SRC-HELLA-FUSE-INSTALLATION-001",
+    "SRC-HELLA-CIRCUIT-BREAKERS-001",
+    "SRC-HELLA-RELAYS-001",
+    "SRC-HELLA-RELAY-CATALOGUE-001",
+    "SRC-TE-AUTOMOTIVE-TERMINALS-001",
+    "SRC-HELLA-INSTALLATION-MATERIAL-001"
+  ],
+  "limitations": [
+    "در terms_batch_01.json فقط TERM-000001 تا TERM-000041 وجود دارد؛ هیچ‌یک از ۱۰ اصطلاح هدف این درس با همان نام/معنی در این batch یافت نشد. همه term_idها null هستند.",
+    "فایل terms_batch_02.json در شاخه main پیدا نشد؛ شمارش canonical واژگان فراتر از ۴۱ رکورد قابل اثبات نیست.",
+    "تمام پنج شناسه manifest الکتریکی موجود در crosswalk، canonical_part_id=null و qa_status=needs_review دارند.",
+    "برای wiring connector هیچ رکوردی با همین نام در crosswalk بررسی‌شده یافت نشد.",
+    "blueprint فعلی هنوز چهار featured_part_id غیرالکتریکی دارد و target_new_terms/category query آن با واژگان جدید هم‌راستا نیست؛ پیشنهاد اصلاح در blueprint_alignment ثبت شده اما اعمال نشده است.",
+    "فایل صوتی واقعی و تصویر دارای مجوز برای دو slot آزمون فراهم نشده‌اند.",
+    "منابع candidate هستند؛ این بسته هیچ منبع یا ادعای فنی را به verified ارتقا نمی‌دهد.",
+    "تمام توضیحات عمومی‌اند؛ مقادیر ولتاژ/جریان/فیوز، پین‌آوت، رنگ سیم، روش اتصال یا مراحل عملی عیب‌یابی ارائه نشده‌اند."
+  ]
+}
