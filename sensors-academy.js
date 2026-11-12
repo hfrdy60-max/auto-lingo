@@ -88,7 +88,7 @@
     const quiz = sensor.quiz || {};
     return '<article class="sensor-detail-panel">'+
       '<div class="sensor-detail-top"><div><span class="sensor-code">'+esc(sensor.id)+'</span><span class="sensor-category">'+esc(sensor.category)+'</span><h3>'+esc(sensor.name_fa)+'</h3><p dir="ltr">'+esc(sensor.name_en)+'</p></div><span class="sensor-page">صفحات '+esc(sensor.pages)+'</span></div>'+
-      '<div class="sensor-detail-tabs">'+detailDefinitions.map(x=>tabButton(x[0],x[1],detailTab===x[0])).join("")+'</div>'+
+      '<div class="sensor-detail-tabs">'+detailDefinitions.map(x=>'<button type="button" class="sensor-subtab '+(detailTab===x[0]?'active':'')+'" data-sensor-detail="'+esc(x[0])+'">'+esc(x[1])+'</button>').join("")+'</div>'+
       '<div class="sensor-detail-content">'+detailBody(sensor)+'</div>'+
       '<div class="sensor-quiz"><div><span>CHECK YOUR KNOWLEDGE</span><b>سنجش سریع: '+esc(sensor.id)+'</b></div><p>'+esc(quiz.q||"")+'</p><div class="sensor-quiz-options">'+arr(quiz.options).map((x,i)=>'<button type="button" data-sensor-answer="'+i+'" '+(quizAnswered?'disabled':'')+'>'+esc(x)+'</button>').join("")+'</div><p class="sensor-quiz-feedback" id="sensorQuizFeedback">'+(quizAnswered?'<span>'+esc(quiz.why||"")+'</span>':"")+'</p></div>'+
       '</article>';
@@ -154,16 +154,9 @@
       const feedback=document.getElementById("sensorQuizFeedback");
       if(feedback)feedback.textContent=(correct?"درست است. ":"پاسخ صحیح: "+q.options[q.answer]+" — ")+(q.why||"");
     }));
-    academyContent.querySelectorAll("[data-sensor-view]").forEach(()=>{});
-    academyContent.querySelectorAll("[data-sensor-view]").forEach(b=>b.classList.toggle("active",b.dataset.sensorView===view));
-    academyContent.querySelectorAll("[data-sensor-view]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.sensorView===view)));
-    academyContent.querySelectorAll("[data-sensor-tab]").forEach(()=>{});
-    academyContent.querySelectorAll("[data-sensor-view]").forEach(()=>{});
-    academyContent.querySelectorAll(".sensor-detail-tabs [data-sensor-view]").forEach(()=>{});
+    academyContent.querySelectorAll(".sensor-module-nav [data-sensor-view]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.sensorView===view)));
     const detailTabs = academyContent.querySelector(".sensor-detail-tabs");
-    if (detailTabs) detailTabs.querySelectorAll("[data-sensor-view]").forEach(b=>b.addEventListener("click",()=>{detailTab=b.dataset.sensorView;quizAnswered=false;renderAcademy();}));
-    /* Detail tabs use their own data attribute to keep them separate from module navigation. */
-    if (detailTabs) detailTabs.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{detailTab=b.dataset.sensorView;quizAnswered=false;renderAcademy();}));
+    if (detailTabs) detailTabs.querySelectorAll("[data-sensor-detail]").forEach(b=>b.addEventListener("click",()=>{detailTab=b.dataset.sensorDetail;quizAnswered=false;renderAcademy();}));
   }
   const originalGlobalRender = renderAcademy;
   renderAcademy = function() {
