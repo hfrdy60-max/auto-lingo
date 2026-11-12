@@ -1,0 +1,837 @@
+{
+  "mission_id": "AI2-LESSON-E04-DASHBOARD-WARNING-LIGHTS-001",
+  "lesson_id": "E04",
+  "lesson_title_fa": "چراغ‌های هشدار داشبورد",
+  "lesson_title_en": "Dashboard Warning Lights",
+  "level_id": "LVL-2",
+  "lesson_order": 4,
+  "content_language": "en",
+  "support_language": "fa",
+  "content_version": "1.0.0",
+  "content_status": "needs_review",
+  "review_note_fa": "بسته پژوهشی مستقل برای QA؛ هیچ داده canonical یا production تغییر نکرده است. اصطلاحات جدید با بانک فعلی تطبیق قطعی ندارند و term_id آن‌ها null است. راهنمای رنگ و اقدام راننده باید همیشه با دفترچه همان مدل/سال خودرو تطبیق داده شود.",
+  "blueprint_alignment": {
+    "blueprint_file": "lesson_blueprints.json",
+    "blueprint_ref": "main",
+    "blueprint_sha": "96c408a52889f5e7025f5284ce8ceacf54b5d0a6",
+    "id": "E04",
+    "level_id": "LVL-2",
+    "order": 4,
+    "title_en": "Dashboard Warning Lights",
+    "title_fa": "چراغ‌های هشدار داشبورد",
+    "type": "lesson",
+    "language_focus_en": "'must/mustn't'; color words; 'The light is on/off'",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "listening",
+      "translation_fa_to_en",
+      "part_recognition"
+    ],
+    "vocabulary_source": {
+      "source": "main_term_database",
+      "query": {
+        "level_id": "LVL-2",
+        "lesson_id": "E04",
+        "category_keys": [
+          "ecu",
+          "electrical",
+          "sensors"
+        ]
+      },
+      "target_new_terms": 10
+    },
+    "featured_part_ids": [
+      "PRT-ECU-007",
+      "PRT-ELE-001",
+      "PRT-SEN-011"
+    ],
+    "dialogue_ids": [],
+    "game_ids": [
+      "GAME-14",
+      "GAME-07",
+      "GAME-13",
+      "GAME-04"
+    ],
+    "quiz_id": "QZ-E04",
+    "estimated_minutes": 27,
+    "mastery_threshold_pct": 70,
+    "review_schedule_days_after_completion": [
+      3,
+      7,
+      21,
+      60
+    ]
+  },
+  "learning_objectives": [
+    "تشخیص و استفاده از نام انگلیسی چراغ‌های هشدار و نشانگرهای مرتبط با سامانه‌های برقی و الکترونیکی خودرو.",
+    "تفاوت warning light، indicator light، MIL و DTC را در متن فنی توضیح دهد.",
+    "وضعیت چراغ را با عبارت‌های The light is on/off و It flashes توصیف کند.",
+    "از must و mustn't و واژگان رنگ برای درک پیام‌های ساده دفترچه راهنما استفاده کند.",
+    "درک کند که روشن‌شدن یک چراغ به‌تنهایی قطعه معیوب را مشخص نمی‌کند و معنی دقیق به مدل، سال و دفترچه خودرو وابسته است."
+  ],
+  "prerequisites": [
+    "آشنایی مقدماتی با instrument cluster و واژگان پایه خودرو.",
+    "آشنایی مقدماتی با جمله ساده حال و واژگان رنگ."
+  ],
+  "lesson_intro_fa": "چراغ‌های هشدار و نشانگرها بخشی از زبان ارتباطی خودرو با راننده هستند. آن‌ها وضعیت یا احتمال وجود ایراد در یک سامانه را اعلام می‌کنند؛ اما معمولاً به‌تنهایی علت دقیق یا قطعه خراب را مشخص نمی‌کنند. در این درس نام انگلیسی چراغ‌های مهم، تفاوت اصطلاحات، رنگ‌ها و عبارت‌های رایج دفترچه راهنما را یاد می‌گیریم. رنگ، شکل نماد، پیام همراه و اقدام لازم ممکن است با مدل و سال خودرو تفاوت داشته باشد؛ بنابراین دفترچه همان خودرو مرجع نهایی است.",
+  "sections": [
+    {
+      "section_id": "E04-S01",
+      "title_fa": "پنل آمپر و زبان چراغ‌ها",
+      "title_en": "The Instrument Cluster and Warning-Light Language",
+      "explanation_fa": "Instrument cluster یا پنل آمپر مجموعه‌ای است که اطلاعات رانندگی و پیام‌های وضعیت خودرو را به راننده نشان می‌دهد. Warning light معمولاً برای هشدار درباره وضعیت غیرعادی یا احتمال خرابی به‌کار می‌رود؛ indicator light می‌تواند صرفاً وضعیت یا فعال‌بودن یک قابلیت را نشان دهد، مانند چراغ راهنما. در گفتار روزمره این دو واژه گاهی به‌جای هم استفاده می‌شوند، اما در متن فنی باید نقش نماد و تعریف سازنده را بررسی کرد. عبارت The light is on یعنی چراغ روشن است؛ The light is off یعنی خاموش است؛ It flashes یعنی چشمک می‌زند.",
+      "vocabulary": [
+        {
+          "en": "warning light",
+          "fa": "چراغ هشدار",
+          "pronunciation_fa": "وُرنینگ لایت",
+          "ipa": "/ˈwɔːrnɪŋ laɪt/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "warning light remains on",
+            "dashboard warning light"
+          ],
+          "example_en": "The warning light is still on.",
+          "example_fa": "چراغ هشدار هنوز روشن است."
+        },
+        {
+          "en": "indicator light",
+          "fa": "چراغ نشانگر",
+          "pronunciation_fa": "ایندیکِیتِر لایت",
+          "ipa": "/ˈɪndɪkeɪtər laɪt/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "turn-signal indicator light",
+            "status indicator"
+          ],
+          "example_en": "The indicator light shows that the system is active.",
+          "example_fa": "چراغ نشانگر فعال‌بودن سامانه را نشان می‌دهد."
+        },
+        {
+          "en": "instrument cluster",
+          "fa": "مجموعه نشان‌دهنده‌ها؛ پنل آمپر",
+          "pronunciation_fa": "اینسترومِنت کلاستِر",
+          "ipa": "/ˈɪnstrəmənt ˈklʌstər/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "instrument cluster display",
+            "cluster warning message"
+          ],
+          "example_en": "The instrument cluster displays warning messages.",
+          "example_fa": "پنل آمپر پیام‌های هشدار را نمایش می‌دهد."
+        }
+      ],
+      "key_points": [
+        "A warning light may indicate a system fault; an indicator light may simply show an operating state.",
+        "The light is on = چراغ روشن است؛ The light is off = چراغ خاموش است؛ The light is flashing = چراغ چشمک می‌زند.",
+        "چراغی که هنگام روشن‌کردن سوئیچ برای بررسی اولیه ظاهر و سپس خاموش می‌شود، لزوماً نشانه خرابی نیست؛ رفتار دقیق به خودرو وابسته است."
+      ],
+      "contrast_note_fa": "warning light و indicator light همیشه مترادف دقیق نیستند. Warning معمولاً جنبه هشدار دارد؛ indicator می‌تواند وضعیت عادی یا فعال‌بودن یک عملکرد را نمایش دهد.",
+      "dialogue": {
+        "title_fa": "گفت‌وگوی کوتاه",
+        "lines": [
+          {
+            "speaker": "Technician",
+            "en": "Is the warning light still on?",
+            "fa": "آیا چراغ هشدار هنوز روشن است؟"
+          },
+          {
+            "speaker": "Driver",
+            "en": "Yes. It came on while I was driving.",
+            "fa": "بله. هنگام رانندگی روشن شد."
+          },
+          {
+            "speaker": "Technician",
+            "en": "Please tell me the vehicle model and year.",
+            "fa": "لطفاً مدل و سال خودرو را بگویید."
+          }
+        ]
+      },
+      "practice": [
+        {
+          "type": "choose",
+          "prompt_fa": "کدام اصطلاح به مجموعه نمایشگرهای پشت فرمان اشاره دارد؟",
+          "options": [
+            "Instrument cluster",
+            "Fault code",
+            "Alternator"
+          ],
+          "answer": "Instrument cluster"
+        }
+      ],
+      "source_ids": [
+        "SRC-ISO-2575-2021",
+        "SRC-TOYOTA-CLUSTER-2024"
+      ]
+    },
+    {
+      "section_id": "E04-S02",
+      "title_fa": "چراغ سامانه شارژ و نماد باتری",
+      "title_en": "Charging-System Warning Light",
+      "explanation_fa": "Charging system warning light در بسیاری از خودروها با نماد باتری شناخته می‌شود. این چراغ به وضعیت سامانه شارژ مربوط است و در مستندات سازندگان می‌تواند به اختلال در دینام یا سامانه شارژ اشاره کند. نماد باتری الزاماً به این معنی نیست که خود باتری تنها قطعه معیوب است. وضعیت چراغ، پیام نمایشگر و دستورالعمل دفترچه همان خودرو باید با هم بررسی شوند. در این درس فقط زبان و مفهوم هشدار را می‌آموزیم و هیچ روش اتصال، آزمون یا تعمیر ارائه نمی‌شود.",
+      "vocabulary": [
+        {
+          "en": "charging system warning light",
+          "fa": "چراغ هشدار سامانه شارژ",
+          "pronunciation_fa": "چارْجینگ سیستم وُرنینگ لایت",
+          "ipa": "/ˈtʃɑːrdʒɪŋ ˈsɪstəm ˈwɔːrnɪŋ laɪt/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "charging system warning",
+            "charging system malfunction"
+          ],
+          "example_en": "The charging system warning light remains on.",
+          "example_fa": "چراغ هشدار سامانه شارژ همچنان روشن مانده است."
+        },
+        {
+          "en": "battery warning light",
+          "fa": "چراغ هشدار باتری",
+          "pronunciation_fa": "بَتِری وُرنینگ لایت",
+          "ipa": "/ˈbætəri ˈwɔːrnɪŋ laɪt/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "battery symbol",
+            "battery warning"
+          ],
+          "example_en": "The battery warning light is red on this vehicle.",
+          "example_fa": "چراغ هشدار باتری در این خودرو قرمز است."
+        }
+      ],
+      "key_points": [
+        "در برخی راهنماهای سازندگان، چراغ شارژ به اختلال دینام یا سامانه شارژ اشاره می‌کند؛ این تعبیر را به همه خودروها تعمیم ندهید.",
+        "Battery warning light نام رایج نماد است؛ معنای فنی آن می‌تواند کل charging system را در بر بگیرد.",
+        "رنگ و اقدام لازم را از دفترچه همان خودرو بخوانید؛ رنگ به‌تنهایی دستور یکسانی برای همه خودروها نیست."
+      ],
+      "contrast_note_fa": "Battery warning light و charging system warning light در بعضی خودروها برای یک نماد به‌کار می‌روند؛ عبارت دوم از نظر مفهومی گسترده‌تر است و لزوماً فقط خود باتری را هدف نمی‌گیرد.",
+      "dialogue": {
+        "title_fa": "گفت‌وگوی کوتاه",
+        "lines": [
+          {
+            "speaker": "Driver",
+            "en": "The battery warning light came on.",
+            "fa": "چراغ هشدار باتری روشن شد."
+          },
+          {
+            "speaker": "Technician",
+            "en": "Does the display show another message?",
+            "fa": "آیا نمایشگر پیام دیگری نشان می‌دهد؟"
+          },
+          {
+            "speaker": "Driver",
+            "en": "It says to check the charging system.",
+            "fa": "نوشته سامانه شارژ بررسی شود."
+          }
+        ]
+      },
+      "practice": [
+        {
+          "type": "translate",
+          "prompt_fa": "ترجمه کنید: The charging system warning light is on.",
+          "answer_fa": "چراغ هشدار سامانه شارژ روشن است."
+        }
+      ],
+      "source_ids": [
+        "SRC-TOYOTA-WARNINGS",
+        "SRC-KIA-CHARGING-2025",
+        "SRC-MOPAR-WARNINGS"
+      ]
+    },
+    {
+      "section_id": "E04-S03",
+      "title_fa": "چراغ چک موتور و MIL",
+      "title_en": "Malfunction Indicator Lamp (MIL)",
+      "explanation_fa": "Malfunction Indicator Lamp یا MIL نام فنی چراغی است که در گفتار عمومی اغلب check engine light نامیده می‌شود. در مستندات سازندگان، این چراغ می‌تواند به خطا در سامانه کنترل موتور، کنترل الکترونیکی دریچه گاز، سامانه کنترل آلایندگی یا سامانه‌های مرتبط اشاره کند؛ دامنه دقیق به خودرو وابسته است. DTC مخفف Diagnostic Trouble Code است و یک کد ثبت‌شده در سامانه تشخیص عیب است. روشن‌شدن MIL به‌تنهایی DTC مشخصی را به ما نمی‌گوید و یک DTC نیز به‌تنهایی اثبات نمی‌کند که قطعه‌ای خاص خراب است.",
+      "vocabulary": [
+        {
+          "en": "Malfunction Indicator Lamp (MIL)",
+          "fa": "چراغ نشانگر خرابی؛ چراغ چک موتور",
+          "pronunciation_fa": "مَل‌فانکشن ایندیکِیتِر لَمپ",
+          "ipa": "/mælˈfʌŋkʃən ˈɪndɪkeɪtər læmp/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "MIL is illuminated",
+            "MIL flashes"
+          ],
+          "example_en": "The MIL is illuminated.",
+          "example_fa": "چراغ MIL روشن است."
+        },
+        {
+          "en": "Diagnostic Trouble Code (DTC)",
+          "fa": "کد عیب‌یابی",
+          "pronunciation_fa": "دایَگناستیک ترابِل کُود",
+          "ipa": "/ˌdaɪəɡˈnɑːstɪk ˈtrʌbəl koʊd/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "stored DTC",
+            "read diagnostic trouble codes"
+          ],
+          "example_en": "The scan report contains a stored DTC.",
+          "example_fa": "گزارش دستگاه عیب‌یاب شامل یک کد خطای ذخیره‌شده است."
+        }
+      ],
+      "key_points": [
+        "MIL نام استانداردتر/فنی‌تر چراغی است که در گفتار عمومی check engine light هم نامیده می‌شود.",
+        "DTC یک کد تشخیصی ذخیره‌شده یا گزارش‌شده است؛ چراغ هشدار و کد عیب یک چیز نیستند.",
+        "چراغ به‌تنهایی علت قطعی یا قطعه معیوب را مشخص نمی‌کند؛ تفسیر کد و اطلاعات خودرو لازم است.",
+        "رفتار ثابت یا چشمک‌زن MIL و اقدام لازم باید طبق دفترچه همان خودرو تفسیر شود."
+      ],
+      "contrast_note_fa": "MIL یا check engine light یک چراغ/نشانگر است؛ DTC یک کد تشخیصی است. نباید نام چراغ را با کد خطا اشتباه گرفت.",
+      "dialogue": {
+        "title_fa": "گفت‌وگوی کوتاه",
+        "lines": [
+          {
+            "speaker": "Driver",
+            "en": "The check engine light is on.",
+            "fa": "چراغ چک موتور روشن است."
+          },
+          {
+            "speaker": "Technician",
+            "en": "The light alone does not identify the failed part.",
+            "fa": "خود چراغ به‌تنهایی قطعه خراب را مشخص نمی‌کند."
+          },
+          {
+            "speaker": "Technician",
+            "en": "We need the vehicle information and diagnostic results.",
+            "fa": "به اطلاعات خودرو و نتایج عیب‌یابی نیاز داریم."
+          }
+        ]
+      },
+      "practice": [
+        {
+          "type": "classify",
+          "prompt_fa": "MIL یا check engine light کدام است: چراغ هشدار یا کد عیب؟",
+          "answer_fa": "چراغ هشدار؛ DTC کد عیب‌یابی است."
+        }
+      ],
+      "source_ids": [
+        "SRC-TOYOTA-MIL-2026",
+        "SRC-VW-ATLAS-2025",
+        "SRC-TOYOTA-CLUSTER-2024"
+      ]
+    },
+    {
+      "section_id": "E04-S04",
+      "title_fa": "چراغ هشدار ABS",
+      "title_en": "ABS Warning Light",
+      "explanation_fa": "ABS مخفف Anti-lock Braking System است؛ سامانه‌ای که هنگام ترمزگیری به جلوگیری از قفل‌شدن چرخ‌ها کمک می‌کند. ABS warning light در دفترچه برخی سازندگان به اختلال در ABS یا Brake Assist نسبت داده می‌شود. روشن‌بودن چراغ ABS لزوماً به معنی ازکارافتادن کامل ترمز پایه نیست؛ اما وضعیت سامانه‌های ترمز و دستور رانندگی ایمن باید فقط از راهنمای همان مدل تعیین شود. از یک رنگ یا نماد به‌تنهایی نتیجه‌گیری عمومی نکنید.",
+      "vocabulary": [
+        {
+          "en": "ABS warning light",
+          "fa": "چراغ هشدار سامانه ترمز ضدقفل",
+          "pronunciation_fa": "اِی‌بی‌اِس وُرنینگ لایت",
+          "ipa": "/ˌeɪ biː ˈes ˈwɔːrnɪŋ laɪt/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "ABS warning remains on",
+            "ABS malfunction"
+          ],
+          "example_en": "The ABS warning light remains on.",
+          "example_fa": "چراغ هشدار ABS همچنان روشن است."
+        },
+        {
+          "en": "Anti-lock Braking System (ABS)",
+          "fa": "سامانه ترمز ضدقفل",
+          "pronunciation_fa": "اَنتی‌لاک بِرِیکینگ سیستم",
+          "ipa": "/ˌæntiˈlɑːk ˈbreɪkɪŋ ˈsɪstəm/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "ABS control unit",
+            "ABS warning indicator"
+          ],
+          "example_en": "The ABS helps prevent wheel lock during braking.",
+          "example_fa": "ABS هنگام ترمزگیری به جلوگیری از قفل‌شدن چرخ کمک می‌کند."
+        }
+      ],
+      "key_points": [
+        "ABS مخفف Anti-lock Braking System است.",
+        "در منابع OEM، چراغ ABS می‌تواند نشان‌دهنده اختلال در ABS و در برخی مدل‌ها Brake Assist باشد.",
+        "چراغ ABS را با چراغ هشدار اصلی ترمز یکی ندانید؛ اگر چند چراغ هم‌زمان روشن‌اند، دفترچه همان خودرو اهمیت ویژه دارد."
+      ],
+      "contrast_note_fa": "ABS warning light به سامانه ضدقفل اشاره دارد؛ brake system warning light می‌تواند به بخش‌های دیگری از سامانه ترمز مربوط باشد. این دو را مترادف فرض نکنید.",
+      "dialogue": {
+        "title_fa": "گفت‌وگوی کوتاه",
+        "lines": [
+          {
+            "speaker": "Driver",
+            "en": "The ABS warning light is on.",
+            "fa": "چراغ هشدار ABS روشن است."
+          },
+          {
+            "speaker": "Technician",
+            "en": "Is the brake warning light on as well?",
+            "fa": "آیا چراغ هشدار ترمز هم روشن است؟"
+          },
+          {
+            "speaker": "Driver",
+            "en": "I will check the exact message in the owner's manual.",
+            "fa": "پیام دقیق را در دفترچه راهنمای خودرو بررسی می‌کنم."
+          }
+        ]
+      },
+      "practice": [
+        {
+          "type": "fill",
+          "prompt_en": "ABS stands for Anti-lock ______ System.",
+          "answer": "Braking"
+        }
+      ],
+      "source_ids": [
+        "SRC-TOYOTA-WARNINGS",
+        "SRC-TOYOTA-86-MANUAL",
+        "SRC-KIA-ABS-EPS-2025",
+        "SRC-VW-ATLAS-2025"
+      ]
+    },
+    {
+      "section_id": "E04-S05",
+      "title_fa": "چراغ‌های SRS و EPS",
+      "title_en": "SRS and Electric Power Steering Warnings",
+      "explanation_fa": "SRS مخفف Supplemental Restraint System است و در بسیاری از خودروها به سامانه کیسه هوا و پیش‌کشنده کمربند ایمنی مربوط می‌شود. SRS warning light می‌تواند نشان‌دهنده اختلال در بخشی از این سامانه باشد. EPS مخفف Electric Power Steering است؛ سامانه فرمان کمکی برقی. EPS warning light به اختلال در سامانه فرمان برقی اشاره می‌کند. این چراغ‌ها فقط پیام وضعیت سامانه‌اند و محل یا قطعه معیوب را به‌تنهایی تعیین نمی‌کنند. برای هشدارهای مرتبط با SRS، هیچ اقدام تعمیراتی یا دستکاری انجام ندهید و دستورالعمل سازنده و متخصص واجد صلاحیت را ملاک قرار دهید.",
+      "vocabulary": [
+        {
+          "en": "SRS warning light",
+          "fa": "چراغ هشدار سامانه ایمنی تکمیلی/کیسه هوا",
+          "pronunciation_fa": "اِس‌آر‌اِس وُرنینگ لایت",
+          "ipa": "/ˌes ɑːr ˈes ˈwɔːrnɪŋ laɪt/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "SRS airbag warning",
+            "SRS warning remains on"
+          ],
+          "example_en": "The SRS warning light is on.",
+          "example_fa": "چراغ هشدار SRS روشن است."
+        },
+        {
+          "en": "Electric Power Steering (EPS) warning light",
+          "fa": "چراغ هشدار فرمان کمکی برقی",
+          "pronunciation_fa": "الِکتریک پاوِر استیرینگ وُرنینگ لایت",
+          "ipa": "/ɪˈlektrɪk ˈpaʊər ˈstɪrɪŋ ˈwɔːrnɪŋ laɪt/",
+          "term_id": null,
+          "canonical_status": "unmatched_candidate",
+          "collocations": [
+            "EPS system malfunction",
+            "EPS warning message"
+          ],
+          "example_en": "The EPS warning light indicates a steering-system concern.",
+          "example_fa": "چراغ هشدار EPS به وجود مسئله‌ای در سامانه فرمان اشاره می‌کند."
+        }
+      ],
+      "key_points": [
+        "SRS می‌تواند کیسه‌های هوا و پیش‌کشنده‌های کمربند را در بر بگیرد؛ دامنه دقیق به طراحی خودرو وابسته است.",
+        "EPS مخفف Electric Power Steering است.",
+        "روشن‌شدن چراغ SRS یا EPS به‌تنهایی قطعه خراب را مشخص نمی‌کند.",
+        "برای سامانه SRS از ارائه دستور دستکاری یا تعمیر خودداری کنید؛ به راهنمای سازنده و متخصص واجد صلاحیت ارجاع دهید."
+      ],
+      "contrast_note_fa": "SRS نام یک سامانه ایمنی است؛ airbag warning light یکی از نام‌های رایج چراغ مرتبط با آن است. EPS به فرمان کمکی برقی مربوط است و با چراغ SRS تفاوت دارد.",
+      "dialogue": {
+        "title_fa": "گفت‌وگوی کوتاه",
+        "lines": [
+          {
+            "speaker": "Driver",
+            "en": "The SRS light stays on after the start-up check.",
+            "fa": "چراغ SRS پس از بررسی اولیه هنگام روشن‌کردن خودرو خاموش نمی‌شود."
+          },
+          {
+            "speaker": "Technician",
+            "en": "This concerns the restraint system. Follow the vehicle manufacturer's instructions.",
+            "fa": "این هشدار به سامانه ایمنی مربوط است. دستورالعمل سازنده خودرو را دنبال کنید."
+          },
+          {
+            "speaker": "Driver",
+            "en": "The EPS warning is also shown on the display.",
+            "fa": "هشدار EPS هم روی نمایشگر نشان داده می‌شود."
+          }
+        ]
+      },
+      "practice": [
+        {
+          "type": "match",
+          "prompt_fa": "هر مخفف را به سامانه درست وصل کنید.",
+          "items": [
+            {
+              "en": "SRS",
+              "fa": "Supplemental Restraint System"
+            },
+            {
+              "en": "EPS",
+              "fa": "Electric Power Steering"
+            }
+          ]
+        }
+      ],
+      "source_ids": [
+        "SRC-TOYOTA-MIL-2026",
+        "SRC-TOYOTA-86-MANUAL",
+        "SRC-KIA-CHARGING-2025",
+        "SRC-KIA-ABS-EPS-2025"
+      ]
+    }
+  ],
+  "english_focus": {
+    "grammar": "Must / mustn't; colour words; describing warning-light status with be + on/off and flash",
+    "rule_fa": "از must برای بیان الزام یا دستور مهم و از mustn't برای بیان ممنوعیت استفاده می‌کنیم. برای توصیف وضعیت چراغ از ساختار The light is on/off استفاده می‌شود. برای چشمک‌زدن می‌گوییم The light is flashing. رنگ‌ها با صفت پیش از اسم می‌آیند: a red warning light، an amber indicator. با این حال رنگ به‌تنهایی معنی قطعی یا اقدام یکسانی برای همه خودروها ندارد.",
+    "examples": [
+      {
+        "en": "The warning light is on.",
+        "fa": "چراغ هشدار روشن است."
+      },
+      {
+        "en": "The indicator light is off.",
+        "fa": "چراغ نشانگر خاموش است."
+      },
+      {
+        "en": "The amber light is flashing.",
+        "fa": "چراغ کهربایی چشمک می‌زند."
+      },
+      {
+        "en": "You must read the owner's manual.",
+        "fa": "باید دفترچه راهنمای خودرو را بخوانید."
+      },
+      {
+        "en": "You mustn't assume that the battery is faulty.",
+        "fa": "نباید فرض کنید که خود باتری خراب است."
+      },
+      {
+        "en": "The red warning light must be checked according to the vehicle manual.",
+        "fa": "چراغ هشدار قرمز باید طبق دفترچه همان خودرو بررسی شود."
+      }
+    ],
+    "common_errors": [
+      {
+        "incorrect": "The warning light on.",
+        "correct": "The warning light is on.",
+        "reason_fa": "برای توصیف وضعیت، فعل be لازم است."
+      },
+      {
+        "incorrect": "You must to check the manual.",
+        "correct": "You must check the manual.",
+        "reason_fa": "پس از must فعل ساده و بدون to می‌آید."
+      },
+      {
+        "incorrect": "The light is flashing on.",
+        "correct": "The light is flashing.",
+        "reason_fa": "برای بیان چشمک‌زدن، flashing کافی است."
+      }
+    ],
+    "workshop_requests": [
+      {
+        "en": "Could you describe the warning symbol on the display?",
+        "fa": "ممکن است نماد هشدار روی نمایشگر را توصیف کنید؟"
+      },
+      {
+        "en": "Please provide the vehicle model and model year.",
+        "fa": "لطفاً مدل خودرو و سال ساخت آن را اعلام کنید."
+      },
+      {
+        "en": "You must refer to the owner's manual for the exact warning.",
+        "fa": "برای تفسیر دقیق هشدار باید به دفترچه راهنمای خودرو مراجعه کنید."
+      }
+    ]
+  },
+  "reading": {
+    "title_en": "A Warning Light on the Dashboard",
+    "title_fa": "یک چراغ هشدار روی داشبورد",
+    "text_en": "A driver visits a workshop because a warning light is on. The technician asks for the vehicle model and model year. The driver says that the battery symbol appeared on the instrument cluster. The technician explains that this symbol may refer to the charging system, not only to the battery itself. Later, the driver mentions that the check engine light was also on. The technician explains that the MIL is a warning indicator and that a diagnostic trouble code is separate information. The warning light alone does not identify a failed part. The technician must use the correct vehicle information and follow the manufacturer's service information. The driver must not guess the meaning from colour alone.",
+    "text_fa": "راننده به تعمیرگاه مراجعه می‌کند، چون یک چراغ هشدار روشن است. تکنسین مدل و سال ساخت خودرو را می‌پرسد. راننده می‌گوید نماد باتری روی پنل آمپر ظاهر شده است. تکنسین توضیح می‌دهد که این نماد ممکن است به سامانه شارژ مربوط باشد، نه فقط خود باتری. سپس راننده می‌گوید چراغ چک موتور هم روشن بوده است. تکنسین توضیح می‌دهد که MIL یک چراغ هشدار است و کد عیب‌یابی اطلاعات جداگانه‌ای محسوب می‌شود. خود چراغ به‌تنهایی قطعه خراب را مشخص نمی‌کند. تکنسین باید از اطلاعات درست همان خودرو استفاده کند و دستورالعمل سازنده را دنبال کند. راننده نباید فقط از روی رنگ چراغ حدس بزند.",
+    "comprehension_questions": [
+      {
+        "q_fa": "چرا تکنسین مدل و سال ساخت خودرو را می‌پرسد؟",
+        "answer_fa": "چون معنی چراغ‌ها و دستورالعمل‌ها ممکن است با مدل و سال خودرو تفاوت داشته باشد."
+      },
+      {
+        "q_fa": "آیا نماد باتری همیشه به معنی خرابی خود باتری است؟",
+        "answer_fa": "خیر؛ ممکن است به سامانه شارژ مربوط باشد."
+      },
+      {
+        "q_fa": "تفاوت MIL و DTC چیست؟",
+        "answer_fa": "MIL چراغ هشدار است؛ DTC کد عیب‌یابی است."
+      },
+      {
+        "q_fa": "آیا روشن‌شدن چراغ به‌تنهایی قطعه خراب را مشخص می‌کند؟",
+        "answer_fa": "خیر؛ اطلاعات خودرو و بررسی تشخیصی لازم است."
+      }
+    ],
+    "source_ids": [
+      "SRC-TOYOTA-WARNINGS",
+      "SRC-TOYOTA-MIL-2026",
+      "SRC-KIA-CHARGING-2025"
+    ]
+  },
+  "guided_practice": [
+    {
+      "id": "E04-GP01",
+      "type": "match",
+      "instruction_fa": "اصطلاح انگلیسی را با معنی فارسی درست تطبیق دهید.",
+      "items": [
+        {
+          "en": "warning light",
+          "fa": "چراغ هشدار"
+        },
+        {
+          "en": "instrument cluster",
+          "fa": "پنل آمپر"
+        },
+        {
+          "en": "fault code",
+          "fa": "کد عیب"
+        },
+        {
+          "en": "charging system",
+          "fa": "سامانه شارژ"
+        }
+      ]
+    },
+    {
+      "id": "E04-GP02",
+      "type": "fill_blank",
+      "instruction_fa": "جای خالی را با must یا mustn't کامل کنید.",
+      "items": [
+        {
+          "sentence_en": "You ___ read the owner's manual for the exact warning.",
+          "answer": "must"
+        },
+        {
+          "sentence_en": "You ___ identify a failed part from the warning light alone.",
+          "answer": "mustn't"
+        }
+      ]
+    },
+    {
+      "id": "E04-GP03",
+      "type": "translate",
+      "instruction_fa": "جمله‌ها را به انگلیسی ترجمه کنید.",
+      "items": [
+        {
+          "fa": "چراغ ABS روشن است.",
+          "answer_en": "The ABS warning light is on."
+        },
+        {
+          "fa": "چراغ نشانگر خاموش است.",
+          "answer_en": "The indicator light is off."
+        },
+        {
+          "fa": "چراغ کهربایی چشمک می‌زند.",
+          "answer_en": "The amber light is flashing."
+        }
+      ]
+    },
+    {
+      "id": "E04-GP04",
+      "type": "classify",
+      "instruction_fa": "مشخص کنید عبارت به چراغ هشدار مربوط است یا کد عیب‌یابی.",
+      "items": [
+        {
+          "term": "MIL",
+          "answer": "warning indicator"
+        },
+        {
+          "term": "DTC",
+          "answer": "diagnostic code"
+        }
+      ]
+    }
+  ],
+  "knowledge_check": [
+    {
+      "slot_id": "QZ-E04-S01",
+      "type": "mcq",
+      "difficulty_target": 1,
+      "skill": "vocabulary",
+      "question_fa": "کدام اصطلاح به مجموعه نمایشگرها و نشانگرهای پشت فرمان اشاره دارد؟",
+      "options": [
+        "Instrument cluster",
+        "Diagnostic Trouble Code",
+        "Charging system"
+      ],
+      "correct_answer": "Instrument cluster",
+      "explanation_fa": "Instrument cluster مجموعه نمایشگرها و نشانگرهای صفحه آمپر است."
+    },
+    {
+      "slot_id": "QZ-E04-S02",
+      "type": "mcq",
+      "difficulty_target": 2,
+      "skill": "vocabulary",
+      "question_fa": "کدام گزینه نام فنی چراغی است که در گفتار عمومی check engine light هم گفته می‌شود؟",
+      "options": [
+        "MIL",
+        "EPS",
+        "ABS"
+      ],
+      "correct_answer": "MIL",
+      "explanation_fa": "MIL مخفف Malfunction Indicator Lamp است."
+    },
+    {
+      "slot_id": "QZ-E04-S03",
+      "type": "fa_to_en",
+      "difficulty_target": 2,
+      "skill": "translation_fa_to_en",
+      "question_fa": "«چراغ هشدار ABS روشن است.»",
+      "accepted_answers": [
+        "The ABS warning light is on."
+      ],
+      "explanation_fa": "ساختار توصیف وضعیت چراغ: The light is on."
+    },
+    {
+      "slot_id": "QZ-E04-S04",
+      "type": "fa_to_en",
+      "difficulty_target": 2,
+      "skill": "translation_fa_to_en",
+      "question_fa": "«راننده باید دفترچه راهنمای خودرو را بخواند.»",
+      "accepted_answers": [
+        "The driver must read the owner's manual.",
+        "The driver must read the owner's manual."
+      ],
+      "explanation_fa": "پس از must فعل ساده بدون to می‌آید."
+    },
+    {
+      "slot_id": "QZ-E04-S05",
+      "type": "en_to_fa",
+      "difficulty_target": 3,
+      "skill": "translation_en_to_fa",
+      "question_en": "The warning light alone does not identify a failed part.",
+      "accepted_answers": [
+        "خود چراغ هشدار به‌تنهایی قطعه خراب را مشخص نمی‌کند.",
+        "چراغ هشدار به‌تنهایی قطعه معیوب را مشخص نمی‌کند."
+      ],
+      "explanation_fa": "این جمله تفاوت هشدار اولیه و تشخیص قطعی عیب را بیان می‌کند."
+    },
+    {
+      "slot_id": "QZ-E04-S06",
+      "type": "fill_blank",
+      "difficulty_target": 3,
+      "skill": "reading",
+      "question_en": "A Diagnostic Trouble Code is abbreviated as ___.",
+      "accepted_answers": [
+        "DTC"
+      ],
+      "explanation_fa": "DTC مخفف Diagnostic Trouble Code است."
+    },
+    {
+      "slot_id": "QZ-E04-S07",
+      "type": "identify_correct_term",
+      "difficulty_target": 1,
+      "skill": "vocabulary",
+      "question_fa": "«چراغ هشدار سامانه فرمان کمکی برقی» کدام اصطلاح است؟",
+      "accepted_answers": [
+        "EPS warning light",
+        "Electric Power Steering warning light",
+        "Electric Power Steering (EPS) warning light"
+      ],
+      "explanation_fa": "EPS مخفف Electric Power Steering است."
+    },
+    {
+      "slot_id": "QZ-E04-S08",
+      "type": "listening",
+      "difficulty_target": 2,
+      "skill": "listening",
+      "transcript_en": "The ABS warning light is on. The driver must check the owner's manual for the exact vehicle-specific instructions.",
+      "transcript_fa": "چراغ هشدار ABS روشن است. راننده باید برای دریافت دستورالعمل دقیق مخصوص همان خودرو، دفترچه راهنمای آن را بررسی کند.",
+      "audio_asset": null,
+      "audio_status": "not_created",
+      "explanation_fa": "فایل صوتی واقعی در این بسته تولید نشده است؛ این متن فقط transcript پیشنهادی است."
+    },
+    {
+      "slot_id": "QZ-E04-S09",
+      "type": "image_part_id",
+      "difficulty_target": 2,
+      "skill": "part_recognition",
+      "question_fa": "در تصویر واقعی، مجموعه نمایشگرها و نشانگرهای پشت فرمان را شناسایی کنید.",
+      "image_asset": "https://upload.wikimedia.org/wikipedia/commons/6/63/Warning_lights_on_a_vehicle%27s_dashboard_glow_brightly%2C_indicating_possible_engine_problems._The_display_shows_the_time_as_1806_on_September_4%2C_2020%2C_creating_urgency.jpg",
+      "image_status": "candidate_cc_by_2_0_attribution_required",
+      "expected_term": "instrument cluster",
+      "explanation_fa": "تصویر یک صفحه آمپر واقعی را نشان می‌دهد. این سؤال فقط شناسایی مجموعه instrument cluster است و از روی تصویر علت خرابی استنباط نمی‌شود."
+    },
+    {
+      "slot_id": "QZ-E04-S10",
+      "type": "sentence_building",
+      "difficulty_target": 2,
+      "skill": "sentence_writing",
+      "word_bank": [
+        "The",
+        "warning",
+        "light",
+        "is",
+        "on"
+      ],
+      "accepted_answers": [
+        "The warning light is on."
+      ],
+      "explanation_fa": "برای توصیف روشن‌بودن چراغ از ساختار be + on استفاده می‌کنیم."
+    }
+  ],
+  "activities": [
+    "warm-up (review of previous lesson, 3 items)",
+    "vocabulary presentation (candidate terms; canonical mapping pending)",
+    "guided practice",
+    "reading comprehension",
+    "listening transcript activity (audio pending)",
+    "image-based instrument-cluster recognition",
+    "lesson quiz"
+  ],
+  "assessment": {
+    "quiz_id": "QZ-E04",
+    "question_count": 10,
+    "pass_score_pct": 70,
+    "type_distribution": {
+      "mcq": 2,
+      "fa_to_en": 2,
+      "en_to_fa": 1,
+      "fill_blank": 1,
+      "identify_correct_term": 1,
+      "listening": 1,
+      "image_part_id": 1,
+      "sentence_building": 1
+    }
+  },
+  "part_reference_candidates": [
+    {
+      "featured_part_id": "PRT-ECU-007",
+      "name_en": "Instrument cluster",
+      "canonical_part_id": null,
+      "qa_status": "needs_review"
+    },
+    {
+      "featured_part_id": "PRT-ELE-001",
+      "name_en": "Battery",
+      "canonical_part_id": null,
+      "qa_status": "needs_review"
+    },
+    {
+      "featured_part_id": "PRT-SEN-011",
+      "name_en": "Oil pressure sensor",
+      "canonical_part_id": null,
+      "qa_status": "needs_review"
+    }
+  ],
+  "source_ids": [
+    "SRC-ISO-2575-2021",
+    "SRC-TOYOTA-WARNINGS",
+    "SRC-TOYOTA-CLUSTER-2024",
+    "SRC-TOYOTA-MIL-2026",
+    "SRC-TOYOTA-86-MANUAL",
+    "SRC-KIA-CHARGING-2025",
+    "SRC-KIA-ABS-EPS-2025",
+    "SRC-VW-ATLAS-2025",
+    "SRC-MOPAR-WARNINGS",
+    "SRC-COMMONS-DASHBOARD-CCBY2"
+  ],
+  "limitations": [
+    "بانک فعال terms_batch_01.json فقط 41 رکورد دارد؛ هیچ رکوردی با واژگان هدف E04 (warning/indicator/MIL/DTC/ABS/SRS/EPS/charging/instrument cluster) تطبیق پیدا نکرد. تمام term_idها null هستند.",
+    "هر سه featured_part_id در parts_image_crosswalk.json به canonical_part_id=null و qa_status=needs_review نگاشت شده‌اند؛ هیچ PART ID canonical حدس زده نشده است.",
+    "QZ-E04 دقیقاً 10 slot دارد؛ transcript سؤال listening آماده است اما فایل صوتی واقعی وجود ندارد.",
+    "تصویر CC BY 2.0 واقعی پیدا شده است؛ انتساب به عکاس و لینک مجوز لازم است. قبل از انتشار، کیفیت/تناسب تصویر در خود renderer بررسی شود.",
+    "رنگ چراغ‌ها، وضعیت روشن/چشمک‌زن و اقدام راننده خودرو-ویژه است؛ این درس از ارائه دستور عمومی رانندگی یا تعمیر خودداری می‌کند.",
+    "محتوای درس زبان‌محور است؛ علت‌یابی، تعمیر یا رویه عملی برای سامانه‌های ترمز، SRS یا EPS آموزش داده نمی‌شود."
+  ]
+}
