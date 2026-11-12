@@ -12,28 +12,28 @@
         },
         {
           "speaker": "Supervisor",
-          "en": "Is the symptom present all the time?",
-          "fa": "مشتری از اختلال متناوب چراغ‌ها گزارش داده است."
+          "en": "When does the problem usually occur?",
+          "fa": "این مشکل معمولاً چه زمانی رخ می‌دهد؟"
         },
         {
           "speaker": "Technician",
-          "en": "Is the symptom present all the time?",
-          "fa": "آیا علامت همیشه وجود دارد؟"
+          "en": "The customer noticed it after driving in heavy rain.",
+          "fa": "مشتری پس از رانندگی در باران شدید متوجه آن شده است."
         },
         {
           "speaker": "Supervisor",
-          "en": "No. It appears under certain operating conditions.",
-          "fa": "خیر. در برخی شرایط کاری ظاهر می‌شود."
+          "en": "Has the condition been reproduced in the workshop?",
+          "fa": "آیا این وضعیت در تعمیرگاه بازتولید شده است؟"
         },
         {
           "speaker": "Technician",
-          "en": "Record the conditions and the exact vehicle details.",
-          "fa": "خیر. در برخی شرایط کاری ظاهر می‌شود."
+          "en": "Not yet; I have recorded the customer’s description.",
+          "fa": "هنوز نه؛ توضیحات مشتری را ثبت کرده‌ام."
         },
         {
           "speaker": "Supervisor",
-          "en": "Record the conditions and the exact vehicle details.",
-          "fa": "شرایط و مشخصات دقیق خودرو را ثبت کن."
+          "en": "Good. Keep the cause unconfirmed until there is supporting evidence.",
+          "fa": "خوب است. تا زمانی که شواهد پشتیبان نداریم، علت را تأییدشده اعلام نکن."
         }
       ],
       "status": "candidate_unverified",
@@ -45,33 +45,33 @@
       "turns": [
         {
           "speaker": "Technician",
-          "en": "The report mentions a voltage-drop concern.",
-          "fa": "گزارش به احتمال افت ولتاژ اشاره می‌کند."
+          "en": "The report mentions a possible voltage-drop concern.",
+          "fa": "گزارش به احتمال وجود افت ولتاژ اشاره می‌کند."
         },
         {
           "speaker": "Supervisor",
-          "en": "Does that term describe an unloaded resistance check?",
-          "fa": "گزارش به احتمال افت ولتاژ اشاره می‌کند."
+          "en": "How is voltage drop different from resistance?",
+          "fa": "افت ولتاژ چه تفاوتی با مقاومت دارد؟"
         },
         {
           "speaker": "Technician",
-          "en": "Does that term describe an unloaded resistance check?",
-          "fa": "آیا این اصطلاح آزمون مقاومتِ بدون بار را توصیف می‌کند؟"
+          "en": "Voltage drop describes a potential difference associated with current flow.",
+          "fa": "افت ولتاژ اختلاف پتانسیلی را توصیف می‌کند که با عبور جریان ارتباط دارد."
         },
         {
           "speaker": "Supervisor",
-          "en": "No. Voltage drop is interpreted in relation to current flow.",
-          "fa": "خیر. افت ولتاژ در ارتباط با عبور جریان تفسیر می‌شود."
+          "en": "Can an unloaded resistance reading describe every operating condition?",
+          "fa": "آیا اندازه‌گیری مقاومت در حالت بدون بار، همه شرایط کاری را نشان می‌دهد؟"
         },
         {
           "speaker": "Technician",
-          "en": "Correct. The test conditions must be documented.",
-          "fa": "خیر. افت ولتاژ در ارتباط با عبور جریان تفسیر می‌شود."
+          "en": "No. The report must state the conditions under which a value was obtained.",
+          "fa": "خیر. گزارش باید شرایطی را که مقدار در آن به دست آمده مشخص کند."
         },
         {
           "speaker": "Supervisor",
-          "en": "Correct. The test conditions must be documented.",
-          "fa": "درست است. شرایط آزمون باید ثبت شود."
+          "en": "Exactly. Avoid comparing readings without matching test conditions.",
+          "fa": "دقیقاً. بدون یکسان بودن شرایط آزمون، اندازه‌گیری‌ها را با هم مقایسه نکن."
         }
       ],
       "status": "candidate_unverified",
@@ -88,28 +88,28 @@
         },
         {
           "speaker": "Supervisor",
-          "en": "Which connector view does the document show?",
-          "fa": "مرجع مدار را در نقشه سیم‌کشی پیدا کردم."
+          "en": "Does the drawing show the connector from the component side or wire side?",
+          "fa": "نقشه، کانکتور را از سمت قطعه نشان می‌دهد یا سمت سیم؟"
         },
         {
           "speaker": "Technician",
-          "en": "Which connector view does the document show?",
-          "fa": "سند کدام نمای کانکتور را نشان می‌دهد؟"
+          "en": "It provides separate views for both sides.",
+          "fa": "برای هر دو سمت، نماهای جداگانه ارائه می‌کند."
         },
         {
           "speaker": "Supervisor",
-          "en": "It identifies the component side and the wire side separately.",
-          "fa": "سمت قطعه و سمت سیم را جداگانه مشخص می‌کند."
+          "en": "Why should the viewing direction be noted?",
+          "fa": "چرا باید جهت مشاهده مشخص شود؟"
         },
         {
           "speaker": "Technician",
-          "en": "Remember that the viewing direction matters.",
-          "fa": "سمت قطعه و سمت سیم را جداگانه مشخص می‌کند."
+          "en": "The same connector can look different when viewed from opposite sides.",
+          "fa": "یک کانکتور واحد ممکن است از دو سمت مخالف، ظاهر متفاوتی داشته باشد."
         },
         {
           "speaker": "Supervisor",
-          "en": "Remember that the viewing direction matters.",
-          "fa": "یادت باشد جهت مشاهده اهمیت دارد."
+          "en": "Correct. Always follow the legend and view labels in that document.",
+          "fa": "درست است. همیشه راهنما و برچسب نماها را در همان سند دنبال کن."
         }
       ],
       "status": "candidate_unverified",
@@ -122,32 +122,32 @@
         {
           "speaker": "Technician",
           "en": "The service history mentions an intermittent connection.",
-          "fa": "سوابق تعمیر به اتصال متناوب اشاره می‌کند."
+          "fa": "در سوابق تعمیر به اتصال متناوب اشاره شده است."
         },
         {
           "speaker": "Supervisor",
-          "en": "Does the outside appearance prove the contact condition?",
-          "fa": "سوابق تعمیر به اتصال متناوب اشاره می‌کند."
+          "en": "Does a clean exterior prove that the electrical contact is sound?",
+          "fa": "آیا ظاهر تمیز ثابت می‌کند که کنتاکت الکتریکی سالم است؟"
         },
         {
           "speaker": "Technician",
-          "en": "Does the outside appearance prove the contact condition?",
-          "fa": "آیا ظاهر بیرونی وضعیت کنتاکت را ثابت می‌کند؟"
+          "en": "No. External appearance alone cannot confirm the internal contact condition.",
+          "fa": "خیر. ظاهر بیرونی به‌تنهایی وضعیت کنتاکت داخلی را تأیید نمی‌کند."
         },
         {
           "speaker": "Supervisor",
-          "en": "No. Appearance alone is not enough evidence.",
-          "fa": "خیر. ظاهر به‌تنهایی مدرک کافی نیست."
+          "en": "Which terms should the inspection report distinguish?",
+          "fa": "گزارش بازرسی باید کدام اصطلاحات را از هم تفکیک کند؟"
         },
         {
           "speaker": "Technician",
-          "en": "What terms should the report distinguish?",
-          "fa": "خیر. ظاهر به‌تنهایی مدرک کافی نیست."
+          "en": "Corrosion, damaged housing, loose fit, and contact condition are separate observations.",
+          "fa": "خوردگی، آسیب بدنه، لقی اتصال و وضعیت کنتاکت، مشاهدات جداگانه‌ای هستند."
         },
         {
           "speaker": "Supervisor",
-          "en": "What terms should the report distinguish?",
-          "fa": "گزارش باید چه اصطلاحاتی را از هم جدا کند؟"
+          "en": "Good. Record observations separately from the final diagnosis.",
+          "fa": "خوب است. مشاهدات را جدا از تشخیص نهایی ثبت کن."
         }
       ],
       "status": "candidate_unverified",
@@ -159,33 +159,33 @@
       "turns": [
         {
           "speaker": "Technician",
-          "en": "The scan report describes a signal as implausible.",
-          "fa": "گزارش دیاگ سیگنال را نامعقول توصیف کرده است."
+          "en": "The scan report describes the sensor signal as implausible.",
+          "fa": "گزارش دستگاه عیب‌یاب، سیگنال حسگر را نامعقول توصیف می‌کند."
         },
         {
           "speaker": "Supervisor",
-          "en": "Does that prove the sensor itself is defective?",
-          "fa": "گزارش دیاگ سیگنال را نامعقول توصیف کرده است."
+          "en": "Does that prove the sensor itself has failed?",
+          "fa": "آیا این موضوع ثابت می‌کند که خود حسگر خراب شده است؟"
         },
         {
           "speaker": "Technician",
-          "en": "Does that prove the sensor itself is defective?",
-          "fa": "آیا این موضوع ثابت می‌کند خود سنسور معیوب است؟"
+          "en": "No. The wording describes the signal, not a confirmed failed part.",
+          "fa": "خیر. این عبارت وضعیت سیگنال را توصیف می‌کند، نه خرابی قطعه‌ای تأییدشده را."
         },
         {
           "speaker": "Supervisor",
-          "en": "No. Wiring, supply, reference, ground, and other inputs may matter.",
-          "fa": "خیر. سیم‌کشی، تغذیه، مرجع، زمین و ورودی‌های دیگر هم ممکن است مؤثر باشند."
+          "en": "What other system elements may affect the reported signal?",
+          "fa": "چه اجزای دیگری از سیستم ممکن است بر سیگنال گزارش‌شده اثر بگذارند؟"
         },
         {
           "speaker": "Technician",
-          "en": "Keep the conclusion open until the evidence is reviewed.",
-          "fa": "خیر. سیم‌کشی، تغذیه، مرجع، زمین و ورودی‌های دیگر هم ممکن است مؤثر باشند."
+          "en": "The wiring, power supply, reference, ground, or related inputs may be relevant.",
+          "fa": "سیم‌کشی، منبع تغذیه، مرجع، اتصال زمین یا ورودی‌های مرتبط ممکن است مؤثر باشند."
         },
         {
           "speaker": "Supervisor",
-          "en": "Keep the conclusion open until the evidence is reviewed.",
-          "fa": "تا بررسی شواهد، نتیجه‌گیری را قطعی نکن."
+          "en": "Then keep the conclusion provisional until the evidence is reviewed.",
+          "fa": "پس تا زمان بررسی شواهد، نتیجه‌گیری را موقت نگه دار."
         }
       ],
       "status": "candidate_unverified",
@@ -197,33 +197,33 @@
       "turns": [
         {
           "speaker": "Technician",
-          "en": "Several control units report a communication concern.",
-          "fa": "چند واحد کنترل مشکل ارتباطی گزارش می‌کنند."
+          "en": "Several control units have recorded communication faults.",
+          "fa": "چند واحد کنترل، خطاهای ارتباطی ثبت کرده‌اند."
         },
         {
           "speaker": "Supervisor",
-          "en": "Could this be a network-level issue?",
-          "fa": "چند واحد کنترل مشکل ارتباطی گزارش می‌کنند."
+          "en": "Could the issue involve the vehicle network rather than one unit?",
+          "fa": "آیا ممکن است مشکل به شبکه خودرو مربوط باشد، نه فقط یک واحد؟"
         },
         {
           "speaker": "Technician",
-          "en": "Could this be a network-level issue?",
-          "fa": "آیا ممکن است مشکل در سطح شبکه باشد؟"
+          "en": "That is possible, but the available report does not identify a failed unit.",
+          "fa": "این احتمال وجود دارد، اما گزارش موجود واحد معیوبی را مشخص نمی‌کند."
         },
         {
           "speaker": "Supervisor",
-          "en": "It is one possibility, but the report does not identify a failed unit.",
-          "fa": "یکی از احتمال‌هاست، اما گزارش واحد معیوبی را مشخص نمی‌کند."
+          "en": "Which network terms appear in the technical note?",
+          "fa": "چه اصطلاحات شبکه‌ای در یادداشت فنی آمده‌اند؟"
         },
         {
           "speaker": "Technician",
-          "en": "What network terms appear in the technical note?",
-          "fa": "یکی از احتمال‌هاست، اما گزارش واحد معیوبی را مشخص نمی‌کند."
+          "en": "It mentions a bus, a message, and a communication timeout.",
+          "fa": "در آن به گذرگاه، پیام و پایان مهلت ارتباط اشاره شده است."
         },
         {
           "speaker": "Supervisor",
-          "en": "What network terms appear in the technical note?",
-          "fa": "چه اصطلاحات شبکه‌ای در یادداشت فنی آمده است؟"
+          "en": "Use those terms accurately and do not infer a cause from the wording alone.",
+          "fa": "این اصطلاحات را دقیق به کار ببر و فقط از روی عبارت گزارش، علت را نتیجه‌گیری نکن."
         }
       ],
       "status": "candidate_unverified",
@@ -235,33 +235,33 @@
       "turns": [
         {
           "speaker": "Technician",
-          "en": "A current DTC is stored in the control unit.",
+          "en": "A current diagnostic trouble code is stored in the control unit.",
           "fa": "یک کد عیب جاری در واحد کنترل ذخیره شده است."
         },
         {
           "speaker": "Supervisor",
-          "en": "What does the DTC tell us?",
-          "fa": "یک کد عیب جاری در واحد کنترل ذخیره شده است."
+          "en": "What information does the code provide?",
+          "fa": "این کد چه اطلاعاتی در اختیار ما می‌گذارد؟"
         },
         {
           "speaker": "Technician",
-          "en": "What does the DTC tell us?",
-          "fa": "کد عیب چه چیزی به ما می‌گوید؟"
+          "en": "It identifies a monitored condition associated with the control system.",
+          "fa": "این کد یک وضعیت پایش‌شده مرتبط با سیستم کنترل را مشخص می‌کند."
         },
         {
           "speaker": "Supervisor",
-          "en": "It identifies a monitored condition, not necessarily a failed part.",
-          "fa": "یک وضعیت پایش‌شده را مشخص می‌کند، نه لزوماً قطعه خراب را."
+          "en": "Does it automatically identify the component that must be replaced?",
+          "fa": "آیا این کد به‌طور خودکار قطعه‌ای را که باید تعویض شود مشخص می‌کند؟"
         },
         {
           "speaker": "Technician",
-          "en": "What additional information is useful?",
-          "fa": "یک وضعیت پایش‌شده را مشخص می‌کند، نه لزوماً قطعه خراب را."
+          "en": "No. We need the code description, status, context, and supporting evidence.",
+          "fa": "خیر. به شرح کد، وضعیت آن، شرایط ثبت و شواهد پشتیبان نیاز داریم."
         },
         {
           "speaker": "Supervisor",
-          "en": "What additional information is useful?",
-          "fa": "چه اطلاعات تکمیلی مفید است؟"
+          "en": "Exactly. A code is a diagnostic clue, not a parts-replacement instruction.",
+          "fa": "دقیقاً. کد یک سرنخ عیب‌یابی است، نه دستور تعویض قطعه."
         }
       ],
       "status": "candidate_unverified",
@@ -273,33 +273,33 @@
       "turns": [
         {
           "speaker": "Technician",
-          "en": "The customer says the warning appeared again.",
-          "fa": "مشتری می‌گوید چراغ هشدار دوباره ظاهر شده است."
+          "en": "The customer says the warning appeared again after the repair.",
+          "fa": "مشتری می‌گوید پس از تعمیر، هشدار دوباره ظاهر شده است."
         },
         {
           "speaker": "Supervisor",
-          "en": "Was the original operating condition recorded?",
-          "fa": "مشتری می‌گوید چراغ هشدار دوباره ظاهر شده است."
+          "en": "Was the original operating condition documented?",
+          "fa": "آیا شرایط عملکرد اولیه مستند شده بود؟"
         },
         {
           "speaker": "Technician",
-          "en": "Was the original operating condition recorded?",
-          "fa": "آیا شرایط عملکرد اولیه ثبت شده بود؟"
+          "en": "Yes. The report includes the customer’s description and the stored status.",
+          "fa": "بله. گزارش شامل توضیحات مشتری و وضعیت ذخیره‌شده است."
         },
         {
           "speaker": "Supervisor",
-          "en": "Yes. The report includes the conditions and stored status.",
-          "fa": "بله. گزارش شرایط و وضعیت ذخیره‌شده را شامل می‌شود."
+          "en": "Has the vehicle been checked under comparable conditions since the repair?",
+          "fa": "آیا پس از تعمیر، خودرو در شرایط قابل‌مقایسه بررسی شده است؟"
         },
         {
           "speaker": "Technician",
-          "en": "Can we say the repair is confirmed?",
-          "fa": "بله. گزارش شرایط و وضعیت ذخیره‌شده را شامل می‌شود."
+          "en": "That verification has not yet been documented.",
+          "fa": "نتیجه چنین بررسی‌ای هنوز مستند نشده است."
         },
         {
           "speaker": "Supervisor",
-          "en": "Can we say the repair is confirmed?",
-          "fa": "آیا می‌توانیم بگوییم تعمیر تأیید شده است؟"
+          "en": "Then describe the repair as awaiting verification, not confirmed.",
+          "fa": "پس تعمیر را در انتظار تأیید توصیف کن، نه تأییدشده."
         }
       ],
       "status": "candidate_unverified",
