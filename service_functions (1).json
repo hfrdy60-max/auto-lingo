@@ -1,0 +1,995 @@
+[
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-service-section",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Service",
+    "menu_path": [
+      "Diagnostics",
+      "Service"
+    ],
+    "path_confidence": "documented",
+    "ui_element_type": "menu_section",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "A separate 'Service' application also exists on the Job Menu (p.74); how the two differ in content is not stated.",
+    "menu_path_alternatives": [],
+    "category": "Special Functions",
+    "term_en": "Service",
+    "term_en_as_written_in_manual": "Service",
+    "term_variants_in_manual": [],
+    "term_fa": "سرویس",
+    "pronunciation_fa": "سِروی‌س",
+    "technical_description_fa": "بخش دوم صفحه‌ی Vehicle Diagnostics برای سرویس‌های دوره‌ای و نگهداری، مثل ریست چراغ سرویس و کالیبراسیون سیستم‌ها.",
+    "usage_fa": "انجام ریست‌ها و کالیبراسیون‌های بعد از تعمیر.",
+    "related_terms": [
+      {
+        "term": "Diagnosis",
+        "target_id": "autel-ms906pro-diagnosis-section",
+        "relation": "sibling",
+        "basis": "manual",
+        "source_pages": "29",
+        "note": ""
+      },
+      {
+        "term": "Oil Reset Service",
+        "target_id": "autel-ms906pro-oil-reset",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "Electric Parking Brake (EPB) Service",
+        "target_id": "autel-ms906pro-epb",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "ABS/SRS Services",
+        "target_id": "autel-ms906pro-abs-srs",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "Steering Angle Sensor (SAS) Service",
+        "target_id": "autel-ms906pro-sas",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "DPF Regeneration Service",
+        "target_id": "autel-ms906pro-dpf",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "Tire Pressure Monitor System (TPMS) Service",
+        "target_id": "autel-ms906pro-tpms-service",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "Battery Management System (BMS)",
+        "target_id": "autel-ms906pro-bms",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "76",
+        "note": "BMS is documented only in the Service application chapter"
+      },
+      {
+        "term": "Hot Functions",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "74",
+        "note": "Appears in the Service application"
+      }
+    ],
+    "workshop_example_fa": "بعد از تعویض روغن، ریست چراغ سرویس از این بخش انجام می‌شود.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "29",
+        "locator": "Main Menu: Service section"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "43",
+        "locator": "Service"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "documented",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "در اپ جداگانه‌ی Service روی Job Menu هم دسترسی هست (p.74)؛ بین دو مسیر تفاوت جزئیات ثبت نشده.",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-oil-reset",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Service",
+    "menu_path": [
+      "Diagnostics",
+      "Service",
+      "Oil Reset Service"
+    ],
+    "path_confidence": "section_documented_leaf_unconfirmed",
+    "ui_element_type": "service_function",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+    "menu_path_alternatives": [
+      {
+        "path": [
+          "Service (application)",
+          "Oil Reset Service"
+        ],
+        "basis": "manual ch.6 p.74-76",
+        "confidence": "section_documented_leaf_unconfirmed"
+      }
+    ],
+    "category": "Special Functions",
+    "term_en": "Oil Reset Service",
+    "term_en_as_written_in_manual": "Oil Reset Service",
+    "term_variants_in_manual": [
+      {
+        "text": "Oil Reset Service",
+        "printed_pages": "43, 44"
+      },
+      {
+        "text": "Oil Reset",
+        "printed_pages": "75"
+      }
+    ],
+    "term_fa": "ریست سرویس روغن",
+    "pronunciation_fa": "اویل ریست",
+    "technical_description_fa": "ریست سامانه‌ی عمر روغن. باید بعد از هر تعویض روغن انجام شود.",
+    "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+    "related_terms": [
+      {
+        "term": "Service",
+        "target_id": "autel-ms906pro-service-section",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "Oil Life Reminder",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "44",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "بعد از تعویض روغن، عمر روغن را ۱۰۰٪ می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "43",
+        "locator": "Service: common functions list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "44",
+        "locator": "Function Descriptions: Oil Reset Service"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "75",
+        "locator": "Oil Reset"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "section_documented_leaf_unconfirmed",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-epb",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Service",
+    "menu_path": [
+      "Diagnostics",
+      "Service",
+      "Electric Parking Brake (EPB) Service"
+    ],
+    "path_confidence": "section_documented_leaf_unconfirmed",
+    "ui_element_type": "service_function",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+    "menu_path_alternatives": [
+      {
+        "path": [
+          "Service (application)",
+          "Electric Parking Brake (EPB) Service"
+        ],
+        "basis": "manual ch.6 p.74-76",
+        "confidence": "section_documented_leaf_unconfirmed"
+      }
+    ],
+    "category": "Special Functions",
+    "term_en": "Electric Parking Brake (EPB) Service",
+    "term_en_as_written_in_manual": "Electric Parking Brake (EPB) Service",
+    "term_variants_in_manual": [
+      {
+        "text": "EPB Service",
+        "printed_pages": "43"
+      },
+      {
+        "text": "Electric Parking Brake (EPB) Service",
+        "printed_pages": "44"
+      },
+      {
+        "text": "Electric Parking Brake (EPB)",
+        "printed_pages": "75"
+      }
+    ],
+    "term_fa": "سرویس ترمز دستی برقی",
+    "pronunciation_fa": "ای‌پی‌بی",
+    "technical_description_fa": "غیرفعال/فعال‌سازی کنترل ترمز، کمک به کنترل روغن ترمز، باز و بسته کردن لنت و تنظیم پس از تعویض لنت یا دیسک.",
+    "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+    "related_terms": [
+      {
+        "term": "Service",
+        "target_id": "autel-ms906pro-service-section",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "قبل از تعویض لنت عقب، ترمز برقی را از این منو باز می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "43",
+        "locator": "Service: common functions list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "44",
+        "locator": "Function Descriptions: EPB Service"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "75",
+        "locator": "Electric Parking Brake (EPB)"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "section_documented_leaf_unconfirmed",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-abs-srs",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Service",
+    "menu_path": [
+      "Diagnostics",
+      "Service",
+      "ABS/SRS Services"
+    ],
+    "path_confidence": "section_documented_leaf_unconfirmed",
+    "ui_element_type": "service_function",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+    "menu_path_alternatives": [],
+    "category": "Special Functions",
+    "term_en": "ABS/SRS Services",
+    "term_en_as_written_in_manual": "ABS/SRS Services",
+    "term_variants_in_manual": [],
+    "term_fa": "سرویس‌های ABS و ایربگ",
+    "pronunciation_fa": "ای‌بی‌اس / اس‌آر‌اس",
+    "technical_description_fa": "تست‌های دوطرفه برای ABS و SRS، مانند Automated Bleeding و Pump Motor Test و دیدن اطلاعات ماژول.",
+    "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+    "related_terms": [
+      {
+        "term": "Service",
+        "target_id": "autel-ms906pro-service-section",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "Automated Bleeding",
+        "target_id": null,
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "44",
+        "note": ""
+      },
+      {
+        "term": "Pump Motor Test",
+        "target_id": null,
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "44",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "برای هواگیری ABS از Automated Bleeding استفاده می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "43",
+        "locator": "Service: common functions list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "44",
+        "locator": "Function Descriptions: ABS/SRS Services"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "section_documented_leaf_unconfirmed",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-sas",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Service",
+    "menu_path": [
+      "Diagnostics",
+      "Service",
+      "Steering Angle Sensor (SAS) Service"
+    ],
+    "path_confidence": "section_documented_leaf_unconfirmed",
+    "ui_element_type": "service_function",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+    "menu_path_alternatives": [
+      {
+        "path": [
+          "Service (application)",
+          "Steering Angle Sensor (SAS) Service"
+        ],
+        "basis": "manual ch.6 p.74-76",
+        "confidence": "section_documented_leaf_unconfirmed"
+      }
+    ],
+    "category": "Special Functions",
+    "term_en": "Steering Angle Sensor (SAS) Service",
+    "term_en_as_written_in_manual": "Steering Angle Sensor (SAS) Service",
+    "term_variants_in_manual": [
+      {
+        "text": "SAS Calibration Service",
+        "printed_pages": "43"
+      },
+      {
+        "text": "Steering Angle Sensor (SAS) Service",
+        "printed_pages": "44"
+      },
+      {
+        "text": "Steering Angle Sensor (SAS)",
+        "printed_pages": "76"
+      }
+    ],
+    "term_fa": "سرویس سنسور زاویه فرمان",
+    "pronunciation_fa": "اس‌ای‌اس",
+    "technical_description_fa": "کالیبراسیون SAS؛ موقعیت مستقیم فرمان را ذخیره می‌کند. بعد از موفقیت، حافظه‌ی خطای سنسور خودکار پاک می‌شود.",
+    "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+    "related_terms": [
+      {
+        "term": "Service",
+        "target_id": "autel-ms906pro-service-section",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "بعد از تنظیم زاویه‌ی چرخ‌ها، SAS را کالیبره می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "43",
+        "locator": "Service: common functions list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "44",
+        "locator": "Function Descriptions: SAS Service"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "76-77",
+        "locator": "Steering Angle Sensor (SAS)"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "section_documented_leaf_unconfirmed",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-dpf",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Service",
+    "menu_path": [
+      "Diagnostics",
+      "Service",
+      "DPF Regeneration Service"
+    ],
+    "path_confidence": "section_documented_leaf_unconfirmed",
+    "ui_element_type": "service_function",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+    "menu_path_alternatives": [],
+    "category": "Special Functions",
+    "term_en": "DPF Regeneration Service",
+    "term_en_as_written_in_manual": "DPF Regeneration Service",
+    "term_variants_in_manual": [],
+    "term_fa": "سرویس بازسازی فیلتر ذرات دیزل",
+    "pronunciation_fa": "دی‌پی‌اف ریجنریشن",
+    "technical_description_fa": "اجرای فرایند Regeneration برای سوزاندن ذرات انباشته در فیلتر DPF.",
+    "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+    "related_terms": [
+      {
+        "term": "Service",
+        "target_id": "autel-ms906pro-service-section",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "چراغ DPF روشن است؛ ریجنریشن انجام می‌دهیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "43",
+        "locator": "Service: common functions list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "44",
+        "locator": "Function Descriptions: DPF Regeneration Service"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "section_documented_leaf_unconfirmed",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-bms",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Service",
+    "menu_path": [
+      "Service (application)",
+      "Battery Management System (BMS)"
+    ],
+    "path_confidence": "section_documented_leaf_unconfirmed",
+    "ui_element_type": "service_function",
+    "path_prerequisite": "Service application opened from the Job Menu (p.74); vehicle selection steps not described for BMS in the manual",
+    "path_note": "Documented only in the Service application chapter (p.76). The manual does not list BMS under Diagnostics > Service (p.43-44), so no such path is claimed.",
+    "menu_path_alternatives": [],
+    "category": "Special Functions",
+    "term_en": "Battery Management System (BMS)",
+    "term_en_as_written_in_manual": "Battery Management System (BMS)",
+    "term_variants_in_manual": [],
+    "term_fa": "سیستم مدیریت باتری",
+    "pronunciation_fa": "بی‌ام‌اس",
+    "technical_description_fa": "ارزیابی شارژ باتری، ثبت تعویض باتری، فعال‌سازی حالت استراحت خودرو و شارژ از طریق سوکت دیاگ. همه‌ی خودروها پشتیبانی نمی‌شوند.",
+    "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+    "related_terms": [
+      {
+        "term": "Service",
+        "target_id": "autel-ms906pro-service-section",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "76",
+        "note": "BMS is documented only in the Service application chapter"
+      },
+      {
+        "term": "Battery Test (application)",
+        "target_id": null,
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "79",
+        "note": "Separate application, chapter 8; not merged"
+      }
+    ],
+    "workshop_example_fa": "بعد از تعویض باتری، تعویض را ثبت می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "76",
+        "locator": "Battery Management System (BMS)"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "section_documented_leaf_unconfirmed",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-tpms-service",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Service",
+    "menu_path": [
+      "Diagnostics",
+      "Service",
+      "Tire Pressure Monitor System (TPMS) Service"
+    ],
+    "path_confidence": "section_documented_leaf_unconfirmed",
+    "ui_element_type": "service_function",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+    "menu_path_alternatives": [
+      {
+        "path": [
+          "Service (application)",
+          "Tire Pressure Monitor System (TPMS) Service"
+        ],
+        "basis": "manual ch.6 p.74-76",
+        "confidence": "section_documented_leaf_unconfirmed"
+      }
+    ],
+    "category": "Special Functions",
+    "term_en": "Tire Pressure Monitor System (TPMS) Service",
+    "term_en_as_written_in_manual": "Tire Pressure Monitor System (TPMS) Service",
+    "term_variants_in_manual": [
+      {
+        "text": "TPMS Programming Service",
+        "printed_pages": "43"
+      },
+      {
+        "text": "Tire Pressure Monitor System (TPMS) Service",
+        "printed_pages": "44"
+      },
+      {
+        "text": "Tire Pressure Monitoring System (TPMS)",
+        "printed_pages": "76"
+      }
+    ],
+    "term_fa": "سرویس سامانه‌ی فشار باد لاستیک",
+    "pronunciation_fa": "تی‌پی‌ام‌اس",
+    "technical_description_fa": "خواندن شناسه‌ی سنسورها از ECU و انجام برنامه‌ریزی/ریست بعد از تعویض سنسور.",
+    "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+    "related_terms": [
+      {
+        "term": "Service",
+        "target_id": "autel-ms906pro-service-section",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "43-44",
+        "note": ""
+      },
+      {
+        "term": "TPMS (application)",
+        "target_id": null,
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "49",
+        "note": "Separate application for MS906 Pro-TS (chapter 5); not merged"
+      }
+    ],
+    "workshop_example_fa": "بعد از تعویض سنسور لاستیک، شناسه‌ها را بازخوانی می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "43",
+        "locator": "Service: common functions list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "44",
+        "locator": "Function Descriptions: TPMS Service"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "76",
+        "locator": "Tire Pressure Monitoring System (TPMS)"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "section_documented_leaf_unconfirmed",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.2",
+  "device_id": "autel_maxisys_ms906_pro",
+  "brand": "Autel",
+  "model_family": [
+    "MaxiSys MS906 Pro",
+    "MaxiSys MS906 Pro-TS"
+  ],
+  "vci": "MaxiVCI V200",
+  "hardware_facts": {
+    "operating_system": "Android 10",
+    "basis": "manual Table 2-1, p.5",
+    "tpms_module": "MS906 Pro-TS only (manual p.49)"
+  },
+  "documentation": {
+    "source_id": "src-001",
+    "title": "MaxiSys MS906 Pro & MS906 Pro-TS User Manual",
+    "document_edition": "US V2.1",
+    "note": "This is the version of the PDF document, not of the device software."
+  },
+  "device_software": {
+    "diagnostic_software_version": null,
+    "vehicle_software_versions": null,
+    "status": "not_documented_in_source",
+    "note": "The manual does not print a diagnostic-software build number. The manual says only that Settings shows general tablet information (p.13) and Update checks for updates (p.13); it does not state where the software version is displayed. Must be read and confirmed on the physical unit."
+  }
+}

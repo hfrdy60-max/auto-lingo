@@ -1,0 +1,441 @@
+[
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-trouble-codes",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Trouble codes"
+    ],
+    "path_confidence": "documented_vehicle_dependent",
+    "ui_element_type": "function_menu_item",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+    "menu_path_alternatives": [],
+    "category": "Read Codes",
+    "term_en": "Trouble Codes",
+    "term_en_as_written_in_manual": "Trouble codes",
+    "term_variants_in_manual": [
+      {
+        "text": "Trouble codes",
+        "printed_pages": "32"
+      },
+      {
+        "text": "Trouble Codes",
+        "printed_pages": "34"
+      }
+    ],
+    "term_fa": "کدهای خطا",
+    "pronunciation_fa": "تراوبل کُدز",
+    "technical_description_fa": "زیرمنویی که شامل Read Codes و Erase Codes است.",
+    "usage_fa": "دسترسی به خواندن و پاک‌کردن DTC.",
+    "related_terms": [
+      {
+        "term": "Control Unit",
+        "target_id": "autel-ms906pro-control-unit",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Read Codes",
+        "target_id": "autel-ms906pro-read-codes",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Erase Codes",
+        "target_id": "autel-ms906pro-erase-codes",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "DTC",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "برای رسیدن به کدهای ذخیره‌شده، اول Trouble codes را باز می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "32",
+        "locator": "Function Menu options list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "34",
+        "locator": "Trouble Codes"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented_vehicle_dependent",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-read-codes",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Trouble codes",
+      "Read Codes"
+    ],
+    "path_confidence": "documented_vehicle_dependent",
+    "ui_element_type": "function_menu_item",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Listed under Trouble codes (p.32).",
+    "menu_path_alternatives": [],
+    "category": "Read Codes",
+    "term_en": "Read Codes",
+    "term_en_as_written_in_manual": "Read Codes",
+    "term_variants_in_manual": [],
+    "term_fa": "خواندن کدها",
+    "pronunciation_fa": "رید کُدز",
+    "technical_description_fa": "کدهای خطای ذخیره‌شده در ماژول را نمایش می‌دهد. ستون‌ها: Code، Status و Description. اگر فریم فریز موجود باشد آیکن دانه‌ی برف دیده می‌شود.",
+    "usage_fa": "پیدا کردن علت روشن بودن چراغ هشدار.",
+    "related_terms": [
+      {
+        "term": "Auto Scan",
+        "target_id": "autel-ms906pro-auto-scan",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "30",
+        "note": "Auto Scan retrieves DTCs"
+      },
+      {
+        "term": "Trouble Codes",
+        "target_id": "autel-ms906pro-trouble-codes",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Erase Codes",
+        "target_id": "autel-ms906pro-erase-codes",
+        "relation": "sibling",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Freeze frame",
+        "target_id": "autel-ms906pro-freeze-frame",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "34-35",
+        "note": ""
+      },
+      {
+        "term": "DTC & FFD",
+        "target_id": "autel-ms906pro-obd2-dtc-ffd",
+        "relation": "see_also",
+        "basis": "author_editorial",
+        "source_pages": "46",
+        "note": "Similar area in generic OBDII; equivalence not asserted by the manual"
+      },
+      {
+        "term": "DTC",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "34",
+        "note": ""
+      },
+      {
+        "term": "Code (column)",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "34",
+        "note": ""
+      },
+      {
+        "term": "Status (column)",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "34",
+        "note": ""
+      },
+      {
+        "term": "Description (column)",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "34",
+        "note": ""
+      },
+      {
+        "term": "Snowflake icon",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "34",
+        "note": ""
+      },
+      {
+        "term": "Search",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "35",
+        "note": "Function button: searches the selected DTC online"
+      }
+    ],
+    "workshop_example_fa": "چراغ موتور روشن است؛ Read Codes می‌زنیم و کد و وضعیتش را یادداشت می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "34",
+        "locator": "Read Codes; Figure 4-9"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "35",
+        "locator": "Table 4-4 Function Buttons in Trouble Codes"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented_vehicle_dependent",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "دکمه‌ی Search کد انتخاب‌شده را برای اطلاعات بیشتر در اینترنت جست‌وجو می‌کند (Table 4-4).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-freeze-frame",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Trouble codes",
+      "Read Codes"
+    ],
+    "path_confidence": "ui_element_on_screen",
+    "ui_element_type": "function_button",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Not a menu: a function button / snowflake icon on the Read Codes screen, shown only when data is available (p.34-35).",
+    "menu_path_alternatives": [],
+    "category": "Freeze Frame",
+    "term_en": "Freeze frame",
+    "term_en_as_written_in_manual": "Freeze frame",
+    "term_variants_in_manual": [],
+    "term_fa": "فریم فریز (داده‌ی لحظه‌ی خطا)",
+    "pronunciation_fa": "فریز فِریم",
+    "technical_description_fa": "فقط وقتی داده در دسترس باشد نمایش داده می‌شود. صفحه‌ی آن شبیه Read Codes است.",
+    "usage_fa": "دیدن شرایط لحظه‌ی ثبت خطا.",
+    "related_terms": [
+      {
+        "term": "Read Codes",
+        "target_id": "autel-ms906pro-read-codes",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "34-35",
+        "note": ""
+      },
+      {
+        "term": "Freeze",
+        "target_id": "autel-ms906pro-live-data-freeze",
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "34-35; 41",
+        "note": "Different functions despite similar names"
+      },
+      {
+        "term": "DTC & FFD",
+        "target_id": "autel-ms906pro-obd2-dtc-ffd",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "46-47",
+        "note": "OBDII Freeze Frame is described under DTC & FFD"
+      },
+      {
+        "term": "Snowflake icon",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "34",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "کد خطا فقط گاهی تکرار می‌شود؛ از Freeze frame می‌فهمیم موقع ثبت خطا خودرو در چه شرایطی بوده.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "34",
+        "locator": "Read Codes: snowflake icon"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "35",
+        "locator": "Table 4-4: Freeze frame button"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "ui_element_on_screen",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "با دکمه‌ی Freeze در Live Data یکی نیست؛ رکورد autel-ms906pro-live-data-freeze را ببینید.",
+    "last_checked": "2026-11-12"
+  }
+]

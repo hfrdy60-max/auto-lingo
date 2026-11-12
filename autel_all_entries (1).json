@@ -1,0 +1,4897 @@
+{
+  "brand": "Autel",
+  "device_id": "autel_maxisys_ms906_pro",
+  "schema_version": "0.2",
+  "count": 36,
+  "entries": [
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-active-test",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Active test"
+      ],
+      "path_confidence": "documented_vehicle_dependent",
+      "ui_element_type": "function_menu_item",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+      "menu_path_alternatives": [],
+      "category": "Active Test",
+      "term_en": "Active Test",
+      "term_en_as_written_in_manual": "Active Test",
+      "term_variants_in_manual": [
+        {
+          "text": "Active test",
+          "printed_pages": "32"
+        },
+        {
+          "text": "Active Test",
+          "printed_pages": "41"
+        }
+      ],
+      "term_fa": "تست فعال",
+      "pronunciation_fa": "اکتیو تست",
+      "technical_description_fa": "دستگاه فرمان به ECU می‌دهد تا عملگرها (مثل سلنوئید یا رله) بین دو حالت کار کنند. نتیجه‌ی موفق با پیامی مثل Command Finished یا Activation Successful نشان داده می‌شود.",
+      "usage_fa": "بررسی سلامت قطعه با فعال‌سازی مستقیم.",
+      "related_terms": [
+        {
+          "term": "Control Unit",
+          "target_id": "autel-ms906pro-control-unit",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Component test",
+          "target_id": "autel-ms906pro-obd2-component-test",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "42; 48",
+          "note": "Both send commands to the ECU; menu names differ; not merged"
+        },
+        {
+          "term": "Actuators",
+          "target_id": null,
+          "relation": "alias",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": "Possible on-screen name"
+        },
+        {
+          "term": "Actuator Test",
+          "target_id": null,
+          "relation": "alias",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": "Possible on-screen name"
+        },
+        {
+          "term": "Function Tests",
+          "target_id": null,
+          "relation": "alias",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": "Possible on-screen name"
+        },
+        {
+          "term": "Command Finished",
+          "target_id": null,
+          "relation": "status_label",
+          "basis": "manual",
+          "source_pages": "42",
+          "note": ""
+        },
+        {
+          "term": "Activation Successful",
+          "target_id": null,
+          "relation": "status_label",
+          "basis": "manual",
+          "source_pages": "42",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "برای اطمینان از سالم بودن رله‌ی فن، از Active Test آن را روشن می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "32",
+          "locator": "Function Menu options list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "41-42",
+          "locator": "Active Test; Figure 4-14"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented_vehicle_dependent",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "طبق راهنما همین گزینه ممکن است با نام Actuators، Actuator Test یا Function Tests ظاهر شود. Actuation Test به‌عنوان نام جدا در این راهنما پیدا نشد.",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-erase-codes",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Trouble codes",
+        "Erase Codes"
+      ],
+      "path_confidence": "documented_vehicle_dependent",
+      "ui_element_type": "function_menu_item",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Listed under Trouble codes (p.32); also a function button on the Read Codes screen (p.35).",
+      "menu_path_alternatives": [],
+      "category": "Clear Codes",
+      "term_en": "Erase Codes",
+      "term_en_as_written_in_manual": "Erase Codes",
+      "term_variants_in_manual": [],
+      "term_fa": "پاک‌کردن کدها",
+      "pronunciation_fa": "ایریز کُدز",
+      "technical_description_fa": "کدها و سایر داده‌ها را از ECU پاک می‌کند. قبل از پاک‌کردن، خواندن کدها و انجام تعمیرات لازم توصیه شده است. سوئیچ باید روی ON (RUN) و موتور خاموش باشد. پیام هشدار از دست رفتن داده نمایش داده می‌شود.",
+      "usage_fa": "پاک‌کردن خطا بعد از تعمیر و بررسی دوباره.",
+      "related_terms": [
+        {
+          "term": "Trouble Codes",
+          "target_id": "autel-ms906pro-trouble-codes",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Read Codes",
+          "target_id": "autel-ms906pro-read-codes",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "DTC & FFD",
+          "target_id": "autel-ms906pro-obd2-dtc-ffd",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "46-47",
+          "note": "OBDII has its own Erase Codes inside DTC & FFD"
+        },
+        {
+          "term": "Quick erase",
+          "target_id": null,
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "31",
+          "note": "Different screen (Auto Scan); not merged"
+        },
+        {
+          "term": "Clear DTCs",
+          "target_id": null,
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "63",
+          "note": "TPMS application button; separate function, not merged"
+        },
+        {
+          "term": "Warning message",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "28",
+          "note": "Erase Codes is the manual's example of a Warning message"
+        }
+      ],
+      "workshop_example_fa": "بعد از تعویض سنسور، Erase Codes می‌زنیم و دوباره Read Codes می‌کنیم تا مطمئن شویم کد برنگشته.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "35",
+          "locator": "Erase Codes; Table 4-4"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented_vehicle_dependent",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "نام‌های مشابه که ادغام نشده‌اند: Quick erase (Auto Scan، p.31)، Clear DTCs (TPMS، p.63)، Erase Codes (OBDII، p.47).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-ecu-information",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "ECU information"
+      ],
+      "path_confidence": "documented_vehicle_dependent",
+      "ui_element_type": "function_menu_item",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+      "menu_path_alternatives": [],
+      "category": "ECU Information",
+      "term_en": "ECU Information",
+      "term_en_as_written_in_manual": "ECU information",
+      "term_variants_in_manual": [
+        {
+          "text": "ECU information",
+          "printed_pages": "32"
+        },
+        {
+          "text": "ECU Information",
+          "printed_pages": "33"
+        }
+      ],
+      "term_fa": "اطلاعات ECU",
+      "pronunciation_fa": "ای‌سی‌یو اینفورمیشن",
+      "technical_description_fa": "مشخصات واحد کنترل تست‌شده، شامل نوع واحد، شماره نسخه‌ها و سایر مشخصات را نشان می‌دهد. ستون چپ نام آیتم و ستون راست مقدار است.",
+      "usage_fa": "تطبیق قطعه، نسخه‌ی نرم‌افزار و کالیبراسیون قبل از تعویض یا برنامه‌ریزی.",
+      "related_terms": [
+        {
+          "term": "Control Unit",
+          "target_id": "autel-ms906pro-control-unit",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Vehicle information",
+          "target_id": "autel-ms906pro-obd2-vehicle-information",
+          "relation": "see_also",
+          "basis": "author_editorial",
+          "source_pages": "33; 48",
+          "note": "Editorial link: both show identification-type information; manual does not relate them"
+        },
+        {
+          "term": "ECU",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "33",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "قبل از تعویض ECU، شماره‌ی نسخه را از این صفحه می‌خوانیم و با قطعه‌ی جدید مقایسه می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "32",
+          "locator": "Function Menu options list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "33",
+          "locator": "ECU Information; Figure 4-8"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented_vehicle_dependent",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-live-data",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Live data"
+      ],
+      "path_confidence": "documented_vehicle_dependent",
+      "ui_element_type": "function_menu_item",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+      "menu_path_alternatives": [],
+      "category": "Live Data",
+      "term_en": "Live Data",
+      "term_en_as_written_in_manual": "Live Data",
+      "term_variants_in_manual": [
+        {
+          "text": "Live data",
+          "printed_pages": "32"
+        },
+        {
+          "text": "Live Data",
+          "printed_pages": "36"
+        }
+      ],
+      "term_fa": "داده‌ی زنده",
+      "pronunciation_fa": "لایو دیتا",
+      "technical_description_fa": "فهرست پارامترهای ماژول با ستون‌های Name، Value، Range و Unit. ترتیب پارامترها همان ترتیب ارسال از ECM است و بین خودروها فرق می‌کند.",
+      "usage_fa": "بررسی رفتار سنسورها و وضعیت‌ها در زمان واقعی.",
+      "related_terms": [
+        {
+          "term": "Control Unit",
+          "target_id": "autel-ms906pro-control-unit",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Display Mode",
+          "target_id": "autel-ms906pro-live-data-display-mode",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Trigger Setting",
+          "target_id": "autel-ms906pro-live-data-trigger-setting",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Graph Merge",
+          "target_id": "autel-ms906pro-live-data-graph-merge",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Freeze",
+          "target_id": "autel-ms906pro-live-data-freeze",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Record",
+          "target_id": "autel-ms906pro-live-data-record",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Review",
+          "target_id": "autel-ms906pro-live-data-review",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Live data",
+          "target_id": "autel-ms906pro-obd2-obd-live-data",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": "p.47 refers back to Live Data for display modes"
+        },
+        {
+          "term": "Parameter",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "36",
+          "note": ""
+        },
+        {
+          "term": "Check box",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "36",
+          "note": ""
+        },
+        {
+          "term": "Range",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "36",
+          "note": ""
+        },
+        {
+          "term": "Unit",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "36",
+          "note": ""
+        },
+        {
+          "term": "PID",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": "Term used for OBDII live data"
+        }
+      ],
+      "workshop_example_fa": "برای بررسی ضعف سنسور، دمای آب را در Live Data نگاه می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "36",
+          "locator": "Live Data; Figure 4-10"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented_vehicle_dependent",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-live-data-display-mode",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Live data"
+      ],
+      "path_confidence": "ui_element_on_screen",
+      "ui_element_type": "parameter_dropdown",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Control on the Live Data screen, not a menu item.",
+      "menu_path_alternatives": [],
+      "category": "Live Data",
+      "term_en": "Display Mode",
+      "term_en_as_written_in_manual": "Display Mode",
+      "term_variants_in_manual": [],
+      "term_fa": "حالت نمایش",
+      "pronunciation_fa": "دیسپلی مُد",
+      "technical_description_fa": "چهار حالت نمایش: Analog Gauge Mode، Text Mode (پیش‌فرض)، Waveform Graph Mode و Digital Gauge Mode. پارامترهای وضعیتی مثل ON/OFF فقط در Text Mode نمایش داده می‌شوند.",
+      "usage_fa": "انتخاب مناسب‌ترین شکل نمایش هر پارامتر.",
+      "related_terms": [
+        {
+          "term": "Live Data",
+          "target_id": "autel-ms906pro-live-data",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Graph Merge",
+          "target_id": "autel-ms906pro-live-data-graph-merge",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "40",
+          "note": "Graph Merge is for Waveform Graph Mode only"
+        },
+        {
+          "term": "Trigger Setting",
+          "target_id": "autel-ms906pro-live-data-trigger-setting",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "37",
+          "note": "Trigger button sits in the display-mode submenu"
+        },
+        {
+          "term": "Analog Gauge Mode",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "37",
+          "note": ""
+        },
+        {
+          "term": "Text Mode",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "37",
+          "note": "Default mode"
+        },
+        {
+          "term": "Waveform Graph Mode",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "37",
+          "note": ""
+        },
+        {
+          "term": "Digital Gauge Mode",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "39",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "برای دیدن نوسان سنسور اکسیژن، حالت Waveform Graph را انتخاب می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "36-39",
+          "locator": "Display Mode; Figures 4-11, 4-12"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "ui_element_on_screen",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-live-data-trigger-setting",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Live data"
+      ],
+      "path_confidence": "ui_element_on_screen",
+      "ui_element_type": "parameter_dropdown_button",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Control on the Live Data screen, not a menu item.",
+      "menu_path_alternatives": [],
+      "category": "Live Data",
+      "term_en": "Trigger Setting",
+      "term_en_as_written_in_manual": "Trigger Setting",
+      "term_variants_in_manual": [],
+      "term_fa": "تنظیم تریگر",
+      "pronunciation_fa": "تریگر ست‌اینگ",
+      "technical_description_fa": "با تعیین MIN و MAX، اگر مقدار از بازه خارج شود دستگاه خودکار داده را ذخیره می‌کند. گزینه‌ی Buzzer alarm فقط در اولین تریگر بوق می‌زند.",
+      "usage_fa": "گرفتن خطای لحظه‌ای و گذرا.",
+      "related_terms": [
+        {
+          "term": "Live Data",
+          "target_id": "autel-ms906pro-live-data",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Display Mode",
+          "target_id": "autel-ms906pro-live-data-display-mode",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "37",
+          "note": "Trigger button sits in the display-mode submenu"
+        },
+        {
+          "term": "Review",
+          "target_id": "autel-ms906pro-live-data-review",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "39",
+          "note": "Data saved on trigger is checked via Review"
+        },
+        {
+          "term": "MIN",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "39",
+          "note": ""
+        },
+        {
+          "term": "MAX",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "39",
+          "note": ""
+        },
+        {
+          "term": "Buzzer alarm",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "39",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "خودرو گاهی خاموش می‌شود؛ برای دور موتور بازه می‌گذاریم تا لحظه‌ی افت ثبت شود.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "39-40",
+          "locator": "Trigger Setting; Figure 4-13"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "ui_element_on_screen",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-live-data-graph-merge",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Live data"
+      ],
+      "path_confidence": "ui_element_on_screen",
+      "ui_element_type": "function_button",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Control on the Live Data screen, not a menu item.",
+      "menu_path_alternatives": [],
+      "category": "Live Data",
+      "term_en": "Graph Merge",
+      "term_en_as_written_in_manual": "Graph Merge",
+      "term_variants_in_manual": [],
+      "term_fa": "ادغام نمودار",
+      "pronunciation_fa": "گراف مرج",
+      "technical_description_fa": "نمودار ۲ تا ۳ پارامتر را روی هم نشان می‌دهد (فقط در Waveform Graph Mode).",
+      "usage_fa": "مقایسه‌ی همزمان چند پارامتر.",
+      "related_terms": [
+        {
+          "term": "Live Data",
+          "target_id": "autel-ms906pro-live-data",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Display Mode",
+          "target_id": "autel-ms906pro-live-data-display-mode",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "40",
+          "note": "Graph Merge is for Waveform Graph Mode only"
+        },
+        {
+          "term": "Waveform Graph Mode",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "40",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "سیگنال دو سنسور را روی هم می‌گذاریم تا زمان‌بندی‌شان را مقایسه کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "40",
+          "locator": "Live Data Function Buttons: Graph Merge"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "ui_element_on_screen",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-live-data-freeze",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Live data"
+      ],
+      "path_confidence": "ui_element_on_screen",
+      "ui_element_type": "function_button",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Control on the Live Data screen, not a menu item.",
+      "menu_path_alternatives": [],
+      "category": "Live Data",
+      "term_en": "Freeze",
+      "term_en_as_written_in_manual": "Freeze",
+      "term_variants_in_manual": [],
+      "term_fa": "ثابت‌کردن داده",
+      "pronunciation_fa": "فریز",
+      "technical_description_fa": "داده‌ی دریافتی را در حالت ثابت نشان می‌دهد؛ با Resume، Previous frame، Play/Pause و Next frame کنترل می‌شود.",
+      "usage_fa": "بررسی دقیق یک لحظه از داده‌ی زنده.",
+      "related_terms": [
+        {
+          "term": "Freeze frame",
+          "target_id": "autel-ms906pro-freeze-frame",
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "34-35; 41",
+          "note": "Different functions despite similar names"
+        },
+        {
+          "term": "Live Data",
+          "target_id": "autel-ms906pro-live-data",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Resume",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": ""
+        },
+        {
+          "term": "Previous frame",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": ""
+        },
+        {
+          "term": "Next frame",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": ""
+        },
+        {
+          "term": "Play/Pause",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "در زمان مشکل، داده را Freeze می‌کنیم و فریم به فریم بررسی می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "41",
+          "locator": "Live Data Function Buttons: Freeze"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "ui_element_on_screen",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "با Freeze frame (داده‌ی ذخیره‌شده با DTC) فرق دارد؛ ادغام نشده.",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-live-data-record",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Live data"
+      ],
+      "path_confidence": "ui_element_on_screen",
+      "ui_element_type": "function_button",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Control on the Live Data screen, not a menu item.",
+      "menu_path_alternatives": [],
+      "category": "Live Data",
+      "term_en": "Record",
+      "term_en_as_written_in_manual": "Record",
+      "term_variants_in_manual": [],
+      "term_fa": "ضبط",
+      "pronunciation_fa": "رکورد",
+      "technical_description_fa": "ضبط داده‌ی پارامترهای انتخاب‌شده. با Resume ضبط متوقف می‌شود. در بخش Review یا Data Manager قابل مشاهده است. در Setting مدت ضبط بعد از تریگر: ۵، ۱۵، ۳۰، ۶۰ یا ۹۰ ثانیه.",
+      "usage_fa": "ثبت داده حین تست جاده.",
+      "related_terms": [
+        {
+          "term": "Live Data",
+          "target_id": "autel-ms906pro-live-data",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Review",
+          "target_id": "autel-ms906pro-live-data-review",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": ""
+        },
+        {
+          "term": "Setting",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "40",
+          "note": "Recording duration after trigger: 5/15/30/60/90 s"
+        },
+        {
+          "term": "Data Manager",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": ""
+        },
+        {
+          "term": "Review Data",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "حین تست جاده، پارامترهای انتخابی را ضبط و در تعمیرگاه مرور می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "40-41",
+          "locator": "Live Data Function Buttons: Setting, Record"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "ui_element_on_screen",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-live-data-review",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Live data"
+      ],
+      "path_confidence": "ui_element_on_screen",
+      "ui_element_type": "function_button",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Control on the Live Data screen, not a menu item.",
+      "menu_path_alternatives": [],
+      "category": "Live Data",
+      "term_en": "Review",
+      "term_en_as_written_in_manual": "Review",
+      "term_variants_in_manual": [],
+      "term_fa": "مرور داده‌ی ضبط‌شده",
+      "pronunciation_fa": "ریویو",
+      "technical_description_fa": "مرور داده‌های ضبط‌شده در همین جلسه. تاریخچه‌ی کامل در Review Data داخل Data Manager است.",
+      "usage_fa": "بازبینی ضبط‌ها.",
+      "related_terms": [
+        {
+          "term": "Live Data",
+          "target_id": "autel-ms906pro-live-data",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "36-41",
+          "note": ""
+        },
+        {
+          "term": "Trigger Setting",
+          "target_id": "autel-ms906pro-live-data-trigger-setting",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "39",
+          "note": "Data saved on trigger is checked via Review"
+        },
+        {
+          "term": "Record",
+          "target_id": "autel-ms906pro-live-data-record",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": ""
+        },
+        {
+          "term": "Review Data",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": "Historical recordings are in Data Manager"
+        },
+        {
+          "term": "Data Manager",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "41",
+          "note": "Historical recordings are reviewed in Data Manager"
+        }
+      ],
+      "workshop_example_fa": "ضبط جاده را در تعمیرگاه با Review فریم به فریم نگاه می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "41",
+          "locator": "Live Data Function Buttons: Review"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "ui_element_on_screen",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-eobd",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected (p.17-19); EOBD button is on the Vehicle Menu (p.45), no vehicle selection needed",
+      "path_note": "Followed by a choice of 'Auto Scan' or 'Protocol' to establish communication (p.45).",
+      "menu_path_alternatives": [],
+      "category": "OBD-II",
+      "term_en": "EOBD",
+      "term_en_as_written_in_manual": "EOBD",
+      "term_variants_in_manual": [],
+      "term_fa": "اتصال OBDII/EOBD",
+      "pronunciation_fa": "ای‌او‌بی‌دی",
+      "technical_description_fa": "دسترسی سریع به تشخیص عمومی OBDII/EOBD. دو روش ارتباط: Auto Scan و Protocol.",
+      "usage_fa": "تشخیص خودروهایی که در پایگاه‌داده نیستند.",
+      "related_terms": [
+        {
+          "term": "Auto Scan",
+          "target_id": "autel-ms906pro-auto-scan",
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "45",
+          "note": "EOBD has its own option named 'Auto Scan' (tries each protocol). Different function; names not merged."
+        },
+        {
+          "term": "DTC & FFD",
+          "target_id": "autel-ms906pro-obd2-dtc-ffd",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "I/M readiness",
+          "target_id": "autel-ms906pro-obd2-im-readiness",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Live data",
+          "target_id": "autel-ms906pro-obd2-obd-live-data",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "O2 sensor monitor",
+          "target_id": "autel-ms906pro-obd2-o2-sensor-monitor",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "On-Board monitor",
+          "target_id": "autel-ms906pro-obd2-on-board-monitor",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Component test",
+          "target_id": "autel-ms906pro-obd2-component-test",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Vehicle information",
+          "target_id": "autel-ms906pro-obd2-vehicle-information",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Vehicle status",
+          "target_id": "autel-ms906pro-obd2-vehicle-status",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Auto Scan (EOBD option)",
+          "target_id": null,
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "45",
+          "note": "Not the same as Diagnosis > Auto Scan"
+        },
+        {
+          "term": "Protocol (EOBD option)",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "45",
+          "note": ""
+        },
+        {
+          "term": "OBD direct entry",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "22; 25",
+          "note": "Vehicle-identification method used for generic OBDII/EOBD tests when the vehicle is not in the database"
+        }
+      ],
+      "workshop_example_fa": "برای خودروی وارداتی که در لیست نیست، از EOBD وارد می‌شویم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "44-45",
+          "locator": "Generic OBDII Operations; General Procedure"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "45",
+          "locator": "Figure 4-15"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-dtc-ffd",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "DTC & FFD"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Appears after choosing Auto Scan or Protocol under EOBD (p.45-46). Some functions are supported only on certain makes (p.46).",
+      "menu_path_alternatives": [],
+      "category": "Read Codes",
+      "term_en": "DTC & FFD",
+      "term_en_as_written_in_manual": "DTC & FFD",
+      "term_variants_in_manual": [],
+      "term_fa": "کدهای خطا و داده‌ی لحظه‌ی خطا",
+      "pronunciation_fa": "دی‌تی‌سی اند اف‌اف‌دی",
+      "technical_description_fa": "فهرست Stored Codes و Pending Codes. در صورت وجود داده‌ی فریز، آیکن دانه‌ی برف دیده می‌شود. Erase Codes هم از همین‌جا قابل اجراست.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "Read Codes",
+          "target_id": "autel-ms906pro-read-codes",
+          "relation": "see_also",
+          "basis": "author_editorial",
+          "source_pages": "46",
+          "note": "Similar area in generic OBDII; equivalence not asserted by the manual"
+        },
+        {
+          "term": "Freeze frame",
+          "target_id": "autel-ms906pro-freeze-frame",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "46-47",
+          "note": "OBDII Freeze Frame is described under DTC & FFD"
+        },
+        {
+          "term": "Erase Codes",
+          "target_id": "autel-ms906pro-erase-codes",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "46-47",
+          "note": "OBDII has its own Erase Codes inside DTC & FFD"
+        },
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Stored Codes",
+          "target_id": "autel-ms906pro-obd2-stored-codes",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Pending Codes",
+          "target_id": "autel-ms906pro-obd2-pending-codes",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "I/M readiness",
+          "target_id": "autel-ms906pro-obd2-im-readiness",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": "OBDII Erase Codes resets monitor status to Not Ready / Not Complete"
+        },
+        {
+          "term": "Erase Codes (OBDII)",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "46-47",
+          "note": "Function inside DTC & FFD"
+        },
+        {
+          "term": "Freeze Frame (OBDII)",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": ""
+        },
+        {
+          "term": "Snowflake button",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): خودرویی با چراغ MIL روشن وارد تعمیرگاه شده و برای ورود از مسیر اختصاصی انتخاب خودرو مشخص نیست.\nمراحل: تکنسین روی Vehicle Menu گزینه‌ی EOBD را می‌زند، با Auto Scan یا انتخاب Protocol وارد منوی OBDII می‌شود و DTC & FFD را باز می‌کند. فهرست Stored Codes و Pending Codes را می‌بیند. اگر کنار کدی دکمه‌ی دانه‌ی برف باشد، داده‌ی فریز آن را باز می‌کند و مقدار پارامترهای مهم لحظه‌ی ثبت خطا را یادداشت می‌کند. قبل از هر پاک‌کردن، کدها را یادداشت یا با دکمه‌های Print/Save نوار ابزار ثبت می‌کند.\nنکته‌ی آموزشی: طبق راهنما Erase Codes در این بخش علاوه بر کدها، داده‌ی فریز و داده‌های تکمیلی سازنده را پاک می‌کند و وضعیت مانیتورهای I/M Readiness را به Not Ready یا Not Complete برمی‌گرداند. پس اطلاعات را قبل از پاک‌کردن ثبت می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "46",
+          "locator": "DTC & FFD"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-stored-codes",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "DTC & FFD"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "list_section_in_screen",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Listed inside the DTC & FFD screen (p.46).",
+      "menu_path_alternatives": [],
+      "category": "Read Codes",
+      "term_en": "Stored Codes",
+      "term_en_as_written_in_manual": "Stored Codes",
+      "term_variants_in_manual": [],
+      "term_fa": "کدهای ذخیره‌شده",
+      "pronunciation_fa": "استُرد کُدز",
+      "technical_description_fa": "کدهای مرتبط با آلایندگی ثبت‌شده در ECM. اولویت کدها بر اساس شدت آلایندگی است.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "DTC & FFD",
+          "target_id": "autel-ms906pro-obd2-dtc-ffd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Pending Codes",
+          "target_id": "autel-ms906pro-obd2-pending-codes",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "MIL",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": "Code priority affects MIL illumination"
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): مشتری می‌گوید چراغ موتور از دیروز روشن مانده است.\nمراحل: در DTC & FFD فهرست Stored Codes را می‌خوانیم و هر کد را با توضیحش ثبت می‌کنیم.\nنکته‌ی آموزشی: طبق راهنما کدهای OBDII بر اساس شدت اثر روی آلایندگی اولویت دارند و این اولویت در روشن‌شدن MIL و روش پاک‌کردن کد نقش دارد. سازندگان کدها را متفاوت رتبه‌بندی می‌کنند، پس بین خودروهای سازندگان مختلف تفاوت طبیعی است. وجود کد به‌تنهایی به معنی خرابی قطعه نیست و علت باید طبق دستورالعمل سازنده‌ی خودرو بررسی شود.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "46",
+          "locator": "DTC & FFD: Stored Codes"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-pending-codes",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "DTC & FFD"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "list_section_in_screen",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Listed inside the DTC & FFD screen (p.46).",
+      "menu_path_alternatives": [],
+      "category": "Read Codes",
+      "term_en": "Pending Codes",
+      "term_en_as_written_in_manual": "Pending Codes",
+      "term_variants_in_manual": [],
+      "term_fa": "کدهای در انتظار",
+      "pronunciation_fa": "پندینگ کُدز",
+      "technical_description_fa": "کدهایی که شرط ثبتشان در آخرین سیکل رانندگی برقرار بوده ولی هنوز در چند سیکل متوالی کامل نشده. بعد از تعمیر برای بررسی مفید است.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "DTC & FFD",
+          "target_id": "autel-ms906pro-obd2-dtc-ffd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Stored Codes",
+          "target_id": "autel-ms906pro-obd2-stored-codes",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Drive cycle",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "46-47",
+          "note": ""
+        },
+        {
+          "term": "Warm-up cycles",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): تکنسین یک خطای آلایندگی را تعمیر و کدها را پاک کرده و خودرو را تست جاده کرده است.\nمراحل: به DTC & FFD برمی‌گردد و Pending Codes را می‌بیند. کدی که اینجا دیده می‌شود یعنی در سیکل رانندگی اخیر شرط ثبت خطا برقرار شده، ولی برای ثبت نهایی کد باید در دو سیکل رانندگی متوالی یا بیشتر تکرار شود.\nنکته‌ی آموزشی: طبق راهنما این گزینه برای کمک به تکنسین بعد از تعمیر و پاک‌کردن اطلاعات تشخیصی است. نتیجه‌ی آن لزوماً به معنی خرابی قطعه نیست، و اگر خطای در انتظار در ۴۰ تا ۸۰ سیکل گرم‌شدن تکرار نشود خودکار پاک می‌شود. خالی‌بودن این فهرست بعد از یک تست کوتاه را نباید تأیید قطعی تعمیر دانست.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "46-47",
+          "locator": "DTC & FFD: Pending Codes"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-im-readiness",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "I/M readiness"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Appears after choosing Auto Scan or Protocol under EOBD (p.45-46). Some functions are supported only on certain makes (p.46).",
+      "menu_path_alternatives": [],
+      "category": "OBD-II",
+      "term_en": "I/M readiness",
+      "term_en_as_written_in_manual": "I/M readiness",
+      "term_variants_in_manual": [
+        {
+          "text": "I/M readiness",
+          "printed_pages": "46"
+        },
+        {
+          "text": "I/M Readiness",
+          "printed_pages": "47"
+        }
+      ],
+      "term_fa": "آمادگی I/M",
+      "pronunciation_fa": "آی/ام ردینس",
+      "technical_description_fa": "وضعیت آمادگی مانیتورها. دو زیرگزینه: Since DTCs Cleared و This Driving Cycle.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "DTC & FFD",
+          "target_id": "autel-ms906pro-obd2-dtc-ffd",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": "OBDII Erase Codes resets monitor status to Not Ready / Not Complete"
+        },
+        {
+          "term": "Since DTCs Cleared",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": ""
+        },
+        {
+          "term": "This Driving Cycle",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): خودرو فردا برای تست آلایندگی می‌رود و امروز کدهایش پاک شده است.\nمراحل: از منوی OBDII گزینه‌ی I/M readiness را باز می‌کنیم. Since DTCs Cleared وضعیت مانیتورها از آخرین پاک‌کردن کدها را نشان می‌دهد و This Driving Cycle وضعیت از ابتدای سیکل رانندگی جاری را.\nنکته‌ی آموزشی: طبق راهنما پاک‌کردن کدها وضعیت همه‌ی مانیتورها را به Not Ready یا Not Complete برمی‌گرداند. اینکه چه الگوی رانندگی برای کامل‌شدن مانیتورها لازم است در راهنمای Autel ذکر نشده و باید از اطلاعات سازنده یا مقررات محلی گرفته شود.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "47",
+          "locator": "I/M Readiness"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-obd-live-data",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "Live data"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Appears after choosing Auto Scan or Protocol under EOBD (p.45-46). Some functions are supported only on certain makes (p.46).",
+      "menu_path_alternatives": [],
+      "category": "Live Data",
+      "term_en": "Live data",
+      "term_en_as_written_in_manual": "Live data",
+      "term_variants_in_manual": [
+        {
+          "text": "Live data",
+          "printed_pages": "46"
+        },
+        {
+          "text": "Live Data",
+          "printed_pages": "47"
+        }
+      ],
+      "term_fa": "داده‌ی زنده (OBDII)",
+      "pronunciation_fa": "لایو دیتا",
+      "technical_description_fa": "داده‌ی لحظه‌ای PID از ECU در حالت OBDII.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "Live Data",
+          "target_id": "autel-ms906pro-live-data",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": "p.47 refers back to Live Data for display modes"
+        },
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "PID",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): خودرویی با OBDII استاندارد در شتاب‌گیری ضعیف است.\nمراحل: در منوی OBDII گزینه‌ی Live data را باز می‌کنیم، چند پارامتر مرتبط را (به شرط اینکه ECU ارسال کند) با چک‌باکس انتخاب می‌کنیم و با Show selected فقط همان‌ها را می‌بینیم. طبق راهنما می‌توان مثل Live Data بخش Control Unit از حالت‌های نمایش و Graph Merge (۲ تا ۳ پارامتر) استفاده کرد.\nنکته‌ی آموزشی: این بخش داده‌ی PID لحظه‌ای را از ECU نشان می‌دهد و فهرست پارامترها به خودرو بستگی دارد. تفاوت دقیق آن با Live Data بخش Control Unit در راهنما توضیح داده نشده و ادغام نشده‌اند.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "47",
+          "locator": "Live Data (OBDII)"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-o2-sensor-monitor",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "O2 sensor monitor"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Appears after choosing Auto Scan or Protocol under EOBD (p.45-46). Some functions are supported only on certain makes (p.46).",
+      "menu_path_alternatives": [],
+      "category": "OBD-II",
+      "term_en": "O2 sensor monitor",
+      "term_en_as_written_in_manual": "O2 sensor monitor",
+      "term_variants_in_manual": [
+        {
+          "text": "O2 sensor monitor",
+          "printed_pages": "46"
+        },
+        {
+          "text": "O2 Sensor Monitor",
+          "printed_pages": "47"
+        }
+      ],
+      "term_fa": "مانیتور سنسور اکسیژن",
+      "pronunciation_fa": "او‌تو سنسور مانیتور",
+      "technical_description_fa": "نتایج آخرین تست سنسور اکسیژن. روی خودروهای CAN پشتیبانی نمی‌شود و باید از On-Board monitor استفاده شود.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "On-Board monitor",
+          "target_id": "autel-ms906pro-obd2-on-board-monitor",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47-48",
+          "note": "CAN vehicles: use On-Board monitor instead"
+        },
+        {
+          "term": "CAN",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47",
+          "note": "Not supported on CAN vehicles"
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): خودرویی که با پروتکل غیر CAN ارتباط می‌گیرد برای بررسی آلایندگی آمده است.\nمراحل: در منوی OBDII گزینه‌ی O2 sensor monitor را باز می‌کنیم و نتایج آخرین تست‌های مانیتور سنسور اکسیژن را که از کامپیوتر خودرو خوانده می‌شود، ثبت می‌کنیم.\nنکته‌ی آموزشی: طبق راهنما این گزینه برای خودروهایی که از CAN استفاده می‌کنند پشتیبانی نمی‌شود و نتایج آن‌ها را باید در On-Board monitor دید. پس روی خودروی CAN خالی‌بودن این گزینه مورد انتظار است.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "47",
+          "locator": "O2 Sensor Monitor"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-on-board-monitor",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "On-Board monitor"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Appears after choosing Auto Scan or Protocol under EOBD (p.45-46). Some functions are supported only on certain makes (p.46).",
+      "menu_path_alternatives": [],
+      "category": "OBD-II",
+      "term_en": "On-Board monitor",
+      "term_en_as_written_in_manual": "On-Board monitor",
+      "term_variants_in_manual": [
+        {
+          "text": "On-Board monitor",
+          "printed_pages": "46"
+        },
+        {
+          "text": "On-Board Monitor",
+          "printed_pages": "48"
+        }
+      ],
+      "term_fa": "مانیتور داخلی",
+      "pronunciation_fa": "آن‌برد مانیتور",
+      "technical_description_fa": "نتایج تست‌های On-Board Monitor؛ بعد از سرویس یا پاک‌کردن حافظه مفید است.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "O2 sensor monitor",
+          "target_id": "autel-ms906pro-obd2-o2-sensor-monitor",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "47-48",
+          "note": "CAN vehicles: use On-Board monitor instead"
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): روی یک خودروی CAN سنسور اکسیژن عوض شده و حافظه‌ی ماژول کنترل پاک شده است.\nمراحل: On-Board monitor را باز می‌کنیم و نتایج تست‌های مانیتور داخلی را می‌بینیم.\nنکته‌ی آموزشی: طبق راهنما این تست‌ها بعد از سرویس یا بعد از پاک‌شدن حافظه‌ی ماژول کنترل مفیدند، و نتایج مانیتور سنسور اکسیژن خودروهای CAN را باید از همین‌جا دید، نه از O2 Sensor Monitor.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "48",
+          "locator": "On-Board Monitor"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-component-test",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "Component test"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Appears after choosing Auto Scan or Protocol under EOBD (p.45-46). Some functions are supported only on certain makes (p.46).",
+      "menu_path_alternatives": [],
+      "category": "OBD-II",
+      "term_en": "Component test",
+      "term_en_as_written_in_manual": "Component test",
+      "term_variants_in_manual": [
+        {
+          "text": "Component test",
+          "printed_pages": "46"
+        },
+        {
+          "text": "Component Test",
+          "printed_pages": "48"
+        }
+      ],
+      "term_fa": "تست قطعه",
+      "pronunciation_fa": "کامپوننت تست",
+      "technical_description_fa": "کنترل دوطرفه‌ی ECM برای ارسال فرمان و بررسی پاسخ ECM.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "Active Test",
+          "target_id": "autel-ms906pro-active-test",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "42; 48",
+          "note": "Both send commands to the ECU; menu names differ; not merged"
+        },
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "ECM",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "48",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): تکنسین مشکوک است که ECM به فرمان‌های دستگاه پاسخ نمی‌دهد.\nمراحل: خودرو را طبق هشدارهای ایمنی راهنما آماده می‌کند (گیربکس در Park یا Neutral، ترمز دستی کشیده، خودرو بدون سرپرست رها نشود). سپس Component test را باز می‌کند، از فهرست تست‌هایی که برای آن خودرو نمایش داده می‌شود یکی را انتخاب می‌کند و دستورهای روی صفحه را دنبال می‌کند.\nنکته‌ی آموزشی: طبق راهنما این سرویس کنترل دوطرفه‌ی ECM را فراهم می‌کند تا دستگاه فرمان بفرستد و پاسخ ECM بررسی شود. نام و تعداد تست‌ها در راهنما فهرست نشده و بسته به خودرو فرق می‌کند؛ بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "48",
+          "locator": "Component Test"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-vehicle-information",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "Vehicle information"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Appears after choosing Auto Scan or Protocol under EOBD (p.45-46). Some functions are supported only on certain makes (p.46).",
+      "menu_path_alternatives": [],
+      "category": "OBD-II",
+      "term_en": "Vehicle information",
+      "term_en_as_written_in_manual": "Vehicle information",
+      "term_variants_in_manual": [
+        {
+          "text": "Vehicle information",
+          "printed_pages": "46"
+        },
+        {
+          "text": "Vehicle Information",
+          "printed_pages": "48"
+        }
+      ],
+      "term_fa": "اطلاعات خودرو",
+      "pronunciation_fa": "ویکل اینفورمیشن",
+      "technical_description_fa": "نمایش VIN، شناسه‌ی کالیبراسیون، CVN و اطلاعات دیگر.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Vehicle status",
+          "target_id": "autel-ms906pro-obd2-vehicle-status",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "ECU Information",
+          "target_id": "autel-ms906pro-ecu-information",
+          "relation": "see_also",
+          "basis": "author_editorial",
+          "source_pages": "33; 48",
+          "note": "Editorial link: both show identification-type information; manual does not relate them"
+        },
+        {
+          "term": "VIN",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "48",
+          "note": ""
+        },
+        {
+          "term": "Calibration identification",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "48",
+          "note": ""
+        },
+        {
+          "term": "CVN",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "48",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): خودرویی بدون مدارک کامل آمده و می‌خواهیم هویت آن را با اطلاعات داخل ECU تطبیق دهیم.\nمراحل: Vehicle information را باز می‌کنیم، VIN و شناسه‌ی کالیبراسیون (Calibration ID) و CVN را می‌خوانیم و با شماره‌ی شاسی و مدارک مقایسه می‌کنیم.\nنکته‌ی آموزشی: طبق راهنما این گزینه VIN، Calibration identification، CVN و اطلاعات دیگر را نشان می‌دهد. در دسترس‌بودن همه‌ی موارد برای هر خودرو در راهنما تضمین نشده است.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "48",
+          "locator": "Vehicle Information"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-obd2-vehicle-status",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Generic OBDII/EOBD",
+      "menu_path": [
+        "Diagnostics",
+        "Vehicle Menu",
+        "EOBD",
+        "OBDII Diagnostic Menu",
+        "Vehicle status"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "VCI connected; communication established through EOBD > Auto Scan or Protocol (p.45)",
+      "path_note": "Appears after choosing Auto Scan or Protocol under EOBD (p.45-46). Some functions are supported only on certain makes (p.46).",
+      "menu_path_alternatives": [],
+      "category": "OBD-II",
+      "term_en": "Vehicle status",
+      "term_en_as_written_in_manual": "Vehicle status",
+      "term_variants_in_manual": [
+        {
+          "text": "Vehicle status",
+          "printed_pages": "46"
+        },
+        {
+          "text": "Vehicle Status",
+          "printed_pages": "48"
+        }
+      ],
+      "term_fa": "وضعیت خودرو",
+      "pronunciation_fa": "ویکل استتس",
+      "technical_description_fa": "پروتکل ارتباطی ماژول‌ها، تعداد کدهای دریافتی، وضعیت MIL و اطلاعات تکمیلی.",
+      "usage_fa": "تشخیص عمومی OBDII.",
+      "related_terms": [
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "Vehicle information",
+          "target_id": "autel-ms906pro-obd2-vehicle-information",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "46",
+          "note": ""
+        },
+        {
+          "term": "MIL",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "48",
+          "note": ""
+        },
+        {
+          "term": "Communication protocols",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "48",
+          "note": ""
+        },
+        {
+          "term": "Retrieved codes amount",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "48",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "سناریو (آموزشی): مشتری می‌گوید چراغ موتور گاهی روشن می‌شود.\nمراحل: قبل از تست‌های عمیق‌تر، Vehicle status را باز می‌کنیم و وضعیت فعلی MIL، تعداد کدهای دریافت‌شده و پروتکل ارتباطی ماژول‌های OBDII را ثبت می‌کنیم.\nنکته‌ی آموزشی: این صفحه خلاصه‌ی وضعیت را می‌دهد. برای دیدن خود کدها باید به DTC & FFD رفت.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "48",
+          "locator": "Vehicle Status"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "complete",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند (p.46).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-trouble-codes",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Trouble codes"
+      ],
+      "path_confidence": "documented_vehicle_dependent",
+      "ui_element_type": "function_menu_item",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+      "menu_path_alternatives": [],
+      "category": "Read Codes",
+      "term_en": "Trouble Codes",
+      "term_en_as_written_in_manual": "Trouble codes",
+      "term_variants_in_manual": [
+        {
+          "text": "Trouble codes",
+          "printed_pages": "32"
+        },
+        {
+          "text": "Trouble Codes",
+          "printed_pages": "34"
+        }
+      ],
+      "term_fa": "کدهای خطا",
+      "pronunciation_fa": "تراوبل کُدز",
+      "technical_description_fa": "زیرمنویی که شامل Read Codes و Erase Codes است.",
+      "usage_fa": "دسترسی به خواندن و پاک‌کردن DTC.",
+      "related_terms": [
+        {
+          "term": "Control Unit",
+          "target_id": "autel-ms906pro-control-unit",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Read Codes",
+          "target_id": "autel-ms906pro-read-codes",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Erase Codes",
+          "target_id": "autel-ms906pro-erase-codes",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "DTC",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "برای رسیدن به کدهای ذخیره‌شده، اول Trouble codes را باز می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "32",
+          "locator": "Function Menu options list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "34",
+          "locator": "Trouble Codes"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented_vehicle_dependent",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-read-codes",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Trouble codes",
+        "Read Codes"
+      ],
+      "path_confidence": "documented_vehicle_dependent",
+      "ui_element_type": "function_menu_item",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Listed under Trouble codes (p.32).",
+      "menu_path_alternatives": [],
+      "category": "Read Codes",
+      "term_en": "Read Codes",
+      "term_en_as_written_in_manual": "Read Codes",
+      "term_variants_in_manual": [],
+      "term_fa": "خواندن کدها",
+      "pronunciation_fa": "رید کُدز",
+      "technical_description_fa": "کدهای خطای ذخیره‌شده در ماژول را نمایش می‌دهد. ستون‌ها: Code، Status و Description. اگر فریم فریز موجود باشد آیکن دانه‌ی برف دیده می‌شود.",
+      "usage_fa": "پیدا کردن علت روشن بودن چراغ هشدار.",
+      "related_terms": [
+        {
+          "term": "Auto Scan",
+          "target_id": "autel-ms906pro-auto-scan",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "30",
+          "note": "Auto Scan retrieves DTCs"
+        },
+        {
+          "term": "Trouble Codes",
+          "target_id": "autel-ms906pro-trouble-codes",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Erase Codes",
+          "target_id": "autel-ms906pro-erase-codes",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Freeze frame",
+          "target_id": "autel-ms906pro-freeze-frame",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "34-35",
+          "note": ""
+        },
+        {
+          "term": "DTC & FFD",
+          "target_id": "autel-ms906pro-obd2-dtc-ffd",
+          "relation": "see_also",
+          "basis": "author_editorial",
+          "source_pages": "46",
+          "note": "Similar area in generic OBDII; equivalence not asserted by the manual"
+        },
+        {
+          "term": "DTC",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "34",
+          "note": ""
+        },
+        {
+          "term": "Code (column)",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "34",
+          "note": ""
+        },
+        {
+          "term": "Status (column)",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "34",
+          "note": ""
+        },
+        {
+          "term": "Description (column)",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "34",
+          "note": ""
+        },
+        {
+          "term": "Snowflake icon",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "34",
+          "note": ""
+        },
+        {
+          "term": "Search",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "35",
+          "note": "Function button: searches the selected DTC online"
+        }
+      ],
+      "workshop_example_fa": "چراغ موتور روشن است؛ Read Codes می‌زنیم و کد و وضعیتش را یادداشت می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "34",
+          "locator": "Read Codes; Figure 4-9"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "35",
+          "locator": "Table 4-4 Function Buttons in Trouble Codes"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented_vehicle_dependent",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "دکمه‌ی Search کد انتخاب‌شده را برای اطلاعات بیشتر در اینترنت جست‌وجو می‌کند (Table 4-4).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-freeze-frame",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Trouble codes",
+        "Read Codes"
+      ],
+      "path_confidence": "ui_element_on_screen",
+      "ui_element_type": "function_button",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Not a menu: a function button / snowflake icon on the Read Codes screen, shown only when data is available (p.34-35).",
+      "menu_path_alternatives": [],
+      "category": "Freeze Frame",
+      "term_en": "Freeze frame",
+      "term_en_as_written_in_manual": "Freeze frame",
+      "term_variants_in_manual": [],
+      "term_fa": "فریم فریز (داده‌ی لحظه‌ی خطا)",
+      "pronunciation_fa": "فریز فِریم",
+      "technical_description_fa": "فقط وقتی داده در دسترس باشد نمایش داده می‌شود. صفحه‌ی آن شبیه Read Codes است.",
+      "usage_fa": "دیدن شرایط لحظه‌ی ثبت خطا.",
+      "related_terms": [
+        {
+          "term": "Read Codes",
+          "target_id": "autel-ms906pro-read-codes",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "34-35",
+          "note": ""
+        },
+        {
+          "term": "Freeze",
+          "target_id": "autel-ms906pro-live-data-freeze",
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "34-35; 41",
+          "note": "Different functions despite similar names"
+        },
+        {
+          "term": "DTC & FFD",
+          "target_id": "autel-ms906pro-obd2-dtc-ffd",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "46-47",
+          "note": "OBDII Freeze Frame is described under DTC & FFD"
+        },
+        {
+          "term": "Snowflake icon",
+          "target_id": null,
+          "relation": "part_of_screen",
+          "basis": "manual",
+          "source_pages": "34",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "کد خطا فقط گاهی تکرار می‌شود؛ از Freeze frame می‌فهمیم موقع ثبت خطا خودرو در چه شرایطی بوده.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "34",
+          "locator": "Read Codes: snowflake icon"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "35",
+          "locator": "Table 4-4: Freeze frame button"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "ui_element_on_screen",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "با دکمه‌ی Freeze در Live Data یکی نیست؛ رکورد autel-ms906pro-live-data-freeze را ببینید.",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-service-section",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Service",
+      "menu_path": [
+        "Diagnostics",
+        "Service"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_section",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "A separate 'Service' application also exists on the Job Menu (p.74); how the two differ in content is not stated.",
+      "menu_path_alternatives": [],
+      "category": "Special Functions",
+      "term_en": "Service",
+      "term_en_as_written_in_manual": "Service",
+      "term_variants_in_manual": [],
+      "term_fa": "سرویس",
+      "pronunciation_fa": "سِروی‌س",
+      "technical_description_fa": "بخش دوم صفحه‌ی Vehicle Diagnostics برای سرویس‌های دوره‌ای و نگهداری، مثل ریست چراغ سرویس و کالیبراسیون سیستم‌ها.",
+      "usage_fa": "انجام ریست‌ها و کالیبراسیون‌های بعد از تعمیر.",
+      "related_terms": [
+        {
+          "term": "Diagnosis",
+          "target_id": "autel-ms906pro-diagnosis-section",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "29",
+          "note": ""
+        },
+        {
+          "term": "Oil Reset Service",
+          "target_id": "autel-ms906pro-oil-reset",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "Electric Parking Brake (EPB) Service",
+          "target_id": "autel-ms906pro-epb",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "ABS/SRS Services",
+          "target_id": "autel-ms906pro-abs-srs",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "Steering Angle Sensor (SAS) Service",
+          "target_id": "autel-ms906pro-sas",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "DPF Regeneration Service",
+          "target_id": "autel-ms906pro-dpf",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "Tire Pressure Monitor System (TPMS) Service",
+          "target_id": "autel-ms906pro-tpms-service",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "Battery Management System (BMS)",
+          "target_id": "autel-ms906pro-bms",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "76",
+          "note": "BMS is documented only in the Service application chapter"
+        },
+        {
+          "term": "Hot Functions",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "74",
+          "note": "Appears in the Service application"
+        }
+      ],
+      "workshop_example_fa": "بعد از تعویض روغن، ریست چراغ سرویس از این بخش انجام می‌شود.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "29",
+          "locator": "Main Menu: Service section"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "43",
+          "locator": "Service"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "در اپ جداگانه‌ی Service روی Job Menu هم دسترسی هست (p.74)؛ بین دو مسیر تفاوت جزئیات ثبت نشده.",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-oil-reset",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Service",
+      "menu_path": [
+        "Diagnostics",
+        "Service",
+        "Oil Reset Service"
+      ],
+      "path_confidence": "section_documented_leaf_unconfirmed",
+      "ui_element_type": "service_function",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+      "menu_path_alternatives": [
+        {
+          "path": [
+            "Service (application)",
+            "Oil Reset Service"
+          ],
+          "basis": "manual ch.6 p.74-76",
+          "confidence": "section_documented_leaf_unconfirmed"
+        }
+      ],
+      "category": "Special Functions",
+      "term_en": "Oil Reset Service",
+      "term_en_as_written_in_manual": "Oil Reset Service",
+      "term_variants_in_manual": [
+        {
+          "text": "Oil Reset Service",
+          "printed_pages": "43, 44"
+        },
+        {
+          "text": "Oil Reset",
+          "printed_pages": "75"
+        }
+      ],
+      "term_fa": "ریست سرویس روغن",
+      "pronunciation_fa": "اویل ریست",
+      "technical_description_fa": "ریست سامانه‌ی عمر روغن. باید بعد از هر تعویض روغن انجام شود.",
+      "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+      "related_terms": [
+        {
+          "term": "Service",
+          "target_id": "autel-ms906pro-service-section",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "Oil Life Reminder",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "44",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "بعد از تعویض روغن، عمر روغن را ۱۰۰٪ می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "43",
+          "locator": "Service: common functions list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "44",
+          "locator": "Function Descriptions: Oil Reset Service"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "75",
+          "locator": "Oil Reset"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "section_documented_leaf_unconfirmed",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-epb",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Service",
+      "menu_path": [
+        "Diagnostics",
+        "Service",
+        "Electric Parking Brake (EPB) Service"
+      ],
+      "path_confidence": "section_documented_leaf_unconfirmed",
+      "ui_element_type": "service_function",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+      "menu_path_alternatives": [
+        {
+          "path": [
+            "Service (application)",
+            "Electric Parking Brake (EPB) Service"
+          ],
+          "basis": "manual ch.6 p.74-76",
+          "confidence": "section_documented_leaf_unconfirmed"
+        }
+      ],
+      "category": "Special Functions",
+      "term_en": "Electric Parking Brake (EPB) Service",
+      "term_en_as_written_in_manual": "Electric Parking Brake (EPB) Service",
+      "term_variants_in_manual": [
+        {
+          "text": "EPB Service",
+          "printed_pages": "43"
+        },
+        {
+          "text": "Electric Parking Brake (EPB) Service",
+          "printed_pages": "44"
+        },
+        {
+          "text": "Electric Parking Brake (EPB)",
+          "printed_pages": "75"
+        }
+      ],
+      "term_fa": "سرویس ترمز دستی برقی",
+      "pronunciation_fa": "ای‌پی‌بی",
+      "technical_description_fa": "غیرفعال/فعال‌سازی کنترل ترمز، کمک به کنترل روغن ترمز، باز و بسته کردن لنت و تنظیم پس از تعویض لنت یا دیسک.",
+      "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+      "related_terms": [
+        {
+          "term": "Service",
+          "target_id": "autel-ms906pro-service-section",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "قبل از تعویض لنت عقب، ترمز برقی را از این منو باز می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "43",
+          "locator": "Service: common functions list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "44",
+          "locator": "Function Descriptions: EPB Service"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "75",
+          "locator": "Electric Parking Brake (EPB)"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "section_documented_leaf_unconfirmed",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-abs-srs",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Service",
+      "menu_path": [
+        "Diagnostics",
+        "Service",
+        "ABS/SRS Services"
+      ],
+      "path_confidence": "section_documented_leaf_unconfirmed",
+      "ui_element_type": "service_function",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+      "menu_path_alternatives": [],
+      "category": "Special Functions",
+      "term_en": "ABS/SRS Services",
+      "term_en_as_written_in_manual": "ABS/SRS Services",
+      "term_variants_in_manual": [],
+      "term_fa": "سرویس‌های ABS و ایربگ",
+      "pronunciation_fa": "ای‌بی‌اس / اس‌آر‌اس",
+      "technical_description_fa": "تست‌های دوطرفه برای ABS و SRS، مانند Automated Bleeding و Pump Motor Test و دیدن اطلاعات ماژول.",
+      "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+      "related_terms": [
+        {
+          "term": "Service",
+          "target_id": "autel-ms906pro-service-section",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "Automated Bleeding",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "44",
+          "note": ""
+        },
+        {
+          "term": "Pump Motor Test",
+          "target_id": null,
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "44",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "برای هواگیری ABS از Automated Bleeding استفاده می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "43",
+          "locator": "Service: common functions list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "44",
+          "locator": "Function Descriptions: ABS/SRS Services"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "section_documented_leaf_unconfirmed",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-sas",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Service",
+      "menu_path": [
+        "Diagnostics",
+        "Service",
+        "Steering Angle Sensor (SAS) Service"
+      ],
+      "path_confidence": "section_documented_leaf_unconfirmed",
+      "ui_element_type": "service_function",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+      "menu_path_alternatives": [
+        {
+          "path": [
+            "Service (application)",
+            "Steering Angle Sensor (SAS) Service"
+          ],
+          "basis": "manual ch.6 p.74-76",
+          "confidence": "section_documented_leaf_unconfirmed"
+        }
+      ],
+      "category": "Special Functions",
+      "term_en": "Steering Angle Sensor (SAS) Service",
+      "term_en_as_written_in_manual": "Steering Angle Sensor (SAS) Service",
+      "term_variants_in_manual": [
+        {
+          "text": "SAS Calibration Service",
+          "printed_pages": "43"
+        },
+        {
+          "text": "Steering Angle Sensor (SAS) Service",
+          "printed_pages": "44"
+        },
+        {
+          "text": "Steering Angle Sensor (SAS)",
+          "printed_pages": "76"
+        }
+      ],
+      "term_fa": "سرویس سنسور زاویه فرمان",
+      "pronunciation_fa": "اس‌ای‌اس",
+      "technical_description_fa": "کالیبراسیون SAS؛ موقعیت مستقیم فرمان را ذخیره می‌کند. بعد از موفقیت، حافظه‌ی خطای سنسور خودکار پاک می‌شود.",
+      "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+      "related_terms": [
+        {
+          "term": "Service",
+          "target_id": "autel-ms906pro-service-section",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "بعد از تنظیم زاویه‌ی چرخ‌ها، SAS را کالیبره می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "43",
+          "locator": "Service: common functions list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "44",
+          "locator": "Function Descriptions: SAS Service"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "76-77",
+          "locator": "Steering Angle Sensor (SAS)"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "section_documented_leaf_unconfirmed",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-dpf",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Service",
+      "menu_path": [
+        "Diagnostics",
+        "Service",
+        "DPF Regeneration Service"
+      ],
+      "path_confidence": "section_documented_leaf_unconfirmed",
+      "ui_element_type": "service_function",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+      "menu_path_alternatives": [],
+      "category": "Special Functions",
+      "term_en": "DPF Regeneration Service",
+      "term_en_as_written_in_manual": "DPF Regeneration Service",
+      "term_variants_in_manual": [],
+      "term_fa": "سرویس بازسازی فیلتر ذرات دیزل",
+      "pronunciation_fa": "دی‌پی‌اف ریجنریشن",
+      "technical_description_fa": "اجرای فرایند Regeneration برای سوزاندن ذرات انباشته در فیلتر DPF.",
+      "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+      "related_terms": [
+        {
+          "term": "Service",
+          "target_id": "autel-ms906pro-service-section",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "چراغ DPF روشن است؛ ریجنریشن انجام می‌دهیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "43",
+          "locator": "Service: common functions list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "44",
+          "locator": "Function Descriptions: DPF Regeneration Service"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "section_documented_leaf_unconfirmed",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-bms",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Service",
+      "menu_path": [
+        "Service (application)",
+        "Battery Management System (BMS)"
+      ],
+      "path_confidence": "section_documented_leaf_unconfirmed",
+      "ui_element_type": "service_function",
+      "path_prerequisite": "Service application opened from the Job Menu (p.74); vehicle selection steps not described for BMS in the manual",
+      "path_note": "Documented only in the Service application chapter (p.76). The manual does not list BMS under Diagnostics > Service (p.43-44), so no such path is claimed.",
+      "menu_path_alternatives": [],
+      "category": "Special Functions",
+      "term_en": "Battery Management System (BMS)",
+      "term_en_as_written_in_manual": "Battery Management System (BMS)",
+      "term_variants_in_manual": [],
+      "term_fa": "سیستم مدیریت باتری",
+      "pronunciation_fa": "بی‌ام‌اس",
+      "technical_description_fa": "ارزیابی شارژ باتری، ثبت تعویض باتری، فعال‌سازی حالت استراحت خودرو و شارژ از طریق سوکت دیاگ. همه‌ی خودروها پشتیبانی نمی‌شوند.",
+      "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+      "related_terms": [
+        {
+          "term": "Service",
+          "target_id": "autel-ms906pro-service-section",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "76",
+          "note": "BMS is documented only in the Service application chapter"
+        },
+        {
+          "term": "Battery Test (application)",
+          "target_id": null,
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "79",
+          "note": "Separate application, chapter 8; not merged"
+        }
+      ],
+      "workshop_example_fa": "بعد از تعویض باتری، تعویض را ثبت می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "76",
+          "locator": "Battery Management System (BMS)"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "section_documented_leaf_unconfirmed",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-tpms-service",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Service",
+      "menu_path": [
+        "Diagnostics",
+        "Service",
+        "Tire Pressure Monitor System (TPMS) Service"
+      ],
+      "path_confidence": "section_documented_leaf_unconfirmed",
+      "ui_element_type": "service_function",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "The manual names the function under Service but does not show the exact on-screen label.",
+      "menu_path_alternatives": [
+        {
+          "path": [
+            "Service (application)",
+            "Tire Pressure Monitor System (TPMS) Service"
+          ],
+          "basis": "manual ch.6 p.74-76",
+          "confidence": "section_documented_leaf_unconfirmed"
+        }
+      ],
+      "category": "Special Functions",
+      "term_en": "Tire Pressure Monitor System (TPMS) Service",
+      "term_en_as_written_in_manual": "Tire Pressure Monitor System (TPMS) Service",
+      "term_variants_in_manual": [
+        {
+          "text": "TPMS Programming Service",
+          "printed_pages": "43"
+        },
+        {
+          "text": "Tire Pressure Monitor System (TPMS) Service",
+          "printed_pages": "44"
+        },
+        {
+          "text": "Tire Pressure Monitoring System (TPMS)",
+          "printed_pages": "76"
+        }
+      ],
+      "term_fa": "سرویس سامانه‌ی فشار باد لاستیک",
+      "pronunciation_fa": "تی‌پی‌ام‌اس",
+      "technical_description_fa": "خواندن شناسه‌ی سنسورها از ECU و انجام برنامه‌ریزی/ریست بعد از تعویض سنسور.",
+      "usage_fa": "سرویس و کالیبراسیون بعد از تعمیر.",
+      "related_terms": [
+        {
+          "term": "Service",
+          "target_id": "autel-ms906pro-service-section",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "43-44",
+          "note": ""
+        },
+        {
+          "term": "TPMS (application)",
+          "target_id": null,
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "49",
+          "note": "Separate application for MS906 Pro-TS (chapter 5); not merged"
+        }
+      ],
+      "workshop_example_fa": "بعد از تعویض سنسور لاستیک، شناسه‌ها را بازخوانی می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "43",
+          "locator": "Service: common functions list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "44",
+          "locator": "Function Descriptions: TPMS Service"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "76",
+          "locator": "Tire Pressure Monitoring System (TPMS)"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "section_documented_leaf_unconfirmed",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-special-functions",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit",
+        "Special functions"
+      ],
+      "path_confidence": "documented_vehicle_dependent",
+      "ui_element_type": "function_menu_item",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+      "menu_path_alternatives": [],
+      "category": "Special Functions",
+      "term_en": "Special functions",
+      "term_en_as_written_in_manual": "Special functions",
+      "term_variants_in_manual": [
+        {
+          "text": "Special functions",
+          "printed_pages": "32"
+        },
+        {
+          "text": "Special Functions",
+          "printed_pages": "42"
+        }
+      ],
+      "term_fa": "توابع ویژه",
+      "pronunciation_fa": "اسپشیال فانکشنز",
+      "technical_description_fa": "تطبیق قطعه (adaptation) و پیکربندی پس از تعمیر یا تعویض. صفحه شامل شرح عملیات و وضعیت اجرا، پیش‌شرط‌ها، شرایط فعلی ماژول و راهنمای دکمه‌هاست.",
+      "usage_fa": "کالیبره و یادگیری مجدد قطعه بعد از تعویض.",
+      "related_terms": [
+        {
+          "term": "Control Unit",
+          "target_id": "autel-ms906pro-control-unit",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Control unit adaptations",
+          "target_id": null,
+          "relation": "alias",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": "Possible on-screen name"
+        },
+        {
+          "term": "Special function",
+          "target_id": null,
+          "relation": "alias",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": "Possible on-screen name"
+        },
+        {
+          "term": "Variant coding",
+          "target_id": null,
+          "relation": "alias",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": "Possible on-screen name"
+        },
+        {
+          "term": "Configuration",
+          "target_id": null,
+          "relation": "alias",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": "Possible on-screen name"
+        },
+        {
+          "term": "Adaptation Operation",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "42",
+          "note": "Title of the operation screen"
+        }
+      ],
+      "workshop_example_fa": "بعد از تعویض قطعه، پیش‌شرط‌ها را کنترل و تطبیق را اجرا می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "32",
+          "locator": "Function Menu options list"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "42-43",
+          "locator": "Special Functions"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": true,
+          "path_confidence": "documented_vehicle_dependent",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "طبق راهنما همین منو بسته به خودرو ممکن است Control unit adaptations، Special function، Variant coding یا Configuration نام بگیرد. هنوز مشخص نیست این‌ها همیشه معادل‌اند؛ ادغام نشده‌اند.",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-diagnosis-section",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_section",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "",
+      "menu_path_alternatives": [],
+      "category": "System Scan",
+      "term_en": "Diagnosis",
+      "term_en_as_written_in_manual": "Diagnosis",
+      "term_variants_in_manual": [],
+      "term_fa": "عیب‌یابی",
+      "pronunciation_fa": "دایگْنُسیس",
+      "technical_description_fa": "یکی از دو بخش اصلی صفحه‌ی Vehicle Diagnostics. همه‌ی عملکردهای خواندن، پاک‌کردن، ذخیره و چاپ اطلاعات تشخیصی و همچنین تست فعال و توابع ویژه در این بخش‌اند.",
+      "usage_fa": "ورود به عملیات تشخیصی روی ECUها.",
+      "related_terms": [
+        {
+          "term": "Auto Scan",
+          "target_id": "autel-ms906pro-auto-scan",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "30",
+          "note": ""
+        },
+        {
+          "term": "Control Unit",
+          "target_id": "autel-ms906pro-control-unit",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "30",
+          "note": ""
+        },
+        {
+          "term": "Service",
+          "target_id": "autel-ms906pro-service-section",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "29",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "برای خودرویی که چراغ چک روشن دارد، اول وارد Diagnosis می‌شویم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "29",
+          "locator": "Main Menu: Vehicle Diagnostics screen has 2 sections"
+        },
+        {
+          "source_id": "src-001",
+          "printed_page": "30",
+          "locator": "Diagnosis: Auto Scan / Control Unit"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-auto-scan",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Auto Scan"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "Not to be confused with the 'Auto Scan' option inside EOBD (p.45).",
+      "menu_path_alternatives": [],
+      "category": "System Scan",
+      "term_en": "Auto Scan",
+      "term_en_as_written_in_manual": "Auto Scan",
+      "term_variants_in_manual": [],
+      "term_fa": "اسکن خودکار",
+      "pronunciation_fa": "اُتو اسکَن",
+      "technical_description_fa": "همه‌ی سیستم‌های ECU خودرو را اسکن می‌کند تا سیستم‌های دارای خطا پیدا و کدها خوانده شوند. نتیجه هر سیستم یکی از وضعیت‌های Fault|#، Pass|No fault، Not Scanned یا No Response است.",
+      "usage_fa": "نگاه کلی سریع به سلامت همه‌ی ماژول‌ها.",
+      "related_terms": [
+        {
+          "term": "Diagnosis",
+          "target_id": "autel-ms906pro-diagnosis-section",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "30",
+          "note": ""
+        },
+        {
+          "term": "Control Unit",
+          "target_id": "autel-ms906pro-control-unit",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "30",
+          "note": ""
+        },
+        {
+          "term": "Read Codes",
+          "target_id": "autel-ms906pro-read-codes",
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "30",
+          "note": "Auto Scan retrieves DTCs"
+        },
+        {
+          "term": "EOBD",
+          "target_id": "autel-ms906pro-eobd",
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "45",
+          "note": "EOBD has its own option named 'Auto Scan' (tries each protocol). Different function; names not merged."
+        },
+        {
+          "term": "Fault | #",
+          "target_id": null,
+          "relation": "status_label",
+          "basis": "manual",
+          "source_pages": "30-31",
+          "note": ""
+        },
+        {
+          "term": "Pass | No fault",
+          "target_id": null,
+          "relation": "status_label",
+          "basis": "manual",
+          "source_pages": "31",
+          "note": ""
+        },
+        {
+          "term": "Not Scanned",
+          "target_id": null,
+          "relation": "status_label",
+          "basis": "manual",
+          "source_pages": "31",
+          "note": ""
+        },
+        {
+          "term": "No Response",
+          "target_id": null,
+          "relation": "status_label",
+          "basis": "manual",
+          "source_pages": "31",
+          "note": ""
+        },
+        {
+          "term": "Quick erase",
+          "target_id": null,
+          "relation": "contrast",
+          "basis": "manual",
+          "source_pages": "31",
+          "note": "Auto Scan function button; not merged with Erase Codes"
+        },
+        {
+          "term": "Enter system",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "31",
+          "note": ""
+        },
+        {
+          "term": "Report",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "31",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "برای خودروی ناشناخته اول Auto Scan می‌زنیم تا ببینیم کدام ماژول‌ها خطا دارند.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "30-31",
+          "locator": "Auto Scan; Figure 4-6; Table 4-3 (p.31)"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "دکمه‌های همین صفحه: Report, Quick erase, Pause, Enter system, ESC (Table 4-3).",
+      "last_checked": "2026-11-12"
+    },
+    {
+      "schema_version": "0.2",
+      "id": "autel-ms906pro-control-unit",
+      "brand": "Autel",
+      "device_id": "autel_maxisys_ms906_pro",
+      "applies_to": [
+        "MS906 Pro",
+        "MS906 Pro-TS"
+      ],
+      "source_document": {
+        "source_id": "src-001",
+        "document_edition": "US V2.1",
+        "note": "Document edition only; not the device software version"
+      },
+      "device_software": {
+        "diagnostic_software_version": null,
+        "status": "not_documented_in_source",
+        "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+      },
+      "context": "Vehicle-specific diagnosis",
+      "menu_path": [
+        "Diagnostics",
+        "Diagnosis",
+        "Control Unit"
+      ],
+      "path_confidence": "documented",
+      "ui_element_type": "menu_option",
+      "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+      "path_note": "",
+      "menu_path_alternatives": [],
+      "category": "System Scan",
+      "term_en": "Control Unit",
+      "term_en_as_written_in_manual": "Control Unit",
+      "term_variants_in_manual": [],
+      "term_fa": "واحد کنترل",
+      "pronunciation_fa": "کانترول یونیت",
+      "technical_description_fa": "فهرست همه‌ی واحدهای کنترل موجود روی خودرو. کاربر دستی سیستم را انتخاب می‌کند و به منوی عملکردها می‌رسد.",
+      "usage_fa": "تست هدفمند یک سیستم مشخص (مثلاً موتور یا ABS).",
+      "related_terms": [
+        {
+          "term": "Diagnosis",
+          "target_id": "autel-ms906pro-diagnosis-section",
+          "relation": "parent",
+          "basis": "manual",
+          "source_pages": "30",
+          "note": ""
+        },
+        {
+          "term": "Auto Scan",
+          "target_id": "autel-ms906pro-auto-scan",
+          "relation": "sibling",
+          "basis": "manual",
+          "source_pages": "30",
+          "note": ""
+        },
+        {
+          "term": "ECU Information",
+          "target_id": "autel-ms906pro-ecu-information",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Trouble Codes",
+          "target_id": "autel-ms906pro-trouble-codes",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Live Data",
+          "target_id": "autel-ms906pro-live-data",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Active Test",
+          "target_id": "autel-ms906pro-active-test",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Special functions",
+          "target_id": "autel-ms906pro-special-functions",
+          "relation": "child",
+          "basis": "manual",
+          "source_pages": "32",
+          "note": ""
+        },
+        {
+          "term": "Function Menu",
+          "target_id": null,
+          "relation": "see_also",
+          "basis": "manual",
+          "source_pages": "31",
+          "note": ""
+        }
+      ],
+      "workshop_example_fa": "وقتی می‌دانیم مشکل فقط در ABS است، مستقیم از Control Unit سیستم ABS را انتخاب می‌کنیم.",
+      "cross_brand_equivalents": [],
+      "media_ids": [],
+      "source_refs": [
+        {
+          "source_id": "src-001",
+          "printed_page": "31-32",
+          "locator": "Control Unit; Function Menu options"
+        }
+      ],
+      "verification": {
+        "technical": {
+          "status": "verified",
+          "basis": "official_manufacturer_manual",
+          "source_id": "src-001",
+          "checked_fields": [
+            "term_en",
+            "menu_path",
+            "function_description"
+          ],
+          "vehicle_dependent": false,
+          "path_confidence": "documented",
+          "author_fields_not_source_text": [
+            "usage_fa"
+          ]
+        },
+        "translation": {
+          "status": "draft_unreviewed",
+          "covers": [
+            "term_fa",
+            "pronunciation_fa",
+            "technical_description_fa"
+          ],
+          "reviewed_by": null,
+          "reviewed_on": null
+        },
+        "workshop_example": {
+          "status": "brief",
+          "origin": "author_generated_educational_scenario",
+          "documented_real_case": false,
+          "source_backed": false
+        }
+      },
+      "notes": "منوی عملکردها بسته به خودرو کمی فرق می‌کند (p.31).",
+      "last_checked": "2026-11-12"
+    }
+  ]
+}

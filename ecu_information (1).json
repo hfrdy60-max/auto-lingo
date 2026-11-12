@@ -1,0 +1,127 @@
+[
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-ecu-information",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "ECU information"
+    ],
+    "path_confidence": "documented_vehicle_dependent",
+    "ui_element_type": "function_menu_item",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+    "menu_path_alternatives": [],
+    "category": "ECU Information",
+    "term_en": "ECU Information",
+    "term_en_as_written_in_manual": "ECU information",
+    "term_variants_in_manual": [
+      {
+        "text": "ECU information",
+        "printed_pages": "32"
+      },
+      {
+        "text": "ECU Information",
+        "printed_pages": "33"
+      }
+    ],
+    "term_fa": "اطلاعات ECU",
+    "pronunciation_fa": "ای‌سی‌یو اینفورمیشن",
+    "technical_description_fa": "مشخصات واحد کنترل تست‌شده، شامل نوع واحد، شماره نسخه‌ها و سایر مشخصات را نشان می‌دهد. ستون چپ نام آیتم و ستون راست مقدار است.",
+    "usage_fa": "تطبیق قطعه، نسخه‌ی نرم‌افزار و کالیبراسیون قبل از تعویض یا برنامه‌ریزی.",
+    "related_terms": [
+      {
+        "term": "Control Unit",
+        "target_id": "autel-ms906pro-control-unit",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Vehicle information",
+        "target_id": "autel-ms906pro-obd2-vehicle-information",
+        "relation": "see_also",
+        "basis": "author_editorial",
+        "source_pages": "33; 48",
+        "note": "Editorial link: both show identification-type information; manual does not relate them"
+      },
+      {
+        "term": "ECU",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "33",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "قبل از تعویض ECU، شماره‌ی نسخه را از این صفحه می‌خوانیم و با قطعه‌ی جدید مقایسه می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "32",
+        "locator": "Function Menu options list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "33",
+        "locator": "ECU Information; Figure 4-8"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented_vehicle_dependent",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  }
+]

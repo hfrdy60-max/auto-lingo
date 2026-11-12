@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AUTO LINGO diagnostic term entry",
+  "schema_version": "0.2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "brand",
+    "device_id",
+    "source_document",
+    "device_software",
+    "menu_path",
+    "path_confidence",
+    "term_en",
+    "term_fa",
+    "related_terms",
+    "source_refs",
+    "verification"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.2"
+    },
+    "source_document": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "document_edition"
+      ]
+    },
+    "device_software": {
+      "type": "object",
+      "required": [
+        "diagnostic_software_version",
+        "status"
+      ]
+    },
+    "path_confidence": {
+      "enum": [
+        "documented",
+        "documented_vehicle_dependent",
+        "section_documented_leaf_unconfirmed",
+        "ui_element_on_screen"
+      ]
+    },
+    "related_terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "term",
+          "target_id",
+          "relation",
+          "basis",
+          "source_pages"
+        ],
+        "properties": {
+          "term": {
+            "type": "string"
+          },
+          "target_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "relation": {
+            "enum": [
+              "parent",
+              "child",
+              "sibling",
+              "alias",
+              "contrast",
+              "see_also",
+              "part_of_screen",
+              "status_label"
+            ]
+          },
+          "basis": {
+            "enum": [
+              "manual",
+              "author_editorial"
+            ]
+          },
+          "source_pages": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "printed_page",
+          "locator"
+        ]
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "technical",
+        "translation",
+        "workshop_example"
+      ],
+      "properties": {
+        "technical": {
+          "type": "object",
+          "required": [
+            "status",
+            "basis",
+            "source_id",
+            "checked_fields"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "verified",
+                "partially_verified",
+                "unverified",
+                "needs_review"
+              ]
+            }
+          }
+        },
+        "translation": {
+          "type": "object",
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "draft_unreviewed",
+                "reviewed",
+                "approved"
+              ]
+            }
+          }
+        },
+        "workshop_example": {
+          "type": "object",
+          "required": [
+            "status",
+            "origin",
+            "documented_real_case"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "brief",
+                "complete",
+                "reviewed"
+              ]
+            },
+            "origin": {
+              "enum": [
+                "author_generated_educational_scenario",
+                "sourced"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

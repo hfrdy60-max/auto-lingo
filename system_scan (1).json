@@ -1,0 +1,440 @@
+[
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-diagnosis-section",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis"
+    ],
+    "path_confidence": "documented",
+    "ui_element_type": "menu_section",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "",
+    "menu_path_alternatives": [],
+    "category": "System Scan",
+    "term_en": "Diagnosis",
+    "term_en_as_written_in_manual": "Diagnosis",
+    "term_variants_in_manual": [],
+    "term_fa": "عیب‌یابی",
+    "pronunciation_fa": "دایگْنُسیس",
+    "technical_description_fa": "یکی از دو بخش اصلی صفحه‌ی Vehicle Diagnostics. همه‌ی عملکردهای خواندن، پاک‌کردن، ذخیره و چاپ اطلاعات تشخیصی و همچنین تست فعال و توابع ویژه در این بخش‌اند.",
+    "usage_fa": "ورود به عملیات تشخیصی روی ECUها.",
+    "related_terms": [
+      {
+        "term": "Auto Scan",
+        "target_id": "autel-ms906pro-auto-scan",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "30",
+        "note": ""
+      },
+      {
+        "term": "Control Unit",
+        "target_id": "autel-ms906pro-control-unit",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "30",
+        "note": ""
+      },
+      {
+        "term": "Service",
+        "target_id": "autel-ms906pro-service-section",
+        "relation": "sibling",
+        "basis": "manual",
+        "source_pages": "29",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "برای خودرویی که چراغ چک روشن دارد، اول وارد Diagnosis می‌شویم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "29",
+        "locator": "Main Menu: Vehicle Diagnostics screen has 2 sections"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "30",
+        "locator": "Diagnosis: Auto Scan / Control Unit"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "documented",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-auto-scan",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Auto Scan"
+    ],
+    "path_confidence": "documented",
+    "ui_element_type": "menu_option",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Not to be confused with the 'Auto Scan' option inside EOBD (p.45).",
+    "menu_path_alternatives": [],
+    "category": "System Scan",
+    "term_en": "Auto Scan",
+    "term_en_as_written_in_manual": "Auto Scan",
+    "term_variants_in_manual": [],
+    "term_fa": "اسکن خودکار",
+    "pronunciation_fa": "اُتو اسکَن",
+    "technical_description_fa": "همه‌ی سیستم‌های ECU خودرو را اسکن می‌کند تا سیستم‌های دارای خطا پیدا و کدها خوانده شوند. نتیجه هر سیستم یکی از وضعیت‌های Fault|#، Pass|No fault، Not Scanned یا No Response است.",
+    "usage_fa": "نگاه کلی سریع به سلامت همه‌ی ماژول‌ها.",
+    "related_terms": [
+      {
+        "term": "Diagnosis",
+        "target_id": "autel-ms906pro-diagnosis-section",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "30",
+        "note": ""
+      },
+      {
+        "term": "Control Unit",
+        "target_id": "autel-ms906pro-control-unit",
+        "relation": "sibling",
+        "basis": "manual",
+        "source_pages": "30",
+        "note": ""
+      },
+      {
+        "term": "Read Codes",
+        "target_id": "autel-ms906pro-read-codes",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "30",
+        "note": "Auto Scan retrieves DTCs"
+      },
+      {
+        "term": "EOBD",
+        "target_id": "autel-ms906pro-eobd",
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "45",
+        "note": "EOBD has its own option named 'Auto Scan' (tries each protocol). Different function; names not merged."
+      },
+      {
+        "term": "Fault | #",
+        "target_id": null,
+        "relation": "status_label",
+        "basis": "manual",
+        "source_pages": "30-31",
+        "note": ""
+      },
+      {
+        "term": "Pass | No fault",
+        "target_id": null,
+        "relation": "status_label",
+        "basis": "manual",
+        "source_pages": "31",
+        "note": ""
+      },
+      {
+        "term": "Not Scanned",
+        "target_id": null,
+        "relation": "status_label",
+        "basis": "manual",
+        "source_pages": "31",
+        "note": ""
+      },
+      {
+        "term": "No Response",
+        "target_id": null,
+        "relation": "status_label",
+        "basis": "manual",
+        "source_pages": "31",
+        "note": ""
+      },
+      {
+        "term": "Quick erase",
+        "target_id": null,
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "31",
+        "note": "Auto Scan function button; not merged with Erase Codes"
+      },
+      {
+        "term": "Enter system",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "31",
+        "note": ""
+      },
+      {
+        "term": "Report",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "31",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "برای خودروی ناشناخته اول Auto Scan می‌زنیم تا ببینیم کدام ماژول‌ها خطا دارند.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "30-31",
+        "locator": "Auto Scan; Figure 4-6; Table 4-3 (p.31)"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "documented",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "دکمه‌های همین صفحه: Report, Quick erase, Pause, Enter system, ESC (Table 4-3).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-control-unit",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit"
+    ],
+    "path_confidence": "documented",
+    "ui_element_type": "menu_option",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "",
+    "menu_path_alternatives": [],
+    "category": "System Scan",
+    "term_en": "Control Unit",
+    "term_en_as_written_in_manual": "Control Unit",
+    "term_variants_in_manual": [],
+    "term_fa": "واحد کنترل",
+    "pronunciation_fa": "کانترول یونیت",
+    "technical_description_fa": "فهرست همه‌ی واحدهای کنترل موجود روی خودرو. کاربر دستی سیستم را انتخاب می‌کند و به منوی عملکردها می‌رسد.",
+    "usage_fa": "تست هدفمند یک سیستم مشخص (مثلاً موتور یا ABS).",
+    "related_terms": [
+      {
+        "term": "Diagnosis",
+        "target_id": "autel-ms906pro-diagnosis-section",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "30",
+        "note": ""
+      },
+      {
+        "term": "Auto Scan",
+        "target_id": "autel-ms906pro-auto-scan",
+        "relation": "sibling",
+        "basis": "manual",
+        "source_pages": "30",
+        "note": ""
+      },
+      {
+        "term": "ECU Information",
+        "target_id": "autel-ms906pro-ecu-information",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Trouble Codes",
+        "target_id": "autel-ms906pro-trouble-codes",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Live Data",
+        "target_id": "autel-ms906pro-live-data",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Active Test",
+        "target_id": "autel-ms906pro-active-test",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Special functions",
+        "target_id": "autel-ms906pro-special-functions",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Function Menu",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "31",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "وقتی می‌دانیم مشکل فقط در ABS است، مستقیم از Control Unit سیستم ABS را انتخاب می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "31-32",
+        "locator": "Control Unit; Function Menu options"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "documented",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "منوی عملکردها بسته به خودرو کمی فرق می‌کند (p.31).",
+    "last_checked": "2026-11-12"
+  }
+]

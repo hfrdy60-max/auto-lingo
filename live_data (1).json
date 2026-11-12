@@ -1,0 +1,980 @@
+[
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-live-data",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "path_confidence": "documented_vehicle_dependent",
+    "ui_element_type": "function_menu_item",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+    "menu_path_alternatives": [],
+    "category": "Live Data",
+    "term_en": "Live Data",
+    "term_en_as_written_in_manual": "Live Data",
+    "term_variants_in_manual": [
+      {
+        "text": "Live data",
+        "printed_pages": "32"
+      },
+      {
+        "text": "Live Data",
+        "printed_pages": "36"
+      }
+    ],
+    "term_fa": "داده‌ی زنده",
+    "pronunciation_fa": "لایو دیتا",
+    "technical_description_fa": "فهرست پارامترهای ماژول با ستون‌های Name، Value، Range و Unit. ترتیب پارامترها همان ترتیب ارسال از ECM است و بین خودروها فرق می‌کند.",
+    "usage_fa": "بررسی رفتار سنسورها و وضعیت‌ها در زمان واقعی.",
+    "related_terms": [
+      {
+        "term": "Control Unit",
+        "target_id": "autel-ms906pro-control-unit",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Display Mode",
+        "target_id": "autel-ms906pro-live-data-display-mode",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Trigger Setting",
+        "target_id": "autel-ms906pro-live-data-trigger-setting",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Graph Merge",
+        "target_id": "autel-ms906pro-live-data-graph-merge",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Freeze",
+        "target_id": "autel-ms906pro-live-data-freeze",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Record",
+        "target_id": "autel-ms906pro-live-data-record",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Review",
+        "target_id": "autel-ms906pro-live-data-review",
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Live data",
+        "target_id": "autel-ms906pro-obd2-obd-live-data",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "47",
+        "note": "p.47 refers back to Live Data for display modes"
+      },
+      {
+        "term": "Parameter",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "36",
+        "note": ""
+      },
+      {
+        "term": "Check box",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "36",
+        "note": ""
+      },
+      {
+        "term": "Range",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "36",
+        "note": ""
+      },
+      {
+        "term": "Unit",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "36",
+        "note": ""
+      },
+      {
+        "term": "PID",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "47",
+        "note": "Term used for OBDII live data"
+      }
+    ],
+    "workshop_example_fa": "برای بررسی ضعف سنسور، دمای آب را در Live Data نگاه می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "36",
+        "locator": "Live Data; Figure 4-10"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented_vehicle_dependent",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-live-data-display-mode",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "path_confidence": "ui_element_on_screen",
+    "ui_element_type": "parameter_dropdown",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Control on the Live Data screen, not a menu item.",
+    "menu_path_alternatives": [],
+    "category": "Live Data",
+    "term_en": "Display Mode",
+    "term_en_as_written_in_manual": "Display Mode",
+    "term_variants_in_manual": [],
+    "term_fa": "حالت نمایش",
+    "pronunciation_fa": "دیسپلی مُد",
+    "technical_description_fa": "چهار حالت نمایش: Analog Gauge Mode، Text Mode (پیش‌فرض)، Waveform Graph Mode و Digital Gauge Mode. پارامترهای وضعیتی مثل ON/OFF فقط در Text Mode نمایش داده می‌شوند.",
+    "usage_fa": "انتخاب مناسب‌ترین شکل نمایش هر پارامتر.",
+    "related_terms": [
+      {
+        "term": "Live Data",
+        "target_id": "autel-ms906pro-live-data",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Graph Merge",
+        "target_id": "autel-ms906pro-live-data-graph-merge",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "40",
+        "note": "Graph Merge is for Waveform Graph Mode only"
+      },
+      {
+        "term": "Trigger Setting",
+        "target_id": "autel-ms906pro-live-data-trigger-setting",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "37",
+        "note": "Trigger button sits in the display-mode submenu"
+      },
+      {
+        "term": "Analog Gauge Mode",
+        "target_id": null,
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "37",
+        "note": ""
+      },
+      {
+        "term": "Text Mode",
+        "target_id": null,
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "37",
+        "note": "Default mode"
+      },
+      {
+        "term": "Waveform Graph Mode",
+        "target_id": null,
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "37",
+        "note": ""
+      },
+      {
+        "term": "Digital Gauge Mode",
+        "target_id": null,
+        "relation": "child",
+        "basis": "manual",
+        "source_pages": "39",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "برای دیدن نوسان سنسور اکسیژن، حالت Waveform Graph را انتخاب می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "36-39",
+        "locator": "Display Mode; Figures 4-11, 4-12"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "ui_element_on_screen",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-live-data-trigger-setting",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "path_confidence": "ui_element_on_screen",
+    "ui_element_type": "parameter_dropdown_button",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Control on the Live Data screen, not a menu item.",
+    "menu_path_alternatives": [],
+    "category": "Live Data",
+    "term_en": "Trigger Setting",
+    "term_en_as_written_in_manual": "Trigger Setting",
+    "term_variants_in_manual": [],
+    "term_fa": "تنظیم تریگر",
+    "pronunciation_fa": "تریگر ست‌اینگ",
+    "technical_description_fa": "با تعیین MIN و MAX، اگر مقدار از بازه خارج شود دستگاه خودکار داده را ذخیره می‌کند. گزینه‌ی Buzzer alarm فقط در اولین تریگر بوق می‌زند.",
+    "usage_fa": "گرفتن خطای لحظه‌ای و گذرا.",
+    "related_terms": [
+      {
+        "term": "Live Data",
+        "target_id": "autel-ms906pro-live-data",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Display Mode",
+        "target_id": "autel-ms906pro-live-data-display-mode",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "37",
+        "note": "Trigger button sits in the display-mode submenu"
+      },
+      {
+        "term": "Review",
+        "target_id": "autel-ms906pro-live-data-review",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "39",
+        "note": "Data saved on trigger is checked via Review"
+      },
+      {
+        "term": "MIN",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "39",
+        "note": ""
+      },
+      {
+        "term": "MAX",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "39",
+        "note": ""
+      },
+      {
+        "term": "Buzzer alarm",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "39",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "خودرو گاهی خاموش می‌شود؛ برای دور موتور بازه می‌گذاریم تا لحظه‌ی افت ثبت شود.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "39-40",
+        "locator": "Trigger Setting; Figure 4-13"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "ui_element_on_screen",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-live-data-graph-merge",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "path_confidence": "ui_element_on_screen",
+    "ui_element_type": "function_button",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Control on the Live Data screen, not a menu item.",
+    "menu_path_alternatives": [],
+    "category": "Live Data",
+    "term_en": "Graph Merge",
+    "term_en_as_written_in_manual": "Graph Merge",
+    "term_variants_in_manual": [],
+    "term_fa": "ادغام نمودار",
+    "pronunciation_fa": "گراف مرج",
+    "technical_description_fa": "نمودار ۲ تا ۳ پارامتر را روی هم نشان می‌دهد (فقط در Waveform Graph Mode).",
+    "usage_fa": "مقایسه‌ی همزمان چند پارامتر.",
+    "related_terms": [
+      {
+        "term": "Live Data",
+        "target_id": "autel-ms906pro-live-data",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Display Mode",
+        "target_id": "autel-ms906pro-live-data-display-mode",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "40",
+        "note": "Graph Merge is for Waveform Graph Mode only"
+      },
+      {
+        "term": "Waveform Graph Mode",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "40",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "سیگنال دو سنسور را روی هم می‌گذاریم تا زمان‌بندی‌شان را مقایسه کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "40",
+        "locator": "Live Data Function Buttons: Graph Merge"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "ui_element_on_screen",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-live-data-freeze",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "path_confidence": "ui_element_on_screen",
+    "ui_element_type": "function_button",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Control on the Live Data screen, not a menu item.",
+    "menu_path_alternatives": [],
+    "category": "Live Data",
+    "term_en": "Freeze",
+    "term_en_as_written_in_manual": "Freeze",
+    "term_variants_in_manual": [],
+    "term_fa": "ثابت‌کردن داده",
+    "pronunciation_fa": "فریز",
+    "technical_description_fa": "داده‌ی دریافتی را در حالت ثابت نشان می‌دهد؛ با Resume، Previous frame، Play/Pause و Next frame کنترل می‌شود.",
+    "usage_fa": "بررسی دقیق یک لحظه از داده‌ی زنده.",
+    "related_terms": [
+      {
+        "term": "Freeze frame",
+        "target_id": "autel-ms906pro-freeze-frame",
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "34-35; 41",
+        "note": "Different functions despite similar names"
+      },
+      {
+        "term": "Live Data",
+        "target_id": "autel-ms906pro-live-data",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Resume",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": ""
+      },
+      {
+        "term": "Previous frame",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": ""
+      },
+      {
+        "term": "Next frame",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": ""
+      },
+      {
+        "term": "Play/Pause",
+        "target_id": null,
+        "relation": "part_of_screen",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "در زمان مشکل، داده را Freeze می‌کنیم و فریم به فریم بررسی می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "41",
+        "locator": "Live Data Function Buttons: Freeze"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "ui_element_on_screen",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "با Freeze frame (داده‌ی ذخیره‌شده با DTC) فرق دارد؛ ادغام نشده.",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-live-data-record",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "path_confidence": "ui_element_on_screen",
+    "ui_element_type": "function_button",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Control on the Live Data screen, not a menu item.",
+    "menu_path_alternatives": [],
+    "category": "Live Data",
+    "term_en": "Record",
+    "term_en_as_written_in_manual": "Record",
+    "term_variants_in_manual": [],
+    "term_fa": "ضبط",
+    "pronunciation_fa": "رکورد",
+    "technical_description_fa": "ضبط داده‌ی پارامترهای انتخاب‌شده. با Resume ضبط متوقف می‌شود. در بخش Review یا Data Manager قابل مشاهده است. در Setting مدت ضبط بعد از تریگر: ۵، ۱۵، ۳۰، ۶۰ یا ۹۰ ثانیه.",
+    "usage_fa": "ثبت داده حین تست جاده.",
+    "related_terms": [
+      {
+        "term": "Live Data",
+        "target_id": "autel-ms906pro-live-data",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Review",
+        "target_id": "autel-ms906pro-live-data-review",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": ""
+      },
+      {
+        "term": "Setting",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "40",
+        "note": "Recording duration after trigger: 5/15/30/60/90 s"
+      },
+      {
+        "term": "Data Manager",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": ""
+      },
+      {
+        "term": "Review Data",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "حین تست جاده، پارامترهای انتخابی را ضبط و در تعمیرگاه مرور می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "40-41",
+        "locator": "Live Data Function Buttons: Setting, Record"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "ui_element_on_screen",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-live-data-review",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Live data"
+    ],
+    "path_confidence": "ui_element_on_screen",
+    "ui_element_type": "function_button",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Control on the Live Data screen, not a menu item.",
+    "menu_path_alternatives": [],
+    "category": "Live Data",
+    "term_en": "Review",
+    "term_en_as_written_in_manual": "Review",
+    "term_variants_in_manual": [],
+    "term_fa": "مرور داده‌ی ضبط‌شده",
+    "pronunciation_fa": "ریویو",
+    "technical_description_fa": "مرور داده‌های ضبط‌شده در همین جلسه. تاریخچه‌ی کامل در Review Data داخل Data Manager است.",
+    "usage_fa": "بازبینی ضبط‌ها.",
+    "related_terms": [
+      {
+        "term": "Live Data",
+        "target_id": "autel-ms906pro-live-data",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "36-41",
+        "note": ""
+      },
+      {
+        "term": "Trigger Setting",
+        "target_id": "autel-ms906pro-live-data-trigger-setting",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "39",
+        "note": "Data saved on trigger is checked via Review"
+      },
+      {
+        "term": "Record",
+        "target_id": "autel-ms906pro-live-data-record",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": ""
+      },
+      {
+        "term": "Review Data",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": "Historical recordings are in Data Manager"
+      },
+      {
+        "term": "Data Manager",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "41",
+        "note": "Historical recordings are reviewed in Data Manager"
+      }
+    ],
+    "workshop_example_fa": "ضبط جاده را در تعمیرگاه با Review فریم به فریم نگاه می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "41",
+        "locator": "Live Data Function Buttons: Review"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": false,
+        "path_confidence": "ui_element_on_screen",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  }
+]

@@ -1,0 +1,151 @@
+[
+  {
+    "schema_version": "0.2",
+    "id": "autel-ms906pro-special-functions",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Special functions"
+    ],
+    "path_confidence": "documented_vehicle_dependent",
+    "ui_element_type": "function_menu_item",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+    "menu_path_alternatives": [],
+    "category": "Special Functions",
+    "term_en": "Special functions",
+    "term_en_as_written_in_manual": "Special functions",
+    "term_variants_in_manual": [
+      {
+        "text": "Special functions",
+        "printed_pages": "32"
+      },
+      {
+        "text": "Special Functions",
+        "printed_pages": "42"
+      }
+    ],
+    "term_fa": "توابع ویژه",
+    "pronunciation_fa": "اسپشیال فانکشنز",
+    "technical_description_fa": "تطبیق قطعه (adaptation) و پیکربندی پس از تعمیر یا تعویض. صفحه شامل شرح عملیات و وضعیت اجرا، پیش‌شرط‌ها، شرایط فعلی ماژول و راهنمای دکمه‌هاست.",
+    "usage_fa": "کالیبره و یادگیری مجدد قطعه بعد از تعویض.",
+    "related_terms": [
+      {
+        "term": "Control Unit",
+        "target_id": "autel-ms906pro-control-unit",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Control unit adaptations",
+        "target_id": null,
+        "relation": "alias",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": "Possible on-screen name"
+      },
+      {
+        "term": "Special function",
+        "target_id": null,
+        "relation": "alias",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": "Possible on-screen name"
+      },
+      {
+        "term": "Variant coding",
+        "target_id": null,
+        "relation": "alias",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": "Possible on-screen name"
+      },
+      {
+        "term": "Configuration",
+        "target_id": null,
+        "relation": "alias",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": "Possible on-screen name"
+      },
+      {
+        "term": "Adaptation Operation",
+        "target_id": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "42",
+        "note": "Title of the operation screen"
+      }
+    ],
+    "workshop_example_fa": "بعد از تعویض قطعه، پیش‌شرط‌ها را کنترل و تطبیق را اجرا می‌کنیم.",
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "32",
+        "locator": "Function Menu options list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "42-43",
+        "locator": "Special Functions"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "function_description"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented_vehicle_dependent",
+        "author_fields_not_source_text": [
+          "usage_fa"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "brief",
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "source_backed": false
+      }
+    },
+    "notes": "طبق راهنما همین منو بسته به خودرو ممکن است Control unit adaptations، Special function، Variant coding یا Configuration نام بگیرد. هنوز مشخص نیست این‌ها همیشه معادل‌اند؛ ادغام نشده‌اند.",
+    "last_checked": "2026-11-12"
+  }
+]
