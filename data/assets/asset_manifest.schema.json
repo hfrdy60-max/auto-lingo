@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/auto-lingo/asset_manifest.schema.json",
+  "title": "AUTO LINGO Asset Provenance Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_name", "schema_version", "status", "description", "assets"],
+  "properties": {
+    "manifest_name": {"const": "AUTO LINGO asset provenance manifest"},
+    "schema_version": {"const": "1.0.0"},
+    "status": {"enum": ["proposed", "active"]},
+    "description": {"type": "string", "minLength": 1},
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "asset_id", "entity_refs", "asset_type", "source_url", "provider",
+          "creator", "rights_holder", "license_name", "license_url",
+          "permission_evidence", "attribution", "accessed_at", "sha256",
+          "modification_status", "modifications", "distribution_permissions",
+          "technical_identity_status", "technical_reviewer", "technical_reviewed_at",
+          "rights_status", "rights_reviewer", "rights_reviewed_at", "release_status"
+        ],
+        "properties": {
+          "asset_id": {"type": "string", "pattern": "^ASSET-[A-Z0-9-]+$"},
+          "entity_refs": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "asset_type": {"enum": ["image", "audio", "video", "diagram", "document", "other"]},
+          "source_url": {"type": "string", "format": "uri"},
+          "provider": {"type": "string", "minLength": 1},
+          "creator": {"type": ["string", "null"]},
+          "rights_holder": {"type": ["string", "null"]},
+          "license_name": {"type": ["string", "null"]},
+          "license_url": {"type": ["string", "null"], "format": "uri"},
+          "permission_evidence": {"type": ["string", "null"]},
+          "attribution": {"type": ["string", "null"]},
+          "accessed_at": {"type": "string", "format": "date"},
+          "sha256": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+          "modification_status": {"enum": ["unmodified", "modified", "unknown"]},
+          "modifications": {"type": "array", "items": {"type": "string"}},
+          "distribution_permissions": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["educational", "commercial", "redistribution", "derivatives"],
+            "properties": {
+              "educational": {"type": ["boolean", "null"]},
+              "commercial": {"type": ["boolean", "null"]},
+              "redistribution": {"type": ["boolean", "null"]},
+              "derivatives": {"type": ["boolean", "null"]}
+            }
+          },
+          "technical_identity_status": {"enum": ["pending", "approved", "rejected"]},
+          "technical_reviewer": {"type": ["string", "null"]},
+          "technical_reviewed_at": {"type": ["string", "null"], "format": "date"},
+          "rights_status": {"enum": ["pending", "cleared", "rejected"]},
+          "rights_reviewer": {"type": ["string", "null"]},
+          "rights_reviewed_at": {"type": ["string", "null"], "format": "date"},
+          "release_status": {"enum": ["blocked", "eligible", "retired"]}
+        }
+      }
+    }
+  }
+}
