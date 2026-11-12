@@ -1,0 +1,103 @@
+{
+  "mission_id": "AI2-LESSON-B12-BEGINNER-REVIEW-CHECKPOINT-001",
+  "status": "candidate_sources_unverified",
+  "sources": [
+    {
+      "id": "SRC-BOSCH-BATTERY-001",
+      "title": "Bosch Classic — Quality spare parts for classic cars (Battery section)",
+      "publisher": "Robert Bosch GmbH / Bosch Classic",
+      "source_type": "manufacturer_technical_brochure",
+      "url": "https://www.bosch-classic.com/de/media/pdfs/downloads/broschueren/boschclassic_spareparts.pdf",
+      "locator": "PDF pp. 7–8; Batteries — Charge, install, start",
+      "supports": [
+        "battery stores electrical energy and supplies electrical consumers"
+      ],
+      "limitations": "General principle only; not vehicle-specific."
+    },
+    {
+      "id": "SRC-GATES-COOLING-001",
+      "title": "Troubleshooting Guide — Cooling System",
+      "publisher": "Gates",
+      "source_type": "manufacturer_technical_guide",
+      "url": "https://www.gatesaustralia.com.au/-/media/files/gates-au/automotive/catalogues/cooling-system-troubleshooting-manual-ausnz-august-2020.pdf?hash=414F365DB6CA4A98C1902EF1DFB934A7EB7D0E86&la=en",
+      "locator": "PDF pp. 9–10; pp. 34–36",
+      "supports": [
+        "radiator transfers heat from coolant to air",
+        "expansion tank accommodates coolant volume changes"
+      ],
+      "limitations": "General liquid-cooled system explanation only."
+    },
+    {
+      "id": "SRC-MANN-AIRFILTER-001",
+      "title": "Air filters — high engine protection",
+      "publisher": "MANN-FILTER / MANN+HUMMEL",
+      "source_type": "manufacturer_technical_webpage",
+      "url": "https://www.mann-filter.com/uk-en/parts/air-filter.html",
+      "locator": "Sections on engine air cleaner function",
+      "supports": [
+        "engine air filter captures dust and particles from intake air"
+      ],
+      "limitations": "Does not establish vehicle-specific filter choice or replacement interval."
+    },
+    {
+      "id": "SRC-BOSCH-BRAKE-FLUID-001",
+      "title": "Bosch brake fluid: the safety factor",
+      "publisher": "Bosch",
+      "source_type": "supplier_technical_document",
+      "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/au/download_centre_2/parts_10/brake/xx_pdfs_34/brake_fluid_4pp_broch_2020.pdf",
+      "locator": "General brake-fluid function",
+      "supports": [
+        "brake fluid transmits force in hydraulic braking systems"
+      ],
+      "limitations": "Fluid specification is vehicle-specific; no product recommendation is made."
+    },
+    {
+      "id": "SRC-BC-AUTOMOTIVE-001",
+      "title": "Skills for Schools — Automotive Technology, Lesson 5: Servicing and Inspections",
+      "publisher": "British Council India",
+      "source_type": "vocational_education_resource",
+      "url": "https://www.britishcouncil.in/sites/default/files/skills-for-schools_toolkit_for_automotive_technology.pdf",
+      "locator": "Lesson 5, p. 46",
+      "supports": [
+        "automotive vocabulary and workshop learning context; service history and mileage as vehicle records"
+      ],
+      "limitations": "Educational resource, not a technical repair authority."
+    },
+    {
+      "id": "SRC-BC-BE-001",
+      "title": "Present simple: 'be'",
+      "publisher": "British Council",
+      "source_type": "language_learning_reference",
+      "url": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/present-simple-be",
+      "locator": "Present simple be",
+      "supports": [
+        "review of be forms and questions"
+      ],
+      "limitations": "General English grammar source."
+    },
+    {
+      "id": "SRC-BC-HAVE-GOT-001",
+      "title": "Have got",
+      "publisher": "British Council",
+      "source_type": "language_learning_reference",
+      "url": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar/have-got",
+      "locator": "Have got and possession",
+      "supports": [
+        "general have/has usage context"
+      ],
+      "limitations": "B12 uses present simple have/has, not a new have got lesson."
+    },
+    {
+      "id": "SRC-GOV-MOT-001",
+      "title": "MOT testing guide — Introduction",
+      "publisher": "UK Driver and Vehicle Standards Agency",
+      "source_type": "official_government_guidance",
+      "url": "https://www.gov.uk/guidance/mot-testing-guide/a-introduction",
+      "locator": "Vehicle history and recorded mileage context",
+      "supports": [
+        "official vehicle inspection records may include recorded mileage and inspection outcomes"
+      ],
+      "limitations": "Applies to UK MOT context; not a universal international legal procedure."
+    }
+  ]
+}
