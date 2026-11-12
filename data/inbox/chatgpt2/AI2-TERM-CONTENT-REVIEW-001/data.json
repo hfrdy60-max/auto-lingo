@@ -1,0 +1,134 @@
+{
+  "task_id": "AI2-TERM-CONTENT-REVIEW-001",
+  "status": "independent_review_complete_editorial_not_verified",
+  "source_task": "AI1-TERM-CONTENT-TRIAGE-001",
+  "reviewed_count": 20,
+  "decisions": {
+    "agree": 11,
+    "disagree": 0,
+    "needs_context": 9
+  },
+  "source_set": "Archived six-batch 252-term set; AI-1 findings.json",
+  "changes_to_source_records": false,
+  "verification_status_changed": false,
+  "canonical_decision": false,
+  "findings": [
+    [
+      "TERM-000083",
+      "needs_context",
+      "A complete transmission is an assembly/system; final kind depends on the schema enum and taxonomy convention."
+    ],
+    [
+      "TERM-000084",
+      "needs_context",
+      "A complete transmission is an assembly/system; final kind depends on the schema enum and taxonomy convention."
+    ],
+    [
+      "TERM-000094",
+      "agree",
+      "Pressure Plate and Clutch Disc are distinct; صفحه کلاچ is ambiguous as a primary Persian label. Use a distinct term and definition."
+    ],
+    [
+      "TERM-000102",
+      "needs_context",
+      "کاسه ترمز is more explicit; کاسه چرخ may be colloquial. Validate audience and retain only as a labeled synonym if supported."
+    ],
+    [
+      "TERM-000073",
+      "agree",
+      "سنسور دور موتور is colloquial/incomplete; حسگر موقعیت میل‌لنگ is more technically explicit. Keep colloquial phrase as synonym if desired."
+    ],
+    [
+      "TERM-000243",
+      "agree",
+      "Stalling is unintended engine stoppage, not the act of switching the engine off."
+    ],
+    [
+      "TERM-000209",
+      "agree",
+      "Tensioner is broader than timing-belt tensioner; use a general label and contextual subtype."
+    ],
+    [
+      "TERM-000208",
+      "agree",
+      "Rolling-element and plain/journal bearings are distinct designs; use a parent concept with scoped subtypes or split entries."
+    ],
+    [
+      "TERM-000123",
+      "agree",
+      "Suspension strut is structural and provides damping; it is not synonymous with shock absorber or limited to MacPherson."
+    ],
+    [
+      "TERM-000062",
+      "agree",
+      "ایسییو is unclear; use consistent letter-name transliteration such as ای‌سی‌یو and expand ECU."
+    ],
+    [
+      "TERM-000089",
+      "needs_context",
+      "Transmission fluid is a fluid/consumable; check whether schema supports fluid/material kind."
+    ],
+    [
+      "TERM-000107",
+      "needs_context",
+      "Brake fluid is a hydraulic working fluid/consumable; check schema enum."
+    ],
+    [
+      "TERM-000135",
+      "needs_context",
+      "Coolant is a service fluid/working medium; check schema enum."
+    ],
+    [
+      "TERM-000142",
+      "needs_context",
+      "Engine oil is a lubricant/consumable; check schema enum."
+    ],
+    [
+      "TERM-000151",
+      "needs_context",
+      "Refrigerant is a working fluid; check schema enum and documented taxonomy."
+    ],
+    [
+      "TERM-000224",
+      "agree",
+      "Related-term target absent from six-batch set; unresolved until checked against full canonical registry."
+    ],
+    [
+      "TERM-000220",
+      "needs_context",
+      "BCM belongs functionally to body electronics; category choice depends on primary-category policy and cross-tagging."
+    ],
+    [
+      "TERM-000057",
+      "agree",
+      "Condenser is ambiguous between electrical capacitor usage and automotive HVAC heat exchanger; qualify synonym/context."
+    ],
+    [
+      "TERM-000068 / TERM-000215",
+      "needs_context",
+      "Reflash and flashing overlap but may differ in scope; inspect full definitions and search behavior before synonym routing."
+    ],
+    [
+      "all 252 records",
+      "agree",
+      "Uniform last_reviewed_at without reviewer/source trace is not proof of review; clarify as import/generation timestamp or require review provenance."
+    ]
+  ],
+  "batch01_provenance": {
+    "status": "unknown",
+    "facts": [
+      "Root Batch 01 upload timestamp: 2026-11-11T16:34:27Z.",
+      "Complete ZIP (1) upload timestamp: 2026-11-11T22:37:06Z.",
+      "Upload chronology does not establish content creation chronology, authorship, review, or canonical intent.",
+      "ZIPs (1)-(4) are byte-identical copies, not independent provenance evidence.",
+      "No authoring prompt, reviewer approval, source manifest, or generation log was found in reviewed materials."
+    ],
+    "canonical_choice_made": false
+  },
+  "limitations": [
+    "Complete 252-record JSON bodies were not available as readable standalone files in the reviewed branch.",
+    "No model-specific OEM service manual was available.",
+    "Web sources support general concepts, not all Persian usage or every record.",
+    "No source records or canonical files were modified."
+  ]
+}
