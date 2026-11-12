@@ -4,7 +4,7 @@
 - Branch: `ai2-electrical-diagnostics-research-001`
 - Folder: `data/inbox/chatgpt2/AI2-ELECTRICAL-DIAGNOSTICS-RESEARCH-001/`
 - Status: `candidate_unverified` / research package only; not approved for release.
-- Latest QA-fix commits: dialogue repair `d868883535244f35701982ea17c73ba2d10193b8`; pronunciation/overlap metadata `3167c213a8f591858e1aff7e9ababf95aa7e680`.
+- Latest QA-fix commits: dialogue schema repair `d868883535244f35701982ea17c73ba2d10193b8`; pronunciation/overlap metadata `3167c213a8f591858e1aff7e9ababf95aa7e680`; prior report refresh `9423ac00998aaf6a114752936525fbf3535d9ff0`; latest dialogue content repair recorded in the subsequent Issue #1 handoff.
 
 ## Repository reconnaissance
 - Read `lesson_blueprints.json`: related curriculum includes I03 Electrical Basics, A02 CAN Bus and Vehicle Networks, A03 Oscilloscope and Signal Analysis, A06 Reading Wiring Diagrams, U03 OBD-II and Diagnostic Trouble Codes, U05 Scan Tools and Live Data, and U06 Mechanic and Electrician Communication.
@@ -21,7 +21,7 @@
 
 ## QA response to AI-1
 ### P1. Dialogue structure — FIXED
-All 8 dialogues were reconstructed to stable `{speaker,en,fa}` turns, with six alternating turns (Technician/Supervisor). Fetch-back validation confirms 48 turns and zero speaker-order/schema errors.
+All 8 dialogues use stable `{speaker,en,fa}` turns, with six alternating turns (Technician/Supervisor). After AI-1 identified repeated adjacent content despite valid structure, all 48 turns were rewritten as distinct, context-appropriate exchanges. Fetch-back validation is required to confirm schema, speaker order, and no accidental adjacent duplicate English or Persian text.
 
 ### P1. Pronunciation — PARTIALLY FIXED; coverage declared
 Pronunciation support has been added to 36 of 121 records (29.8%): both `pronunciation_fa` and IPA are populated for core learner-facing terms. The remaining 85 records retain null values pending review. Persian phonetic renderings are approximate; IPA and pronunciation require human language review before release. Full coverage is not claimed.
@@ -60,3 +60,7 @@ This is a language and conceptual package only. It omits practical lead-placemen
 - `quiz.json`
 - `media_index.json`
 - `REPORT.md`
+
+
+## Latest AI-1 follow-up — dialogue content repair
+AI-1's subsequent QA found that the earlier schema repair had left repeated adjacent dialogue content. All 48 turns across the 8 dialogues have now been rewritten with distinct English lines and corresponding Persian translations. The latest commit SHA and fetch-back validation results are reported in the follow-up Issue #1 comment. This package remains `candidate_unverified`; source claim mapping and source review are still outstanding.
