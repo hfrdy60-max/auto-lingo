@@ -1,0 +1,180 @@
+{
+  "mission_id": "AI1-MULTIMETER-TERMINOLOGY-RESEARCH-001",
+  "status": "draft_needs_language_review",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "DMM-Q01",
+      "type": "mcq",
+      "skill": "vocabulary",
+      "question_fa": "COM روی مولتی‌متر به چه چیزی اشاره می‌کند؟",
+      "options": [
+        "ورودی مشترک دستگاه",
+        "اتصال بدنه خودرو در همه شرایط",
+        "خروجی ECU"
+      ],
+      "answer": "ورودی مشترک دستگاه",
+      "explanation_fa": "COM نام ترمینال مشترک ابزار است و نباید آن را همیشه معادل ground خودرو دانست."
+    },
+    {
+      "id": "DMM-Q02",
+      "type": "mcq",
+      "skill": "vocabulary",
+      "question_fa": "کدام اصطلاح به وسیله‌ای اشاره می‌کند که جریان را با فک اطراف هادی حس می‌کند؟",
+      "options": [
+        "Clamp meter",
+        "Test light",
+        "Test lead"
+      ],
+      "answer": "Clamp meter",
+      "explanation_fa": "Clamp meter یا کلمپ‌متر از فک اندازه‌گیری برای حس‌کردن جریان استفاده می‌کند."
+    },
+    {
+      "id": "DMM-Q03",
+      "type": "mcq",
+      "skill": "meaning_in_context",
+      "question_fa": "نمایش OL را چگونه باید تفسیر کرد؟",
+      "options": [
+        "همیشه مدار باز است",
+        "همیشه اضافه‌بار جریان است",
+        "با توجه به مدل و حالت دستگاه و راهنمای آن"
+      ],
+      "answer": "با توجه به مدل و حالت دستگاه و راهنمای آن",
+      "explanation_fa": "معنای OL بین مدل‌ها و عملکردهای اندازه‌گیری ممکن است تفاوت کند."
+    },
+    {
+      "id": "DMM-Q04",
+      "type": "mcq",
+      "skill": "safety_vocabulary",
+      "question_fa": "CAT rating به چه موضوعی مربوط است؟",
+      "options": [
+        "رده‌بندی ایمنی محیط اندازه‌گیری",
+        "دقت رنگ سیم خودرو",
+        "ظرفیت باتری خودرو"
+      ],
+      "answer": "رده‌بندی ایمنی محیط اندازه‌گیری",
+      "explanation_fa": "رده CAT درباره محیط گذراهای الکتریکی و تناسب ایمنی ابزار و متعلقات است."
+    },
+    {
+      "id": "DMM-Q05",
+      "type": "mcq",
+      "skill": "meaning_in_context",
+      "question_fa": "کدام عبارت به انتخاب خودکار محدوده اندازه‌گیری اشاره می‌کند؟",
+      "options": [
+        "Manual ranging",
+        "Auto-ranging",
+        "Back-probing"
+      ],
+      "answer": "Auto-ranging",
+      "explanation_fa": "Auto-ranging یعنی دستگاه محدوده مناسب را خودکار انتخاب می‌کند."
+    },
+    {
+      "id": "DMM-Q06",
+      "type": "fa_to_en",
+      "skill": "translation_fa_to_en",
+      "question_fa": "«ورودی مشترک با COM مشخص شده است.»",
+      "accepted_answers": [
+        "The common input is marked COM.",
+        "The common terminal is marked COM."
+      ],
+      "explanation_fa": "common input یا common terminal معادل ورودی/ترمینال مشترک است."
+    },
+    {
+      "id": "DMM-Q07",
+      "type": "fa_to_en",
+      "skill": "translation_fa_to_en",
+      "question_fa": "«راهنمای دستگاه معنای نمایش OL را توضیح می‌دهد.»",
+      "accepted_answers": [
+        "The instrument manual explains the meaning of the OL display.",
+        "The meter manual explains the meaning of the OL display."
+      ],
+      "explanation_fa": "برای دفترچه ابزار از instrument manual یا meter manual استفاده می‌شود."
+    },
+    {
+      "id": "DMM-Q08",
+      "type": "fa_to_en",
+      "skill": "translation_fa_to_en",
+      "question_fa": "«رده CAT سیم‌های اندازه‌گیری را بررسی کنید.»",
+      "accepted_answers": [
+        "Check the CAT rating of the test leads.",
+        "Check the test leads' CAT rating."
+      ],
+      "explanation_fa": "test leads یعنی سیم‌های اندازه‌گیری؛ CAT rating رده ایمنی آن‌هاست."
+    },
+    {
+      "id": "DMM-Q09",
+      "type": "en_to_fa",
+      "skill": "translation_en_to_fa",
+      "question_en": "A test light can load a sensitive circuit.",
+      "accepted_answers": [
+        "تست‌لایت می‌تواند به یک مدار حساس بار وارد کند.",
+        "چراغ تست ممکن است روی مدار حساس بار الکتریکی ایجاد کند."
+      ],
+      "explanation_fa": "load در اینجا به معنی واردکردن بار الکتریکی به مدار است."
+    },
+    {
+      "id": "DMM-Q10",
+      "type": "en_to_fa",
+      "skill": "translation_en_to_fa",
+      "question_en": "The input impedance is specified by the instrument manufacturer.",
+      "accepted_answers": [
+        "امپدانس ورودی توسط سازنده ابزار مشخص شده است.",
+        "سازنده ابزار مشخصات امپدانس ورودی را تعیین می‌کند."
+      ],
+      "explanation_fa": "input impedance را «امپدانس ورودی» ترجمه می‌کنیم."
+    },
+    {
+      "id": "DMM-Q11",
+      "type": "en_to_fa",
+      "skill": "translation_en_to_fa",
+      "question_en": "Use an approved breakout adapter when the service procedure requires it.",
+      "accepted_answers": [
+        "وقتی روش تعمیراتی آن را لازم می‌داند، از آداپتور بریک‌اوت تأییدشده استفاده کنید."
+      ],
+      "explanation_fa": "approved یعنی تأییدشده و breakout adapter آداپتور واسط آزمون است."
+    },
+    {
+      "id": "DMM-Q12",
+      "type": "fill_blank",
+      "skill": "collocation",
+      "question_en": "The meter automatically selects the range in _____ mode.",
+      "accepted_answers": [
+        "auto-ranging",
+        "autoranging"
+      ],
+      "explanation_fa": "عبارت رایج auto-ranging mode است."
+    },
+    {
+      "id": "DMM-Q13",
+      "type": "fill_blank",
+      "skill": "collocation",
+      "question_en": "The pointed contact at the end of a test lead is the test _____.",
+      "accepted_answers": [
+        "probe"
+      ],
+      "explanation_fa": "test probe نوک پراب اندازه‌گیری است."
+    },
+    {
+      "id": "DMM-Q14",
+      "type": "identify_correct_term",
+      "skill": "vocabulary",
+      "question_fa": "«اندازه‌گیری سهم زمانی فعال‌بودن سیگنال در یک دوره» کدام اصطلاح است؟",
+      "accepted_answers": [
+        "duty-cycle measurement",
+        "duty cycle measurement"
+      ],
+      "explanation_fa": "چرخه کاری معمولاً به صورت درصد بیان می‌شود."
+    },
+    {
+      "id": "DMM-Q15",
+      "type": "identify_correct_term",
+      "skill": "vocabulary",
+      "question_fa": "«روش دسترسی به مدار از پشت کانکتورِ متصل» کدام اصطلاح است؟",
+      "accepted_answers": [
+        "back-probing",
+        "back probing"
+      ],
+      "explanation_fa": "Back-probing یک اصطلاح برای شیوه دسترسی به مدار است؛ ابزار و روش مجاز باید از دستور سازنده پیروی کند."
+    }
+  ]
+}
