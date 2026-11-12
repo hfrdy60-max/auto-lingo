@@ -1,0 +1,499 @@
+{
+  "mission_id": "AI2-LESSON-B10-CAR-FLUIDS-001",
+  "lesson_id": "B10",
+  "lesson_title_fa": "مایعات خودرو: نام، کاربرد و مقدار",
+  "lesson_title_en": "Car Fluids: Names, Functions and Quantities",
+  "level_id": "LVL-1",
+  "lesson_order": 10,
+  "content_language": "fa",
+  "support_language": "en",
+  "content_version": "1.0.0",
+  "content_status": "needs_review",
+  "review_note_fa": "بستهٔ آموزشی مستقل برای تقویت زبان فنی خودرو است. محتوای فنی عمومی و آموزشی است؛ نوع سیال، مشخصات، سطح و روش سرویس در هر خودرو باید فقط از دفترچه و مستندات همان مدل تعیین شود. هنوز به schema/loader و بازبینی مستقل نیاز دارد.",
+  "blueprint_alignment": {
+    "source_file": "lesson_blueprints.json",
+    "blueprint_id": "B10",
+    "featured_part_ids": [
+      "PRT-LUB-004",
+      "PRT-COL-005",
+      "PRT-LUB-005",
+      "PRT-BRK-003",
+      "PRT-STR-008",
+      "PRT-FUE-001"
+    ],
+    "language_focus": "Countable/uncountable nouns: oil, fuel, water; quantity phrases: a litre of..., a bottle of..., some...",
+    "target_new_terms": 8,
+    "estimated_minutes": 25,
+    "mastery_threshold_pct": 70
+  },
+  "learning_objectives": [
+    "شش قطعهٔ مشخص‌شده در blueprint را با نام انگلیسی و فارسی تشخیص دهد.",
+    "نام چند سیال رایج خودرو را به انگلیسی بیان کند و کاربرد عمومی آن‌ها را از هم تفکیک کند.",
+    "تفاوت کاربردی engine oil، coolant، brake fluid، transmission fluid، power steering fluid و fuel را در سطح مقدماتی توضیح دهد.",
+    "اسم‌های غیرقابل‌شمارش مانند oil و fuel را در جمله‌های ساده درست به کار ببرد.",
+    "برای بیان مقدار از عبارت‌هایی مانند a litre of، two litres of و a bottle of استفاده کند.",
+    "در مکالمهٔ سادهٔ تعمیرگاهی دربارهٔ نوع سیال و مقدار آن سؤال کند، بدون اینکه نوع یا مقدار مناسب یک خودرو را حدس بزند."
+  ],
+  "prerequisites": [
+    "درس B09: شناخت مقدماتی قطعات زیر کاپوت",
+    "آشنایی با جملهٔ سادهٔ انگلیسی و واژه‌های part، engine و system"
+  ],
+  "lesson_intro_fa": "در خودرو چند نوع سیال وجود دارد، اما همهٔ آن‌ها یک کار انجام نمی‌دهند. روغن موتور برای روان‌کاری و محافظت از قطعات متحرک است؛ مایع خنک‌کننده به مدیریت دمای موتور کمک می‌کند؛ روغن ترمز فشار هیدرولیکی را منتقل می‌کند؛ و سوخت انرژی شیمیایی مورد نیاز موتور را فراهم می‌کند. در این درس علاوه بر شناخت کاربرد عمومی این سیالات، یاد می‌گیریم نام آن‌ها را به انگلیسی بگوییم و مقدار را با عبارت‌هایی مانند a litre of oil بیان کنیم. هدف، یادگیری زبان فنی است؛ نه انتخاب یا تعویض سیال بدون اطلاعات سازنده.",
+  "sections": [
+    {
+      "section_id": "B10-S01",
+      "title_fa": "۱) روغن موتور و درپوش روغن",
+      "title_en": "Engine Oil and Oil Filler Cap",
+      "part_id": "PRT-LUB-005",
+      "term_en": "Engine Oil",
+      "term_fa": "روغن موتور",
+      "explanation_fa": "روغن موتور میان سطوح متحرک لایهٔ روان‌کار ایجاد می‌کند و به کاهش اصطکاک و سایش کمک می‌کند. همچنین در دفع بخشی از گرما، محافظت در برابر خوردگی و نگه‌داشتن آلاینده‌ها در حالت معلق نقش دارد. درپوش روغن یا Oil Filler Cap دهانهٔ مخصوص افزودن روغن را می‌بندد؛ خود درپوش، سطح روغن را اندازه‌گیری نمی‌کند. سطح روغن در خودروهای مجهز به میل‌گیج با Dipstick و در برخی خودروها با سامانهٔ الکترونیکی بررسی می‌شود.",
+      "key_points": [
+        "Engine oil = روغن موتور؛ oil به‌طور معمول اسم غیرقابل‌شمارش است.",
+        "Oil filler cap = درپوش دهانهٔ روغن‌ریزی؛ با dipstick تفاوت دارد.",
+        "روغن موتور با روغن گیربکس یا روغن هیدرولیک فرمان یکسان نیست.",
+        "درجهٔ گرانروی و استاندارد روغن باید با مشخصات همان موتور مطابقت داشته باشد."
+      ],
+      "common_misconception_fa": "هر روغنی برای هر بخش خودرو مناسب نیست؛ engine oil را نباید با transmission fluid یا power steering fluid یکی دانست.",
+      "example_en": "The engine needs the correct type of engine oil.",
+      "example_fa": "موتور به نوع صحیح روغن موتور نیاز دارد.",
+      "source_ids": [
+        "SRC-CASTROL-ENGINE-OIL-001"
+      ]
+    },
+    {
+      "section_id": "B10-S02",
+      "title_fa": "۲) مایع خنک‌کننده و منبع انبساط",
+      "title_en": "Coolant and Expansion Tank",
+      "part_id": "PRT-COL-005",
+      "term_en": "Coolant",
+      "term_fa": "مایع خنک‌کننده",
+      "explanation_fa": "مایع خنک‌کننده در مدار خنک‌کاری گردش می‌کند و گرما را از بخش‌های گرم موتور به مبدل حرارتی منتقل می‌کند. فرمول مناسب آن می‌تواند به محافظت در برابر یخ‌زدگی، جوش‌آوردن و خوردگی کمک کند. منبع انبساط فضایی برای تغییر حجم مایع در اثر تغییر دما فراهم می‌کند. Coolant، antifreeze و آب خالص واژه‌های کاملاً هم‌معنی نیستند؛ نوع و ترکیب مورد استفاده باید مطابق مشخصات سازنده باشد.",
+      "key_points": [
+        "Coolant = مایع خنک‌کننده؛ expansion tank = منبع انبساط.",
+        "منبع انبساط با رادیاتور یکی نیست، هرچند به مدار خنک‌کاری متصل است.",
+        "رنگ مایع به‌تنهایی معیار قابل‌اعتماد برای سازگاری یا انتخاب آن نیست.",
+        "درپوش مخزن یا مدار خنک‌کاری را وقتی موتور داغ است باز نکن؛ سامانه ممکن است تحت فشار باشد."
+      ],
+      "common_misconception_fa": "هر مایع رنگی یا هر نوع ضدیخ الزاماً با هر خودرویی سازگار نیست؛ مشخصات فنی سازنده تعیین‌کننده است.",
+      "example_en": "The coolant level is checked according to the owner's manual.",
+      "example_fa": "سطح مایع خنک‌کننده طبق دفترچهٔ مالک بررسی می‌شود.",
+      "source_ids": [
+        "SRC-PRESTONE-COOLANT-001",
+        "SRC-FORD-COOLANT-SAFETY-001"
+      ]
+    },
+    {
+      "section_id": "B10-S03",
+      "title_fa": "۳) روغن ترمز و سیلندر اصلی ترمز",
+      "title_en": "Brake Fluid and Brake Master Cylinder",
+      "part_id": "PRT-BRK-003",
+      "term_en": "Brake Fluid",
+      "term_fa": "روغن ترمز",
+      "explanation_fa": "در سامانهٔ ترمز هیدرولیکی، نیروی واردشده به پدال از طریق فشار سیال در مدار منتقل می‌شود. سیلندر اصلی ترمز فشار هیدرولیکی ایجاد می‌کند و Brake Fluid آن را در مدار انتقال می‌دهد. روغن ترمز باید ویژگی‌های حرارتی و سازگاری مشخصی داشته باشد. برخی انواع آن رطوبت را جذب می‌کنند و وجود آب می‌تواند نقطهٔ جوش را کاهش دهد؛ به همین دلیل بررسی و سرویس آن تابع برنامه و مشخصات سازنده است.",
+      "key_points": [
+        "Brake fluid = روغن ترمز؛ brake master cylinder = سیلندر اصلی ترمز.",
+        "سیلندر اصلی فشار هیدرولیکی ایجاد می‌کند؛ سیال آن فشار را منتقل می‌کند.",
+        "DOT 3، DOT 4 و دیگر رده‌ها را نباید صرفاً بر اساس عدد یا ظاهر جایگزین یکدیگر دانست.",
+        "هر نشانهٔ ایراد در ترمز موضوع ایمنی جدی است و باید به فرد متخصص سپرده شود."
+      ],
+      "common_misconception_fa": "روغن ترمز همان روغن موتور نیست و نباید در مخزن روغن موتور ریخته شود.",
+      "example_en": "Brake fluid transfers pressure through the hydraulic brake system.",
+      "example_fa": "روغن ترمز فشار را در سامانهٔ هیدرولیکی ترمز منتقل می‌کند.",
+      "source_ids": [
+        "SRC-BOSCH-BRAKE-FLUID-001",
+        "SRC-BOSCH-BRAKE-SYSTEM-001"
+      ]
+    },
+    {
+      "section_id": "B10-S04",
+      "title_fa": "۴) روغن هیدرولیک فرمان و مخزن آن",
+      "title_en": "Power Steering Fluid and Reservoir",
+      "part_id": "PRT-STR-008",
+      "term_en": "Power Steering Fluid",
+      "term_fa": "روغن هیدرولیک فرمان",
+      "explanation_fa": "در خودروهایی که از فرمان هیدرولیکی استفاده می‌کنند، سیال هیدرولیک در انتقال نیرو و کمک به عملکرد سامانه نقش دارد. مخزن Power Steering Fluid Reservoir سیال مورد نیاز مدار را نگهداری می‌کند. همهٔ خودروهای جدید الزاماً فرمان هیدرولیکی ندارند؛ بسیاری از آن‌ها از سامانهٔ کمکی برقی استفاده می‌کنند و مخزن روغن هیدرولیک فرمان ندارند.",
+      "key_points": [
+        "Power steering fluid = روغن هیدرولیک فرمان.",
+        "Reservoir = مخزن؛ fluid reservoir = مخزن سیال.",
+        "این سامانه را با روغن ترمز یا روغن موتور اشتباه نکن.",
+        "وجود و نوع سیال به معماری سیستم فرمان خودرو بستگی دارد."
+      ],
+      "common_misconception_fa": "نباید فرض کرد هر خودرویی مخزن روغن هیدرولیک فرمان دارد؛ فرمان برقی ممکن است چنین مخزنی نداشته باشد.",
+      "example_en": "This vehicle has a power steering fluid reservoir.",
+      "example_fa": "این خودرو مخزن روغن هیدرولیک فرمان دارد.",
+      "source_ids": [
+        "SRC-FORD-FLUID-CHECKLIST-001"
+      ]
+    },
+    {
+      "section_id": "B10-S05",
+      "title_fa": "۵) سوخت و باک",
+      "title_en": "Fuel and Fuel Tank",
+      "part_id": "PRT-FUE-001",
+      "term_en": "Fuel",
+      "term_fa": "سوخت",
+      "explanation_fa": "Fuel نام عمومی ماده‌ای است که انرژی شیمیایی لازم برای کارکرد موتور را فراهم می‌کند. Fuel Tank یا باک، سوخت خودرو را ذخیره می‌کند. نوع سوخت به طراحی پیشرانه وابسته است؛ برای مثال بنزین و گازوئیل برای موتورهای متفاوتی به کار می‌روند و جایگزین آزادانهٔ یکدیگر نیستند. در زبان عمومی fuel معمولاً غیرقابل‌شمارش است، اما fuel types به معنی انواع سوخت قابل‌شمارش است.",
+      "key_points": [
+        "Fuel = سوخت؛ fuel tank = باک یا مخزن سوخت.",
+        "Petrol/gasoline = بنزین؛ diesel = گازوئیل.",
+        "Fuel با engine oil تفاوت دارد: یکی انرژی فراهم می‌کند و دیگری روان‌کاری انجام می‌دهد.",
+        "نوع سوخت صحیح را سازندهٔ خودرو تعیین می‌کند."
+      ],
+      "common_misconception_fa": "سوخت و روغن موتور هر دو مایع‌اند، اما وظیفه و مسیر کاری آن‌ها کاملاً متفاوت است.",
+      "example_en": "The fuel tank stores petrol or diesel.",
+      "example_fa": "باک، بنزین یا گازوئیل را ذخیره می‌کند.",
+      "source_ids": [
+        "SRC-FORD-FLUID-CHECKLIST-001"
+      ]
+    },
+    {
+      "section_id": "B10-S06",
+      "title_fa": "۶) میل‌گیج و بیان سطح یا مقدار روغن",
+      "title_en": "Dipstick and Fluid Quantity",
+      "part_id": "PRT-LUB-004",
+      "term_en": "Dipstick",
+      "term_fa": "میل‌گیج روغن",
+      "explanation_fa": "میل‌گیج در خودروهایی که به آن مجهز هستند برای نشان‌دادن سطح روغن موتور به کار می‌رود. در زبان فنی باید بین level و quantity تفاوت گذاشت: level سطح سیال در مخزن یا کارتل است و quantity مقدار آن. روش و شرایط اندازه‌گیری برای هر خودرو ممکن است متفاوت باشد. در این درس فقط عبارت‌های زبانی برای بیان مقدار را تمرین می‌کنیم و هیچ مقدار واقعی یا روش سرویس عمومی تجویز نمی‌شود.",
+      "key_points": [
+        "oil level = سطح روغن؛ oil quantity = مقدار روغن.",
+        "a litre of oil = یک لیتر روغن.",
+        "two litres of coolant = دو لیتر مایع خنک‌کننده.",
+        "a bottle of brake fluid = یک بطری روغن ترمز؛ این عبارت فقط واحد بیان مقدار است، نه توصیهٔ خرید یا مصرف."
+      ],
+      "common_misconception_fa": "میل‌گیج مقدار دقیق قابل افزودن را به‌تنهایی تعیین نمی‌کند؛ علامت‌ها و دستورالعمل سازنده باید تفسیر شوند.",
+      "example_en": "The dipstick shows the engine oil level.",
+      "example_fa": "میل‌گیج سطح روغن موتور را نشان می‌دهد.",
+      "source_ids": [
+        "SRC-FORD-FLUID-CHECKLIST-001"
+      ]
+    }
+  ],
+  "system_relationships": [
+    {
+      "system": "سامانهٔ روغن‌کاری موتور",
+      "flow": "Engine oil در مجراهای روغن‌کاری گردش می‌کند؛ dipstick سطح را نشان می‌دهد و oil filler cap دهانهٔ پرکردن را می‌بندد.",
+      "note_fa": "این توضیح مفهومی است؛ مسیر دقیق به طراحی موتور وابسته است."
+    },
+    {
+      "system": "سامانهٔ خنک‌کاری",
+      "flow": "Coolant گرما را از موتور دریافت می‌کند و از مسیر رادیاتور دفع می‌شود؛ expansion tank تغییر حجم سیال را مدیریت می‌کند.",
+      "note_fa": "درپوش سامانهٔ داغ نباید باز شود."
+    },
+    {
+      "system": "سامانهٔ ترمز هیدرولیکی",
+      "flow": "Brake pedal → master cylinder → hydraulic brake lines → wheel brake mechanisms.",
+      "note_fa": "هرگونه عیب در این زنجیره نیازمند رسیدگی متخصص است."
+    },
+    {
+      "system": "سامانهٔ فرمان",
+      "flow": "در سامانهٔ هیدرولیکی، مخزن سیال به مدار فرمان کمک هیدرولیکی متصل است؛ فرمان برقی ممکن است مخزن نداشته باشد.",
+      "note_fa": "وجود این سامانه را نباید برای همهٔ خودروها فرض کرد."
+    },
+    {
+      "system": "سامانهٔ سوخت‌رسانی",
+      "flow": "Fuel tank ذخیرهٔ سوخت را فراهم می‌کند و سامانهٔ سوخت‌رسانی آن را به پیشرانه می‌رساند.",
+      "note_fa": "نوع سوخت باید با طراحی موتور سازگار باشد."
+    }
+  ],
+  "english_focus": {
+    "grammar_fa": "اسم‌های غیرقابل‌شمارش و عبارت‌های مقدار: oil، fuel، coolant و water معمولاً غیرقابل‌شمارش‌اند. برای بیان مقدار، از a litre of، two litres of، a bottle of و some استفاده می‌کنیم. برای انواع مختلف می‌توان از fluids یا types استفاده کرد.",
+    "rules": [
+      {
+        "rule": "Uncountable noun",
+        "example": "There is some oil in the engine.",
+        "translation_fa": "مقداری روغن در موتور وجود دارد."
+      },
+      {
+        "rule": "Quantity + of + uncountable noun",
+        "example": "The system contains two litres of coolant.",
+        "translation_fa": "سامانه دو لیتر مایع خنک‌کننده دارد."
+      },
+      {
+        "rule": "Container + of + fluid",
+        "example": "A bottle of brake fluid is on the shelf.",
+        "translation_fa": "یک بطری روغن ترمز روی قفسه است."
+      },
+      {
+        "rule": "Countable category noun",
+        "example": "Different fluids have different functions.",
+        "translation_fa": "سیالات مختلف، کاربردهای متفاوتی دارند."
+      },
+      {
+        "rule": "Question about specification",
+        "example": "Which fluid specification does this vehicle require?",
+        "translation_fa": "این خودرو به چه مشخصات سیالی نیاز دارد؟"
+      }
+    ],
+    "vocabulary": [
+      {
+        "en": "engine oil",
+        "fa": "روغن موتور"
+      },
+      {
+        "en": "coolant",
+        "fa": "مایع خنک‌کننده"
+      },
+      {
+        "en": "brake fluid",
+        "fa": "روغن ترمز"
+      },
+      {
+        "en": "power steering fluid",
+        "fa": "روغن هیدرولیک فرمان"
+      },
+      {
+        "en": "transmission fluid",
+        "fa": "روغن/سیال گیربکس"
+      },
+      {
+        "en": "fuel",
+        "fa": "سوخت"
+      },
+      {
+        "en": "washer fluid",
+        "fa": "مایع شیشه‌شوی"
+      },
+      {
+        "en": "fluid level",
+        "fa": "سطح سیال"
+      },
+      {
+        "en": "fluid quantity",
+        "fa": "مقدار سیال"
+      },
+      {
+        "en": "reservoir",
+        "fa": "مخزن"
+      },
+      {
+        "en": "specification",
+        "fa": "مشخصات فنی"
+      },
+      {
+        "en": "a litre of",
+        "fa": "یک لیتر از"
+      },
+      {
+        "en": "a bottle of",
+        "fa": "یک بطری از"
+      },
+      {
+        "en": "some",
+        "fa": "مقداری"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "There is some [fluid] in the [reservoir].",
+        "translation_fa": "مقداری [سیال] در [مخزن] وجود دارد."
+      },
+      {
+        "pattern": "The vehicle requires [quantity] of [fluid].",
+        "translation_fa": "خودرو به [مقدار] از [سیال] نیاز دارد."
+      },
+      {
+        "pattern": "Which type of [fluid] is specified?",
+        "translation_fa": "چه نوع [سیالی] در مشخصات تعیین شده است؟"
+      },
+      {
+        "pattern": "Do not mix different fluid types unless the manufacturer permits it.",
+        "translation_fa": "انواع مختلف سیال را با هم مخلوط نکنید، مگر اینکه سازنده اجازه داده باشد."
+      }
+    ],
+    "practice": [
+      {
+        "prompt_fa": "جای خالی را با some یا a انتخاب کن: There is ___ coolant in the expansion tank.",
+        "answer": "some",
+        "explanation_fa": "Coolant در این کاربرد غیرقابل‌شمارش است."
+      },
+      {
+        "prompt_fa": "ترجمه کن: دو لیتر روغن موتور",
+        "answer": "two litres of engine oil",
+        "explanation_fa": "پس از مقدار، of می‌آید و نام سیال بدون جمع استفاده می‌شود."
+      },
+      {
+        "prompt_fa": "کدام عبارت درست است؟ (a) two oils (b) two litres of oil",
+        "answer": "two litres of oil",
+        "explanation_fa": "برای مقدار روغن از واحد اندازه‌گیری استفاده می‌کنیم."
+      },
+      {
+        "prompt_fa": "ترجمه کن: این خودرو به چه نوع روغن ترمزی نیاز دارد؟",
+        "answer": "What type of brake fluid does this vehicle require?",
+        "explanation_fa": "برای پرسیدن نوع یا مشخصات سیال از what type of استفاده می‌کنیم."
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "Technician",
+        "en": "Which fluid are you asking about?",
+        "fa": "دربارهٔ کدام سیال سؤال می‌کنید؟"
+      },
+      {
+        "speaker": "Learner",
+        "en": "I mean the engine oil.",
+        "fa": "منظورم روغن موتور است."
+      },
+      {
+        "speaker": "Technician",
+        "en": "Do you know the vehicle specification?",
+        "fa": "مشخصات خودروی موردنظر را می‌دانید؟"
+      },
+      {
+        "speaker": "Learner",
+        "en": "Not yet. We need to check the owner's manual.",
+        "fa": "هنوز نه. باید دفترچهٔ مالک را بررسی کنیم."
+      },
+      {
+        "speaker": "Technician",
+        "en": "How can we express the quantity in English?",
+        "fa": "چطور مقدار را به انگلیسی بیان می‌کنیم؟"
+      },
+      {
+        "speaker": "Learner",
+        "en": "A litre of oil, or two litres of coolant.",
+        "fa": "یک لیتر روغن، یا دو لیتر مایع خنک‌کننده."
+      }
+    ]
+  },
+  "safe_learning_activity": {
+    "title_fa": "تمرین واژگان روی کارت‌های آموزشی",
+    "steps": [
+      "از تصویر یا کارت آموزشیِ بدون دست‌کاری قطعات استفاده کن.",
+      "نام انگلیسی شش قطعهٔ blueprint را به فارسی وصل کن.",
+      "برای هر سیال، کاربرد عمومی آن را با یک جملهٔ انگلیسی بیان کن.",
+      "سه عبارت مقدار بساز؛ مانند a litre of oil و two litres of coolant.",
+      "هیچ درپوشی را باز نکن و هیچ سیالی را لمس، مخلوط یا جابه‌جا نکن."
+    ]
+  },
+  "common_errors": [
+    {
+      "incorrect": "two oils",
+      "correct": "two litres of oil",
+      "reason_fa": "Oil در معنای ماده معمولاً غیرقابل‌شمارش است."
+    },
+    {
+      "incorrect": "a coolant",
+      "correct": "some coolant / a litre of coolant",
+      "reason_fa": "برای مقدار coolant از some یا واحد اندازه‌گیری استفاده می‌شود."
+    },
+    {
+      "incorrect": "engine oil = brake fluid",
+      "correct": "Engine oil and brake fluid are different fluids.",
+      "reason_fa": "کاربرد و مشخصات این دو سیال متفاوت است."
+    },
+    {
+      "incorrect": "Every car has power steering fluid.",
+      "correct": "Some vehicles use electric power steering.",
+      "reason_fa": "همهٔ خودروها سامانهٔ فرمان هیدرولیکی ندارند."
+    }
+  ],
+  "knowledge_check": [
+    {
+      "id": "B10-K01",
+      "type": "multiple_choice",
+      "question_fa": "کدام سیال برای روان‌کاری قطعات متحرک موتور به کار می‌رود؟",
+      "options": [
+        "Brake fluid",
+        "Engine oil",
+        "Fuel",
+        "Washer fluid"
+      ],
+      "answer": "Engine oil",
+      "explanation_fa": "روغن موتور اصطکاک و سایش را کاهش می‌دهد."
+    },
+    {
+      "id": "B10-K02",
+      "type": "multiple_choice",
+      "question_fa": "وظیفهٔ اصلی روغن ترمز در سامانهٔ هیدرولیکی چیست؟",
+      "options": [
+        "ذخیرهٔ سوخت",
+        "انتقال فشار",
+        "شست‌وشوی شیشه",
+        "خنک‌کردن کابین"
+      ],
+      "answer": "انتقال فشار",
+      "explanation_fa": "سیال، فشار ایجادشده در مدار ترمز را منتقل می‌کند."
+    },
+    {
+      "id": "B10-K03",
+      "type": "translation",
+      "question_fa": "عبارت «دو لیتر مایع خنک‌کننده» را به انگلیسی بنویس.",
+      "answer": "two litres of coolant",
+      "explanation_fa": "ساختار quantity + of + uncountable noun."
+    },
+    {
+      "id": "B10-K04",
+      "type": "multiple_choice",
+      "question_fa": "کدام قطعه سطح روغن موتور را نشان می‌دهد؟",
+      "options": [
+        "Oil filler cap",
+        "Dipstick",
+        "Fuel tank",
+        "Master cylinder"
+      ],
+      "answer": "Dipstick",
+      "explanation_fa": "در خودروهای مجهز به آن، میل‌گیج سطح روغن را نشان می‌دهد."
+    },
+    {
+      "id": "B10-K05",
+      "type": "multiple_choice",
+      "question_fa": "کدام جمله از نظر زبان انگلیسی درست است؟",
+      "options": [
+        "There are two oil.",
+        "There is some oil.",
+        "There is an oil in engine."
+      ],
+      "answer": "There is some oil.",
+      "explanation_fa": "Oil در این کاربرد غیرقابل‌شمارش است."
+    },
+    {
+      "id": "B10-K06",
+      "type": "multiple_choice",
+      "question_fa": "آیا هر خودرویی مخزن روغن هیدرولیک فرمان دارد؟",
+      "options": [
+        "بله، همهٔ خودروها",
+        "خیر؛ بعضی خودروها فرمان برقی دارند",
+        "فقط خودروهای دیزلی"
+      ],
+      "answer": "خیر؛ بعضی خودروها فرمان برقی دارند",
+      "explanation_fa": "وجود مخزن به نوع سامانهٔ فرمان وابسته است."
+    },
+    {
+      "id": "B10-K07",
+      "type": "translation",
+      "question_fa": "ترجمه کن: این خودرو به چه مشخصات روغن گیربکس نیاز دارد؟",
+      "answer": "What transmission fluid specification does this vehicle require?",
+      "explanation_fa": "برای پرسیدن مشخصات فنی از specification استفاده می‌کنیم."
+    },
+    {
+      "id": "B10-K08",
+      "type": "safety_concept",
+      "question_fa": "چرا نباید درپوش منبع خنک‌کننده را در حالت داغ باز کرد؟",
+      "answer": "Because the cooling system may be hot and pressurized.",
+      "explanation_fa": "مایع داغ و تحت فشار می‌تواند خطر سوختگی ایجاد کند؛ این درس هیچ روش بازکردن یا سرویس را آموزش نمی‌دهد."
+    }
+  ],
+  "assessment": {
+    "question_count": 8,
+    "suggested_pass_pct": 70,
+    "scoring_note_fa": "این مجموعه سؤال پیشنهادی برای تمرین است؛ تا تأیید QA و اتصال به سامانهٔ آزمون، معیار رسمی mastery محسوب نمی‌شود."
+  },
+  "source_ids": [
+    "SRC-FORD-FLUID-CHECKLIST-001",
+    "SRC-CASTROL-ENGINE-OIL-001",
+    "SRC-PRESTONE-COOLANT-001",
+    "SRC-FORD-COOLANT-SAFETY-001",
+    "SRC-BOSCH-BRAKE-FLUID-001",
+    "SRC-BOSCH-BRAKE-SYSTEM-001",
+    "SRC-CASTROL-ATF-001"
+  ],
+  "limitations": [
+    "این بسته فقط محتوای زبان فنی و شناخت مفهومی عمومی است؛ دادهٔ تعمیراتی یا دستور سرویس مدل‌محور نیست.",
+    "مقدار واقعی، گرید، استاندارد، سازگاری و فاصلهٔ تعویض سیالات برای هر خودرو باید از مستندات همان سازنده تعیین شود.",
+    "هیچ استاندارد یا مقدار عددی برای خودروهای نامشخص تجویز نشده است.",
+    "شناسه‌های PRT از blueprint و parts_image_manifest گرفته شده‌اند و به معنی verified بودن قطعات یا تصاویر نیستند.",
+    "اصطلاحات درس در این فایل canonical term database جدیدی ایجاد نمی‌کنند؛ تطبیق آن‌ها با بانک اصطلاحات باید جداگانه انجام شود.",
+    "محتوا هنوز needs_review است و بدون بررسی schema/loader و QA نباید منتشر شود."
+  ]
+}
