@@ -5,7 +5,7 @@
  const defs=[
   {id:"hk-electrical",file:"data/technical_reference/hyundai_kia_electrical_fuel.json",title:"برق و انژکتور هیوندای و کیا",short:"HYUNDAI • KIA",icon:"⚡",kind:"book"},
   {id:"bosch-gasoline",file:"data/technical_reference/bosch_gasoline_engine_management.json",title:"مدیریت موتور بنزینی بوش",short:"BOSCH • GASOLINE",icon:"◈",kind:"book"},
-  {id:"autel-ms906pro",file:"autel_all_entries (1).json",deviceFile:"autel_maxisys_ms906_pro.json",title:"آموزش دستگاه دیاگ Autel MS906 Pro",short:"AUTEL • MAXISYS",icon:"▣",kind:"autel"},
+  {id:"autel-ms906pro",file:"autel_all_entries%20(1).json",deviceFile:"autel_maxisys_ms906_pro.json",title:"آموزش دستگاه دیاگ Autel MS906 Pro",short:"AUTEL • MAXISYS",icon:"▣",kind:"autel"},
   {id:"sensor-diagnostics",file:"data/technical_reference/cross_domain_sensor_diagnostics.json",title:"کارگاه عیب‌یابی سنسورها و داده زنده",short:"SENSOR DIAGNOSTICS",icon:"⌁",kind:"sensors"}
  ];
  const offset=academyChapters.length;
