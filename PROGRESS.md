@@ -132,3 +132,9 @@
 
 - Expanded follow-up: Hyundai/Kia course now contains 23 lessons across 6 modules, adding smart fuse/power distribution, lighting, electric seats/heaters/memory, parking sensors/rear camera/electrochromic mirror, and SRS airbag safety.
 - Bosch course now contains 20 lessons across 7 modules, adding torque/power/efficiency, mixture formation, rail/regulator/damper details, spark energy, NOx storage catalyst and catalyst heating.
+
+ 
+## Cross-domain source reuse — sensor knowledge base (2026-11-13)
+- Reused Hyundai/Kia and Bosch source material to enrich all 10 sensor reference records.
+- Added 22 cross-links to source lessons with printed page references; sensor explanations now connect to engine cycle/phase, ETC feedback, knock control, NTC circuits, Lambda closed loop, networked vehicle speed, MAP load estimation and IAT integration.
+- Added a “related lessons” tab to sensor details and expanded ECU fundamentals using the two source books.
