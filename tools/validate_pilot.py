@@ -374,6 +374,8 @@ def main():
     categories = set()
     relation_total = 0
     internal_relations = 0
+    unclassified_null_targets = 0
+    allowed_target_scopes = {"alias_or_synonym", "ui_status_label", "ui_element", "distinct_function", "outside_pilot_child", "outside_pilot_related"}
 
     for group in (device.get("hardware_facts", {}), software):
         for ref in group.get("source_refs", []) if isinstance(group, dict) else []:
@@ -475,6 +477,12 @@ def main():
                 null_counts[relation] += 1
                 if rel.get("target_context") is not None:
                     errors.append(f"{rid}: رابطه بدون target باید target_context=null داشته باشد.")
+                scope = rel.get("target_scope")
+                if scope not in allowed_target_scopes:
+                    unclassified_null_targets += 1
+                    errors.append(f"{rid}: رابطه بدون target_id باید target_scope معتبر داشته باشد.")
+                elif not str(rel.get("note", "")).strip():
+                    warnings.append(f"{rid}: دلیل بیرونی‌بودن رابطه {rel.get('term')} توضیح داده نشده است.")
 
         if len(parents) > 1:
             errors.append(f"{rid}: بیش از یک parent دارد.")
@@ -514,9 +522,8 @@ def main():
     if example_counts.get("brief", 0):
         warnings.append(f"{example_counts['brief']} مثال کارگاهی هنوز brief است و باید توسعه یابد.")
     null_total = sum(null_counts.values())
-    if null_total:
-        detail = ", ".join(f"{k}={v}" for k, v in sorted(null_counts.items()))
-        warnings.append(f"{null_total} رابطه بدون target_id باقی مانده؛ alias/status_label ممکن است برچسب باشد، اما child/see_also/part_of_screen باید تعیین تکلیف شوند. ({detail})")
+    if unclassified_null_targets:
+        warnings.append(f"{unclassified_null_targets} رابطه بدون target_id هنوز target_scope مستند ندارد.")
     draft_total = translation_counts.get("draft_unreviewed", 0)
     if draft_total:
         warnings.append(f"{draft_total} ترجمه draft_unreviewed است؛ این وضعیت تا بازبینی انسانی حفظ شود.")
@@ -531,6 +538,7 @@ def main():
         "relations": relation_total,
         "internal_relations": internal_relations,
         "null_target_relations": null_total,
+        "unclassified_null_target_relations": unclassified_null_targets,
         "null_target_by_relation": dict(null_counts),
         "categories": len(categories),
         "cited_pages": page_total,
