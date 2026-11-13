@@ -103,3 +103,10 @@
 
 - به‌روزرسانی تکمیلی: دوره هیوندای/کیا اکنون ۶ فصل و ۲۳ درس دارد؛ ایربگ/SRS، جعبه‌فیوز هوشمند، روشنایی، صندلی برقی/گرمکن، پارک‌یاب، دوربین عقب و آینه الکتروکرومیک نیز پوشش داده شدند.
 - دوره بوش اکنون ۷ فصل و ۲۰ درس دارد؛ گشتاور/توان/بازده، تشکیل مخلوط، اجزای ریل/رگلاتور/دمپر، انرژی جرقه و کنترل NOx/گرم‌کردن کاتالیست نیز افزوده شدند.
+
+ 
+## Cross-domain reuse of source references (2026-11-13)
+- Sensor reference JSON now incorporates selected principles from Bosch and Hyundai/Kia references instead of keeping the three books isolated.
+- Ten sensor records contain 22 related lesson references, source page labels and added explanatory notes. See `data/technical_reference/automotive_sensors_fardin_ghordi.json`.
+- `sensors-academy.js` exposes these in a new “ارتباط با درس‌های دیگر” tab and expands the ECU overview with closed-loop control, engine-management and network data concepts.
+- These are educational cross-links, not universal repair specifications.
