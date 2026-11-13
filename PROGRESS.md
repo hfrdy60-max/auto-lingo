@@ -138,3 +138,16 @@
 - Reused Hyundai/Kia and Bosch source material to enrich all 10 sensor reference records.
 - Added 22 cross-links to source lessons with printed page references; sensor explanations now connect to engine cycle/phase, ETC feedback, knock control, NTC circuits, Lambda closed loop, networked vehicle speed, MAP load estimation and IAT integration.
 - Added a “related lessons” tab to sensor details and expanded ECU fundamentals using the two source books.
+
+## Stage 5 — Visible technical content integration (2026-11-13)
+- Reworked `source-academy.js` so the technical academy renders two existing book datasets plus two additional interactive courses.
+- Integrated Hyundai/Kia electrical and fuel reference: 6 modules / 23 lessons.
+- Integrated Bosch gasoline-engine management reference: 7 modules / 20 lessons.
+- Integrated the Autel MaxiSys MS906 Pro / MS906 Pro-TS pilot: 36 entries across 9 categories. The UI displays English menu label, proposed Persian equivalent, technical description, menu path, prerequisites, related terms, cited manual pages, and separate technical/translation/example review states.
+- Integrated the cross-domain sensor-diagnostics map: one general diagnostic-method lesson plus 10 sensor workflows covering live data, wiring/circuit checks, DTC policy, source links, and learner tasks.
+- Kept the separate 10-sensor reference module already present.
+- Set the technical academy's initial selected course to Hyundai/Kia electrical/fuel and added lesson/entry counts to loaded course tabs.
+- Updated the visible academy introduction with the content inventory and re-applied the AUTONEX title/brand in the visible header/footer.
+- Updated the script cache-buster in `index.html`.
+- Static validation: JavaScript syntax parse passed; JSON parse and structural counts passed; Autel entry IDs are unique (36/36); the expected source files are present.
+- Not performed: browser/device testing, a live GitHub Pages fetch, database import, independent translation review, or verification of the Autel menu paths on physical hardware.
