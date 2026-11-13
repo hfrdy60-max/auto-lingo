@@ -110,3 +110,17 @@
 - Ten sensor records contain 22 related lesson references, source page labels and added explanatory notes. See `data/technical_reference/automotive_sensors_fardin_ghordi.json`.
 - `sensors-academy.js` exposes these in a new “ارتباط با درس‌های دیگر” tab and expands the ECU overview with closed-loop control, engine-management and network data concepts.
 - These are educational cross-links, not universal repair specifications.
+
+## اتصال مستقیم به رابط کاربری (2026-11-13)
+
+| محتوای قابل مشاهده در آکادمی فنی | منبع | تعداد | نحوه نمایش |
+|---|---|---:|---|
+| برق و سوخت‌رسانی هیوندای/کیا | `data/technical_reference/hyundai_kia_electrical_fuel.json` | ۶ فصل، ۲۳ درس | دوره مستقل با جست‌وجو، مفاهیم، مراحل بررسی، نکات عیب‌یابی، واژگان و آزمون |
+| مدیریت موتور بنزینی بوش | `data/technical_reference/bosch_gasoline_engine_management.json` | ۷ فصل، ۲۰ درس | دوره مستقل با ارجاع صفحه، مفاهیم، روش بررسی، واژگان و آزمون |
+| منوها و اصطلاحات Autel MS906 Pro | `autel_all_entries (1).json` + `autel_maxisys_ms906_pro.json` | ۳۶ مدخل، ۹ دسته | دوره دستگاه با مسیر منو، پیش‌نیاز، معنی فنی، اصطلاحات مرتبط، وضعیت ترجمه و ارجاع راهنما |
+| کارگاه عیب‌یابی سنسورها | `data/technical_reference/cross_domain_sensor_diagnostics.json` | ۱۱ درس؛ ۱۰ سنسور + روش عمومی | مسیر تحلیل داده زنده، بررسی مدار، DTC policy، منابع مرتبط و تمرین |
+| مرجع سنسورهای فردین گردی | `data/technical_reference/automotive_sensors_fardin_ghordi.json` | ۱۰ سنسور | مرجع مستقل سنسورها و مبانی ECU |
+
+`source-academy.js` این چهار دوره منبع‌محور را به رابط آکادمی وصل می‌کند. دوره برق هیوندای/کیا به‌عنوان صفحه آغازین آکادمی فنی انتخاب شده و شمار درس‌های دوره‌ها روی تب‌ها نمایش داده می‌شود. نسخه اسکریپت در `index.html` cache-bust شده است.
+
+**یادآوری QA:** وضعیت فنی ۳۶ رکورد Autel در داده تحقیقاتی AI-3 برابر verified ثبت شده است، اما ترجمه هر ۳۶ رکورد هنوز draft_unreviewed است و مثال‌ها تألیفی‌اند. مسیر منو و دسترسی تابع خودرو و نسخه نرم‌افزار دستگاه است. اتصال به رابط کاربری به معنی بازبینی مستقل همه ترجمه‌ها یا تأیید مسیرها روی دستگاه فیزیکی نیست.
