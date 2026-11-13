@@ -125,3 +125,11 @@
 
 **یادآوری QA:** وضعیت فنی ۳۶ رکورد Autel در داده تحقیقاتی AI-3 برابر verified ثبت شده است، اما ترجمه هر ۳۶ رکورد هنوز draft_unreviewed است و مثال‌ها تألیفی‌اند. مسیر منو و دسترسی تابع خودرو و نسخه نرم‌افزار دستگاه است. اتصال به رابط کاربری به معنی بازبینی مستقل همه ترجمه‌ها یا تأیید مسیرها روی دستگاه فیزیکی نیست.
 | تکمیل عمیق درس‌ها | `data/lesson_expansions_v1.json` | ۴۳ بسته تکمیلی برای ۲۳ درس هیوندای/کیا و ۲۰ درس بوش؛ هر بسته شامل شرح عمیق، سناریوی آموزشی، پارامترهای دیاگ، تحلیل مدار، خطاهای رایج و آزمون تخصصی | به دوره‌های کتابی در رابط کاربری متصل شده؛ بازبینی تخصصی و توسعه تصویری/نقشه‌های OEM در مراحل بعد |
+
+## Autel pilot validator — live run (2026-11-13)
+- Repository-native validator: `tools/validate_pilot.py`; automatic workflow: `.github/workflows/autel-pilot-validation.yml`.
+- Run 43445017759 completed successfully: 36 records, 184 relations, 0 errors, 1 warning (36 Persian translations still draft_unreviewed).
+- 26 brief examples were expanded into structured author-generated workshop scenarios; 78 null-target links received explicit target_scope and rationale; 106 internal target_context values were derived from their target entries.
+- Source schema and source page manifest are aligned; the validator checked 32 distinct cited printed pages against the structured page manifest and pages_used coverage.
+- Validation report artifact: https://github.com/hfrdy60-max/auto-lingo/actions/runs/43445017759/artifacts/14046613406.
+- This automated check is structural/cross-file QA, not independent technical or translation approval.
