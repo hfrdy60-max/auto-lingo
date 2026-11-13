@@ -71,7 +71,8 @@
     ["symptoms","علائم خرابی"],
     ["tests","روش‌های تست"],
     ["notes","نکات تعمیرگاهی"],
-    ["vocab","واژگان انگلیسی"]
+    ["vocab","واژگان انگلیسی"],
+    ["sources","ارتباط با درس‌های دیگر"]
   ];
   function detailBody(sensor) {
     const map = {
@@ -80,7 +81,8 @@
       symptoms: [["نشانه‌های احتمالی",arr(sensor.symptoms).join("\n")],["تذکر تشخیصی","هیچ‌یک از این نشانه‌ها به‌تنهایی اثبات خرابی سنسور نیست. تغذیه، سیم‌کشی، کانکتور، شرایط مکانیکی و داده‌های مرتبط نیز باید بررسی شوند."]],
       tests: [["روش‌های بررسی",arr(sensor.tests).join("\n")],["ترتیب پیشنهادی",arr(ref.diagnostic_method).join("\n")]],
       notes: [["نکات و محدودیت‌ها",arr(sensor.notes).join("\n")],["هشدارهای فنی",arr(sensor.cautions).join("\n")],["شماره صفحات منبع","صفحات "+sensor.pages]],
-      vocab: [["واژگان و معادل فارسی",arr(sensor.vocab).map(v=>v[0]+" = "+v[1]).join("\n")],["اصطلاح کلیدی",sensor.name_en+" = "+sensor.name_fa]]
+      vocab: [["واژگان و معادل فارسی",arr(sensor.vocab).map(v=>v[0]+" = "+v[1]).join("\n")],["اصطلاح کلیدی",sensor.name_en+" = "+sensor.name_fa]],
+      sources: [["توضیحات تکمیلی از منابع دیگر",arr(sensor.cross_source_notes).join("\n\n")],["درس‌های مرتبط در آکادمی فنی",arr(sensor.related_lessons).map(x=>x.book+" | "+x.title+" | صفحات "+x.source_pages).join("\n")],["روش استفاده", "این پیوندها برای تکمیل فهم عملکرد و عیب‌یابی هستند؛ مشخصات پایه، ولتاژ، مقاومت و روش تست همچنان باید با نقشه و راهنمای OEM همان خودرو تطبیق داده شوند."]]
     };
     return (map[detailTab] || map.principle).map(([title,text]) =>
       '<section class="sensor-detail-block"><h4>'+esc(title)+'</h4><p>'+esc(text)+'</p></section>'
