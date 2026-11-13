@@ -88,6 +88,17 @@
           },
           "note": {
             "type": "string"
+          },
+          "target_scope": {
+            "type": "string",
+            "enum": [
+              "alias_or_synonym",
+              "ui_status_label",
+              "ui_element",
+              "distinct_function",
+              "outside_pilot_child",
+              "outside_pilot_related"
+            ]
           }
         }
       }
