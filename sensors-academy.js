@@ -76,7 +76,7 @@
   ];
   function detailBody(sensor) {
     const map = {
-      principle: [["اصل کار",sensor.principle],["ساختمان / نوع سنسور",sensor.construction],["کاربرد اطلاعات در ECU",arr(sensor.ecu_uses).join(" • ")],["محل نصب",sensor.location]],
+      principle: [["اصل کار",sensor.principle],["توضیح تکمیلی از منابع بوش و هیوندای/کیا",arr(sensor.cross_source_notes).join("\n\n")],["ساختمان / نوع سنسور",sensor.construction],["کاربرد اطلاعات در ECU",arr(sensor.ecu_uses).join(" • ")],["محل نصب",sensor.location]],
       signal: [["پایه‌ها و اتصالات",arr(sensor.pinout).join("\n")],["نوع و شکل سیگنال",arr(sensor.signal).join("\n")]],
       symptoms: [["نشانه‌های احتمالی",arr(sensor.symptoms).join("\n")],["تذکر تشخیصی","هیچ‌یک از این نشانه‌ها به‌تنهایی اثبات خرابی سنسور نیست. تغذیه، سیم‌کشی، کانکتور، شرایط مکانیکی و داده‌های مرتبط نیز باید بررسی شوند."]],
       tests: [["روش‌های بررسی",arr(sensor.tests).join("\n")],["ترتیب پیشنهادی",arr(ref.diagnostic_method).join("\n")]],
