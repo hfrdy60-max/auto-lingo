@@ -162,3 +162,11 @@
 - 42 of 43 lessons have multiple explicit circuit-analysis notes; the remaining safety-focused SRS entry intentionally concentrates on OEM safety restrictions rather than generic electrical probing.
 - The expansion pack is educational content, not a substitute for exact OEM service data. Vehicle-specific values, pinouts, wiring, pressure, waveforms and limits must still be checked against the matching service information.
 - Not performed: browser/mobile runtime verification, live GitHub Pages deployment confirmation, translation review by a human native technical editor, or vehicle/shop validation of the authored scenarios.
+
+## Autel pilot validator — live run (2026-11-13)
+- Repository-native validator: `tools/validate_pilot.py`; automatic workflow: `.github/workflows/autel-pilot-validation.yml`.
+- Run 43445017759 completed successfully: 36 records, 184 relations, 0 errors, 1 warning (36 Persian translations still draft_unreviewed).
+- 26 brief examples were expanded into structured author-generated workshop scenarios; 78 null-target links received explicit target_scope and rationale; 106 internal target_context values were derived from their target entries.
+- Source schema and source page manifest are aligned; the validator checked 32 distinct cited printed pages against the structured page manifest and pages_used coverage.
+- Validation report artifact: https://github.com/hfrdy60-max/auto-lingo/actions/runs/43445017759/artifacts/14046613406.
+- This automated check is structural/cross-file QA, not independent technical or translation approval.
