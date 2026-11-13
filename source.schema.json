@@ -13,7 +13,8 @@
       "accessed",
       "page_numbering",
       "pages_used",
-      "pages_cited"
+      "pages_cited",
+      "document_edition"
     ],
     "properties": {
       "source_id": {
@@ -91,6 +92,10 @@
       },
       "notes": {
         "type": "string"
+      },
+      "document_edition": {
+        "type": "string",
+        "minLength": 1
       }
     },
     "additionalProperties": true
