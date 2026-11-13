@@ -151,3 +151,14 @@
 - Updated the script cache-buster in `index.html`.
 - Static validation: JavaScript syntax parse passed; JSON parse and structural counts passed; Autel entry IDs are unique (36/36); the expected source files are present.
 - Not performed: browser/device testing, a live GitHub Pages fetch, database import, independent translation review, or verification of the Autel menu paths on physical hardware.
+
+## Stage 6 — Deep lesson content and workshop-style training (2026-11-13)
+- Added `data/lesson_expansions_v1.json` with 43 lesson-specific expansion packs: 23 Hyundai/Kia electrical/fuel lessons and 20 Bosch gasoline-engine-management lessons.
+- Every lesson now has an extended technical explanation, a clearly author-generated training scenario (not a documented real repair case), diagnostic parameters to inspect, circuit/wiring analysis guidance, common diagnostic mistakes, and an advanced knowledge-check question with answer explanation.
+- The 43 cases and 43 advanced quizzes are tied to the exact existing source lesson IDs; no unmatched or duplicate expansion keys remain.
+- The expansion bundle is fetched and merged into the existing course data in `source-academy.js`; the frontend displays separate sections for deep explanation, workshop case, scan data, circuit analysis, diagnostic pitfalls and advanced quiz.
+- Added responsive visual styling in `source-academy.css`, refreshed both stylesheet and script cache-busters in `index.html`, and kept the Hyundai/Kia course as the initial technical-academy tab.
+- Static QA: JSON parse PASS; JavaScript syntax PASS; exact coverage 43/43; 0 missing keys; 0 duplicate keys; 43 narrative explanations; 43 authored training scenarios; 43 advanced quizzes; 129 common diagnostic pitfalls listed; approximately 10,596 whitespace-separated Persian/English tokens across expansion content.
+- 42 of 43 lessons have multiple explicit circuit-analysis notes; the remaining safety-focused SRS entry intentionally concentrates on OEM safety restrictions rather than generic electrical probing.
+- The expansion pack is educational content, not a substitute for exact OEM service data. Vehicle-specific values, pinouts, wiring, pressure, waveforms and limits must still be checked against the matching service information.
+- Not performed: browser/mobile runtime verification, live GitHub Pages deployment confirmation, translation review by a human native technical editor, or vehicle/shop validation of the authored scenarios.
