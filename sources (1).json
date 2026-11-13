@@ -7,7 +7,45 @@
     "url": "https://autel.us/wp-content/uploads/MaxiSYS_MS906_Pro-MS906_Pro-TS_User_Manual_US_V2.1.pdf",
     "hosted_on": "autel.us (Autel US)",
     "accessed": "2026-11-12",
-    "pages_used": "p.17-48, p.74-77",
-    "notes": "Page numbers are the printed numbers in the manual."
+    "pages_used": "p.5, p.13, p.17-49, p.63, p.74-79",
+    "notes": "Page numbers are the printed numbers in the manual.",
+    "page_numbering": "Printed Arabic page numbers in the user manual; front matter uses no separate Roman page citations in this pilot.",
+    "pages_cited": {
+      "front_matter": [],
+      "numbered": [
+        {
+          "from": 5,
+          "to": 5
+        },
+        {
+          "from": 13,
+          "to": 13
+        },
+        {
+          "from": 22,
+          "to": 22
+        },
+        {
+          "from": 25,
+          "to": 25
+        },
+        {
+          "from": 28,
+          "to": 49
+        },
+        {
+          "from": 63,
+          "to": 63
+        },
+        {
+          "from": 74,
+          "to": 77
+        },
+        {
+          "from": 79,
+          "to": 79
+        }
+      ]
+    }
   }
 ]
