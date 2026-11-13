@@ -44,3 +44,9 @@ The cross-domain diagnostic course contains one general evidence-led diagnostic 
 
 ## Status
 **Frontend integration committed; static validation passed.** The new courses are wired into the technical academy and the data should appear after the Pages build/cache refresh. Runtime/deployment confirmation remains outstanding.
+
+## Final implementation follow-up
+- Final frontend script commit: `ce2d40ed99b0229c94fdd4638b29d6d0103858f4`.
+- Final HTML/cache-buster commit: `1ec36dd9ea82fe13d7e27346a7389294c861b800`.
+- Autel entries additionally expose UI element type, menu-path confidence, checked technical fields, manual edition, and the fact that the installed diagnostic software version is not documented in the source manual. Four alternate Service menu paths are rendered with their evidence/confidence notes.
+- Final script syntax re-check and dataset structural checks passed. Browser/runtime and Pages deployment checks remain outstanding.
