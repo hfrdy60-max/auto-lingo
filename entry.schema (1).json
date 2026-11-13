@@ -182,6 +182,50 @@
           }
         }
       }
+    },
+    "workshop_scenario": {
+      "type": "object",
+      "required": [
+        "origin",
+        "documented_real_case",
+        "complaint",
+        "diagnostic_actions",
+        "expected_observation",
+        "interpretation",
+        "safety_note"
+      ],
+      "properties": {
+        "origin": {
+          "const": "author_generated_educational_scenario"
+        },
+        "documented_real_case": {
+          "const": false
+        },
+        "complaint": {
+          "type": "string",
+          "minLength": 10
+        },
+        "diagnostic_actions": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string",
+            "minLength": 4
+          }
+        },
+        "expected_observation": {
+          "type": "string",
+          "minLength": 10
+        },
+        "interpretation": {
+          "type": "string",
+          "minLength": 10
+        },
+        "safety_note": {
+          "type": "string",
+          "minLength": 5
+        }
+      }
     }
   }
 }
