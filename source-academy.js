@@ -60,7 +60,7 @@
    const technicalStatus=e.verification?.technical?.status||"not_recorded";
    const translationStatus=e.verification?.translation?.status||"not_recorded";
    const exampleStatus=e.verification?.workshop_example?.status||"not_recorded";
-   return makeTopic({
+   const topic=makeTopic({
     id:e.id,title:e.term_en||e.id,level:technicalStatus==="verified"?"مسیر مستند در راهنمای دستگاه؛ وابسته به خودرو":"نیازمند بررسی",
     summary:(e.term_fa?e.term_fa+" — ":"")+(e.usage_fa||e.technical_description_fa||"شرح گزینه دستگاه دیاگ."),
     concepts:[
@@ -91,6 +91,8 @@
     terms:[[e.term_en||"—",e.term_fa||"—"],...arr(e.term_variants_in_manual).map(v=>[v.text,"صورت دیگر در راهنما؛ صفحات "+v.printed_pages])],
     source_pages:pageRefs.join(" | ")||"ارجاع صفحه در رکورد موجود نیست"
    });
+   topic.workshop_scenario=e.workshop_scenario||null;
+   return topic;
   })}));
   return {meta:{title_fa:"Autel MaxiSys MS906 Pro / MS906 Pro-TS",author:"Autel",publisher:"MaxiSys User Manual",document_pages:null,document_edition:raw.entries[0]?.source_document?.document_edition||"US V2.1",scope_note:"این محتوا بر اساس راهنمای کاربر است. مسیرهای منو وابسته به خودرو و نسخه نرم‌افزار دستگاه‌اند؛ نسخه نرم‌افزار نصب‌شده در راهنمای مورد استفاده مستند نشده است.",citation_note:"ترجمه فارسی و مثال‌های کارگاهی در وضعیت پیش‌نویس/تألیفی هستند و باید جداگانه بازبینی شوند.",source_distribution_note:"دستگاه: "+arr(device.model_family).join(" / ")+" • رابط ارتباطی: "+(device.vci||"ثبت نشده")+" • نسخه راهنما: "+(device.documentation?.document_edition||"ثبت نشده")+". نسخه نرم‌افزار خود دستگاه از این PDF قابل استنتاج نیست."},modules};
  }
@@ -121,6 +123,10 @@
    section("تحلیل نقشه و مدار الکتریکی","WIRING & CIRCUIT ANALYSIS",exp.circuit_analysis)+
    section("خطاهای رایج در تشخیص","COMMON DIAGNOSTIC MISTAKES",exp.common_mistakes)+quiz;
  }
+ function workshopScenarioHTML(sc){
+  if(!sc)return "";
+  return '<section class="src-workshop-case"><div class="src-section-heading"><span>AUTHOR-GENERATED WORKSHOP SCENARIO</span><h4>سناریوی آموزشی دستگاه دیاگ</h4></div><div class="src-case-origin">سناریوی تألیفی AUTONEX؛ این مورد گزارش تعمیر واقعی نیست.</div><p class="src-case-complaint"><b>شکایت فرضی:</b> '+esc(sc.complaint||"")+'</p>'+section("مراحل بررسی با دستگاه","DIAGNOSTIC ACTIONS",sc.diagnostic_actions,true)+'<p class="src-case-interpretation"><b>مشاهده مورد انتظار:</b> '+esc(sc.expected_observation||"")+'</p><p class="src-case-interpretation"><b>تفسیر تشخیصی:</b> '+esc(sc.interpretation||"")+'</p><p class="src-case-interpretation"><b>نکته ایمنی:</b> '+esc(sc.safety_note||"")+'</p></section>';
+ }
  function render(){
   const d=defs[activeChapter-offset],s=states[d.id];tabs();
   if(!s.data){academyContent.innerHTML='<div class="src-loading"><span class="eyebrow">SOURCE COURSE</span><h3>در حال بارگذاری دوره…</h3><p>'+esc(s.error||"محتوای آموزشی در حال دریافت است.")+'</p></div>';return}
@@ -140,7 +146,7 @@
    '<div class="src-learning-layout"><div class="src-topic-list"><div class="src-topic-list-head"><b>درس‌ها و گزینه‌ها</b><span>'+num(visible.length)+' مورد</span></div>'+
    visible.map((x,i)=>'<button type="button" data-topic="'+esc(x.id)+'" class="src-topic-item '+(t&&x.id===t.id?"active":"")+'"><span class="src-topic-n">'+num(i+1)+'</span><span class="src-topic-txt"><b>'+esc(x.title)+'</b><small>'+esc(x.level)+'</small></span><i>←</i></button>').join("")+(visible.length?"":'<p class="src-no-results">موردی پیدا نشد.</p>')+
    '</div><div>'+(t?'<article class="src-detail-card"><div class="src-detail-top"><div><span class="src-detail-module">'+esc(t.moduleTitle)+'</span><span class="src-detail-level">'+esc(t.level)+'</span><h3>'+esc(t.title)+'</h3><p>'+esc(t.summary)+'</p></div><span class="src-detail-index">'+esc(t.id.toUpperCase())+'</span></div>'+
-   section("مفاهیم کلیدی","CORE CONCEPTS",t.concepts)+section("مسیر و مراحل کار","WORKFLOW",t.procedure,true)+section("نکات تشخیصی، محدودیت‌ها و بازبینی","DIAGNOSTIC NOTES",t.diagnostic)+terms(t.terms)+expansionHTML(t.expansion,s)+
+   section("مفاهیم کلیدی","CORE CONCEPTS",t.concepts)+section("مسیر و مراحل کار","WORKFLOW",t.procedure,true)+section("نکات تشخیصی، محدودیت‌ها و بازبینی","DIAGNOSTIC NOTES",t.diagnostic)+terms(t.terms)+expansionHTML(t.expansion,s)+workshopScenarioHTML(t.workshop_scenario)+
    (t.quiz?'<section class="src-quiz"><div class="src-quiz-top"><span>KNOWLEDGE CHECK</span><b>آزمون کوتاه</b></div><p>'+esc(t.quiz.q)+'</p><div class="src-quiz-options">'+arr(t.quiz.options).map((o,i)=>'<button type="button" data-answer="'+i+'" '+(s.answered?"disabled":"")+' class="'+(s.answered&&i===t.quiz.answer?"correct":s.answered&&i===s.answerIndex?"incorrect":"")+'">'+esc(o)+'</button>').join("")+'</div>'+(s.answered?'<div class="src-quiz-feedback '+(s.answerIndex===t.quiz.answer?"good":"bad")+'">'+(s.answerIndex===t.quiz.answer?"درست پاسخ دادی. ":"پاسخ صحیح: "+esc(t.quiz.options[t.quiz.answer])+" — ")+esc(t.quiz.why||"")+'</div>':"")+'</section>':"")+
    '<div class="src-citation"><span>ارجاع منبع</span><b>'+esc(t.source_pages||"ارجاع صفحه در حال تکمیل")+'</b></div></article>':'<article class="src-detail-card">برای شروع یکی از درس‌ها را انتخاب کن.</article>')+
    '</div></div></div>';
