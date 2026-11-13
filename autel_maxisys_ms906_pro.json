@@ -10,7 +10,19 @@
   "hardware_facts": {
     "operating_system": "Android 10",
     "basis": "manual Table 2-1, p.5",
-    "tpms_module": "MS906 Pro-TS only (manual p.49)"
+    "tpms_module": "MS906 Pro-TS only (manual p.49)",
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "5",
+        "locator": "Table 2-1; Android 10 operating system"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "49",
+        "locator": "MS906 Pro-TS TPMS module applicability"
+      }
+    ]
   },
   "documentation": {
     "source_id": "src-001",
@@ -22,6 +34,13 @@
     "diagnostic_software_version": null,
     "vehicle_software_versions": null,
     "status": "not_documented_in_source",
-    "note": "The manual does not print a diagnostic-software build number. The manual says only that Settings shows general tablet information (p.13) and Update checks for updates (p.13); it does not state where the software version is displayed. Must be read and confirmed on the physical unit."
+    "note": "The manual does not print a diagnostic-software build number. The manual says only that Settings shows general tablet information (p.13) and Update checks for updates (p.13); it does not state where the software version is displayed. Must be read and confirmed on the physical unit.",
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "13",
+        "locator": "Settings and Update functions; software build not stated in this manual"
+      }
+    ]
   }
 }
