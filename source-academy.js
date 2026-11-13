@@ -56,7 +56,7 @@
    const path=arr(e.menu_path).join("  ›  ");
    const pageRefs=arr(e.source_refs).map(x=>"صفحه "+x.printed_page+" — "+x.locator);
    const related=arr(e.related_terms).map(x=>x.term+" ("+x.relation+")");
-   const alternatives=arr(e.menu_path_alternatives).map(x=>arr(x).join(" › "));
+   const alternatives=arr(e.menu_path_alternatives).map(x=>Array.isArray(x)?x.join(" › "):arr(x.path).join(" › ")+" ["+(x.basis||"منبع ثبت‌نشده")+"؛ "+(x.confidence||"سطح اطمینان ثبت‌نشده")+"]");
    const technicalStatus=e.verification?.technical?.status||"not_recorded";
    const translationStatus=e.verification?.translation?.status||"not_recorded";
    const exampleStatus=e.verification?.workshop_example?.status||"not_recorded";
