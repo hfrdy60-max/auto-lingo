@@ -42,3 +42,11 @@
 - نمودارها در برنامه از طریق پیوند صفحه‌ای به فایل PDF اصلی باز می‌شوند؛ خود تصویر به‌صورت فایل جداگانه در بسته داده کپی نشده است.
 
 **نتیجه QA:** ادغام ساختاری و اتصال به رابط آکادمی تکمیل شد؛ آماده بازبینی اجرایی در مرورگر و سپس بازبینی فنی OEM، اما هنوز تأیید محتوایی نهایی یا آماده‌انتشار حرفه‌ای محسوب نمی‌شود.
+
+ 
+## Cross-use of source books in the sensor reference
+- The 10 sensor records now include 22 cross-links to relevant Hyundai/Kia and Bosch lessons.
+- Added source-based explanatory notes for CKP/CMP phase relationship, APP/TPS closed-loop electronic throttle, knock/ignition timing, NTC temperature-sensor circuits, oxygen-sensor closed-loop Lambda control, network-distributed vehicle-speed data, MAP load estimation and IAT integration.
+- Added a dedicated “ارتباط با درس‌های دیگر” tab to each sensor, with named source lesson and printed-page reference.
+- Expanded ECU fundamentals with engine-management, closed-loop feedback and networked-data concepts from the two books.
+- Cross-links are conceptual learning aids. Vehicle-specific pinouts, voltages, resistance values and test conditions remain subject to OEM documentation.
