@@ -77,8 +77,9 @@
           "relation": "alias",
           "basis": "manual",
           "source_pages": "32",
-          "note": "Possible on-screen name",
-          "target_context": null
+          "note": "Possible on-screen name نام جایگزین یا هم‌معنی در راهنما/رابط است؛ در بانک ۳۶ مدخلی این پایلوت رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "alias_or_synonym"
         },
         {
           "term": "Actuator Test",
@@ -86,8 +87,9 @@
           "relation": "alias",
           "basis": "manual",
           "source_pages": "32",
-          "note": "Possible on-screen name",
-          "target_context": null
+          "note": "Possible on-screen name نام جایگزین یا هم‌معنی در راهنما/رابط است؛ در بانک ۳۶ مدخلی این پایلوت رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "alias_or_synonym"
         },
         {
           "term": "Function Tests",
@@ -95,8 +97,9 @@
           "relation": "alias",
           "basis": "manual",
           "source_pages": "32",
-          "note": "Possible on-screen name",
-          "target_context": null
+          "note": "Possible on-screen name نام جایگزین یا هم‌معنی در راهنما/رابط است؛ در بانک ۳۶ مدخلی این پایلوت رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "alias_or_synonym"
         },
         {
           "term": "Command Finished",
@@ -104,8 +107,9 @@
           "relation": "status_label",
           "basis": "manual",
           "source_pages": "42",
-          "note": "",
-          "target_context": null
+          "note": "برچسب وضعیت نمایشی رابط است، نه منو یا عملکرد مستقل.",
+          "target_context": null,
+          "target_scope": "ui_status_label"
         },
         {
           "term": "Activation Successful",
@@ -113,11 +117,12 @@
           "relation": "status_label",
           "basis": "manual",
           "source_pages": "42",
-          "note": "",
-          "target_context": null
+          "note": "برچسب وضعیت نمایشی رابط است، نه منو یا عملکرد مستقل.",
+          "target_context": null,
+          "target_scope": "ui_status_label"
         }
       ],
-      "workshop_example_fa": "برای اطمینان از سالم بودن رله‌ی فن، از Active Test آن را روشن می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: فن رادیاتور هنگام درخواست روشن نمی‌شود و تکنسین می‌خواهد فرمان ECU را از مسیر قدرت جدا کند. اقدام: خودرو را شناسایی و DTCها را ذخیره کن. نتیجه مورد انتظار: دستگاه ممکن است پیام پایان فرمان نشان دهد؛ پیام موفق به‌تنهایی سلامت موتور فن یا سیم‌کشی را اثبات نمی‌کند. تفسیر: اگر فرمان وجود دارد اما فن نمی‌چرخد، مدار قدرت، رله/درایور، زمین و خود موتور را بررسی کن؛ نبود گزینه ممکن است ناشی از پشتیبانی خودرو باشد.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -159,14 +164,27 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "طبق راهنما همین گزینه ممکن است با نام Actuators، Actuator Test یا Function Tests ظاهر شود. Actuation Test به‌عنوان نام جدا در این راهنما پیدا نشد.",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "فن رادیاتور هنگام درخواست روشن نمی‌شود و تکنسین می‌خواهد فرمان ECU را از مسیر قدرت جدا کند.",
+        "diagnostic_actions": [
+          "خودرو را شناسایی و DTCها را ذخیره کن.",
+          "در صورت پشتیبانی، Active Test فن/رله را از ECU مربوط انتخاب کن.",
+          "فرمان دستگاه، وضعیت عملگر و تغذیه/زمین موتور فن را با روش مجاز مقایسه کن."
+        ],
+        "expected_observation": "دستگاه ممکن است پیام پایان فرمان نشان دهد؛ پیام موفق به‌تنهایی سلامت موتور فن یا سیم‌کشی را اثبات نمی‌کند.",
+        "interpretation": "اگر فرمان وجود دارد اما فن نمی‌چرخد، مدار قدرت، رله/درایور، زمین و خود موتور را بررسی کن؛ نبود گزینه ممکن است ناشی از پشتیبانی خودرو باشد.",
+        "safety_note": "فن ممکن است ناگهانی حرکت کند؛ دست و ابزار را از پروانه و تسمه دور نگه دار."
+      }
     },
     {
       "schema_version": "0.2",
@@ -242,8 +260,9 @@
           "relation": "contrast",
           "basis": "manual",
           "source_pages": "31",
-          "note": "Different screen (Auto Scan); not merged",
-          "target_context": null
+          "note": "Different screen (Auto Scan); not merged عملکرد یا گزینه‌ای جداست که عمداً با مدخل فعلی ادغام نشده و در محدوده این پایلوت رکورد مستقلی ندارد.",
+          "target_context": null,
+          "target_scope": "distinct_function"
         },
         {
           "term": "Clear DTCs",
@@ -251,8 +270,9 @@
           "relation": "contrast",
           "basis": "manual",
           "source_pages": "63",
-          "note": "TPMS application button; separate function, not merged",
-          "target_context": null
+          "note": "TPMS application button; separate function, not merged عملکرد یا گزینه‌ای جداست که عمداً با مدخل فعلی ادغام نشده و در محدوده این پایلوت رکورد مستقلی ندارد.",
+          "target_context": null,
+          "target_scope": "distinct_function"
         },
         {
           "term": "Warning message",
@@ -260,11 +280,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "28",
-          "note": "Erase Codes is the manual's example of a Warning message",
-          "target_context": null
+          "note": "Erase Codes is the manual's example of a Warning message اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "بعد از تعویض سنسور، Erase Codes می‌زنیم و دوباره Read Codes می‌کنیم تا مطمئن شویم کد برنگشته.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از تعمیر مدار سنسور، چراغ MIL روشن مانده و تکنسین می‌خواهد نتیجه تعمیر را ارزیابی کند. اقدام: پیش از پاک‌سازی DTCها، وضعیت کدها و Freeze Frame را ذخیره کن. نتیجه مورد انتظار: دستگاه نتیجه پاک‌سازی را گزارش می‌کند؛ کد ممکن است برنگردد یا با باقی‌بودن عیب دوباره ثبت شود. تفسیر: پاک‌شدن کد برابر رفع عیب نیست؛ بازگشت کد، چرخه رانندگی و readiness را بررسی کن.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -301,14 +322,27 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "نام‌های مشابه که ادغام نشده‌اند: Quick erase (Auto Scan، p.31)، Clear DTCs (TPMS، p.63)، Erase Codes (OBDII، p.47).",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از تعمیر مدار سنسور، چراغ MIL روشن مانده و تکنسین می‌خواهد نتیجه تعمیر را ارزیابی کند.",
+        "diagnostic_actions": [
+          "پیش از پاک‌سازی DTCها، وضعیت کدها و Freeze Frame را ذخیره کن.",
+          "تأیید کن علت ریشه‌ای تعمیر شده و سوئیچ در وضعیت موردنیاز راهنماست.",
+          "Erase Codes را اجرا و سپس Read Codes و آزمون تأییدی را تکرار کن."
+        ],
+        "expected_observation": "دستگاه نتیجه پاک‌سازی را گزارش می‌کند؛ کد ممکن است برنگردد یا با باقی‌بودن عیب دوباره ثبت شود.",
+        "interpretation": "پاک‌شدن کد برابر رفع عیب نیست؛ بازگشت کد، چرخه رانندگی و readiness را بررسی کن.",
+        "safety_note": "پیش از پاک‌کردن، همه شواهد تشخیصی را ذخیره کن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -383,11 +417,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "33",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "قبل از تعویض ECU، شماره‌ی نسخه را از این صفحه می‌خوانیم و با قطعه‌ی جدید مقایسه می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پیش از تعویض ECU، لازم است شماره قطعه و شناسه کالیبراسیون واحد فعلی ثبت شود. اقدام: ECU Information را در واحد موردنظر باز کن. نتیجه مورد انتظار: فهرست فیلدهای موجود در ECU نمایش داده می‌شود؛ بعضی فیلدها ممکن است برای آن خودرو ارائه نشوند. تفسیر: این صفحه برای شناسایی و تطبیق داده است و سلامت داخلی ECU یا امکان برنامه‌ریزی را ثابت نمی‌کند.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -429,14 +464,27 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پیش از تعویض ECU، لازم است شماره قطعه و شناسه کالیبراسیون واحد فعلی ثبت شود.",
+        "diagnostic_actions": [
+          "ECU Information را در واحد موردنظر باز کن.",
+          "نوع واحد، شماره قطعه و شناسه‌های نرم‌افزاری/کالیبراسیون قابل نمایش را ثبت کن.",
+          "اطلاعات را با مستندات همان VIN و ECU جایگزین مقایسه کن."
+        ],
+        "expected_observation": "فهرست فیلدهای موجود در ECU نمایش داده می‌شود؛ بعضی فیلدها ممکن است برای آن خودرو ارائه نشوند.",
+        "interpretation": "این صفحه برای شناسایی و تطبیق داده است و سلامت داخلی ECU یا امکان برنامه‌ریزی را ثابت نمی‌کند.",
+        "safety_note": "نسخه راهنمای PDF را با نسخه نرم‌افزار نصب‌شده روی دستگاه یا ECU اشتباه نگیر."
+      }
     },
     {
       "schema_version": "0.2",
@@ -565,8 +613,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "36",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         },
         {
           "term": "Check box",
@@ -574,8 +623,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "36",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Range",
@@ -583,8 +633,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "36",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Unit",
@@ -592,8 +643,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "36",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "PID",
@@ -601,11 +653,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "47",
-          "note": "Term used for OBDII live data",
-          "target_context": null
+          "note": "Term used for OBDII live data اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "برای بررسی ضعف سنسور، دمای آب را در Live Data نگاه می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: موتور در شتاب‌گیری گاهی مکث می‌کند و لازم است چند پارامتر هم‌زمان دیده شوند. اقدام: Live Data را در ECU مربوط باز کن. نتیجه مورد انتظار: مقادیر با تغییر دور، بار و دما تغییر می‌کنند؛ فهرست و ترتیب پارامترها وابسته به خودروست. تفسیر: یک مقدار منفرد علت خرابی را مشخص نمی‌کند؛ رابطه پارامترها و تست مدار باید کنار هم تحلیل شوند.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -642,14 +695,27 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "موتور در شتاب‌گیری گاهی مکث می‌کند و لازم است چند پارامتر هم‌زمان دیده شوند.",
+        "diagnostic_actions": [
+          "Live Data را در ECU مربوط باز کن.",
+          "پارامترهای مرتبط مانند RPM، دما، MAF/MAP و Fuel Trim را انتخاب کن.",
+          "در شرایط ایمن و تکرارپذیر داده را ثبت و با مشخصات همان موتور مقایسه کن."
+        ],
+        "expected_observation": "مقادیر با تغییر دور، بار و دما تغییر می‌کنند؛ فهرست و ترتیب پارامترها وابسته به خودروست.",
+        "interpretation": "یک مقدار منفرد علت خرابی را مشخص نمی‌کند؛ رابطه پارامترها و تست مدار باید کنار هم تحلیل شوند.",
+        "safety_note": "هنگام رانندگی، راننده نباید صفحه دستگاه را نگاه کند؛ از راننده دوم یا ثبت خودکار استفاده کن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -724,8 +790,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "37",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         },
         {
           "term": "Text Mode",
@@ -733,8 +800,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "37",
-          "note": "Default mode",
-          "target_context": null
+          "note": "Default mode زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         },
         {
           "term": "Waveform Graph Mode",
@@ -742,8 +810,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "37",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         },
         {
           "term": "Digital Gauge Mode",
@@ -751,11 +820,12 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "39",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         }
       ],
-      "workshop_example_fa": "برای دیدن نوسان سنسور اکسیژن، حالت Waveform Graph را انتخاب می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: خواندن نوسان یک سیگنال در حالت عددی دشوار است و تکنسین به شکل نمایش دیگری نیاز دارد. اقدام: یک پارامتر قابل نمایش را در Live Data انتخاب کن. نتیجه مورد انتظار: شکل نمایش عوض می‌شود؛ طبق راهنما برخی پارامترهای وضعیتی فقط در Text Mode در دسترس‌اند. تفسیر: تغییر حالت نمایش، داده حسگر را عوض نمی‌کند و مقیاس نمودار، حد استاندارد سازنده نیست.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -792,14 +862,27 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "خواندن نوسان یک سیگنال در حالت عددی دشوار است و تکنسین به شکل نمایش دیگری نیاز دارد.",
+        "diagnostic_actions": [
+          "یک پارامتر قابل نمایش را در Live Data انتخاب کن.",
+          "Display Mode را باز و Text، Gauge یا Waveform Graph را متناسب با هدف انتخاب کن.",
+          "برای پارامترهای ON/OFF از Text Mode استفاده کن و نمایش‌ها را مقایسه کن."
+        ],
+        "expected_observation": "شکل نمایش عوض می‌شود؛ طبق راهنما برخی پارامترهای وضعیتی فقط در Text Mode در دسترس‌اند.",
+        "interpretation": "تغییر حالت نمایش، داده حسگر را عوض نمی‌کند و مقیاس نمودار، حد استاندارد سازنده نیست.",
+        "safety_note": "بازه و واحد پارامتر را با حدود OEM تطبیق بده."
+      }
     },
     {
       "schema_version": "0.2",
@@ -874,8 +957,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "39",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "MAX",
@@ -883,8 +967,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "39",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Buzzer alarm",
@@ -892,11 +977,12 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "39",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         }
       ],
-      "workshop_example_fa": "خودرو گاهی خاموش می‌شود؛ برای دور موتور بازه می‌گذاریم تا لحظه‌ی افت ثبت شود.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: سیگنال یک سنسور هنگام تکان دسته‌سیم لحظه‌ای قطع می‌شود و مشاهده دستی آن سخت است. اقدام: Trigger Setting را برای پارامتر موردنظر باز کن. نتیجه مورد انتظار: در صورت خروج مقدار از بازه تنظیم‌شده، دستگاه ثبت خودکار و در صورت تنظیم هشدار صوتی انجام می‌دهد. تفسیر: Trigger زمان رخداد را مشخص می‌کند، نه قطعه خراب را؛ سنسور، اتصال، تغذیه و زمین باید تفکیک شوند.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -933,14 +1019,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "سیگنال یک سنسور هنگام تکان دسته‌سیم لحظه‌ای قطع می‌شود و مشاهده دستی آن سخت است.",
+        "diagnostic_actions": [
+          "Trigger Setting را برای پارامتر موردنظر باز کن.",
+          "MIN و MAX را بر اساس مرجع همان خودرو تعیین کن.",
+          "در صورت نیاز هشدار صوتی را فعال و عیب را در شرایط ایمن بازتولید کن.",
+          "داده ذخیره‌شده در لحظه Trigger را مرور کن."
+        ],
+        "expected_observation": "در صورت خروج مقدار از بازه تنظیم‌شده، دستگاه ثبت خودکار و در صورت تنظیم هشدار صوتی انجام می‌دهد.",
+        "interpretation": "Trigger زمان رخداد را مشخص می‌کند، نه قطعه خراب را؛ سنسور، اتصال، تغذیه و زمین باید تفکیک شوند.",
+        "safety_note": "حدود عمومی و یکسان برای همه خودروها وارد نکن؛ تنظیم نامناسب هشدار کاذب می‌دهد."
+      }
     },
     {
       "schema_version": "0.2",
@@ -1006,11 +1106,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "40",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "سیگنال دو سنسور را روی هم می‌گذاریم تا زمان‌بندی‌شان را مقایسه کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: هنگام بررسی کمبود توان، لازم است RPM با MAP یا MAF در یک بازه زمانی مقایسه شود. اقدام: پارامترهای مرتبط را انتخاب کن. نتیجه مورد انتظار: نمودارهای چند پارامتر روی یک صفحه زمانی نمایش داده می‌شوند؛ قابلیت به دستگاه/خودرو وابسته است. تفسیر: هم‌زمانی روندها فقط سرنخ است؛ هر سیگنال و شرایط موتور باید مستقل تأیید شود.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -1047,14 +1148,27 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "هنگام بررسی کمبود توان، لازم است RPM با MAP یا MAF در یک بازه زمانی مقایسه شود.",
+        "diagnostic_actions": [
+          "پارامترهای مرتبط را انتخاب کن.",
+          "Waveform Graph Mode را فعال کن؛ Graph Merge در همین حالت مستند شده است.",
+          "دو یا سه پارامتر را ترکیب و رفتار آن‌ها را هنگام تغییر بار ثبت کن."
+        ],
+        "expected_observation": "نمودارهای چند پارامتر روی یک صفحه زمانی نمایش داده می‌شوند؛ قابلیت به دستگاه/خودرو وابسته است.",
+        "interpretation": "هم‌زمانی روندها فقط سرنخ است؛ هر سیگنال و شرایط موتور باید مستقل تأیید شود.",
+        "safety_note": "واحد و مقیاس هر نمودار را کنترل کن تا مقایسه ناهم‌واحد گمراه‌کننده نشود."
+      }
     },
     {
       "schema_version": "0.2",
@@ -1120,8 +1234,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "41",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Previous frame",
@@ -1129,8 +1244,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "41",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Next frame",
@@ -1138,8 +1254,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "41",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Play/Pause",
@@ -1147,11 +1264,12 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "41",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         }
       ],
-      "workshop_example_fa": "در زمان مشکل، داده را Freeze می‌کنیم و فریم به فریم بررسی می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: در لحظه مکث موتور مقدار RPM یا یک پارامتر سریع تغییر می‌کند و تکنسین می‌خواهد آن قاب را بازبینی کند. اقدام: پارامترهای موردنظر را در Live Data نمایش بده. نتیجه مورد انتظار: نمایش داده ثابت می‌شود و امکان مرور قاب‌ها فراهم می‌شود. تفسیر: Freeze در Live Data با Freeze Frame ذخیره‌شده همراه DTC یکسان نیست؛ این دو قابلیت را تفکیک کن.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -1188,14 +1306,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "با Freeze frame (داده‌ی ذخیره‌شده با DTC) فرق دارد؛ ادغام نشده.",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "در لحظه مکث موتور مقدار RPM یا یک پارامتر سریع تغییر می‌کند و تکنسین می‌خواهد آن قاب را بازبینی کند.",
+        "diagnostic_actions": [
+          "پارامترهای موردنظر را در Live Data نمایش بده.",
+          "هنگام رخداد Freeze را اجرا کن.",
+          "در صورت وجود، Previous frame، Next frame و Play/Pause را برای مرور به‌کار ببر.",
+          "برای برگشت به داده زنده Resume را انتخاب کن."
+        ],
+        "expected_observation": "نمایش داده ثابت می‌شود و امکان مرور قاب‌ها فراهم می‌شود.",
+        "interpretation": "Freeze در Live Data با Freeze Frame ذخیره‌شده همراه DTC یکسان نیست؛ این دو قابلیت را تفکیک کن.",
+        "safety_note": "پیش از پاک‌کردن DTC، Freeze Frame مربوط به خطا را جداگانه ذخیره کن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -1261,8 +1393,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "40",
-          "note": "Recording duration after trigger: 5/15/30/60/90 s",
-          "target_context": null
+          "note": "Recording duration after trigger: 5/15/30/60/90 s اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         },
         {
           "term": "Data Manager",
@@ -1270,8 +1403,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "41",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         },
         {
           "term": "Review Data",
@@ -1279,11 +1413,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "41",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "حین تست جاده، پارامترهای انتخابی را ضبط و در تعمیرگاه مرور می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: عیب فقط در مسیر و هنگام شتاب‌گیری رخ می‌دهد و نیاز به ثبت داده وجود دارد. اقدام: پیش از حرکت پارامترهای لازم را انتخاب و Record را آماده کن. نتیجه مورد انتظار: پارامترهای انتخاب‌شده در بازه ضبط ذخیره می‌شوند؛ مدت ثبت وابسته به تنظیمات است. تفسیر: فایل باید با زمان و شرایط شکایت تطبیق داده شود؛ پارامترهای زیاد می‌توانند خوانایی را کم کنند.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -1320,14 +1455,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "عیب فقط در مسیر و هنگام شتاب‌گیری رخ می‌دهد و نیاز به ثبت داده وجود دارد.",
+        "diagnostic_actions": [
+          "پیش از حرکت پارامترهای لازم را انتخاب و Record را آماده کن.",
+          "زمان ضبط پس از Trigger را مطابق امکانات دستگاه تنظیم کن.",
+          "آزمون را با راننده و تکنسین مجزا یا روش ایمن انجام بده.",
+          "پس از رخداد ضبط را متوقف و فایل را برای مرور نگه دار."
+        ],
+        "expected_observation": "پارامترهای انتخاب‌شده در بازه ضبط ذخیره می‌شوند؛ مدت ثبت وابسته به تنظیمات است.",
+        "interpretation": "فایل باید با زمان و شرایط شکایت تطبیق داده شود؛ پارامترهای زیاد می‌توانند خوانایی را کم کنند.",
+        "safety_note": "راننده نباید هنگام حرکت دستگاه را کنترل کند؛ آزمون جاده‌ای باید ایمن و قانونی باشد."
+      }
     },
     {
       "schema_version": "0.2",
@@ -1402,8 +1551,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "41",
-          "note": "Historical recordings are in Data Manager",
-          "target_context": null
+          "note": "Historical recordings are in Data Manager اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         },
         {
           "term": "Data Manager",
@@ -1411,11 +1561,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "41",
-          "note": "Historical recordings are reviewed in Data Manager",
-          "target_context": null
+          "note": "Historical recordings are reviewed in Data Manager اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "ضبط جاده را در تعمیرگاه با Review فریم به فریم نگاه می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از آزمون، تکنسین می‌خواهد فایل ثبت‌شده همان جلسه را برای یافتن لحظه افت سیگنال ببیند. اقدام: Review را از صفحه Live Data باز کن. نتیجه مورد انتظار: فایل‌های ضبط‌شده جلسه جاری برای مرور نمایش داده می‌شوند؛ موجودی به ثبت و ذخیره‌سازی وابسته است. تفسیر: Review فقط ابزار مرور است و علت خرابی را خودکار تشخیص نمی‌دهد.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -1452,14 +1603,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از آزمون، تکنسین می‌خواهد فایل ثبت‌شده همان جلسه را برای یافتن لحظه افت سیگنال ببیند.",
+        "diagnostic_actions": [
+          "Review را از صفحه Live Data باز کن.",
+          "فایل همان جلسه را انتخاب و روند پارامترها را مرور کن.",
+          "زمان رخداد را با شکایت و سایر داده‌ها تطبیق بده.",
+          "برای آرشیو بلندمدت، Review Data در Data Manager را از Review همین صفحه تفکیک کن."
+        ],
+        "expected_observation": "فایل‌های ضبط‌شده جلسه جاری برای مرور نمایش داده می‌شوند؛ موجودی به ثبت و ذخیره‌سازی وابسته است.",
+        "interpretation": "Review فقط ابزار مرور است و علت خرابی را خودکار تشخیص نمی‌دهد.",
+        "safety_note": "فایل را با شناسه خودرو و جلسه درست ذخیره کن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -1587,8 +1752,9 @@
           "relation": "contrast",
           "basis": "manual",
           "source_pages": "45",
-          "note": "Not the same as Diagnosis > Auto Scan",
-          "target_context": null
+          "note": "Not the same as Diagnosis > Auto Scan عملکرد یا گزینه‌ای جداست که عمداً با مدخل فعلی ادغام نشده و در محدوده این پایلوت رکورد مستقلی ندارد.",
+          "target_context": null,
+          "target_scope": "distinct_function"
         },
         {
           "term": "Protocol (EOBD option)",
@@ -1596,8 +1762,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "45",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         },
         {
           "term": "OBD direct entry",
@@ -1605,11 +1772,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "22; 25",
-          "note": "Vehicle-identification method used for generic OBDII/EOBD tests when the vehicle is not in the database",
-          "target_context": null
+          "note": "Vehicle-identification method used for generic OBDII/EOBD tests when the vehicle is not in the database اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "برای خودروی وارداتی که در لیست نیست، از EOBD وارد می‌شویم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: خودرو در پایگاه داده اختصاصی پیدا نمی‌شود اما خواندن اطلاعات عمومی آلایندگی لازم است. اقدام: VCI را متصل و از Vehicle Menu گزینه EOBD را انتخاب کن. نتیجه مورد انتظار: دستگاه تلاش می‌کند از پروتکل عمومی OBDII/EOBD ارتباط برقرار کند؛ موفقیت تابع سازگاری خودروست. تفسیر: EOBD جایگزین کامل تشخیص سازنده‌محور همه ECUها نیست و ممکن است داده‌های اختصاصی را نمایش ندهد.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -1651,14 +1819,27 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "خودرو در پایگاه داده اختصاصی پیدا نمی‌شود اما خواندن اطلاعات عمومی آلایندگی لازم است.",
+        "diagnostic_actions": [
+          "VCI را متصل و از Vehicle Menu گزینه EOBD را انتخاب کن.",
+          "روش ارتباط عمومی Auto Scan یا Protocol را طبق منو انتخاب کن.",
+          "پس از اتصال، منوی عمومی OBDII را باز و آزمون‌های پشتیبانی‌شده را اجرا کن."
+        ],
+        "expected_observation": "دستگاه تلاش می‌کند از پروتکل عمومی OBDII/EOBD ارتباط برقرار کند؛ موفقیت تابع سازگاری خودروست.",
+        "interpretation": "EOBD جایگزین کامل تشخیص سازنده‌محور همه ECUها نیست و ممکن است داده‌های اختصاصی را نمایش ندهد.",
+        "safety_note": "کد عمومی را با شرح OEM یا تشخیص قطعه خراب یکسان تلقی نکن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -1770,8 +1951,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "46-47",
-          "note": "Function inside DTC & FFD",
-          "target_context": null
+          "note": "Function inside DTC & FFD زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         },
         {
           "term": "Freeze Frame (OBDII)",
@@ -1779,8 +1961,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "47",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         },
         {
           "term": "Snowflake button",
@@ -1788,8 +1971,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "46",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): خودرویی با چراغ MIL روشن وارد تعمیرگاه شده و برای ورود از مسیر اختصاصی انتخاب خودرو مشخص نیست.\nمراحل: تکنسین روی Vehicle Menu گزینه‌ی EOBD را می‌زند، با Auto Scan یا انتخاب Protocol وارد منوی OBDII می‌شود و DTC & FFD را باز می‌کند. فهرست Stored Codes و Pending Codes را می‌بیند. اگر کنار کدی دکمه‌ی دانه‌ی برف باشد، داده‌ی فریز آن را باز می‌کند و مقدار پارامترهای مهم لحظه‌ی ثبت خطا را یادداشت می‌کند. قبل از هر پاک‌کردن، کدها را یادداشت یا با دکمه‌های Print/Save نوار ابزار ثبت می‌کند.\nنکته‌ی آموزشی: طبق راهنما Erase Codes در این بخش علاوه بر کدها، داده‌ی فریز و داده‌های تکمیلی سازنده را پاک می‌کند و وضعیت مانیتورهای I/M Readiness را به Not Ready یا Not Complete برمی‌گرداند. پس اطلاعات را قبل از پاک‌کردن ثبت می‌کنیم.",
@@ -1903,8 +2087,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "46",
-          "note": "Code priority affects MIL illumination",
-          "target_context": null
+          "note": "Code priority affects MIL illumination اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): مشتری می‌گوید چراغ موتور از دیروز روشن مانده است.\nمراحل: در DTC & FFD فهرست Stored Codes را می‌خوانیم و هر کد را با توضیحش ثبت می‌کنیم.\nنکته‌ی آموزشی: طبق راهنما کدهای OBDII بر اساس شدت اثر روی آلایندگی اولویت دارند و این اولویت در روشن‌شدن MIL و روش پاک‌کردن کد نقش دارد. سازندگان کدها را متفاوت رتبه‌بندی می‌کنند، پس بین خودروهای سازندگان مختلف تفاوت طبیعی است. وجود کد به‌تنهایی به معنی خرابی قطعه نیست و علت باید طبق دستورالعمل سازنده‌ی خودرو بررسی شود.",
@@ -2018,8 +2203,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "46-47",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         },
         {
           "term": "Warm-up cycles",
@@ -2027,8 +2213,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "46",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): تکنسین یک خطای آلایندگی را تعمیر و کدها را پاک کرده و خودرو را تست جاده کرده است.\nمراحل: به DTC & FFD برمی‌گردد و Pending Codes را می‌بیند. کدی که اینجا دیده می‌شود یعنی در سیکل رانندگی اخیر شرط ثبت خطا برقرار شده، ولی برای ثبت نهایی کد باید در دو سیکل رانندگی متوالی یا بیشتر تکرار شود.\nنکته‌ی آموزشی: طبق راهنما این گزینه برای کمک به تکنسین بعد از تعمیر و پاک‌کردن اطلاعات تشخیصی است. نتیجه‌ی آن لزوماً به معنی خرابی قطعه نیست، و اگر خطای در انتظار در ۴۰ تا ۸۰ سیکل گرم‌شدن تکرار نشود خودکار پاک می‌شود. خالی‌بودن این فهرست بعد از یک تست کوتاه را نباید تأیید قطعی تعمیر دانست.",
@@ -2151,8 +2338,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "47",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         },
         {
           "term": "This Driving Cycle",
@@ -2160,8 +2348,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "47",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): خودرو فردا برای تست آلایندگی می‌رود و امروز کدهایش پاک شده است.\nمراحل: از منوی OBDII گزینه‌ی I/M readiness را باز می‌کنیم. Since DTCs Cleared وضعیت مانیتورها از آخرین پاک‌کردن کدها را نشان می‌دهد و This Driving Cycle وضعیت از ابتدای سیکل رانندگی جاری را.\nنکته‌ی آموزشی: طبق راهنما پاک‌کردن کدها وضعیت همه‌ی مانیتورها را به Not Ready یا Not Complete برمی‌گرداند. اینکه چه الگوی رانندگی برای کامل‌شدن مانیتورها لازم است در راهنمای Autel ذکر نشده و باید از اطلاعات سازنده یا مقررات محلی گرفته شود.",
@@ -2284,8 +2473,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "47",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): خودرویی با OBDII استاندارد در شتاب‌گیری ضعیف است.\nمراحل: در منوی OBDII گزینه‌ی Live data را باز می‌کنیم، چند پارامتر مرتبط را (به شرط اینکه ECU ارسال کند) با چک‌باکس انتخاب می‌کنیم و با Show selected فقط همان‌ها را می‌بینیم. طبق راهنما می‌توان مثل Live Data بخش Control Unit از حالت‌های نمایش و Graph Merge (۲ تا ۳ پارامتر) استفاده کرد.\nنکته‌ی آموزشی: این بخش داده‌ی PID لحظه‌ای را از ECU نشان می‌دهد و فهرست پارامترها به خودرو بستگی دارد. تفاوت دقیق آن با Live Data بخش Control Unit در راهنما توضیح داده نشده و ادغام نشده‌اند.",
@@ -2408,8 +2598,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "47",
-          "note": "Not supported on CAN vehicles",
-          "target_context": null
+          "note": "Not supported on CAN vehicles اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): خودرویی که با پروتکل غیر CAN ارتباط می‌گیرد برای بررسی آلایندگی آمده است.\nمراحل: در منوی OBDII گزینه‌ی O2 sensor monitor را باز می‌کنیم و نتایج آخرین تست‌های مانیتور سنسور اکسیژن را که از کامپیوتر خودرو خوانده می‌شود، ثبت می‌کنیم.\nنکته‌ی آموزشی: طبق راهنما این گزینه برای خودروهایی که از CAN استفاده می‌کنند پشتیبانی نمی‌شود و نتایج آن‌ها را باید در On-Board monitor دید. پس روی خودروی CAN خالی‌بودن این گزینه مورد انتظار است.",
@@ -2647,8 +2838,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "48",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): تکنسین مشکوک است که ECM به فرمان‌های دستگاه پاسخ نمی‌دهد.\nمراحل: خودرو را طبق هشدارهای ایمنی راهنما آماده می‌کند (گیربکس در Park یا Neutral، ترمز دستی کشیده، خودرو بدون سرپرست رها نشود). سپس Component test را باز می‌کند، از فهرست تست‌هایی که برای آن خودرو نمایش داده می‌شود یکی را انتخاب می‌کند و دستورهای روی صفحه را دنبال می‌کند.\nنکته‌ی آموزشی: طبق راهنما این سرویس کنترل دوطرفه‌ی ECM را فراهم می‌کند تا دستگاه فرمان بفرستد و پاسخ ECM بررسی شود. نام و تعداد تست‌ها در راهنما فهرست نشده و بسته به خودرو فرق می‌کند؛ بعضی توابع فقط روی برخی خودروها پشتیبانی می‌شوند.",
@@ -2780,8 +2972,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "48",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Calibration identification",
@@ -2789,8 +2982,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "48",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "CVN",
@@ -2798,8 +2992,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "48",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): خودرویی بدون مدارک کامل آمده و می‌خواهیم هویت آن را با اطلاعات داخل ECU تطبیق دهیم.\nمراحل: Vehicle information را باز می‌کنیم، VIN و شناسه‌ی کالیبراسیون (Calibration ID) و CVN را می‌خوانیم و با شماره‌ی شاسی و مدارک مقایسه می‌کنیم.\nنکته‌ی آموزشی: طبق راهنما این گزینه VIN، Calibration identification، CVN و اطلاعات دیگر را نشان می‌دهد. در دسترس‌بودن همه‌ی موارد برای هر خودرو در راهنما تضمین نشده است.",
@@ -2922,8 +3117,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "48",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Communication protocols",
@@ -2931,8 +3127,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "48",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Retrieved codes amount",
@@ -2940,8 +3137,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "48",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         }
       ],
       "workshop_example_fa": "سناریو (آموزشی): مشتری می‌گوید چراغ موتور گاهی روشن می‌شود.\nمراحل: قبل از تست‌های عمیق‌تر، Vehicle status را باز می‌کنیم و وضعیت فعلی MIL، تعداد کدهای دریافت‌شده و پروتکل ارتباطی ماژول‌های OBDII را ثبت می‌کنیم.\nنکته‌ی آموزشی: این صفحه خلاصه‌ی وضعیت را می‌دهد. برای دیدن خود کدها باید به DTC & FFD رفت.",
@@ -3072,11 +3270,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "32",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "برای رسیدن به کدهای ذخیره‌شده، اول Trouble codes را باز می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: چراغ هشدار روشن است و تکنسین می‌خواهد به توابع خواندن و پاک‌کردن خطا دسترسی یابد. اقدام: Trouble Codes را در ECU شناسایی‌شده باز کن. نتیجه مورد انتظار: منو گزینه‌های خواندن و پاک‌کردن کد را نشان می‌دهد؛ دسترسی به ECU و خودرو وابسته است. تفسیر: Trouble Codes نام بخش منوست؛ DTC به‌تنهایی قطعه معیوب را مشخص نمی‌کند.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -3118,14 +3317,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "چراغ هشدار روشن است و تکنسین می‌خواهد به توابع خواندن و پاک‌کردن خطا دسترسی یابد.",
+        "diagnostic_actions": [
+          "Trouble Codes را در ECU شناسایی‌شده باز کن.",
+          "Read Codes را اجرا و وضعیت و شرح کدها را ثبت کن.",
+          "Freeze Frame موجود را ذخیره کن.",
+          "پس از تشخیص و تعمیر، در صورت نیاز Erase Codes را اجرا کن."
+        ],
+        "expected_observation": "منو گزینه‌های خواندن و پاک‌کردن کد را نشان می‌دهد؛ دسترسی به ECU و خودرو وابسته است.",
+        "interpretation": "Trouble Codes نام بخش منوست؛ DTC به‌تنهایی قطعه معیوب را مشخص نمی‌کند.",
+        "safety_note": "پیش از پاک‌سازی، گزارش و داده‌های مرتبط را ذخیره کن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -3219,8 +3432,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "34",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         },
         {
           "term": "Code (column)",
@@ -3228,8 +3442,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "34",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Status (column)",
@@ -3237,8 +3452,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "34",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Description (column)",
@@ -3246,8 +3462,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "34",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Snowflake icon",
@@ -3255,8 +3472,9 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "34",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         },
         {
           "term": "Search",
@@ -3264,11 +3482,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "35",
-          "note": "Function button: searches the selected DTC online",
-          "target_context": null
+          "note": "Function button: searches the selected DTC online اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "چراغ موتور روشن است؛ Read Codes می‌زنیم و کد و وضعیتش را یادداشت می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: موتور بد کار می‌کند و چراغ MIL روشن است؛ لازم است پیش از تعویض قطعه کدها خوانده شوند. اقدام: Read Codes را از Trouble Codes اجرا کن. نتیجه مورد انتظار: کد و شرح آن نمایش داده می‌شوند؛ Freeze Frame فقط در صورت وجود قابل دسترس است. تفسیر: عنوان DTC سرنخ است؛ تغذیه، زمین، مدار و شرایط عملکرد باید بررسی شوند.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -3310,14 +3529,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "دکمه‌ی Search کد انتخاب‌شده را برای اطلاعات بیشتر در اینترنت جست‌وجو می‌کند (Table 4-4).",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "موتور بد کار می‌کند و چراغ MIL روشن است؛ لازم است پیش از تعویض قطعه کدها خوانده شوند.",
+        "diagnostic_actions": [
+          "Read Codes را از Trouble Codes اجرا کن.",
+          "Code، Status و Description را ثبت و در صورت نمایش وضعیت Current/History را تفکیک کن.",
+          "در صورت وجود آیکن Freeze Frame، شرایط ثبت را ذخیره کن.",
+          "کد را با داده زنده، نقشه و آزمون تأییدی مرتبط کن."
+        ],
+        "expected_observation": "کد و شرح آن نمایش داده می‌شوند؛ Freeze Frame فقط در صورت وجود قابل دسترس است.",
+        "interpretation": "عنوان DTC سرنخ است؛ تغذیه، زمین، مدار و شرایط عملکرد باید بررسی شوند.",
+        "safety_note": "کدها را قبل از مستندسازی پاک نکن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -3393,11 +3626,12 @@
           "relation": "part_of_screen",
           "basis": "manual",
           "source_pages": "34",
-          "note": "",
-          "target_context": null
+          "note": "جزء، ستون یا کنترل داخل صفحه است و عمداً مدخل مستقل بانک نشده است.",
+          "target_context": null,
+          "target_scope": "ui_element"
         }
       ],
-      "workshop_example_fa": "کد خطا فقط گاهی تکرار می‌شود؛ از Freeze frame می‌فهمیم موقع ثبت خطا خودرو در چه شرایطی بوده.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: برای یک DTC ثبت‌شده باید شرایط موتور در لحظه ثبت خطا بررسی شود. اقدام: کدی را که Freeze Frame برای آن موجود است انتخاب کن. نتیجه مورد انتظار: در صورت ذخیره شدن داده توسط ECU، صفحه‌ای شبیه فهرست پارامترها نمایش داده می‌شود؛ ممکن است داده موجود نباشد. تفسیر: نبود Freeze Frame به معنی سالم‌بودن سیستم نیست؛ این قابلیت با Freeze در Live Data متفاوت است.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -3439,14 +3673,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "با دکمه‌ی Freeze در Live Data یکی نیست؛ رکورد autel-ms906pro-live-data-freeze را ببینید.",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "برای یک DTC ثبت‌شده باید شرایط موتور در لحظه ثبت خطا بررسی شود.",
+        "diagnostic_actions": [
+          "کدی را که Freeze Frame برای آن موجود است انتخاب کن.",
+          "آیکن برفک را بررسی و در صورت فعال بودن باز کن.",
+          "RPM، بار، دما و سایر فیلدهای ذخیره‌شده را ثبت کن.",
+          "شرایط را با شکایت مشتری و داده فعلی مقایسه کن."
+        ],
+        "expected_observation": "در صورت ذخیره شدن داده توسط ECU، صفحه‌ای شبیه فهرست پارامترها نمایش داده می‌شود؛ ممکن است داده موجود نباشد.",
+        "interpretation": "نبود Freeze Frame به معنی سالم‌بودن سیستم نیست؛ این قابلیت با Freeze در Live Data متفاوت است.",
+        "safety_note": "داده تاریخی را با وضعیت لحظه‌ای خودرو اشتباه نگیر."
+      }
     },
     {
       "schema_version": "0.2",
@@ -3564,11 +3812,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "74",
-          "note": "Appears in the Service application",
-          "target_context": null
+          "note": "Appears in the Service application اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "بعد از تعویض روغن، ریست چراغ سرویس از این بخش انجام می‌شود.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از سرویس دوره‌ای یا تعمیر، لازم است توابع نگهداری قابل دسترس برای خودرو پیدا شوند. اقدام: خودرو را شناسایی و VCI را وصل کن. نتیجه مورد انتظار: ممکن است ریست عمر روغن یا بعضی توابع سرویس نمایش داده شوند؛ لیست به خودرو و نرم‌افزار وابسته است. تفسیر: وجود گزینه به معنی پشتیبانی همه خودروها یا نیاز به اجرای آن نیست.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -3610,14 +3859,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "در اپ جداگانه‌ی Service روی Job Menu هم دسترسی هست (p.74)؛ بین دو مسیر تفاوت جزئیات ثبت نشده.",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از سرویس دوره‌ای یا تعمیر، لازم است توابع نگهداری قابل دسترس برای خودرو پیدا شوند.",
+        "diagnostic_actions": [
+          "خودرو را شناسایی و VCI را وصل کن.",
+          "بخش Service را از Diagnosis تفکیک کن.",
+          "فهرست عملیات موجود و پیش‌شرط هرکدام را بخوان.",
+          "فقط عملکرد مرتبط با تعمیر واقعی و طبق دستور OEM را اجرا کن."
+        ],
+        "expected_observation": "ممکن است ریست عمر روغن یا بعضی توابع سرویس نمایش داده شوند؛ لیست به خودرو و نرم‌افزار وابسته است.",
+        "interpretation": "وجود گزینه به معنی پشتیبانی همه خودروها یا نیاز به اجرای آن نیست.",
+        "safety_note": "توابع ترمز، فرمان و ایمنی فقط با پیش‌شرط و روش سازنده اجرا شوند."
+      }
     },
     {
       "schema_version": "0.2",
@@ -3691,11 +3954,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "44",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "بعد از تعویض روغن، عمر روغن را ۱۰۰٪ می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: روغن و فیلتر تعویض شده اما یادآور سرویس هنوز فعال است. اقدام: تأیید کن سرویس فیزیکی با روغن و فیلتر مناسب انجام شده است. نتیجه مورد انتظار: در خودروهای سازگار، پیام موفقیت یا وضعیت جدید عمر روغن نمایش داده می‌شود. تفسیر: ریست فقط شمارنده نگهداری را تنظیم می‌کند و جایگزین تعویض روغن نیست.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -3742,14 +4006,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "روغن و فیلتر تعویض شده اما یادآور سرویس هنوز فعال است.",
+        "diagnostic_actions": [
+          "تأیید کن سرویس فیزیکی با روغن و فیلتر مناسب انجام شده است.",
+          "Oil Reset Service را در صورت پشتیبانی خودرو انتخاب کن.",
+          "مراحل نمایش‌داده‌شده را طبق دفترچه همان خودرو اجرا کن.",
+          "وضعیت یادآور را پس از اتمام بررسی کن."
+        ],
+        "expected_observation": "در خودروهای سازگار، پیام موفقیت یا وضعیت جدید عمر روغن نمایش داده می‌شود.",
+        "interpretation": "ریست فقط شمارنده نگهداری را تنظیم می‌کند و جایگزین تعویض روغن نیست.",
+        "safety_note": "بدون انجام سرویس واقعی نشانگر را ریست نکن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -3822,7 +4100,7 @@
           "target_context": "Service"
         }
       ],
-      "workshop_example_fa": "قبل از تعویض لنت عقب، ترمز برقی را از این منو باز می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از تعویض لنت عقب، ترمز پارک برقی نیازمند حالت سرویس است. اقدام: خودرو را روی سطح ایمن مهار و دستورالعمل EPB همان مدل را مطالعه کن. نتیجه مورد انتظار: دستگاه در خودروهای سازگار توابع سرویس را اجرا و وضعیت عملیات را نمایش می‌دهد. تفسیر: وجود گزینه تضمین سازگاری نیست؛ در نبود پشتیبانی یا پیش‌شرط، عملیات را متوقف کن.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -3869,14 +4147,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از تعویض لنت عقب، ترمز پارک برقی نیازمند حالت سرویس است.",
+        "diagnostic_actions": [
+          "خودرو را روی سطح ایمن مهار و دستورالعمل EPB همان مدل را مطالعه کن.",
+          "در صورت پشتیبانی، تابع EPB Service را انتخاب کن.",
+          "مراحل بازکردن/بستن یا حالت سرویس کالیپر را مطابق راهنما انجام بده.",
+          "پس از نصب و کالیبراسیون، DTCها و عملکرد ترمز را بررسی کن."
+        ],
+        "expected_observation": "دستگاه در خودروهای سازگار توابع سرویس را اجرا و وضعیت عملیات را نمایش می‌دهد.",
+        "interpretation": "وجود گزینه تضمین سازگاری نیست؛ در نبود پشتیبانی یا پیش‌شرط، عملیات را متوقف کن.",
+        "safety_note": "خودرو را مهار کن و دست و ابزار را هنگام تحریک از مکانیزم کالیپر دور نگه دار."
+      }
     },
     {
       "schema_version": "0.2",
@@ -3932,8 +4224,9 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "44",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         },
         {
           "term": "Pump Motor Test",
@@ -3941,11 +4234,12 @@
           "relation": "child",
           "basis": "manual",
           "source_pages": "44",
-          "note": "",
-          "target_context": null
+          "note": "زیرگزینه یا مفهوم وابسته در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_child"
         }
       ],
-      "workshop_example_fa": "برای هواگیری ABS از Automated Bleeding استفاده می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از تعمیر هیدرولیک ترمز، تکنسین می‌خواهد سرویس‌های ABS در دسترس را پیدا کند. اقدام: خودرو و ECU مربوط را شناسایی و فهرست ABS/SRS Services را بررسی کن. نتیجه مورد انتظار: ممکن است سرویس‌های ABS یا اطلاعات SRS ارائه شوند؛ گزینه‌ها بسته به خودرو تغییر می‌کنند. تفسیر: ABS و SRS دو سامانه ایمنی متفاوت‌اند؛ وجود منو مجوز تست مستقیم چاشنی ایربگ نیست.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -3987,14 +4281,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از تعمیر هیدرولیک ترمز، تکنسین می‌خواهد سرویس‌های ABS در دسترس را پیدا کند.",
+        "diagnostic_actions": [
+          "خودرو و ECU مربوط را شناسایی و فهرست ABS/SRS Services را بررسی کن.",
+          "عملکردی مانند Automated Bleeding را فقط در صورت نمایش و پشتیبانی انتخاب کن.",
+          "پیش‌شرط‌هایی مانند سطح مایع، ترتیب چرخ و تجهیزات را از OEM بررسی کن.",
+          "توابع SRS را از تست‌های ABS جدا نگه دار؛ مدار آتش‌کننده را آزمایش مستقیم نکن."
+        ],
+        "expected_observation": "ممکن است سرویس‌های ABS یا اطلاعات SRS ارائه شوند؛ گزینه‌ها بسته به خودرو تغییر می‌کنند.",
+        "interpretation": "ABS و SRS دو سامانه ایمنی متفاوت‌اند؛ وجود منو مجوز تست مستقیم چاشنی ایربگ نیست.",
+        "safety_note": "برای Squib از اهم‌متر، لامپ تست یا تزریق ولتاژ استفاده نکن؛ روش OEM را دنبال کن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -4067,7 +4375,7 @@
           "target_context": "Service"
         }
       ],
-      "workshop_example_fa": "بعد از تنظیم زاویه‌ی چرخ‌ها، SAS را کالیبره می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از میزان فرمان یا تعمیر بخش فرمان، مرکز فرمان و SAS باید بررسی شود. اقدام: ابتدا تعمیر مکانیکی و میزان فرمان را کامل کن. نتیجه مورد انتظار: دستگاه در صورت موفقیت پیام اتمام عملیات یا وضعیت کالیبراسیون را نمایش می‌دهد. تفسیر: کالیبراسیون خطای مکانیکی یا فرمان کج را جبران نمی‌کند؛ مبنای مکانیکی صحیح لازم است.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -4114,14 +4422,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از میزان فرمان یا تعمیر بخش فرمان، مرکز فرمان و SAS باید بررسی شود.",
+        "diagnostic_actions": [
+          "ابتدا تعمیر مکانیکی و میزان فرمان را کامل کن.",
+          "فرمان و چرخ‌ها را طبق OEM مستقیم قرار بده.",
+          "در صورت پشتیبانی، SAS Service را اجرا و پیش‌شرط‌ها را رعایت کن.",
+          "مقدار زاویه، DTCها و نتیجه آزمون را ثبت کن."
+        ],
+        "expected_observation": "دستگاه در صورت موفقیت پیام اتمام عملیات یا وضعیت کالیبراسیون را نمایش می‌دهد.",
+        "interpretation": "کالیبراسیون خطای مکانیکی یا فرمان کج را جبران نمی‌کند؛ مبنای مکانیکی صحیح لازم است.",
+        "safety_note": "آزمون جاده‌ای پس از کالیبراسیون فقط در شرایط ایمن انجام شود."
+      }
     },
     {
       "schema_version": "0.2",
@@ -4172,7 +4494,7 @@
           "target_context": "Service"
         }
       ],
-      "workshop_example_fa": "چراغ DPF روشن است؛ ریجنریشن انجام می‌دهیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: خودروی دیزلی هشدار DPF دارد و بار دوده نیازمند بررسی است. اقدام: DTC، بار دوده/خاکستر و دمای اگزوز را بخوان. نتیجه مورد انتظار: در خودروهای سازگار وضعیت و پیشرفت بازسازی نمایش داده می‌شود؛ پیش‌شرط نامناسب ممکن است اجرا را مسدود کند. تفسیر: Regeneration درمان هر کد DPF نیست؛ سنسور، گرفتگی فیزیکی یا علت تولید دوده باید جداگانه رفع شود.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -4214,14 +4536,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "خودروی دیزلی هشدار DPF دارد و بار دوده نیازمند بررسی است.",
+        "diagnostic_actions": [
+          "DTC، بار دوده/خاکستر و دمای اگزوز را بخوان.",
+          "علت‌هایی مانند سنسور فشار تفاضلی، نشتی یا احتراق نامناسب را بررسی کن.",
+          "پیش‌شرط‌های Regeneration و محیط مناسب را طبق OEM کنترل کن.",
+          "فقط در صورت مجازبودن عملیات را اجرا و دما/وضعیت را پایش کن."
+        ],
+        "expected_observation": "در خودروهای سازگار وضعیت و پیشرفت بازسازی نمایش داده می‌شود؛ پیش‌شرط نامناسب ممکن است اجرا را مسدود کند.",
+        "interpretation": "Regeneration درمان هر کد DPF نیست؛ سنسور، گرفتگی فیزیکی یا علت تولید دوده باید جداگانه رفع شود.",
+        "safety_note": "دمای اگزوز بسیار بالا و خطر آتش‌سوزی وجود دارد؛ هرگز در فضای بسته یا نزدیک مواد قابل اشتعال اجرا نکن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -4276,11 +4612,12 @@
           "relation": "contrast",
           "basis": "manual",
           "source_pages": "79",
-          "note": "Separate application, chapter 8; not merged",
-          "target_context": null
+          "note": "Separate application, chapter 8; not merged عملکرد یا گزینه‌ای جداست که عمداً با مدخل فعلی ادغام نشده و در محدوده این پایلوت رکورد مستقلی ندارد.",
+          "target_context": null,
+          "target_scope": "distinct_function"
         }
       ],
-      "workshop_example_fa": "بعد از تعویض باتری، تعویض را ثبت می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: باتری خودرو تعویض شده و سامانه مدیریت باتری باید مشخصات جدید را ثبت کند. اقدام: نوع، ظرفیت و فناوری باتری را از برچسب و مشخصات OEM ثبت کن. نتیجه مورد انتظار: در خودروهای سازگار، ثبت اطلاعات باتری یا توابع نگهداری در دسترس قرار می‌گیرد؛ همه خودروها پشتیبانی نمی‌شوند. تفسیر: ثبت BMS با شارژ یا تست ظرفیت باتری یکی نیست؛ انتخاب مشخصات اشتباه می‌تواند راهبرد شارژ را مختل کند.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -4317,14 +4654,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "باتری خودرو تعویض شده و سامانه مدیریت باتری باید مشخصات جدید را ثبت کند.",
+        "diagnostic_actions": [
+          "نوع، ظرفیت و فناوری باتری را از برچسب و مشخصات OEM ثبت کن.",
+          "BMS را در Service application فقط در صورت پشتیبانی باز کن.",
+          "ثبت تعویض یا انتخاب مشخصات را طبق منوی واقعی و راهنمای خودرو انجام بده.",
+          "وضعیت شارژ و DTCها را پس از عملیات بررسی کن."
+        ],
+        "expected_observation": "در خودروهای سازگار، ثبت اطلاعات باتری یا توابع نگهداری در دسترس قرار می‌گیرد؛ همه خودروها پشتیبانی نمی‌شوند.",
+        "interpretation": "ثبت BMS با شارژ یا تست ظرفیت باتری یکی نیست؛ انتخاب مشخصات اشتباه می‌تواند راهبرد شارژ را مختل کند.",
+        "safety_note": "پلاریته و نوع باتری را حدس نزن و پشتیبانی واقعی خودرو/دستگاه را تأیید کن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -4402,11 +4753,12 @@
           "relation": "contrast",
           "basis": "manual",
           "source_pages": "49",
-          "note": "Separate application for MS906 Pro-TS (chapter 5); not merged",
-          "target_context": null
+          "note": "Separate application for MS906 Pro-TS (chapter 5); not merged عملکرد یا گزینه‌ای جداست که عمداً با مدخل فعلی ادغام نشده و در محدوده این پایلوت رکورد مستقلی ندارد.",
+          "target_context": null,
+          "target_scope": "distinct_function"
         }
       ],
-      "workshop_example_fa": "بعد از تعویض سنسور لاستیک، شناسه‌ها را بازخوانی می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: یک سنسور TPMS تعویض شده اما هشدار یا شناسه ناسازگار باقی مانده است. اقدام: روش TPMS و نوع سنسور خودرو را از OEM مشخص کن. نتیجه مورد انتظار: دستگاه در خودروهای سازگار شناسه و وضعیت یادگیری را نمایش می‌دهد؛ قابلیت تابع به مدل دستگاه و خودرو وابسته است. تفسیر: هشدار می‌تواند از باتری سنسور، شناسه ثبت‌نشده، فشار یا گیرنده باشد؛ ریست به‌تنهایی کافی نیست.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -4453,14 +4805,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "یک سنسور TPMS تعویض شده اما هشدار یا شناسه ناسازگار باقی مانده است.",
+        "diagnostic_actions": [
+          "روش TPMS و نوع سنسور خودرو را از OEM مشخص کن.",
+          "پشتیبانی تابع را برای مدل دستگاه/VCI و خودرو تأیید کن.",
+          "در صورت پشتیبانی، شناسه‌ها را بخوان و روش relearn را اجرا کن.",
+          "فشار تایرها را با گیج معتبر تنظیم و نتیجه را دوباره بررسی کن."
+        ],
+        "expected_observation": "دستگاه در خودروهای سازگار شناسه و وضعیت یادگیری را نمایش می‌دهد؛ قابلیت تابع به مدل دستگاه و خودرو وابسته است.",
+        "interpretation": "هشدار می‌تواند از باتری سنسور، شناسه ثبت‌نشده، فشار یا گیرنده باشد؛ ریست به‌تنهایی کافی نیست.",
+        "safety_note": "فشار را با مشخصات خودرو تنظیم کن، نه حداکثر فشار دیواره تایر."
+      }
     },
     {
       "schema_version": "0.2",
@@ -4526,8 +4892,9 @@
           "relation": "alias",
           "basis": "manual",
           "source_pages": "32",
-          "note": "Possible on-screen name",
-          "target_context": null
+          "note": "Possible on-screen name نام جایگزین یا هم‌معنی در راهنما/رابط است؛ در بانک ۳۶ مدخلی این پایلوت رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "alias_or_synonym"
         },
         {
           "term": "Special function",
@@ -4535,8 +4902,9 @@
           "relation": "alias",
           "basis": "manual",
           "source_pages": "32",
-          "note": "Possible on-screen name",
-          "target_context": null
+          "note": "Possible on-screen name نام جایگزین یا هم‌معنی در راهنما/رابط است؛ در بانک ۳۶ مدخلی این پایلوت رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "alias_or_synonym"
         },
         {
           "term": "Variant coding",
@@ -4544,8 +4912,9 @@
           "relation": "alias",
           "basis": "manual",
           "source_pages": "32",
-          "note": "Possible on-screen name",
-          "target_context": null
+          "note": "Possible on-screen name نام جایگزین یا هم‌معنی در راهنما/رابط است؛ در بانک ۳۶ مدخلی این پایلوت رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "alias_or_synonym"
         },
         {
           "term": "Configuration",
@@ -4553,8 +4922,9 @@
           "relation": "alias",
           "basis": "manual",
           "source_pages": "32",
-          "note": "Possible on-screen name",
-          "target_context": null
+          "note": "Possible on-screen name نام جایگزین یا هم‌معنی در راهنما/رابط است؛ در بانک ۳۶ مدخلی این پایلوت رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "alias_or_synonym"
         },
         {
           "term": "Adaptation Operation",
@@ -4562,11 +4932,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "42",
-          "note": "Title of the operation screen",
-          "target_context": null
+          "note": "Title of the operation screen اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "بعد از تعویض قطعه، پیش‌شرط‌ها را کنترل و تطبیق را اجرا می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از تعویض دریچه گاز، فرمان تطبیق یا یادگیری مجدد لازم اعلام شده است. اقدام: قطعه و ECU دقیق را شناسایی و DTCها را ذخیره کن. نتیجه مورد انتظار: در صورت پشتیبانی، مراحل تطبیق و وضعیت اجرا نمایش داده می‌شود. تفسیر: موفقیت فرمان نرم‌افزاری خرابی مکانیکی یا سیم‌کشی را رد نمی‌کند؛ آزمون عملکرد ضروری است.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -4608,14 +4979,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "طبق راهنما همین منو بسته به خودرو ممکن است Control unit adaptations، Special function، Variant coding یا Configuration نام بگیرد. هنوز مشخص نیست این‌ها همیشه معادل‌اند؛ ادغام نشده‌اند.",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از تعویض دریچه گاز، فرمان تطبیق یا یادگیری مجدد لازم اعلام شده است.",
+        "diagnostic_actions": [
+          "قطعه و ECU دقیق را شناسایی و DTCها را ذخیره کن.",
+          "تابع مرتبط را در Special Functions فقط در صورت پشتیبانی انتخاب کن.",
+          "پیش‌شرط‌هایی مانند ولتاژ باتری، دمای موتور و وضعیت سوئیچ را رعایت کن.",
+          "پس از اجرا، DTC و عملکرد واقعی را دوباره بررسی کن."
+        ],
+        "expected_observation": "در صورت پشتیبانی، مراحل تطبیق و وضعیت اجرا نمایش داده می‌شود.",
+        "interpretation": "موفقیت فرمان نرم‌افزاری خرابی مکانیکی یا سیم‌کشی را رد نمی‌کند؛ آزمون عملکرد ضروری است.",
+        "safety_note": "تابع نادرست یا اجرا در شرایط نامناسب می‌تواند تنظیمات ECU را تغییر دهد."
+      }
     },
     {
       "schema_version": "0.2",
@@ -4683,7 +5068,7 @@
           "target_context": "Service"
         }
       ],
-      "workshop_example_fa": "برای خودرویی که چراغ چک روشن دارد، اول وارد Diagnosis می‌شویم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از اتصال دستگاه، تکنسین می‌خواهد تفاوت دو بخش اصلی Vehicle Diagnostics را تشخیص دهد. اقدام: صفحه Vehicle Diagnostics را باز و دو بخش Diagnosis و Service را شناسایی کن. نتیجه مورد انتظار: منوی Diagnosis شامل دسترسی به Auto Scan و Control Unit است؛ Service برای توابع نگهداری/سرویس ارائه می‌شود. تفسیر: انتخاب بخش درست از اجرای تابع نامرتبط جلوگیری می‌کند؛ نام و محتوا در خودروهای مختلف می‌تواند متفاوت باشد.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -4725,14 +5110,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از اتصال دستگاه، تکنسین می‌خواهد تفاوت دو بخش اصلی Vehicle Diagnostics را تشخیص دهد.",
+        "diagnostic_actions": [
+          "صفحه Vehicle Diagnostics را باز و دو بخش Diagnosis و Service را شناسایی کن.",
+          "برای خواندن DTC و داده زنده وارد Diagnosis شو.",
+          "برای نگهداری و کالیبراسیون‌های ارائه‌شده بخش Service را جداگانه بررسی کن.",
+          "عملکرد را با هدف تعمیر و راهنمای خودرو تطبیق بده."
+        ],
+        "expected_observation": "منوی Diagnosis شامل دسترسی به Auto Scan و Control Unit است؛ Service برای توابع نگهداری/سرویس ارائه می‌شود.",
+        "interpretation": "انتخاب بخش درست از اجرای تابع نامرتبط جلوگیری می‌کند؛ نام و محتوا در خودروهای مختلف می‌تواند متفاوت باشد.",
+        "safety_note": "وجود گزینه در منو به معنی مجازبودن اجرای آن روی هر خودرو نیست."
+      }
     },
     {
       "schema_version": "0.2",
@@ -4815,8 +5214,9 @@
           "relation": "status_label",
           "basis": "manual",
           "source_pages": "30-31",
-          "note": "",
-          "target_context": null
+          "note": "برچسب وضعیت نمایشی رابط است، نه منو یا عملکرد مستقل.",
+          "target_context": null,
+          "target_scope": "ui_status_label"
         },
         {
           "term": "Pass | No fault",
@@ -4824,8 +5224,9 @@
           "relation": "status_label",
           "basis": "manual",
           "source_pages": "31",
-          "note": "",
-          "target_context": null
+          "note": "برچسب وضعیت نمایشی رابط است، نه منو یا عملکرد مستقل.",
+          "target_context": null,
+          "target_scope": "ui_status_label"
         },
         {
           "term": "Not Scanned",
@@ -4833,8 +5234,9 @@
           "relation": "status_label",
           "basis": "manual",
           "source_pages": "31",
-          "note": "",
-          "target_context": null
+          "note": "برچسب وضعیت نمایشی رابط است، نه منو یا عملکرد مستقل.",
+          "target_context": null,
+          "target_scope": "ui_status_label"
         },
         {
           "term": "No Response",
@@ -4842,8 +5244,9 @@
           "relation": "status_label",
           "basis": "manual",
           "source_pages": "31",
-          "note": "",
-          "target_context": null
+          "note": "برچسب وضعیت نمایشی رابط است، نه منو یا عملکرد مستقل.",
+          "target_context": null,
+          "target_scope": "ui_status_label"
         },
         {
           "term": "Quick erase",
@@ -4851,8 +5254,9 @@
           "relation": "contrast",
           "basis": "manual",
           "source_pages": "31",
-          "note": "Auto Scan function button; not merged with Erase Codes",
-          "target_context": null
+          "note": "Auto Scan function button; not merged with Erase Codes عملکرد یا گزینه‌ای جداست که عمداً با مدخل فعلی ادغام نشده و در محدوده این پایلوت رکورد مستقلی ندارد.",
+          "target_context": null,
+          "target_scope": "distinct_function"
         },
         {
           "term": "Enter system",
@@ -4860,8 +5264,9 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "31",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         },
         {
           "term": "Report",
@@ -4869,11 +5274,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "31",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "برای خودروی ناشناخته اول Auto Scan می‌زنیم تا ببینیم کدام ماژول‌ها خطا دارند.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: خودرو با چند چراغ هشدار وارد تعمیرگاه شده و ابتدا باید تصویر کلی ECUها ثبت شود. اقدام: خودرو را شناسایی و VCI را متصل کن. نتیجه مورد انتظار: گزارش واحدهای قابل دسترس و وضعیت اسکن نمایش داده می‌شود؛ فهرست ECUها وابسته به خودروست. تفسیر: No Response با Fault یکسان نیست و می‌تواند به تغذیه/شبکه/پشتیبانی مربوط باشد؛ Not Scanned نیز لزوماً DTC نیست.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -4910,14 +5316,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "دکمه‌های همین صفحه: Report, Quick erase, Pause, Enter system, ESC (Table 4-3).",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "خودرو با چند چراغ هشدار وارد تعمیرگاه شده و ابتدا باید تصویر کلی ECUها ثبت شود.",
+        "diagnostic_actions": [
+          "خودرو را شناسایی و VCI را متصل کن.",
+          "از Diagnosis گزینه Auto Scan را اجرا کن.",
+          "وضعیت Fault، Pass، Not Scanned و No Response را جدا ثبت کن.",
+          "گزارش کامل را پیش از پاک‌سازی ذخیره و سپس واحدهای مشکوک را هدفمند بررسی کن."
+        ],
+        "expected_observation": "گزارش واحدهای قابل دسترس و وضعیت اسکن نمایش داده می‌شود؛ فهرست ECUها وابسته به خودروست.",
+        "interpretation": "No Response با Fault یکسان نیست و می‌تواند به تغذیه/شبکه/پشتیبانی مربوط باشد؛ Not Scanned نیز لزوماً DTC نیست.",
+        "safety_note": "قبل از پاک‌کردن کدها گزارش اولیه را حفظ کن."
+      }
     },
     {
       "schema_version": "0.2",
@@ -5027,11 +5447,12 @@
           "relation": "see_also",
           "basis": "manual",
           "source_pages": "31",
-          "note": "",
-          "target_context": null
+          "note": "اصطلاح یا صفحه مرتبط در راهنماست اما در محدوده بانک فعلی رکورد مستقل ندارد.",
+          "target_context": null,
+          "target_scope": "outside_pilot_related"
         }
       ],
-      "workshop_example_fa": "وقتی می‌دانیم مشکل فقط در ABS است، مستقیم از Control Unit سیستم ABS را انتخاب می‌کنیم.",
+      "workshop_example_fa": "سناریوی آموزشی تألیفی. شکایت: پس از اسکن کامل، تنها ECU موتور یا ABS نیازمند بررسی هدفمند است. اقدام: از Auto Scan یا فهرست Control Unit، ECU موردنظر را انتخاب کن. نتیجه مورد انتظار: صفحه عملکردهای قابل دسترس همان ECU نمایش داده می‌شود؛ منوها بین خودروها و نسخه‌های نرم‌افزار متفاوت‌اند. تفسیر: نبود یک تابع به‌تنهایی خرابی ECU را ثابت نمی‌کند؛ ممکن است خودرو آن قابلیت را ارائه نکند.",
       "cross_brand_equivalents": [],
       "media_ids": [],
       "source_refs": [
@@ -5068,14 +5489,28 @@
           "reviewed_on": null
         },
         "workshop_example": {
-          "status": "brief",
+          "status": "complete",
           "origin": "author_generated_educational_scenario",
           "documented_real_case": false,
           "source_backed": false
         }
       },
       "notes": "منوی عملکردها بسته به خودرو کمی فرق می‌کند (p.31).",
-      "last_checked": "2026-11-12"
+      "last_checked": "2026-11-12",
+      "workshop_scenario": {
+        "origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "complaint": "پس از اسکن کامل، تنها ECU موتور یا ABS نیازمند بررسی هدفمند است.",
+        "diagnostic_actions": [
+          "از Auto Scan یا فهرست Control Unit، ECU موردنظر را انتخاب کن.",
+          "شناسه واحد را با خودرو و نقشه تطبیق بده.",
+          "ابتدا Read Codes و Live Data مرتبط را بررسی کن.",
+          "قبل از تست فعال یا سرویس، پیش‌شرط و سازگاری تابع را بخوان."
+        ],
+        "expected_observation": "صفحه عملکردهای قابل دسترس همان ECU نمایش داده می‌شود؛ منوها بین خودروها و نسخه‌های نرم‌افزار متفاوت‌اند.",
+        "interpretation": "نبود یک تابع به‌تنهایی خرابی ECU را ثابت نمی‌کند؛ ممکن است خودرو آن قابلیت را ارائه نکند.",
+        "safety_note": "در انتخاب ECU و تست فعال دقت کن؛ فرمان می‌تواند عملگر را مستقیماً فعال کند."
+      }
     }
   ]
 }
