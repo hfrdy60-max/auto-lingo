@@ -1,0 +1,40 @@
+name: AUTONEX Autel pilot validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "autel_all_entries (1).json"
+      - "sources (1).json"
+      - "autel_maxisys_ms906_pro.json"
+      - "entry.schema (1).json"
+      - "source.schema.json"
+      - "device.schema.json"
+      - "tools/validate_pilot.py"
+      - ".github/workflows/autel-pilot-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-autel-pilot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Autel pilot bank
+        run: python3 tools/validate_pilot.py
+      - name: Upload validation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autonex-autel-pilot-validation
+          path: |
+            QA/AI3_AUTEL_PILOT_VALIDATION.json
+            QA/AI3_AUTEL_PILOT_VALIDATION.md
+          if-no-files-found: warn
