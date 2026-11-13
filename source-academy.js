@@ -3,14 +3,14 @@
  "use strict";
  if(!Array.isArray(academyChapters)||typeof renderAcademy!=="function") return;
  const defs=[
-  {id:"hk-electrical",file:"data/technical_reference/hyundai_kia_electrical_fuel.json",title:"برق و انژکتور هیوندای و کیا",short:"HYUNDAI • KIA",icon:"⚡",kind:"book"},
-  {id:"bosch-gasoline",file:"data/technical_reference/bosch_gasoline_engine_management.json",title:"مدیریت موتور بنزینی بوش",short:"BOSCH • GASOLINE",icon:"◈",kind:"book"},
+  {id:"hk-electrical",file:"data/technical_reference/hyundai_kia_electrical_fuel.json",title:"برق و انژکتور هیوندای و کیا",short:"HYUNDAI • KIA",icon:"⚡",kind:"book",expansionBook:"hyundai_kia"},
+  {id:"bosch-gasoline",file:"data/technical_reference/bosch_gasoline_engine_management.json",title:"مدیریت موتور بنزینی بوش",short:"BOSCH • GASOLINE",icon:"◈",kind:"book",expansionBook:"bosch"},
   {id:"autel-ms906pro",file:"autel_all_entries%20(1).json",deviceFile:"autel_maxisys_ms906_pro.json",title:"آموزش دستگاه دیاگ Autel MS906 Pro",short:"AUTEL • MAXISYS",icon:"▣",kind:"autel"},
   {id:"sensor-diagnostics",file:"data/technical_reference/cross_domain_sensor_diagnostics.json",title:"کارگاه عیب‌یابی سنسورها و داده زنده",short:"SENSOR DIAGNOSTICS",icon:"⌁",kind:"sensors"}
  ];
  const offset=academyChapters.length;
  defs.forEach(d=>academyChapters.push({id:d.id,title:d.title,level:"مرجع تخصصی و درس‌های کاربردی",intro:"درس‌های ساختاریافته با مسیر مطالعه، واژگان و ارجاع منبع.",flow:["شناخت سیستم","تحلیل داده","بررسی مدار","عیب‌یابی"],sections:[["آکادمی فنی","محتوای آموزشی در حال بارگذاری است.","AUTONEX"]]}));
- const states=Object.fromEntries(defs.map(d=>[d.id,{data:null,error:"",moduleId:"",topicId:"",search:"",answered:false,answerIndex:null}]));
+ const states=Object.fromEntries(defs.map(d=>[d.id,{data:null,error:"",moduleId:"",topicId:"",search:"",answered:false,answerIndex:null,advancedAnswered:false,advancedAnswerIndex:null}]));
  const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  const arr=v=>Array.isArray(v)?v:[];
  const num=v=>Number(v||0).toLocaleString("fa-IR");
@@ -111,15 +111,25 @@
   if(!arr(items).length)return "";
   return '<section class="src-detail-section"><div class="src-section-heading"><span>ENGLISH VOCABULARY</span><h4>واژگان فنی این درس</h4></div><div class="src-term-grid">'+items.map(x=>'<div><b dir="ltr">'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("")+'</div></section>';
  }
+ function expansionHTML(exp,s){
+  if(!exp)return "";
+  const c=exp.workshop_case||{},q=exp.advanced_quiz;
+  const quiz=q?'<section class="src-quiz src-advanced-quiz"><div class="src-quiz-top"><span>ADVANCED KNOWLEDGE CHECK</span><b>چالش تخصصی</b></div><p>'+esc(q.question)+'</p><div class="src-quiz-options">'+arr(q.options).map((o,i)=>'<button type="button" data-advanced-answer="'+i+'" '+(s.advancedAnswered?"disabled":"")+' class="'+(s.advancedAnswered&&i===q.answer_index?"correct":s.advancedAnswered&&i===s.advancedAnswerIndex?"incorrect":"")+'">'+esc(o)+'</button>').join("")+'</div>'+(s.advancedAnswered?'<div class="src-quiz-feedback '+(s.advancedAnswerIndex===q.answer_index?"good":"bad")+'">'+(s.advancedAnswerIndex===q.answer_index?"پاسخ درست است. ":"پاسخ صحیح: "+esc(q.options[q.answer_index])+" — ")+esc(q.explanation||"")+'</div>':"")+'</section>':"";
+  return '<section class="src-deep-dive"><div class="src-section-heading"><span>DEEP TECHNICAL EXPLANATION</span><h4>شرح عمیق و کاربردی درس</h4></div><p class="src-deep-paragraph">'+esc(exp.deep_explanation)+'</p></section>'+
+   '<section class="src-workshop-case"><div class="src-section-heading"><span>AUTHOR-GENERATED TRAINING CASE</span><h4>پرونده آموزشی تعمیرگاهی</h4></div><div class="src-case-origin">سناریوی آموزشی تألیفی AUTONEX؛ این مورد گزارش یک تعمیر واقعی نیست.</div><p class="src-case-complaint"><b>شکایت/شرایط فرضی:</b> '+esc(c.complaint||"")+'</p>'+section("مراحل بررسی پیشنهادی","CASE WORKFLOW",c.steps,true)+'<p class="src-case-interpretation"><b>تفسیر شواهد:</b> '+esc(c.interpretation||"")+'</p></section>'+
+   section("پارامترهای دیاگ و داده‌های قابل بررسی","DIAGNOSTIC PARAMETERS",exp.diagnostic_parameters)+
+   section("تحلیل نقشه و مدار الکتریکی","WIRING & CIRCUIT ANALYSIS",exp.circuit_analysis)+
+   section("خطاهای رایج در تشخیص","COMMON DIAGNOSTIC MISTAKES",exp.common_mistakes)+quiz;
+ }
  function render(){
   const d=defs[activeChapter-offset],s=states[d.id];tabs();
   if(!s.data){academyContent.innerHTML='<div class="src-loading"><span class="eyebrow">SOURCE COURSE</span><h3>در حال بارگذاری دوره…</h3><p>'+esc(s.error||"محتوای آموزشی در حال دریافت است.")+'</p></div>';return}
   const data=s.data,module=data.modules.find(m=>m.id===s.moduleId)||data.modules[0],all=topics(data);
   const search=s.search.trim().toLowerCase();
-  const hay=x=>[x.title,x.summary,x.moduleTitle,...arr(x.concepts),...arr(x.procedure),...arr(x.diagnostic),...arr(x.terms).flat()].join(" ").toLowerCase();
+  const hay=x=>[x.title,x.summary,x.moduleTitle,...arr(x.concepts),...arr(x.procedure),...arr(x.diagnostic),...arr(x.terms).flat(),x.expansion?.deep_explanation,x.expansion?.workshop_case?.complaint,...arr(x.expansion?.diagnostic_parameters),...arr(x.expansion?.circuit_analysis),...arr(x.expansion?.common_mistakes)].join(" ").toLowerCase();
   const visible=(search?all:module.topics.map(t=>({...t,moduleId:module.id,moduleTitle:module.title}))).filter(t=>!search||hay(t).includes(search));
   const t=visible.find(x=>x.id===s.topicId)||visible[0]||all.find(x=>x.id===s.topicId)||all[0];
-  if(t&&t.id!==s.topicId){s.topicId=t.id;s.answered=false;s.answerIndex=null}
+  if(t&&t.id!==s.topicId){s.topicId=t.id;s.answered=false;s.answerIndex=null;s.advancedAnswered=false;s.advancedAnswerIndex=null}
   const m=data.meta,notice=[m.scope_note,m.citation_note].filter(Boolean).join(" ");
   const sourceEdition=m.document_pages?num(m.document_pages)+" صفحه":("نسخه "+(m.document_edition||"—"));
   academyContent.innerHTML='<div class="src-course"><div class="src-course-hero"><div><span class="eyebrow">AUTONEX TECHNICAL ACADEMY</span><h2>'+esc(d.title)+'</h2><p>'+esc(module.summary)+'</p></div><div class="src-course-stat"><b>'+num(all.length)+'</b><span>درس / مدخل</span><b>'+num(data.modules.length)+'</b><span>فصل</span></div></div>'+
@@ -130,22 +140,31 @@
    '<div class="src-learning-layout"><div class="src-topic-list"><div class="src-topic-list-head"><b>درس‌ها و گزینه‌ها</b><span>'+num(visible.length)+' مورد</span></div>'+
    visible.map((x,i)=>'<button type="button" data-topic="'+esc(x.id)+'" class="src-topic-item '+(t&&x.id===t.id?"active":"")+'"><span class="src-topic-n">'+num(i+1)+'</span><span class="src-topic-txt"><b>'+esc(x.title)+'</b><small>'+esc(x.level)+'</small></span><i>←</i></button>').join("")+(visible.length?"":'<p class="src-no-results">موردی پیدا نشد.</p>')+
    '</div><div>'+(t?'<article class="src-detail-card"><div class="src-detail-top"><div><span class="src-detail-module">'+esc(t.moduleTitle)+'</span><span class="src-detail-level">'+esc(t.level)+'</span><h3>'+esc(t.title)+'</h3><p>'+esc(t.summary)+'</p></div><span class="src-detail-index">'+esc(t.id.toUpperCase())+'</span></div>'+
-   section("مفاهیم کلیدی","CORE CONCEPTS",t.concepts)+section("مسیر و مراحل کار","WORKFLOW",t.procedure,true)+section("نکات تشخیصی، محدودیت‌ها و بازبینی","DIAGNOSTIC NOTES",t.diagnostic)+terms(t.terms)+
+   section("مفاهیم کلیدی","CORE CONCEPTS",t.concepts)+section("مسیر و مراحل کار","WORKFLOW",t.procedure,true)+section("نکات تشخیصی، محدودیت‌ها و بازبینی","DIAGNOSTIC NOTES",t.diagnostic)+terms(t.terms)+expansionHTML(t.expansion,s)+
    (t.quiz?'<section class="src-quiz"><div class="src-quiz-top"><span>KNOWLEDGE CHECK</span><b>آزمون کوتاه</b></div><p>'+esc(t.quiz.q)+'</p><div class="src-quiz-options">'+arr(t.quiz.options).map((o,i)=>'<button type="button" data-answer="'+i+'" '+(s.answered?"disabled":"")+' class="'+(s.answered&&i===t.quiz.answer?"correct":s.answered&&i===s.answerIndex?"incorrect":"")+'">'+esc(o)+'</button>').join("")+'</div>'+(s.answered?'<div class="src-quiz-feedback '+(s.answerIndex===t.quiz.answer?"good":"bad")+'">'+(s.answerIndex===t.quiz.answer?"درست پاسخ دادی. ":"پاسخ صحیح: "+esc(t.quiz.options[t.quiz.answer])+" — ")+esc(t.quiz.why||"")+'</div>':"")+'</section>':"")+
    '<div class="src-citation"><span>ارجاع منبع</span><b>'+esc(t.source_pages||"ارجاع صفحه در حال تکمیل")+'</b></div></article>':'<article class="src-detail-card">برای شروع یکی از درس‌ها را انتخاب کن.</article>')+
    '</div></div></div>';
-  academyContent.querySelectorAll("[data-module]").forEach(b=>b.onclick=()=>{s.moduleId=b.dataset.module;s.topicId="";s.search="";s.answered=false;s.answerIndex=null;renderAcademy()});
-  academyContent.querySelectorAll("[data-topic]").forEach(b=>b.onclick=()=>{s.topicId=b.dataset.topic;s.answered=false;s.answerIndex=null;renderAcademy()});
+  academyContent.querySelectorAll("[data-module]").forEach(b=>b.onclick=()=>{s.moduleId=b.dataset.module;s.topicId="";s.search="";s.answered=false;s.answerIndex=null;s.advancedAnswered=false;s.advancedAnswerIndex=null;renderAcademy()});
+  academyContent.querySelectorAll("[data-topic]").forEach(b=>b.onclick=()=>{s.topicId=b.dataset.topic;s.answered=false;s.answerIndex=null;s.advancedAnswered=false;s.advancedAnswerIndex=null;renderAcademy()});
   const input=academyContent.querySelector("#srcSearch");
   if(input)input.oninput=e=>{const p=e.target.selectionStart;s.search=e.target.value;renderAcademy();const n=academyContent.querySelector("#srcSearch");if(n){n.focus();n.setSelectionRange(p,p)}};
   academyContent.querySelectorAll("[data-answer]").forEach(b=>b.onclick=()=>{s.answered=true;s.answerIndex=Number(b.dataset.answer);renderAcademy()});
+  academyContent.querySelectorAll("[data-advanced-answer]").forEach(b=>b.onclick=()=>{s.advancedAnswered=true;s.advancedAnswerIndex=Number(b.dataset.advancedAnswer);renderAcademy()});
  }
  renderAcademy=function(){if(activeChapter<offset||activeChapter>=offset+defs.length){oldRender();return}render()};
  if(activeChapter===0)activeChapter=offset;
  oldRender();
+ const expansionsPromise=fetchJSON("data/lesson_expansions_v1.json");
  Promise.all(defs.map(async d=>{
   try{
    let raw=await fetchJSON(d.file),data;
+   if(d.kind==="book"){
+    const bundle=await expansionsPromise;
+    raw.modules.forEach(module=>module.topics.forEach(topic=>{
+     const extra=bundle.lessons.find(item=>item.key===d.expansionBook+":"+topic.id);
+     if(extra)topic.expansion=extra;
+    }));
+   }
    if(d.kind==="autel"){const device=await fetchJSON(d.deviceFile);data=adaptAutel(raw,device)}
    else if(d.kind==="sensors")data=adaptSensors(raw);
    else data=raw;
