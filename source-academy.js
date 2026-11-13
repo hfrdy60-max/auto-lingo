@@ -90,7 +90,10 @@
   return {meta:{title_fa:"Autel MaxiSys MS906 Pro / MS906 Pro-TS",author:"Autel",publisher:"MaxiSys User Manual",document_pages:null,document_edition:raw.entries[0]?.source_document?.document_edition||"US V2.1",scope_note:"این محتوا بر اساس راهنمای کاربر است. مسیرهای منو وابسته به خودرو و نسخه نرم‌افزار دستگاه‌اند؛ نسخه نرم‌افزار نصب‌شده در راهنمای مورد استفاده مستند نشده است.",citation_note:"ترجمه فارسی و مثال‌های کارگاهی در وضعیت پیش‌نویس/تألیفی هستند و باید جداگانه بازبینی شوند.",source_distribution_note:"دستگاه: "+arr(device.model_family).join(" / ")+" • رابط ارتباطی: "+(device.vci||"ثبت نشده")+" • نسخه راهنما: "+(device.documentation?.document_edition||"ثبت نشده")+". نسخه نرم‌افزار خود دستگاه از این PDF قابل استنتاج نیست."},modules};
  }
  function tabs(){
-  academyTabs.innerHTML=academyChapters.map((c,i)=>'<button class="academy-tab '+(i===activeChapter?'active':'')+'" data-chapter="'+i+'">'+esc(c.title)+'</button>').join("");
+  academyTabs.innerHTML=academyChapters.map((c,i)=>{
+   const state=states[c.id],count=state?.data?topics(state.data).length:0;
+   return '<button class="academy-tab '+(i===activeChapter?'active':'')+'" data-chapter="'+i+'">'+esc(c.title)+(count?' <small>'+num(count)+'</small>':'')+'</button>';
+  }).join("");
   academyTabs.querySelectorAll("[data-chapter]").forEach(b=>b.onclick=()=>{activeChapter=Number(b.dataset.chapter);activeSection=0;renderAcademy()});
  }
  function topics(data){return data.modules.flatMap(m=>m.topics.map(t=>({...t,moduleId:m.id,moduleTitle:m.title})))}
@@ -133,6 +136,7 @@
   academyContent.querySelectorAll("[data-answer]").forEach(b=>b.onclick=()=>{s.answered=true;s.answerIndex=Number(b.dataset.answer);renderAcademy()});
  }
  renderAcademy=function(){if(activeChapter<offset||activeChapter>=offset+defs.length){oldRender();return}render()};
+ if(activeChapter===0)activeChapter=offset;
  oldRender();
  Promise.all(defs.map(async d=>{
   try{
