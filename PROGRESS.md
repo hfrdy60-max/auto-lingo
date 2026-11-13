@@ -170,3 +170,12 @@
 - Source schema and source page manifest are aligned; the validator checked 32 distinct cited printed pages against the structured page manifest and pages_used coverage.
 - Validation report artifact: https://github.com/hfrdy60-max/auto-lingo/actions/runs/43445017759/artifacts/14046613406.
 - This automated check is structural/cross-file QA, not independent technical or translation approval.
+
+## Autel pilot — validator and scenario completion (2026-11-13)
+- Consolidated Autel bank remains 36 unique records across 9 categories and is wired to the technical academy.
+- The 26 entries previously marked with brief workshop examples now contain structured educational scenarios: complaint, diagnostic actions, expected observation, interpretation and safety note. All 26 remain explicitly author-generated, not documented real repair cases.
+- All 78 relationships with null target_id now carry target_scope and an explanatory note. No IDs were invented. The 106 internal relationships have target_context copied from their referenced target records.
+- The Autel source record now carries explicit document_edition, page_numbering, pages_used and an exact pages_cited manifest. Device metadata has structured page locators. The source schema has been aligned with these fields.
+- Added tools/validate_pilot.py and an Actions workflow. Live run 43445017759: 36 records, 184 relationships, zero errors, one warning. The remaining warning is expected: all 36 Persian translations remain draft_unreviewed pending human technical review.
+- Detailed run report artifact: https://github.com/hfrdy60-max/auto-lingo/actions/runs/43445017759/artifacts/14046613406.
+- Autel course UI now displays the full structured scenarios; the academy introduction advertises the 26 scenarios. Browser/device testing and independent human translation review remain outstanding.
