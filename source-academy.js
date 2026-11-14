@@ -49,7 +49,7 @@
   })]});
   return {meta:{title_fa:raw.meta.title_fa,author:"تدوین آموزشی AUTONEX",publisher:"تلفیق سه مرجع فنی موجود در مخزن",document_pages:null,document_edition:raw.meta.version,scope_note:raw.meta.safety,citation_note:raw.meta.dtc_policy,source_distribution_note:raw.meta.methodology},modules};
  }
- function adaptAutel(raw,device,sources){
+ function adaptAutel(raw,device,sources,learningBank){
   const grouped=new Map();
   const sourceById=new Map(arr(sources).map(x=>[x.source_id,x]));
   const deviceSource=sourceById.get(device.documentation?.source_id);
@@ -100,6 +100,7 @@
     origin:e.verification?.workshop_example?.scenario_origin||"author_generated_educational_scenario",
     documented_real_case:e.verification?.workshop_example?.documented_real_case===true
    };
+   topic.quiz=learningBank?.questions?.[e.id]||null;
    return topic;
   })}));
   const manualTitle=deviceSource?.title||device.documentation?.title||"Autel MaxiSys User Manual";
@@ -193,7 +194,7 @@
      if(extra)topic.expansion=extra;
     }));
    }
-   if(d.kind==="autel"){const [device,sources]=await Promise.all([fetchJSON(d.deviceFile),fetchJSON(d.sourceFile)]);data=adaptAutel(raw,device,sources)}
+   if(d.kind==="autel"){const [device,sources,learningBank]=await Promise.all([fetchJSON(d.deviceFile),fetchJSON(d.sourceFile),fetchJSON("data/technical_reference/autel_ms906pro_v03/learning_quiz.json")]);data=adaptAutel(raw,device,sources,learningBank)}
    else if(d.kind==="sensors")data=adaptSensors(raw);
    else data=raw;
    if(!Array.isArray(data.modules)||!data.modules.length)throw Error("ساختار ماژول‌ها خالی است");
