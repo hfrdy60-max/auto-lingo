@@ -1,0 +1,191 @@
+[
+  {
+    "schema_version": "0.3",
+    "id": "autel-ms906pro-active-test",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Active test"
+    ],
+    "path_confidence": "documented_vehicle_dependent",
+    "ui_element_type": "function_menu_item",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+    "menu_path_alternatives": [],
+    "category": "Active Test",
+    "term_en": "Active Test",
+    "term_en_as_written_in_manual": "Active Test",
+    "term_variants_in_manual": [
+      {
+        "text": "Active test",
+        "printed_pages": "32"
+      },
+      {
+        "text": "Active Test",
+        "printed_pages": "41"
+      }
+    ],
+    "term_fa": "تست فعال",
+    "pronunciation_fa": "اکتیو تست",
+    "technical_description_fa": "دستگاه فرمان به ECU می‌دهد تا عملگرها (مثل سلنوئید یا رله) بین دو حالت کار کنند. نتیجه‌ی موفق با پیامی مثل Command Finished یا Activation Successful نشان داده می‌شود.",
+    "usage_fa": "ارسال فرمان از دستگاه به ECU برای راه‌اندازی عملگرها و بررسی سلامت سیستم یا قطعه (p.42).",
+    "usage_basis": "32; 41-42",
+    "related_terms": [
+      {
+        "term": "Control Unit",
+        "target_id": "autel-ms906pro-control-unit",
+        "target_context": "Vehicle-specific diagnosis",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Actuator Test",
+        "target_id": null,
+        "target_context": null,
+        "relation": "alias",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": "Possible on-screen name"
+      },
+      {
+        "term": "Actuators",
+        "target_id": null,
+        "target_context": null,
+        "relation": "alias",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": "Possible on-screen name"
+      },
+      {
+        "term": "Function Tests",
+        "target_id": null,
+        "target_context": null,
+        "relation": "alias",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": "Possible on-screen name"
+      },
+      {
+        "term": "Component test",
+        "target_id": "autel-ms906pro-obd2-component-test",
+        "target_context": "Generic OBDII/EOBD",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "42; 48",
+        "note": "Both send commands to the ECU; menu names differ; not merged"
+      },
+      {
+        "term": "Activation Successful",
+        "target_id": null,
+        "target_context": null,
+        "relation": "status_label",
+        "basis": "manual",
+        "source_pages": "42",
+        "note": ""
+      },
+      {
+        "term": "Command Finished",
+        "target_id": null,
+        "target_context": null,
+        "relation": "status_label",
+        "basis": "manual",
+        "source_pages": "42",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "سناریو (آموزشی): تکنسین مشکوک است رله‌ی یک مصرف‌کننده عمل نمی‌کند.\nمراحل: Active test را باز می‌کند، تست مربوط را از منو انتخاب می‌کند و دستورهای روی صفحه را دقیق دنبال می‌کند. دستگاه به ECU فرمان می‌دهد تا عملگر (مثل رله یا سلنوئید) بین دو حالت کار تعویض شود. پس از موفقیت پیامی مثل Command Finished یا Activation Successful دیده می‌شود و با ESC خارج می‌شود.\nنکته‌ی آموزشی: طبق راهنما فقط تست‌های موجود برای آن خودرو در منو نمایش داده می‌شوند و این گزینه ممکن است با نام Actuators، Actuator Test یا Function Tests دیده شود.",
+    "workshop_example_basis": [
+      {
+        "fact_fa": "تست‌ها بسته به خودرو و فقط موارد موجود نمایش داده می‌شود",
+        "printed_page": "41"
+      },
+      {
+        "fact_fa": "دستگاه به ECU فرمان می‌دهد؛ سلنوئید، رله یا کلید بین دو حالت",
+        "printed_page": "42"
+      },
+      {
+        "fact_fa": "پیام‌های Command Finished / Activation Successful و خروج با ESC",
+        "printed_page": "42"
+      },
+      {
+        "fact_fa": "نام‌های جایگزین Actuators، Actuator Test، Function Tests",
+        "printed_page": "32"
+      }
+    ],
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "32",
+        "locator": "Function Menu options list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "41-42",
+        "locator": "Active Test; Figure 4-14"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "technical_description_fa (content)",
+          "usage_fa",
+          "related_terms",
+          "workshop_example_basis"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented_vehicle_dependent",
+        "author_written_fields": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa (wording)",
+          "workshop_example_fa (scenario narrative)"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "complete",
+        "scenario_origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "technical_facts_source_backed": true
+      }
+    },
+    "notes": "طبق راهنما همین گزینه ممکن است با نام Actuators، Actuator Test یا Function Tests ظاهر شود. Actuation Test به‌عنوان نام جدا در این راهنما پیدا نشد.",
+    "last_checked": "2026-11-12"
+  }
+]

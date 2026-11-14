@@ -1,0 +1,311 @@
+[
+  {
+    "schema_version": "0.3",
+    "id": "autel-ms906pro-erase-codes",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "Trouble codes",
+      "Erase Codes"
+    ],
+    "path_confidence": "documented_vehicle_dependent",
+    "ui_element_type": "function_menu_item",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Listed under Trouble codes (p.32); also a function button on the Read Codes screen (p.35).",
+    "menu_path_alternatives": [],
+    "category": "Clear Codes",
+    "term_en": "Erase Codes",
+    "term_en_as_written_in_manual": "Erase Codes",
+    "term_variants_in_manual": [],
+    "term_fa": "پاک‌کردن کدها",
+    "pronunciation_fa": "ایریز کُدز",
+    "technical_description_fa": "کدها و سایر داده‌ها را از ECU پاک می‌کند. قبل از پاک‌کردن، خواندن کدها و انجام تعمیرات لازم توصیه شده است. سوئیچ باید روی ON (RUN) و موتور خاموش باشد. پیام هشدار از دست رفتن داده نمایش داده می‌شود.",
+    "usage_fa": "پاک‌کردن DTC و داده‌های دیگر از ECU پس از خواندن کدها و انجام تعمیر لازم (p.35).",
+    "usage_basis": "35",
+    "related_terms": [
+      {
+        "term": "Trouble Codes",
+        "target_id": "autel-ms906pro-trouble-codes",
+        "target_context": "Vehicle-specific diagnosis",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Read Codes",
+        "target_id": "autel-ms906pro-read-codes",
+        "target_context": "Vehicle-specific diagnosis",
+        "relation": "sibling",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Erase Codes",
+        "target_id": "autel-ms906pro-obd2-erase-codes",
+        "target_context": "Generic OBDII/EOBD",
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "35; 47",
+        "note": "Same name in two contexts; the OBDII version also resets I/M readiness monitors. Not merged."
+      },
+      {
+        "term": "Clear DTCs",
+        "target_id": null,
+        "target_context": null,
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "63",
+        "note": "TPMS application button; separate function, not merged"
+      },
+      {
+        "term": "Quick erase",
+        "target_id": null,
+        "target_context": null,
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "31",
+        "note": "Different screen (Auto Scan); not merged"
+      },
+      {
+        "term": "Warning message",
+        "target_id": null,
+        "target_context": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "28",
+        "note": "Erase Codes is the manual's example of a Warning message"
+      }
+    ],
+    "workshop_example_fa": "سناریو (آموزشی): تعمیر انجام شده و تکنسین می‌خواهد کدها را پاک کند.\nمراحل: سوئیچ را روی ON (RUN) با موتور خاموش می‌گذارد، Erase Codes را می‌زند، پیام هشدار را می‌خواند، Yes را می‌زند و پس از صفحه‌ی تأیید ESC می‌زند. سپس Read Codes را دوباره اجرا می‌کند تا ببیند پاک‌کردن موفق بوده.\nنکته‌ی آموزشی: Quick erase (در Auto Scan)، Clear DTCs (در TPMS) و Erase Codes بخش OBDII عملکردهای جدا با نام مشابه‌اند و با این گزینه ادغام نشده‌اند.",
+    "workshop_example_basis": [
+      {
+        "fact_fa": "سوئیچ روی ON (RUN) و موتور خاموش",
+        "printed_page": "35"
+      },
+      {
+        "fact_fa": "پیام هشدار از دست رفتن داده؛ Yes ادامه، No خروج",
+        "printed_page": "35"
+      },
+      {
+        "fact_fa": "پس از پاک‌کردن دوباره Read Codes اجرا شود",
+        "printed_page": "35"
+      },
+      {
+        "fact_fa": "Quick erase در Auto Scan",
+        "printed_page": "31"
+      },
+      {
+        "fact_fa": "Clear DTCs در TPMS",
+        "printed_page": "63"
+      }
+    ],
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "35",
+        "locator": "Erase Codes; Table 4-4"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "technical_description_fa (content)",
+          "usage_fa",
+          "related_terms",
+          "workshop_example_basis"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented_vehicle_dependent",
+        "author_written_fields": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa (wording)",
+          "workshop_example_fa (scenario narrative)"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "complete",
+        "scenario_origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "technical_facts_source_backed": true
+      }
+    },
+    "notes": "نام‌های مشابه که ادغام نشده‌اند: Quick erase (Auto Scan، p.31)، Clear DTCs (TPMS، p.63)، Erase Codes (OBDII، p.47).",
+    "last_checked": "2026-11-12"
+  },
+  {
+    "schema_version": "0.3",
+    "id": "autel-ms906pro-obd2-erase-codes",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Generic OBDII/EOBD",
+    "menu_path": [
+      "Diagnostics",
+      "Vehicle Menu",
+      "EOBD",
+      "OBDII Diagnostic Menu",
+      "DTC & FFD",
+      "Erase Codes"
+    ],
+    "path_confidence": "documented",
+    "ui_element_type": "function_button",
+    "path_prerequisite": "VCI connected; EOBD entered from the Vehicle Menu (p.45)",
+    "path_note": "Function button at the bottom of the DTC & FFD screen (p.46); not the Control Unit > Trouble codes > Erase Codes item.",
+    "menu_path_alternatives": [],
+    "category": "Clear Codes",
+    "term_en": "Erase Codes",
+    "term_en_as_written_in_manual": "Erase Codes",
+    "term_variants_in_manual": [],
+    "term_fa": "پاک‌کردن کدها (در OBDII)",
+    "pronunciation_fa": "ایریز کُدز",
+    "technical_description_fa": "همه‌ی داده‌های تشخیصی مرتبط با آلایندگی مثل DTC، داده‌ی فریز و داده‌ی تکمیلی سازنده را از ECM پاک می‌کند و وضعیت مانیتورهای I/M Readiness را به Not Ready یا Not Complete برمی‌گرداند. برای جلوگیری از پاک‌شدن تصادفی، صفحه‌ی تأیید نشان داده می‌شود.",
+    "usage_fa": "پاک‌کردن داده‌های تشخیصی آلایندگی از ECM و ریست وضعیت مانیتورها (p.47).",
+    "usage_basis": "46; 47",
+    "related_terms": [
+      {
+        "term": "DTC & FFD",
+        "target_id": "autel-ms906pro-obd2-dtc-ffd",
+        "target_context": "Generic OBDII/EOBD",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "46-47",
+        "note": ""
+      },
+      {
+        "term": "Erase Codes",
+        "target_id": "autel-ms906pro-erase-codes",
+        "target_context": "Vehicle-specific diagnosis",
+        "relation": "contrast",
+        "basis": "manual",
+        "source_pages": "35; 47",
+        "note": "Same name in two contexts; the OBDII version also resets I/M readiness monitors. Not merged."
+      },
+      {
+        "term": "I/M readiness",
+        "target_id": "autel-ms906pro-obd2-im-readiness",
+        "target_context": "Generic OBDII/EOBD",
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "47",
+        "note": "Erase resets monitor status to Not Ready / Not Complete"
+      }
+    ],
+    "workshop_example_fa": "سناریو (آموزشی): خطای آلایندگی تعمیر شده و تکنسین می‌خواهد داده‌های تشخیصی را پاک کند.\nمراحل: در DTC & FFD دکمه‌ی Erase Codes را در پایین صفحه می‌زند، صفحه‌ی تأیید را می‌بیند و با Yes ادامه می‌دهد (یا با No خارج می‌شود).\nنکته‌ی آموزشی: طبق راهنما این گزینه DTC، داده‌ی فریز و داده‌ی تکمیلی سازنده را پاک می‌کند و وضعیت مانیتورهای I/M Readiness را به Not Ready یا Not Complete برمی‌گرداند. با Erase Codes بخش Control Unit ادغام نشده است.",
+    "workshop_example_basis": [
+      {
+        "fact_fa": "Erase Codes با دکمه‌ی پایین صفحه‌ی DTC & FFD",
+        "printed_page": "46"
+      },
+      {
+        "fact_fa": "پاک‌کردن DTC، فریز و داده‌ی سازنده و ریست مانیتورها؛ صفحه‌ی تأیید Yes/No",
+        "printed_page": "47"
+      }
+    ],
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "46",
+        "locator": "DTC & FFD: Erase Codes function button"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "47",
+        "locator": "Erase Codes"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "technical_description_fa (content)",
+          "usage_fa",
+          "related_terms",
+          "workshop_example_basis"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented",
+        "author_written_fields": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa (wording)",
+          "workshop_example_fa (scenario narrative)"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "complete",
+        "scenario_origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "technical_facts_source_backed": true
+      }
+    },
+    "notes": "Added in v0.3 to give a same-named term in another context its own record (no merging of similar terms).",
+    "last_checked": "2026-11-12"
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "source_id": "src-001",
+    "type": "official_manufacturer_manual",
+    "publisher": "Autel Intelligent Technology Corp., Ltd.",
+    "title": "MaxiSys MS906 Pro & MS906 Pro-TS User Manual",
+    "document_edition": "US V2.1",
+    "url": "https://autel.us/wp-content/uploads/MaxiSYS_MS906_Pro-MS906_Pro-TS_User_Manual_US_V2.1.pdf",
+    "hosted_on": "autel.us (Autel US)",
+    "accessed": "2026-11-12",
+    "page_numbering": "Printed page numbers of the manual (roman numerals for front matter). The PDF viewer index may differ; offset not verified.",
+    "pages_cited": {
+      "front_matter": [
+        "ii",
+        "iii"
+      ],
+      "numbered": [
+        {
+          "from": 5,
+          "to": 5
+        },
+        {
+          "from": 13,
+          "to": 13
+        },
+        {
+          "from": 17,
+          "to": 19
+        },
+        {
+          "from": 21,
+          "to": 25
+        },
+        {
+          "from": 27,
+          "to": 49
+        },
+        {
+          "from": 63,
+          "to": 63
+        },
+        {
+          "from": 74,
+          "to": 77
+        },
+        {
+          "from": 79,
+          "to": 79
+        }
+      ]
+    },
+    "pages_cited_note": "Computed from all records and the device file by tools/validate_pilot.py; must match exactly.",
+    "anomalies": [
+      {
+        "page": "17",
+        "text": "Chapter 4 says 'MaxiSys Mini diagnostic platform' in the VCI-connection step, suggesting text shared with another model's manual. Does not affect the menu names recorded."
+      }
+    ]
+  }
+]

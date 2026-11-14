@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Device",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "device_id",
+    "brand",
+    "model_family",
+    "vci",
+    "hardware_facts",
+    "documentation",
+    "device_software"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.3"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "model_family": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "vci": {
+      "type": "string"
+    },
+    "hardware_facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operating_system",
+        "tpms_module",
+        "source_refs"
+      ],
+      "properties": {
+        "operating_system": {
+          "type": "string"
+        },
+        "tpms_module": {
+          "type": "string"
+        },
+        "source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_id",
+              "printed_page",
+              "locator"
+            ],
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^src-\\d{3}$"
+              },
+              "printed_page": {
+                "type": "string",
+                "pattern": "^(\\d+|[ivx]+)(-(\\d+|[ivx]+))?(; (\\d+|[ivx]+)(-(\\d+|[ivx]+))?)*$"
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "documentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "title",
+        "document_edition",
+        "note"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "document_edition": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "device_software": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "diagnostic_software_version",
+        "vehicle_software_versions",
+        "status",
+        "note",
+        "source_refs"
+      ],
+      "properties": {
+        "diagnostic_software_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vehicle_software_versions": {
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "not_documented_in_source",
+            "documented"
+          ]
+        },
+        "note": {
+          "type": "string"
+        },
+        "source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_id",
+              "printed_page",
+              "locator"
+            ],
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^src-\\d{3}$"
+              },
+              "printed_page": {
+                "type": "string",
+                "pattern": "^(\\d+|[ivx]+)(-(\\d+|[ivx]+))?(; (\\d+|[ivx]+)(-(\\d+|[ivx]+))?)*$"
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

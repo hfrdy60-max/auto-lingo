@@ -1,0 +1,155 @@
+[
+  {
+    "schema_version": "0.3",
+    "id": "autel-ms906pro-ecu-information",
+    "brand": "Autel",
+    "device_id": "autel_maxisys_ms906_pro",
+    "applies_to": [
+      "MS906 Pro",
+      "MS906 Pro-TS"
+    ],
+    "source_document": {
+      "source_id": "src-001",
+      "document_edition": "US V2.1",
+      "note": "Document edition only; not the device software version"
+    },
+    "device_software": {
+      "diagnostic_software_version": null,
+      "status": "not_documented_in_source",
+      "note": "Build/version of the device diagnostic software is not printed in the manual. Must be recorded from the physical unit."
+    },
+    "context": "Vehicle-specific diagnosis",
+    "menu_path": [
+      "Diagnostics",
+      "Diagnosis",
+      "Control Unit",
+      "ECU information"
+    ],
+    "path_confidence": "documented_vehicle_dependent",
+    "ui_element_type": "function_menu_item",
+    "path_prerequisite": "Vehicle identification completed (manual p.22-25) and VCI connected (p.17-19)",
+    "path_note": "Manual says the Function Menu 'may include' this item; availability and label vary by vehicle (p.31-32).",
+    "menu_path_alternatives": [],
+    "category": "ECU Information",
+    "term_en": "ECU Information",
+    "term_en_as_written_in_manual": "ECU information",
+    "term_variants_in_manual": [
+      {
+        "text": "ECU information",
+        "printed_pages": "32"
+      },
+      {
+        "text": "ECU Information",
+        "printed_pages": "33"
+      }
+    ],
+    "term_fa": "اطلاعات ECU",
+    "pronunciation_fa": "ای‌سی‌یو اینفورمیشن",
+    "technical_description_fa": "مشخصات واحد کنترل تست‌شده، شامل نوع واحد، شماره نسخه‌ها و سایر مشخصات را نشان می‌دهد. ستون چپ نام آیتم و ستون راست مقدار است.",
+    "usage_fa": "مشاهده‌ی نوع واحد، شماره‌ی نسخه‌ها و مشخصات ماژول تست‌شده (p.33).",
+    "usage_basis": "32; 33",
+    "related_terms": [
+      {
+        "term": "Control Unit",
+        "target_id": "autel-ms906pro-control-unit",
+        "target_context": "Vehicle-specific diagnosis",
+        "relation": "parent",
+        "basis": "manual",
+        "source_pages": "32",
+        "note": ""
+      },
+      {
+        "term": "Vehicle information",
+        "target_id": "autel-ms906pro-obd2-vehicle-information",
+        "target_context": "Generic OBDII/EOBD",
+        "relation": "see_also",
+        "basis": "author_editorial",
+        "source_pages": "33; 48",
+        "note": "Editorial link: both show identification-type information; manual does not relate them"
+      },
+      {
+        "term": "ECU",
+        "target_id": null,
+        "target_context": null,
+        "relation": "see_also",
+        "basis": "manual",
+        "source_pages": "33",
+        "note": ""
+      }
+    ],
+    "workshop_example_fa": "سناریو (آموزشی): تکنسین می‌خواهد پیش از مقایسه یا گزارش مشکل، نسخه‌های ماژول را ثبت کند.\nمراحل: در Function Menu گزینه‌ی ECU information را باز می‌کند. ستون چپ نام آیتم‌ها و ستون راست مشخصات را نشان می‌دهد. نوع واحد و شماره‌ی نسخه‌ها را یادداشت می‌کند و با Save یا Print در نوار ابزار ثبت می‌کند.\nنکته‌ی آموزشی: طبق راهنما در این صفحه فقط دکمه‌ی ESC برای خروج هست؛ پس صفحه فقط برای مشاهده‌ی اطلاعات است.",
+    "workshop_example_basis": [
+      {
+        "fact_fa": "ECU information نوع واحد، شماره نسخه‌ها و مشخصات را نشان می‌دهد",
+        "printed_page": "33"
+      },
+      {
+        "fact_fa": "ستون چپ نام آیتم و ستون راست مشخصات",
+        "printed_page": "33"
+      },
+      {
+        "fact_fa": "فقط دکمه‌ی ESC موجود است",
+        "printed_page": "33"
+      },
+      {
+        "fact_fa": "دکمه‌های Print و Save در نوار ابزار",
+        "printed_page": "27"
+      }
+    ],
+    "cross_brand_equivalents": [],
+    "media_ids": [],
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "printed_page": "32",
+        "locator": "Function Menu options list"
+      },
+      {
+        "source_id": "src-001",
+        "printed_page": "33",
+        "locator": "ECU Information; Figure 4-8"
+      }
+    ],
+    "verification": {
+      "technical": {
+        "status": "verified",
+        "basis": "official_manufacturer_manual",
+        "source_id": "src-001",
+        "checked_fields": [
+          "term_en",
+          "menu_path",
+          "technical_description_fa (content)",
+          "usage_fa",
+          "related_terms",
+          "workshop_example_basis"
+        ],
+        "vehicle_dependent": true,
+        "path_confidence": "documented_vehicle_dependent",
+        "author_written_fields": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa (wording)",
+          "workshop_example_fa (scenario narrative)"
+        ]
+      },
+      "translation": {
+        "status": "draft_unreviewed",
+        "covers": [
+          "term_fa",
+          "pronunciation_fa",
+          "technical_description_fa"
+        ],
+        "reviewed_by": null,
+        "reviewed_on": null
+      },
+      "workshop_example": {
+        "status": "complete",
+        "scenario_origin": "author_generated_educational_scenario",
+        "documented_real_case": false,
+        "technical_facts_source_backed": true
+      }
+    },
+    "notes": "",
+    "last_checked": "2026-11-12"
+  }
+]
