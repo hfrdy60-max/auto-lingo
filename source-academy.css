@@ -13,3 +13,8 @@
 .src-advanced-quiz .src-quiz-top span{color:#9ce7cb}
 .src-advanced-quiz .src-quiz-options button{min-height:42px;line-height:1.8}
 @media(max-width:560px){.src-deep-dive,.src-workshop-case{padding:10px}.src-deep-paragraph{font-size:9px}.src-case-complaint,.src-case-interpretation{font-size:8px}}
+
+
+/* Autel v0.3: clearly separate author-generated scenario text from cited manual facts */
+.src-case-narrative{white-space:pre-line;line-height:2.15;color:#d4e0e3;background:#0b141c;border:1px solid var(--line);border-right:3px solid var(--blue);border-radius:10px;padding:14px 16px;margin:14px 0;font-size:12px}
+.src-workshop-case .src-case-origin{line-height:1.9}
