@@ -117,7 +117,7 @@
 |---|---|---:|---|
 | برق و سوخت‌رسانی هیوندای/کیا | `data/technical_reference/hyundai_kia_electrical_fuel.json` | ۶ فصل، ۲۳ درس | دوره مستقل با جست‌وجو، مفاهیم، مراحل بررسی، نکات عیب‌یابی، واژگان و آزمون |
 | مدیریت موتور بنزینی بوش | `data/technical_reference/bosch_gasoline_engine_management.json` | ۷ فصل، ۲۰ درس | دوره مستقل با ارجاع صفحه، مفاهیم، روش بررسی، واژگان و آزمون |
-| منوها و اصطلاحات Autel MS906 Pro | `autel_all_entries (1).json` + `autel_maxisys_ms906_pro.json` | ۳۶ مدخل، ۹ دسته | دوره دستگاه با مسیر منو، پیش‌نیاز، معنی فنی، اصطلاحات مرتبط، وضعیت ترجمه و ارجاع راهنما |
+| منوها و اصطلاحات Autel MS906 Pro | `data/technical_reference/autel_ms906pro_v03/entries.json` + `device.json` + `sources.json` | ۴۰ مدخل، ۹ دسته، ۱۹۸ رابطه | نسخه v0.3 در آکادمی متصل شد؛ validator مستقل و QA انسانی ترجمه‌ها لازم است |
 | کارگاه عیب‌یابی سنسورها | `data/technical_reference/cross_domain_sensor_diagnostics.json` | ۱۱ درس؛ ۱۰ سنسور + روش عمومی | مسیر تحلیل داده زنده، بررسی مدار، DTC policy، منابع مرتبط و تمرین |
 | مرجع سنسورهای فردین گردی | `data/technical_reference/automotive_sensors_fardin_ghordi.json` | ۱۰ سنسور | مرجع مستقل سنسورها و مبانی ECU |
 
@@ -142,3 +142,15 @@
 - Added tools/validate_pilot.py and an Actions workflow. Live run 43445017759: 36 records, 184 relationships, zero errors, one warning. The remaining warning is expected: all 36 Persian translations remain draft_unreviewed pending human technical review.
 - Detailed run report artifact: https://github.com/hfrdy60-max/auto-lingo/actions/runs/43445017759/artifacts/14046613406.
 - Autel course UI now displays the full structured scenarios; the academy introduction advertises the 26 scenarios. Browser/device testing and independent human translation review remain outstanding.
+
+## Autel v0.3 — انتقال استاندارد و اتصال به آکادمی (2026-11-14)
+
+- نسخه پاک‌سازی‌شده پایلوت به مسیر پایدار data/technical_reference/autel_ms906pro_v03/ منتقل شد: entries.json، device.json، sources.json و سه Schema.
+- بانک شامل ۴۰ مدخل در ۹ دسته و ۱۹۸ رابطه است؛ ۷۸ رابطه مقصد داخلی ندارند اما یادداشت توضیحی دارند. در بررسی ساختاری، شناسه تکراری، مقصد داخلی مفقود، target_context نادرست و رابطه معکوس ناقص پیدا نشد.
+- ۴۰ سناریو به‌عنوان متن آموزشی تألیفی در رابط نمایش داده می‌شوند و مبنای صفحه‌ای هر سناریو جداگانه نشان داده می‌شود.
+- source-academy.js اکنون نسخه v0.3 را بارگذاری می‌کند؛ ترجمه‌های فارسی و وضعیت بررسی پژوهشگر در UI به‌روشنی از تأیید مستقل جدا شده‌اند.
+- اعتبارسنج مستقل tools/validate_autel_v03.py با پشتیبانی از type آرایه‌ای (مانند string | null) ساخته شد. Workflow مجزا: .github/workflows/autel-v03-validation.yml.
+- ۳۹ صفحه منبع به‌صورت واقعی در citationها استفاده شده‌اند؛ manifest منبع ۴۱ صفحه دارد و دو صفحه مقدماتی رومی ii/iii به‌صورت اضافی نگه داشته شده‌اند.
+- همه ۴۰ ترجمه همچنان draft_unreviewed هستند؛ نرم‌افزار نسخه دستگاه در راهنمای US V2.1 مشخص نشده و null باقی مانده است.
+- فایل‌های آپلودی اصلی در ریشه مخزن دست‌نخورده‌اند؛ فایل تکراری service_functions (3).json وارد بانک استاندارد نشده است.
+- بازگردانی README اصلی انجام شد. اجرای واقعی workflow و آزمون مرورگر پس از commit باید از وضعیت GitHub Actions و خود سایت کنترل شوند.
