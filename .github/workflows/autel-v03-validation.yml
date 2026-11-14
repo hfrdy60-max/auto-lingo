@@ -6,6 +6,9 @@ on:
     paths:
       - "data/technical_reference/autel_ms906pro_v03/**"
       - "tools/validate_autel_v03.py"
+      - "source-academy.js"
+      - "index.html"
+      - "source-academy.css"
       - ".github/workflows/autel-v03-validation.yml"
   workflow_dispatch:
 
@@ -18,6 +21,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check academy JavaScript syntax
+        run: node --check source-academy.js
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
