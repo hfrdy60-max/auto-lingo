@@ -5,7 +5,7 @@
  const defs=[
   {id:"hk-electrical",file:"data/technical_reference/hyundai_kia_electrical_fuel.json",title:"برق و انژکتور هیوندای و کیا",short:"HYUNDAI • KIA",icon:"⚡",kind:"book",expansionBook:"hyundai_kia"},
   {id:"bosch-gasoline",file:"data/technical_reference/bosch_gasoline_engine_management.json",title:"مدیریت موتور بنزینی بوش",short:"BOSCH • GASOLINE",icon:"◈",kind:"book",expansionBook:"bosch"},
-  {id:"autel-ms906pro",file:"autel_all_entries%20(1).json",deviceFile:"autel_maxisys_ms906_pro.json",title:"آموزش دستگاه دیاگ Autel MS906 Pro",short:"AUTEL • MAXISYS",icon:"▣",kind:"autel"},
+  {id:"autel-ms906pro",file:"data/technical_reference/autel_ms906pro_v03/entries.json",deviceFile:"data/technical_reference/autel_ms906pro_v03/device.json",sourceFile:"data/technical_reference/autel_ms906pro_v03/sources.json",title:"آموزش دستگاه دیاگ Autel MS906 Pro",short:"AUTEL • MAXISYS",icon:"▣",kind:"autel"},
   {id:"sensor-diagnostics",file:"data/technical_reference/cross_domain_sensor_diagnostics.json",title:"کارگاه عیب‌یابی سنسورها و داده زنده",short:"SENSOR DIAGNOSTICS",icon:"⌁",kind:"sensors"}
  ];
  const offset=academyChapters.length;
@@ -49,19 +49,22 @@
   })]});
   return {meta:{title_fa:raw.meta.title_fa,author:"تدوین آموزشی AUTONEX",publisher:"تلفیق سه مرجع فنی موجود در مخزن",document_pages:null,document_edition:raw.meta.version,scope_note:raw.meta.safety,citation_note:raw.meta.dtc_policy,source_distribution_note:raw.meta.methodology},modules};
  }
- function adaptAutel(raw,device){
+ function adaptAutel(raw,device,sources){
   const grouped=new Map();
+  const sourceById=new Map(arr(sources).map(x=>[x.source_id,x]));
+  const deviceSource=sourceById.get(device.documentation?.source_id);
   raw.entries.forEach(e=>{const k=e.category||"سایر";if(!grouped.has(k))grouped.set(k,[]);grouped.get(k).push(e)});
-  const modules=[...grouped.entries()].map(([category,entries],index)=>({id:"autel-"+category.toLowerCase().replace(/[^a-z0-9]+/g,"-"),title:category,summary:"آموزش اصطلاحات، مسیر منو و کاربرد گزینه‌های "+category+" در دستگاه Autel.",topics:entries.map(e=>{
+  const modules=[...grouped.entries()].map(([category,entries])=>({id:"autel-"+category.toLowerCase().replace(/[^a-z0-9]+/g,"-"),title:category,summary:"آموزش اصطلاحات، مسیر منو و کاربرد گزینه‌های "+category+" در دستگاه Autel.",topics:entries.map(e=>{
    const path=arr(e.menu_path).join("  ›  ");
-   const pageRefs=arr(e.source_refs).map(x=>"صفحه "+x.printed_page+" — "+x.locator);
-   const related=arr(e.related_terms).map(x=>x.term+" ("+x.relation+")");
+   const pageRefs=arr(e.source_refs).map(x=>(x.source_id||"src")+" • صفحه "+x.printed_page+" — "+x.locator);
+   const related=arr(e.related_terms).map(x=>x.term+" ("+x.relation+")"+(x.note?" — "+x.note:""));
    const alternatives=arr(e.menu_path_alternatives).map(x=>Array.isArray(x)?x.join(" › "):arr(x.path).join(" › ")+" ["+(x.basis||"منبع ثبت‌نشده")+"؛ "+(x.confidence||"سطح اطمینان ثبت‌نشده")+"]");
    const technicalStatus=e.verification?.technical?.status||"not_recorded";
    const translationStatus=e.verification?.translation?.status||"not_recorded";
    const exampleStatus=e.verification?.workshop_example?.status||"not_recorded";
    const topic=makeTopic({
-    id:e.id,title:e.term_en||e.id,level:technicalStatus==="verified"?"مسیر مستند در راهنمای دستگاه؛ وابسته به خودرو":"نیازمند بررسی",
+    id:e.id,title:e.term_en||e.id,
+    level:technicalStatus==="verified"?"ثبت‌شده در بررسی پژوهشگر؛ وابسته به خودرو":"نیازمند بررسی",
     summary:(e.term_fa?e.term_fa+" — ":"")+(e.usage_fa||e.technical_description_fa||"شرح گزینه دستگاه دیاگ."),
     concepts:[
      "نام انگلیسی در راهنما: "+(e.term_en_as_written_in_manual||e.term_en||"—"),
@@ -71,7 +74,7 @@
      "زمینه استفاده: "+(e.context||"—"),
      "نوع گزینه در رابط دستگاه: "+(e.ui_element_type||"در رکورد تعیین نشده"),
      "سطح مستندبودن مسیر: "+(e.path_confidence||"در رکورد تعیین نشده"),
-     "وضعیت نسخه نرم‌افزار: "+(e.device_software?.note||"نسخه نرم‌افزار از منبع حاضر قابل تعیین نیست.")
+     "وضعیت ترجمه فارسی: "+translationStatus+"؛ این ترجمه هنوز بازبینی انسانی نشده است."
     ],
     procedure:[
      "مسیر منو: "+(path||"در راهنمای در دسترس ثبت نشده است."),
@@ -82,19 +85,35 @@
     diagnostic:[
      "محدودیت مسیر: "+(e.path_note||"نام و دسترسی گزینه ممکن است با خودرو/نسخه نرم‌افزار تغییر کند."),
      "یادداشت فنی: "+(e.notes||"—"),
-     "مبنای بررسی فنی: "+(e.verification?.technical?.basis||"در رکورد تعیین نشده")+"؛ موارد بررسی‌شده: "+arr(e.verification?.technical?.checked_fields).join("، "),
-     "نسخه راهنما: "+(e.source_document?.document_edition||"در رکورد تعیین نشده")+"؛ نسخه نرم‌افزار دستگاه: "+(e.device_software?.diagnostic_software_version||"در منبع مستند نشده"),
+     "مبنای بررسی فنی ثبت‌شده: "+(e.verification?.technical?.basis||"در رکورد تعیین نشده")+"؛ وضعیت technical: "+technicalStatus+". این برچسب تأیید مستقل AUTONEX یا تست روی دستگاه فیزیکی نیست.",
+     "نسخه راهنمای مرجع: "+(e.source_document?.document_edition||"در رکورد تعیین نشده")+"؛ نسخه نرم‌افزار دستگاه: "+(e.device_software?.diagnostic_software_version||"در منبع مستند نشده"),
      "اصطلاحات مرتبط: "+(related.join("، ")||"—"),
-     "وضعیت بررسی فنی: "+technicalStatus+"؛ وضعیت ترجمه: "+translationStatus+"؛ وضعیت مثال: "+exampleStatus,
-     "مثال کارگاهی: "+(e.workshop_example_fa||"برای این گزینه مثال ثبت نشده است.")+" (مثال آموزشی تألیفی؛ نه گزارش قطعی از یک تعمیر واقعی)"
+     "وضعیت سناریوی آموزشی: "+exampleStatus+"؛ منشأ: "+(e.verification?.workshop_example?.scenario_origin||"ثبت نشده"),
+     "واقعیت مستندشده از دستگاه فیزیکی: "+(e.verification?.workshop_example?.documented_real_case===true?"بله":"خیر؛ سناریو تألیفی است.")
     ],
     terms:[[e.term_en||"—",e.term_fa||"—"],...arr(e.term_variants_in_manual).map(v=>[v.text,"صورت دیگر در راهنما؛ صفحات "+v.printed_pages])],
     source_pages:pageRefs.join(" | ")||"ارجاع صفحه در رکورد موجود نیست"
    });
-   topic.workshop_scenario=e.workshop_scenario||null;
+   topic.workshop_scenario={
+    text:e.workshop_example_fa||"",
+    basis:arr(e.workshop_example_basis).map(x=>x.fact_fa+" (صفحه "+x.printed_page+")"),
+    origin:e.verification?.workshop_example?.scenario_origin||"author_generated_educational_scenario",
+    documented_real_case:e.verification?.workshop_example?.documented_real_case===true
+   };
    return topic;
   })}));
-  return {meta:{title_fa:"Autel MaxiSys MS906 Pro / MS906 Pro-TS",author:"Autel",publisher:"MaxiSys User Manual",document_pages:null,document_edition:raw.entries[0]?.source_document?.document_edition||"US V2.1",scope_note:"این محتوا بر اساس راهنمای کاربر است. مسیرهای منو وابسته به خودرو و نسخه نرم‌افزار دستگاه‌اند؛ نسخه نرم‌افزار نصب‌شده در راهنمای مورد استفاده مستند نشده است.",citation_note:"ترجمه فارسی و مثال‌های کارگاهی در وضعیت پیش‌نویس/تألیفی هستند و باید جداگانه بازبینی شوند.",source_distribution_note:"دستگاه: "+arr(device.model_family).join(" / ")+" • رابط ارتباطی: "+(device.vci||"ثبت نشده")+" • نسخه راهنما: "+(device.documentation?.document_edition||"ثبت نشده")+". نسخه نرم‌افزار خود دستگاه از این PDF قابل استنتاج نیست."},modules};
+  const manualTitle=deviceSource?.title||device.documentation?.title||"Autel MaxiSys User Manual";
+  const edition=device.documentation?.document_edition||deviceSource?.document_edition||"US V2.1";
+  return {meta:{
+   title_fa:"Autel MaxiSys MS906 Pro / MS906 Pro-TS",
+   author:deviceSource?.publisher||"Autel",
+   publisher:manualTitle,
+   document_pages:null,
+   document_edition:edition,
+   scope_note:"این دوره بر اساس راهنمای رسمی ثبت‌شده در منبع پایلوت است. مسیرهای منو ممکن است بر اساس خودرو و نسخه نرم‌افزار تغییر کنند؛ نسخه نرم‌افزار نصب‌شده روی دستگاه در سند مشخص نشده است.",
+   citation_note:"وضعیت technical=verified همان ادعای ثبت‌شده در مرحله تحقیق است و هنوز تأیید مستقل AUTONEX یا تطبیق با دستگاه فیزیکی انجام نشده؛ تمام ترجمه‌های فارسی draft_unreviewed هستند.",
+   source_distribution_note:"شناسه منبع: "+(deviceSource?.source_id||"—")+" • ویرایش راهنما: "+edition+" • VCI: "+(device.vci||"ثبت نشده")+" • لینک منبع رسمی: "+(deviceSource?.url||"ثبت نشده")
+  },modules};
  }
  function tabs(){
   academyTabs.innerHTML=academyChapters.map((c,i)=>{
@@ -125,6 +144,9 @@
  }
  function workshopScenarioHTML(sc){
   if(!sc)return "";
+  if(sc.text){
+   return '<section class="src-workshop-case"><div class="src-section-heading"><span>AUTHOR-GENERATED TRAINING SCENARIO</span><h4>سناریوی آموزشی و مبنای مستندات</h4></div><div class="src-case-origin">سناریوی تألیفی بر پایه راهنمای سازنده؛ گزارش تعمیر واقعی یا تست دستگاه فیزیکی نیست.</div><p class="src-case-narrative">'+esc(sc.text)+'</p>'+section("واقعیت‌های فنی پشتوانه سناریو","MANUAL EVIDENCE",sc.basis||[])+'</section>';
+  }
   return '<section class="src-workshop-case"><div class="src-section-heading"><span>AUTHOR-GENERATED WORKSHOP SCENARIO</span><h4>سناریوی آموزشی دستگاه دیاگ</h4></div><div class="src-case-origin">سناریوی تألیفی AUTONEX؛ این مورد گزارش تعمیر واقعی نیست.</div><p class="src-case-complaint"><b>شکایت فرضی:</b> '+esc(sc.complaint||"")+'</p>'+section("مراحل بررسی با دستگاه","DIAGNOSTIC ACTIONS",sc.diagnostic_actions,true)+'<p class="src-case-interpretation"><b>مشاهده مورد انتظار:</b> '+esc(sc.expected_observation||"")+'</p><p class="src-case-interpretation"><b>تفسیر تشخیصی:</b> '+esc(sc.interpretation||"")+'</p><p class="src-case-interpretation"><b>نکته ایمنی:</b> '+esc(sc.safety_note||"")+'</p></section>';
  }
  function render(){
@@ -132,7 +154,7 @@
   if(!s.data){academyContent.innerHTML='<div class="src-loading"><span class="eyebrow">SOURCE COURSE</span><h3>در حال بارگذاری دوره…</h3><p>'+esc(s.error||"محتوای آموزشی در حال دریافت است.")+'</p></div>';return}
   const data=s.data,module=data.modules.find(m=>m.id===s.moduleId)||data.modules[0],all=topics(data);
   const search=s.search.trim().toLowerCase();
-  const hay=x=>[x.title,x.summary,x.moduleTitle,...arr(x.concepts),...arr(x.procedure),...arr(x.diagnostic),...arr(x.terms).flat(),x.expansion?.deep_explanation,x.expansion?.workshop_case?.complaint,...arr(x.expansion?.diagnostic_parameters),...arr(x.expansion?.circuit_analysis),...arr(x.expansion?.common_mistakes)].join(" ").toLowerCase();
+  const hay=x=>[x.title,x.summary,x.moduleTitle,...arr(x.concepts),...arr(x.procedure),...arr(x.diagnostic),...arr(x.terms).flat(),x.expansion?.deep_explanation,x.expansion?.workshop_case?.complaint,x.workshop_scenario?.text,...arr(x.workshop_scenario?.basis),...arr(x.expansion?.diagnostic_parameters),...arr(x.expansion?.circuit_analysis),...arr(x.expansion?.common_mistakes)].join(" ").toLowerCase();
   const visible=(search?all:module.topics.map(t=>({...t,moduleId:module.id,moduleTitle:module.title}))).filter(t=>!search||hay(t).includes(search));
   const t=visible.find(x=>x.id===s.topicId)||visible[0]||all.find(x=>x.id===s.topicId)||all[0];
   if(t&&t.id!==s.topicId){s.topicId=t.id;s.answered=false;s.answerIndex=null;s.advancedAnswered=false;s.advancedAnswerIndex=null}
@@ -171,7 +193,7 @@
      if(extra)topic.expansion=extra;
     }));
    }
-   if(d.kind==="autel"){const device=await fetchJSON(d.deviceFile);data=adaptAutel(raw,device)}
+   if(d.kind==="autel"){const [device,sources]=await Promise.all([fetchJSON(d.deviceFile),fetchJSON(d.sourceFile)]);data=adaptAutel(raw,device,sources)}
    else if(d.kind==="sensors")data=adaptSensors(raw);
    else data=raw;
    if(!Array.isArray(data.modules)||!data.modules.length)throw Error("ساختار ماژول‌ها خالی است");
