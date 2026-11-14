@@ -1,42 +1,52 @@
 # ابزارهای کنترل کیفیت AUTONEX
 
-## اعتبارسنجی پایلوت Autel
+## پایلوت فعال Autel v0.3
 
-از ریشه مخزن اجرا کن:
-
-```bash
-python3 tools/validate_pilot.py
-```
-
-اسکریپت فایل‌های فعلی مخزن را به‌طور خودکار تشخیص می‌دهد و سه Schema مربوط به رکورد، منبع و دستگاه را بررسی می‌کند. در صورت نصب بودن بسته `jsonschema` از Draft-07 استفاده می‌کند؛ در غیر این صورت، اعتبارسنجی داخلی برای subset موردنیاز Schema اجرا می‌شود.
-
-گزارش‌ها در مسیرهای زیر ساخته می‌شوند:
-
-- `QA/AI3_AUTEL_PILOT_VALIDATION.json`
-- `QA/AI3_AUTEL_PILOT_VALIDATION.md`
-
-گزینه‌های اختیاری:
+برای اعتبارسنجی بانک متصل به آکادمی، از ریشه مخزن اجرا کنید:
 
 ```bash
-python3 tools/validate_pilot.py --strict-warnings
-python3 tools/validate_pilot.py --entries "autel_all_entries (1).json"
+python3 tools/validate_autel_v03.py
 ```
 
-گزینه `--strict-warnings` علاوه بر خطاها، وجود هشدار را نیز با کد خروجی غیرصفر اعلام می‌کند. این گزینه برای کنترل سخت‌گیرانه CI مناسب است؛ ولی هشدار ترجمه‌های بازبینی‌نشده لزوماً خطای ساختاری نیست.
+یا از مسیر سازگاری ریشه:
 
-## آنچه ابزار بررسی می‌کند
+```bash
+python3 validate_pilot.py
+```
 
-- اعتبار JSON و Schema؛
-- شناسه‌های تکراری و ارتباط رکوردها؛
-- اتصال هر رکورد به منبع و نسخه سند؛
-- شماره صفحات استنادشده، فهرست pages_cited و محدوده pages_used؛
-- پیوندهای داخلی، target_context و روابط معکوس؛
-- توضیح دامنه روابط خارجی فاقد target_id؛
-- حفظ وضعیت draft_unreviewed ترجمه‌ها؛
-- منشأ سناریوهای تألیفی و نبود placeholder در مثال‌ها.
+این ابزار مسیر canonical زیر را بررسی می‌کند:
 
-## رفتار ایمن
+- data/technical_reference/autel_ms906pro_v03/entries.json
+- data/technical_reference/autel_ms906pro_v03/device.json
+- data/technical_reference/autel_ms906pro_v03/sources.json
+- سه Schema همان پوشه
 
-این ابزار فایل‌های داده و Schema را تغییر نمی‌دهد. فقط دو گزارش خروجی تولید می‌کند. اصلاح داده باید در یک تغییر جداگانه، با بازبینی و ثبت سابقه انجام شود.
+ویژگی‌های اعتبارسنج v0.3:
+- پشتیبانی صحیح از type union مانند string | null در Schema؛
+- بررسی Schema، شناسه‌های تکراری، source_id و document_edition؛
+- بررسی target_id، target_context، رابطه‌های معکوس و parent؛
+- بررسی وضعیت ترجمه و تألیفی‌بودن سناریوها؛
+- تطبیق صفحات ارجاع‌شده با manifest منبع؛
+- تولید گزارش JSON و Markdown در پوشه QA.
 
-اعتبارسنجی ساختاری به معنی تأیید صحت فنی، ترجمه یا انطباق منوی دستگاه با سخت‌افزار واقعی نیست.
+گزارش‌های تولیدی:
+- QA/AUTEL_V03_VALIDATION.json
+- QA/AUTEL_V03_VALIDATION.md
+
+برای شکست دادن اجرا در صورت وجود هشدار نیز از گزینه زیر استفاده کنید:
+
+```bash
+python3 tools/validate_autel_v03.py --strict-warnings
+```
+
+## اعتبارسنجی بانک قدیمی Autel v0.2
+
+اسکریپت tools/validate_pilot.py فقط برای قالب قدیمی v0.2 و داده‌های legacy نگه داشته شده است. آن را برای بانک v0.3 اجرا نکنید. Workflow قدیمی نیز مستقل از پایلوت v0.3 است.
+
+## تاریخچه فایل validator ارسالی AI-3
+
+نسخه اولیه AI-3 که در ریشه مخزن بارگذاری شده بود، به‌دلیل فرض‌گرفتن مسیرهای ناموجود و ناسازگاری fallback با type union قابل اتکا نبود. متن آن برای traceability در data/technical_reference/autel_ms906pro_v03/AI3_original_validate_pilot_v0.3.txt نگهداری شده است. فایل validate_pilot.py در ریشه اکنون فقط یک wrapper سازگاری است و validator فعال v0.3 را اجرا می‌کند.
+
+## محدودیت QA
+
+اعتبارسنجی ساختاری و رابطه‌ای به معنی تأیید مستقل صحت فنی، ترجمه، تلفظ یا تطبیق منوها با سخت‌افزار واقعی نیست. ترجمه‌ها باید تا بازبینی انسانی draft_unreviewed بمانند.
