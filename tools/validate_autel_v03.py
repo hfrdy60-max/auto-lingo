@@ -26,6 +26,7 @@ DEFAULTS = {
     "entry_schema": BASE / "entry.schema.json",
     "device_schema": BASE / "device.schema.json",
     "source_schema": BASE / "source.schema.json",
+    "learning_quiz": BASE / "learning_quiz.json",
 }
 INVERSE = {
     "parent": "child",
@@ -186,7 +187,7 @@ def manifest_pages(source: dict[str, Any]) -> set[tuple[str, int]]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="اعتبارسنجی پایلوت Autel v0.3 در AUTONEX")
-    for name in ("entries", "device", "sources", "entry_schema", "device_schema", "source_schema"):
+    for name in ("entries", "device", "sources", "entry_schema", "device_schema", "source_schema", "learning_quiz"):
         parser.add_argument("--" + name.replace("_", "-"), default=str(DEFAULTS[name].relative_to(ROOT)))
     parser.add_argument("--json-report", default="QA/AUTEL_V03_VALIDATION.json")
     parser.add_argument("--md-report", default="QA/AUTEL_V03_VALIDATION.md")
@@ -200,6 +201,7 @@ def main() -> int:
         "entry_schema": ROOT / args.entry_schema,
         "device_schema": ROOT / args.device_schema,
         "source_schema": ROOT / args.source_schema,
+        "learning_quiz": ROOT / args.learning_quiz,
     }
     try:
         loaded = {key: load_json(path) for key, path in paths.items()}
@@ -210,6 +212,7 @@ def main() -> int:
     bank = loaded["entries"]
     device = loaded["device"]
     sources = loaded["sources"]
+    learning_quiz = loaded["learning_quiz"]
     schemas = {
         "entry": loaded["entry_schema"],
         "device": loaded["device_schema"],
@@ -234,6 +237,31 @@ def main() -> int:
     if not isinstance(device, dict):
         errors.append("ساختار device باید object باشد.")
         device = {}
+    if not isinstance(learning_quiz, dict) or not isinstance(learning_quiz.get("questions"), dict):
+        errors.append("بانک تمرین باید object دارای questions باشد.")
+        learning_quiz = {"questions": {}}
+    quiz_questions = learning_quiz["questions"]
+    if learning_quiz.get("device_id") != device.get("device_id"):
+        errors.append("device_id بانک تمرین با فایل دستگاه برابر نیست.")
+    record_ids = {record.get("id") for record in records if isinstance(record, dict)}
+    missing_quizzes = sorted(record_ids - set(quiz_questions))
+    extra_quizzes = sorted(set(quiz_questions) - record_ids)
+    if missing_quizzes:
+        errors.append("برای این مدخل‌ها آزمون وجود ندارد: " + ", ".join(missing_quizzes))
+    if extra_quizzes:
+        errors.append("آزمون دارای شناسه مدخل ناشناخته است: " + ", ".join(extra_quizzes))
+    for quiz_id, quiz in quiz_questions.items():
+        if not isinstance(quiz, dict) or not isinstance(quiz.get("q"), str) or not quiz.get("q").strip():
+            errors.append(f"{quiz_id}: متن پرسش نامعتبر یا خالی است.")
+            continue
+        options = quiz.get("options")
+        answer = quiz.get("answer")
+        if not isinstance(options, list) or len(options) < 3 or not all(isinstance(x, str) and x.strip() for x in options):
+            errors.append(f"{quiz_id}: باید دست‌کم سه گزینه متنی داشته باشد.")
+        elif not isinstance(answer, int) or isinstance(answer, bool) or not 0 <= answer < len(options):
+            errors.append(f"{quiz_id}: answer خارج از محدوده گزینه‌ها است.")
+        if not isinstance(quiz.get("why"), str) or not quiz.get("why").strip():
+            errors.append(f"{quiz_id}: توضیح پاسخ صحیح خالی است.")
 
     schema_check(device, schemas["device"], "device", errors)
     schema_check(sources, schemas["source"], "sources", errors)
@@ -450,6 +478,7 @@ def main() -> int:
         "translation_draft_unreviewed": translations.get("draft_unreviewed", 0),
         "technical_verified_claims": technical_status.get("verified", 0),
         "workshop_examples_complete": example_status.get("complete", 0),
+        "learning_quizzes": len(quiz_questions),
         "errors": len(errors),
         "warnings": len(warnings),
     }
