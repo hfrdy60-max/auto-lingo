@@ -1,0 +1,35 @@
+name: AUTONEX Autel v0.3 validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/technical_reference/autel_ms906pro_v03/**"
+      - "tools/validate_autel_v03.py"
+      - ".github/workflows/autel-v03-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-autel-v03:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate v0.3 bank
+        run: python3 tools/validate_autel_v03.py
+      - name: Upload validation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autonex-autel-v03-validation
+          path: |
+            QA/AUTEL_V03_VALIDATION.json
+            QA/AUTEL_V03_VALIDATION.md
+          if-no-files-found: warn
