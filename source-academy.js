@@ -181,6 +181,13 @@
   academyContent.querySelectorAll("[data-advanced-answer]").forEach(b=>b.onclick=()=>{s.advancedAnswered=true;s.advancedAnswerIndex=Number(b.dataset.advancedAnswer);renderAcademy()});
  }
  renderAcademy=function(){if(activeChapter<offset||activeChapter>=offset+defs.length){oldRender();return}render()};
+ document.querySelectorAll("[data-open-academy]").forEach(button=>button.addEventListener("click",()=>{
+  const target=academyChapters.findIndex(chapter=>chapter.id===button.dataset.openAcademy);
+  if(target<0)return;
+  activeChapter=target;activeSection=0;
+  renderAcademy();
+  document.getElementById("technicalAcademy")?.scrollIntoView({behavior:"smooth",block:"start"});
+ }));
  if(activeChapter===0)activeChapter=offset;
  oldRender();
  const expansionsPromise=fetchJSON("data/lesson_expansions_v1.json");
