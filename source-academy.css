@@ -18,3 +18,15 @@
 /* Autel v0.3: clearly separate author-generated scenario text from cited manual facts */
 .src-case-narrative{white-space:pre-line;line-height:2.15;color:#d4e0e3;background:#0b141c;border:1px solid var(--line);border-right:3px solid var(--blue);border-radius:10px;padding:14px 16px;margin:14px 0;font-size:12px}
 .src-workshop-case .src-case-origin{line-height:1.9}
+
+/* Direct technical-library entry cards */
+.academy-library-shortcuts{margin:18px 0 22px;padding:18px;border:1px solid rgba(137,122,213,.35);border-radius:18px;background:linear-gradient(125deg,rgba(95,69,153,.18),rgba(26,104,111,.15))}
+.academy-library-heading h3{margin:5px 0;color:#fff;font-size:18px}
+.academy-library-heading p{margin:4px 0 14px;color:#bdc9dc;font-size:11px}
+.academy-library-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.academy-library-grid button{display:flex;flex-direction:column;align-items:flex-start;gap:5px;text-align:right;padding:14px;border:1px solid rgba(148,151,207,.3);border-radius:13px;background:rgba(15,25,47,.72);color:#fff;font:inherit;cursor:pointer;min-height:105px}
+.academy-library-grid button:hover,.academy-library-grid button:focus-visible{border-color:#8d7be2;background:rgba(78,67,126,.38);outline:none}
+.academy-library-grid button span{font-size:9px;color:#9ee9cb;background:rgba(70,180,144,.12);border-radius:20px;padding:4px 8px}
+.academy-library-grid button b{font-size:12px}
+.academy-library-grid button small{font-size:10px;line-height:1.8;color:#b8c5d9}
+@media(max-width:600px){.academy-library-grid{grid-template-columns:1fr}.academy-library-grid button{min-height:0}}
