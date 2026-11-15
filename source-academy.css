@@ -30,3 +30,22 @@
 .academy-library-grid button b{font-size:12px}
 .academy-library-grid button small{font-size:10px;line-height:1.8;color:#b8c5d9}
 @media(max-width:600px){.academy-library-grid{grid-template-columns:1fr}.academy-library-grid button{min-height:0}}
+
+
+/* AUTONEX home: direct access to every technical resource */
+.home-library-heading{margin-top:30px;align-items:end}
+.home-library-heading p{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.9}
+.home-resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:15px}
+.home-resource-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0;min-height:174px;padding:15px;text-align:right;border:1px solid #3a4161;border-radius:16px;background:linear-gradient(145deg,#1b2037,#172c3a);color:#f1f0ff;font:inherit;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.home-resource-card:hover,.home-resource-card:focus-visible{transform:translateY(-3px);border-color:#8d80df;box-shadow:0 10px 24px #0003;outline:none}
+.home-resource-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#39305f;color:#c6baff;font-size:18px}
+.home-resource-meta{font-size:9px;color:#8fe3c4;margin-top:2px}
+.home-resource-card>b{font-size:12px;line-height:1.8}
+.home-resource-card>small{font-size:9px;line-height:1.9;color:#aebbd0}
+.home-resource-card>i{margin-top:auto;font-size:9px;font-style:normal;color:#9adccf}
+.resource-sensor{border-color:#554d85}.resource-sensor .home-resource-icon{background:#332d59;color:#c9baff}
+.resource-diagnostics{border-color:#365d75}.resource-diagnostics .home-resource-icon{background:#193c50;color:#8bd8f5}
+.resource-hyundai{border-color:#376c63}.resource-hyundai .home-resource-icon{background:#17483f;color:#8fe8c4}
+.resource-bosch{border-color:#6b5a38}.resource-bosch .home-resource-icon{background:#47391e;color:#f2ce88}
+.resource-autel{border-color:#624b70}.resource-autel .home-resource-icon{background:#452d53;color:#e1b6f5}
+@media(max-width:600px){.home-library-heading{margin-top:24px}.home-resource-grid{grid-template-columns:1fr;gap:9px}.home-resource-card{min-height:145px;padding:13px}.home-resource-card>b{font-size:12px}}
