@@ -65,6 +65,14 @@
    <button class="quick-card orange" data-page="dictionary"><span class="quick-icon">Aa</span><b>واژه‌نامه فنی</b><small>اصطلاحات فارسی و انگلیسی</small></button>
    <button class="quick-card pink" data-page="practice"><span class="quick-icon">✧</span><b>تمرین و سناریوها</b><small>آزمون و عیب‌یابی آموزشی</small></button>
    <button class="quick-card gold" data-page="progress"><span class="quick-icon">▥</span><b>کارنامه و مرور</b><small>پیشرفت و اشتباهات من</small></button>
+  </div>
+  <div class="home-section-heading home-library-heading"><div><span class="home-overline">AUTONEX TECHNICAL LIBRARY</span><h2>کتابخانه تخصصی خودرو</h2><p>تمام منابع فنی و دوره‌های مرجع، مستقیم از صفحه خانه در دسترس‌اند.</p></div><span class="home-section-note">۵ منبع تخصصی</span></div>
+  <div class="home-resource-grid">
+   <button type="button" class="home-resource-card resource-sensor" data-home-resource="sensor-reference"><span class="home-resource-icon">⌁</span><span class="home-resource-meta">۱۰ پرونده سنسور</span><b>مرجع جامع سنسورهای خودرو</b><small>عملکرد، پایه‌ها، سیگنال، تست، علائم خرابی و ارتباط با ECU</small><i>ورود به مرجع ←</i></button>
+   <button type="button" class="home-resource-card resource-diagnostics" data-home-resource="sensor-diagnostics"><span class="home-resource-icon">⌕</span><span class="home-resource-meta">کارگاه عیب‌یابی</span><b>سنسورها و داده زنده</b><small>تحلیل DTC، فریزفریم، پارامترهای زنده و مسیر بررسی مدار</small><i>ورود به کارگاه ←</i></button>
+   <button type="button" class="home-resource-card resource-hyundai" data-home-resource="hk-electrical"><span class="home-resource-icon">⚡</span><span class="home-resource-meta">۲۳ درس گسترش‌یافته</span><b>برق و انژکتور هیوندای و کیا</b><small>نقشه‌خوانی، شبکه‌ها، سنسورها، سوخت‌رسانی و ECU</small><i>مشاهده درس‌ها ←</i></button>
+   <button type="button" class="home-resource-card resource-bosch" data-home-resource="bosch-gasoline"><span class="home-resource-icon">◈</span><span class="home-resource-meta">۲۰ درس گسترش‌یافته</span><b>مدیریت موتور بنزینی بوش</b><small>تزریق سوخت، احتراق، هوارسانی و کنترل آلایندگی</small><i>مشاهده درس‌ها ←</i></button>
+   <button type="button" class="home-resource-card resource-autel" data-home-resource="autel-ms906pro"><span class="home-resource-icon">▣</span><span class="home-resource-meta">۴۰ مدخل + ۴۰ آزمون</span><b>آموزش دستگاه دیاگ Autel</b><small>MS906 Pro / Pro-TS، مسیر منوها و سناریوهای آموزشی</small><i>ورود به آموزش Autel ←</i></button>
   </div>`;
  Object.entries(panes).forEach(([key,nodes])=>{
   const pane=document.createElement('div');pane.className='app-page';pane.dataset.pane=key;
@@ -95,6 +103,15 @@
  };
  app.querySelectorAll('.side-link,.mobile-dock button').forEach(b=>b.addEventListener('click',()=>show(b.dataset.page)));
  app.querySelector('#sidebarToggle').addEventListener('click',()=>app.classList.toggle('sidebar-open'));
+ home.querySelectorAll('[data-home-resource]').forEach(card=>card.addEventListener('click',()=>{
+  const resource=card.dataset.homeResource;
+  show('learn');
+  setTimeout(()=>{
+   const target=document.querySelector('[data-open-academy="'+resource+'"]');
+   if(target)target.click();
+   else document.getElementById('technicalAcademy')?.scrollIntoView({behavior:'smooth',block:'start'});
+  },160);
+ }));
  app.querySelectorAll('[data-page]').forEach(card=>{
   if(card.classList.contains('side-link')||card.closest('.mobile-dock'))return;
   card.addEventListener('click',()=>{
